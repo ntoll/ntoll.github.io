@@ -1,0 +1,49 @@
+footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+pre {
+    font-family: monospace;
+}
+
+.right {
+    float: right;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+#lookslikeme {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+table {
+    border: 1px solid #444;
+    width: 80%;
+}
+
+td {
+    border-top: 1px solid #444;
+}
+
+td, th {
+    padding: 4px;
+}
+
+/*
+hResume Styles
+*/
+
+.hresume .title, .hresume .education .summary, .hresume .org {
+    font-size: 16px;
+}
+
+.hresume .title, .hresume .education .summary {
+    font-weight: bold;
+}

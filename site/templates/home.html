@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% block content %}
+<h1><a href="/article/how-to-run-an-awesome-code-dojo">How to Run an Awesome Code Dojo</a></h1><p class="published_on">Wednesday 25 January 2012 (01:34PM)</p>
+
+
+	<p><img src="/static/images/100.png" alt="Python Code Dojo" style="padding-left: 8px" align="right" /></p>
+
+<p><a href="https://twitter.com/#!/atroche">Alistair Roche</a> recently <a href="https://twitter.com/#!/atroche/status/161775174604173312">tweeted</a> the following question:</p>
+
+<blockquote>@ntoll Hey Nicholas, any chance I could get some advice from you on how to run an awesome coding dojo?</blockquote>
+
+<p>This blog post is my answer.</p>
+
+<p>I helped start the London Python Code Dojo with <a href="https://twitter.com/#!/tartley">Jonathan Hartley</a> and <a href="https://twitter.com/#!/otfrom">Bruce Durling</a> because I was learning Python and wanted to meet people I could learn from. Therein lies the essence of the dojo: a place to learn with/from other people.</p>
+
+<p>The original dojo concept is explained at the <a href="http://codingdojo.org/">codingdojo.org</a> website. We started out with every intention of following the instructions found therein. However, we've let our imaginations run and evolved the meetings to our group's dynamics and interests. If you run a dojo, so should you too (adapt).</p>
+
+<p>Whereas codingdojo.org is quite formal and focussed on test-driven development (TDD) we have changed things in three major ways:</p>
+
+<ol>
+
+<li>expand the pair programming "randori" to encompass groups of no more than five participants</li>
+
+<li>drop the TDD dogma, and</li>
+
+<li>encouraged noise, debate and creativity.</li>
+
+</ol>
+
+<p>Working in groups was suggested by <a href="https://twitter.com/#!/ciaranmooney">Ciar&aacute;n</a> and makes the dojo a software version of <a href="http://en.wikipedia.org/wiki/Scrapheap_Challenge">Scrapheap Challenge</a>. Every group is given about an hour and a half to solve the same problem, at the end of the evening each group does a show and tell which ends up being a public code review cum question and answer session.</p>
+
+<p>Although I practice TDD I personally dislike pushing any "one true" methodology on people. There are times when TDD is the worst thing to do (I'll explain why in another blog post) and I personally feel it's important to let people discover so-called good practice for themselves by observing it in use rather than being told to do it.</p>
+
+<p>It soon became clear that encouraging noise, debate and "creativity" leads to a buzz in the room and lots of energetic intellectual interaction between participants. I once overheard someone (it might have been <a href="https://twitter.com/#!/tomviner">Tom Viner</a> but I might be wrong) explain that the London Python code dojo is to the original dojo concept as an improvisation in a jazz club is to a string quartet recital.</p>
+
+<p>So here's the London dojo recipe:</p>
+
+<ul>
+
+<li>We limit the number of tickets to around thirty to make the evening easier to manage (it's like herding cats).</li>
+
+<li>Start with a social element. For us it's pizza and beer. Not only is it a good way to welcome new members but it is also a great community building mechanism. Several people have found jobs via the connections made in the pre-code social.</li>
+
+<li>During the social element we encourage people to write ideas for the evening's problem on a white/black-board or flip chart. Good ideas are usually algorithmic in nature and very specific. Recent examples include:
+
+<ul>
+
+<li>Game solving algorithms: Boggle, Mastermind and Tic-Tac-Toe.</li>
+
+<li>Creating a simple game: Hunt the Wumpus clone.</li>
+
+<li>Problem solving: Maze navigation.</li>
+
+<li>An adventure game where each month we create a new aspect of the game: world representation, parser, keeping game state, puzzles and so on.</li>
+
+</ul>
+
+Sometimes we start the evening with a presentation of some sort of problem or Python module and we use that as the basis of the group coding. For example, we all created animated Christmas cards with PyGame.
+
+</li>
+
+<li>The "organiser" convenes the coding session by calling for a vote on the problems suggested during the social part of the evening. We usually work out the top three ideas then take a second vote to decide a winner.</li>
+
+<li>The "organiser" randomly assigns everyone a group.</li>
+
+<li>There follows one and a half hours of furious coding with the organiser calling out half-hour intervals.</li>
+
+<li>Finally, once the time is up every group does a show and tell where we need to see their code running (or not as the case may be) followed by a code review. For me, this is the best (and funniest) part of the evening.</li>
+
+</ul>
+
+<p>If you want to know more, come to a dojo! Alternatively, you may be interested in the slides from a presentation I gave at Europython in 2011 on running the code dojo:</p>
+
+<div style="width:425px" id="__ss_8434980"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/ntoll/the-london-python-code-dojo-an-education-in-developer-education" title="The London Python Code Dojo - An Education in Developer Education" target="_blank">The London Python Code Dojo &#8211; An Education in Developer Education</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/8434980" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/ntoll" target="_blank">Nicholas Tollervey</a> </div> </div>
+
+<p>Last, but definitely not least, many thanks to my co-dojo-cat-herders <a href="https://twitter.com/#!/tomviner">Tom Viner</a>, <a href="https://twitter.com/#!/tjguk">Tim Golden</a>, <a href="https://twitter.com/#!/tartley">Jonathan Hartley</a> and <a href="https://twitter.com/#!/otfrom">Bruce Durling</a></p>
+
+
+
+ 
+
+<hr/>
+<h1><a href="/article/baking-with-raspberrypipy">Baking with Raspberry[Pi/Py]</a></h1><p class="published_on">Friday 23 September 2011 (03:02PM)</p>
+
+
+	<p><a href="http://raspberrypi.org"><img src="/static/images/98.jpg" alt="Raspberry Pi[e]"  align="right" style="padding-left: 8px;" /></a></p>
+
+	<p>This weekend is <a href="http://pyconuk.org/">PyconUK</a> and I'll be bringing along an alpha version of the <a href="http://raspberrypi.org/">RaspberryPi</a> device. As the RaspberryPi foundation's website <a href="http://www.raspberrypi.org/sample-page/">explains</a>, they "exist to promote the study of computer science and related topics, especially at school level, and to put the fun back into learning computing". They go on to mention that the device will run "open" software and lists <a href="http://python.org">Python</a> as being part of their software stack. </p>
+
+	<p>Given that RaspberryPi is based in the UK I thought it'd be good if the UK's Python community found out about it with a view to community contributions. As a result, I emailed RaspberryPi to ask if they'd like to send someone to PyconUK. Unfortunately no-one from the foundation was available but they did offer to send us the alpha-board so we could play with it during the sprints and hacking that takes place at these types of conference. </p>
+
+	<p>So I have a RaspberryPi device sitting on my desk. I've spent a couple of hours playing to ensure we have something that works which we can hack on/with. What follows is the story of what I've done and what attendees can expect to see at PyconUK.</p>
+
+	<p>The device arrived on Monday and my very first impression was that kids find it fascinating. <strong>My</strong> kids were intrigued when I unpacked it (although I didn't switch it on). Just the look of the board seems to be intrinsically interesting to children (a fact that is often lost on us adults) and they wanted to prod, poke and switch it on. Unfortunately for them, I didn't have the right leads to connect the thing to a monitor. They had to wait. :-(</p>
+
+	<p>I took some photos (see below) and decided to try the device out at Monday's <a href="http://northackton.stdin.co.uk/blog/">NortHACKton</a> meeting since there's quite a number of hardware-hacker types who attend (I'm most definitely a software-hacker type) and they could offer sage advice in the event of a problem.</p>
+
+	<p><img src="/static/images/99.jpg" alt="Raspberry Pi alpha board"  align="center" /></p>
+
+	<p>Given the correct monitor leads and an excited crowd of geeks we booted the device into the <a href="http://wiki.debian.org/DebianSqueeze">Debian Squeeze</a> flavour of Linux, discovered the framebuffer resolution was set to something really weird (so we had the left and right hand sides of the display chopped off) and realised we didn't have a username and password with which to log in. In any case, when the login prompt appeared there were spontaneous "Ooohs" and "Ahhhs" from the assembled geeks (as if they'd never seen a Linux box boot up). </p>
+
+	<p>So my second impression of the RaspberryPi device is that it's a good candidate as the next "shiny" thing to obsess geeks. It's always a good sign if just booting the device up produces a positive response.</p>
+
+	<p>After a bit of head scratching, password guessing and general faffing about with the monitor we switched the device off, removed the <a href="http://en.wikipedia.org/wiki/Secure_Digital">SD card</a> and mounted it on one of our laptops in order to add a user <em>by hand</em>. Unfortunately, we forgot to examine the sudoers file so although we could log in, we couldn't really do anything "dangerous" (i.e. interesting).</p>
+
+	<p>Fast forward to today: now that I've purchased the required leads and other gubbins I've booted the device this afternoon, created a "pyconuk" user, made sure it has a home directory and is in the sudoers list (actually, that just means adding it to the appropriate group).</p>
+
+	<p>Remembering back to my first explorations with Linux back in 1997 I also hesitantly typed <code>startx</code> and waited for things to blow up. Amazingly the thing worked and a desktop appeared (at the rather amazing resolution of 1920&#215;1080). It appears that the window manager is <a href="http://openbox.org/">OpenBox</a> and IceWeasel (Firefox) is also installed.</p>
+
+	<p>I also decided to check out Python support. Turns out Python 2.6.6 is installed. I've made sure we have <code>pip</code> and <code>virtualenv</code> installed, <code>apt-got</code> a whole bunch of other Python related packages and <code>GIT</code> (to allow us to grab code). I even managed to get <a href="http://pygame.org">PyGame</a> working in a stuttery sort of a way. Sound appears <strong>not</strong> to work though. Not sure why and my focus this afternoon has been to get a passable Python environment working rather than investigate hardware problems and configuration issues.</p>
+
+	<p>Finally, I noticed <a href="http://www.raspberrypi.org/2011/09/kidsruby-on-raspberry-pi-another-video-demo/">this post about a bunch of Ruby guys</a> who've managed to get <a href="http://www.kidsruby.com/">KidsRuby</a> running on the device. One of my aims for this weekend is to get something similar done for Python. Hey look, I've even <a href="https://github.com/ntoll/RaspberryPy">got a Github repository</a> set up where we can coordinate.</p>
+
+	<p>Can the UK's Python community create an interactive set of programming lessons for Python, written in Python for the RaspberryPi?</p>
+
+	<p>I'll keep you posted.</p>
+
+	<p><small>Raspberry image credit: <a href="http://www.flickr.com/photos/veganfeast/4295739041">http://www.flickr.com/photos/veganfeast/4295739041</a> used under a <a href="http://creativecommons.org/licenses/by/2.0/deed.en_GB">Creative Commons</a> license.</small></p>
+
+
+
+ 
+<hr/>
+<h1><a href="/article/teach-our-kids-to-code-or-not">Teach our kids to code (or not)?</a></h1><p class="published_on">Wednesday 14 September 2011 (01:55PM)</p>
+
+
+	<p>Three things have prompted me to write my first blog post in over almost year:</p>
+
+	<ol>
+
+		<li><a href="http://epetitions.direct.gov.uk/petitions/15081">This petition</a> encouraging the government to mandate the teaching of software development to ten year old kids in the UK.</li>
+
+		<li>The <a href="http://www.raspberrypi.org/">RaspberryPi</a> project who are creating a cheap (&pound;20) computer to encourage kids to tinker.</li>
+
+		<li>Digging out my old <a href="http://en.wikipedia.org/wiki/BBC_Micro">BBC Micro</a> for my kids on a recent trip to my parent's house (see the picture below).</li>
+
+	</ol>
+
+	<p><img src="/static/images/97.jpg" title="Programming" alt="Programming"  /></p>
+
+	<p>All three points are related to the question: how do we encourage children to engage in programming? Before continuing I want to make it unambiguously clear that <strong>I believe children should be encouraged to program</strong>.</p>
+
+	<p>When I first saw the <a href="http://epetitions.direct.gov.uk/petitions/15081">petition</a> on Twitter my first reaction was, "yeah, right on! I'll sign up" and duly signed.</p>
+
+	<p>However, my experience as both a professional computer programmer and former senior teacher in the UK's state sector leads me to believe I've made a mistake when signing the petition.</p>
+
+	<p>It states,</p>
+
+	<blockquote>
+
+		<p>"Start teaching coding as a part of the curriculum in Yr 5. If it can be introduced as a part of the central curriculum in Year 5, then by the time those kids are drawn up through the education system, there would be far less of a disparity between the sexes - and maybe even an increased number of young people with an ability to manipulate open data, relate to code and challenge each other to design and build the digital products that we have not even begun to imagine. Year 8 is too late, we are losing the female coders and we need this generation to help us code a better country."</p>
+
+	</blockquote>
+
+	<p>All laudable aims.</p>
+
+	<p>However, if the UK's Department of Education becomes involved and tells teachers to "start teaching coding as part of the curriculum in Yr 5" then we're doomed. Here's why&#8230;</p>
+
+	<p>First of all, where do you put such lessons in an already crowded curriculum? Secondly, who should teach "coding"? Thirdly (and most importantly), who decides what to teach? </p>
+
+	<p>The first problem is a question of priority. It has been my experience that in the UK priorities are directly linked to school results. For primary schools (who teach Yr 5) it means the SAT results for English, Maths and Science for the year 6 cohort leaving to embark on their secondary education. All through years 3, 4, 5 and 6 the priority seems to be focussed on getting the kids prepared for these tests (in years 1 and 2 the priority is for the SAT tests taken at the end of year 2). I suspect that if "coding" became part of the year 6 school results then schools would pay attention. Otherwise it'd be something the kids did on a Friday afternoon between P.E. and Music after a morning full of English, Numeracy (not Maths) and Science.</p>
+
+	<p>The second problem concerns skills and resources. Teaching is the hardest job I've ever had (I was a secondary head of music). Teaching in key stages 1 and 2 (Primary) strikes me as being <strong>even harder</strong> than teaching in key stages 3 and 4 (Secondary). You have to know how to do so much (which is why good teachers are so rare). Add all the bureaucracy, fads and government directives then you get a well-meaning unholy mess that works sometimes but more often than not fails spectacularly. Can you imagine the reaction from teachers when "coding" is introduced into this pot of educational stew? If you think teachers have lots of holidays in which they could learn how to program then think again: when do you think they do their planning, re-organisation of classrooms and marking of course-work? The only reasonable solution I can see would be for a specialist teacher of programming to take a lesson each week. But then the school would have to pay for them and it becomes a question of what each individual school sees as being a priority (see point one).</p>
+
+	<p>The third problem is the most interesting: Who decides what to teach? In the UK we have a national curriculum that tells teachers what they should teach so it's the government who decides. This has the advantage of ensuring all schools teach a worked out basic curriculum. It also has the <em>disadvantage</em> that all schools teach a worked out basic curriculum. Given the rapid change in the technology world and the slow rate of change in the educational world, is it possible that a worked out national curriculum would be any good? I have my doubts. I also worry that <em>making</em> kids have programming lessons is a great way to dissuade the next generation. Perhaps it should be like learning a musical instrument, everyone should have the opportunity to learn but only <strong>if they want to</strong>. Programming is not everyone's cup of tea.</p>
+
+	<p>This leads me to <a href="http://raspberrypi.org/">RaspberryPi</a> &#8211; a cheap computer for kids to tinker with. I personally think this is a far superior way to engage kids in programming. To my (musician's) eyes the RaspberryPi device is like giving kids musical instruments. They're fun, kids can play with them and make them their own with nothing more than a chance to experiment without adult intervention. This builds upon what kids do naturally and is exactly what happened when I found my old BBC at the weekend: my kids had a go themselves and were, within minutes, playing around and having fun <strong>programming</strong>.</p>
+
+	<p>Does this require a change in the national curriculum? Of course not.</p>
+
+	<p>Finally there is the essential consideration of kids who don't have access to introductory books on programming, a computer or supportive parents.</p>
+
+	<p>Perhaps a better petition would call for a RaspberryPi to be given to every child in year 5 along with pre-installed self-paced software that teaches programming.</p>
+
+
+
+ 
+
+<p><a href="/articles">View all articles</a></p>
+{% endblock content %}
