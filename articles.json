@@ -1,5 +1,10 @@
 [
   {
+    "date": "2012-08-09 12:00:00", 
+    "slug": "europython-2012", 
+    "title": "Europython 2012"
+  }, 
+  {
     "date": "2012-01-25 13:34:00", 
     "slug": "how-to-run-an-awesome-code-dojo", 
     "title": "How to Run an Awesome Code Dojo"

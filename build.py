@@ -29,7 +29,7 @@ rss = Template(u"""<?xml version"1.0" ?>
         <title>{{ item.title }}</title>
         <link>http://ntoll.org/article/{{ item.slug }}</link>
         <description>{{ item.content }}</description>
-        <pubDate>{{ item.date }}</pubDate>
+        <pubDate>{{ item.pub }}</pubDate>
     </item>
     {% endfor %}
 </channel>
@@ -53,6 +53,9 @@ for article in articles[:3]:
     title = '<h1><a href="/article/%s">%s</a></h1>' % (article['slug'], article['title'])
     content = title + content
     article['content'] = content
+    date = datetime.strptime(article['date'], '%Y-%m-%d %H:%M:%S')
+    pub = date.strftime('%a, %d %B %Y %H:%M:%S GMT')
+    article['pub'] = pub
     rss_list.append(article)
     home.append(content)
 
