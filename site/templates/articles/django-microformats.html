@@ -44,51 +44,21 @@ git clone git://github.com/ntoll/microformats.git
 
 	<p>To use the template filters you need to register the application and add:</p>
 
-<pre>
-
-<code>
-
-{% load microformat_extras %}
-
-</code>
-
-</pre>
+<pre><code>{{ "{% load microformat_extras %}" }}</code></pre>
 
 	<p>to the top of the template you're using.</p>
 
 	<p>For an example of this in use check out the end of the following test file:</p>
 
-<pre>
-
-<code>
-
-microformats/unit_tests/test_templatetags.py
-
-</code>
-
-</pre>
+<pre><code>microformats/unit_tests/test_templatetags.py</code></pre>
 
 	<p>Running the unit tests (./manage.py test microformats) will result in an example file demonstrating the HTML markup produced by the template filters:</p>
 
-<pre>
-
-<code>
-
-microformats/unit_tests/html_test/microformat_test.html
-
-</code>
-
-</pre>
+<pre><code>microformats/unit_tests/html_test/microformat_test.html</code></pre>
 
 	<p>I've included the Oomph javascript library so you can play with the microformats if you open the file in your browser. If you're using Firefox try it with the Operator add-on. IE8 supports Microformats natively.</p>
 
 	<p>This is a first shot at integrating Microformats into Django. There are missing microformats and I'm pretty sure some of the models could be improved as could the template filters. Inevitably the code needs to be cleaned up too. I'll be using this library in a new web-application so expect this code to change as I find flaws and gremlins through using it "in anger".</p>
 
 	<p>Feedback would be most welcome.</p>
-
-
-
-
-
- 
 {% endblock content %}

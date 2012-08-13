@@ -30,7 +30,7 @@ def article(title='home'):
     try:
         result = render_template('articles/%s.html' % title)
         return result
-    except:
+    except Exception, ex:
         abort(404)
 
 @app.errorhandler(404)
