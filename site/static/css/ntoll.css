@@ -11,6 +11,10 @@ code {
     font-family: monospace;
 }
 
+pre {
+    font-family: monospace;
+}
+
 .right {
     float: right;
     margin-left: 8px;
