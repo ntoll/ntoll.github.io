@@ -4,9 +4,12 @@
 
 <p>I've recently had the pleasure of taking part in two hacker
 events organised within the context of healthcare and, specifically, the UK's
-National Health Service (NHS). To be clear, I am using the term
+National Health Service (note for Americans who missed the opening of the
+Olympics: it's the state sponsored monopoly on the "death panels" we use to
+decide which of our senior citizens are to be terminated). To be clear (and
+more seriously), I am using the term
 <em>"hacker"</em> in the way it is used within Information Technology
-(IT) circles: a hacker is a person with a passion for exploring and solving
+circles: a hacker is a person with a passion for exploring and solving
 problems through writing and sharing software.</p>
 
 <p>Over last weekend I was in Liverpool to attend the second
@@ -15,18 +18,12 @@ designers and developers. Here's my buddy and the originator of the event,
 <a href="http://twitter.com/drcjar">Carl</a>, providing more details about the
 aims and objectives of NHS Hackday:</p>
 
+<div>
 <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/sgCgszvGAfI?version=3&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/sgCgszvGAfI?version=3&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+</div>
 
-The modus operandi of the weekend was simple: anyone
-could pitch an idea as a lightning talk on the Saturday morning (lightning
-talks are strictly time bound - in this case, two minutes), people came
-together to investigate and work on the most interesting things presented and,
-on the Sunday afternoon, presented the fruits of the labours to a panel of
-experts and big-wigs from the worlds of health and technology. If you
-were lucky, you'd be given a prize.</p>
-
-<p>On Monday and Tuesday I was invited to take part in a hackathon organised
-by the UK's
+<p>After this, on the Monday and Tuesday, I was invited to take part in a
+hackathon organised by the UK's
 <a href="http://www.dh.gov.uk/en/index.htm">Department of Health</a>. Officials
 and big-wigs from the DoH provided a diverse group of ten developers and
 designers with a problem: to build an "innovation platform" in 48 hours. Said
@@ -35,17 +32,29 @@ throughout Monday. On Tuesday afternoon we presented our work to a couple of
 them.</p>
 
 <p>Both events were positive, energetic and fun. Unfortunately, they also led
-me to the conclusion that Information Technology provision within the
-National Health Service is Fucked Up Beyond All Recognition (FUBAR). While I
-conceed this assertion is intentionally couched in a provocative way, I doubt
-the sentiment will come as a surprise to those working within the NHS.</p>
+me to the conclusion that Information Technology (IT) provision within the
+National Health Service (NHS) is Fucked Up Beyond All Recognition (FUBAR).
+While I concede this assertion is intentionally couched in a provocative way,
+I doubt the sentiment will come as a surprise to those working within the
+NHS.</p>
 
 <p>Taking each event in turn, I'd like to explain why I've reached this
 conclusion since it's important to back up such negative assertions with
-concrete evidence (unfortunately, these two days provide plenty of material).
+concrete evidence (unfortunately, these two events provide plenty of material).
 </p>
 
-<h2>NHS Hackday - The e-Portfolio Data Liberation Front</h2>
+<h2>NHS Hackday - The ePortfolio Data Liberation Front</h2>
+
+<p>The modus operandi of the weekend was simple: anyone
+could pitch an idea as a lightning talk on the Saturday morning (lightning
+talks are strictly time bound - in this case, two minutes), people came
+together to investigate and work on the most interesting things presented and,
+on the Sunday afternoon, presented the fruits of their labours to a panel of
+experts and big-wigs from the worlds of health and technology. If they were
+lucky, they got a prize.</p>
+
+<p>Somehow, I got involved in a group called the ePortfolio Data Liberation
+Front...</p>
 
 <p>Every junior doctor working as a physician within the UK's hospitals has to
 demonstrate that they're at least competent given their level of
@@ -84,12 +93,12 @@ and consultants at the hack day were unanimously negative (and sometimes
 venomous).</p>
 
 <p>I happened to meet the author of the afore mention blog, <a
-href="http://twitter.com/_elljay_">LJ</a> and another doctor <a
-href="http://twitter.com/marcus_baw">Marcus Baw</a> on the first morning of the
+href="http://twitter.com/_elljay_">LJ</a> and another doctor, <a
+href="http://twitter.com/marcus_baw">Marcus Baw</a>, on the first morning of the
 hack day. We discussed the various problems with the current offering and
 quickly came to the conclusion that helping trainee's to get to their data was a
 fundamental issue. Unfortunately, there appeared to be a conflict
-between what is in the ePortfolio's bet interest and the interests of their
+between what is in the ePortfolio's best interest and the interests of their
 users.</p>
 
 <p>If a trainee can easily download their data (after all, who else's data is
@@ -110,8 +119,7 @@ to mean downloading, parsing and cleaning) of data. Here's
 how I did it using Python (it would have been a lot shorted had their log-in
 form not been such a mess):</p>
 
-<pre><code class="python">
-import requests
+<pre><code class="python">import requests
 import lxml.html
 import getpass
 
@@ -176,25 +184,25 @@ if __name__ == '__main__':
     session = signIn(username, password)
 </code></pre>
 
-<p>So far, so good. Given the <code>session</code> object created above it's
-very simple to browse the site as if you're a signed in user and download
-the HTML you need to scrape:</p>
+<p>So far, so good. Given the <code>session</code> object created above, it's
+simple to download the HTML as if you were a logged in user:</p>
 
-<pre><code class="python">
-# Get the user's home page.
+<pre><code class="python"># Get the user's home page.
 home = session.get('https://nhseportfolios.org/Auth/SitePages/Trainee/Default.aspx')
 </code></pre>
 
 <p>Unfortunately, the HTML that ePortfolio returns is terrible.</p>
 
-<p>It is inconsistent, un-idiomatic (tables within tables..?), contains
+<img src="/static/images/shit.jpg" style="float: left; margin-right: 16px;"/>
+
+<p>It is inconsistent, un-idiomatic (I saw at least one nested table), contains
 little or no semantic stylesheet or id attributes and is a veritable tag soup of
 awfulness. As a result, extracting the important data from the raw HTML was
 a tale of woe. It was the cause of most of my frustrations over the weekend.
 I'd have had more fun sticking forks in my eyes.</p>
 
 <p>My immediate reaction was a feeling of <a href="http://www.quora.com/wordsthatshouldexistinenglish/Fremdsch%C3%A4men-German-to-feel-ashamed-for-somebody-else-but-also-instead-of-somebody-else-who-actually-should-feel">fremdsch&auml;men</a>.
-Surely the developers at ePortfolio were aware that both from an untechnical
+Surely the developers at ePortfolio were aware that both from a non-technical
 "external" point of view and an "internal" view of their HTML the site
 sucked harder than a black hole? How could who-ever is in charge of ePortfolio
 allow this to happen?</p>
@@ -205,13 +213,12 @@ decided to make the system a mandatory monopoly was, not to put too finer point
 on it, hugely misinformed, unconcerned with trainee doctor's requirements and
 foolish.</p>
 
-<img src="/static/images/shit.jpg"/>
-
 <p>Happily, working with such a smart, motivated and jolly couple of doctors
 was the highlight of the weekend because they are a beacon of hope. LJ and
 Marcus understand technology and care passionately that it becomes a force for
 improving healthcare in the UK rather than continuing to be the root of so
-much frustration. This is only one instance of a wider </p>
+much frustration. Obviously, people like them need to be in charge of making
+IT precurement decisions.</p>
 
 <p>I'm also pleased that we were awarded second place by the judges.
 A better prize would be to open-source the ePortfolio
@@ -223,13 +230,13 @@ and the resulting exchange of comments with one of ePortfolio's developers.</p>
 
 <h2>Sonar - Surfacing Innovation from within the NHS</h2>
 
-<p>Arriving home hot foot from Liverpool I was immediately travelling down to
+<p>Arriving home, hot foot from Liverpool, I was immediately travelling down to
 London for, well, I wasn't sure what...</p>
 
 <p>Ten developers and designers gathered at the Design Council in London under
 the auspices of the Department of Health. We also met managers from the health
 care sector and they had decided that the NHS needed an
-"innovation platform to surface best practice". Once we'd parsed the
+"innovation platform to surface best practice" (or something like that). Once we'd parsed the
 <a href="http://www.bullshitbingo.net/">buzzword bingo</a> it became clear that
 they wanted something akin to
 <a href="http://news.ycombinator.com/">Hacker News</a> (the premier website
@@ -242,27 +249,27 @@ stories that the site's members vote as most interesting.</p>
 decided to create <a href="http://nhs-innovation.herokuapp.com/">NHSonar</a>,
 a site for surfacing innovation within the NHS.</p>
 
-<img src="/static/images/sonar.jpg" style="float: right;"/>
+<img src="/static/images/sonar.jpg" style="float: right; margin-left: 16px;"/>
 
 <p>It was a lot of fun and we managed to build something close to the manager's
 original vision (you should be able to submit innovations upon which
 other users could vote and comment with the most popular innovations on the
 front page). All this was done within two working days.</p>
 
-<p>So we come to the crux of this blog post: badly written software that
-costs an arm and a leg, that's foisted on healthcare professionals and derived
-from a top-down style of management results in the terrible state we're in
+<p>So we come to the crux of this blog post: expensive, badly written software
+that's foisted on healthcare professionals via a top-down style of management
+results in the terrible state we're in
 right now. Happily, despite having their collective legs pulled about the
 over use of business buzzwords, enlightened healthcare managers understand that
 "surfacing innovation" is an essential part of stopping the rot.</p>
 
-<p>Seriously, if a handful of hacker-types, working in an agile manner with
-open-source tools can create an innovation site in 48 hours can you imagine
+<p>If a handful of hacker-types working in an agile manner with
+open-source tools can create an innovation site in 48 hours, can you imagine
 what might be achieved if the government, senior healthcare professionals
-and managers engaged with the hacker/open-source community.</p>
+and managers engaged with the free software community?</p>
 
 <p>One positive outcome would be managers who don't speak "buzzword" - they'd
-be fluent in techno-babble. Perhaps, on second thought...</p>
+be fluent in "techno-babble" instead. Perhaps, on second thoughts...</p>
 
 <p>:-)</p>
 <hr/>
