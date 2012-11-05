@@ -1,5 +1,10 @@
 [
   {
+    "date": "2012-11-05 08:00:00", 
+    "slug": "tdd-cargo-cult", 
+    "title": "Test Driven Development Cargo Cult"
+  }, 
+  {
     "date": "2012-10-09 21:30:00", 
     "slug": "pyconuk2012", 
     "title": "PyconUK 2012"
