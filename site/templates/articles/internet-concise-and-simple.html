@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>The Internet ~ Concise and Simple</h1>
+<p class="published_on">Wednesday 5th December 2012 (09:30AM)</p>
+
+<p>The Internet is a decentralised global network of computers that
+communicate using different yet related protocols.</p>
+
+<p>A protocol is simply an agreed set of rules and conventions used to
+transfer information. For example, although nothing to do with the Internet,
+Morse code is a sort of communication protocol.</p>
+
+<a href="http://www.flickr.com/photos/rickz/2207171580/">
+    <img src="/static/images/strata.jpg" alt="Strata - Coyote Buttes, Arizona"/>
+</a>
+
+<p>For the Internet to work, protocols are organised in to layers: each layer
+provides specific functionality needed to make the complete strata of layers
+work as a whole. Layers depend upon each other with lower level layers
+providing useful services for the layers above. In the very lowest layer
+are protocols concerning how information is physically sent from one device to
+another. At the very highest layer are protocols for information sharing
+systems such as the <a href="http://www.w3.org/">World Wide Web</a> (WWW or
+just the Web), <a href="https://en.wikipedia.org/wiki/Email">Email</a>,
+<a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay
+Chat</a> (IRC) and <a href="https://en.wikipedia.org/wiki/Voice_over_IP">Voice
+Over IP</a> to name but a few.</p>
+
+<p>The layered implementation of protocols has been formalised by the
+<a href="http://www.iso.org/">ISO</a> (International Standards Organisation)
+as the
+<a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=20269">Open Systems Interconnection</a>
+model.  The model has seven layers that I briefly describe below (each has a
+summary followed by an analogy to help place the layer in context).</p>
+
+<ol>
+    <li><em>Physical layer</em> - describes the physical characteristics of a
+    means of communication. For example, protocols at this level specify
+    voltages, layout of plugs and sockets, radio frequencies and so on,
+    depending on the nature of the physical medium used for communication. A
+    common analogy is that this layer is like describing roads as made of
+    asphalt, traffic lights as having three colours and certain markings being
+    painted on the road.</li>
+    <li><em>Data link layer</em> - concerns the transfer of information
+    between adjacent nodes in a network. Some protocols at this level
+    detect and possibly correct errors that may occur in the lower level
+    physical layer. To continue the transport related analogy, this layer is
+    like a traffic officer controlling and directing the flow of traffic
+    between adjacent neighbourhoods or the practice of stopping at red traffic
+    lights and understanding who has right of way at a roundabout.</li>
+    <li><em>Network layer</em> - contains protocols that describe how
+    information should be routed across a network. This may also include a
+    description of how messages should be forwarded to their intended
+    recipient. Think of this layer as fulfilling a function similar to that of
+    a navigator map reading and listening to traffic reports in order to
+    create the route for a long car journey between two distant locations.</li>
+    <li><em>Transport layer</em> - gives the impression of linking places on
+    the network for a (usually reliable) exchange of information. This may
+    include error detection and correction, flow control (how much information
+    is sent) and segmentation (how messages are split up in to
+    their constituent parts and re-assembled at the receiving end). This is
+    similar (although not exactly the same as) being able to send letters
+    between two different places with the Post Office ensuring that posting
+    a letter results in it being delivered to the right place.</li>
+    <li><em>Session layer</em> - constitutes the mechanisms by which
+    communication is opened, closed and managed between things (applications)
+    attempting to communicate over the network. For example, if an open line of
+    communication between two parties is interrupted then the machinations of
+    this layer will attempt to reconnect. It would be in this layer that the
+    concept of "letter" would be defined along with conventions such as
+    starting letters with "Dear Sir" and so on.</li>
+    <li><em>Presentation layer</em> - translates the raw data (information)
+    sent by one application to another in to something that is formatted
+    correctly for sending over the network. This may include serialising
+    complex data structures into strings of characters or describing meta-data
+    such as the total size of the message. It is often at this
+    level that encryption takes place to secure communications between two
+    parties. This layer is analogous to writing a letter on a piece of paper
+    and putting it in an envelope with an address and stamp on the front.</li>
+    <li><em>Application layer</em> - involves creating and consuming
+    messages needed for the correct functioning of applications that work via
+    the network. This includes such responsibilities as generating and checking
+    certain required fields or ensuring the correct structure of the message
+    before it is acted upon or sent by the associated application. This is,
+    perhaps, similar to filling in a tax return with the required information
+    before posting it back to the revenue collector (where the "application" is
+    the collection of taxes).</li>
+</ol>
+
+<p>Another important concept is that messages are split up in to small chunks
+of data, sent over the network and then reassembled at the recipient. Each
+protocol has a different name for such chunks of data: for example, at the
+data link layer they are called "frames", at the network layer "packets" and at
+the transport layer they are called "segments" or "datagrams". Chunks of data
+from higher level protocols are wrapped within those of the lower levels.</p>
+
+<p>Such chunks consist of two types of data: control information and the
+payload (containing data from the higher level protocols). Control information
+is used by the associated protocol to fulfil its function. Often this will
+include error checking capabilities such as a
+<a href="https://en.wikipedia.org/wiki/Checksum">checksum</a> (a number
+deterministicly generated from the payload of the chunk) used to validate the
+content of the payload.</p>
+
+<p>Furthermore, each connected device needs to have a unique address so it can
+be found on the network. These are simply unique numbers called
+<a href="https://en.wikipedia.org/wiki/IP_address">IP addresses</a>,
+similar in purpose to telephone numbers - although the way they are used is
+very different. This type of functionality is implemented in the network
+layer, most commonly by the Internet Protocol (IP) - hence the name.</p>
+
+<p>Blocks of numbers are assigned to different "entities" (governments,
+educational institutions, organisations and companies) by the
+<a href="http://www.iana.org/">Internet Assigned Numbers Authority</a> (IANA).
+Such entities further assign sub-blocks to more local entities until you get
+down to the individual IP address level assigned to an individual machine.</p>
+
+<p>IP addresses generally come in two types reflecting the version of IP that
+they correspond to:
+<a href="https://en.wikipedia.org/wiki/IPv4">IPv4</a> and
+<a href="https://en.wikipedia.org/wiki/IPv6">IPv6</a> (I don't think there was
+ever an IPv5). The maximum number of IPv4 addresses is 4,294,967,296. While
+this may sound like a lot of potential addresses I'm afraid we've already run
+out of IPv4 addresses to assign. As a result IPv6 allows for a huge number
+of addresses: 340,282,366,920,938,463,463,374,607,431,768,211,456 (that's 2<sup>128</sup>). The Internet is currently transitioning from IPv4 to IPv6 and it
+looks like this will become a drawn out process.</p>
+
+<p>Unfortunately, humans are not very good at remembering long numbers so we
+refer to devices connected to the Internet with human-friendly domain names
+such as <a href="http://ntoll.org/">ntoll.org</a>,
+<a href="http://drogul.us">drogul.us</a> and
+<a href="http://bbc.co.uk">bbc.co.uk</a>. Whenever we make a request to these
+domains we must use the
+<a href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain Name
+System</a> (DNS) to map the domain name to the IP address of
+the correct device on the Internet (so, looking up the bbc.co.uk domain gives
+an IP address of a device owned by the
+<a href="https://en.wikipedia.org/wiki/BBC">BBC</a>). DNS is a distributed
+lookup service that is organised and run by domain name registrars (with whom
+you register your ownership of a domain) and policed, via appropriate laws and
+legal interventions, by governments and business interests (such as the
+<a href="https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America">RIAA</a> and <a href="https://en.wikipedia.org/wiki/British_Phonographic_Industry">BPI</a>).</p>
+
+<p>So far we've discovered how messages are sent to different devices connected
+to the Internet. However, any single device may be running several different
+networked applications at the same time (for example, an email client, a web
+server or a chat service). How do messages for specific applications get
+delivered so the right sort of information gets delivered to the right sort of
+application? The answer is via "ports". Ports are numbered endpoints on a
+specific device. Standards dictate how a port number maps to an application
+protocol. For example, unencrypted requests on the web get sent to port 80. The
+device's operating system (such as Windows or Linux) understands that requests
+should be handled by a web server and, if one is running, delivers the message
+to the application. Such applications are said to be "listening" on port X.
+However, applications are not forced to listen on the conventional port for
+their associated protocol.</p>
+
+<p>It is because of the existence of ports that there are many more
+devices connected to the Internet than there are IPv4 addresses. The Internet
+is, in fact, a collection of many local networks. Within each local network
+devices are assigned unique IP addresses <em>but</em> the device that is
+connected to the wider Internet (usually called a router) is only referred to
+by a single IP address. How can such a single address be used by all the
+devices on the local network to talk to devices on the wider network (which
+themselves may be hidden behind a single IP address for another local
+network)?</p>
+
+<p>The answer is Network Address Translation (NAT) where the router maps an
+external and unused port to an internal (local) device. For example, all
+requests to the router at such-and-such an IP address on port
+something-or-other could be simply forwarded to the device on the local
+network identified by the local (internal) IP address of 192.168.0.28.</p>
+
+<p>Finally, network traffic is policed by
+<a href="https://en.wikipedia.org/wiki/Firewall_(computing)">firewalls</a>
+using techniques such as IP address blocking. A firewall is much like a border
+control checkpoint: every chunk of data is examined and either discarded or
+allowed to pass depending on a set of rules. These rules are expressed in two
+ways: block everything except things that match the rules on a whitelist, or,
+accept everything apart from that which matches the rules on a blacklist. IP
+address blocking is a specific example of a firewall rule: blacklist any
+traffic to or from a specific block of IP addresses (such as those belonging
+to Google). Furthermore, some firewalls are sophisticated enough to do
+<a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">deep packet
+inspection</a> where the content of a chunk of network traffic is examined for
+the purposes of security, data mining, eavesdropping or censorship. Chunks that
+are deemed bad are not allowed through. Encryption at the higher
+levels of the Internet stack go some way to circumventing such measures
+although traffic analysis (an examination of network behaviour) can be used to
+infer the intent of a message. It is through these techniques that countries
+such as China limit their citizen's ability to exercise freedom of expression
+on the Internet.</p>
+
+<p>Of course, the details of specific protocols have not been explored in such
+a short essay. However, if you're interested in looking in to the specifics
+then you should investigate the Internet Engineering Task Force's (IETF)
+database of <a href="http://www.ietf.org/rfc.html">Requests for Comment</a>
+(RFC) used to define the various protocols.</p>
+
+<small>Image credit: &copy; 2007 <a href="http://www.flickr.com/photos/rickz/2207171580/">rickz</a> under a Creative Commons license.</small>
+{% endblock %}

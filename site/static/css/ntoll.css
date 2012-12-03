@@ -40,6 +40,11 @@ td, th {
     padding: 4px;
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
 /*
 hResume Styles
 */

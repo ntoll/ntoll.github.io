@@ -1,5 +1,3 @@
-Northackton Useless Machine [northackton-useless-machine]
-
 Make Simple [make-simple]
 The skill of explaining something as simple as possible is valuable. I
 want to practice this skill for explaining technological concepts to
