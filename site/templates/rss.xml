@@ -10,6 +10,201 @@
     </image>
     
     <item>
+        <title>The Internet ~ Concise and Simple</title>
+        <link>http://ntoll.org/article/internet-concise-and-simple</link>
+        <description><h1><a href="/article/internet-concise-and-simple">The Internet ~ Concise and Simple</a></h1><p class="published_on">Tuesday 4th December 2012 (08:30AM)</p>
+
+<p>Have you ever wondered what makes it possible to serve web pages like this
+one, deliver an email or join in a video conference, all seemingly in an
+instant? The answer is the Internet, a decentralised global network of
+computers that communicate using different yet related protocols.</p>
+
+<p>A protocol is a set of rules and conventions that explain how to communicate
+information. For example, although nothing to do with the Internet, Morse code
+is a sort of communication protocol.</p>
+
+<a href="http://www.flickr.com/photos/rickz/2207171580/">
+    <img src="/static/images/strata.jpg" alt="Strata - Coyote Buttes, Arizona"/>
+</a>
+
+<p>For the Internet to work, protocols are layered: each layer
+provides particular functionality needed to make the complete strata of layers
+work as a whole. Layers depend upon each other with lower levels
+providing services for the layers above.</p>
+
+<p>At the very lowest layer
+are protocols concerning how information is physically sent from one device to
+another. At the very highest layer are protocols for information sharing
+systems such as the <a href="http://www.w3.org/">World Wide Web</a> (WWW or
+just the "Web"), <a href="https://en.wikipedia.org/wiki/Email">Email</a>,
+<a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay
+Chat</a> (IRC) and <a href="https://en.wikipedia.org/wiki/Voice_over_IP">Voice
+Over IP</a> to name but a few.</p>
+
+<p>These layers have been formalised by the
+<a href="http://www.iso.org/">ISO</a> (International Standards Organisation)
+as the
+<a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=20269">Open Systems Interconnection</a>
+model. It has seven layers:</p>
+
+<ol>
+    <li>The <em>physical layer</em> describes the physical characteristics of
+    communication. For example, protocols at this level specify
+    voltages, layout of plugs and sockets, radio frequencies and so on
+    depending on the physical medium of communication. A helpful transport
+    based analogy is that it's like describing roads as being made of asphalt,
+    traffic lights as having three colours and certain markings being painted
+    where roads intersect.</li>
+
+    <li>The <em>data link layer</em> concerns the transfer of information
+    between neighbouring nodes in a network. Some protocols at this level
+    detect and possibly correct errors that may occur in the physical layer.
+    To continue the transport related analogy, this layer is the traffic
+    officer controlling and directing the flow of traffic between adjacent
+    neighbourhoods or the practice of stopping at red traffic lights and
+    understanding who has right of way at a roundabout.</li>
+
+    <li>The <em>network layer</em> contains protocols that describe how
+    information should be routed across a network. This may also include a
+    description of how messages should be forwarded to their intended
+    recipient. Its function is similar to that of a navigator reading a map and
+    listening to traffic reports in order to create the route for a long car
+    journey.</li>
+
+    <li>The <em>transport layer</em> gives the impression of linking places on
+    the network for a (usually reliable) exchange of information. This may
+    include error detection and correction, flow control (how much information
+    is sent at a time) and segmentation (how messages are split up in to
+    their constituent parts and re-assembled at the receiving end). This is
+    like being able to send letters: your post box and the recipients letter
+    box are connected together through the workings of the Post Office (the
+    transport layer).</li>
+
+    <li>The <em>session layer</em> defines how communication is opened, closed
+    and managed between devices communicating over the network. For example,
+    if an open line of communication between two devices is interrupted then
+    the protocols of this layer will attempt to reconnect. The
+    concept of "letter" would be defined in this layer along with conventions
+    such as starting letters with "Dear So-and-so".</li>
+
+    <li>The <em>presentation layer</em> translates raw data in to something
+    that can be sent over the network. This may include serialising
+    complex data structures into strings of characters or describing the
+    characteristics of the message, such as its total size. It is often at
+    this level that encryption takes place in order to secure communications.
+    This layer is analogous to writing a letter on a piece of paper and
+    putting it in an envelope with an address and stamp on the front.</li>
+
+    <li>The <em>application layer</em> involves creating and consuming
+    messages needed for applications that work via the network. This includes
+    generating and checking data fields or ensuring the correct
+    structure of the message. This is, perhaps, similar to filling in a tax
+    return with the required information before posting it back to the revenue
+    collector (where the "application" is the collection of taxes).</li>
+</ol>
+
+<p>Layers are not the end of the story. Messages are split in to chunks
+of data, sent over the network and then reassembled at the recipient. Each
+protocol has a different name for such chunks of data: for example, at the
+data link layer they are called "frames", at the network layer "packets" and at
+the transport layer they are called "segments" or "datagrams". Chunks of data
+from higher level protocols are wrapped within those of the lower levels.</p>
+
+<p>Data chunks contain two types of information: control information and the
+payload (containing data from the higher level protocols). Control information
+is used by the protocol to fulfil its function.</p>
+
+<p>Furthermore, each connected device needs to have a unique address so it can
+be found on the network. These are unique numbers called
+<a href="https://en.wikipedia.org/wiki/IP_address">IP addresses</a>
+implemented in the network layer, most commonly by the Internet Protocol (IP)
+- hence the name.</p>
+
+<p>Blocks of numbers are assigned to different "entities" (governments,
+educational institutions, organisations and companies) by the
+<a href="http://www.iana.org/">Internet Assigned Numbers Authority</a> (IANA).
+Such entities further assign sub-blocks until we arrive at a single IP address
+assigned to an individual device on the network.</p>
+
+<p>IP addresses generally come in two types reflecting the version of IP that
+they correspond to:
+<a href="https://en.wikipedia.org/wiki/IPv4">IPv4</a> and
+<a href="https://en.wikipedia.org/wiki/IPv6">IPv6</a>. The maximum number of
+IPv4 addresses is 4,294,967,296. While this may sound like a lot of potential
+addresses I'm afraid we've already run out of free IPv4 addresses. As a result
+IPv6 was designed to cater for a huge number of addresses:
+340,282,366,920,938,463,463,374,607,431,768,211,456 (that's 2<sup>128</sup>).
+The Internet is currently transitioning from IPv4 to IPv6.</p>
+
+<p>Because humans are no good at remembering long numbers we
+refer to devices connected to the Internet with human-friendly domain names
+such as <a href="http://bbc.co.uk">bbc.co.uk</a>. Whenever we make a request
+to a domain we must use the
+<a href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain Name
+System</a> (DNS) to map the domain name to the IP address of
+the correct device on the Internet (so, looking up the bbc.co.uk domain gives
+an IP address of a device owned by the
+<a href="https://en.wikipedia.org/wiki/BBC">BBC</a>). DNS is a distributed
+lookup service that is organised and run by domain name registrars (with whom
+you register your ownership of a domain) and policed, via laws and
+legal interventions, by governments and business interests (such as the
+<a href="https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America">RIAA</a>
+and <a href="https://en.wikipedia.org/wiki/British_Phonographic_Industry">BPI</a>).</p>
+
+<p>However, any single device may be running several different
+networked applications at the same time (for example, an email client, a web
+server or a chat service). Numbered "ports" on a connected device function in a
+similar way to mail boxes in a block of flats: applications know to "listen"
+on specific port numbers for only their messages. Standards dictate how certain
+port numbers map to particular application protocols. For example, unencrypted
+requests on the web get sent to port 80.</p>
+
+<p>It is because of the existence of ports that there are many more
+devices connected to the Internet than there are IPv4 addresses. The Internet
+is, in fact, a collection of many local networks. Within each local network
+devices are assigned unique IP addresses <em>but</em> the device that is
+connected to the wider Internet (usually called a router) is only referred to
+by a single external IP address. How can such a single address be shared by all
+the devices on the local network?</p>
+
+<p>The answer is Network Address Translation (NAT) - the router maps an
+external and unused port to an internal (local) device. For example, all
+requests to the router on port something-or-other could be simply forwarded to
+the device on the local network identified by a locally unique (internal) IP
+address.</p>
+
+<p>Finally, network traffic is policed by
+<a href="https://en.wikipedia.org/wiki/Firewall_(computing)">firewalls</a>
+using techniques such as IP address blocking. A firewall is like a border
+control checkpoint: every chunk of data is examined and either discarded or
+allowed to pass depending on a set of rules. IP address blocking is a specific
+example of a firewall rule: blacklist any traffic to or from a specific block
+of IP addresses (such as those belonging to Google).</p>
+
+<p>Some firewalls are sophisticated enough to do
+<a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">deep packet
+inspection</a> where the content of network traffic is examined for
+the purposes of security, data mining, eavesdropping or censorship. Chunks that
+are deemed bad are not allowed through. Encryption at the higher
+levels of the Internet stack go some way to circumventing such measures
+although traffic analysis (an examination of network behaviour) can be used to
+infer the intent of a message.</p>
+
+<p>Unfortunately, the details of specific protocols can't be explored in such
+a short introductory essay. However, if you're interested in finding out more
+you should investigate the Internet Engineering Task Force's (IETF)
+database of <a href="http://www.ietf.org/rfc.html">Requests for Comment</a>
+(RFC) used to define the various protocols.</p>
+
+<p>And remember, most of what is described above happens almost instantaneously
+to connect computers on opposite sides of the planet. That is something that fills me with amazement.</p>
+
+<small>1489 words. Image credit: &copy; 2007 <a href="http://www.flickr.com/photos/rickz/2207171580/">rickz</a> under a Creative Commons license.</small>
+</description>
+        <pubDate>Tue, 04 December 2012 08:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Concise and Simple</title>
         <link>http://ntoll.org/article/concise-and-simple</link>
         <description><h1><a href="/article/concise-and-simple">Concise and Simple</a></h1><p class="published_on">Monday 3rd December 2012 (08:30AM)</p>
@@ -136,48 +331,6 @@ However, even <strong><em>I</em></strong> have <a href="http://en.wikipedia.org/
 <p>:-)</p>
 </description>
         <pubDate>Sat, 01 December 2012 09:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Northackton and the Useless Machine</title>
-        <link>http://ntoll.org/article/northackton-useless-machine</link>
-        <description><h1><a href="/article/northackton-useless-machine">Northackton and the Useless Machine</a></h1><p class="published_on">Sunday 18th November 2012 (05:30PM)</p>
-
-<p>When time permits I really enjoy attending
-<a href="http://northackton.stdin.co.uk/blog/">Northackton</a>, a local hacker
-/ maker group. Last Monday I took my middle son, Sam (8 years old), along to
-a meeting advertised as a "geek santa" session - an opportunity for attendees
-to build a geeky gift for a loved one in time for Christmas.</p>
-
-<p>We were all there to make
-<a href="http://www.instructables.com/id/The-Most-Useless-Machine/step1/Background/">useless machines</a> - wonderfully quirky devices imagined by
-<a href="http://en.wikipedia.org/wiki/Artifical_Intelligence">Artificial Intelligence</a> pioneer
-<a href="http://en.wikipedia.org/wiki/Marvin_Minsky">Marvin Minsky</a>
-and first built by the father of <a href="http://en.wikipedia.org/wiki/Information_Theory">information theory</a>,
-<a href="http://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a>.</p>
-
-<p>Between ten to fifteen of us turned up to be greeted by
-friend-of-Northackton <a href="https://sites.google.com/site/msraynsford/">Martin Raynsford</a>.
-Martin provided us all with kits (also available via
-<a href="http://msraynsford.blogspot.co.uk/2011/12/new-smaller-useless-box.html">his website</a>), instructions, encouragement and a helping
-hand when required. After a couple of hours we were all the proud owners of a
-working useless machine! Sam was especially pleased because he had a go
-soldering and the other attendees were very patient (and welcoming) by
-answering all his inevitable questions. He was also very impressed with the
-well provisioned <a href="https://en.wikipedia.org/wiki/Tuck_shop">tuck
-shop</a> (lots of chocolate and crisps!).</p>
-
-<p>But, what is a useless machine..? I'll let Sam explain...</p>
-
-<object width="420" height="315"><param name="movie" value="http://www.youtube.com/v/uPveo7I_yoQ?version=3&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/uPveo7I_yoQ?version=3&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-
-<p>If you ever find yourself in the Northampton area and at a loose end on
-a Monday evening, visit the <a href="http://northackton.stdin.co.uk/blog/">Northackton website</a>
-and check if there's a meeting, come along and say "hi". You could also
-<a href="http://twitter.com/northackton">follow the group on Twitter</a>.</p>
-
-</description>
-        <pubDate>Sun, 18 November 2012 17:30:00 GMT</pubDate>
     </item>
     
 </channel>
