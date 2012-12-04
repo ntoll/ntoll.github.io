@@ -144,21 +144,25 @@ and <a href="https://en.wikipedia.org/wiki/British_Phonographic_Industry">BPI</a
 
 <p>However, any single device may be running several different
 networked applications at the same time (for example, an email client, a web
-server or a chat service). Numbered "ports" on a connected device function in a
-similar way to numbered mail boxes in a block of flats: applications know to
-"listen" on specific port numbers for only their messages. Standards dictate
-how certain port numbers map to particular application protocols. For example,
-unencrypted requests on the web get sent to port 80.</p>
+server or a chat service). Numbered
+<a href="https://en.wikipedia.org/wiki/Network_port">ports</a> on a connected
+device function in a similar way to numbered mail boxes in a block of flats:
+applications know to "listen" on specific port numbers for only their messages.
+Standards dictate how certain port numbers map to particular application
+protocols. For example, unencrypted requests on the web get sent to port 80.</p>
 
 <p>It is because of the existence of ports that there are many more
 devices connected to the Internet than there are IPv4 addresses. The Internet
 is, in fact, a collection of many local networks. Within each local network
 devices are assigned unique IP addresses <em>but</em> the device that is
-connected to the wider Internet (called a router) only has a single external
+connected to the wider Internet (called a
+<a href="https://en.wikipedia.org/wiki/Router_(computing)">router</a>) only
+has a single external
 IP address. How can the router's single IP address be shared by all
 the devices on the local network?</p>
 
-<p>The answer is Network Address Translation (NAT) - the router maps an
+<p>The answer is <a href="https://en.wikipedia.org/wiki/NAT">Network Address
+Translation</a> (NAT) - the router maps an
 external and unused port to an internal (local) device. For example, all
 requests to the router on port something-or-other could be simply forwarded to
 the device on the local network identified by a locally unique (internal) IP
@@ -170,7 +174,7 @@ using techniques such as IP address blocking. A firewall is like a border
 control checkpoint: every chunk of data is examined and either discarded or
 allowed to pass depending on a set of rules. IP address blocking is a specific
 example of a firewall rule: blacklist any traffic to or from a specific block
-of IP addresses (such as those belonging outside China).</p>
+of IP addresses (such as those from outside China).</p>
 
 <p>Some firewalls are sophisticated enough to do
 <a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">deep packet
