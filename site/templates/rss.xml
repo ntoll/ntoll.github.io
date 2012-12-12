@@ -141,8 +141,8 @@ print int(hash.hexdigest().encode('hex'), 16)
 </code></pre></p>
 
 <p>This simply loads the complete text of
-<a href="http://www.gutenberg.org/cache/epub/2600/pg2600.txt">War and Peace</a>,
-uses a hashing
+<a href="http://www.gutenberg.org/cache/epub/2600/pg2600.txt">War and Peace</a>
+and uses a hashing
 algorithm called <a href="https://en.wikipedia.org/wiki/SHA-1">SHA1</a> to
 generate the <code>hash</code> that is printed on the screen as an
 integer (whole number). The resulting hash for War and Peace is the number:</p>
@@ -198,7 +198,7 @@ interactions) are usually <em>not</em> secured. I suspect this will remain the
 case until people realise that their on-line life is currently like living in a
 house with no curtains.</p>
 
-<p><small>Word count: 1443.
+<p><small>Word count: 1442.
 Image attribution: &copy; <a href="http://xkcd.com/177/">
 Randall Munroe</a> licensed under a
 <a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative
