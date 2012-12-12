@@ -104,8 +104,8 @@ decomposing a number into its constituent prime-number divisors. In other
 words, every whole number is the result of multiplying a unique set
 of prime numbers together. For example, to get the number 12
 use 2&times;2&times;3. As the number gets larger finding the constituent
-prime numbers becomes too hard to be solved in a realistic amount of time. The
-public and private keys are both huge prime numbers that result in
+prime numbers becomes too hard to be solved in a realistic amount of time.
+Public key cryptography uses two huge prime numbers that result in
 <em><code>n</code></em>, an even longer number whose length is measured in
 "bits" (the longer the better) and whose value is used by the cipher.
 Currently, <em><code>n</code></em> of 2048 bits length is considered secure
@@ -198,7 +198,7 @@ interactions) are usually <em>not</em> secured. I suspect this will remain the
 case until people realise that their on-line life is currently like living in a
 house with no curtains.</p>
 
-<p><small>Word count: 1445.
+<p><small>Word count: 1443.
 Image attribution: &copy; <a href="http://xkcd.com/177/">
 Randall Munroe</a> licensed under a
 <a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative
