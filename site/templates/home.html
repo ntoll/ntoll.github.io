@@ -13,7 +13,7 @@ corruption are just a few scenarios where privacy is both a reasonable and
 legitimate requirement.</p>
 
 <p>This need extends to our digital lives. For example, sensitive credit card
-details must be shared to complete on-line purchases. Furthermore,
+information is privately shared to complete on-line purchases. Furthermore,
 <em>you</em> may be that lover, doctor, engineer or political journalist in
 need of private communication via the Internet. Maybe you simply don't like
 the idea of others reading your personal digital communications.</p>
@@ -58,10 +58,10 @@ with the key can read such communication.<p>
 <p>Within a computing context the plaintext, ciphertext and key are all
 <a href="https://en.wikipedia.org/wiki/Digital">digital</a> assets - things
 that are ultimately represented by binary values. In
-other words, such assets are merely very large numbers. As a result, the cipher
-is only a mathematical function that encrypts with the numbers representing
-the plaintext and key in to a single number - the ciphertext.
-Decryption turns the ciphertext and key numbers in to the
+other words, such assets are merely very large numbers. Therefore, the cipher
+is only a mathematical function. It encrypts by turning the numbers
+representing the plaintext and key in to a single number - the ciphertext.
+Decryption turns the numbers representing the ciphertext and key in to the
 number representing the original plaintext.</p>
 
 <p>For cryptography to work both sender and receiver[s] must share information
@@ -69,20 +69,21 @@ about the cipher and key to be used for secure communication. This presents a
 problem: how should Alice and Bob share such fundamental information? Any
 communication between them at this stage is insecure because they are yet to
 share and agree upon the cryptographic means for secure communication.
-Furthermore, Eve may be listening in to intercept such details that may be used
-to listen in on the supposed secure communication. Alice and Bob find
-themselves in a crypto-chicken-and-egg situation.</p>
+Furthermore, Eve may be listening in to intercept such details and could use
+what she learns to listen in on the supposed secure communication. Alice and Bob
+find themselves in a crypto-chicken-and-egg situation.</p>
 
 <p>This is where public key cryptography provides an elegant solution. Rather
 than use a single key, participants have two: a public key that they
 share with the whole world and a private key that they keep for themselves.
 Because of the mathematical relationship between the two keys it is only
-possible to unlock a ciphertext with the <em>other</em> key in the pair. If
-Alice wants to send information to Bob she uses Bob's public key to encrypt
-her message and sends the resulting ciphertext. Importantly, only Bob can
-decrypt the message since only his private key can turn the ciphertext into
-plaintext. Alice can observe the complete exchange without gaining the
-information she needs to decrypt the message from Alice to Bob.</p>
+possible to decrypt a ciphertext with the <em>other</em> key in the pair. If
+Alice wants to send information to Bob she uses Bob's <em>public</em> key to
+encrypt her message and sends the resulting ciphertext. Importantly, only Bob
+can decrypt the message since only his <em>private</em> key can turn the
+ciphertext into plaintext. Alice can observe the complete exchange without
+gaining the information she needs to decrypt the message from Alice to Bob
+because Bob's private key is never transmitted.</p>
 
 <p>Public key cryptography (specifically the
 <a href="https://en.wikipedia.org/wiki/RSA_(algorithm)">RSA</a> algorithm) is
@@ -97,7 +98,7 @@ public and private keys are both huge prime numbers that result in
 "bits" (the longer the better) and whose value is used by the cipher.
 Currently, <em><code>n</code></em> of 2048 bits length is considered secure
 given currently available computing power (i.e. given a huge amount of
-computing power it would still take hundreds of years to crack).</p>
+computing power it would still take an inordinate amount of time to crack).</p>
 
 <p>In terms of the modus operandi of public key cryptography, that's about all
 you need to know without going in to technical details. There are many
@@ -131,23 +132,24 @@ print int(hash.hexdigest().encode('hex'), 16)
 <a href="http://www.gutenberg.org/cache/epub/2600/pg2600.txt">War and Peace</a>,
 uses a hashing
 algorithm called <a href="https://en.wikipedia.org/wiki/SHA-1">SHA1</a> to
-generate the <code>hash</code> which is then printed on the screen as an
-integer (whole number). The result being:</p>
+generate the <code>hash</code> that is printed on the screen as an
+integer (whole number). The resulting hash for War and Peace is the number:</p>
 
 <p><code>435515005527869578462696388723361351836071321997289162047109517397984640443675003720894549210723</code></p>
 
 Alice encodes this number with her private key
-and sends the resulting signature to Bob. Bob uses Alice's public key to
+and sends the resulting signature to Bob. Bob uses Alice's <em>public</em> key
+to
 decrypt the signature and retrieve the hash we generated above. Then <em>he</em>
 attempts to create <em>his own hash</em> of the complete text of War and
 Peace. If
-his matches Alice's hash he knows that both he and Alice are using the
+his hash matches Alice's he knows that both he and Alice are referencing the
 <em>same</em> digital asset. If the text for War and Peace had only one letter
 changed (either by mistake or because someone was tampering with it) then the
 hashes would have been different. As Bob knows only Alice has access to
 her private key, and only Alice's <em>public key</em> can decrypt such
-a signature then he can trust the provenance of the digital asset "signed" in
-such a way by Alice since only she could have created such a signature with her
+a signature then he can trust the provenance of the digital asset "signed"
+by Alice since only she could have created such a signature with her
 private key.</p>
 
 <p>It is important to acknowledge the political aspect of public key
@@ -170,7 +172,21 @@ keys so they can check your audio collection?</p>
 <p>An <a href="https://en.wikipedia.org/wiki/Orwellian">Orwellian</a> prospect
 if ever there was one.</p>
 
-<p><small>Word count: 1309.
+<p>Finally, development of such cryptographic technology is usually done in
+public by experts. It is open and public because problems and bugs are spotted
+quicker. Furthermore, designing and implementing cryptographic systems
+requires significant domain expertise. This convention ensures there are
+always freely available, well tested and well designed cryptographic libraries
+for non-expert programmers to re-use in their projects.</p>
+
+<p>The challenge for programmers and cryptographers is to make the use of
+strong encryption the norm. It is ubiquitous for on-line financial transactions
+but most other things (email, web browsing, chat and other such digital
+interactions) are usually <em>not</em> secured. I suspect this will remain the
+case until people realise that their on-line life is currently like living in a
+house with no curtains.</p>
+
+<p><small>Word count: 1445.
 Image attribution: &copy; <a href="http://xkcd.com/177/">
 Randall Munroe</a> licensed under a
 <a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative
