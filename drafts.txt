@@ -1,5 +1,3 @@
-The Web Made Simple [web-made-simple]
-
 Peer-to-Peer Made Simple [p2p-made-simple]
 
 Programming Made Simple [programming-made-simple]
@@ -8,7 +6,7 @@ Lisp Made Simple [lisp-made-simple]
 
 Taking the Long-term View [taking-the-long-term-view]
 
-Politics, Code, Data and the Drogulus [politics-code-and-the-drogulus]
+Politics, Programming, Data and the Drogulus [politics-code-and-the-drogulus]
 
 Drogulisp (Because I'm Sick of Javascript) [drogulisp-not-javascript]
 
