@@ -1,13 +1,13 @@
-Peer-to-Peer Made Simple [p2p-made-simple]
-
 Programming Made Simple [programming-made-simple]
 
 Lisp Made Simple [lisp-made-simple]
 
-Taking the Long-term View [taking-the-long-term-view]
+Taking the Long-term View [taking-the-long-term-view] (Fragments from now read in 2500 years).
 
 Politics, Programming, Data and the Drogulus [politics-code-and-the-drogulus]
 
 Drogulisp (Because I'm Sick of Javascript) [drogulisp-not-javascript]
 
 Heraclitus - My Kind of Grumpy [heraclitus-grumpy]
+
+What Nicholas Does Next - [what-nicholas-does-next]
