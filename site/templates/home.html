@@ -1,5 +1,222 @@
 {% extends "base.html" %}
 {% block content %}
+<h1><a href="/article/programming-concise-and-simple">Programming ~ Concise and Simple</a></h1><p class="published_on">Wednesday 30th January 2012 (08:00AM)</p>
+
+<p>(As with all "<a href="/article/concise-and-simple">concise and simple</a>"
+articles I assume no prior knowledge of the subject and keep the length to
+less than 1500 words.)</p>
+
+<p>This is a personal reflection on programming: the creation and curation of
+instructions that make computers do things. Instructions (also known as
+"<a href="https://en.wikipedia.org/wiki/Source_code">source code</a>" or just
+"code") are organised into
+<a href="https://en.wikipedia.org/wiki/Computer_program">programs</a> (or
+"<a href="https://en.wikipedia.org/wiki/Software">software</a>") that fulfil
+specific
+tasks. People who write programs are called
+<a href="https://en.wikipedia.org/wiki/Programmer">programmers</a>,
+developers, software engineers or (colloquially)
+<a href="https://en.wikipedia.org/wiki/Hacker_(term)">hackers</a>.</p>
+
+<p><img src="/static/images/code.png" alt="code"/></p>
+
+<p>Instructions are expressed in
+<a href="https://en.wikipedia.org/wiki/Programming_language">programming languages</a>
+that make it easier for humans to comprehend what is going on. So-called "high
+level" languages are easier for humans to work with than "low level" languages
+that express things in a way that is closer to the way the computer works. In
+all cases programs are transformed from the original programming language into
+the <a href="https://en.wikipedia.org/wiki/Machine_code">binary
+instructions</a> that cause the computer to function in a particular way.
+This transformation can happen in two ways:</p>
+
+<ul>
+    <li>The program is "compiled" in to binary instructions by a special
+    program called a
+    <a href="https://en.wikipedia.org/wiki/Compiler">compiler</a>. The result
+    is an "<a href="https://en.wikipedia.org/wiki/Executable">executable</a>"
+    run by the end user.</li>
+    <li>The program is "interpreted" by an <em>executable</em>
+    <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)">interpreter</a>
+    whose function is to act as a sort of on-the-fly translator of the
+    instructions.</li>
+</ul>
+
+<p>Both mechanisms have strengths and weaknesses. Because compiled programs
+have already been transformed in to the computer's binary instructions they
+are often much faster than interpreted programs where such
+transformations happen as the program is running. Yet interpreted programs
+offer the flexibility of adapting and changing themselves while they are run by
+the interpreter which makes it easier to solve certain sorts of programming
+problem. Sometimes a combination of these techniques is used:
+A <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">JIT</a>
+compiler will interpret until certain sets of instructions are
+obviously more frequently used, at which point <em>only the popular sets of
+instructions</em> get compiled "just in time" to make them faster.</p>
+
+<p>Sometimes programs work as expected and produce valuable results. More often
+they do not. The failure to make a computer work usefully is called a
+<a href="https://en.wikipedia.org/wiki/Computer_bug">bug</a>.
+There are generally two sorts of bug: the wrong outcome is correctly
+implemented (the design is wrong) or the expected outcome is wrongly
+implemented (the instructions are wrong). In any case, because computers are
+complex machines making them do something useful is surprisingly hard.</p>
+
+<p>Managing and taming complexity is one of the core tasks of a programmer. A
+common piece of advice given to junior developers is
+"<a href="https://en.wikipedia.org/wiki/Keep_it_simple_stupid">kiss</a>"
+(keep it simple, stupid!), for there are fewer things that could go wrong. As
+computing pioneer <a href="https://en.wikipedia.org/wiki/Tony_Hoare">Tony
+Hoare</a> explains,</p>
+
+<blockquote>"There are two ways of constructing a software design: One way is
+to make it so simple that there are obviously no deficiencies, and the other
+way is to make it so complicated that there are no obvious deficiencies. The
+first method is far more difficult."</blockquote>
+
+<p>Personally, I think creating simple and useful software is more like
+writing succinct yet powerful prose than opaque logical wizardry. This has
+an important side effect: simple and coherent code is easy to understand. Code
+that is easy to understand is easy to maintain. Maintaining code is the act of
+fixing bugs and curating instructions so things work efficiently (also known
+as <a href="https://en.wikipedia.org/wiki/Code_refactoring">re-factoring</a>).
+In this way a program is easy to improve as bugs are found and new features
+implemented.</p>
+
+<p>Some languages have been created with the explicit aim of making code
+easy to read and understand (such as <a href="http://python.org">Python</a>).
+Some developers promote certain development styles that they claim encourages
+programmers to produce high quality software. A classic example of this is
+<a href="https://en.wikipedia.org/wiki/Test-driven_development">test driven
+development</a> where developers write a failing test encapsulating a feature
+of their program before actually implementing the feature itself so the
+test eventually passes. Others (such as
+<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>) have
+tried to promote a
+<a href="https://en.wikipedia.org/wiki/Literate_programming">literate style of
+programming</a> where code is interspersed with natural language explanations
+that tell the "story" of the code.</p>
+
+<p>Another core skill of a programmer is de-constructing and analysing the
+problem that they are trying to solve. Often the problem is expressed in a
+vague and open-ended way and it is the task of the developer to precisely
+constrain the scope of the problem to enable them to create some
+useful outcome. A personal example from my first programming class illustrates
+this beautifully: my tutor explained that programs were merely instructions
+and that we had five minutes to write instructions telling him how to switch
+on the lights of the classroom. How hard could it be to write such
+instructions? Take a minute to think about what <em>you</em> would write (you
+may assume that the person following them knows about directions, actions and
+names of things).</p>
+
+<p>I can still remember my list:</p>
+
+<ul>
+    <li>Stand up.</li>
+    <li>Look around until you locate the light switch.</li>
+    <li>Walk in the direction of the switch.</li>
+    <li>Press the switch with your fingers.</li>
+    <li>Retrace your steps.</li>
+    <li>Sit down.</li>
+</ul>
+
+<p>Of course, I failed miserably. My tutor pointed out that he was already
+stood up, there were desks between him and the light switch and the damn lights
+were already on anyway. Thus, what appeared to be a simple problem
+(tell me how to switch on the lights) turned out to be far more complex than
+first imagined.</p>
+
+<p>Time and resources are also essential elements of software development:</p>
+
+<p>First, the developer needs to have a feel of how best to organise the
+program.  This means analysing their implementation of the
+<a href="https://en.wikipedia.org/wiki/Algorithm">algorithm</a> (the
+instructions at a conceptual level) to ensure that it is both timely and makes
+efficient use of resources like the computer's memory and
+<a href="https://en.wikipedia.org/wiki/Cpu">CPU</a>. Often
+this is expressed using <a href="https://en.wikipedia.org/wiki/Big_O_notation">big-O</a> notation.</p>
+
+<p>Second, programming usually involves a deadline. Customers need to know how
+much time it will take to finish software given a certain number of developers
+and some sort of collaborative development process. I've heard this described
+as "the cat herding problem". For example, Fred Brooks
+<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">famously observed</a>
+that adding developers to a struggling project only slows it down further.
+Furthermore, clients change their minds mid-project (in addition to providing
+vague problems like the one mentioned above) and there are always
+<a href="https://en.wikipedia.org/wiki/There_are_known_knowns">unknown
+unknowns</a> that add unforeseen time and effort to the project. If this were
+not enough, how do you coordinate teams of programmers who are all working on
+the same software?  It's like trying to get ten people to co-author a novel
+<em>at the same time</em>.</p>
+
+<p>Happily, developers have created methods and tools to help them work
+together. Small autonomous
+"<a href="https://en.wikipedia.org/wiki/Agile_software_development">agile</a>"
+teams are preferred over large managed cohorts of developers.
+<a href="https://en.wikipedia.org/wiki/Issue_tracking_system">Issue tracking
+systems</a> make it easy for clients to request and prioritise features,
+report bugs and give developers a clear audit trail upon which to base
+development decisions. Code is stored in
+<a href="https://en.wikipedia.org/wiki/Revision_control">version control
+systems</a> that allow developers to track each other's changes and
+resolve any conflicts in the software (for example, when two people edit the
+same piece of code). In fact, developers have become so good at this sort of
+thing that others are borrowing these tools and techniques (such as
+lawyers collaborating on complex legal documents using a version control
+system).</p>
+
+<p>Finally, programming is a political activity: making software
+means defining the laws that dictate how the digital world should be. Often
+this obvious fact is left unacknowledged. However, incumbent interests affected
+by the rise of digital culture (for example, the so-called "creative"
+industries represented by organisations such as the
+<a href="https://en.wikipedia.org/wiki/RIAA">RIAA</a>,
+<a href="https://en.wikipedia.org/wiki/MPAA">MPAA</a> and their ilk)
+have attempted, with some success, to change the law to limit the use of file
+sharing software used to distribute pirated content.</p>
+
+<p>Yet, programmers have turned the law to their advantage.
+<a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a>,
+founder of the <a href="http://fsf.org/">Free Software Foundation</a> (FSF),
+was fed up with closed dis-empowering software so set out
+<a href="https://www.gnu.org/philosophy/free-sw">four essential
+freedoms</a>:</p>
+
+<ul>
+    <li>The freedom to run the program, for any purpose (freedom 0).</li>
+    <li>The freedom to study how the program works, and change it so it does
+    your computing as you wish (freedom 1). Access to the source code is a
+    precondition for this.</li>
+    <li>The freedom to redistribute copies so you can help your neighbor
+    (freedom 2).</li>
+    <li>The freedom to distribute copies of your modified versions to others
+    (freedom 3). By doing this you can give the whole community a chance to
+    benefit from your changes. Access to the source code is a precondition for
+    this.</li>
+</ul>
+
+<p>These freedoms are enshrined in the
+<a href="https://www.gnu.org/licenses/gpl">General Public License</a> (GPL) -
+a license that subverts copyright (that seeks to expand the rights of creators
+at the expense of the rights of others) in to copy<em>left</em> (that seeks to
+expand the rights of everyone). There is one important exception that limits
+everyone: any modifications to source code should also be freely available
+under the GPL. While the GPL has been described as "communist",
+"un-American" and "cancerous", it is important to point out that the GPL is not
+anti-commerce and (I think intentionally) does not mention political
+motivations. Code covered by the GPL can be sold. It's how the FSF first raised
+money for their cause.</p>
+
+<p>There's a sentiment gaining in popularity: program, or be programmed. If you
+would like to learn to program, there are
+<a href="https://www.khanacademy.org/cs/tutorials/programming-basics">plenty</a> of
+<a href="https://www.udacity.com/courses">resources</a> available
+<a href="https://www.coursera.org/category/cs-programming">online</a>.
+
+<p><small>1499 words. Image credits: &copy; 2013 the author with
+<a href="http://instacode.linology.info/17689">this service</a>.</small></p>
+<hr/>
 <h1><a href="/article/northackton-marbles">Northackton Magic Marble Machines</a></h1><p class="published_on">Monday 21st January 2013 (10:45PM)</p>
 
 <p>This evening I attended another friendly
@@ -244,266 +461,5 @@ a-changin'</a>.</p>
 <p>:-)</p>
 
 <p><small>1499 words. Image credits: &copy; 2013 the author.</small></p>
-<hr/>
-<h1><a href="/article/the-web-concise-and-simple">The World Wide Web ~ Concise and Simple</a></h1><p class="published_on">Friday 21st December 2012 (08:30PM)</p>
-
-<p>(As with all "<a href="/article/concise-and-simple">concise and simple</a>"
-articles I assume no prior knowledge of the subject and keep the length to
-less than 1500 words.)</p>
-
-<p>The World Wide Web (or just "the web") is a global hypertext
-system invented by <a href="http://www.w3.org/People/Berners-Lee/">Sir Tim
-Berners-Lee</a> in 1989. The web is <strong>not</strong>
-<a href="/article/internet-concise-and-simple">the Internet</a>. Rather, it
-is an application that sends messages via the Internet. You're using it
-now!</p>
-
-<p><img src="/static/images/internet.png" alt="A map of the Internet"/></p>
-
-<p>Hypertext is <em>the</em> core concept of the web: pages
-containing text and other media reference each other via so-called
-hyperlinks. In this way, pages connect to form a nebulous web of
-relationships. Hypertext was coined in the 1960s by
-<a href="http://ted.hyperland.com/">Ted Nelson</a> although the basic concept
-dates back to
-<a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush's</a> 1945
-article,
-<a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/?single_page=true">As We May Think</a>
-where he describes an intriguing device called the
-<a href="https://en.wikipedia.org/wiki/Memex">Memex</a>
-(MEMory indEX). Various pre-web hypertext systems were developed in the 1960s,
-70s and 80s, but it was only until the early 1990s that Berners-Lee's version
-of hypertext became popular.</p>
-
-<p>The web is made with these concepts:</p>
-
-<ul>
-    <li><a href="https://en.wikipedia.org/wiki/Web_page">Page</a> - a document
-    on the web. Web pages can contain text, images, sound, video and forms
-    (to facilitate limited interactivity).</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Hyperlink">Hyperlink</a> -
-    something in a page that, when activated, takes the user
-    to another page on the web. Often abbreviated to "link".</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Url">URL</a> - a uniform
-    resource location identifies a page or other resource on the web.</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Web_browser">Browser</a> -
-    software on the user's computer that downloads web pages, displays them
-    and handles user interactions (such as filling in a form or clicking a
-    link).</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Server_(computing)">Server</a> -
-    a device on the Internet that runs software to deliver web pages and other
-    resources to browsers.</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/HTTP">HTTP</a> - HyperText
-    Transfer Protocol describes how browsers and servers interact.</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a> - HyperText
-    Markup Language defines the structure of web pages identifying such things
-    as paragraphs, links and headings.</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>
-    - Cascading Style Sheets describe how a page should look by defining
-    layout, colour scheme, typesetting and other presentation information.</li>
-
-    <li><a href="https://en.wikipedia.org/wiki/Javascript">Javascript</a> -
-    a ubiquitous programming language for browsers. It defines the behaviour
-    of a page beyond the basics of clicking links or submitting forms.</li>
-</ul>
-
-<p>In the early days of the web HTML was the only way to create pages (CSS
-and Javascript were later developments). The essence of HTML has not changed
-over the years:</p>
-
-<p>HTML is written as a series of <em>elements</em>. Elements are defined with
-named <em>tags</em> between less-than (&lt;) and greater-than
-(&gt;) symbols. The scope of an element is defined by an opening and
-closing tag. For example, a heading is defined by the
-<code>h1</code> element:</p>
-
-<p><pre><code class="html">&lt;h1&gt;Hello&lt;/h1&gt;</code></pre></p>
-
-<p>The closing tag is just like the opening one apart from the prepended
-back-slash (/). The tags are a balanced pair: the scope
-of the heading element is defined as the text "Hello" and displayed as:</p>
-
-<h1>Hello</h1>
-
-<p>Elements can contain other elements but are not allowed to overlap:</p>
-
-<p><pre><code class="html">&lt;p&gt;this is &lt;strong&gt;valid&lt;/strong&gt;&lt;/p&gt;</code></pre></p>
-
-<p>but,</p>
-
-<p><pre><code class="html">&lt;p&gt;this is &lt;strong&gt;not&lt;/p&gt;&lt;/strong&gt;</code></pre></p>
-
-<p>HTML has a certain structure: two elements, <code>head</code> and
-<code>body</code>, are contained within an <code>html</code> element.
-Information about the document is expressed by elements within the
-<code>head</code> tags. Elements within the <code>body</code>
-tags define the structure of the page. For example:</p>
-
-<p><pre><code class="html">&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My Web Page&lt;/title&gt;
-    &lt;link rel="stylesheet" href="/static/css/styles.css"/&gt;
-    &lt;meta name="author" content="Nicholas H.Tollervey"/&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Welcome!&lt;/h1&gt;
-    &lt;p&gt;This is some text enclosed within a paragraph tag.
-    I can link to &lt;a href="http://ntoll.org/"&gt;other docs&lt;/a&gt;
-    using an anchor tag.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre></p>
-
-<p>HTML is currently at version five (HTML5). Actually, HTML5 is
-a collection of standards. Some add capabilities for embedding media while
-others add new tags. HTML5 colloquially refers to specifications for new
-browser behaviour too, such as local data storage.</p>
-
-<p>Browsers were originally simple and merely text based applications, as
-shown in the screenshot below. Despite these shortcomings the structure of the
-page is very clear and easy to read (hyperlinks are green).</p>
-
-<p><img src="/static/images/lynx.png" alt="Old skool web"/></p>
-
-<p>The web "happens" in two places: the client's browser and the website's
-server.</p>
-
-<p>Clicking a link or typing in a URL makes your browser send a request
-over the Internet using HTTP (as
-<a href="/article/internet-concise-and-simple">described here</a>).
-The server identified within the URL responds with HTML for the web page, CSS
-describing how to display it and any Javascript needed for the page to function
-correctly.</p>
-
-<p>Before rendering the page to the screen the browser transforms the HTML
-in to the
-<a href="https://en.wikipedia.org/wiki/Document_Object_Model">document object
-model</a> (DOM). The DOM is a data structure used to match HTML elements
-with CSS rules. Furthermore, snippets of Javascript run at certain points
-in the page's existence and manipulate the DOM as events occur (such
-as when the page finishes loading, a button is clicked or a form is
-submitted).</p>
-
-<p>As you interact with the browser it repeats this process to fetch new pages
-from the websites you visit. Sometimes your browser <em>posts</em> information
-back to a website (when you fill in a form). The website responds
-with a page that reflects the information you submitted.</p>
-
-<p>This happens within the realm of your "client" computer. However, an
-equally interesting story happens on the server.</p>
-
-<p>In the simplest case web pages are static so the server responds with
-pre-existing content. However, many websites are dynamic and allow you to
-change them on-the-fly. For example, as you browse a shopping website you may
-click buttons that add items to a virtual shopping basket. If you visit the
-web page that represents your basket you expect it to be up-to-date and list
-the correct number of items.</p>
-
-<p>For this to happen several things must be in place.</p>
-
-<p><em>The server should know who you are</em>. You are authenticated in
-some way, usually with a username and secret password, and authorised to
-interact with certain pages. For example, only you should be able to view and
-change your settings. Furthermore, the server must not confuse you with other
-users, so your interaction with the website is associated with a unique
-<a href="https://en.wikipedia.org/wiki/Session_(computer_science)">session</a>
-linked to your identity so the server can track who is making requests.</p>
-
-<p><em>The server should keep track of state</em>. When you add an item to a
-shopping cart this should be reflected in the way the website behaves. Such
-state is stored in a
-<a href="https://en.wikipedia.org/wiki/Database">database</a> "backend".</p>
-
-<p><em>The HTML should reflect the state stored in the database</em>. This is
-achieved with
-<a href="https://en.wikipedia.org/wiki/Template_processor">templates</a>:
-snippets of HTML combined with data specific to the client.
-Rendering templates to HTML is "frontend".
-The following snippet is for a simple shopping basket (anything enclosed
-within <code>{% raw %}{% %}{% endraw %}</code> is replaced):</p>
-
-<p><pre><code class="html">{% raw %}&lt;h1&gt;Hi, {% user.username %}!&lt;/h1&gt;
-&lt;p&gt;Your shopping cart contains:&lt;/p&gt;
-&lt;ul&gt;
-{% for item in user.cart %}
-  &lt;li&gt;{{item.name}} - {{item.description}}&lt;/li&gt;
-{% endfor %}{% endraw %}
-&lt;/ul&gt;
-</code></pre></p>
-
-<p><em>The server should be reliable</em>. Between the front and back ends
-is a <em>logic</em> layer checking requests, interacting
-with the database and ensuring the correct HTML is served. This needs to work
-correctly (imagine if, when clicking a "buy this item" button, a
-website added two items rather than one).</p>
-
-<p><em>The server should perform well</em>. A website should quickly
-handle a great many requests at once. Two common ways to achieve good
-performance are
-<a href="https://en.wikipedia.org/wiki/Cache_(computing)">caching</a> (store
-and re-use things that take time to compute but don't change that much over
-time) and
-<a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)">load
-balancing</a> (route incoming calls to a pool of servers so the
-workload is shared). Popular websites consist of many servers
-handling specific tasks (such as the database, rendering templates or
-the logic) hidden behind layers of load balancers and caches.</p>
-
-<p>If this sounds complicated, that's because it is. However, the description
-given above is a simplification of the amazing engineering that takes place
-to display a web page on your screen.</p>
-
-<p>However, all is not well.</p>
-
-<p>Browsers implement web-standards in different ways:
-<a href="https://en.wikipedia.org/wiki/Internet_Explorer">Internet Explorer</a>
-is famous for getting things wrong. HTML and CSS are more complex
-with each revision - gone are the days of a beautifully simple hypertext
-system. Competing technical standards are promoted for commercial rather than
-engineering reasons and some are so complex they're practically useless. Alas,
-Javascript is <a href="https://www.destroyallsoftware.com/talks/wat">hopelessly
-unintuitive</a> and provides developers with plenty of rope with which to hang
-themselves.</p>
-
-<p>Finally, there are political problems.</p>
-
-<p>You can't publish on the web unless you know how to
-set up a website or you use a third party service such as a social
-network. Social networks are hugely popular but turn the
-web into a handful of walled gardens - the antithesis of the decentralised
-early web. Furthermore, such websites track and analyse user
-behaviour and sell it (via advertising). They also provide services for
-storing user's digital assets (in order to harvest yet more data to
-sell). As has been
-<a href="http://www.wired.com/opinion/2012/11/feudal-security/">pointed out
-before</a>, this is deeply worrying.</p>
-
-<p>Ultimately, it is a question of who controls the infrastructure.
-Many users are happy to sacrifice privacy and control for ease of use and
-convenience. Yet I wonder how many realise that they are tracked and
-influenced by only a handful of very powerful technology companies.</p>
-
-<p><img src="http://imgs.xkcd.com/comics/infrastructures.png" alt="Infrastructure"/></p>
-
-<p>What of the future? I like to think that
-<a href="https://en.wikipedia.org/wiki/William_Gibson">William Gibson</a> was
-right when, in 1996
-<a href="http://www.nytimes.com/1996/07/14/magazine/the-net-is-a-waste-of-time.html?pagewanted=all&src=pm">he said</a>,</p>
-
-<blockquote>[T]he World Wide Web [is] the test pattern for whatever will become the dominant global medium.</blockquote>
-
-<p>(Who knows what will happen next?)</p>
-
-<small>1486 words. Image credit: &copy; 2005
-<a href="http://www.opte.org/">opte.org</a> under a Creative Commons
-license. Image of Lynx browser &copy; 2012 by the author. "Infrastructure"
-cartoon &copy; <a href="http://xkcd.com/743/">Randall Munroe</a> under a
-Creative Commons license.</small>
 <p><a href="/articles">View all articles</a></p>
 {% endblock content %}
