@@ -30,6 +30,7 @@ pre {
 table {
     border: 1px solid #444;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 td {
@@ -38,6 +39,13 @@ td {
 
 td, th {
     padding: 4px;
+    border-left: 1px solid black;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+    background: #ccc;
 }
 
 sup {
