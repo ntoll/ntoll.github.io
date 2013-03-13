@@ -234,7 +234,7 @@ function is tested with the number 4, producing the result <code>24</code>.<p>
 <em>factorial</em> of <em>n</em> minus 1. The value of
 <em>n</em> keeps decreasing and fed back in to the <em>factorial</em> function
 until <em>n</em> equals 1, at which point the number 1 is returned to complete
-the following chain of arithmatic: 1 &times; 2
+the following chain of arithmetic: 1 &times; 2
 &times; 3 &times; 4</p>
 
 <p>Here's the surprise: given the fundamental functions described above, it is
@@ -309,8 +309,8 @@ Remember this, we'll use it later!</p>
         ('t (assoc. x (cdr y)))))
 </code></pre></p>
 
-<p>Notice how the final two functions use recursion as a meachnism for looping
-over lists.</p>
+<p>Notice how the final two functions use recursion as the mechanism for
+looping over lists.</p>
 
 <p>Here's the <code>eval</code> function:</p>
 
@@ -787,8 +787,7 @@ instructions that make computers do things. Instructions (also known as
 "code") are organised into
 <a href="https://en.wikipedia.org/wiki/Computer_program">programs</a> (or
 "<a href="https://en.wikipedia.org/wiki/Software">software</a>") that fulfil
-specific
-tasks. People who write programs are called
+specific tasks. People who write programs are called
 <a href="https://en.wikipedia.org/wiki/Programmer">programmers</a>,
 developers, software engineers or (colloquially)
 <a href="https://en.wikipedia.org/wiki/Hacker_(term)">hackers</a>.</p>
@@ -799,7 +798,7 @@ developers, software engineers or (colloquially)
 <a href="https://en.wikipedia.org/wiki/Programming_language">programming languages</a>
 that make it easier for humans to comprehend what is going on. So-called "high
 level" languages are easier for humans to work with than "low level" languages
-that express things in a way that is closer to the way the computer works. In
+that express things in a way that is closer to how the computer works. In
 all cases programs are transformed from the original programming language into
 the <a href="https://en.wikipedia.org/wiki/Machine_code">binary
 instructions</a> that cause the computer to function in a particular way.
@@ -835,7 +834,7 @@ they do not. The failure to make a computer work usefully is called a
 There are generally two sorts of bug: the wrong outcome is correctly
 implemented (the design is wrong) or the expected outcome is wrongly
 implemented (the instructions are wrong). In any case, because computers are
-complex machines making them do something useful is surprisingly hard.</p>
+complex machines, making them do something useful is surprisingly hard.</p>
 
 <p>Managing and taming complexity is one of the core tasks of a programmer. A
 common piece of advice given to junior developers is
@@ -872,15 +871,15 @@ promote a
 programming</a> where code is interspersed with natural language explanations
 that tell the "story" of the code.</p>
 
-<p>Another core skill of a programmer is de-constructing and analysing the
-problem that they are trying to solve. Often the problem is expressed in a
+<p>Another core skill of a programmer is de-constructing and analysing
+problems. Often the problem is expressed in a
 vague and open-ended way and it is the task of the developer to precisely
-constrain the scope of the problem so they can create some
+constrain the scope of the problem so they create some
 useful outcome. A personal example, from my first programming class, illustrates
 this beautifully: my tutor explained that programs were merely instructions
-and that we had five minutes to write instructions telling him how to switch
-on the lights of the classroom. How hard could it be to write such
-instructions? Take a minute to think about what <em>you</em> would write (you
+and that we had five minutes to provide instructions telling him how to switch
+on the classroom's lights. How hard could it be to write such
+instructions? Take a minute to imagine what <em>you</em> would write (you
 may assume that the person following them knows about directions, actions and
 names of things).</p>
 
@@ -897,14 +896,12 @@ names of things).</p>
 
 <p>Of course, I failed miserably. My tutor pointed out that he was already
 stood up, there were desks between him and the light switch and the damn lights
-were already on anyway. Thus, what appeared to be a simple problem
-(tell me how to switch on the lights) turned out to be far more complex than
-first imagined.</p>
+were already on anyway.</p>
 
 <p>Time and resources are also essential elements of software development:</p>
 
 <p>First, the developer needs to have a feel of how best to organise a
-program.  This means analysing their implementation of the
+program. This means analysing their implementation of the
 <a href="https://en.wikipedia.org/wiki/Algorithm">algorithm</a> (the
 instructions at a conceptual level) to ensure that it is both timely and makes
 efficient use of resources like the computer's memory and
@@ -953,7 +950,7 @@ sharing software used to distribute pirated content.</p>
 <p>Yet, programmers have turned the law to their advantage.
 <a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a>,
 founder of the <a href="http://fsf.org/">Free Software Foundation</a> (FSF),
-was fed up with locked down dis-empowering software so set out
+became disillusioned with locked down dis-empowering software so set out
 <a href="https://www.gnu.org/philosophy/free-sw">four essential
 freedoms</a>:</p>
 
