@@ -12,7 +12,7 @@
     <item>
         <title>Lisp ~ Concise and Simple</title>
         <link>http://ntoll.org/article/lisp-concise-and-simple</link>
-        <description><h1><a href="/article/lisp-concise-and-simple">Lisp ~ Concise and Simple</a></h1><p class="published_on">Thursday 14th March 2013 (08:00AM)</p>
+        <description><h1><a href="/article/lisp-concise-and-simple">Lisp ~ Concise and Simple</a></h1><p class="published_on">Thursday 14th March 2013 (10:45PM)</p>
 
 <p>(As with all "<a href="/article/concise-and-simple">concise and simple</a>"
 articles I assume no prior knowledge of the subject and keep the length to
@@ -27,9 +27,9 @@ a sense of why I believe this.</p>
 
 <p><img src="/static/images/lisp.jpg" alt="Lisp enlightenment"/></p>
 
-<p>For me, Lisp's beauty is in how its simple core concepts can lead to
+<p>For me, Lisp's beauty is revealed when its simple core concepts lead to
 moments of sudden insight and shifts of perspective. Lisp's simplicity begins
-with its <em>syntax</em> (how it is written), a simple notation that anyone
+with its <em>syntax</em> (how it is written): a simple notation that anyone
 can understand.</p>
 
 <p>Lisp expressions are either <em>atoms</em> or <em>lists</em> (Lisp stands
@@ -40,7 +40,9 @@ for <em>LIS</em>t <em>P</em>rocessor).</p>
 <p><pre><code>foo bar baz 123 "Hello World"</code></pre></p>
 
 <p>Atoms are sequences of characters. The penultimate atom is a number and the
-final one is a string (enclosed in quotes). Here's a list:</p>
+final one is a string (enclosed in quotes).</p>
+
+<p>Here's a list:</p>
 
 <p><pre><code>(ham eggs bacon sausages beans)</code></pre></p>
 
@@ -54,12 +56,12 @@ final one is a string (enclosed in quotes). Here's a list:</p>
 containing three atoms. I've split the contained lists over three lines to aid
 readability.</p>
 
-<p>What the language's syntax means is dictated by its <em>semantics</em>.
-Lisp's semantics are equally simple:</p>
+<p>Lisp's <em>semantics</em> (that define what the syntax means) are equally
+simple:</p>
 
 <ul>
-    <li>Code is <em>written as lists</em>.</li>
-    <li>Lists are <em>evaluated</em> by Lisp to produce results.</li>
+    <li>Code is <em>written as lists</em> that are <em>evaluated</em> by Lisp
+    to produce results.</li>
     <li><em>Comments</em> begin with a semi-colon and are ignored by Lisp.</li>
     <li>Lists and atoms that are "<em>quoted</em>" are evaluated as data.</li>
     <li>Anything else is evaluated as a <em>form</em> ~ a list starting with
@@ -183,7 +185,7 @@ as the result. Although the third <code class="lisp">atom</code> function is
 also true, it is ignored. This is somewhat similar to
 <code>if ... elif</code> statements in other programming languages.</p>
 
-<p>Use the <code>lambda</code> function to create user defined functions. It
+<p>The <code>lambda</code> function is used to create user defined functions. It
 expects two lists as arguments: the first contains named place-holders for the
 new function's arguments, the second contains the form to be evaluated to
 generate the new function's result:</p>
@@ -200,8 +202,8 @@ defining then immediately calling a function like this:</p>
 (qux bar baz)</code></pre></p>
 
 <p>The value of <code>x</code> becomes the atom <code>qux</code> and
-<code>y</code> becomes the list <code>(foo bar baz)</code>. It would be useful
-if it were possible to name new functions. Unsurprisingly, there is a way:</p>
+<code>y</code> becomes the list <code>(foo bar baz)</code>. It's useful
+to name new functions. Unsurprisingly, there is a way:</p>
 
 <p><pre><code class="lisp">(defun replace-head (x y) (cons x (cdr y)))
 (replace-head 'qux '(foo bar baz))
@@ -231,9 +233,9 @@ Otherwise, it returns <em>n</em> multiplied by the result of calling
 function is tested with the number 4, producing the result <code>24</code>.<p>
 
 <p>Recursion is when the function returns <em>n</em> multiplied by
-<em>factorial</em> of <em>n</em> minus 1. The value of
-<em>n</em> keeps decreasing and fed back in to the <em>factorial</em> function
-until <em>n</em> equals 1, at which point the number 1 is returned to complete
+<em>factorial</em> of <em>n</em> minus 1. The value of <em>n</em> keeps
+decreasing and is fed back in to the <em>factorial</em> function until
+<em>n</em> equals 1, at which point the number 1 is returned to complete
 the following chain of arithmetic: 1 &times; 2
 &times; 3 &times; 4</p>
 
@@ -371,13 +373,10 @@ to be manipulated like any other data structure. When a language's code is also
 <em>merely</em> data (as it is for the <code>eval</code> function above), it is
 called <a href="https://en.wikipedia.org/wiki/Homoiconicity">homoiconic</a>.
 This introduces the potential for yet another mind bending capability: it
-is possible to change Lisp from within Lisp.</p>
-
-<p>If you're not
-satisfied with Lisp, you have the freedom to change it since all code is
-written as lists and Lisp is a <em>LIS</em>t <em>P</em>rocessor. Therefore,
-Lisp is able to transform and change its own source code in order to add
-unforeseen features.</p>
+is possible to change Lisp from within Lisp since all code is written as lists
+and Lisp is a <em>LIS</em>t <em>P</em>rocessor. Therefore, Lisp is able to
+transform and change its own source code in order to add unforeseen
+features.</p>
 
 <p>The <a href="https://en.wikipedia.org/wiki/Common_Lisp#Macros">macro</a> is
 what makes this possible. Macros look a lot like functions but are different in
@@ -411,8 +410,12 @@ macro:</p>
 
 <p><img src="/static/images/lisp_cycles.png" alt="Lisp cycles"/></p>
 
-<p>Finally, there are many great resources about Lisp (including classic texts
-in computing). If you want to learn more online, why not try:
+<p>Recursion, <code>eval</code> and macros are just three fascinating aspects
+of Lisp. Happily, there are many <a href="http://www.alu.org/alu/res-lisp">great</a>
+<a href="http://cliki.net/Lisp%20books">resources</a> about Lisp (including
+<a href="http://blog.fogus.me/2012/07/25/some-lisp-books-and-then-some/">classic texts</a>
+in computing) if you want to find out more. If you want to learn online, why
+not try
 <a href="http://www.lisperati.com/casting.html">casting SPELs in Lisp</a> or
 the <a href="http://vivid.chengyichao.info/">Vivid Schemer</a>..?</p>
 
@@ -426,7 +429,7 @@ original 1960 paper on Lisp,
 Functions of Symbolic Expressions and their Computation by Machine</a>.
 <a href="#ref1">&#8682; Return to article</a>.</small></p>
 
-<p><small>1500 words (not including code examples or footnotes).
+<p><small>1498 words (not including code examples or footnotes).
 Image credits: The public
 domain <a href="http://www.lisperati.com/logo.html">Lisp Alien</a> logo was
 created by <a href="http://http://lisperati.com/">Conrad Barski, M.D.</a>.
@@ -435,7 +438,7 @@ created by <a href="http://http://lisperati.com/">Conrad Barski, M.D.</a>.
 <a href="http://xkcd.com/">Randall Munroe</a> under a Creative Commons
 license.</small></p>
 </description>
-        <pubDate>Thu, 14 March 2013 08:00:00 GMT</pubDate>
+        <pubDate>Thu, 14 March 2013 22:45:00 GMT</pubDate>
     </item>
     
     <item>
