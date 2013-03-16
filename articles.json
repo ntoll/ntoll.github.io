@@ -1,5 +1,10 @@
 [
   {
+    "date": "2013-03-16 22:45:00", 
+    "slug": "minecraft-pi", 
+    "title": "Programming Minecraft on the RaspberryPi"
+  }, 
+  {
     "date": "2013-03-14 22:45:00", 
     "slug": "lisp-concise-and-simple", 
     "title": "Lisp ~ Concise and Simple"
