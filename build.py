@@ -14,8 +14,7 @@ template = u"""{%% extends "base.html" %%}
 {%% endblock content %%}"""
 
 
-rss = Template(u"""<?xml version"1.0" ?>
-<rss version="2.0">
+rss = Template(u"""<rss version="2.0">
 <channel>
     <title>ntoll.org ~ everything I say is false</title>
     <link>http://ntoll.org/</link>
