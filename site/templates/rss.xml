@@ -9,6 +9,115 @@
     </image>
     
     <item>
+        <title>Taking the Long Term View</title>
+        <link>http://ntoll.org/article/long-term-view</link>
+        <description><h1><a href="/article/long-term-view">Taking the Long Term View</a></h1><p class="published_on">Thursday 28th March 2013 (8:00AM)</p>
+
+<p>The <a href="http://www.britishmuseum.org/">British Museum</a> is one of my
+favourite places because it forces me to take on a perspective of 5000 years
+or more. Take the
+<a href="http://www.britishmuseum.org/explore/highlights/highlight_objects/me/t/tablet,_allocation_of_beer.aspx">Mesopotamian clay tablet</a>
+shown below: it records the allocation of beer by administrators in the city
+of <a href="https://en.wikipedia.org/wiki/Uruk">Uruk</a>. The symbol
+representing beer is apparently an upright jar with a pointed base, amounts
+are notated by circles and semi-circles and, at the bottom left, there is a
+figure drinking from a bowl.</p>
+
+<img src="/static/images/15_writingtablet_l.jpg" alt="Mesopotamian tablet"/>
+
+<p>It's about 5100 years old. Now, pause for a moment to consider its age.</p>
+
+<p>The difference in time between today and the era of
+<a href="https://en.wikipedia.org/wiki/Julius_Caesar">Julius Caesar</a> and
+<a href="https://en.wikipedia.org/wiki/Cleopatra_VII_of_Egypt">Cleopatra</a>
+is 1000 years less than the period between the creation of the Mesopotamian
+tablet and the era of Caesar and Cleopatra. Put simply, Caesar and Cleopatra
+are closer in time to us (by 1000 years) than they are to the Mesopotamian
+scribe who recorded the allocation of beer to citizens of Uruk.</p>
+
+<p>It is intriguing that the tablet is political in nature, an instance
+of a new technology and of economic interest. Not only is it evidence of the
+machinations of the state in Uruk but it demonstrates how a new technology
+(writing) changed the capabilities of such a state: for the first time it was
+possible to keep records and thus run a bureaucracy on a large scale.
+Furthermore, it records receipt of payment requiring concepts such as balance,
+debt and a measure of value (in beer).</p>
+
+<p>Such concepts (writing, state bureaucracy and fundamental economics) are
+unremarkable in today's world, making it difficult for us to appreciate how
+important, strange or unusual they must have seemed when they first appeared. I
+wonder what important, strange or unusual aspects of our time will be
+unremarkable to our descendants. Furthermore, what aspects of our lives that
+seem fixed today will be completely different 5000 years hence?</p>
+
+<p>Guessing the future is a fool's game. As
+<a href="http://en.wikipedia.org/wiki/Alan_Kay">Alan Kay</a> famously
+stated,</p>
+
+<blockquote>"The best way to predict the future is to invent it."</blockquote>
+
+<p>Something from today that "<em>invents the future</em>" is
+programming, and I'm guessing the
+<a href="http://www.informatimago.com/develop/lisp/com/informatimago/small-cl-pgms/wang.html">Lisp program from 1960</a>
+copied below is our Mesopotamian tablet for future generations:</p>
+
+<p><pre><code class="lisp">(shadow '(trace untrace))
+(defun trace   (functions) (eval `(cl:trace   ,@functions)))
+(defun untrace (functions) (eval `(cl:untrace ,@functions)))
+
+(defun define (definitions)
+  (dolist (def definitions)
+    (eval (if (and (consp (second def)) (eq 'lambda (car (second def))))
+              `(progn (defun        ,(first def) ,@(cdr (second def)))
+                      (defparameter ,(first def) ,(second def)))
+              `(defparameter ,(first def) ,(second def))))))
+
+(defun stop (arguments) (throw 'driver-end-of-deck nil))
+(defun fin  (arguments) (throw 'driver-end-of-deck nil))
+(defun test (arguments) (princ arguments) (terpri))
+
+(defun driver (path)
+  (with-open-file (cards path)
+    (catch 'driver-end-of-deck
+      (loop (let ((first-char (read-char cards)))
+              (if (char= #\* first-char)
+                  (read-line cards)     ; comment
+                  (progn
+                    (unread-char first-char cards)
+                    (let* ((command   (read cards))
+                           (arguments (if (member command '(stop fin test))
+                                          (list (read-line cards))
+                                          (read cards))))
+                      (print (apply command arguments))))))))))</code></pre></p>
+
+
+<p>Despite this code being more than 50 years old, it is still understandable
+to anyone who has read my
+<a href="/article/lisp-concise-and-simple">recent Lisp article</a>. Furthermore
+it forces me to wonder what the computational world will be like in 5000 years.
+I hope the <a href="/article/the-web-concise-and-simple">world wide web</a>
+will be long gone and replaced with something much more capable and better
+engineered and I guess that new computer architectures will arise to replace
+the
+<a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture">Von Neumann</a>
+/ <a href="https://en.wikipedia.org/wiki/Harvard_architecture">Harvard</a>
+based models in current use.</p>
+
+<p>Perhaps the final word should be another Alan Kay quote:</p>
+
+<blockquote>"I believe that the only kind of science computing can be is like
+the science of bridge building. Somebody has to build the bridges and other
+people have to tear them down and make better theories, and you have to keep
+on building bridges."</blockquote>
+
+<p><small>Image credits: Mesopotamian tablet
+&copy; <a href="http://www.britishmuseum.org/">Trustees of the British Museum</a>
+</small></p>
+</description>
+        <pubDate>Thu, 28 March 2013 08:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Programming Minecraft on the RaspberryPi</title>
         <link>http://ntoll.org/article/minecraft-pi</link>
         <description><h1><a href="/article/minecraft-pi">Programming Minecraft on the RaspberryPi</a></h1><p class="published_on">Thursday 16th March 2013 (10:45PM)</p>
@@ -569,340 +678,6 @@ created by <a href="http://http://lisperati.com/">Conrad Barski, M.D.</a>.
 license.</small></p>
 </description>
         <pubDate>Thu, 14 March 2013 22:45:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Data and Databases ~ Concise and Simple</title>
-        <link>http://ntoll.org/article/databases-concise-and-simple</link>
-        <description><h1><a href="/article/databases-concise-and-simple">Data and Databases ~ Concise and Simple</a></h1><p class="published_on">Thursday 14th February 2013 (08:00AM)</p>
-
-<p>(As with all "<a href="/article/concise-and-simple">concise and simple</a>"
-articles I assume no prior knowledge of the subject and keep the length to
-less than 1500 words.)</p>
-
-<blockquote>
-"Scientia potentia est." (Knowledge is power.)
-</blockquote>
-
-<p><a href="https://en.wikipedia.org/wiki/Francis_Bacon">Sir Francis Bacon</a>.</p>
-<p>In the digital world knowledge is stored, in its latent form, as data in
-databases. Everyone from your local
-<a href="http://www.tesco.com/clubcard/clubcard/">supermarket</a> to the
-<a href="https://www.gov.uk/">government</a> collects data about <em>all of
-us</em>. Information and knowledge is extracted about all aspects of
-our lives, from our shopping habits to whether we've paid our taxes (it is no
-accident that the examples above relate to extracting money from us). According
-<a href="http://techcrunch.com/2010/08/04/schmidt-data/"> to Google</a> it
-currently takes just two days for us to generate as much information as was
-created by all of humanity from the dawn of time until 2003.</p>
-
-<p>This article is about data and databases - the technology that makes the
-accumulation and analysis of this flood of information possible. It starts with
-a simple question: what is data?</p>
-
-<p>"Data" are values that convey meaningful information about something.
-Meaning is implied by the context and structure of the data. Structure is
-formed from the way data is represented. Databases simply store and provide
-mechanisms for working with structured data.</p>
-
-<p>The most fundamental data-related act is to name a value:</p>
-
-<p><pre><code class="python">my_name = "Nicholas Tollervey"</code></pre></p>
-
-<p>My name <em>is</em> Nicholas Tollervey. This is shown by
-"<code>my_name</code>" being assigned the value "<em>Nicholas Tollervey</em>".
-Assignment happens when a <em>token name</em> is followed by an <em>equals
-</em> sign that is, in turn, followed by a <em>value</em>. Notice the three
-layers: meaning, structure and representation.</p>
-
-<p>Another example:</p>
-
-<p><pre><code class="python">nicholas = {
-    "first_name": "Nicholas",
-    "middle_name": "Harry",
-    "surname": "Tollervey",
-    "birthday": {
-        "year": 1973,
-        "month": 8,
-        "day": 19
-    }
-    "height": 180,
-    "weight": 76.9
-}</code></pre></p>
-
-<p>After reading the above I'm certain you'll know when to send me a birthday
-card. Something called <code>nicholas</code> has a single value associated with
-it: an
-<a href="https://en.wikipedia.org/wiki/Associative_array">associative
-array</a>. Associative arrays are <em>key / value</em> pairs - like a
-dictionary of words or a subject index at the back of a book. In this case it
-has six entries, one of which is itself a nested associative array with three
-entries. It's an associative array because it is enclosed by
-curly braces and contains a list of <code>"key_name": value</code> pairs
-separated by commas. The associative array is assigned to <code>nicholas</code>
-in exactly the same way as the first example (<em>token name</em> followed by
-<em>equals</em> followed by <em>value</em>).</p>
-
-<p>Incidentally, I can retrieve my data like this:</p>
-
-<p><pre><code>&gt;&gt;&gt; my_name
-"Nicholas Tollervey"
-&gt;&gt;&gt; nicholas["height"]
-180</code></pre></p>
-
-<p>(This example uses the <a href="http://python.org/">Python</a>
-programming language: I type in commands after the <code>&gt;&gt;&gt;</code>
-prompt and the Python interpreter replies on the new line.)</p>
-
-<p>A final example:</p>
-
-<table>
-    <caption>People</caption>
-    <tr>
-        <th>id</th>
-        <th>first_name</th>
-        <th>middle_name</th>
-        <th>surname</th>
-        <th>nationality_id</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Nicholas</td>
-        <td>Harry</td>
-        <td>Tollervey</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Terry</td>
-        <td>Charles Oliver</td>
-        <td>Jones</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Esteve</td>
-        <td></td>
-        <td>Fernandez</td>
-        <td>3</td>
-    </tr>
-</table>
-
-<table>
-    <caption>Nationalities</caption>
-    <tr>
-        <th>id</th>
-        <th>name</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Australian</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>British</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Spanish</td>
-    </tr>
-</table>
-
-<p>Obviously, I'm British and my buddies
-<a href="https://twitter.com/terrycojones">Terry</a> and
-<a href="https://twitter.com/esteve">Esteve</a> are
-Australian and Spanish (respectively). You know this because you understand how
-to read tabular information and spot the relationship between the values in the
-<code>nationality_id</code> column of the <em>People</em> table and the values
-in the <code>id</code> column of the <em>Nationalities</em> table. You know
-it's tabular information because it's a two dimensional grid with the
-vertical columns indicating named fields and horizontal rows representing
-individual records. Once again: meaning, structure, representation.</p>
-
-<p>Each example is more complex than the one preceding it. The first is a
-single key / value pair (where <code>my_name</code> is the key and
-"<em>Nicholas Tollervey</em>" is the value), the second is a key
-(<code>nicholas</code>) associated with a value that is itself key / value
-pairs (the associative array). Finally, the third example contains rows of
-items that all share the same keys (a.k.a. columns) but different values. Each
-type of record (people, nationalities etc) has its own table.</p>
-
-<p>How do such meaningful data structures / representations relate to
-databases?</p>
-
-<p>There are four basic actions that all databases may perform on data:
-<em>create</em>, <em>read</em>, <em>update</em> and <em>delete</em> (often
-expressed as
-<a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a>).
-There are many types of database that meet this minimum functionality. The
-three data examples illustrate the types of data structure stored in three of
-the most popular types of database: key / value stores (such as
-<a href="http://redis.io/">Redis</a> or
-<a href="http://www.memcached.org/">Memcached</a>), document oriented databases
-(like <a href="http://www.mongodb.org/">MongoDB</a> or
-<a href="https://couchdb.apache.org/">CouchDB</a>) and relational databases
-(for example, <a href="http://www.postgresql.org/">Postgres</a> or
-<a href="https://www.mysql.com/">MySQL</a>).</p>
-
-<p>Key / value databases are, at heart, associative arrays. They provide three
-basic actions:</p>
-
-<ul>
-    <li>Assign a value to a key (both creating and updating).</li>
-    <li>Read a value associated with a known key.</li>
-    <li>Delete a value using a known key.</li>
-</ul>
-
-<p>Such simple databases are extremely fast and well suited for tasks where
-speed is of the essence. However, there isn't a simple way to search the stored
-values and keys must be known before being used to retrieve or delete
-associated values. Nevertheless, they are extremely useful as caches of
-arbitrary values. If you want to try such a database you should visit the
-<a href="http://try.redis.io/">try redis tutorial</a> tutorial ~ a gentle yet
-comprehensive tour of a popular key / value store.</p>
-
-<p>Document oriented databases store arbitrarily structured documents
-expressed as associative arrays. Every document has a unique ID created by the
-database and used as a key to reference the document.</p>
-
-<p>However, documents are not opaque values as in key / value databases.
-Rather, it is possible to <em>reach in to the documents</em> and construct
-queries that reference the document's named attributes (keys). For example,
-given a <em>people</em> database I could create a query to retrieve all
-documents that have a <em>height</em> attribute with a value greater or equal
-to 180.  Since the structure of the documents is arbitrary, such queries rely
-on conventions (all <em>people</em> documents have a <em>height</em> attribute
-whose value is expressed in centimetres).</p>
-
-<p>Because document structure is not fixed (except by convention), new fields
-can be added at any time and document oriented databases specify default
-handling for missing fields - usually they'll evaluate to <code>null</code>
-(unknown).</p>
-
-<p>To play with a document oriented database, explore the MongoDB
-tutorial on the project's
-<a href="http://www.mongodb.org/">homepage</a>.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Relational_database">Relational
-databases</a> developed from the work of
-<a href="https://en.wikipedia.org/wiki/E.F._Codd">Edgar Codd</a>. They store
-data in rows
-(<a href="https://en.wikipedia.org/wiki/Tuple">tuples</a>) that share the same
-columns
-(<a href="https://en.wikipedia.org/wiki/Attribute_(computing)">attributes</a>)
-defined in tables
-(<a href="https://en.wikipedia.org/wiki/Relation_(database)">relations</a>) -
-bracketed words are the formal terminology for the colloquially named
-concepts. Each row contains a special field called the
-<a href="https://en.wikipedia.org/wiki/Primary_Key">primary key</a> (the
-<code>id</code> column in the example) that uniquely identifies the record.
-Tables, representing different sorts of things, are related to each other with
-special fields called
-<a href="https://en.wikipedia.org/wiki/Foreign_key">foreign keys</a> that
-reference primary keys of rows in different tables (the
-<code>nationality_id</code>). Many relational databases also enforce
-constraints such as
-<a href="https://en.wikipedia.org/wiki/Referential_integrity">referential
-integrity</a> - where foreign keys may not refer to non-existent primary
-keys.</p>
-
-<p>To work efficiently, data in relational databases should be
-<a href="https://en.wikipedia.org/wiki/Database_normalization">normalised</a>
-to avoid duplication. Data need only be stored in one table
-representing a specific type of thing. Therefore, modifications only happen
-once and are propagated via the relationships between tables. For example, the
-<em>nationalities</em> table is the only place where nationalities may be
-defined. Tables for things with nationalities (such as <em>people</em>) need
-only reference the single <em>nationalities</em> table via a foreign key rather
-than duplicate such information. The process of normalisation usually has
-three steps of increasing efficiency:
-<a href="https://en.wikipedia.org/wiki/First_normal_form">first</a>,
-<a href="https://en.wikipedia.org/wiki/Second_normal_form">second</a> and
-<a href="https://en.wikipedia.org/wiki/Third_normal_form">third</a> normal
-forms. Sometimes it is necessary to de-normalise a database for performance
-reasons - it's faster to retrieve a single row than it is to retrieve several
-related rows from different tables.</p>
-
-<p>Structured Query Language
-(<a href="https://en.wikipedia.org/wiki/SQL">SQL</a>) is the programming
-language used by relational databases to work with data. Based upon
-<a href="https://en.wikipedia.org/wiki/Relational_algebra">relational
-algebra</a>, it provides CRUD functionality and capabilities for
-specifying the structure and relationships between data. It's easy to create
-powerful queries:</p>
-
-<p><pre><code class="sql">SELECT people.first_name, people.surname, nationalities.name
-FROM people
-JOIN nationalities ON nationalities.id = people.nationality_id
-WHERE people.surname = "Jones"</code></pre></p>
-
-<p>The result of which is:</p>
-
-<table>
-    <tr>
-        <th>people.first_name</th>
-        <th>people.surname</th>
-        <th>nationalities.name</th>
-    </tr>
-    <tr>
-        <td>Terry</td>
-        <td>Jones</td>
-        <td>Australian</td>
-    </tr>
-</table>
-
-<p>The query asks: give me the first name, surname and nationality (line 1) of
-people whose surname is "Jones" (line 4). We have to specify where to collect
-this data (line 2) and how to join the related tables together (line 3). Notice
-that SQL doesn't specify how to run the query but describes what the expected
-result should be.</p>
-
-<p>Interactions with a database happen as
-<a href="https://en.wikipedia.org/wiki/Database_transaction">transactions</a>.
-Transactions can contain many different commands and should have several
-desirable properties:</p>
-
-<ul>
-    <li><em>Atomicity</em> - transactions are an all-or-nothing affair that
-    cannot be abandoned in an incomplete state.</li>
-    <li><em>Consistency</em> - transactions fail if they attempt to
-    put the database in to an invalid state such as breaking referential
-    integrity or some other constraint.</li>
-    <li><em>Isolation</em> - each transaction is independent of and cannot
-    interfere with any of the others.</li>
-    <li><em>Durability</em> - once complete a transaction's effect will
-    remain despite catastrophic events like power failure, crashes or
-    errors.</li>
-</ul>
-
-<p>A database is
-<a href="https://en.wikipedia.org/wiki/ACID">ACID</a> compliant if its
-transactions meet these standards.</p>
-
-<p>The pace of change in data-based technology is fast. Relatively recent
-trends, such as <a href="https://en.wikipedia.org/wiki/Big_data">big
-data</a> (huge data sets and the technology needed to manage them), deserve
-their own article. Yet, even the technology described above allows
-companies and governments to build frighteningly accurate pictures of our
-lives (how do you think Amazon is able to make such useful suggestions?).</p>
-
-<p>Personally, I find the ubiquitous analysis and measurement of our behaviour
-inadvertently Orwellian. Furthermore, there is a tendency to trust the results
-obtained from databases without recognizing the <em>meaning</em> level of
-data relies on interpretation (of which there are many varieties).
-Nevertheless, there are great opportunities to do good and I am reminded of the
-Buddhist proverb,</p>
-
-<blockquote>
-"To every man is given the key to the gates of heaven; the same key opens the
-gates of hell."
-</blockquote>
-
-<p>I hope we choose the right gate.</p>
-
-<p><small>1499 words (not including code examples).</small></p>
-</description>
-        <pubDate>Thu, 14 February 2013 08:00:00 GMT</pubDate>
     </item>
     
 </channel>
