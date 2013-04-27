@@ -1,4 +1,4 @@
-Politics, Programming, Data and the Drogulus [politics-code-and-the-drogulus]
+Design Patterns ~ Concise and Simple
 
 Logos (Because I'm Sick of Javascript) [logos-not-javascript]
 
