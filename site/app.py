@@ -41,5 +41,9 @@ def page_not_found(error):
 def error(error):
     return render_template('oops.html'), 500
 
+@app.route('/oops/')
+def error(error):
+    return render_template('oops.html'), 500
+
 if __name__ == '__main__':
     app.run()
