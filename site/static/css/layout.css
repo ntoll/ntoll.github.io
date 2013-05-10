@@ -42,7 +42,7 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
         img {
-            max-width: 420px;
+            max-width: 240px;
         }
     }
 
