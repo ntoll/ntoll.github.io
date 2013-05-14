@@ -7,107 +7,103 @@
 
 <p><img src="/static/images/drogulus.png" alt="Drogulus logo"/></p>
 
-<p>The drogulus is a simple data store and computation platform that I've been
-hacking on, as a side project, in my spare time. It's also a speculative
-exercise in decentralisation and a reaction to the current state of the
-<a href="https://en.wikipedia.org/wiki/World_Wide_Web">web</a>.
-It's a political exercise too: the drogulus promotes a certain point of view
-about technology's role in society - a programmer's attempt to promote autonomy
-and liberate data. Finally, it's a project that gives me a place to explore
-ideas that have been knocking around inside my head for a while.</p>
+<p>I'm going to describe the <a href="http://drogul.us">drogulus</a>: a
+programmable peer-to-peer data store that I've been hacking on in my spare
+time.</p>
+
+<p>The problem I have is a growing unease with the current state of the
+<a href="https://en.wikipedia.org/wiki/World_Wide_Web">web</a>. This unease can
+be summed up in three ways:</p>
+
+<ol>
+    <li><em>On the web, users are no longer in control of their data or online
+    identity.</em> They're locked in to websites that act as walled gardens of
+    data each of which requires different credentials in order to log in. Once
+    logged in there is often no way to extract data. Furthermore, how can we
+    tell who's who? Is <em>user X</em> on Twitter the same <em>user X</em> on
+    Facebook?</li>
+
+    <li><em>Programmers have to build stuff on the web using complicated and
+    quirky technology defined in a top down manner by committee.</em> Just
+    watch any web developer grimace if you mention
+    <a href="http://tools.ietf.org/html/rfc6749">OAuth</a>,
+    <a href="http://www.w3.org/TR/cors/">CORS</a>, Javascript
+    <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date">date objects</a>
+    or (dare I say it)
+    <a href="http://www.ie6countdown.com/">Internet Explorer</a>.</li>
+
+    <li><em>There are many inadvertent points of control, lock-in and authority
+    built in to the web - each of which is a potential mechanism for
+    dis-empowerment and exploitation</em>. Just look at the
+    <a href="https://en.wikipedia.org/wiki/Great_Firewall_of_China#Technical_implementation">great firewall of China</a>,
+    the censorship of the
+    <a href="http://unblockedpiratebay.com/">Piratebay</a>
+    here in the UK or the kerfuffle over payment to
+    <a href="http://wikileaks.org/">Wikileaks</a>.
+</ol>
+
+<p>The beautifully simple, open and decentralised hypertext system envisioned
+by Tim Berners-Lee has grown in to a closed, centralised and complicated
+monster beholden to dodgy commercial, political and legal manipulation.</p>
+
+<p>Unfortunately, many aspects of today's web are contrary to a concept that is
+very important to me: autonomy.</p>
+
+<p>When someone is autonomous they are self-directing, free to act of their own
+accord and lack imposition from others. Autonomy also suggests intelligence and
+awareness enough to be able to enjoy and make use of such freedom. Furthermore,
+such intelligence entails decision making so people become accountable for
+their actions. Autonomy is also the opposite of such undesirable states as
+tyranny, slavery, ignorance and apathy.</p>
+
+<p>I asked myself, how would software designed to promote autonomy function? I
+started to hack and the drogulus was born.</p>
+
+<p>The drogulus is a speculative exercise in
+<a href="/article/p2p-concise-and-simple">peer-to-peer</a> decentralisation, a
+political statement (it promotes a certain point of view about technology's
+role in society) and is a place for me to explore fun ideas that have been
+knocking around in my head for a while.</p>
 
 <p>I tell myself, "it'll all come to nothing" but I'm having too much fun to
 stop, so I want to tell you about the drogulus to give you a sense of why I
 find it so fascinating.</p>
 
-<p>It started when I tried to articulate my growing unease with the web. I
-arrived at three problems:</p>
+<p>So, how is the drogulus designed to promote digital autonomy?</p>
 
-<ol>
-    <li><em>Users are no longer in control (of their digital assets or
-    identity)</em> - In order to publish anything on the web most users
-    need third party web sites to curate data on their behalf. These are the
-    notorious walled gardens that lock in data and make it hard to migrate to
-    other services. Furthermore, each website requires its own set of
-    credentials to identify the user making it hard to tell that the provenance
-    of data on one service is the same as that on yet another. Baroque
-    technological solutions have been proposed to solve such problems but these
-    are merely a manifestation of problem #2.</li>
-
-    <li><em>Hackers (used in the positive sense of the word) are obstructed
-    by incumbent technology from tackling problems with elegant, useful and
-    joyful solutions</em> - The beautifully simple hypertext system
-    originally envisioned by Tim Berners-Lee has grown into a monster. It's a
-    plethora of complex technologies specified by committee that run on quirky
-    browsers which never behave consistently. Furthermore, the web's
-    decentralized nature has been undermined: large parts of it go dark when
-    certain hosting providers break down or if popular websites fall over - the
-    inevitable result of reliance on centralised services and a manifestation
-    of problem #3.</li>
-
-    <li><em>The web, as it exists today, contains many inadvertent points of
-    control, lock-in and authority each of which is a potential mechanism for
-    dis-empowerment and exploitation</em> - This highlights fundamental
-    political and ethical problems concerning control, privacy and
-    participation. Much of this is due to the web's client/server architecture:
-    it promotes centralisation of power and single points of failure. Such
-    potential dis-empowerment even extends to political and legal manipulations
-    of <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> - the
-    mechanism for linking domains to the computers that host websites.</li>
-</ol>
-
-<p>These problems are contrary a concept that is very important to me:
-autonomy.</p>
-
-<p>For me, when someone or something is autonomous it is self-directing, free
-to act of its own accord and lacking imposition or direct control from external
-parties. It also suggests intelligence and awareness enough to be able to enjoy
-and make use of such freedom. Furthermore, such intelligence entails ethical
-and political considerations on the part of the someone or something - they
-become accountable for their actions. Autonomy is also the opposite of such
-undesirable states as tyranny, slavery, ignorance and apathy.</p>
-
-<p>I wondered how a networked technology designed to promote autonomy would
-function. Would it be possible to create a simple yet useful foundation within
-which others could build, collaborate and share data without prejudice?
-Furthermore, it should be possible to demonstrate a reasonable movement of
-thought from ethical and political considerations via technical requirements to
-a working solution. I started to hack, and the drogulus was born.</p>
-
-<p>The drogulus is a global federated, decentralized and openly writeable data
-store and computation platform that includes mechanisms for provenance and
-trust via
-<a href="https://en.wikipedia.org/wiki/Public-key_cryptography">public key
-cryptography</a>.</p>
+<p>It's a global federated, decentralized and open data store that can be
+programmed by anyone. Identity and provenance is ensured by
+<a href="http://ntoll.org/article/public-key-crypto-concise-and-simple">cryptographically signing</a>
+digital assets.</p>
 
 <p>Being federated (the system consists of many independent but collaborating
-entities) and decentralized (no entity is more important than any of the
-others) ensures users are free from choke points of authority that may be used
-to control access to data and usage of the system.</p>
+entities) and decentralized (no entity is more important than the others)
+ensures users are free from choke points of authority that may be used to
+control access to data and usage of the system.</p>
 
-<p>Being openly writeable ensures no user is barred from the system. All users
-are free to contribute, change, enhance and expand the system without
-prejudice.</p>
+<p>Being an open system means all users are free to contribute, change, enhance
+and expand the system without prejudice.</p>
 
-<p>Being a distributed computation platform means users can do something useful
-with the data stored in the drogulus. By distributed computation I mean
-asynchronously running programs on peers in the network without having to
-rely on intermediaries to provide such services. Imagine it as a sort of
-reconfigurable <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> on
-steroids: by running a drogulus peer you are sharing a small amount of your
-potential computing power with everyone else on the network).</p>
+<p>Being programmable means users can do something with the data stored within
+the drogulus. It's a sort of distributed programming environment. Imagine it as
+a re-configurable <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a>
+on steroids: by running a node in the drogulus network you are sharing a small
+amount of your potential computing power with everyone else on the network.</p>
 
-<p>Having a cryptographic mechanism for provenance allows users of the drogulus
-to identify each other and build trust whilst retaining control of data without
-a reliance upon external parties.</p>
+<p> By using public key cryptography the drogulus ensures the provenance of the
+data and that it has not been tampered with. Importantly, there is no central
+authority to prove who's who. Identity is built on the far more humane
+mechanism of a
+<a href="http://en.wikipedia.org/wiki/Web_of_trust">web of trust</a>.</p>
 
-<p>So, how does it work? The drogulus has three core components:</p>
+<p>So how does it work? Well, there are three simple core components:</p>
 
 <ul>
   <li>A
   <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">distributed
-  hash table</a> (DHT) that provides the data store and replaces DNS.</li>
-  <li>Trust and identity enforced via
+  hash table</a> (DHT) that provides the data store and allows users to find
+  each other.</li>
+  <li>Trust and identity enforced by the afore mentioned
   <a href="https://en.wikipedia.org/wiki/Digital_signature">cryptographic
   signing</a> of digital assets.</li>
   <li>Logos
@@ -115,74 +111,95 @@ a reliance upon external parties.</p>
   a simple
   <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>
   like programming language for asynchronously working with data stored in the
-  DHT.</li>
+  distributed hash table.</li>
 </ul>
 
-<p>The gist of a distributed hash table is that it works like a sort of
-universal dictionary: a unique key is used to identify some value. In the case
-of a traditional dictionary, the key is a word and the associated value is
-its definition. However, a distributed hash table allows users to create new
-keys and values (where the values can be any sort of digital asset).
-Furthermore, the hash table is split in to the equivalent of the many volumes
-of a traditional dictionary. Each person who ever uses the dictionary has a
-copy of just one such volume - although there will be many copies of each
-volume given to many different users. Finally, users of the dictionary keep
-track of which of their friends hold what volume. To look up or store a value
-users simply contact a friend with the correct volume containing the desired
-key. If they don't know a person with the right volume then they play a sort of
+<p>Each component promotes autonomy in the following ways:</p>
+
+<p>A distributed hash table works like a sort of peer-to-peer dictionary: a
+unique key is used to identify a value. In the case of a traditional
+dictionary, the key is a word and the value is its definition. Being a data
+store, the distributed hash table allows users to create, retrieve, update and
+delete their own keys and associated digital values.</p>
+
+<p>The hash table is distributed because it is split in to the equivalent of
+many volumes of a traditional dictionary. Each person who ever uses the
+dictionary has a copy of just one volume with many copies of the same volume
+being distributed to many different users.</p>
+
+<p>Users keep track of which of their friends on the network hold what volume.
+Users interact with the distributed hash table by contacting the friend with
+the correct volume for the desired item. If they don't know anyone with the
+right volume they play a sort of
 <a href="https://en.wikipedia.org/wiki/Six_degrees_of_separation">six-degrees-of-separation</a>
-game with their friends until someone with the correct volume is found.
-Distributed hash tables also share an interesting property with
+game with their friends until someone with the correct volume is found.</p>
+
+<p>Distributed hash tables also share an interesting property with
 <a href="http://www.bittorrent.com/">Bittorrent</a>: the more popular an entry
 is the more widespread it becomes, thus improving performance since popular
 items are easier to find.</p>
 
 <p>The drogulus implements a version of the
 <a href="https://en.wikipedia.org/wiki/Kademlia">Kademlia</a> distributed hash
-table. The innovation the drogulus brings is that keys and values are
-cryptographically signed in such a way that their provenance can be proven and
-content shown to be "intact" (i.e. not tampered with) in a similar way that you
-might use <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy">PGP</a>
-to sign email. Values that do not pass the cryptographic checks are ignored and
-nodes on the network that attempt to propagate such values are punished by
-being blocked.</p>
+table algorithm. The innovation the drogulus brings is that keys and values are
+signed in such a way that their provenance can be proven and content shown to
+be intact. Furthermore, users cannot interfere with each other's items stored
+within the distributed hash table unless they have access to the same private
+key.</p>
 
-<p>Logos is a
+<p>Items are self contained and any that do not pass the cryptographic checks
+are ignored and nodes on the network that attempt to propagate such values are
+punished by being blocked by their peers.</p>
+
+<p>Programming the drogulus is done via Logos, a
 <a href="https://en.wikipedia.org/wiki/Homoiconicity">homoiconic</a> language:
-Logos programs can rewrite other Logos programs in order to extend the Logos
-programming language itself. This is an important property: users have the
-autonomy to grow the Logos language to suite their own needs. Furthermore,
-Logos programs are themselves values stored within the DHT so users can re-use
-each other's code. They run in asynchronous "ensembles" on peers in the
-drogulus that eventually arrive at a consensus from processing items of data
-(including other programs) stored within the DHT. Logos programs are
+this means code and data are the same thing in Logos. This has the interesting
+mind-bending side effect that Logos programs can rewrite other Logos programs
+in order to extend the Logos programming language itself. This is an important
+property: users have the autonomy to grow the Logos programming language to
+suite their own needs.</p>
+
+<p>Since Logos programs are also data they are stored as values within the
+distributed hash table so users can re-use each other's code.</p>
+
+<p>They run in asynchronous "ensembles" on other nodes in the drogulus network.
+The result is delivered when the ensemble eventually arrives at a consensus. To
+protect peers, Logos programs are
 <a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandboxed</a>
-and intentionally limited in terms of time (how long a computation may last)
-and space (how much memory may be used) to protect the collaborating peers from
-nefarious code.</p>
+and intentionally limited in terms of time (how long they can run for) and
+space (how much memory may be used).</p>
 
-<p>Currently, the DHT is almost finished, the cryptographic layer is done and
-Logos is in the advanced planning stages with some experimental code
-written.</p>
+<p>At each point in hacking together the drogulus I've tried to build a
+solution whose outcomes reflect my ethical and political considerations: a
+focus on autonomy and openness and the removal of authority and choke
+points.</p>
 
-<p>So far, the drogulus is an academic exercise and playtime for me during
-my daily commute. Also, because I'm working at such an abstract level it's
-hard for me to comprehend what use others may find for a global, decentralised
-data store and computation platform. That's why I wanted to present the
-drogulus in its current incomplete state: to gauge what sort of reaction it
-might get.</p>
+<p>Unfortunately, the drogulus is unfinished! Currently, the distributed hash
+table is almost done, the cryptographic layer is finished and Logos is in the
+advanced planning stages with some experimental code written.</p>
+
+<p>It's early days and I realise that there are potential contradictions and
+problems that I've not worked out, nor is there anything useful that can be
+achieved with the drogulus at this moment in time. Because I'm working at such
+an abstract level it's hard for me to comprehend what use others may find for a
+programmable peer-to-peer data store. That's why I wanted to present the
+drogulus in its current incomplete state: to gauge what sort of reaction (if
+any) it might get.</p>
 
 <p>I'll finish by pointing out that in 1996
 <a href="https://en.wikipedia.org/wiki/William_Gibson">William Gibson</a>
 described the web as merely the
 <a href="http://www.nytimes.com/1996/07/14/magazine/the-net-is-a-waste-of-time.html?pagewanted=all">test card for 21st century technology</a>.
-I'd like to think we can do better than the web. I'm not suggesting
-the drogulus is a solution - far from it, it's not even finished! Rather I'm
-suggesting that we'd only have ourselves to blame if we don't imagine or try to
-build something better than the test card that is the web. After all, if
-there's one thing that the web has taught us, it is that engineering software
-is a far more useful, tangible and easier agent of change than traditional
-means of political engagement.</p>
+I'd like to think we can do better than the web. Thinking outside its confines
+has been a liberating experience and I'd encourage everyone to do the same.
+Obviously the drogulus is the rough and ready result of such pondering by
+me.</p>
+
+<p>We'd only have ourselves to blame if we don't imagine and build something
+better than the test card that is the web. After all, if there's one thing that
+the web has taught us, it is that engineering software is a far more useful,
+tangible and easier agent of change than traditional means of political
+engagement.</p>
 
 <p>The code is on <a href="http://github.com/ntoll/drogulus">GitHub</a> and
 I've created a simple <a href="http://drogul.us">website</a> that explains
