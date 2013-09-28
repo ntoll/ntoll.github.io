@@ -31,7 +31,7 @@ def article(title='home'):
         result = render_template('articles/%s.html' % title)
         return result
     except Exception, ex:
-        abort(404)
+        abort(500)
 
 @app.errorhandler(404)
 def page_not_found(error):
