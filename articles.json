@@ -1,23 +1,33 @@
 [
   {
+    "date": "2014-04-28 12:30:00", 
+    "slug": "asyncio", 
+    "title": "Asynchronous Python", 
+    "description": "A concise and simple exploration of Python's new asyncio module."
+  },
+  {
     "date": "2014-03-24 08:00:00", 
     "slug": "autonomy", 
-    "title": "Autonomy"
+    "title": "Autonomy", 
+    "description": "A reflection upon personal autonomy."
   },
   {
     "date": "2014-01-15 22:30:00", 
     "slug": "pachelbel-canon", 
-    "title": "Pachelbel's Canon"
+    "title": "Pachelbel's Canon",
+    "description": "A look at some of the musical tricks used in Pachelbel's famous Canon in D."
   }, 
   {
     "date": "2013-11-03 15:00:00", 
     "slug": "build-a-drogulus", 
-    "title": "How to Build a Drogulus"
+    "title": "How to Build a Drogulus",
+    "description": "How to make a global, decentralized data store."
   }, 
   {
     "date": "2013-09-28 20:00:00", 
     "slug": "pyconuk2013-roundup", 
-    "title": "PyconUK 2013 Roundup"
+    "title": "PyconUK 2013 Roundup", 
+    "description": "Education, Education, Education (and Python)"
   }, 
   {
     "date": "2013-09-09 08:00:00", 
