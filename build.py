@@ -14,20 +14,23 @@ template = u"""{%% extends "base.html" %%}
 {%% endblock content %%}"""
 
 
-rss = Template(u"""<rss version="2.0">
+rss = Template(u"""<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
     <title>ntoll.org ~ everything I say is false</title>
     <link>http://ntoll.org/</link>
+    <atom:link href="http://ntoll.org/rss.xml" rel="self" type="application/rss+xml" />
     <description>The personal website of Nicholas H.Tollervey</description>
     <image>
         <url>http://ntoll.org/static/images/logo.png</url>
         <link>http://ntoll.org/</link>
+        <title>ntoll.org ~ everything I say is false</title>
     </image>
     {% for item in items %}
     <item>
         <title>{{ item.title }}</title>
         <link>http://ntoll.org/article/{{ item.slug }}</link>
-        <description>{{ item.content }}</description>
+        <guid>http://ntoll.org/article/{{ item.slug }}</guid>
+        <description>{{ item.description }}</description>
         <pubDate>{{ item.pub }}</pubDate>
     </item>
     {% endfor %}
@@ -53,7 +56,7 @@ for article in articles[:3]:
     content = title + content
     article['content'] = content
     date = datetime.strptime(article['date'], '%Y-%m-%d %H:%M:%S')
-    pub = date.strftime('%a, %d %B %Y %H:%M:%S GMT')
+    pub = date.strftime('%a, %d %b %Y %H:%M:%S GMT')
     article['pub'] = pub
     rss_list.append(article)
     home.append(content)
