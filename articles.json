@@ -1,5 +1,11 @@
 [
   {
+    "date": "2014-05-19 18:00:00", 
+    "slug": "hide", 
+    "title": "Nothing to hide..?", 
+    "description": "If you have nothing to hide, you have nothing to fear (discuss)."
+  },
+  {
     "date": "2014-04-28 12:30:00", 
     "slug": "asyncio", 
     "title": "Asynchronous Python", 

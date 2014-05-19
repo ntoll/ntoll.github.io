@@ -11,6 +11,14 @@
     </image>
     
     <item>
+        <title>Nothing to hide..?</title>
+        <link>http://ntoll.org/article/hide</link>
+        <guid>http://ntoll.org/article/hide</guid>
+        <description>If you have nothing to hide, you have nothing to fear (discuss).</description>
+        <pubDate>Mon, 19 May 2014 18:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Asynchronous Python</title>
         <link>http://ntoll.org/article/asyncio</link>
         <guid>http://ntoll.org/article/asyncio</guid>
@@ -24,14 +32,6 @@
         <guid>http://ntoll.org/article/autonomy</guid>
         <description>A reflection upon personal autonomy.</description>
         <pubDate>Mon, 24 Mar 2014 08:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Pachelbel's Canon</title>
-        <link>http://ntoll.org/article/pachelbel-canon</link>
-        <guid>http://ntoll.org/article/pachelbel-canon</guid>
-        <description>A look at some of the musical tricks used in Pachelbel's famous Canon in D.</description>
-        <pubDate>Wed, 15 Jan 2014 22:30:00 GMT</pubDate>
     </item>
     
 </channel>
