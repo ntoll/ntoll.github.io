@@ -1,4 +1,4 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, make_response
 app = Flask(__name__)
 
 @app.route('/')
@@ -7,7 +7,15 @@ def home():
 
 @app.route('/rss.xml')
 def rss():
-    return render_template('rss.xml')
+    response = make_response(render_template('rss.xml'))
+    response.mimetype = "application/rss+xml"
+    return response
+
+@app.route('/python.xml')
+def python():
+    response = make_response(render_template('python.xml'))
+    response.mimetype = "application/rss+xml"
+    return response
 
 @app.route('/about/')
 def about():
@@ -30,7 +38,7 @@ def article(title='home'):
     try:
         result = render_template('articles/%s.html' % title)
         return result
-    except Exception, ex:
+    except Exception as ex:
         abort(500)
 
 @app.errorhandler(404)

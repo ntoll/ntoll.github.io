@@ -1,0 +1,767 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>ntoll.org ~ everything I say is false</title>
+    <link>http://ntoll.org/</link>
+    <atom:link href="http://ntoll.org/python.xml" rel="self" type="application/rss+xml" />
+    <description>Pythonic aricles by Nicholas H.Tollervey</description>
+    <image>
+        <url>http://ntoll.org/static/images/logo.png</url>
+        <link>http://ntoll.org/</link>
+        <title>ntoll.org ~ everything I say is false</title>
+    </image>
+    
+    <item>
+        <title>PyconUK 2014 and the Education Track</title>
+        <link>http://ntoll.org/article/pyconuk-edu-2014</link>
+        <guid>http://ntoll.org/article/pyconuk-edu-2014</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pyconuk-edu-2014&quot;&gt;PyconUK 2014 and the Education Track&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 21st June (02:00PM)&lt;/p&gt;
+
+&lt;p&gt;I write software. I use a programming language called
+&lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt;. As well as being very easy to learn
+and fun to use Python is an amazingly powerful language that&#x27;s used by
+&lt;a href=&quot;https://www.python.org/about/success/&quot;&gt;thousands of organisations&lt;/a&gt;
+the world over - from the likes of
+&lt;a href=&quot;http://google.com/&quot;&gt;Google&lt;/a&gt;,
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America / Merrill Lynch&lt;/a&gt;,
+and
+&lt;a href=&quot;http://nasa.gov/&quot;&gt;NASA&lt;/a&gt; to small start-ups and scrappy little
+websites such as this one. Every day, &lt;em&gt;you&lt;/em&gt; inadvertently encounter
+thousands of digital creations made with Python. By any measure of technical
+success Python, it seems, is a triumph.&lt;/p&gt;
+
+&lt;p&gt;For all Python&#x27;s technical prestige, I believe the most important aspect of
+Python is the community that has evolved around the language. Perhaps
+&lt;a href=&quot;https://www.python.org/~guido/&quot;&gt;Guido&lt;/a&gt;&#x27;s desire for
+&lt;a href=&quot;https://www.python.org/doc/essays/cp4e/&quot;&gt;computer programming for
+everyone&lt;/a&gt; set the seeds for the growth of such a community. Of course,
+the development of Python is an entirely voluntary affair and inevitably
+attracts the sort of person who likely wants to contribute to the wider public
+good. Maybe it&#x27;s because the
+&lt;a href=&quot;https://www.python.org/psf-landing/&quot;&gt;Python Software Foundation&lt;/a&gt;
+(the charitable organisation that promotes Python and coordinates its
+development) is not just &lt;em&gt;sympathetic to&lt;/em&gt; but
+&lt;em&gt;proactive in&lt;/em&gt; encouraging engagement in Python programming
+&lt;a href=&quot;https://www.python.org/community/diversity/&quot;&gt;no matter your
+background&lt;/a&gt; and &lt;em&gt;especially if you belong to an underrepresented group
+of nascent programmers&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happily, the UK&#x27;s Python community are a diverse bunch who maintain a
+reputation as a friendly, welcoming and dynamic group. Every year we meet
+for our community organised &lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyconUK&lt;/a&gt;
+conference. We come together in a way that reflects the widely held view that
+diversity and friendliness are strengths of our community to be celebrated
+and fostered (to paraphrase PyconUK&#x27;s
+&lt;a href=&quot;http://pyconuk.net/CodeOfConduct&quot;&gt;statement on diversity and
+conduct&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;For the past three years we have welcomed colleagues who are teachers of
+Python in UK schools. For the past two years we have put on a special
+education track to promote programmer / teacher collaboration and mutual
+learning. Last year we ran a kids&#x27; day where the proto-programmers of tomorrow
+explored Python with the technologists of today. The following videos give
+you a flavour of what we got up to:&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/qOya5R9g1T8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/uPq1VJpMEgw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/yerWCR3mppk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/u4IMlpmjbYg?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/PXPoc9HCTlo?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/RZJFdeDpo8w?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We are delighted to be running an education track at this year&#x27;s
+PyconUK (to be held on 19th-22nd September in Coventry).&lt;/p&gt;
+
+&lt;p&gt;The philosophy of the education track is simple: wonderful things happen
+when diverse groups of people come together to learn about and explore
+empowering technology such as Python.&lt;/p&gt;
+
+&lt;p&gt;If you are a teacher, parent, programmer or young person interested in
+exploring technology then the education track has something for you. We have
+secured some very generous support for teachers, parents and young people to
+attend at little or no cost. Kudos to
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America&lt;/a&gt;,
+&lt;a href=&quot;https://www.python.org/psf-landing/&quot;&gt;The Python Software Foundation&lt;/a&gt;,
+&lt;a href=&quot;https://www.hp.com/&quot;&gt;Hewlett Packard&lt;/a&gt;,
+&lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;The Raspberry Pi Foundation&lt;/a&gt;
+and our very own
+&lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyconUK Society&lt;/a&gt; for their extraordinarily
+abundant support.&lt;/p&gt;
+
+&lt;p&gt;Full details can be found here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pyconuk.org/education&quot;&gt;http://pyconuk.org/education&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Book now because places are limited!&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 21 Jun 2014 14:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+        <title>Asynchronous Python</title>
+        <link>http://ntoll.org/article/asyncio</link>
+        <guid>http://ntoll.org/article/asyncio</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/asyncio&quot;&gt;Asynchronous Python&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 28th April, 2014 (12:30PM)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt; version 3.4 was recently released.
+For me, the most interesting
+&lt;a href=&quot;https://docs.python.org/3.4/whatsnew/3.4.html&quot;&gt;update&lt;/a&gt;
+was the inclusion of the
+&lt;code&gt;&lt;a href=&quot;http://legacy.python.org/dev/peps/pep-3156/&quot;&gt;asyncio&lt;/a&gt;&lt;/code&gt;
+module. The
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio.html&quot;&gt;documentation&lt;/a&gt;
+states it,&lt;/p&gt;
+
+&lt;blockquote&gt;...provides infrastructure for writing single-threaded concurrent
+code using coroutines, multiplexing I/O access over sockets and other
+resources, running network clients and servers, and other related primitives.
+&lt;/blockquote&gt;
+
+&lt;p&gt;While I understand all the terminology from the documentation I don&#x27;t yet
+have a &lt;em&gt;feel&lt;/em&gt; for the module nor do I yet comprehend when to use one
+feature rather than another. Writing about this module and examining
+concrete examples is my way to
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Grok&quot;&gt;grok&lt;/a&gt;
+&lt;code&gt;asyncio&lt;/code&gt;. I&#x27;ll be concise and only assume familiarity with
+Python.&lt;/p&gt;
+
+&lt;p&gt;So, what is &lt;code&gt;asyncio&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;It&#x27;s a module that enables you to write code that concurrently handles
+asynchronous network based interactions.&lt;/p&gt;
+
+&lt;p&gt;What precisely do I mean?&lt;/p&gt;
+
+&lt;p&gt;Concurrency is when several things happen simultaneously. When something is
+asynchronous it is literally not synchronised: there is no way to tell when
+some &lt;em&gt;thing&lt;/em&gt; may happen (in this case, network based I/O).
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Input/output&quot;&gt;I/O&lt;/a&gt; (input/output)
+is when a program communicates with the &quot;outside world&quot; and network based I/O
+simply means the program communicates with another device (usually) on the
+internet. Messages arrive and depart via the network at unpredictable times -
+&lt;code&gt;asyncio&lt;/code&gt; helps you write programs that deal with all these
+interactions simultaneously.&lt;/p&gt;
+
+&lt;p&gt;How does it work?&lt;/p&gt;
+
+&lt;p&gt;At the core of &lt;code&gt;asyncio&lt;/code&gt; is an
+&lt;a href=&quot;http://hg.python.org/cpython/file/4ab2d8fac52b/Lib/asyncio/base_events.py#l176&quot;&gt;event loop&lt;/a&gt;.
+This is simply code that keeps looping (I&#x27;m trying to avoid the
+temptation of using a racing car analogy). Each &quot;lap&quot; of the loop (dammit)
+checks for new I/O events and does various other &quot;stuff&quot; that we&#x27;ll come onto
+in a moment. Within the &lt;code&gt;asyncio&lt;/code&gt; module, the
+&lt;a href=&quot;http://hg.python.org/cpython/file/4ab2d8fac52b/Lib/asyncio/base_events.py#l761&quot;&gt;_run_once&lt;/a&gt;
+method encapsulates a full iteration of the loop. Its documentation
+explains:&lt;/p&gt;
+
+&lt;blockquote&gt;This calls all currently ready callbacks, polls for I/O,
+schedules the resulting callbacks, and finally schedules
+&#x27;call_later&#x27; callbacks.
+&lt;/blockquote&gt;
+
+&lt;p&gt;A &lt;em&gt;callback&lt;/em&gt; is code to be run when some event has occurred and
+&lt;em&gt;polling&lt;/em&gt; is discovering the status of something external to the
+program (in this case network based I/O activity). When a small child
+constantly asks, &quot;are we there yet..?&quot; on a long car journey, that&#x27;s polling.
+When the unfortunate parent replies, &quot;I&#x27;ll tell you when we arrive&quot; they are
+creating a sort of callback (i.e. they promise to do something when some
+condition is met). The &lt;code&gt;_run_once&lt;/code&gt; method processes the
+I/O events that occurred during the time it took to complete the
+&lt;em&gt;previous&lt;/em&gt; &quot;lap&quot;, ensures any callbacks that need to be run are done so
+during &lt;em&gt;this&lt;/em&gt; lap and carries out &quot;housekeeping&quot; needed for callbacks
+that have &lt;em&gt;yet to be called&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Importantly, the pending callbacks are executed one after the other
+- stopping the loop from continuing. In other words, the next &quot;lap&quot; cannot
+start &lt;em&gt;until all the sequentially executed callbacks finish&lt;/em&gt; (in some
+sense).&lt;/p&gt;
+
+&lt;p&gt;I imagine you&#x27;re thinking, &quot;Hang on, I thought you said
+&lt;code&gt;asyncio&lt;/code&gt; works concurrently?&quot; I did and it does. Here&#x27;s the
+problem: concurrency is hard and there&#x27;s more than one way to do it. So it&#x27;s
+worth taking some time to examine why &lt;code&gt;asyncio&lt;/code&gt; works in the
+way that it does.&lt;/p&gt;
+
+&lt;p&gt;If concurrent tasks interact with a shared resource they run the risk of
+interfering with each other. For example, task A reads a
+record, task B reads the same record, both A and B change the retrieved
+record in different ways, task B writes the record, then task A writes the
+record (causing the changes made by task B to be lost). Such interactions
+between indeterminate
+&quot;&lt;a href=&quot;https://en.wikipedia.org/wiki/Thread_%28computer_science%29&quot;&gt;threaded&lt;/a&gt;&quot;
+tasks result in painfully hard-to-reproduce bugs and complicated
+mechanisms required to mitigate such situations. This is bad because the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/KISS_principle&quot;&gt;KISS&lt;/a&gt; (keep it
+simple, stupid) principle is abandoned.&lt;/p&gt;
+
+&lt;p&gt;One solution is to program in a synchronous manner: tasks
+executed one after the other so they have no chance to interfere with
+each other. Such programs are easy to understand since they&#x27;re simply
+a deterministic sequential list of things to do: first A, then B,
+followed by C and so on. Unfortunately, if A needs to wait for something, for
+example, a reply from a machine on the network, then the whole program waits.
+As a result, the program can&#x27;t handle any other events that may occur
+while it waits for A&#x27;s network call to complete - in such a case,
+the program is described as
+&quot;&lt;a href=&quot;https://en.wikipedia.org/wiki/Blocking_%28computing%29&quot;&gt;blocked&lt;/a&gt;&quot;.
+The program becomes potentially slow and unresponsive - an unacceptable
+condition if we&#x27;re writing something that needs to react quickly to things
+(such as a server - precisely the sort of program &lt;code&gt;asyncio&lt;/code&gt; is
+intended to help with).&lt;/p&gt;
+
+&lt;p&gt;Because &lt;code&gt;asyncio&lt;/code&gt; is event driven, network related I/O is
+&lt;em&gt;non-blocking&lt;/em&gt;. Instead of waiting for a reply from a network call
+before continuing with a computation, programmers define callbacks to be run
+only when the result of the network call becomes known. In the meantime,
+the program continues to respond to other things: the event loop keeps polling
+for and responding to network I/O events (such as when the reply to our
+network call arrives and the specified callbacks are executed).&lt;/p&gt;
+
+&lt;p&gt;This may sound abstract and confusing but it&#x27;s remarkably close to how we
+make plans in real life: when &lt;em&gt;X&lt;/em&gt; happens, do &lt;em&gt;Y&lt;/em&gt;. More
+concretely, &quot;when the tumble dryer finishes, fold the clothes and put them
+away&quot;. Here, &quot;the tumble dryer finishes&quot; is some &lt;em&gt;event&lt;/em&gt; we&#x27;re
+expecting and &quot;fold the clothes and put them away&quot; is a callback that
+specifies what to do when the event happens. Once this plan is made, we&#x27;re
+free to get on with other things &lt;em&gt;until&lt;/em&gt; we discover the tumble dryer
+has finished.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, as humans we work on concurrent tasks in a similar
+non-blocking manner. We skip between the things we need to do while we wait
+for other things to happen: we know we&#x27;ll have time to squeeze the orange
+juice while the toast and eggs are cooking when we make breakfast. Put in a
+programmatic way, execute B while waiting on the result of the network call
+made by A.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ntoll.org/static/images/breakfast.jpg&quot; alt=&quot;Orange juice, toast and eggs&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Such familiar concepts mean &lt;code&gt;asyncio&lt;/code&gt; avoids potentially
+confusing and complicated &quot;threaded&quot; concurrency while retaining the benefits
+of strictly sequential code. In fact, the
+&lt;a href=&quot;http://legacy.python.org/dev/peps/pep-3156/&quot;&gt;specification&lt;/a&gt; for
+&lt;code&gt;asyncio&lt;/code&gt; states that callbacks are,&lt;/p&gt;
+
+&lt;blockquote&gt;[...] strictly serialized: one callback must finish before the
+next one will be called. This is an important guarantee: when two or more
+callbacks use or modify shared state, each callback is guaranteed that while
+it is running, the shared state isn&#x27;t changed by another callback.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Therefore, from a programmer&#x27;s perspective, it is important to understand
+&lt;em&gt;how&lt;/em&gt; asynchronous concurrent tasks are created, how such tasks
+&lt;em&gt;pause while waiting&lt;/em&gt; for non-blocking I/O, and how the callbacks that
+&lt;em&gt;handle the eventual results&lt;/em&gt; are defined. In other words, you need to
+understand coroutines, futures and tasks.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;asyncio&lt;/code&gt; module is helpfully simple about these
+abstractions:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;asyncio.coroutine&lt;/code&gt; - a
+    &lt;a href=&quot;http://legacy.python.org/dev/peps/pep-0318/&quot;&gt;decorator&lt;/a&gt; that
+    indicates a function is a coroutine. A coroutine is simply
+    a type of
+    &lt;a href=&quot;http://legacy.python.org/dev/peps/pep-0255/&quot;&gt;generator&lt;/a&gt; that
+    uses the &lt;code&gt;yield from&lt;/code&gt;, &lt;code&gt;return&lt;/code&gt; or
+    &lt;code&gt;raise&lt;/code&gt; syntax to generate results.&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;asyncio.Future&lt;/code&gt; - a class used to represent a result that
+    may not be available yet. It is an abstraction of something that has yet
+    to be realised. Callback functions that process the eventual result are
+    added to instances of this class (like a sort of to-do list of functions
+    to be executed when the result is known). If you&#x27;re familiar with
+    &lt;a href=&quot;https://twistedmatrix.com/trac/&quot;&gt;Twisted&lt;/a&gt; they&#x27;re called
+    &lt;em&gt;deferreds&lt;/em&gt; and elsewhere they&#x27;re sometimes called
+    &lt;em&gt;promises&lt;/em&gt;.&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;asyncio.Task&lt;/code&gt; - a subclass of &lt;code&gt;asyncio.Future&lt;/code&gt;
+    that wraps a coroutine. The resulting object is realised when the
+    coroutine completes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&#x27;s examine each one of these abstractions in more detail:&lt;/p&gt;
+
+&lt;p&gt;A coroutine is a sort of generator function. A task defined
+by a coroutine may be suspended; thus allowing the event loop to get on with
+other things (as described above). The
+&lt;a href=&quot;http://legacy.python.org/dev/peps/pep-0380/&quot;&gt;&lt;code&gt;yield from&lt;/code&gt;&lt;/a&gt;
+syntax is used to suspend a coroutine. A coroutine can &lt;code&gt;yield from&lt;/code&gt;
+other coroutines &lt;em&gt;or&lt;/em&gt; instances of the &lt;code&gt;asyncio.Future&lt;/code&gt;
+class. When the &lt;em&gt;other&lt;/em&gt;
+coroutine has a result or the pending &lt;code&gt;Future&lt;/code&gt; object is realised,
+execution of the coroutine continues from the &lt;code&gt;yield from&lt;/code&gt;
+statement that originally suspended the coroutine (this is sometimes referred
+to as re-entry). The result of a &lt;code&gt;yield from&lt;/code&gt; statement will be
+either the return value of the &lt;em&gt;other&lt;/em&gt; coroutine or the result of the
+&lt;code&gt;Future&lt;/code&gt; instance. If the referenced coroutine
+or &lt;code&gt;Future&lt;/code&gt; instance raise an exception this will be propagated.
+Ultimately, at the end of the &lt;code&gt;yield from&lt;/code&gt; chain, will be a
+coroutine that actually returns a result or raises an exception (rather than
+yielding from some other coroutine).&lt;/p&gt;
+
+&lt;p&gt;A helpful (yet not entirely accurate) metaphor is the process of calling a
+customer support line. Perhaps you want to know why your order for goods
+is late. The person at the end of the phone explains they can&#x27;t continue with
+your query because they need to check something with their accounts
+department. They promise to call you back. This pause is similar to the
+&lt;code&gt;yield from&lt;/code&gt; statement: they&#x27;re suspending the work while they
+wait for something else, thus allowing you to get on with other stuff. At some
+point, their accounts department will provide a result and the customer
+support agent will re-enter the process of handling your query and when
+they&#x27;re done, will fulfil their promise and give you a call (hopefully with
+good news about your order).&lt;/p&gt;
+
+&lt;p&gt;The important concept to remember is that &lt;code&gt;yield from&lt;/code&gt; suspends
+coroutines pending a result so the event loop is able to get on with other
+things. When the result becomes known, the coroutine resumes.&lt;/p&gt;
+
+&lt;p&gt;The following example (like many of the examples in this post, it&#x27;s an
+annotated modification of code in the
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-task.html#example-chain-coroutines&quot;&gt;Python documentation&lt;/a&gt;
+on &lt;code&gt;asyncio&lt;/code&gt;) illustrates these concepts by chaining coroutines
+that ultimately add two numbers together:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+Two coroutines chained together.
+
+The compute() coroutine is chained to the print_sum() coroutine. The
+print_sum() coroutine waits until compute() is completed before it returns a
+result.
+&quot;&quot;&quot;
+import asyncio
+
+
+# Notice the decorator!
+@asyncio.coroutine
+def compute(x, y):
+    print(&quot;Compute %s + %s ...&quot; % (x, y))
+    # Pause the coroutine for 1 second by yielding from asyncio&#x27;s built in
+    # sleep coroutine. This simulates the time taken by a non-blocking I/O
+    # call. During this time the event loop can get on with other things.
+    yield from asyncio.sleep(1.0)
+    # Actually return a result!
+    return x + y
+
+
+@asyncio.coroutine
+def print_sum(x, y):
+    # Pause the coroutine until the compute() coroutine has a result.
+    result = yield from compute(x, y)
+    # The following print() function won&#x27;t be called until there&#x27;s a result.
+    print(&quot;%s + %s = %s&quot; % (x, y, result))
+
+
+# Reference the event loop.
+loop = asyncio.get_event_loop()
+# Start the event loop and continue until print_sum() is complete.
+loop.run_until_complete(print_sum(1, 2))
+# Shut down the event loop.
+loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that the coroutines only execute when the loop&#x27;s
+&lt;code&gt;run_until_complete&lt;/code&gt; method is called.
+&lt;a href=&quot;http://hg.python.org/cpython/file/4ab2d8fac52b/Lib/asyncio/base_events.py#l190&quot;&gt;Under the hood&lt;/a&gt;,
+the coroutine is wrapped in a &lt;code&gt;Task&lt;/code&gt; instance and a callback is
+added to this task that
+&lt;a href=&quot;http://hg.python.org/cpython/file/4ab2d8fac52b/Lib/asyncio/base_events.py#l72&quot;&gt;raises the appropriate exception&lt;/a&gt; needed to stop the loop (since
+the task is realised because the coroutine completed). The task instance is
+conceptually the same as the promise the customer support agent gave to
+call you back when they finished processing your query (in the helpful
+yet inaccurate metaphor described above). The return value of
+&lt;code&gt;run_until_complete&lt;/code&gt; is the task&#x27;s result or, in the event of a
+problem, its exception will be raised. In this example, the result is
+&lt;code&gt;None&lt;/code&gt; (since &lt;code&gt;print_sum&lt;/code&gt; doesn&#x27;t actually return
+anything to become the result of the task).&lt;/p&gt;
+
+&lt;p&gt;The following sequence diagram illustrates the flow of activity:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ntoll.org/static/images/tulip_coro.png&quot; alt=&quot;Sequence diagram of a coroutine&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;So far we&#x27;ve discovered that coroutines suspend and resume tasks in such
+a way that the event loop can get on with other things. Yet this only
+addresses how concurrent tasks co-exist through time given a single event
+loop.  It doesn&#x27;t tell us how to deal with the end result of such concurrent
+tasks when they complete and the result of their computation becomes
+known.&lt;/p&gt;
+
+&lt;p&gt;As has been already mentioned, the results of such pending concurrent
+tasks are represented by instances of the &lt;code&gt;async.Future&lt;/code&gt; class.
+Callback functions are added to such instances via the
+&lt;code&gt;add_done_callback&lt;/code&gt; method. Callback functions have a single
+argument: the &lt;code&gt;Future&lt;/code&gt; instance to which they have been added.
+They are executed when their &lt;code&gt;Future&lt;/code&gt;&#x27;s result eventually becomes
+known (we say the &lt;code&gt;Future&lt;/code&gt; is resolved). Resolution involves
+setting the result using the &lt;code&gt;set_result&lt;/code&gt; method or, in the case
+of a problem, setting the appropriate exception via
+&lt;code&gt;set_exception&lt;/code&gt;. The callback can access the
+&lt;code&gt;Future&lt;/code&gt;&#x27;s result (be it something valid or an exception) via the
+&lt;code&gt;result&lt;/code&gt; method: either the result will be returned or the
+exception will be raised.&lt;/p&gt;
+
+&lt;p&gt;Another example (again, an annotated modification of code from the
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-task.html#example-future-with-run-forever&quot;&gt;Python documentation&lt;/a&gt;)
+illustrates how this works:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+A future and coroutine interact. The future is resolved with the result of
+the coroutine causing the specified callback to be executed.
+&quot;&quot;&quot;
+import asyncio
+
+
+@asyncio.coroutine
+def slow_operation(future):
+    &quot;&quot;&quot;
+    This coroutine takes a future and resolves it when its own result is
+    known
+    &quot;&quot;&quot;
+    # Imagine a pause from some non-blocking network based I/O here.
+    yield from asyncio.sleep(1)
+    # Resolve the future with an arbitrary result (for the purposes of
+    # illustration).
+    future.set_result(&#x27;A result set by the slow_operation coroutine!&#x27;)
+
+
+def got_result(future):
+    &quot;&quot;&quot;
+    This function is a callback. Its only argument is the resolved future
+    whose result it prints. It then causes the event loop to stop.
+    &quot;&quot;&quot;
+    print(future.result())
+    loop.stop()
+
+
+# Get the instance of the event loop (also referenced in got_result).
+loop = asyncio.get_event_loop()
+# Instantiate the future we&#x27;re going to use to represent the as-yet unknown
+# result.
+future = asyncio.Future()
+# Wrap the coroutine in a task to schedule it for execution when the
+# event loop starts.
+asyncio.Task(slow_operation(future))
+# Add the callback to the future. The callback will only be executed when the
+# future is resolved by the coroutine. The future object is passed into the
+# got_result callback.
+future.add_done_callback(got_result)
+
+# Run the event loop until loop.stop() is called (in got_result).
+try:
+    loop.run_forever()
+finally:
+    loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;This example of futures and coroutines interacting probably feels awkward
+(at least, it does to me). As a result, and because such interactions are so
+fundamental to working with &lt;code&gt;asyncio&lt;/code&gt;, one should use the
+&lt;code&gt;asyncio.Task&lt;/code&gt; class (a subclass of &lt;code&gt;asyncio.Future&lt;/code&gt;)
+to avoid such boilerplate code. The example above can be simplified and made
+more readable as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+A far simpler and easy-to-read way to do things!
+
+A coroutine is wrapped in a Task instance. When the coroutine returns a result
+the task is automatically resolved causing the specified callback to be
+executed.
+&quot;&quot;&quot;
+import asyncio
+
+
+@asyncio.coroutine
+def slow_operation():
+    &quot;&quot;&quot;
+    This coroutine *returns* an eventual result.
+    &quot;&quot;&quot;
+    # Imagine a pause from some non-blocking network based I/O here.
+    yield from asyncio.sleep(1)
+    # A *lot* more conventional and no faffing about with future instances.
+    return &#x27;A return value from the slow_operation coroutine!&#x27;
+
+
+def got_result(future):
+    &quot;&quot;&quot;
+    This function is a callback. Its only argument is a resolved future
+    whose result it prints. It then causes the event loop to stop.
+
+    In this example, the resolved future is, in fact, a Task instance.
+    &quot;&quot;&quot;
+    print(future.result())
+    loop.stop()
+
+
+# Get the instance of the event loop (also referenced in got_result).
+loop = asyncio.get_event_loop()
+# Wrap the coroutine in a task to schedule it for execution when the event
+# loop starts.
+task = asyncio.Task(slow_operation())
+# Add the callback to the task. The callback will only be executed when the
+# task is resolved by the coroutine. The task object is passed into the
+# got_result callback.
+task.add_done_callback(got_result)
+
+# Run the event loop until loop.stop() is called (in got_result).
+try:
+    loop.run_forever()
+finally:
+    loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;To my eyes, this is a lot more comprehensible, easier to read and far
+simpler to write. The &lt;code&gt;Task&lt;/code&gt; class also makes it trivial to execute
+tasks in parallel, as the following example (again,
+&lt;a href=&quot;http://docs.python.org/3.4/library/asyncio-task.html?highlight=asyncio.sleep#example-parallel-execution-of-tasks&quot;&gt;taken from the Python documentation&lt;/a&gt;)
+shows:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+Three tasks running the same factorial coroutine in parallel.
+&quot;&quot;&quot;
+import asyncio
+
+
+@asyncio.coroutine
+def factorial(name, number):
+    &quot;&quot;&quot;
+    https://en.wikipedia.org/wiki/Factorial
+    &quot;&quot;&quot;
+    f = 1
+    for i in range(2, number+1):
+        print(&quot;Task %s: Compute factorial(%s)...&quot; % (name, i))
+        yield from asyncio.sleep(1)
+        f *= i
+    print(&quot;Task %s: factorial(%s) = %s&quot; % (name, number, f))
+
+
+# Instantiating tasks doesn&#x27;t cause the coroutine to be run. It merely
+# schedules the tasks.
+tasks = [
+    asyncio.Task(factorial(&quot;A&quot;, 2)),
+    asyncio.Task(factorial(&quot;B&quot;, 3)),
+    asyncio.Task(factorial(&quot;C&quot;, 4)),
+]
+
+
+# Get the event loop and cause it to run until all the tasks are done.
+loop = asyncio.get_event_loop()
+loop.run_until_complete(asyncio.wait(tasks))
+loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, all our examples have used the &lt;code&gt;asyncio.sleep&lt;/code&gt; function
+to simulate arbitrary amounts of time to represent the wait one might expect
+for non-blocking network I/O. This is convenient for examples, but now that we
+understand coroutines, futures and tasks we&#x27;d better examine how networking
+fits into the picture.&lt;/p&gt;
+
+&lt;p&gt;There are two approaches one can take to network based operations: the
+high level
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-stream.html&quot;&gt;Streams&lt;/a&gt;
+API or the lower level
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-protocol.html&quot;&gt;Transports
+and Protocols&lt;/a&gt; API. The following example (based on
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-stream.html#example&quot;&gt;this original implementation&lt;/a&gt;)
+shows how a coroutine works with non-blocking network I/O in order to
+retrieve HTTP headers using the stream based API:
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+Use a coroutine and the Streams API to get HTTP headers. Usage:
+
+python headers.py http://example.com/path/page.html
+&quot;&quot;&quot;
+import asyncio
+import urllib.parse
+import sys
+
+
+@asyncio.coroutine
+def print_http_headers(url):
+    url = urllib.parse.urlsplit(url)
+    # An example of yielding from non-blocking network I/O.
+    reader, writer = yield from asyncio.open_connection(url.hostname, 80)
+    # Re-entry happens when the connection is made. The reader and writer
+    # stream objects represent what you&#x27;d expect given their names.
+    query = (&#x27;HEAD {url.path} HTTP/1.0\r\n&#x27;
+             &#x27;Host: {url.hostname}\r\n&#x27;
+             &#x27;\r\n&#x27;).format(url=url)
+    # Write data out (does not block).
+    writer.write(query.encode(&#x27;latin-1&#x27;))
+    while True:
+        # Another example of non-blocking network I/O for reading asynchronous
+        # input.
+        line = yield from reader.readline()
+        if not line:
+            break
+        line = line.decode(&#x27;latin1&#x27;).rstrip()
+        if line:
+            print(&#x27;HTTP header&gt; %s&#x27; % line)
+
+
+# None of the following should be at all surprising.
+url = sys.argv[1]
+loop = asyncio.get_event_loop()
+task = asyncio.async(print_http_headers(url))
+loop.run_until_complete(task)
+loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Note how, instead of yielding from &lt;code&gt;asyncio.sleep&lt;/code&gt;, the
+coroutine yields from the built in &lt;code&gt;open_connection&lt;/code&gt; and
+&lt;code&gt;readline&lt;/code&gt; coroutines that handle the asynchronous networking I/O.
+Importantly, the call to &lt;code&gt;write&lt;/code&gt; does not block, but buffers the
+data and sends it out asynchronously.&lt;/p&gt;
+
+&lt;p&gt;The lower level API should feel familiar to anyone who has written code
+using the &lt;a href=&quot;https://twistedmatrix.com/&quot;&gt;Twisted framework&lt;/a&gt;. What
+follows is a trivial server (based on
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio-protocol.html#echo-server&quot;&gt;this example&lt;/a&gt;)
+that uses transports and protocols.&lt;/p&gt;
+
+&lt;p&gt;Transports are classes provided by &lt;code&gt;asyncio&lt;/code&gt; to abstract
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Transmission_Control_Protocol&quot;&gt;TCP&lt;/a&gt;,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/User_Datagram_Protocol&quot;&gt;UDP&lt;/a&gt;,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Transport_Layer_Security&quot;&gt;TLS/SSL&lt;/a&gt;
+and
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Pipeline_%28Unix%29&quot;&gt;subprocess pipes&lt;/a&gt;.
+Instances of such classes are responsible for the actual
+I/O and buffering. However, you don&#x27;t usually instantiate such classes
+yourself; rather, you call the event loop instance to set things up (and
+it&#x27;ll call you back when it succeeds).&lt;/p&gt;
+
+&lt;p&gt;Once the connection is established, a
+transport is always paired with an instance of the &lt;code&gt;Protocol&lt;/code&gt;
+class. You subclass &lt;code&gt;Protocol&lt;/code&gt; to implement your own network
+protocols; it parses incoming data and writes outgoing data by calling the
+associated transport&#x27;s methods for such purposes. Put simply, the
+transport handles the sending and receiving of things down the wire, while
+the protocol works out what the actual message means.&lt;/p&gt;
+
+&lt;p&gt;To implement a protocol override appropriate methods from the
+&lt;code&gt;Protocol&lt;/code&gt; parent class. Each time a connection is made (be it
+incoming or outgoing) a new instance of the protocol is instantiated and
+the various overridden methods are called depending on what network events
+have been detected. For example, every protocol class will have its
+&lt;code&gt;connection_made&lt;/code&gt; and &lt;code&gt;connection_lost&lt;/code&gt; methods
+called when the connection begins and ends. Between these two calls one might
+expect to handle &lt;code&gt;data_received&lt;/code&gt; events and use the paired
+&lt;code&gt;Transport&lt;/code&gt; instance to send data. The following simple echo
+server demonstrates the interaction between protocol and transport without
+the distraction of coroutines and futures.&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&quot;&quot;&quot;
+A simple (yet poetic) echo server. ;-)
+
+- ECHO -
+
+Use your voice - say what you mean
+Do not stand in the shadow
+Do not become an echo of someone else&#x27;s opinion
+We must accept ourselves and each other
+Even the perfect diamond
+may have cracks and faults
+
+A-L Andresen, 2014. (&lt;a href=&quot;http://bit.ly/1nvhr8T&quot;&gt;http://bit.ly/1nvhr8T&lt;/a&gt;)
+&quot;&quot;&quot;
+import asyncio
+
+
+class EchoProtocol(asyncio.Protocol):
+    &quot;&quot;&quot;
+    Encapsulates the behaviour of the echo protocol. A new instance of this
+    class is created for each new connection.
+    &quot;&quot;&quot;
+
+    def connection_made(self, transport):
+        &quot;&quot;&quot;
+        Called only once when the new connection is made. The transport
+        argument represents the connection to the client.
+        &quot;&quot;&quot;
+        self.transport = transport
+
+    def data_received(self, data):
+        &quot;&quot;&quot;
+        Called when the client sends data (represented by the data argument).
+        &quot;&quot;&quot;
+        # Write the incoming data immediately back to the client connection.
+        self.transport.write(data)
+        # Calling self.transport.close() disconnects. If you want the
+        # connection to persist simply comment out the following line.
+        self.transport.close()
+
+
+loop = asyncio.get_event_loop()
+# Create the coroutine used to establish the server.
+echo_coroutine = loop.create_server(EchoProtocol, &#x27;127.0.0.1&#x27;, 8888)
+# Run the coroutine to actually establish the server.
+server = loop.run_until_complete(echo_coroutine)
+
+try:
+    # Run the event loop forever, waiting for new connections.
+    loop.run_forever()
+except KeyboardInterrupt:
+    # Unless we get Ctrl-C keyboard interrupt.
+    print(&#x27;exit&#x27;)
+finally:
+    # Stop serving (existing connections remain open).
+    server.close()
+    # Shut down the loop.
+    loop.close()
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;An example interaction with this server using
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Netcat&quot;&gt;netcat&lt;/a&gt;
+is shown below:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;$ python echo.py &amp;
+[1] 7486
+$ nc localhost 8888
+Hello, World!
+Hello, World!
+$ fg
+python echo.py
+^Cexit
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Yet, this only scratches the surface of &lt;code&gt;asyncio&lt;/code&gt; and I&#x27;m
+cherry-picking the parts that most interest me. If you want to find out more
+the
+&lt;a href=&quot;https://docs.python.org/3.4/library/asyncio.html&quot;&gt;Python documentation&lt;/a&gt;
+for the module is a great place to start, as is
+&lt;a href=&quot;http://legacy.python.org/dev/peps/pep-3156/&quot;&gt;PEP 3156&lt;/a&gt; used to
+specify the module.&lt;/p&gt;
+
+&lt;p&gt;In conclusion &lt;code&gt;asyncio&lt;/code&gt; feels like Twisted on a diet with the
+added fun and elegance of coroutines. I&#x27;ve generally had good experiences
+using Twisted but always felt uncomfortable with its odd naming conventions
+(for example, calling the
+&lt;a href=&quot;https://twistedmatrix.com/trac/wiki/TwistedConch&quot;&gt;secure shell implementation&lt;/a&gt;
+&quot;conch&quot; is the world&#x27;s worst programming pun) and I suffer from an uneasy
+feeling that it exists in a slightly different parallel Pythonic universe.
+Personally, I feel &lt;code&gt;asyncio&lt;/code&gt; is a step in the right direction
+because such a lot of the &quot;good stuff&quot; from Twisted has made it into the
+core language in a relatively small and obvious module. I&#x27;m also looking
+forward to using it in my own projects (specifically,
+&lt;a href=&quot;http://drogul.us&quot;&gt;the drogulus&lt;/a&gt;).
+
+&lt;p&gt;As I become more adept at using this module I may write up more.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Image credits:
+&lt;a href=&quot;https://flic.kr/p/8TQSAL&quot;&gt;Breakfast&lt;/a&gt;
+&amp;copy; 2010
+&lt;a href=&quot;https://secure.flickr.com/photos/pankaj/&quot;&gt;Pankaj Kaushal&lt;/a&gt;
+under a
+&lt;a href=&quot;https://creativecommons.org/licenses/by-nc-nd/2.0/&quot;&gt;Creative Commons&lt;/a&gt;
+License.
+Sequence Diagram
+&lt;a href=&quot;https://docs.python.org/3.4/copyright.html&quot;&gt;&amp;copy; 2014&lt;/a&gt;
+&lt;a href=&quot;http://python.org&quot;&gt;The Python Software Foundation&lt;/a&gt;.
+&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Apr 2014 12:30:00 GMT</pubDate>
+    </item>
+    
+</channel>
+</rss>

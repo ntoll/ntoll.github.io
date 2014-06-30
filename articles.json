@@ -3,7 +3,8 @@
     "date": "2014-06-21 14:00:00", 
     "slug": "pyconuk-edu-2014", 
     "title": "PyconUK 2014 and the Education Track", 
-    "description": "An organiser's view of the PyconUK 2014 education track (it's going to be totally AWESOME!)."
+    "description": "An organiser's view of the PyconUK 2014 education track (it's going to be totally AWESOME!).",
+    "python": true
   },
   {
     "date": "2014-05-24 11:30:00", 
@@ -21,7 +22,8 @@
     "date": "2014-04-28 12:30:00", 
     "slug": "asyncio", 
     "title": "Asynchronous Python", 
-    "description": "A concise and simple exploration of Python's new asyncio module."
+    "description": "A concise and simple exploration of Python's new asyncio module.",
+    "python": true
   },
   {
     "date": "2014-03-24 08:00:00", 

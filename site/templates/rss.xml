@@ -14,7 +14,91 @@
         <title>PyconUK 2014 and the Education Track</title>
         <link>http://ntoll.org/article/pyconuk-edu-2014</link>
         <guid>http://ntoll.org/article/pyconuk-edu-2014</guid>
-        <description>An organiser's view of the PyconUK 2014 education track (it's going to be totally AWESOME!).</description>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pyconuk-edu-2014&quot;&gt;PyconUK 2014 and the Education Track&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 21st June (02:00PM)&lt;/p&gt;
+
+&lt;p&gt;I write software. I use a programming language called
+&lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt;. As well as being very easy to learn
+and fun to use Python is an amazingly powerful language that&#x27;s used by
+&lt;a href=&quot;https://www.python.org/about/success/&quot;&gt;thousands of organisations&lt;/a&gt;
+the world over - from the likes of
+&lt;a href=&quot;http://google.com/&quot;&gt;Google&lt;/a&gt;,
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America / Merrill Lynch&lt;/a&gt;,
+and
+&lt;a href=&quot;http://nasa.gov/&quot;&gt;NASA&lt;/a&gt; to small start-ups and scrappy little
+websites such as this one. Every day, &lt;em&gt;you&lt;/em&gt; inadvertently encounter
+thousands of digital creations made with Python. By any measure of technical
+success Python, it seems, is a triumph.&lt;/p&gt;
+
+&lt;p&gt;For all Python&#x27;s technical prestige, I believe the most important aspect of
+Python is the community that has evolved around the language. Perhaps
+&lt;a href=&quot;https://www.python.org/~guido/&quot;&gt;Guido&lt;/a&gt;&#x27;s desire for
+&lt;a href=&quot;https://www.python.org/doc/essays/cp4e/&quot;&gt;computer programming for
+everyone&lt;/a&gt; set the seeds for the growth of such a community. Of course,
+the development of Python is an entirely voluntary affair and inevitably
+attracts the sort of person who likely wants to contribute to the wider public
+good. Maybe it&#x27;s because the
+&lt;a href=&quot;https://www.python.org/psf-landing/&quot;&gt;Python Software Foundation&lt;/a&gt;
+(the charitable organisation that promotes Python and coordinates its
+development) is not just &lt;em&gt;sympathetic to&lt;/em&gt; but
+&lt;em&gt;proactive in&lt;/em&gt; encouraging engagement in Python programming
+&lt;a href=&quot;https://www.python.org/community/diversity/&quot;&gt;no matter your
+background&lt;/a&gt; and &lt;em&gt;especially if you belong to an underrepresented group
+of nascent programmers&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happily, the UK&#x27;s Python community are a diverse bunch who maintain a
+reputation as a friendly, welcoming and dynamic group. Every year we meet
+for our community organised &lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyconUK&lt;/a&gt;
+conference. We come together in a way that reflects the widely held view that
+diversity and friendliness are strengths of our community to be celebrated
+and fostered (to paraphrase PyconUK&#x27;s
+&lt;a href=&quot;http://pyconuk.net/CodeOfConduct&quot;&gt;statement on diversity and
+conduct&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;For the past three years we have welcomed colleagues who are teachers of
+Python in UK schools. For the past two years we have put on a special
+education track to promote programmer / teacher collaboration and mutual
+learning. Last year we ran a kids&#x27; day where the proto-programmers of tomorrow
+explored Python with the technologists of today. The following videos give
+you a flavour of what we got up to:&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/qOya5R9g1T8?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/uPq1VJpMEgw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/yerWCR3mppk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/u4IMlpmjbYg?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/PXPoc9HCTlo?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/RZJFdeDpo8w?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We are delighted to be running an education track at this year&#x27;s
+PyconUK (to be held on 19th-22nd September in Coventry).&lt;/p&gt;
+
+&lt;p&gt;The philosophy of the education track is simple: wonderful things happen
+when diverse groups of people come together to learn about and explore
+empowering technology such as Python.&lt;/p&gt;
+
+&lt;p&gt;If you are a teacher, parent, programmer or young person interested in
+exploring technology then the education track has something for you. We have
+secured some very generous support for teachers, parents and young people to
+attend at little or no cost. Kudos to
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America&lt;/a&gt;,
+&lt;a href=&quot;https://www.python.org/psf-landing/&quot;&gt;The Python Software Foundation&lt;/a&gt;,
+&lt;a href=&quot;https://www.hp.com/&quot;&gt;Hewlett Packard&lt;/a&gt;,
+&lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;The Raspberry Pi Foundation&lt;/a&gt;
+and our very own
+&lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyconUK Society&lt;/a&gt; for their extraordinarily
+abundant support.&lt;/p&gt;
+
+&lt;p&gt;Full details can be found here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pyconuk.org/education&quot;&gt;http://pyconuk.org/education&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Book now because places are limited!&lt;/p&gt;
+
+</description>
         <pubDate>Sat, 21 Jun 2014 14:00:00 GMT</pubDate>
     </item>
     
@@ -22,7 +106,169 @@
         <title>The Experience of Music</title>
         <link>http://ntoll.org/article/experience-of-music</link>
         <guid>http://ntoll.org/article/experience-of-music</guid>
-        <description>How do you experience music?</description>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/experience-of-music&quot;&gt;The Experience of Music&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 24th May (11:30AM)&lt;/p&gt;
+
+&lt;p&gt;This is a second blog post resulting from emails about music exchanged with
+my buddy &lt;a href=&quot;http://www.flourish.org&quot;&gt;Francis&lt;/a&gt; (the first one
+can be &lt;a href=&quot;/article/pachelbel-canon&quot;&gt;found here&lt;/a&gt;). I also felt
+compelled to write because of
+&lt;a href=&quot;https://twitter.com/ntoll/statuses/469237873469038592&quot;&gt;this recent
+fragment of conversation&lt;/a&gt; on Twitter with another collaborator and buddy,
+&lt;a href=&quot;http://drlj.me/&quot;&gt;Dr. Laura-Jane Smith&lt;/a&gt;, concerning how one
+measures the efficacy or effect of an artistic encounter.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Interesting article: what evidence is appropriate to support/justify &lt;a href=&quot;https://twitter.com/search?q=%23arts&amp;amp;src=hash&quot;&gt;#arts&lt;/a&gt; in &lt;a href=&quot;https://twitter.com/search?q=%23health&amp;amp;src=hash&quot;&gt;#health&lt;/a&gt;? Are clinicians too positivist? &lt;a href=&quot;http://t.co/tTj1hqQYoc&quot;&gt;http://t.co/tTj1hqQYoc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr LJ (@drlaurajane) &lt;a href=&quot;https://twitter.com/drlaurajane/statuses/469144660993384448&quot;&gt;May 21, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;What follows are personal reflections. Please take them with a large pinch
+of salt. I&#x27;m merely creating a
+&lt;a href=&quot;http://www.oreillynet.com/pub/wlg/2982&quot;&gt;context in which &lt;em&gt;&lt;u&gt;you&lt;/u&gt;&lt;/em&gt;
+may think&lt;/a&gt; about music.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/54763818?badge=0&quot; width=&quot;712&quot; height=&quot;400&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The video (by &lt;a href=&quot;http://vimeo.com/finallystudio&quot;&gt;FinallyStudio&lt;/a&gt;)
+claims there are lots of ways to understand music because
+there are lots of aspects of music to consider (and you don&#x27;t have to know
+about any of them to enjoy music). The evidence for this argument is all
+around us: people with no musical training enjoy music all the time. Be it
+listening to the radio, singing in the shower or picking out melodies on a
+self-taught instrument, music is somehow an innate part of the human
+experience, no matter your level of education.&lt;/p&gt;
+
+&lt;p&gt;Both Francis&#x27;s emails and Laura-Jane&#x27;s question about
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Positivism&quot;&gt;positivism&lt;/a&gt; struck me
+as overtly intellectual in outlook: there had to be some &lt;em&gt;thing&lt;/em&gt; to be
+identified, processed and (in LJ&#x27;s case) measured and interpreted. As Francis
+explained,&lt;/p&gt;
+
+&lt;blockquote&gt;I think I&#x27;m *so bad* at this particular music, I&#x27;m just not
+noticing any patterns.
+
+My instinctive feeling is it is just a whiney, drifty noise.
+&lt;/blockquote&gt;
+
+&lt;p&gt;In these two sentences Francis identifies the nub of the matter (and
+the title of this post): the &lt;em&gt;experience&lt;/em&gt; of music.&lt;/p&gt;
+
+&lt;p&gt;How does music feel? What are the sensations that music arouses in you?
+What do you think when you encounter music?&lt;/p&gt;
+
+&lt;p&gt;When reading this post I want you to wonder about your raw, intuitive or
+instinctive reactions to music rather than any higher order thinking about
+music.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;p&gt;I believe there is a danger to over-think music.&lt;/p&gt;
+
+&lt;p&gt;As far as I can tell,
+there&#x27;s no need to identify patterns to appreciate music that is otherwise
+unenjoyable. Perhaps the composer wanted to create whiney, drifty noise. Even
+if this is not the case, who&#x27;s to say Francis&#x27;s reaction is wrong? I find
+plenty of
+&lt;a href=&quot;https://www.youtube.com/watch?v=g5TVKhjEVtQ&quot;&gt;well loved music&lt;/a&gt;
+hard to enjoy (or even to listen to).&lt;/p&gt;
+
+&lt;p&gt;In the context of health,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Magnetic_resonance_imaging&quot;&gt;MRI scanners&lt;/a&gt;
+can&#x27;t measure &lt;a href=&quot;https://en.wikipedia.org/wiki/Qualia&quot;&gt;qualia&lt;/a&gt; to
+provide evidence of music&#x27;s efficacy or influence. Surely, enjoyment of the
+sensation is evidence enough? (After all, from a utilitarian perspective, the
+net sum of &quot;happiness&quot; in the world grows because of music.) Nevertheless, I&#x27;m
+reminded of an episode of the  BBC programme
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Imagine_%28TV_series%29&quot;&gt;Imagine&lt;/a&gt;
+from 2008 where
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Alan_Yentob&quot;&gt;Alan Yentob&lt;/a&gt; subjected
+himself to an MRI scan while listening to music. Upon hearing
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Jessye_Norman&quot;&gt;Jessye Norman&lt;/a&gt;
+perform one of Strauss&#x27;s
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Four_Last_Songs&quot;&gt;Four Last Songs&lt;/a&gt; -
+music to which he acknowledged he had a special emotional attachment - his
+brain was suffused with blood. As one reviewer
+&lt;a href=&quot;http://www.independent.co.uk/arts-entertainment/tv/reviews/last-nights-tv-when-a-bit-of-rhythm-beats-the-blues-839437.html&quot;&gt;put it&lt;/a&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;He listened to her and his mind blushed.
+&lt;/blockquote&gt;
+
+&lt;p&gt;While the MRI scanner allowed viewers to watch Yentob&#x27;s apparent physical
+reaction to Norman&#x27;s performance it didn&#x27;t give us a sense of Yentob&#x27;s
+obvious emotional reaction (obvious because he talks about how the music
+makes him feel).&lt;/p&gt;
+
+&lt;p&gt;Furthermore, each of us has a different, very personal reaction
+to music. What may seem like a heavenly performance to one person is a turgid
+noise to another. The infant school recorder ensemble may bring tears to the
+eyes for very different reasons, depending on who is listening. Some people
+love to play certain pieces while others can&#x27;t stand the thought of another
+damn performance.&lt;/p&gt;
+
+&lt;p&gt;Because of these reasons, attempting to pin down the experience of &quot;music&quot;
+feels like an impossible task.&lt;/p&gt;
+
+&lt;p&gt;Even generalisations don&#x27;t work. For example, we may assert that music is
+just a particular sort of sound; but then we&#x27;d need to explain
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Ludwig_van_Beethoven&quot;&gt;Beethoven&lt;/a&gt;&#x27;s
+composition technique. His deafness forced him to compose his later works
+solely in his head - no actual sound was involved in the process despite it
+being fundamentally musical.&lt;/p&gt;
+
+&lt;p&gt;In fact, some musicians disagree with the sentiment that music is in some
+way a sub-set of sound. Take the renegade American composer
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Charles_Ives&quot;&gt;Charles Ives&lt;/a&gt; who
+famously asked,&lt;/p&gt;
+
+&lt;blockquote&gt;What has sound got to do with music!?
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ives believed that music is in some way the underlying &quot;spirit&quot; of the
+composer and (especially) the performer expressed through sound rather than
+the sound itself. An alternative way to answer his question is to claim that
+music is the feeling you get from sounds rather than the sounds
+themselves.&lt;/p&gt;
+
+&lt;p&gt;In some sense, it &lt;em&gt;is&lt;/em&gt; rewarding to &quot;understand&quot; music and
+&lt;a href=&quot;/article/pachelbel-canon&quot;&gt;know what&#x27;s going on&lt;/a&gt;. Discovering,
+interpreting and describing the conceptual world of music is an interesting,
+enhancing and intensifying experience. But there is a danger that we become
+distracted by such intellectual diversions in a similar way that one might
+become fixated by the form of a Sonnet while missing its meaning:&lt;/p&gt;
+
+&lt;blockquote&gt;Silent Noon&lt;/br&gt;
+&lt;/br&gt;
+Your hands lie open in the long fresh grass, --&lt;/br&gt;
+The finger-points look through like rosy blooms:&lt;/br&gt;
+Your eyes smile peace. The pasture gleams and glooms&lt;/br&gt;
+&#x27;Neath billowing skies that scatter and amass.&lt;/br&gt;
+All round our nest, far as the eye can pass,&lt;/br&gt;
+Are golden kingcup-fields with silver edge&lt;/br&gt;
+Where the cow-parsley skirts the hawthorn-hedge.&lt;/br&gt;
+&#x27;Tis visible silence, still as the hour-glass.&lt;/br&gt;
+&lt;/br&gt;
+Deep in the sun-searched growths the dragon-fly&lt;/br&gt;
+Hangs like a blue thread loosened from the sky: --&lt;/br&gt;
+So this wing&#x27;d hour is dropt to us from above.&lt;/br&gt;
+Oh! clasp we to our hearts, for deathless dower,&lt;/br&gt;
+This close-companioned inarticulate hour&lt;/br&gt;
+When twofold silence was the song of love.&lt;/br&gt;
+&lt;/br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+~ Christina Rossetti
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Christina_Rossetti&quot;&gt;Rosetti&lt;/a&gt;&#x27;s
+poem was beautifully set to music by
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Ralph_Vaughan_Williams&quot;&gt;Ralph Vaughan-Williams&lt;/a&gt;
+(my wife and I enjoy playing it together ~ me on piano, Mary on &#x27;cello).
+Listen to the recording below; sit back, let the music and words wash over
+you.&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/XgJfv_3p9uU?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I challenge you to be unmoved.&lt;/p&gt;
+</description>
         <pubDate>Sat, 24 May 2014 11:30:00 GMT</pubDate>
     </item>
     
@@ -30,7 +276,162 @@
         <title>Nothing to hide..?</title>
         <link>http://ntoll.org/article/hide</link>
         <guid>http://ntoll.org/article/hide</guid>
-        <description>If you have nothing to hide, you have nothing to fear (discuss).</description>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/hide&quot;&gt;Nothing to hide..?&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 19th May, 2014 (06:00PM)&lt;/p&gt;
+
+&lt;p&gt;On several occasions I have had to explain my position on privacy and
+surveillance (especially in a digital context). To save me the task of
+repeating myself, here it is in as simple a form as possible.&lt;/p&gt;
+
+&lt;p&gt;&quot;If you have nothing to hide, you have nothing to fear&quot; is a common
+argument in support of the mass surveillance of citizens by the government or
+the harvesting of user data by private corporations. Often it is made in a
+reassuring manner, as demonstrated by
+&lt;a href=https://en.wikipedia.org/wiki/William_Hague&quot;&gt;William Hague&lt;/a&gt;:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/lWam4EWI48M&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A common re-statement of the argument goes, &quot;only if you&#x27;re doing something
+wrong should you worry, and then you don&#x27;t deserve to keep it private&quot;.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;m guessing many people will immediately sympathise with these sentiments.
+After all, we don&#x27;t want the bad guys to gain the upper hand, you&#x27;re probably
+a fine upstanding citizen and we should be happy that innocents are protected
+from the evil-doers that such a drag net will identify.&lt;/p&gt;
+
+&lt;p&gt;I beg to differ.&lt;/p&gt;
+
+&lt;p&gt;For a start, this position is a classic
+&lt;a href=&quot;https://en.wikipedia.org/wiki/False_dilemma&quot;&gt;false dichotomy&lt;/a&gt;:
+two seemingly black and white choices are given yet there are many ways to
+address the subject. Such either/or thinking excludes the potential for
+a more nuanced and subtle debate. Furthermore, such false dichotomies are a
+favourite tactic in argument and, unless you know what you&#x27;re looking for,
+can hoodwink many who take things at face value and stifle debate.&lt;/p&gt;
+
+&lt;p&gt;Leaving this aside, the actual choices presented in the argument hide
+various nasty &quot;home truths&quot;:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;It&#x27;s not you who determines if you have anything to hide&lt;/em&gt;.
+    It doesn&#x27;t matter how upstanding a citizen you think
+    &lt;em&gt;you&lt;/em&gt; are; your point of view doesn&#x27;t matter in this context since
+    it&#x27;s the law or (more dangerously) public opinion that judges you (viz.
+    misjudged attacks on paediatricians). For example, teenagers growing up
+    in the
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Eastern_Bloc&quot;&gt;Eastern Bloc&lt;/a&gt; had
+    to hide their enjoyment of &quot;corrupting capitalist music&quot; (such as Rock and
+    Roll). While one&#x27;s taste in music is a relatively harmless attribute
+    please consider the plight of
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/LGBT_rights_in_Singapore&quot;&gt;LGBT&lt;/a&gt;
+    persons living in Singapore and elsewhere who risk legal challenges and
+    remember the many curtailments of religious freedoms throughout
+    history.&lt;/li&gt;
+
+    &lt;li&gt;&lt;em&gt;It assumes surveillance results in correct data and sound
+    judgement.&lt;/em&gt; People make mistakes and sometimes agents of the state
+    or employees of corporations are &lt;em&gt;really stupid&lt;/em&gt; and don&#x27;t act in
+    the public or customer&#x27;s interest. For example, remember the
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Twitter_Joke_Trial&quot;&gt;Twitter joke
+    trial&lt;/a&gt;? Given the context of the tweet it was obviously a joke, but
+    the Police interpreted it differently. Is demonstrating a sense of humour
+    a crime? I&#x27;d argue it&#x27;s a healthy sign of a liberal tradition of free
+    speech.&lt;/li&gt;
+
+    &lt;li&gt;&lt;em&gt;Rules change.&lt;/em&gt; For example, the UK&#x27;s
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Regulation_of_Investigatory_Powers_Act_2000&quot;&gt;RIPA&lt;/a&gt;
+    law gives the government powers to investigate and intercept
+    communications on the grounds of &lt;em&gt;national security&lt;/em&gt;. Sounds
+    reasonable. Yet the number of public authorities empowered to use this
+    legislation has increased four times (in 2003, 2005, 2006 and 2010) and
+    many such bodies use their powers for totally unintended things (such as
+    &lt;a href=&quot;http://www.telegraph.co.uk/news/uknews/1584808/Council-spy-cases-hit-1000-a-month.html&quot;&gt;tracking dog fouling&lt;/a&gt;).
+    The result is supposedly water-tight legislation being subverted by local
+    councils (I hardly think dog shit is an issue of national security).&lt;/li&gt;
+
+    &lt;li&gt;&lt;em&gt;Breaking the law isn&#x27;t necessarily bad.&lt;/em&gt;
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Gandhi&quot;&gt;Mohandas Ghandi&lt;/a&gt;,
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Emmeline_Pankhurst&quot;&gt;Emmeline Pankhurst&lt;/a&gt;,
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Jesus&quot;&gt;Jesus&lt;/a&gt;,
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Nelson_Mandela&quot;&gt;Nelson Mandela&lt;/a&gt;,
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Socrates&quot;&gt;Socrates&lt;/a&gt;, and
+    [insert any well known and well respected historical person who many
+    believe have been a beacon of hope, progress and morality] all broke the
+    law.  The law is often an Ass and breaking it is often the only way in
+    which &quot;progress&quot; is made. Imagine how such persons and the causes they
+    represent would have thrived in a digital
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/Panopticon&quot;&gt;panopticon&lt;/a&gt;.
+    (They wouldn&#x27;t.)&lt;/li&gt;
+
+    &lt;li&gt;&lt;em&gt;Those who say privacy is dead are the ones that gain the most from
+    surveillance.&lt;/em&gt; This one&#x27;s rather obvious but worth re-stating. Perhaps
+    I&#x27;m being cynical, but when the CEOs of Facebook and Google both state
+    &lt;a href=&quot;http://www.switched.com/2010/01/11/facebooks-mark-zuckerberg-claims-privacy-is-dead/&quot;&gt;privacy is dead&lt;/a&gt;
+    you&#x27;ve got to wonder if this has something to do with their business
+    interests (where they sell your data through targeted advertising).&lt;/li&gt;
+
+    &lt;li&gt;&lt;em&gt;Privacy is a fundamental human right.&lt;/em&gt; Yes, I realise this is
+    an argument from authority - specifically, the UN&#x27;s
+    &lt;a href=&quot;https://www.un.org/en/documents/udhr/&quot;&gt;universal declaration of
+    human rights&lt;/a&gt; - but I believe (and I&#x27;m guessing you do too) that
+    intimate declarations of love, doctors discussing a patient, engineers
+    developing a new top secret world changing product and journalists
+    planning an expos&amp;eacute; of government corruption are just a few scenarios
+    where privacy is both a reasonable and legitimate requirement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Am I suggesting &lt;em&gt;privacy trumps all&lt;/em&gt;? No. I would strongly argue
+for openness when it comes to public institutions, the machinations of
+government, our political representatives and corporations that deal with
+personal data. How else are we to hold such entities to account?&lt;/p&gt;
+
+&lt;p&gt;Am I saying there should be &lt;em&gt;no surveillance&lt;/em&gt;? Of course not, that
+would be silly: I can think of plenty of legitimate reasons for surveillance
+but &lt;strong&gt;none of them legitimise the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29&quot;&gt;blanket surveillance of everyone&lt;/a&gt;&lt;/strong&gt;.
+Furthermore, I&#x27;m not the only one who
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Fourth_Amendment_to_the_United_States_Constitution&quot;&gt;believes this&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;The right of the people to be secure in their persons, houses,
+papers, and effects, against unreasonable searches and seizures, shall not be
+violated, and no Warrants shall issue, but upon probable cause, supported by
+Oath or affirmation, and particularly describing the place to be searched,
+and the persons or things to be seized.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yes, I know, the irony isn&#x27;t lost on me either.&lt;/p&gt;
+
+&lt;p&gt;This article was written in haste over lunch and tidied up after
+work. Think of it as a first draft and please feel free to take pot shots -
+&lt;a href=&quot;/contact&quot;&gt;I welcome&lt;/a&gt; constructive comments, critique and
+ideas. ;-)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT #1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A detective I know has pointed out that,&lt;/p&gt;
+
+&lt;blockquote&gt;Ripa isn&#x27;t (and never was) just for national security, that is only one part of the act.&lt;/blockquote&gt;
+
+&lt;p&gt;I stand corrected! :-)&lt;/p&gt;
+
+&lt;p&gt;I was trying to demonstrate how laws can suffer from &quot;scope creep&quot;:
+once legitimate and sensible legislation being used in quite unintended and
+nefarious ways. My detective buddy (who also happens to have a
+philosophy degree and is exactly the sort of ethical, thoughtful and smart
+person you&#x27;d hope would be working as a detective) understood exactly what I
+was getting at so pointed out that,&lt;/p&gt;
+
+&lt;blockquote&gt;Law creep might be better with terrorism stop and search powers
+where more people are stopped and searched without any actual individual
+justification. That seems a more clean cut issue to my mind; specific powers
+being used to blanket cover areas.
+
+Or laws set up to manage serious sex offenders also catching idiots - the guy
+who drops his trousers while drunk on a night out in town now has to notify
+any change of address and register as a sex offender!
+&lt;/blockquote&gt;
+
+&lt;p&gt;Great stuff!&lt;/p&gt;
+</description>
         <pubDate>Mon, 19 May 2014 18:00:00 GMT</pubDate>
     </item>
     
