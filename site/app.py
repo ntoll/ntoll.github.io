@@ -25,6 +25,10 @@ def about():
 def cv():
     return render_template('cv.html')
 
+@app.route('/presentations/')
+def presentations():
+    return render_template('presentations.html')
+
 @app.route('/contact/')
 def contact():
     return render_template('contact.html')

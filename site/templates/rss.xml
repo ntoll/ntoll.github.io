@@ -11,6 +11,158 @@
     </image>
     
     <item>
+        <title>PyconUK 2014 Round Up</title>
+        <link>http://ntoll.org/article/pyconuk-2014-roundup</link>
+        <guid>http://ntoll.org/article/pyconuk-2014-roundup</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pyconuk-2014-roundup&quot;&gt;PyconUK 2014 Round Up&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 1st October (08:00AM)&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;(This write-up is a bit late: I&#x27;ve been ill and we&#x27;ve recently had a
+death in the family.)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This year was the biggest ever &lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyCon UK&lt;/a&gt;
+conference - a community organised event for users of the
+&lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt; programming language. Just under 500
+tickets were booked including 45 for teachers and 75 for kids. We couldn&#x27;t
+have done it without the support of the sponsors, especially
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America&lt;/a&gt;, the
+&lt;a href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt;
+and &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi Foundation&lt;/a&gt; without
+whom the education track would not have been possible.&lt;/p&gt;
+
+&lt;p&gt;For me, the person responsible for the education track, I had most fun
+working with the teachers and kids who turned up. I also seemed to be giving
+far too many presentations (four in total during PyCon UK). I also realised,
+due to circumstances beyond my control, that I have many kind and generous
+friends in the Python community and that when disaster strikes people step up
+and make &quot;stuff&quot; happen even at 4 o&#x27;clock in the morning!&lt;/p&gt;
+
+&lt;p&gt;It was a privilege to watch several masters at work during the education
+track:&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.raspberrypi.org/resources/teach/&quot;&gt;education
+team&lt;/a&gt; from the RaspberryPi Foundation are insane, inspiring and intelligent
+in equal measure - if you can attend one of their free
+&lt;a href=&quot;http://www.raspberrypi.org/picademy/&quot;&gt;Picademy&lt;/a&gt; events for
+teachers than you&#x27;re in for a real treat. It&#x27;s easy to sound bombastic
+about the work of the Raspberry Pi Foundation (so allow me to demonstrate):
+the pedagogical forces that they unleash are both unique (because who&#x27;d have
+thought such a small, cheap and &quot;raw&quot; piece of kit would result in such a
+huge amount of interest) and important (because the Raspberry Pi liberates
+computing education from the boring sad little world of locked down RM boxes,
+presentations and spreadsheets). That they are a UK based effort makes it all
+the more important that we, the UK&#x27;s Python community, give them as much of
+our support as possible.&lt;/p&gt;
+
+&lt;p&gt;It was also wonderful to see
+&lt;a href=&quot;http://www.stuffaboutcode.com/&quot;&gt;Martin O&#x27;Hanlon&lt;/a&gt; work his
+Minecraft magic on both teachers and students. Martin introduces Python
+programming via only a handful of very simple Minecraft related concepts that
+he uses to build some amazing things within the Minecraft world (his
+in-game house that follows you around was a big hit with the kids). He&#x27;s so
+good at this sort of thing that
+he&#x27;s &lt;a href=&quot;http://eu.wiley.com/WileyCDA/WileyTitle/productCd-111894691X.html&quot;&gt;written a book&lt;/a&gt;
+on this very subject (that&#x27;s bound to be a big hit with young programmers and
+teachers alike - what an inspiring textbook &lt;strong&gt;that&lt;/strong&gt; would be).
+In case you can&#x27;t wait for its publication you can
+&lt;a href=&quot;https://drive.google.com/folderview?id=0BwqjqhNUlUf1TTFxNEc0d2F6OXc&amp;usp=sharing&quot;&gt;grab his PyCon UK resources here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(Here&#x27;s a photo of Martin and fellow author Carrie Anne looking like the
+cartoon versions of themselves used in their books.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk2014-martandcarrieanne.jpg&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I was especially pleased to welcome
+&lt;a href=&quot;http://splashofcreativity.co.uk/&quot;&gt;John Pinkney&lt;/a&gt; and his
+&lt;a href=&quot;https://asknao.aldebaran.com/&quot;&gt;NAO&lt;/a&gt; robots. I met John at a
+&lt;a href=&quot;http://www.computingatschool.org.uk/&quot;&gt;CAS&lt;/a&gt;
+hub meeting over the summer where he described how he uses
+robots as a catalyst for all sorts of interesting educational activities.
+The visual programming tool used to interact with the robots strikes me as
+particularly child-friendly. Interestingly the code behind the visual building
+blocks used to describe the robot&#x27;s behaviour is all written in Python (and
+thus handily gave me an excuse to invite John to PyCon UK). John gave two
+workshops (one for teachers, the other for kids) and the fact that he managed
+to keep both groups in rapt awe for an hour is testament to both his
+skill as a teacher and the &quot;charisma&quot; of the robots. We also ran a
+robot code dojo at which we let the developers play with the bots. I gave a
+quick overview of the Python API to the assembled developers and my slides
+can be
+&lt;a href=&quot;/static/presentations/pyconukrobots/index.html&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/FIwVyb9MY5U?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/davidames&quot;&gt;Dave Ames&lt;/a&gt; also deserves a
+special mention for leading a couple of excellent
+workshops on using the &lt;a href=&quot;http://pygame.org/&quot;&gt;PyGame&lt;/a&gt; project. Dave&#x27;s
+workshops involved taking an existing (yet broken / unfinished) game and
+modifying the code to fix things and make it your own. I &lt;em&gt;really like this
+approach&lt;/em&gt; since it gives students an existing base to work from. It also
+makes sure that beginner coders begin the think about debugging their own and
+other people&#x27;s code (for which we provided all attendees with a PyCon UK
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;Debug Duck&lt;/a&gt;.
+This rather excellent state of affairs is wonderfully encapsulated in the
+following video from the kids&#x27; day:&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/kxD2XbTDyjk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/teknoteacher&quot;&gt;Alan O&#x27;Donohoe&lt;/a&gt;,
+&lt;a href=&quot;https://twitter.com/ManchesterBudo&quot;&gt;Ben Smith&lt;/a&gt; and
+&lt;a href=&quot;https://twitter.com/vikkiville&quot;&gt;Vikki Dodd&lt;/a&gt; are three teachers without which
+the education track would not function. Alan&#x27;s pragmatic encouragement when
+disaster struck (twice) was invaluable and Ben and Vikki made innumerable
+contributions throughout the event that meant I was regularly thinking, &quot;Oh
+wow, [Ben/Vikki] has already done that.&quot; That&#x27;s what I mean when I say that
+people &quot;step up&quot;.&lt;/p&gt;
+
+&lt;p&gt;It was an immense privilege and a lot of fun to work with
+&lt;a href=&quot;https://twitter.com/NaomiCeder&quot;&gt;Naomi Ceder&lt;/a&gt; (founder
+of the PyCon US Education Summit) on our own small contribution to the
+education track: introducing object oriented programming to teachers
+&lt;a href=&quot;/static/presentations/oopy/index.html&quot;&gt;through the medium of
+cows&lt;/a&gt;. I especially enjoyed the tag wrestling modus operandi of our talk.
+I&#x27;ll leave you to guess which one of us was Big Daddy or Giant Haystacks (a
+UK specific cultural reference I&#x27;m sure Naomi will be delighted to quickly
+forget). In any case, both teachers and developers got stuck into our
+Parrot related exercise (as the picture below shows):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk-2014-teachers.jpg&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne&lt;/a&gt; gave
+a stonking keynote address to the whole conference on Sunday afternoon. I&#x27;ve
+heard far too many
+boring-yet-worthy-important-people-talking-about-boring-yet-worthy-important-things
+as conference keynotes in my time. Happily it soon became apparent that Carrie
+Anne&#x27;s keynote was definitely &lt;strong&gt;not&lt;/strong&gt; a boring-yet-worthy talk
+about matters of an educational nature. If you want
+to actually know what Carrie Anne said you should invite her to
+your conference to give the keynote. It would be definitely worth it:
+evidence via social networks suggests hers was the warmest
+received and most highly regarded keynote of this year&#x27;s conference.&lt;/p&gt;
+
+&lt;p&gt;Other wonderful aspects of this year&#x27;s PyCon UK included the beer for the
+conference meal (brewed using Python), the charity cheese shop that raised
+several hundred pounds for a local children&#x27;s hospice and the inevitable
+silliness during the lightning talks.&lt;/p&gt;
+
+&lt;p&gt;Finally, it was a pleasure to catch up with
+&lt;a href=&quot;https://twitter.com/VanL&quot;&gt;Van Lindberg&lt;/a&gt; (chair of the Python
+Software Foundation). I&#x27;ll leave what we discussed for a separate blog post
+but, in the meantime, you should all totally sign up to be members of the
+PSF &lt;a href=&quot;https://www.python.org/accounts/signup/&quot;&gt;here&lt;/a&gt;. Why?
+Because,&lt;/p&gt;
+
+&lt;blockquote&gt;
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+&lt;/blockquote&gt;
+
+&lt;p&gt;We&#x27;ve already started planning next year&#x27;s conference. If you can think of
+any ways in which we can make it better please don&#x27;t hesitate to get in
+touch.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Oct 2014 08:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>PyconUK 2014 and the Education Track</title>
         <link>http://ntoll.org/article/pyconuk-edu-2014</link>
         <guid>http://ntoll.org/article/pyconuk-edu-2014</guid>
@@ -270,169 +422,6 @@ you.&lt;/p&gt;
 &lt;p&gt;I challenge you to be unmoved.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 May 2014 11:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Nothing to hide..?</title>
-        <link>http://ntoll.org/article/hide</link>
-        <guid>http://ntoll.org/article/hide</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/hide&quot;&gt;Nothing to hide..?&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 19th May, 2014 (06:00PM)&lt;/p&gt;
-
-&lt;p&gt;On several occasions I have had to explain my position on privacy and
-surveillance (especially in a digital context). To save me the task of
-repeating myself, here it is in as simple a form as possible.&lt;/p&gt;
-
-&lt;p&gt;&quot;If you have nothing to hide, you have nothing to fear&quot; is a common
-argument in support of the mass surveillance of citizens by the government or
-the harvesting of user data by private corporations. Often it is made in a
-reassuring manner, as demonstrated by
-&lt;a href=https://en.wikipedia.org/wiki/William_Hague&quot;&gt;William Hague&lt;/a&gt;:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/lWam4EWI48M&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;A common re-statement of the argument goes, &quot;only if you&#x27;re doing something
-wrong should you worry, and then you don&#x27;t deserve to keep it private&quot;.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;m guessing many people will immediately sympathise with these sentiments.
-After all, we don&#x27;t want the bad guys to gain the upper hand, you&#x27;re probably
-a fine upstanding citizen and we should be happy that innocents are protected
-from the evil-doers that such a drag net will identify.&lt;/p&gt;
-
-&lt;p&gt;I beg to differ.&lt;/p&gt;
-
-&lt;p&gt;For a start, this position is a classic
-&lt;a href=&quot;https://en.wikipedia.org/wiki/False_dilemma&quot;&gt;false dichotomy&lt;/a&gt;:
-two seemingly black and white choices are given yet there are many ways to
-address the subject. Such either/or thinking excludes the potential for
-a more nuanced and subtle debate. Furthermore, such false dichotomies are a
-favourite tactic in argument and, unless you know what you&#x27;re looking for,
-can hoodwink many who take things at face value and stifle debate.&lt;/p&gt;
-
-&lt;p&gt;Leaving this aside, the actual choices presented in the argument hide
-various nasty &quot;home truths&quot;:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;&lt;em&gt;It&#x27;s not you who determines if you have anything to hide&lt;/em&gt;.
-    It doesn&#x27;t matter how upstanding a citizen you think
-    &lt;em&gt;you&lt;/em&gt; are; your point of view doesn&#x27;t matter in this context since
-    it&#x27;s the law or (more dangerously) public opinion that judges you (viz.
-    misjudged attacks on paediatricians). For example, teenagers growing up
-    in the
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Eastern_Bloc&quot;&gt;Eastern Bloc&lt;/a&gt; had
-    to hide their enjoyment of &quot;corrupting capitalist music&quot; (such as Rock and
-    Roll). While one&#x27;s taste in music is a relatively harmless attribute
-    please consider the plight of
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/LGBT_rights_in_Singapore&quot;&gt;LGBT&lt;/a&gt;
-    persons living in Singapore and elsewhere who risk legal challenges and
-    remember the many curtailments of religious freedoms throughout
-    history.&lt;/li&gt;
-
-    &lt;li&gt;&lt;em&gt;It assumes surveillance results in correct data and sound
-    judgement.&lt;/em&gt; People make mistakes and sometimes agents of the state
-    or employees of corporations are &lt;em&gt;really stupid&lt;/em&gt; and don&#x27;t act in
-    the public or customer&#x27;s interest. For example, remember the
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Twitter_Joke_Trial&quot;&gt;Twitter joke
-    trial&lt;/a&gt;? Given the context of the tweet it was obviously a joke, but
-    the Police interpreted it differently. Is demonstrating a sense of humour
-    a crime? I&#x27;d argue it&#x27;s a healthy sign of a liberal tradition of free
-    speech.&lt;/li&gt;
-
-    &lt;li&gt;&lt;em&gt;Rules change.&lt;/em&gt; For example, the UK&#x27;s
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Regulation_of_Investigatory_Powers_Act_2000&quot;&gt;RIPA&lt;/a&gt;
-    law gives the government powers to investigate and intercept
-    communications on the grounds of &lt;em&gt;national security&lt;/em&gt;. Sounds
-    reasonable. Yet the number of public authorities empowered to use this
-    legislation has increased four times (in 2003, 2005, 2006 and 2010) and
-    many such bodies use their powers for totally unintended things (such as
-    &lt;a href=&quot;http://www.telegraph.co.uk/news/uknews/1584808/Council-spy-cases-hit-1000-a-month.html&quot;&gt;tracking dog fouling&lt;/a&gt;).
-    The result is supposedly water-tight legislation being subverted by local
-    councils (I hardly think dog shit is an issue of national security).&lt;/li&gt;
-
-    &lt;li&gt;&lt;em&gt;Breaking the law isn&#x27;t necessarily bad.&lt;/em&gt;
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Gandhi&quot;&gt;Mohandas Ghandi&lt;/a&gt;,
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Emmeline_Pankhurst&quot;&gt;Emmeline Pankhurst&lt;/a&gt;,
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Jesus&quot;&gt;Jesus&lt;/a&gt;,
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Nelson_Mandela&quot;&gt;Nelson Mandela&lt;/a&gt;,
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Socrates&quot;&gt;Socrates&lt;/a&gt;, and
-    [insert any well known and well respected historical person who many
-    believe have been a beacon of hope, progress and morality] all broke the
-    law.  The law is often an Ass and breaking it is often the only way in
-    which &quot;progress&quot; is made. Imagine how such persons and the causes they
-    represent would have thrived in a digital
-    &lt;a href=&quot;https://en.wikipedia.org/wiki/Panopticon&quot;&gt;panopticon&lt;/a&gt;.
-    (They wouldn&#x27;t.)&lt;/li&gt;
-
-    &lt;li&gt;&lt;em&gt;Those who say privacy is dead are the ones that gain the most from
-    surveillance.&lt;/em&gt; This one&#x27;s rather obvious but worth re-stating. Perhaps
-    I&#x27;m being cynical, but when the CEOs of Facebook and Google both state
-    &lt;a href=&quot;http://www.switched.com/2010/01/11/facebooks-mark-zuckerberg-claims-privacy-is-dead/&quot;&gt;privacy is dead&lt;/a&gt;
-    you&#x27;ve got to wonder if this has something to do with their business
-    interests (where they sell your data through targeted advertising).&lt;/li&gt;
-
-    &lt;li&gt;&lt;em&gt;Privacy is a fundamental human right.&lt;/em&gt; Yes, I realise this is
-    an argument from authority - specifically, the UN&#x27;s
-    &lt;a href=&quot;https://www.un.org/en/documents/udhr/&quot;&gt;universal declaration of
-    human rights&lt;/a&gt; - but I believe (and I&#x27;m guessing you do too) that
-    intimate declarations of love, doctors discussing a patient, engineers
-    developing a new top secret world changing product and journalists
-    planning an expos&amp;eacute; of government corruption are just a few scenarios
-    where privacy is both a reasonable and legitimate requirement.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Am I suggesting &lt;em&gt;privacy trumps all&lt;/em&gt;? No. I would strongly argue
-for openness when it comes to public institutions, the machinations of
-government, our political representatives and corporations that deal with
-personal data. How else are we to hold such entities to account?&lt;/p&gt;
-
-&lt;p&gt;Am I saying there should be &lt;em&gt;no surveillance&lt;/em&gt;? Of course not, that
-would be silly: I can think of plenty of legitimate reasons for surveillance
-but &lt;strong&gt;none of them legitimise the
-&lt;a href=&quot;https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29&quot;&gt;blanket surveillance of everyone&lt;/a&gt;&lt;/strong&gt;.
-Furthermore, I&#x27;m not the only one who
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Fourth_Amendment_to_the_United_States_Constitution&quot;&gt;believes this&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;The right of the people to be secure in their persons, houses,
-papers, and effects, against unreasonable searches and seizures, shall not be
-violated, and no Warrants shall issue, but upon probable cause, supported by
-Oath or affirmation, and particularly describing the place to be searched,
-and the persons or things to be seized.
-&lt;/blockquote&gt;
-
-&lt;p&gt;Yes, I know, the irony isn&#x27;t lost on me either.&lt;/p&gt;
-
-&lt;p&gt;This article was written in haste over lunch and tidied up after
-work. Think of it as a first draft and please feel free to take pot shots -
-&lt;a href=&quot;/contact&quot;&gt;I welcome&lt;/a&gt; constructive comments, critique and
-ideas. ;-)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;EDIT #1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A detective I know has pointed out that,&lt;/p&gt;
-
-&lt;blockquote&gt;Ripa isn&#x27;t (and never was) just for national security, that is only one part of the act.&lt;/blockquote&gt;
-
-&lt;p&gt;I stand corrected! :-)&lt;/p&gt;
-
-&lt;p&gt;I was trying to demonstrate how laws can suffer from &quot;scope creep&quot;:
-once legitimate and sensible legislation being used in quite unintended and
-nefarious ways. My detective buddy (who also happens to have a
-philosophy degree and is exactly the sort of ethical, thoughtful and smart
-person you&#x27;d hope would be working as a detective) understood exactly what I
-was getting at so pointed out that,&lt;/p&gt;
-
-&lt;blockquote&gt;Law creep might be better with terrorism stop and search powers
-where more people are stopped and searched without any actual individual
-justification. That seems a more clean cut issue to my mind; specific powers
-being used to blanket cover areas.
-
-Or laws set up to manage serious sex offenders also catching idiots - the guy
-who drops his trousers while drunk on a night out in town now has to notify
-any change of address and register as a sex offender!
-&lt;/blockquote&gt;
-
-&lt;p&gt;Great stuff!&lt;/p&gt;
-</description>
-        <pubDate>Mon, 19 May 2014 18:00:00 GMT</pubDate>
     </item>
     
 </channel>

@@ -1,5 +1,12 @@
 [
   {
+    "date": "2014-10-01 08:00:00", 
+    "slug": "pyconuk-2014-roundup", 
+    "title": "PyconUK 2014 Round Up", 
+    "description": "Thoughts and reflections on this year's PyCon UK.",
+    "python": true
+  },
+  {
     "date": "2014-06-21 14:00:00", 
     "slug": "pyconuk-edu-2014", 
     "title": "PyconUK 2014 and the Education Track", 
