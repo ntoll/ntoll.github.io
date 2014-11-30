@@ -1,5 +1,12 @@
 [
   {
+    "date": "2014-11-30 14:00:00", 
+    "slug": "thought-in-motion", 
+    "title": "Thought in Motion", 
+    "description": "In a philosophical mood...",
+    "python": false
+  },
+  {
     "date": "2014-10-11 17:30:00", 
     "slug": "pyconuk-2014-roundup", 
     "title": "PyconUK 2014 Round Up", 
