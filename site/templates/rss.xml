@@ -414,7 +414,9 @@ quick overview of the Python API to the assembled developers and my slides
 can be
 &lt;a href=&quot;/static/presentations/pyconukrobots/index.html&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/FIwVyb9MY5U?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/FIwVyb9MY5U?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/davidames&quot;&gt;Dave Ames&lt;/a&gt; also deserves a
 special mention for leading a couple of excellent
@@ -428,7 +430,9 @@ other people&#x27;s code (for which we provided all attendees with a PyCon UK
 This rather excellent state of affairs is wonderfully encapsulated in the
 following video from the kids&#x27; day:&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/kxD2XbTDyjk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/kxD2XbTDyjk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/teknoteacher&quot;&gt;Alan O&#x27;Donohoe&lt;/a&gt;,
 &lt;a href=&quot;https://twitter.com/ManchesterBudo&quot;&gt;Ben Smith&lt;/a&gt; and
