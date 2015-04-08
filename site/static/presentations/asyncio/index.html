@@ -51,11 +51,12 @@
                     <aside class="notes">
                         <ul>
                             <li>Introduction to asyncio: what it's for,
-                            how it works and how I used it to write a DHT.</li>
+                            how it works and how I used it to write a fun
+                            personal DHT project.</li>
                             <li>Explore: event loop, co-routines, futures and
                             networking with examples.</li>
-                            <li>Not exhaustive! Arm you with
-                            enough to continue exploring.</li>
+                            <li>Not exhaustive! Simplifies a lot. Arm you with
+                            enough to continue exploring the module.</li>
                             <li>A personal pedagogical exercise: if I can
                             explain myself in simple and easy-to-understand
                             language it demonstrates my own clarity of
@@ -67,6 +68,7 @@
 				<section>
                     <h2>What does asyncio do..?</h2>
                     <aside class="notes">
+                        <p>Introduced in Python 3.4 - was Tulip.</p>
                         <blockquote cite="https://docs.python.org/3.4/library/asyncio.html">
                             &ldquo;This module provides infrastructure for writing
                             single-threaded concurrent code using coroutines,
@@ -93,33 +95,22 @@
                 <section>
                     <img src="images/whoa.jpg" alt="Grok the code, Neo"/>
                     <aside class="notes">
-                        <p>We can do a lot better than this! Keep it simple,
-                        stupid!</p>
-                        <p>What does asyncio do..?</p>
-                        <p>It lets you write code that concurrently handles
-                        asynchronous network based I/O</p>
-                        <p>Let's be clear about what this means...</p>
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Definitions</h2>
-                    <dl>
-                        <dt>Concurrency</dt>
-                        <dd class="fragment">When several things appear to happen
-                        simultaneously.</dd>
-                        <dt>Asynchronous</dt>
-                        <dd class="fragment">Not synchronised: there is no way to tell when
-                        some <em>thing</em> may happen.</dd>
-                        <dt>Network</dt>
-                        <dd class="fragment">The medium for communicating with another device
-                        (usually via the internet).</dd>
-                        <dt>I/O</dt>
-                        <dd class="fragment">Input / Output: when a program communicates with
-                        the "outside world".</dd>
-                    </dl>
-                    <aside class="notes">
-                        <p>It's important that we clearly define our terms.</p>
+                        <p>We can do a lot better than this! KISS! What does
+                        asyncio do..? As Trinity says... Let's be clear about
+                        what this means...</p>
+                        <ul>
+                            <li><strong>Concurrency</strong> - When several
+                            things appear to happen simultaneously.</li>
+                            <li><strong>Asynchronous</strong> - Not
+                            synchronised: there is no way to tell when some
+                            <em>thing</em> may happen.</li>
+                            <li><strong>Network</strong> - The medium for
+                            communicating with another device (usually via
+                            the internet).</li>
+                            <li><strong>I/O</strong> - Input / Output: when a
+                            program communicates with the "outside
+                            world".</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -133,7 +124,17 @@
                 <section>
                     <h2>What is a Distributed Hash Table?</h2>
                     <aside class="notes">
-                        <p>The application I'm writing using asyncio.</p>
+                        <p>The fun application I'm writing using asyncio.</p>
+                        <p>I used to work for a failed startup called
+                        Fluidinfo, we were creating an openly writable public
+                        data store. It was a centralised walled garden of
+                        data. I wanted to look into the possibility of making
+                        it P2P.</p>
+                        <p>After Fluidinfo failed I worked for The Guardian
+                        and commuted into London. I could've just played angry
+                        birds on the train. Instead, I wrote Python.</p>
+                        <p>Was written using Twisted, more on that
+                        later...</p>
                     </aside>
                 </section>
 
@@ -165,9 +166,14 @@
                     <h2>Distributed</h2>
                     <img src="images/distributed.jpg"/>
                     <aside class="notes">
-                        <p>It's distributed because the system consist of
-                        many independent entities collaborating over the
-                        network.</p>
+                        <p>It's distributed because the <em>whole</em> is
+                        built from several independent yet related
+                        <em>parts</em>.</p>
+                        <p>The abstract encylopedia is made from volumes that
+                        are independent yet related to each other.</p>
+                        <p>In our case it is a distributed data structure
+                        consisting of many independent nodes collaborating
+                        over the network.</p>
                     </aside>
                 </section>
 
@@ -175,8 +181,10 @@
                     <h2>Decentralized</h2>
                     <img src="images/decentralized.jpg"/>
                     <aside class="notes">
-                        <p>It's also decentralized: no entity is more
+                        <p>It's also decentralized: no node is more
                         important than the others.</p>
+                        <p>There are no client / server relationships - it's a
+                        loose peer-to-peer network of nodes.</p>
                     </aside>
                 </section>
 
@@ -184,51 +192,19 @@
                 <h2>A distributed hash table (DHT) is a peer-to-peer key / value data store</h2>
 
                 <aside class="notes">
-                    <p>A very simple definition is...</p>
-                </aside>
-                </section>
-
-                <section>
+                <p>Why?</p>
                 <ul>
-                    <li>No single point of failure or
-                    inadvertent point of control (e.g. no need for DNS).</li>
-                    <li class="fragment">Scale to huge number of nodes
-                    (redundancy++).</li>
-                    <li class="fragment">Relatively efficient.</li>
-                    <li class="fragment">Good handling of fluid network
-                    membership.</li>
-                    <li class="fragment">Solid foundational infrastructure for
-                    more complex services.</li>
-                    <li class="fragment">Tested in the real world (Bittorrent,
+                    <li>A really interesting programming problem..! :-)</li>
+                    <li>No single point of failure or control.</li>
+                    <li>Efficiently scale to huge numbers of nodes.</li>
+                    <li>Good handling of fluid network membership.</li>
+                    <li>Solid foundation for more complex services.</li>
+                    <li>Tested in the real world (Bittorrent,
                     Freenet and others).</li>
-                    <li class="fragment">A really interesting programming
-                    problem..! :-)</li>
                 </ul>
-                <aside class="notes">
-                    <p>Why are DHT so useful..?</p>
-                </aside>
-                </section>
-
-                <section>
-                    <img src="images/anthill.jpg"/>
-                    <aside class="notes">
-                        <p>The project involved trying to create something akin
-                        to an anthill. Another system consisting of many
-                        independent but collaborating entities.</p>
-                    </aside>
-                </section>
-
-                <section>
-                    <img src="images/ant.jpg"/>
-                    <aside class="notes">
-                        <p>Another matter myrmecological.</p>
-                        <p>The anthill doesn't really exist. There's just
-                        lots of ants.</p>
-                        <p>The DHT doesn't really exist. There's just a lot of
-                        nodes.</p>
-                        <p>Guess what? Such nodes have to concurrently handle
+                        <p>Guess what? DHT Nodes have to concurrently handle
                         lots of asynchronous network based I/O...</p>
-                    </aside>
+                </aside>
                 </section>
 
                 <section>
@@ -244,45 +220,16 @@
                 <section>
                     <h2>Core Concept #1</h2>
                     <h1>The Event Loop</h1>
-                    <div class="fragment">
-					<pre><code data-trim contenteditable class="python">
-def _run_once(self):
-    """Run one full iteration of the event loop.
-
-    This calls all currently ready callbacks, polls for I/O,
-    schedules the resulting callbacks, and finally schedules
-    'call_later' callbacks.
-    """
-    ... etc ...
-                    </code></pre>
-                    <p>The <code>_run_once</code> method in
-                    <code>asyncio.base_events</code>.</p>
-                    </div>
                     <aside class="notes">
                         <p>Some code that keeps looping.</p>
-                        <p>The _run_once method polls for I/O events that
-                        occurred during the time it took to complete the
-                        previous iteration of the loop.</p>
+                        <p>The _run_once method in asyncio.base_events polls
+                        for I/O events that occurred during the time it took
+                        to complete the previous iteration of the loop.</p>
                         <p>It ensures any callbacks that need to be run are
                         done so during this iteration of the loop and carries
                         out "housekeeping" needed for callbacks that have yet
                         to be executed.</p>
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>More Definitions</h2>
-                    <dl>
-                        <dt>Polling</dt>
-                        <dd class="fragment">Discovering the status of something external to
-                        the program (in this case network related I/O
-                        events).</dd>
-                        <dt>Callback</dt>
-                        <dd class="fragment">Code to be executed when some event
-                        has occured (detected via polling). </dd>
-                    </dl>
-                    <aside class="notes">
-                        <p>Once again, let's be clear about terminology.</p>
+                        <p>Important to define polling and callbacks...</p>
                     </aside>
                 </section>
 
@@ -291,44 +238,27 @@ def _run_once(self):
                     <p><small>(Based on real events - participants have been
                     replaced by unreasonably happy actors)</small></p>
                     <aside class="notes">
-                        <p>A humorous metaphor familiar to those with kids.</p>
-                        <p>Polling is "are we there yet..?"</p>
-                        <p>"I'll tell you when we get there" creates a sort of
-                        callback (i.e. a promise to do something when some
-                        condition is met).</p>
+                        <ul>
+                            <li><strong>Polling</strong> - Discovering the
+                            status of something external to the program (in
+                            asyncio: network related I/O events).</li>
+                            <li><strong>Callback</strong> - Code to be
+                            executed when some event has occured (detected
+                            via polling).</li>
+                        </ul>
+                        <p>A humorous metaphor familiar to those with
+                        kids...</p>
+                        <ul>
+                            <li>Polling is "are we there yet..?"</li>
+                            <li>"I'll let you know when we get there" creates
+                            a sort of callback (i.e. a promise to do something
+                            when some condition is met).</li>
+                        </ul>
                     </aside>
                 </section>
 
                 <section>
                     <h1 class="blink">IMPORTANT!</h1>
-                    <ul>
-                        <li>Polling takes place once during <strong><em>each
-                        iteration of the loop</em></strong>.</li>
-                        <li class="fragment">The I/O events discovered by
-                        polling <strong><em>determine which callbacks to
-                        execute during the current
-                        iteration</em></strong> of the loop.</li>
-                        <li class="fragment">All pending callbacks are
-                        executed <strong><em>one after the
-                        other</em></strong>.</li>
-                        <li class="fragment">This stops the loop from
-                        continuing - it is
-                        <strong><em>blocked</em></strong>.</li>
-                        <li class="fragment">The next iteration cannot start
-                        <strong><em>until all the sequentially executed
-                        callbacks finish</em></strong> (in <u>some
-                        sense</u>).</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>Let me Powerpoint kareoke these for you!</p>
-                    </aside>
-                </section>
-
-                <section>
-                    <h1>Hang on a minute..?</h1>
-                    <h1>That doesn't sound very concurrent!</h1>
-                    <aside class="notes">
-                    <p>There's something wrong here!</p>
                     <p>PEP 315 states that callbacks are...</p>
 					<blockquote cite="http://legacy.python.org/dev/peps/pep-3156/">
                     &ldquo;[...] strictly serialized: one callback must finish
@@ -338,16 +268,42 @@ def _run_once(self):
                     running, the shared state isn't changed by another
                     callback.&rdquo;
                     </blockquote>
+                    <aside class="notes">
+                    <ul>
+                        <li>Polling takes place once during <strong><em>each
+                        iteration of the loop</em></strong>.</li>
+                        <li>I/O events discovered by polling
+                        <strong><em>determine which callbacks to
+                        execute during the current
+                        iteration</em></strong> of the loop.</li>
+                        <li>All pending callbacks are
+                        executed <strong><em>one after the
+                        other</em></strong> (see PEP 315).</li>
+                        <li>The loop can't continue - it is
+                        <strong><em>blocked</em></strong>.</li>
+                        <li>The next iteration cannot start
+                        <strong><em>until all the sequentially executed
+                        callbacks finish</em></strong> (in <u>some
+                        sense</u>).</li>
+                    </ul>
                     </aside>
                 </section>
 
                 <section>
-                    <h2>Concurrency is hard</h2>
+                    <h1>Hang on a minute..?</h1>
+                    <h1>That doesn't sound very concurrent!</h1>
+                    <aside class="notes">
+                    <p>There's something wrong here!</p>
+                    </aside>
+                </section>
+
+                <section>
                     <img src="images/philosophers.jpg" alt="Dining philosophers problem."/>
                     <aside class="notes">
                         <p>Unfortunately...</p>
                         <p>Concurrency is hard and there's more than one way
-                        to do it. It's worth taking some time to examine why
+                        to do it.</p>
+                        <p>It's worth taking some time to examine why
                         asyncio works in the way that it does.</p>
                     </aside>
                 </section>
@@ -363,18 +319,17 @@ def _run_once(self):
                         <li class="fragment">Task B writes its changes.</li>
                         <li class="fragment">Task A writes its changes.</li>
                     </ol>
-                    <p class="fragment blink">Changes made by
-                    task B are lost!<br/>(Task A has overwritten the
-                    record.)</p>
+                    <p class="fragment blink">Task A overwrites the
+                    record containing task B's changes.</p>
                     <aside class="notes">
-                        <p>As PEP 315 states, this is a classic problem with indeteminate threading.</p>
+                        <p>DATA LOSS = EVIL!</p>
+                        <p>As the PEP 315 quote implies, this is a classic
+                        problem with indeteminate threading.</p>
                     </aside>
                 </section>
 
                 <section>
-                    <h2>So act synchronously!</h2>
-                    <p>Tasks execute one after the other so they have no
-                    chance to interfere with shared resources.</p>
+                    <h2>Act synchronously to avoid interference!</h2>
                     <ol>
                         <li class="fragment">First do A, then B followed by
                         C (and so on).</li>
@@ -383,12 +338,10 @@ def _run_once(self):
                         <li class="fragment">What happens if A needs to wait
                         for something, for example, a reply from a machine on
                         the network?</li>
-                        <li class="fragment">The whole program waits until A's
-                        network call completes. :-(</li>
+                        <li class="fragment">The program waits until A's
+                        network call completes.</li>
                     </ol>
-                    <p class="fragment blink">The program can't react to other
-                    events that occur while waiting for A. It becomes
-                    unresponsive. This is unacceptable.</p>
+                    <p class="fragment blink">It can't get on with other stuff while waiting for A.<br/> :-(</p>
                     <aside class="notes">
                         <p>Why not wait for one task to finish with a shared
                         resource before letting other tasks use it?</p>
@@ -397,7 +350,7 @@ def _run_once(self):
 
                         <p>The program is described as blocked. Unacceptable
                         if we're writing something that needs to react quickly
-                        to things (such as a server - precisely the sort of
+                        to things (precisely the sort of
                         program asyncio is intended to help with).</p>
 
                         <p><strong>Why not just get on with tasks B and C
@@ -407,9 +360,9 @@ def _run_once(self):
                 </section>
 
                 <section>
-                    <h2>The most important slide of this talk</h2>
+                    <h2>Welcome to the most important slide of this talk</h2>
                     <ul>
-                        <li>The program <strong><em>does not wait for a
+                        <li class="fragment">The program <strong><em>does not wait for a
                         reply</em></strong> before continuing.</li>
                         <li class="fragment">Programmers define callbacks to
                         be run when the result of a network call is
@@ -437,13 +390,13 @@ def _run_once(self):
 
                 <section>
                     <img src="images/clotheswash.jpg" alt="Take the clothes out of the washing machine."/>
-                    <p>When the washing machine finishes, take the clothes and
-                    hang them out to dry.</p>
+                    <p>We make plans: when the washing machine finishes, take
+                    the clothes and hang them out to dry.</p>
                     <aside class="notes">
                         <p>In the real world we plan ahead all the time!</p>
                         <p>"The washing machine finishes" is an expected
-                        event. "Hang them out to dry" is a callback for when
-                        this expected event happens.</p>
+                        event. "Hang the clothes out to dry" is a callback for
+                        when this expected event happens.</p>
                         <p>How hard can this be..? (Says, stock-photo-dude-with-a-washing-basket)</p>
                     </aside>
                 </section>
@@ -536,7 +489,7 @@ def handle_request(self, message, payload):
     if message.method == 'POST':
         try:
             raw_data = yield from payload.read()
-            response_data = yield from process_data(raw_data)
+            response_data = yield from self.process_data(raw_data)
             response_code = 200  # OK
         except Exception as ex:
             # Log all errors
@@ -546,8 +499,7 @@ def handle_request(self, message, payload):
     return response
                     </code></pre>
                     <aside class="notes">
-                        <p>Some real live code!</p>
-                        <p>This is a decorated coroutine function that handles
+                        <p>This is a decorated coroutine method that handles
                         an incoming HTTP request. Upstream, something is
                         yielding from a coroutine created by this function in
                         order to do something with the response.</p>
@@ -555,10 +507,11 @@ def handle_request(self, message, payload):
                         <p>The coroutine will itself pause by yielding from
                         the coroutine created by payload.read(). This method
                         reads in the raw data POSTed as part of the
-                        request</p>
-                        <p>the coroutine created by the process_data function
-                        needs to wait on other things such as calls to an
-                        external database.</p>
+                        request.</p>
+
+                        <p>The coroutine created by the self.process_data
+                        method needs to wait on other things such as calls
+                        to an external database.</p>
                     </aside>
                 </section>
 
@@ -577,7 +530,7 @@ def handle_request(self, message, payload):
                     <p>(Are also FUN!)</p>
                     <aside class="notes">
                     <p>A Future represents a result that may not be available
-                    yet. Callbacks functions are added to a sort of to-do
+                    yet. Callback functions are added to a sort of to-do
                     list to be executed when the result is known
                     (resolved).</p>
                     <p>A Task is simply a Future that wraps
@@ -643,7 +596,11 @@ finally:
                         <p>That's why we need tasks - to take care of all the
                         boilerplate.</p>
                         <p>The Task object is automatically resolved when the
-                        coroutine completes.</p>
+                        coroutine completes. The coroutine doesn't need to
+                        reference the associated Task object.</p>
+                        <p>At the end I execute the code (remember coroutines
+                        are generators) by setting up and running the event
+                        loop.</p>
                     </aside>
                 </section>
 
@@ -664,230 +621,227 @@ add_generic_callbacks_to(my_future_or_task)
                         we're used to working with first class functions (we
                         pass them into functions and return them as
                         values).</p>
-                        <p>Futures are sort of like first class function calls
-                        (we can also pass them into functions and return them
-                        as values).</p>
+                        <p>Futures are like first class function calls
+                        (we can also pass them into functions
+                        and return them as values).</p>
                     </aside>
                 </section>
 
                 <section>
-                    <h2>Story So Far</h2>
-                    <dl>
-                        <dt>Coroutine</dt>
-                        <dd class="fragment">An object representing activity that eventually
-                        completes (or a decorated function that returns such
-                        an object).</dd>
-                        <dt>Future</dt>
-                        <dd class="fragment">Represents a result that may not be available
-                        yet. Callbacks are added to a sort of to-do list of
-                        functions to be executed when it resolves.</dd>
-                        <dt>Task</dt>
-                        <dd class="fragment">Boilerplate Future that wraps a coroutine. The
-                        resulting object is realised when the coroutine
-                        completes.</dd>
-                    </dl>
+                    <h1>Recap...</h1>
+                    <h2>(The Story So Far)</h2>
                     <aside class="notes">
-                        <p>I've been bombarding you with lots of information,
-                        so let's recap...</p>
+                    <ul>
+                        <li><strong>Event Loop</strong> - looping code that
+                        polls for I/O and manages event handling
+                        callbacks.</li>
+                        <li><strong>Coroutine</strong> - An object
+                        representing activity that eventually
+                        completes (or a decorated function that returns such
+                        an object).</li>
+                        <li><strong>Future</strong> Represents a result that
+                        may not be available yet. Associated callbacks are
+                        executed when it resolves.</li>
+                        <li><strong>Task</strong> Boilerplate Future that
+                        wraps a coroutine. Realised
+                        when the coroutine completes.</li>
+                    </ul>
                     </aside>
                 </section>
 
                 <section>
-                    <section>
-                        <h2>A DHT Example</h2>
-                        <h3>Hashing, distance and lookups</h3>
-                        <aside class="notes">
-                            <p>Given all this theory, how does it work in
-                            practice for my DHT project. Let's explore how a
-                            DHT actually works.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>A clock face of nodes</h2>
-                        <img src="images/nodes.png"/>
-                        <aside class="notes">
-                            <p>I mentioned that a DHT is made up of nodes. The
-                            classic way to visualise this is with a clock
-                            face (you'll see why in a moment).</p>
-                        <aside>
-                    </section>
-                    <section>
-                        <h3>Node's ID (location) is derived from a Hash</h3>
-                        <img src="images/numbered_nodes.png"/>
-                        <aside class="notes">
-                            <p>Each node has a unique id and position in the
-                            clock-face. In this way we can tell where a node
-                            is in the abstract network, who it is close to
-                            and how far away nodes are from each other (there
-                            is some notion of distance).</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Items are a Key / Value Pair</h2>
-                        <pre><code contenteditable class="python">
-&gt;&gt;&gt; from hashlib import sha1
+                    <h2>A DHT Example</h2>
+                    <h3>Hashing, distance and lookups</h3>
+                    <aside class="notes">
+                        <p>Given all this theory, how does asyncio work in
+                        practice for my DHT project? Let's explore how a
+                        DHT actually works.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>A clock face of nodes</h2>
+                    <img src="images/nodes.png"/>
+                    <aside class="notes">
+                        <p>I mentioned that a DHT is made up of nodes. The
+                        classic way to visualise this is with a clock
+                        face (you'll see why in a moment).</p>
+                    <aside>
+                </section>
+                <section>
+                    <h3>Node ID is derived from a Hash and indicates its
+                    location</h3>
+                    <img src="images/numbered_nodes.png"/>
+                    <aside class="notes">
+                        <p>Each node has a unique id that is within a set
+                        of all possible values for a certain hash function
+                        (for example, sha512).</p>
+                        <p>The id's value indicates the node's position in
+                        the clock-face.</p>
+                        <p>In this way we can tell where a node
+                        is located in the abstract network, who it is close to
+                        and how far away nodes are from each other (there
+                        is some notion of distance).</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Items are a Key / Value Pair</h2>
+                    <pre><code contenteditable class="python">
+&gt;&gt;&gt; from hashlib import sha512
 &gt;&gt;&gt; item = {
 ...     'my_key': 'Some value I want to store'
 ... }
-&gt;&gt;&gt; sha1('my_key').hexdigest()
-'0f7da3f82f86e5ea63d3ac270f091af4bcfa819a'
-                        </code></pre>
-                        <aside class="notes">
-                        <p>The key is turned into a hash. The value is stored
-                        at nodes whose IDs are <em><u>close</u></em>
-                        to the hash of the key.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Aardvark belongs...</h2>
-                        <img src="images/aardvark.jpg"/>
-                        <aside class="notes">
-                            <p>A very simple way to think about this is that
-                            its similar to understanding where to look things
-                            up in a multi-volume encyclopedia. Articles are
-                            words (keys) and associated definitions (values)
-                            that are stored in volumes whose "space" covers
-                            some alphabetical range.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>... under &quot;A&quot;</h2>
-                        <img src="images/aardvark-entry.png"/>
-                    </section>
-                    <section>
-                        <h2>But, Zebra belongs...</h2>
-                        <img src="images/zebra.jpg"/>
-                    </section>
-                    <section>
-                        <h2>... under &quot;Z&quot;</h2>
-                        <img src="images/zebra-entry.png"/>
-                    </section>
+&gt;&gt;&gt; sha512('my_key').hexdigest()
+'176b1c65a58c69bb83cf0f9e06695c4094bc35e69f2576464a027fa52fa53a7a
+b35c2b4a39203aff98606aed641f45abbc0d39d2be0723f44cc04e9b3e7e0f87'
+                    </code></pre>
+                    <aside class="notes">
+                    <p>Data is a key / value pair.</p>
+                    <p>The key is turned into a hash. The value is stored
+                    at nodes whose IDs are <em><u>close</u></em>
+                    to the hash of the key.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Aardvark belongs...</h2>
+                    <img src="images/aardvark.jpg"/>
+                    <aside class="notes">
+                        <p>Its similar to understanding where to look things
+                        up in a multi-volume encyclopedia.</p>
+                        <p>Articles are words (keys) and associated
+                        definitions (values) that are stored in volumes that
+                        cover some alphabetical range.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>... under &quot;A&quot;</h2>
+                    <img src="images/aardvark-entry.png"/>
+                </section>
+                <section>
+                    <h2>But, Zebra belongs...</h2>
+                    <img src="images/zebra.jpg"/>
+                </section>
+                <section>
+                    <h2>... under &quot;Z&quot;</h2>
+                    <img src="images/zebra-entry.png"/>
                 </section>
 
                 <section>
-                    <section>
-                        <h2>Tracking via the Routing Table</h2>
-                        <img src="images/me-rt.png"/>
-                        <aside class="notes">
-                            <p>Each node stores a local "routing table" that
-                            tracks the state of its peers.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Interactions give tracking data</h2>
-                        <img src="images/contact.jpg"/>
-                        <p>(ID, IP address and port etc...)</p>
-                        <aside class="notes">
-                            <p>All interactions result in the exchange of
-                            status information between nodes - that's how the
-                            routing table is populated and kept
-                            up-to-date..</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2><span style="color: blue">Peers</span> stored in
-                        fixed size
-                        <span style="border: 1px #737373 solid; padding-left:8px; padding-right: 8px;">buckets</span></h2>
-                        <img src="images/peers-rt.png"/>
-                        <aside class="notes">
-                            <p>The routing table splits up the "clock face"
-                            of nodes.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <ul>
-                            <li>Buckets contain the same number of peers;</li>
-                            <li>Buckets cover a smaller range the closer to the
-                            local node they are;</li>
-                            <li>Ergo, the local node knows more closer
-                            nodes.</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2><span style="color: blue">Peers</span> stored in
-                        fixed size
-                        <span style="border: 1px #737373 solid; padding-left:8px; padding-right: 8px;">buckets</span></h2>
-                        <img src="images/peers-rt.png"/>
-                        <aside class="notes">
-                        <ul>
-                            <li>Buckets contain the same number of peers;</li>
-                            <li>Buckets cover a smaller range the closer to the
-                            local node thay are;</li>
-                            <li>Ergo, the local node knows more closer
-                            nodes.</li>
-                        </ul>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Simple rules</h2>
-                        <p>For the purposes of housekeeping:</p>
-                        <ul>
-                            <li>Reply with a value or X closest peers</li>
-                            <li>Ignore unresponsive peers</li>
-                            <li>Refresh the Routing Table</li>
-                            <li>Re-publish items</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>Just like ants, each node behaves according to
-                            some very simple rules.</p>
-                        </aside>
-                    </section>
+                    <h2>Tracking via the Routing Table</h2>
+                    <img src="images/me-rt.png"/>
+                    <aside class="notes">
+                        <p>How do nodes know where to look..?</p>
+                        <p>Each node maintains a local "routing table" that
+                        tracks the state of its peers.</p>
+                    </aside>
                 </section>
                 <section>
-                    <section>
-                        <h2>GET() &amp; SET() require a lookup.</h2>
-                        <p>All interactions are asynchronous.</p>
-                        <aside class="notes">
-                            <p>Lookup is a fundamental action for a DHT.</li>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Recursive Lookup</h2>
-                        <img src="images/kevin-bacon.jpg"/>
-                    </section>
-                    <section>
-                        <h2>Six degrees of separation</h2>
-                        <img src="images/lookup1.png"/>
-                        <aside class="notes">
-                            <p>Say I want to put a value at a key whose
-                            position is close to 6 o'clock.</p>
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Ask <span style="color: #008400">closest known
-                        peers</span></h2>
-                        <img src="images/lookup2.png"/>
-                    </section>
-                    <section>
-                        <h2><span style="color: #008400">They</span> reply
-                        with <span style="color: #d73f87">closer
-                        peers</span></h2>
-                        <img src="images/lookup3.png"/>
-                    </section>
-                    <section>
-                        <h2><span style="color: #d73f87">They</span> reply
-                        with the
-                        <span style="color: #ff4b00">target</span></h2>
-                        <img src="images/lookup4.png"/>
-                    </section>
+                    <h2>Interactions give tracking data</h2>
+                    <img src="images/contact.jpg"/>
+                    <p>(ID, IP address and port etc...)</p>
+                    <aside class="notes">
+                        <p>All interactions result in the exchange of
+                        status information between nodes - that's how the
+                        routing table is populated and kept
+                        up-to-date..</p>
+                    </aside>
                 </section>
-
-                    <section>
-                        <h2>GET() &amp; SET() require a lookup.</h2>
-                        <p>All interactions are asynchronous.</p>
-                        <aside class="notes">
-                            <p>How is this handled within the realm of
-                            asyncio..?</li>
-                        </aside>
-                    </section>
+                <section>
+                    <h2><span style="color: blue">Peers</span> stored in
+                    fixed size
+                    <span style="border: 1px #737373 solid; padding-left:8px; padding-right: 8px;">buckets</span></h2>
+                    <img src="images/peers-rt.png"/>
+                    <aside class="notes">
+                        <p>The routing table splits up the "clock face"
+                        of nodes into buckets.</p>
+                    <ul>
+                        <li>Buckets contain the same number of peers;</li>
+                        <li>Buckets cover a smaller range the closer to the
+                        local node they are;</li>
+                        <li>Ergo, the local node knows more closer
+                        nodes.</li>
+                    </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Simple rules</h2>
+                    <p>For the purposes of housekeeping:</p>
+                    <ul>
+                        <li>Reply with a value or X closest peers</li>
+                        <li>Ignore unresponsive peers</li>
+                        <li>Refresh the Routing Table</li>
+                        <li>Re-publish items</li>
+                        <li>etc...</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Each node behaves according to some very simple
+                        rules.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>GET() &amp; SET() require a lookup.</h2>
+                    <p>All interactions are asynchronous.<br/>Lookups are also
+                    parallel (concurrent).</p>
+                    <aside class="notes">
+                        <p>Lookup is a fundamental action for a DHT.</p>
+                        <p>It's how to work out which peers are to be
+                        contacted to get or store a value.</p>
+                        <p>A lookup is concurrent because several peers can be
+                        interrogated at once for this information.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Recursive Lookup</h2>
+                    <img src="images/kevin-bacon.jpg"/>
+                    <aside class="notes">
+                        <p>Here's how it works.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Six degrees of separation</h2>
+                    <img src="images/lookup1.png"/>
+                    <aside class="notes">
+                        <p>Say I want to put a value with a key whose hash
+                        puts it in a position close to 6 o'clock.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Ask <span style="color: #008400">closest known
+                    peers</span></h2>
+                    <img src="images/lookup2.png"/>
+                </section>
+                <section>
+                    <h2><span style="color: #008400">They</span> reply
+                    with <span style="color: #d73f87">closer
+                    peers</span></h2>
+                    <img src="images/lookup3.png"/>
+                </section>
+                <section>
+                    <h2><span style="color: #d73f87">They</span> reply
+                    with the
+                    <span style="color: #ff4b00">target</span></h2>
+                    <img src="images/lookup4.png"/>
+                    <aside class="notes">
+                        <p>The lookup ends when I can't find any nodes closer
+                        to the target key.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>GET() &amp; SET() require a lookup.</h2>
+                    <p>All interactions are asynchronous.<br/>Lookups are also
+                    parallel (concurrent).</p>
+                    <aside class="notes">
+                        <p>How is this handled within the realm of
+                        asyncio..?</li>
+                    </aside>
+                </section>
 
                 <section>
                     <h2>Lookup is a Future</h2>
                     <pre><code contenteditable class="python">class Lookup(asyncio.Future):
     """
     Encapsulates a lookup in the DHT given a particular target
-    key and message type. Will callback when a result is found
-    or errback otherwise. If defined, will timeout.
+    key and message type. Will resolve when a result is found
+    or errback otherwise.
     """
 
     def __init__(self, key, message_type, node, event_loop):
@@ -901,7 +855,7 @@ add_generic_callbacks_to(my_future_or_task)
                     </code></pre>
                     <aside class="notes">
                         <p>A lookup is something whose result we can't yet
-                        know.</p>
+                        know (until we've finished looking it up).</p>
                     </aside>
                 </section>
 
@@ -927,9 +881,9 @@ my_lookup.add_done_callback(got_result)
                         <p>The state of the lookup (the progess of finding
                         nodes close to the target) is held within the Lookup
                         instance. It resolves with the result.</p>
-                        <p>Either a value or not_found exception in the case
-                        of a GET(), or a list of closest known nodes in the
-                        case of a PUT().</p>
+                        <p>The result is either a value or not_found exception
+                        in the case of a GET(), or a list of closest known
+                        nodes in the case of a PUT().</p>
                     </aside>
                 </section>
 
@@ -948,11 +902,10 @@ my_lookup.add_done_callback(got_result)
                     <p>(Are also a lot of FUN!)</p>
                     <aside class="notes">
                     <p>Transports are provided by <code>asyncio</code> to
-                    handle TCP, UDP etc. They are handle low level I/O and
-                    buffering and the event loop sets these up.</p>
-                    <p>Protocols abstract the network
-                    protocol at the application layer (e.g. HTTP or
-                    netstring).</p>
+                    handle TCP, UDP etc. They are handle the low level I/O
+                    layer and buffering and the event loop sets these up.</p>
+                    <p>Protocols handle network protocols at the application
+                    layer (e.g. HTTP or netstring).</p>
                     </p>
                 </section>
 
@@ -970,7 +923,9 @@ my_lookup.add_done_callback(got_result)
                     <img src="images/border.jpg"/>
                     <aside class="notes">
                         <p>Protocols work out what to do with the stuff sent
-                        over the network.</p>
+                        over the network. They work out how to turn the raw
+                        bytes into some meaningful message (such as a
+                        netstring)</p>
                         <p>You only need to work with Protocols.</p>
                     </aside>
                 </section>
@@ -1003,9 +958,11 @@ class NetstringProtocol(asyncio.Protocol):
                     <aside class="notes">
                         <p>All protocol classes must override the
                         data_received method to handle the incoming bytes.</p>
-                        <p>The DHT is network agnostic so it can communicate
+                        <p>My DHT is network agnostic so it can communicate
                         via HTTP or Netstring.</p>
-                        <p>Taken directly from Twisted. Very close.</p>
+                        <p>Taken directly from Twisted. Very close. In fact
+                        asyncio transport/protocol is based upon how Twisted
+                        works in this way.</p>
                     </aside>
                 </section>
 
@@ -1013,7 +970,7 @@ class NetstringProtocol(asyncio.Protocol):
                     <h2>Final thoughts...</h2>
                     <ul>
                         <li>Twisted..?</li>
-                        <li class="fragment">100% Unit test coverage</li>
+                        <li class="fragment">100% unit test coverage</li>
                         <li class="fragment">DHT &lt; 1000 loc</li>
                         <li class="fragment">IO vs CPU bound</li>
                     </ul>
@@ -1035,13 +992,20 @@ class NetstringProtocol(asyncio.Protocol):
                 <section>
                     <h1>Fin</h1>
                     <img src="images/drog.png" style="border: 0;"/>
-                    <p><a href="http://drogul.us">drogul.us</a></p>
                     <p><a href="https://github.com/ntoll/drogulus">github.com/ntoll/drogulus</a></p>
                     <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
                     <aside class="notes">
                         <p>That's it! My DHT project is called the
                         drogulus.</p>
                     </aside>
+                </section>
+                <section>
+                    <img src="images/questions_after_talk.jpeg"
+                    alt="Questions" style="float: left;"/>
+                    <h2 style="margin-top: 100px">Questions..?</h2>
+                    <img src="images/drog.png" style="border: 0;"/>
+                    <p><a href="https://github.com/ntoll/drogulus">github.com/ntoll/drogulus</a></p>
+                    <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
                 </section>
 			</div>
 
