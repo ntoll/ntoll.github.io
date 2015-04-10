@@ -50,13 +50,18 @@
 					</p>
                     <aside class="notes">
                         <ul>
-                            <li>Introduction to asyncio: what it's for,
-                            how it works and how I used it to write a fun
-                            personal DHT project.</li>
-                            <li>Explore: event loop, co-routines, futures and
-                            networking with examples.</li>
-                            <li>Not exhaustive! Simplifies a lot. Arm you with
-                            enough to continue exploring the module.</li>
+                            <li>My name is Nicholas - I'm a freelance Python
+                            developer from the UK.</li>
+                            <li>This is an introduction to the asyncio module
+                            that arrived in Python 3.4</li>
+                            <li>My only expectation is you know a little bit
+                            about Python</li>
+                            <li>We'll explore some core concepts of asyncio
+                            and I'll tell the story of how I used it to
+                            write a fun personal DHT project</li>
+                            <li>Not exhaustive! Simplifies a lot.</li>
+                            <li>MY AIM: to arm you with enough information
+                            to continue exploring the module.</li>
                             <li>A personal pedagogical exercise: if I can
                             explain myself in simple and easy-to-understand
                             language it demonstrates my own clarity of
@@ -68,7 +73,6 @@
 				<section>
                     <h2>What does asyncio do..?</h2>
                     <aside class="notes">
-                        <p>Introduced in Python 3.4 - was Tulip.</p>
                         <blockquote cite="https://docs.python.org/3.4/library/asyncio.html">
                             &ldquo;This module provides infrastructure for writing
                             single-threaded concurrent code using coroutines,
@@ -119,23 +123,14 @@
                     <p>Messages arrive and depart via the network at
                     unpredictable times - asyncio lets you deal with such
                     interactions simultaneously.</p>
+                    <aside class="notes">
+                        <p>Given this simple purpose I want to place asyncio
+                        into a practical context. So let's talk about DHT.</p>
+                    </aside>
                 </section>
 
                 <section>
                     <h2>What is a Distributed Hash Table?</h2>
-                    <aside class="notes">
-                        <p>The fun application I'm writing using asyncio.</p>
-                        <p>I used to work for a failed startup called
-                        Fluidinfo, we were creating an openly writable public
-                        data store. It was a centralised walled garden of
-                        data. I wanted to look into the possibility of making
-                        it P2P.</p>
-                        <p>After Fluidinfo failed I worked for The Guardian
-                        and commuted into London. I could've just played angry
-                        birds on the train. Instead, I wrote Python.</p>
-                        <p>Was written using Twisted, more on that
-                        later...</p>
-                    </aside>
                 </section>
 
                 <section>
@@ -193,8 +188,9 @@
 
                 <aside class="notes">
                 <p>Why?</p>
+                <p>A really interesting programming problem with some
+                fascinating properties..! :-)</p>
                 <ul>
-                    <li>A really interesting programming problem..! :-)</li>
                     <li>No single point of failure or control.</li>
                     <li>Efficiently scale to huge numbers of nodes.</li>
                     <li>Good handling of fluid network membership.</li>
@@ -222,13 +218,16 @@
                     <h1>The Event Loop</h1>
                     <aside class="notes">
                         <p>Some code that keeps looping.</p>
-                        <p>The _run_once method in asyncio.base_events polls
-                        for I/O events that occurred during the time it took
-                        to complete the previous iteration of the loop.</p>
-                        <p>It ensures any callbacks that need to be run are
-                        done so during this iteration of the loop and carries
-                        out "housekeeping" needed for callbacks that have yet
-                        to be executed.</p>
+                        <p>Each iteration of the loop does two things:</p>
+                        <ol>
+                            <li>It polls for I/O events that occurred during
+                            the time it took to complete the previous
+                            iteration of the loop.</li>
+                            <li>It runs any callbacks that need to be run
+                            during this iteration of the loop.</li>
+                        </ol>
+                        <p>The loop also carries out "housekeeping" needed
+                        for callbacks that have yet to be executed.</p>
                         <p>Important to define polling and callbacks...</p>
                     </aside>
                 </section>
@@ -246,7 +245,7 @@
                             executed when some event has occured (detected
                             via polling).</li>
                         </ul>
-                        <p>A humorous metaphor familiar to those with
+                        <p>Humorous metaphor familiar to those with
                         kids...</p>
                         <ul>
                             <li>Polling is "are we there yet..?"</li>
@@ -322,9 +321,8 @@
                     <p class="fragment blink">Task A overwrites the
                     record containing task B's changes.</p>
                     <aside class="notes">
-                        <p>DATA LOSS = EVIL!</p>
-                        <p>As the PEP 315 quote implies, this is a classic
-                        problem with indeteminate threading.</p>
+                        <p>In the traditional "Threading" model of
+                        concurrency...</p>
                     </aside>
                 </section>
 
@@ -349,9 +347,11 @@
                         <p>Given the situation in this slide...</p>
 
                         <p>The program is described as blocked. Unacceptable
-                        if we're writing something that needs to react quickly
-                        to things (precisely the sort of
+                        if we're writing code that needs to react quickly
+                        to network based events (precisely the sort of
                         program asyncio is intended to help with).</p>
+
+                        <p>You're probably asking yourself...</p>
 
                         <p><strong>Why not just get on with tasks B and C
                         while we wait for A?</strong> Bingo, you've got
@@ -363,7 +363,7 @@
                     <h2>Welcome to the most important slide of this talk</h2>
                     <ul>
                         <li class="fragment">The program <strong><em>does not wait for a
-                        reply</em></strong> before continuing.</li>
+                        reply from network calls</em></strong> before continuing.</li>
                         <li class="fragment">Programmers define callbacks to
                         be run when the result of a network call is
                         known.</li>
@@ -373,11 +373,11 @@
                         <li class="fragment">Callbacks execute
                         during the iteration of the event loop
                         immediately after the expected network I/O
-                        event.</li>
+                        event is detected.</li>
                     </ul>
                     <aside class="notes">
                         <p>Asyncio is event driven:</p>
-                        <p>Network based I/O is non-blocking</p>
+                        <p>This means network based I/O is non-blocking.</p>
                         <p>How does this work..?</p>
                     </aside>
                 </section>
@@ -420,6 +420,12 @@
 
                     <aside class="notes">
                         <p>The fundamental advantage of asyncio.</p>
+                        <p>We plan ahead for expected events by defining
+                        callbacks to be called when such events eventually
+                        occur.</p>
+                        <p>In the meantime we sequentially handle the
+                        callbacks relating to other events that may happen
+                        in the intervening time.</p>
                     </aside>
                 </section>
 
@@ -429,7 +435,7 @@
                         <li class="fragment">How are asynchronous concurrent
                         tasks created?</li>
                         <li class="fragment">How do such tasks pause while
-                        waiting for non-blocking I/O?</li>
+                        waiting for non-blocking network based I/O?</li>
                         <li class="fragment">How are callbacks defined (to
                         handle the eventual result)?</li>
                     </ul>
@@ -504,14 +510,20 @@ def handle_request(self, message, payload):
                         yielding from a coroutine created by this function in
                         order to do something with the response.</p>
 
-                        <p>The coroutine will itself pause by yielding from
-                        the coroutine created by payload.read(). This method
-                        reads in the raw data POSTed as part of the
+                        <p>This block of code will pause by yielding from
+                        the coroutine created by payload.read() - a method
+                        that reads in the raw data POSTed as part of the
                         request.</p>
 
-                        <p>The coroutine created by the self.process_data
-                        method needs to wait on other things such as calls
-                        to an external database.</p>
+                        <p>The code pauses again while waiting on the
+                        coroutine created by the self.process_data
+                        method (itself wait on other things such as calls
+                        to an external database).</p>
+
+                        <p>When the task encapsulated in this coroutine is
+                        complete The upstream coroutine gets the returned
+                        result and resumes execution from where it yealded
+                        from this coroutine.</p>
                     </aside>
                 </section>
 
