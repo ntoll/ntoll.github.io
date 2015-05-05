@@ -11,7 +11,9 @@ from datetime import datetime
 
 template = u"""{%% extends "base.html" %%}
 {%% block content %%}
+<div class="article">
 %(content)s
+</div>
 {%% endblock content %%}"""
 
 

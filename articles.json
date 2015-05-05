@@ -1,5 +1,12 @@
 [
   {
+    "date": "2015-05-06 14:00:00", 
+    "slug": "program-pacifist-tyranny", 
+    "title": "Program a Pacifist Tyranny", 
+    "description": "Programming a Pacifist Tyranny",
+    "python": false
+  },
+  {
     "date": "2015-03-30 14:00:00", 
     "slug": "transcode", 
     "title": "TransCode", 
