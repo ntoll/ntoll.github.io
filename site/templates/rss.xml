@@ -11,6 +11,314 @@
     </image>
     
     <item>
+        <title>The Story of MicroPython on the BBC micro:bit</title>
+        <link>http://ntoll.org/article/story-micropython-on-microbit</link>
+        <guid>http://ntoll.org/article/story-micropython-on-microbit</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 19th October 2015 (15:00PM)&lt;/p&gt;
+
+&lt;p&gt;I am a child of the 1980s.&lt;/p&gt;
+
+&lt;p&gt;One of the formative experiences of my childhood was the arrival of our
+first computer. My father was a headteacher - one half-term holiday he brought
+home his school&#x27;s computer to learn how to use it. Yet it was my brother and I
+who spent most time on it. This was my first program, written in a language
+called &lt;a href=&quot;https://en.wikipedia.org/wiki/BBC_BASIC&quot;&gt;BASIC&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;basic&quot;&gt;10 CLS
+20 PRINT &quot;YOU&#x27;RE AN IDIOT&quot;
+30 GOTO 20&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;I remember the infectious enthusiasm of a number of my teachers: my
+design and technology teacher, a gentleman called Eric Rose, showing me how to
+program a robot arm he&#x27;d made and the school librarian, Philip Wilson,
+encouraging me to explore and experiment with
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Bulletin_board_system&quot;&gt;bulliten-board
+systems&lt;/a&gt; and a long-forgotten service called
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Prestel&quot;&gt;PRESTEL&lt;/a&gt; (forerunners of
+today&#x27;s consumer internet).&lt;/p&gt;
+
+&lt;p&gt;I wouldn&#x27;t be a programmer were it not for such positive formative
+experiences.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/bbcmicro.jpeg&quot; alt=&quot;A BBC Micro&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The computer I used was, of course, the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/BBC_Micro&quot;&gt;BBC Micro&lt;/a&gt;:
+the result of an extraordinary initiative called the
+&lt;a href=&quot;http://www.naec.org.uk/organisations/bbc-computer-literacy-project/towards-computer-literacy-the-bbc-computer-literacy-project-1979-1983&quot;&gt;BBC Computer Literacy Project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;David Allen, the project&#x27;s producer,
+&lt;a href=&quot;http://www.nesta.org.uk/publications/legacy-bbc-micro&quot;&gt;explained&lt;/a&gt;
+that, &quot;[t]he aim was to democratise computing. We didn&#x27;t want people to be
+controlled by it, but to control it.&quot;&lt;/p&gt;
+
+&lt;p&gt;Fast forward to today.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the efforts of teachers in organisations such as
+&lt;a href=&quot;http://www.computingatschool.org.uk/&quot;&gt;CAS&lt;/a&gt; and extraordinary
+world-changing projects like the
+&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;RaspberryPi&lt;/a&gt;, computing education is
+undergoing a renaissance in the UK and the BBC are stepping up to help once
+more. The Python programming language is part of this effort and
+&lt;strong&gt;you&lt;/strong&gt; can get involved.&lt;/p&gt;
+
+&lt;p&gt;What follows is the story so far...&lt;/p&gt;
+
+&lt;p&gt;In December 2014 the BBC announced their intention to create a mysterious
+computing-in-education project with &quot;partners&quot;. I had recently organised
+&lt;a href=&quot;http://www.pyconuk.org/education/&quot;&gt;PyCon UK&#x27;s education track&lt;/a&gt;,
+people knew I was a
+&lt;a href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt; (PSF)
+fellow and kept asking me if the PSF was involved. I decided to
+investigate and, with the blessing of the PSF board, applied for the PSF to
+join said partnership.&lt;/p&gt;
+
+&lt;p&gt;The BBC explained a staggering &quot;moon-shot&quot; project: to create a small,
+wearable computing device to be delivered to &lt;strong&gt;ALL&lt;/strong&gt; 1 million of
+the UK&#x27;s eleven-year-olds. The newly christened
+&lt;a href=&quot;http://www.bbc.co.uk/mediacentre/mediapacks/microbit&quot;&gt;BBC micro:bit&lt;/a&gt;
+would facilitate the first step towards inspiring digital creativity in a new
+generation of school children. I could identify with that!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/microbit.jpg&quot; alt=&quot;A BBC micro:bit&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;At the beginning of 2015 a partnership was formed to deliver such a device
+and the PSF were on board to deliver educational support, resources and Python
+expertise. The BBC told us they already had a partner to create a Python
+&quot;solution&quot; for the device.&lt;/p&gt;
+
+&lt;p&gt;Over the spring I volunteered my time to attended meetings at the BBC and
+got to know several of our fellow partners:
+&lt;a href=&quot;http://www.arm.com/&quot;&gt;ARM&lt;/a&gt; and
+&lt;a href=&quot;https://www.techwillsaveus.com/&quot;&gt;Tech Will Save Us&lt;/a&gt; were designing
+the hardware, Microsoft was to supply a child friendly
+&lt;a href=&quot;https://www.touchdevelop.com/&quot;&gt;development environment&lt;/a&gt; and many
+more were tackling other aspects of the project. I spent my time working out
+how to engage with our extensive network of Python-using teachers who could
+experiment with the device, create resources and train colleagues. I also
+wondered how to engage the wider Python community who, I was certain,
+would be very excited by the project.&lt;/p&gt;
+
+&lt;p&gt;However, I encountered two problems:&lt;/p&gt;
+
+&lt;p&gt;First, the project is covered by an
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-disclosure_agreement&quot;&gt;NDA&lt;/a&gt;.
+The partnership agreement states that when the device is delivered all the
+resources needed to recreate the project are to be released under an open
+license. The laudable intention being an unencumbered legacy so others can
+build upon and adapt the work of the partnership. The NDA exists for the same
+reason there&#x27;s a pre-broadcast NDA in place for the makers of
+&lt;a href=&quot;http://www.bbc.co.uk/programmes/b006q2x0&quot;&gt;Doctor Who&lt;/a&gt;:
+it avoids spoilers that would lessen the impact of the launch. Unfortunately,
+saying &quot;NDA&quot; to anyone from a free software background (such as Python) is a
+sure-fire way to turn them off (at best) or become hostile (at worst). This
+wouldn&#x27;t be an easy sell.&lt;/p&gt;
+
+&lt;p&gt;Secondly, at the end of April I was asked to a meeting at the BBC where
+I was told the partner tasked to supply Python had dropped out. &quot;We must
+have Python on the micro:bit&quot; said the BBC. &quot;I think you want the moon on a
+stick&quot; I thought. Nevertheless, I agreed to look at Microsoft&#x27;s TouchDevelop
+platform with a view to creating a version of Python to sit on top of the
+development environment and cloud based compilation service. I would need help,
+so asked those UK based Pythonistas I knew who had the right skill-set and
+interest in education to sign the NDA and help me evaluate what to do next.&lt;/p&gt;
+
+&lt;p&gt;Microsoft&#x27;s
+&lt;a href=&quot;https://github.com/Microsoft/TouchDevelop&quot;&gt;TouchDevelop&lt;/a&gt; is a
+fascinating open source project: it&#x27;s a browser based visual IDE for kids that
+generates a
+&lt;a href=&quot;http://json.org/&quot;&gt;JSON&lt;/a&gt; based
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Abstract_syntax_tree&quot;&gt;AST&lt;/a&gt; that&#x27;s
+turned into &lt;a href=&quot;https://en.wikipedia.org/wiki/C%2B%2B&quot;&gt;C++&lt;/a&gt; and sent
+to ARM&#x27;s &lt;a href=&quot;https://www.mbed.com/en/&quot;&gt;mBed&lt;/a&gt; cloud compilation service.
+Ultimately, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Intel_HEX&quot;&gt;hex&lt;/a&gt; file
+is delivered to the user&#x27;s browser and downloaded onto their local file-system.
+Plugging in the micro:bit makes it appear as USB storage and you flash it
+by dragging the hex file onto the device.&lt;/p&gt;
+
+&lt;p&gt;Python is, of course, a dynamic interpreted language rather than a static
+compiled language such as the one used by TouchDevelop. Furthermore, a version
+of Python that compiled to the TouchDevelop AST would be a completely new
+language - a Pythonic
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Shim_(computing)&quot;&gt;shim&lt;/a&gt; to make
+TouchDevelop feel like Python. Finally, TouchDevelop itself is written in
+&lt;a href=&quot;https://en.wikipedia.org/wiki/TypeScript&quot;&gt;TypeScript&lt;/a&gt;, an
+interesting Microsoft-developed language that compiles to JavaScript. None of
+us evaluating TouchDevelop knew TypeScript and the thought of creating a
+new compiler for a sort-of-Python, frankly, gave us the collywobbles.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, designing and creating something Python-ish to work on
+TouchDevelop appeared to be impossibly difficult (or difficultly impossible,
+depending on how you looked at it) for a handful of volunteers working in
+their spare time in an unfamiliar language.&lt;/p&gt;
+
+&lt;p&gt;It was at this time that something amazing happened.&lt;/p&gt;
+
+&lt;p&gt;I was at a partner&#x27;s meeting at the BBC and, quite by accident, struck up a
+tea-break conversation with &quot;Jonny from ARM, pleased to meet you&quot;. It turned
+out that &lt;a href=&quot;https://github.com/jaustin&quot;&gt;Jonny&lt;/a&gt; is a fellow geek, but
+one that inhabits a different layer of the computing stack (I generally work
+in high level languages like Python or JavaScript, Jonny feels more at home
+close to the bare metal hacking hardware).&lt;/p&gt;
+
+&lt;p&gt;After we&#x27;d figured out the above, Jonny asked, &quot;have you ever heard of &lt;a href=&quot;http://micropython.org&quot;&gt;MicroPython&lt;/a&gt;?&quot; (MicroPython is a full
+re-implementation of Python 3 for microcontrollers used in small devices such
+as the micro:bit).&lt;/p&gt;
+
+&lt;p&gt;&quot;Why yes&quot;, I replied, &quot;I&#x27;ve spoken to Damien several times over the phone
+since he was invited to speak at last year&#x27;s PyCon UK&quot;
+(&lt;a href=&quot;https://github.com/dpgeorge&quot;&gt;Damien&lt;/a&gt; is the Cambridge based creator of MicroPython).&lt;/p&gt;
+
+&lt;p&gt;&quot;Cool, I know Damien too, he&#x27;s my next-door-neighbour&quot;, explained Jonny,
+after which he casually told me, &quot;you know, it should be possible to get
+MicroPython to run on the micro:bit&quot;.&lt;/p&gt;
+
+&lt;p&gt;&quot;Really..? The BBC had told me they&#x27;d looked into MicroPython but the
+device had the wrong chipset...&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Oh, that was correct for the prototype. But we&#x27;ve changed the chipset.
+I&#x27;m pretty certain it&#x27;ll work now.&quot;&lt;/p&gt;
+
+&lt;p&gt;Soon after I went to see Damien in Cambridge. I explained the project and
+he agreed he&#x27;d be willing to volunteer some time to explore porting MicroPython
+onto the device (Damien, like me, has a full time job). I organised for him to
+sign the NDA and Jonny supplied Damien with the appropriate things needed
+to compile MicroPython for the target chipset.&lt;/p&gt;
+
+&lt;p&gt;About a week later (at the very end of May) Damien emailed myself, Jonny
+and a few interested people at the BBC:&lt;/p&gt;
+
+&lt;blockquote&gt;Thanks Jonny for the nRF mkit dev board, it has proved very useful!
+&lt;br&gt;
+&lt;br&gt;
+I signed up to mbed, exported the blinky example for the mkit and got
+it compiling locally using a local toolchain.  And then using this I
+managed to get MicroPython compiling and running on the mkit!  There
+is a surprisingly large amount of room: I could enable floating point
+support, aribitrary precision integers, most of the Python features
+and a few builtin modules.  The REPL works over the USB-UART with
+history and tab completion.  It even has a working ctrl-C (meaning you
+can break out of an infinite loop).  I implemented a basic &quot;pyb&quot;
+module with LED and Switch classes, and a delay function.  So you can
+do something like:&lt;br&gt;&lt;br&gt;
+led = pyb.LED(1)&lt;br&gt;
+while True:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;led.toggle()&lt;br&gt;
+&amp;nbsp;&amp;nbsp;pyb.delay(100)&lt;br&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;I&#x27;m not ashamed to say that I danced around the room fist-pumping the air
+shouting &quot;woo hoo&quot; when I read Damien&#x27;s email. It confirmed there was a real
+possibility of getting &lt;strong&gt;proper Python to run directly on the
+device itself&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A week later I was in London for another partner&#x27;s meeting where I was to
+get my hands on one of the very first batch of final-design devices.
+It was heartbreaking to be given such a cool device only to have to pass it to
+Jonny with the sad plea, &quot;can you post this through Damien&#x27;s letter box
+please?&quot;.&lt;/p&gt;
+
+&lt;p&gt;Over the next days Damien, Jonny and I kept in touch as Damien worked
+around some teething problems. Then, on the 17th June, Damien emailed
+again:&lt;/p&gt;
+
+&lt;blockquote&gt;Using your new USB serial firmware and demo program I have now got
+MicroPython running on the micro:bit!&lt;br/&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We finally had confirmation that MicroPython was going to work on the
+device! Much dancing, fist-pumping and shouts of &quot;woo hoo&quot; took place as I
+emailed the BBC with the good news.&lt;/p&gt;
+
+&lt;p&gt;They asked how we could integrate our work into TouchDevelop so I embarked
+upon writing a browser-based code editor (starting from the excellent
+&lt;a href=&quot;https://ace.c9.io/&quot;&gt;ace&lt;/a&gt; editor). This is mostly done apart from
+some design tweaks. It&#x27;s currently embedded in a test instance of
+TouchDevelop and works really well!&lt;/p&gt;
+
+&lt;p&gt;Interestingly, because this is Python we don&#x27;t have to use the cloud
+compilation toolchain. Since hex files are a simple format we worked out a way
+of encoding Python scripts written in the editor in such a way that
+they can be inserted into the appropriate place in MicroPython&#x27;s hex file.
+When the device starts up it discovers the embedded Python and the script
+is automatically run. Since the size of the MicroPython hex file is a lot less
+than say, the total size of the BBC&#x27;s news
+&lt;a href=&quot;http://www.bbc.co.uk/news&quot;&gt;frontpage&lt;/a&gt;, we embed the hex file
+within our HTML (it&#x27;s in a hidden div) and do all the processing locally in the
+user&#x27;s browser. It means the Python editor will work offline. We also have a
+non-TouchDevelop version to run from your local filesystem (so you
+don&#x27;t need to be connected to the internet at all!).&lt;/p&gt;
+
+&lt;p&gt;Most importantly, it&#x27;s possible to use the Python
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&quot;&gt;REPL&lt;/a&gt;
+via the USB connection. It means it&#x27;s possible to &quot;live code&quot; the device by
+typing commands into a prompt, just like I used to do on my
+old BBC Micro. It&#x27;s a wonderful mechanism for playful exploration and
+experimentation so kids and teachers get to see the results of their code
+running immediately on the device. Such a tight feedback loop is very
+useful and lots of fun!&lt;/p&gt;
+
+&lt;p&gt;More recently, we&#x27;ve implemented a &lt;code&gt;microbit&lt;/code&gt; module to
+access the device&#x27;s hardware (a couple of buttons, an LED matrix, compass,
+IO pins, accelerometer and so on). We also held a sprint at
+PyCon UK a few weeks ago and, after various bits of NDA related fun, we&#x27;ve been
+able to add some wonderful new collaborators. We&#x27;re pushing ahead on interesting
+new capabilities such as game-related functionality, optimizations
+so it&#x27;s easy to create animations on the LED display and a music API: connect
+a speaker via crocodile clips to the IO pins and listen to bleeps and
+bloops.&lt;/p&gt;
+
+&lt;p&gt;The video below, created for a friend who blogs about &quot;favourite
+modules&quot;, is a few weeks old but gives a flavour of our current status:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/HAx9sJB1_eY?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We also sent a micro:bit to
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Guido_van_Rossum&quot;&gt;Guido&lt;/a&gt; who appears
+to be quite chipper about the project:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I&amp;#39;ve been playing with micropython on the BBC micro:bit and it&amp;#39;s amazing! &amp;lt;3&lt;/p&gt;&amp;mdash; Guido van Rossum (@gvanrossum) &lt;a href=&quot;https://twitter.com/gvanrossum/status/653975453691080704&quot;&gt;October 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;But there is still lots to do and we are a small team! The BBC
+understand the danger of a low
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Bus_factor&quot;&gt;bus factor&lt;/a&gt; (especially
+when work is being done by a small ad hoc band of community volunteers) and how
+important it is to engage with existing communities who are sympathetic with
+the cause of computing education.&lt;/p&gt;
+
+&lt;p&gt;As a result I&#x27;m immensely pleased that from today the BBC have agreed that we
+can continue our work in the open and outside the restrictions of the NDA. The
+micro:bit related parts of MicroPython have been released under the MIT
+license and can be found at &lt;a href=&quot;#&quot;&gt;this GitHub repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The browser based code editor will follow soon.&lt;/p&gt;
+
+&lt;p&gt;Please take a look, poke around and help. If you feel you can contribute I
+will &lt;em&gt;try&lt;/em&gt; (&lt;strong&gt;no promises&lt;/strong&gt;) to get you a device for
+development purposes - but I will need to be confident that you&#x27;ll do work and
+push code.&lt;/p&gt;
+
+&lt;p&gt;You can contribute in other ways too: documentation needs writing and we
+want to generate educational resources for the device. Get in touch if this
+interests you! Alternatively, if you have an idea for a fun Python related
+project, tell us about it and I&#x27;ll try (again, no promises) to get you a
+device for testing purposes.&lt;/p&gt;
+
+&lt;p&gt;Contributions are welcome without prejudice from anyone irrespective of age,
+gender, religion, race or sexuality. Good quality code, ideas and engagement
+with respect, humour and intelligence win every time.&lt;/p&gt;
+
+&lt;p&gt;Could &lt;strong&gt;you&lt;/strong&gt; contribute something to a project that will
+touch the lives of 1 million children and create a legacy &lt;em&gt;anyone&lt;/em&gt;
+can use?&lt;/p&gt;
+
+&lt;p&gt;:-)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Nov 2015 15:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Program a Pacifist Tyranny</title>
         <link>http://ntoll.org/article/program-pacifist-tyranny</link>
         <guid>http://ntoll.org/article/program-pacifist-tyranny</guid>
@@ -293,219 +601,6 @@ you to join in and support in any way that you can.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 30 Mar 2015 14:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Thought in Motion</title>
-        <link>http://ntoll.org/article/thought-in-motion</link>
-        <guid>http://ntoll.org/article/thought-in-motion</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/thought-in-motion&quot;&gt;Thought in Motion&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Sunday 30th November 2014 (2:00PM)&lt;/p&gt;
-
-&lt;p&gt;I recently had the opportunity to dip into the book,
-&lt;a href=&quot;http://www.britishmuseum.org/explore/a_history_of_the_world.aspx&quot;&gt;A
-History of the World in 100 Objects&lt;/a&gt;. It mentions one of my
-favourite objects in the
-&lt;a href=&quot;http://www.britishmuseum.org/&quot;&gt;British Museum&lt;/a&gt;: a 5100 year old
-&lt;a href=&quot;http://www.britishmuseum.org/explore/highlights/highlight_objects/me/t/tablet,_allocation_of_beer.aspx&quot;&gt;Mesopotamian clay tablet&lt;/a&gt;
-that records the allocation of beer by administrators in the city
-of &lt;a href=&quot;https://en.wikipedia.org/wiki/Uruk&quot;&gt;Uruk&lt;/a&gt; (I&#x27;ve written about
-this object &lt;a href=&quot;/article/long-term-view&quot;&gt;before&lt;/a&gt;).&lt;/p&gt;
-
-&lt;img src=&quot;/static/images/15_writingtablet_l.jpg&quot; alt=&quot;Mesopotamian tablet&quot;/&gt;
-
-&lt;p&gt;The chapter about this tablet explains how literacy was a catalyst for a
-fundamental change in human civilization. For the first time complex
-information could be recorded, checked and stored outside the human mind. It
-concludes with the following quote from the American philosopher
-&lt;a href=&quot;https://en.wikipedia.org/wiki/John_Searle&quot;&gt;John Searle&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;&quot;Writing is essential for the creation of what we think of as
-human civilization. It has a creative capacity that may not even have been
-intended. I think you don&#x27;t understand the full import of the revolution
-brought by writing if you think of it just as preserving information into the
-future. There are two areas where it makes an absolutely decisive difference
-to the whole history of the human species. One is complex thought. There&#x27;s a
-limit to what you can do with the spoken word. You cannot really do higher
-mathematics or even more complex forms of philosophical argument unless you
-have some way of writing it down and scanning it. So it&#x27;s not adequate to
-think of writing just as a way of recording, for the future, facts about the
-past and the present. On the contrary, it is immensely creative. But there&#x27;s a
-second thing about writing which is just as important: when you write down
-you don&#x27;t just record what already exists, you create new entities - money,
-corporations, governments, complex forms of society. Writing is essential for
-all of them.&quot;&lt;/blockquote&gt;
-
-&lt;p&gt;What does Searle mean when he states that writing creates new entities
-essential for complex society?&lt;/p&gt;
-
-&lt;p&gt;Try this example:&lt;/p&gt;
-
-&lt;p&gt;I am married to Mary and we have a piece of paper called a marriage
-certificate that proves we are. Somewhere else is written down an
-&lt;a href=&quot;http://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76&quot;&gt;act of
-Parliament&lt;/a&gt; explaining how one obtains such a proof of matrimonial status
-along with definitions of terminology, responsibilities and activities in
-accordance with the custom of &quot;marriage&quot; in England and Wales.&lt;/p&gt;
-
-&lt;p&gt;Mary and I had to make vows (that are written down somewhere)
-in front of witnesses. Since neither of us is religious we had a civil
-marriage so a licensed registrar then spoke the specified words (that are also
-written down somewhere), &quot;I now pronounce you husband and wife&quot;. It was only
-until these words were spoken by such a licensed person in accordance with
-the practices written down in the afore mentioned act of Parliament that Mary
-and I were married.&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/6vBadGJp1hQ?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;p&gt;Immediately afterwards, we signed our names in a special register to
-record our marriage and duly received our marriage certificate. Sometimes
-we show the certificate to people in accordance with the practices and customs
-written down in other acts of Parliament to prove that we are, indeed,
-married.&lt;/p&gt;
-
-&lt;p&gt;In terms of the &lt;strong&gt;physical world&lt;/strong&gt;, not a lot happened that
-was of great interest. An alien observer from another planet might describe
-the occasion as a group of hairless apes making sounds then scrawling marks
-on flattened dead tree.&lt;/p&gt;
-
-&lt;p&gt;The new entities and aspects of complex society that Searle is thinking of
-are, of course, those things that only exist in our human, &lt;em&gt;social&lt;/em&gt;
-world.&lt;/p&gt;
-
-&lt;p&gt;The &quot;truthiness&quot; of my marriage, a certain act of Parliament or other such
-things does not come about in the same way that it is true to say
-that water boils at a certain temperature. Importantly, this doesn&#x27;t make
-such things less true (I&#x27;m still married).&lt;/p&gt;
-
-&lt;p&gt;The mechanism for creating the truth of such social states of affairs is
-not the result of observing a natural phenomena (as a scientist might do in
-the case of the boiling point of water), rather, it is merely
-&lt;em&gt;someone&lt;/em&gt; expressing &lt;em&gt;some thing&lt;/em&gt; in &lt;em&gt;some context&lt;/em&gt;. The
-registrar (someone) saying &quot;I now pronounce you husband and wife&quot; (some thing)
-at a wedding ceremony (some context) &lt;strong&gt;is how&lt;/strong&gt; we became husband
-and wife. It is a &lt;em&gt;special incantation&lt;/em&gt;. That it lacks physical
-properties or side effects is overcome by bureaucratic overhead (writing of a
-certificate to record our married state and other activities in accordance
-with written down laws - as I describe above). This is how writing creates
-complex forms of society.&lt;/p&gt;
-
-&lt;p&gt;Such performative statements (simply expressing them makes them true)
-don&#x27;t have to be spoken by some official person as is the case at a wedding.
-Simply by writing them down can be enough. For example, the United States&#x27;
-twenty dollar bill has written on it, &quot;This note is legal tender for all
-debts public and private&quot;. This makes it money! (Although I can&#x27;t just write
-this on any old piece of paper and expect to get away with purchasing things
-with it - the &quot;someone&quot; making the statement and &quot;context&quot; of the statement
-are both wrong according to the terms set out by some other performative
-statement written down as a US law).&lt;/p&gt;
-
-&lt;p&gt;Put another way, it would seem bizarre to use this mechanism in the
-context of the physical world: I simply can&#x27;t decree that water boils at a
-certain temperature &lt;strong&gt;because I say so&lt;/strong&gt; and then issue a
-certificate to prove it! This mechanism only works when constructing facts in
-the &lt;em&gt;human social world&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Does the social world have any effect on the physical world? Of course it
-does: the rules of football are social constructs yet govern how
-people should run around a field kicking a ball in a physical sense.&lt;/p&gt;
-
-&lt;p&gt;We share a culture, a form of life, a social world that exists by virtue of
-us being human and doing things humans do. This includes creating social
-constructs that only exist in such a social world via performative statements.
-It is only through our behaviour that evidence of such social constructs is
-manifested in the physical world (we run around a pitch kicking a ball in
-accordance with the socially constructed rules of football).&lt;/p&gt;
-
-&lt;p&gt;This is a key aspect Searle&#x27;s argument: it requires humans to work.
-Someone must have written down such statements and others, collectively, need
-to have read, understood and acted as a result of comprehending such writing.
-This is, in a sense, is a movement of thought or intent between minds.&lt;/p&gt;
-
-&lt;p&gt;Of course, intentions and information can be shared via speech. Yet I
-believe Searle is correct to point out that literacy both records and creates
-such social entities that shape our collective behaviour that would be
-otherwise difficult or impossible to work with in a pre-literate society. Just
-imagine how hard it would be to keep track of the arguments in this blog
-post without the convenience of being able to re-read them. How would we keep
-track of complex laws? There&#x27;s only &lt;em&gt;so much&lt;/em&gt; anyone can commit to
-memory.&lt;/p&gt;
-
-&lt;p&gt;It&#x27;s important to note that such movement of thought between minds is not
-just textual in nature: for example, it works when writing symbols in the
-musical and mathematical realms. I find it remarkable that I can enjoy the
-musical thoughts of a genius such as Beethoven almost 200 years after his
-death - I consider it a privilege when I think about the amount of effort
-spent to bring about such aural experiences.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, it is possible to follow mathematical thought processes so
-long as you understand what the symbols represent and how they are to be
-manipulated. Take, 2+3=5 for instance. As any child will tell you, the
-&quot;=&quot; (equals) symbol means that what&#x27;s written on its left is of equal quantity
-to what&#x27;s written on its right. Furthermore, the &quot;+&quot; (sum) symbol indicates
-the quantities adjacent to its left and right should be added together (start
-at the highest quantity and count up the other-quantity-number-of-steps to find
-the result). Such mathematical literacy symbolically records thought processes
-that unfold in a deterministic manner (it&#x27;s a formal system: if you understand
-the symbols, 2+3 &lt;strong&gt;must&lt;/strong&gt; equal 5).&lt;/p&gt;
-
-&lt;p&gt;And so we get to the nub of this blog post:&lt;/p&gt;
-
-&lt;p&gt;Like us, Computers process symbols. These symbols are a sort of literacy
-(we write them down as code). Such symbols record our thoughts as
-&lt;a href=&quot;/article/programming-concise-and-simple&quot;&gt;algorithms&lt;/a&gt;
-(instructions used to achieve some useful end) or
-&lt;a href=&quot;/article/databases-concise-and-simple&quot;&gt;data&lt;/a&gt; (representation of
-information that can be easily manipulated by the computer).&lt;/p&gt;
-
-&lt;p&gt;To execute such algorithms or manipulate such data does not require a human
-- a computer will do. Computers are designed, created and operated by humans
-but the execution of the algorithm and manipulation of data is most definitely
-within the digital realm. This is, in a sense, a movement of thought, intent
-or information between (human) minds: I want to do X, so execute a program
-(written by another human) that brings about X but get a computer to do it
-for me (rather than a human).&lt;/p&gt;
-
-&lt;p&gt;For example, I want to buy a ticket to travel on the train to London. I used
-to have to ask a ticket clerk at the station to bring this about (assuming we
-both followed the conventions required for the purchase of a ticket). Today I
-can book online, print my tickets or even pick them up from an automated ticket
-machine with no human intervention at all.&lt;/p&gt;
-
-&lt;p&gt;I am not saying computers are minds (more on this in a later blog post).
-Merely, computers are a medium for the transmission of thought, intent or
-information (expressed as algorithms or data) in a similar way to how clay
-tablets or pen and paper are also a medium for the transmission of thought,
-intent or information (expressed as writing). The important distinction is
-that computers are active (they can execute the algorithm or manipulate the
-data) and clay tablets or pen and paper are passive (a human is required to
-act upon their content).&lt;/p&gt;
-
-&lt;p&gt;Perhaps this is the fundamental change of &lt;em&gt;our time&lt;/em&gt;. We live in a
-&lt;em&gt;social&lt;/em&gt; world where I can record my thoughts and not require a human
-for their content to be acted upon (for example, as a programmer I can write
-a train-ticket purchasing program for other people to use). The computer, in
-some sense, is the performative actor (rather than, say, the registrar at my
-wedding). In Searle&#x27;s terms, the software is the &lt;em&gt;someone&lt;/em&gt; expressing
-some thing (&quot;you have a valid ticket to travel on such-and-such a train&quot;) in
-a &lt;em&gt;computational&lt;/em&gt; context that we humans accept as valid (in the same
-way we accept a wedding as a valid context for a registrar to perform their
-duties).&lt;/p&gt;
-
-&lt;p&gt;Personally, I need to think about this further simply because I believe
-we (humanity) have not lived with computers long enough to comprehensively
-understand their role in our daily (social) lives. You might say that we&#x27;re
-at the same stage with computers as the Mesopotamians were with writing when
-they created the clay tablet.&lt;/p&gt;
-
-&lt;p&gt;Interesting times ahead.&lt;/p&gt;
-
-&lt;p&gt;:-)&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;Image credits: Mesopotamian tablet
-&amp;copy; &lt;a href=&quot;http://www.britishmuseum.org/&quot;&gt;Trustees of the British Museum&lt;/a&gt;
-&lt;/small&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 30 Nov 2014 14:00:00 GMT</pubDate>
     </item>
     
 </channel>
