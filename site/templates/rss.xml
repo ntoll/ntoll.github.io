@@ -14,7 +14,7 @@
         <title>The Story of MicroPython on the BBC micro:bit</title>
         <link>http://ntoll.org/article/story-micropython-on-microbit</link>
         <guid>http://ntoll.org/article/story-micropython-on-microbit</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 19th October 2015 (15:00PM)&lt;/p&gt;
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday 20th October 2015 (10:00AM)&lt;/p&gt;
 
 &lt;p&gt;I am a child of the 1980s.&lt;/p&gt;
 
@@ -74,8 +74,8 @@ investigate and, with the blessing of the PSF board, applied for the PSF to
 join said partnership.&lt;/p&gt;
 
 &lt;p&gt;The BBC explained a staggering &quot;moon-shot&quot; project: to create a small,
-wearable computing device to be delivered to &lt;strong&gt;ALL&lt;/strong&gt; 1 million of
-the UK&#x27;s eleven-year-olds. The newly christened
+computing device to be delivered to &lt;strong&gt;ALL&lt;/strong&gt; year 7 children
+(11-12 years old) in the UK. The newly christened
 &lt;a href=&quot;http://www.bbc.co.uk/mediacentre/mediapacks/microbit&quot;&gt;BBC micro:bit&lt;/a&gt;
 would facilitate the first step towards inspiring digital creativity in a new
 generation of school children. I could identify with that!&lt;/p&gt;
@@ -105,14 +105,14 @@ would be very excited by the project.&lt;/p&gt;
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Non-disclosure_agreement&quot;&gt;NDA&lt;/a&gt;.
 The partnership agreement states that when the device is delivered all the
 resources needed to recreate the project are to be released under an open
-license. The laudable intention being an unencumbered legacy so others can
+license ~ the laudable intention being an unencumbered legacy so others can
 build upon and adapt the work of the partnership. The NDA exists for the same
 reason there&#x27;s a pre-broadcast NDA in place for the makers of
 &lt;a href=&quot;http://www.bbc.co.uk/programmes/b006q2x0&quot;&gt;Doctor Who&lt;/a&gt;:
 it avoids spoilers that would lessen the impact of the launch. Unfortunately,
 saying &quot;NDA&quot; to anyone from a free software background (such as Python) is a
 sure-fire way to turn them off (at best) or become hostile (at worst). This
-wouldn&#x27;t be an easy sell.&lt;/p&gt;
+wouldn&#x27;t be an easy sell!&lt;/p&gt;
 
 &lt;p&gt;Secondly, at the end of April I was asked to a meeting at the BBC where
 I was told the partner tasked to supply Python had dropped out. &quot;We must
@@ -258,7 +258,7 @@ useful and lots of fun!&lt;/p&gt;
 
 &lt;p&gt;More recently, we&#x27;ve implemented a &lt;code&gt;microbit&lt;/code&gt; module to
 access the device&#x27;s hardware (a couple of buttons, an LED matrix, compass,
-IO pins, accelerometer and so on). We also held a sprint at
+IO pins, accelerometer and so on). We also held a code sprint at
 PyCon UK a few weeks ago and, after various bits of NDA related fun, we&#x27;ve been
 able to add some wonderful new collaborators. We&#x27;re pushing ahead on interesting
 new capabilities such as game-related functionality, optimizations
@@ -315,7 +315,7 @@ can use?&lt;/p&gt;
 
 &lt;p&gt;:-)&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 Nov 2015 15:00:00 GMT</pubDate>
+        <pubDate>Fri, 20 Nov 2015 10:00:00 GMT</pubDate>
     </item>
     
     <item>
