@@ -14,7 +14,7 @@
         <title>The Story of MicroPython on the BBC micro:bit</title>
         <link>http://ntoll.org/article/story-micropython-on-microbit</link>
         <guid>http://ntoll.org/article/story-micropython-on-microbit</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday 20th October 2015 (10:00AM)&lt;/p&gt;
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday 20th October 2015 (8:00AM)&lt;/p&gt;
 
 &lt;p&gt;I am a child of the 1980s.&lt;/p&gt;
 
@@ -290,7 +290,9 @@ the cause of computing education.&lt;/p&gt;
 &lt;p&gt;As a result I&#x27;m immensely pleased that from today the BBC have agreed that we
 can continue our work in the open and outside the restrictions of the NDA. The
 micro:bit related parts of MicroPython have been released under the MIT
-license and can be found at &lt;a href=&quot;#&quot;&gt;this GitHub repository&lt;/a&gt;.&lt;/p&gt;
+license and can be found at
+&lt;a href=&quot;https://github.com/bbcmicrobit/micropython&quot;&gt;this GitHub
+repository&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The browser based code editor will follow soon.&lt;/p&gt;
 
@@ -315,7 +317,7 @@ can use?&lt;/p&gt;
 
 &lt;p&gt;:-)&lt;/p&gt;
 </description>
-        <pubDate>Fri, 20 Nov 2015 10:00:00 GMT</pubDate>
+        <pubDate>Fri, 20 Nov 2015 08:00:00 GMT</pubDate>
     </item>
     
     <item>
