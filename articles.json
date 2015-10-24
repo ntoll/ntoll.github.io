@@ -1,5 +1,12 @@
 [
   {
+    "date": "2015-10-24 01:00:00", 
+    "slug": "india", 
+    "title": "PyCon India", 
+    "description": "An account of my trip to India for PyCon in 2015.",
+    "python": true
+  },
+  {
     "date": "2015-10-20 08:00:00", 
     "slug": "story-micropython-on-microbit", 
     "title": "The Story of MicroPython on the BBC micro:bit", 
