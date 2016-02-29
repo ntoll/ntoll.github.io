@@ -11,6 +11,227 @@
     </image>
     
     <item>
+        <title>EdFoo</title>
+        <link>http://ntoll.org/article/edfoo</link>
+        <guid>http://ntoll.org/article/edfoo</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/edfoo&quot;&gt;EdFoo&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 29th February 2016 (12:30pm)&lt;/p&gt;
+
+&lt;p&gt;I was invited to the world&#x27;s first EdFoo conference, held at Google&#x27;s HQ in
+California over the weekend of the 19th-21st February.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/edfoo-me.jpg&quot; alt=&quot;Me at the Googleplex&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Foo? Yes, &lt;a href=&quot;https://en.wikipedia.org/wiki/Foo_Camp&quot;&gt;Foo&lt;/a&gt; (aka
+Friends Of &lt;a href=&quot;http://www.oreilly.com/&quot;&gt;O&#x27;Reilly&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I&#x27;ve written three books for O&#x27;Reilly, the last one being a short report on
+&lt;a href=&quot;http://www.oreilly.com/programming/free/python-in-education.csp&quot;&gt;Python in Education&lt;/a&gt;.
+I suspect that&#x27;s how I got on the invite list. EdFoo, as the name suggests, was
+a self-organised conference about education and I&#x27;m pleased I was able to
+attend. (I&#x27;m also indebted to the
+&lt;a href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt;
+for their support via a travel grant to cover my flight from the UK.)&lt;/p&gt;
+
+&lt;p&gt;I had a fantastic time with good omens from the start: I flew to San
+Francisco on an almost-empty plane. Even the US border guard wanted a friendly
+chat. Apparently, &quot;all you English people drink tea with your pinky stuck out
+because it helps balance the cup.&quot; Who was I to argue with the fierce looking
+dude in a uniform whose decision it was for my entry into the US..? &quot;Hahaha,
+yes... of course we do, all the time...&quot; I smiled back.&lt;/p&gt;
+
+&lt;p&gt;I took a shared shuttle from the airport to the hotel. My fellow passengers
+were a French dude who didn&#x27;t know where he was going (&quot;But I &#x27;erv ze adresse
+&#x27;ere. Non, non, non... ze adresse iz &#x27;ere someware. Non. Ici. Oui. Ah, non...&quot;
+etc), and a young Indian chap arriving to start his first job out of college at
+Google. After dropping the lost Frenchman in the middle of nowhere (he insisted
+it was the correct location) we chatted about cricket, much to the
+consternation of our American driver. It&#x27;s like a
+&lt;a href=&quot;http://www.bbc.co.uk/blogs/learningenglish/2011/09/howzat.shtml&quot;&gt;secret code&lt;/a&gt;
+only commonwealth citizens appear to understand. :-)&lt;/p&gt;
+
+&lt;p&gt;While driving I was reminded of the Dionne Warwick song, &quot;Do You Know the
+Way to San Jose?&quot;. I was ACTUALLY ON THE BLOODY WAY to San Jose. It&#x27;s a four
+lane motorway. In future I can truthfully shout &quot;YES!&quot; whenever I hear the song
+played on the radio.&lt;/p&gt;
+
+&lt;p&gt;Foo camps are a sort of un-conference: the programme is organised by the
+attendees whilst at the event. A pre-prepared blank timetable and large
+sticky-notes are used to create a schedule. Interest in various activities is
+indicated by the copious use of sticky spots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/foo-schedule.jpg&quot; alt=&quot;A Foocamp schedule&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, I contributed a session about the
+&lt;a href=&quot;https://www.microbit.co.uk/&quot;&gt;BBC micro:bit project&lt;/a&gt;.
+People were very interested in the crazy notion of giving every 11 year-old in
+the UK a small programmable computer.&lt;/p&gt;
+
+&lt;p&gt;There were lots of wonderful aspects to this conference:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;The people were, without exception, smart, friendly and
+    enthusiastic;&lt;/li&gt;
+    &lt;li&gt;The sessions were stimulating, lively and diverse in scope;&lt;/li&gt;
+    &lt;li&gt;It was safe to contribute and I (personally) always got back more
+    because of putting in.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since I didn&#x27;t know anybody, I was at my most gregarious. For example, at
+meal times I&#x27;d choose a table at random and ask, &quot;can I join you?&quot;.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s a typical encounter:&lt;/p&gt;
+
+&lt;p&gt;&quot;Of course!&quot; replies the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Joy_Reidenberg&quot;&gt;friendly looking
+lady&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I discover that she&#x27;s a professor of anatomy, makes BAFTA award winning
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Inside_Nature&#x27;s_Giants&quot;&gt;TV programmes&lt;/a&gt;
+and has a passion for whales. We talk on a diverse range of subjects and my
+tuba playing background comes up. It launches us into a discussion
+about the anatomy of circular breathing and how this is something whales may
+do when vocalising whale song. We&#x27;re joined by a
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Jeffrey_Laitman&quot;&gt;trombone playing colleague&lt;/a&gt;
+of hers and have a lovely time geeking out with stories of whales, youthful
+musical adventures, and anatomy.&lt;/p&gt;
+
+&lt;p&gt;Thank you Joy and Jeffrey for such an impromptu and entertaining lunch.&lt;/p&gt;
+
+&lt;p&gt;I took part in a wide variety of sessions. Highlights included a technical
+description of how &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt; kernels work
+(more on this below), a discussion about the mechanics of curriculum generation
+and accidentally walking into a stimulating and enjoyable seminar attempting to
+work out why real schools are not like EdFoo.&lt;/p&gt;
+
+&lt;p&gt;It was a great pleasure to collaborate in such conversations. Often, the
+person who convened each session merely got the ball rolling. There
+was enough intellectual momentum in the room that conversation kept on rolling
+in all sorts of interesting directions.&lt;/p&gt;
+
+&lt;p&gt;My own session was a case in point. I spent about 15 minutes giving a brief
+overview of the micro:bit project, my contribution via the Python programming
+language and a demonstration of the device. Questions followed but it was most
+fun when I gave out a handful of devices for people to play with. I learned
+that Americans call crocodile clips, &quot;alligator clips&quot; so settled on calling
+them crocogator clips for the sake of trans-Atlantic harmony. I also learned
+that Chromebooks are popular in US schools. A
+&lt;a href=&quot;http://www.tufts.edu/~crogers/&quot;&gt;professor of mechanical
+engineering&lt;/a&gt; even got excited enough to grab his laptop and implement a
+&lt;a href=&quot;https://en.wikipedia.org/wiki/LabVIEW&quot;&gt;LabVIEW&lt;/a&gt; based controller
+to drive the micro:bit via the MicroPython REPL. It was very rewarding for me
+to see a diverse bunch have such fun exploring and experimenting
+with the device. I also had lots of post-session questions in the corridor
+since several people couldn&#x27;t make my session because it clashed with other
+stuff.&lt;/p&gt;
+
+&lt;p&gt;I was conscious that EdFoo wasn&#x27;t just a case of &quot;Nicholas is off on a
+jolly&quot; (as my wonderful wife puts it). I went with an open mind but was
+determined that there be tangible results from my attendance. Fortunately,
+the very first session I attended offered just such an opportunity.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt; project is written in Python
+and provides a means of presenting code, text and other digital assets in a
+sort of interactive notebook. If you&#x27;re not technical, imagine if Leonardo&#x27;s
+notebooks were interactive and reacted to a reader&#x27;s modifications - that&#x27;s
+what reading a Jupyter notebook feels like. I hope the educational potential of
+this tool is obvious.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/edfoo-leonardo.jpg&quot; alt=&quot;Leonardo Notebook&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The session on Jupyter was led by the creator of the project,
+&lt;a href=&quot;http://fperez.org/&quot;&gt;Fernando Perez&lt;/a&gt;, and included contributions
+from Jupyter users as diverse as Google&#x27;s Director of Research,
+&lt;a href=&quot;http://www.norvig.com/&quot;&gt;Peter Norvig&lt;/a&gt;, Professor of Physics,
+&lt;a href=&quot;https://about.me/lorenabarba&quot;&gt;Lorena Barba&lt;/a&gt; and staff from
+O&#x27;Reilly, who use Jupyter
+&lt;a href=&quot;https://www.oreilly.com/ideas/jupyter-at-oreilly&quot;&gt;as a
+publishing platform&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the session progressed it became clear notebooks record an interactive
+and engaging record of the author&#x27;s movement of thought. As Norvig demonstrated,
+it&#x27;s possible to change the code contained in a notebook and &quot;poke it with a
+stick&quot; as it were. Readers get to follow the author&#x27;s train of thought but also
+pause and play with code to test their understanding of the concepts
+contained therein. As code is modified outputs automatically update (i.e.
+generated content within the notebook reacts to a reader&#x27;s intervention).&lt;/p&gt;
+
+&lt;p&gt;I wondered how a teacher in the UK could use such a tool to deliver Python
+lessons to children. Could Jupyter be used to create and share interactive
+resources for the BBC micro:bit? I asked a few pointedly technical
+questions and discovered the presentation and evaluation of notebooks
+is separated. Presentation is done in a browser whereas evaluation of code is
+done in a &quot;kernel&quot;. &quot;How hard is it to write a kernel?&quot; I asked. &quot;It&#x27;s well
+documented&quot;, answered an unsuspecting Fernando.&lt;/p&gt;
+
+&lt;p&gt;That afternoon I hacked together a new kernel to interact with a BBC
+micro:bit. I was able to control the micro:bit attached to my laptop from
+within a notebook in my browser. It took me about an hour and proved to be
+remarkably simple. Later in the weekend I integrated the Jupyter Qt widget into
+my &lt;a href=&quot;https://github.com/ntoll/mu&quot;&gt;Mu code editor&lt;/a&gt; for children,
+teachers and beginner programmers. Upon reflection, this is perhaps not the way
+to go - I believe the web-based version of Jupyter is superior. Happily, it&#x27;s
+relatively easy to embed a browser into a Qt application like Mu so watch this
+space! I&#x27;m giving a presentation at next weekend&#x27;s Raspberry Pi birthday
+conference about Mu, so I&#x27;ll reveal what I&#x27;ve been up to as a part of my talk.
+It&#x27;ll be interesting to see what reaction I get - especially from teachers.&lt;/p&gt;
+
+&lt;p&gt;I was also intrigued by the Jupyter contribution from O&#x27;Reilly. They&#x27;ve
+built some sort of authoring platform on top of Jupyter and gave a quick demo
+of Norvig working his way through a problem. I asked if it was open source
+to which the O&#x27;Reilly people responded that it wasn&#x27;t. I pointed out that if
+it wasn&#x27;t then someone would be bound to copy and re-create it. I think there
+was a bit of misunderstanding or crossed wires: perhaps the O&#x27;Reilly people
+thought I was talking about their (excellent) content. I was actually referring
+to the authoring platform they appear to have created on top of Jupyter. I
+imagine teachers would have a fantastic time with such a tool. I know of
+several secondary teachers in the UK who&#x27;d lap it up.&lt;/p&gt;
+
+&lt;p&gt;The other practical take-away from the conference was via a conversation
+with an educator who used Google&#x27;s Chromebooks. These cheap and simple laptop
+computers are apparently very popular in schools in both the US and UK. &quot;Can
+I use my micro:bit with a Chromebook?&quot; was their concern.&lt;/p&gt;
+
+&lt;p&gt;Why yes, is &lt;a href=&quot;https://github.com/ntoll/python-native-editor&quot;&gt;my
+response&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;ve adapted the web-based editor I wrote for the &quot;official&quot; BBC website
+and, via the magic of Chrome&#x27;s serial API, added a REPL client so kids can
+interactively program their devices.&lt;/p&gt;
+
+&lt;p&gt;:-)&lt;/p&gt;
+
+&lt;p&gt;Yet another highlight was breakfast on Sunday morning: I had a lot of fun
+creating squishy circuits (they&#x27;re made from a sort of dough) and had a
+professor of electrical engineering from MIT show me how to make a simple LED
+flashy thingamabob that makes a great light display in a dark room.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/foo-squishy.jpg&quot; alt=&quot;Squishy circuits&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;It&#x27;s such fun to play!&lt;/p&gt;
+
+&lt;p&gt;Only 50% of the attendees are invited back. If I&#x27;m not, I&#x27;d love my
+place to be taken by someone from the UK. If there&#x27;s but one
+criticism of the conference it is that it mainly involved people from the US.
+There&#x27;s a huge amount of innovation, experimentation and success happening in
+education in the wider world. EdFoo could be a wonderful opportunity to bring
+an international and diverse group of education pioneers together. Since I&#x27;m
+making &quot;moon on a stick&quot; suggestions, my vote would be to hold it in Athens,
+the home of Plato&#x27;s Academy and Aristotle&#x27;s Lyceum (but I&#x27;m biased because I&#x27;m
+European and have a background in Philosophy).&lt;/p&gt;
+
+&lt;p&gt;Finally, sincere thanks to our hosts, Google, who did a magnificent job. I
+was particularly amused by the available WiFi SSIDs. :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/foo-wifi.png&quot; alt=&quot;Google SSID&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Image credits: Leonardo Notebook
+&amp;copy; &lt;a href=&quot;http://www.britishmuseum.org/&quot;&gt;Trustees of the British Museum&lt;/a&gt;. The remainder were created by the author.
+&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Feb 2016 12:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Vocation</title>
         <link>http://ntoll.org/article/vocation</link>
         <guid>http://ntoll.org/article/vocation</guid>
@@ -202,122 +423,6 @@ raw thoughts.&lt;/p&gt;
 &lt;p&gt;:-)&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Nov 2015 01:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>PyCon India</title>
-        <link>http://ntoll.org/article/india</link>
-        <guid>http://ntoll.org/article/india</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/india&quot;&gt;PyCon India&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 24th October 2015 (1:00AM)&lt;/p&gt;
-
-&lt;p&gt;It was an enormous honour to be invited as a keynote speaker at
-&lt;a href=&quot;https://in.pycon.org/&quot;&gt;PyCon India&lt;/a&gt;. It turned out to be one of
-my most enjoyable PyCons.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt; programming community is famous
-for being a diverse and welcoming place. Apparently someone once said that
-they&#x27;d came to Python for the programming language, but stayed because of the
-community. That has been my experience too. Visiting PyCon India reinforced
-this outlook.&lt;/p&gt;
-
-&lt;p&gt;Python is free software in two ways: anyone is free to make use of it in
-any way they see fit and it is given away for free. To paraphrase, it is
-both free as in speech and free as in beer. Volunteering time, effort and
-expertise is at the core of the Python community and every PyCon is different
-since it reflects the volunteer community that organises it.&lt;/p&gt;
-
-&lt;p&gt;At around 1500 attendees PyCon India is the second largest PyCon in the
-world. The reason it is so big is because the organisers have managed to
-foster and grow a community of amazing volunteers to run the conference. This
-was brought home to me during my first evening in India: wanting to make some
-friends I turned up at the conference venue to volunteer in some way. I ended
-up stuffing 1500 swag bags (full of leaflets from the conference sponsors),
-in what can only be described as a nerdy form of &quot;keep-fit&quot;.&lt;/p&gt;
-
-&lt;p&gt;It works like this: volunteers
-run around in circles holding open bags while others stand in the middle
-throwing &quot;swag&quot; into them. At the end of each lap yet more volunteers are on
-hand to stack the bags ready for distribution to the attendees the next day.
-This process starts haphazardly, but people change roles and slot
-themselves in where there are bottlenecks in order to improve the efficiency
-of the &quot;bag stuffing algorithm&quot;. Other techniques to speed things up included
-shouting a lot, chanting and laughing at each other. This process is
-beautifully illustrated in the following video of a &quot;lap&quot; that I took on my
-mobile phone:&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/Ejr6iqqCdhc?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;By the end of the evening we were a well oiled machine.&lt;/p&gt;
-
-&lt;p&gt;Friday, the first full conference day, was interesting - I was still used
-to UK time so when my alarm went off at 6am (or around 1:30 am UK time) I
-decided to sleep in for &quot;just another 10 minutes&quot;. Four hours later I was
-woken by a phone call from reception. An Indian buddy had turned up at my
-hotel to look for me and give me a lift.&lt;/p&gt;
-
-&lt;p&gt;He&#x27;d come on a motorbike.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;d never been on a motorbike.&lt;/p&gt;
-
-&lt;p&gt;So, my first time on a motorbike was sitting on the back, hanging onto this
-dude&#x27;s back pack, no helmet, dust in my eyes, zipping through Bangalore&#x27;s
-morning rush-hour.&lt;/p&gt;
-
-&lt;p&gt;&quot;Is it safe?&quot; I asked.&lt;/p&gt;
-
-&lt;p&gt;&quot;Of course it is...&quot;, he replied. &quot;The traffic is so bad we never go faster than 15 mph anyway!&quot;&lt;/p&gt;
-
-&lt;p&gt;The trick appears to be not to pay attention to all the car horns, shouting
-and never to look over your shoulder at what could squish you.&lt;/p&gt;
-
-&lt;p&gt;I also observed that traffic lights in Bangalore are only for decorative
-purposes. I particularly enjoyed getting stuck at a junction and giving an
-ancient lady in a colourful sari sat on the back of an adjacent moped a
-big grin and having it returned (but without teeth).&lt;/p&gt;
-
-&lt;p&gt;The following video (taken from the relative safety of a taxi) doesn&#x27;t
-even begin to convey the chaos of the traffic in Bangalore. Can you spot the
-stray cow?&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/6KOLKBoPF9A?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Throughout the course of the conference I found everyone, without exception,
-to be very friendly and I was made to feel very welcome. Thank you to my new
-friends in India for your wonderful warm hospitality. I hope that if you ever
-make it to the UK we&#x27;ll be able to welcome you as well as you did me.&lt;/p&gt;
-
-&lt;p&gt;Sunday was the day of my keynote. I was addressing all 1500 delegates in
-the main hall and I&#x27;d chosen to focus on education as the topic of my
-presentation. I was actually really looking forward to giving the talk and
-had a lot of fun whilst giving it. The live demo went well, people laughed at
-my jokes, they had lots of interesting questions and it took me about an hour
-and a half to field all the comments I received in the corridor afterwards.
-In fact, one of the organisers told me that my keynote was a top trending item
-on Twitter in India. Wow!&lt;/p&gt;
-
-&lt;p&gt;You can see the whole thing in the video below.&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/Q3kXXtlviiM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As always, I love to get feedback (both good and bad). Please feel free to
-&lt;a href=&quot;/contact&quot;&gt;drop me a line&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Special mention should be made of the two main organisers, Vijay Kumar and
-Kracekumar Ramaraju, who put on an amazing event. I&#x27;d also like to publicly
-thank my friend Kushal Das and his family and colleagues for being my guides
-around Bangalore.&lt;/p&gt;
-
-&lt;p&gt;Will I go back to India? Absolutely! It&#x27;s an amazing place.&lt;/p&gt;
-
-&lt;p&gt;It was a privilege.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 24 Oct 2015 01:00:00 GMT</pubDate>
     </item>
     
 </channel>
