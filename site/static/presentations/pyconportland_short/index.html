@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>A Million Children and Python (what could possibly go wrong?)</title>
+
+		<meta name="description" content="PyCon Slovakia 2016 Keynote slides.">
+		<meta name="author" content="Nicholas H.Tollervey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/asyncio.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Teaching Python: How hard can it be?</h1>
+					<p>
+						<a href="http://ntoll.org/">Nicholas H.Tollervey</a> / <a href="http://twitter.com/ntoll">@ntoll</a>
+					</p>
+				</section>
+
+                <section>
+                    <h1>The Story of the BBC micro:bit</h1>
+                </section>
+
+                <section>
+                    <video src="video/microbit.mp4" controls style="width: 100%;"/>
+                </section>
+
+                <section>
+                    <h2>My First Computer</h2>
+                    <img src="images/bbcmicro.jpeg"/>
+                    <aside class="notes">
+                        <p>David Allen, the project's producer, explained that, "[t]he aim was to democratise computing. We didn't want people to be controlled by it, but to control it."</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/bbc.gif"/>
+                </section>
+
+                <section>
+                    <h2>1 Million 11-year olds</h2>
+                    <img src="images/microbit.png"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>20+ partners</li>
+                            <li>PSF is one</li>
+                            <li>We've ported MicroPython to work on it</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/micropython.jpg"/>
+                </section>
+
+                <section>
+                    <h1>Why?</h1>
+                </section>
+                <section>
+                    <p>"Asking what sort of education and learning our community
+                    supports is how we decide what sort of community we
+                    become.</p>
+
+                    <p>For it is through education and learning that we engage
+                    with our future colleagues, friends and supporters."</p>
+
+                    <p><small>Nicholas Tollervey, 2015. :-)</small></p>
+                    <aside class="notes">
+                        <p>But education isn't just about personal development.</p>
+                        <p>It's effects are far wider and long term.</p>
+
+                        <p>What has this got to do with you? (you might ask)</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>LIVE DEMO!!!!!</h2>
+                    <img src="images/nuclear.jpeg"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>Hardware overview</li>
+                            <li>Simple "Hello world" via editor</li>
+                            <li>REPL music</li>
+                            <li>Website</li>
+                            <li>Resources</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/questions_after_talk.jpeg"
+                    alt="Questions" style="float: left;"/>
+                    <h2 style="margin-top: 200px">Questions..?</h2>
+                    <p><a href="http://ntoll.org/">ntoll.org</h2>
+                    <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
+                </section>
+                <section>
+                    <h3>FQA</h3>
+                    <ul>
+                        <li><strong>Where / When?</strong> <em>Via mail order in the summer.</em></li>
+                        <li><strong>How much will they cost?</strong> <em>No idea - but cheap.</em></li>
+                        <li><strong>Where do I get the code / hardware details?</strong> <em>Resources will be online after launch.</em></li>
+                        <li><strong>What OS does it run?</strong> <em>MicroPython runs bare metal with 16k RAM and 256k of flash.</em></li>
+                        <li><strong>Where do I find out more?</strong>
+                            <ul>
+                                <li>http://microbit-micropython.rtfd.org</li>
+                                <li>http://microbit.co.uk/</li>
+                                <li>http://microworldtour.github.io/</li>
+                                <li>http://github.com/ntoll/mu</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
