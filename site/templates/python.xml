@@ -11,33 +11,6 @@
     </image>
     
     <item>
-        <title>Cows Go Mu</title>
-        <link>http://ntoll.org/article/cows-go-mu</link>
-        <guid>http://ntoll.org/article/cows-go-mu</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/cows-go-mu&quot;&gt;Cows Go Mu&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Friday 1st April 2016 (08:30am)&lt;/p&gt;
-
-&lt;p&gt;Mu is a code editor for beginner programmers.&lt;/p&gt;
-
-Mu philosophy
-
-Cross platform
-
-Help
-
-Jupyter
-
-Toga/BeeWare
-
-Get involved
-
-&lt;p&gt;&lt;small&gt;Image credits: Leonardo Notebook
-&amp;copy; &lt;a href=&quot;http://www.britishmuseum.org/&quot;&gt;Trustees of the British Museum&lt;/a&gt;. The remainder were created by the author.
-&lt;/small&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Apr 2016 08:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
         <title>PyCon India</title>
         <link>http://ntoll.org/article/india</link>
         <guid>http://ntoll.org/article/india</guid>
@@ -461,6 +434,162 @@ can use?&lt;/p&gt;
 &lt;p&gt;:-)&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Oct 2015 08:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+        <title>PyconUK 2014 Round Up</title>
+        <link>http://ntoll.org/article/pyconuk-2014-roundup</link>
+        <guid>http://ntoll.org/article/pyconuk-2014-roundup</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pyconuk-2014-roundup&quot;&gt;PyconUK 2014 Round Up&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 11th October (5:30PM)&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;(This write-up is a bit late: I&#x27;ve been ill and we&#x27;ve recently had a
+death in the family.)&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;This year was the biggest ever &lt;a href=&quot;http://pyconuk.org/&quot;&gt;PyCon UK&lt;/a&gt;
+conference - a community organised event for users of the
+&lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt; programming language. Just under 500
+tickets were booked including 45 for teachers and 75 for kids. We couldn&#x27;t
+have done it without the support of the sponsors, especially
+&lt;a href=&quot;http://corp.bankofamerica.com/&quot;&gt;Bank of America&lt;/a&gt;, the
+&lt;a href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt;
+and &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi Foundation&lt;/a&gt; without
+whom the education track would not have been possible.&lt;/p&gt;
+
+&lt;p&gt;For me, the person responsible for the education track, I had most fun
+working with the teachers and kids who turned up. I also seemed to be giving
+far too many presentations (four in total during PyCon UK). I also realised,
+due to circumstances beyond my control, that I have many kind and generous
+friends in the Python community and that when disaster strikes people step up
+and make &quot;stuff&quot; happen even at 4 o&#x27;clock in the morning!&lt;/p&gt;
+
+&lt;p&gt;It was a privilege to watch several masters at work during the education
+track:&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.raspberrypi.org/resources/teach/&quot;&gt;education
+team&lt;/a&gt; from the RaspberryPi Foundation are insane, inspiring and intelligent
+in equal measure - if you can attend one of their free
+&lt;a href=&quot;http://www.raspberrypi.org/picademy/&quot;&gt;Picademy&lt;/a&gt; events for
+teachers than you&#x27;re in for a real treat. It&#x27;s easy to sound bombastic
+about the work of the Raspberry Pi Foundation (so allow me to demonstrate):
+the pedagogical forces that they unleash are both unique (because who&#x27;d have
+thought such a small, cheap and &quot;raw&quot; piece of kit would result in such a
+huge amount of interest) and important (because the Raspberry Pi liberates
+computing education from the boring sad little world of locked down RM boxes,
+presentations and spreadsheets). That they are a UK based effort makes it all
+the more important that we, the UK&#x27;s Python community, give them as much of
+our support as possible.&lt;/p&gt;
+
+&lt;p&gt;It was also wonderful to see
+&lt;a href=&quot;http://www.stuffaboutcode.com/&quot;&gt;Martin O&#x27;Hanlon&lt;/a&gt; work his
+Minecraft magic on both teachers and students. Martin introduces Python
+programming via only a handful of very simple Minecraft related concepts that
+he uses to build some amazing things within the Minecraft world (his
+in-game house that follows you around was a big hit with the kids). He&#x27;s so
+good at this sort of thing that
+he&#x27;s &lt;a href=&quot;http://eu.wiley.com/WileyCDA/WileyTitle/productCd-111894691X.html&quot;&gt;written a book&lt;/a&gt;
+on this very subject (that&#x27;s bound to be a big hit with young programmers and
+teachers alike - what an inspiring textbook &lt;strong&gt;that&lt;/strong&gt; would be).
+In case you can&#x27;t wait for its publication you can
+&lt;a href=&quot;https://drive.google.com/folderview?id=0BwqjqhNUlUf1TTFxNEc0d2F6OXc&amp;usp=sharing&quot;&gt;grab his PyCon UK resources here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(Here&#x27;s a photo of Martin and fellow author Carrie Anne looking like the
+cartoon versions of themselves used in their books.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk2014-martandcarrieanne.jpg&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I was especially pleased to welcome
+&lt;a href=&quot;http://splashofcreativity.co.uk/&quot;&gt;John Pinkney&lt;/a&gt; and his
+&lt;a href=&quot;https://asknao.aldebaran.com/&quot;&gt;NAO&lt;/a&gt; robots. I met John at a
+&lt;a href=&quot;http://www.computingatschool.org.uk/&quot;&gt;CAS&lt;/a&gt;
+hub meeting over the summer where he described how he uses
+robots as a catalyst for all sorts of interesting educational activities.
+The visual programming tool used to interact with the robots strikes me as
+particularly child-friendly. Interestingly the code behind the visual building
+blocks used to describe the robot&#x27;s behaviour is all written in Python (and
+thus handily gave me an excuse to invite John to PyCon UK). John gave two
+workshops (one for teachers, the other for kids) and the fact that he managed
+to keep both groups in rapt awe for an hour is testament to both his
+skill as a teacher and the &quot;charisma&quot; of the robots. We also ran a
+robot code dojo at which we let the developers play with the bots. I gave a
+quick overview of the Python API to the assembled developers and my slides
+can be
+&lt;a href=&quot;/static/presentations/pyconukrobots/index.html&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/FIwVyb9MY5U?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/davidames&quot;&gt;Dave Ames&lt;/a&gt; also deserves a
+special mention for leading a couple of excellent
+workshops on using the &lt;a href=&quot;http://pygame.org/&quot;&gt;PyGame&lt;/a&gt; project. Dave&#x27;s
+workshops involved taking an existing (yet broken / unfinished) game and
+modifying the code to fix things and make it your own. I &lt;em&gt;really like this
+approach&lt;/em&gt; since it gives students an existing base to work from. It also
+makes sure that beginner coders begin the think about debugging their own and
+other people&#x27;s code (for which we provided all attendees with a PyCon UK
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;Debug Duck&lt;/a&gt;.
+This rather excellent state of affairs is wonderfully encapsulated in the
+following video from the kids&#x27; day:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/kxD2XbTDyjk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/teknoteacher&quot;&gt;Alan O&#x27;Donohoe&lt;/a&gt;,
+&lt;a href=&quot;https://twitter.com/ManchesterBudo&quot;&gt;Ben Smith&lt;/a&gt; and
+&lt;a href=&quot;https://twitter.com/vikkiville&quot;&gt;Vikki Dodd&lt;/a&gt; are three teachers without which
+the education track would not function. Alan&#x27;s pragmatic encouragement when
+disaster struck (twice) was invaluable and Ben and Vikki made innumerable
+contributions throughout the event that meant I was regularly thinking, &quot;Oh
+wow, [Ben/Vikki] has already done that.&quot; That&#x27;s what I mean when I say that
+people &quot;step up&quot;.&lt;/p&gt;
+
+&lt;p&gt;It was an immense privilege and a lot of fun to work with
+&lt;a href=&quot;https://twitter.com/NaomiCeder&quot;&gt;Naomi Ceder&lt;/a&gt; (founder
+of the PyCon US Education Summit) on our own small contribution to the
+education track: introducing object oriented programming to teachers
+&lt;a href=&quot;/static/presentations/oopy/index.html&quot;&gt;through the medium of
+cows&lt;/a&gt;. I especially enjoyed the tag wrestling modus operandi of our talk.
+I&#x27;ll leave you to guess which one of us was Big Daddy or Giant Haystacks (a
+UK specific cultural reference I&#x27;m sure Naomi will be delighted to quickly
+forget). In any case, both teachers and developers got stuck into our
+Parrot related exercise (as the picture below shows):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk-2014-teachers.jpg&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne&lt;/a&gt; gave
+a stonking keynote address to the whole conference on Sunday afternoon. I&#x27;ve
+heard far too many
+boring-yet-worthy-important-people-talking-about-boring-yet-worthy-important-things
+as conference keynotes in my time. Happily it soon became apparent that Carrie
+Anne&#x27;s keynote was definitely &lt;strong&gt;not&lt;/strong&gt; a boring-yet-worthy talk
+about matters of an educational nature. If you want
+to actually know what Carrie Anne said you should invite her to
+your conference to give the keynote. It would be definitely worth it:
+evidence via social networks suggests hers was the warmest
+received and most highly regarded keynote of this year&#x27;s conference.&lt;/p&gt;
+
+&lt;p&gt;Other wonderful aspects of this year&#x27;s PyCon UK included the beer for the
+conference meal (brewed using Python), the charity cheese shop that raised
+several hundred pounds for a local children&#x27;s hospice and the inevitable
+silliness during the lightning talks.&lt;/p&gt;
+
+&lt;p&gt;Finally, it was a pleasure to catch up with
+&lt;a href=&quot;https://twitter.com/VanL&quot;&gt;Van Lindberg&lt;/a&gt; (chair of the Python
+Software Foundation). I&#x27;ll leave what we discussed for a separate blog post
+but, in the meantime, you should all totally sign up to be members of the
+PSF &lt;a href=&quot;https://www.python.org/accounts/signup/&quot;&gt;here&lt;/a&gt;. Why?
+Because,&lt;/p&gt;
+
+&lt;blockquote&gt;
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+&lt;/blockquote&gt;
+
+&lt;p&gt;We&#x27;ve already started planning next year&#x27;s conference. If you can think of
+any ways in which we can make it better please don&#x27;t hesitate to get in
+touch.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Oct 2014 17:30:00 GMT</pubDate>
     </item>
     
 </channel>

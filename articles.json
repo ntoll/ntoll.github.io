@@ -1,12 +1,5 @@
 [
   {
-    "date": "2016-04-01 08:30:00", 
-    "slug": "cows-go-mu", 
-    "title": "Cows Go Mu", 
-    "description": "Plans for the Mu editor for beginner programmers.",
-    "python": true 
-  },
-  {
     "date": "2016-02-29 12:30:00", 
     "slug": "edfoo", 
     "title": "EdFoo", 
