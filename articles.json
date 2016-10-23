@@ -1,5 +1,12 @@
 [
   {
+    "date": "2016-10-23 20:00:00", 
+    "slug": "remembering-john", 
+    "title": "Remembering John", 
+    "description": "Remembering my Tuba Professor at the Royal College of Music.",
+    "python": false 
+  },
+  {
     "date": "2016-02-29 12:30:00", 
     "slug": "edfoo", 
     "title": "EdFoo", 
