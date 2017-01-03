@@ -52,9 +52,9 @@ importantly, how a combination of these terms form an intent that can be acted
 upon in such-and-such a manner (i.e. actuating certain motors on the pod bay
 doors such that the pod bay doors swing open). Furthermore, if the pod bay
 doors were already open I'd expect HAL to understand this state required a
-different response to that to be taken should the pod bay doors were closed.
-Such behaviour is relatively simple to program in a language like Python. For
-example, a naive solution might be:</p>
+different response to that to be taken should the pod bay doors be closed
+already. Such behaviour is relatively simple to program in a language like
+Python. For example, a naive solution might be:</p>
 
 <p><pre><code>class PodBayDoors:
     """
@@ -70,7 +70,7 @@ example, a naive solution might be:</p>
         """
         try:
             if self.state == "closed":
-                self.state == "open"
+                self.state = "open"
                 return "The pod bay doors are open, {}".format(username)
             else:
                 return "The pod bay doors are already open, {}".format(username)
@@ -83,7 +83,7 @@ example, a naive solution might be:</p>
         """
         try:
             if self.state == "open":
-                self.state == "closed"
+                self.state = "closed"
                 return "The pod bay doors are closed, {}".format(username)
             else:
                 return "The pod bay doors are already closed, {}".format(username)
