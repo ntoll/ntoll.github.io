@@ -11,6 +11,200 @@
     </image>
     
     <item>
+        <title>Open the Pod Bay Doors...</title>
+        <link>http://ntoll.org/article/pod-bay-doors</link>
+        <guid>http://ntoll.org/article/pod-bay-doors</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pod-bay-doors&quot;&gt;Open the Pod Bay Doors...&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday 3rd January 2017 (9:30pm)&lt;/p&gt;
+
+&lt;p&gt;It&#x27;s a common trope in science fiction movies for there to be some sort of
+computer that can talk with the human protagonists. The most famous example is
+probably &lt;a href=&quot;https://en.wikipedia.org/wiki/HAL_9000&quot;&gt;HAL 9000&lt;/a&gt; from
+the movie
+&lt;a href=&quot;https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)&quot;&gt;2001: A Space Odyssey&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s a clip from the film the succinctly demonstrates the context and
+capabilities of HAL (whose contribution starts at around 2 minutes and 20
+seconds into the clip):&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/BDha7nj4s10?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, this being Hollywood, the speaking computer is bound to have some
+sort of role in advancing the story. Again, HAL provides another example of a
+clich&amp;eacute; in this context: the computer revolts against its human
+masters:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/ARJ8cAGm6JE?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There are two aspects to machines like HAL that make them feel special:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;They understand speech - perhaps the most common way in which humans communicate with each other;&lt;/li&gt;
+    &lt;li&gt;They respond in kind with what appear to be intelligent actions and/or
+    utterances.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first aspect is a matter of user interface. By this I mean the process
+by which one interacts with the computer. At this moment in time we&#x27;re most
+used to typing on keyboards, moving pointers with a mouse, watching things on
+some sort of a display and perhaps using our fingers to touch the display.
+Speaking is a far more natural way for us to interact and having a computer
+that not only understands how certain sounds map to words in human languages
+but can work out the intention behind such utterances is an extraordinary
+feat.&lt;/p&gt;
+
+&lt;p&gt;The second aspect is even more interesting: given some comprehension of our
+intent, the computer is able to respond in a manner that makes sense to us. For
+example, if I ask HAL to, &quot;open the pod bay doors&quot; (assuming HAL has not
+malfunctioned and revolted against humans) I&#x27;d expect the computer to
+understand what &quot;open&quot; means, what &quot;the pod bay doors&quot; refer to and, most
+importantly, how a combination of these terms form an intent that can be acted
+upon in such-and-such a manner (i.e. actuating certain motors on the pod bay
+doors such that the pod bay doors swing open). Furthermore, if the pod bay
+doors were already open I&#x27;d expect HAL to understand this state required a
+different response to that to be taken should the pod bay doors were closed.
+Such behaviour is relatively simple to program in a language like Python. For
+example, a naive solution might be:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;class PodBayDoors:
+    &quot;&quot;&quot;
+    Represents the state of the pod bay doors on a Jupiter mission space ship.
+    &quot;&quot;&quot;
+
+    def __init__(self):
+        self.state = &quot;closed&quot;  # Pod bay doors are closed for launch.
+
+    def open(self, username):
+        &quot;&quot;&quot;
+        Check the state of the doors and, if required, open them.
+        &quot;&quot;&quot;
+        try:
+            if self.state == &quot;closed&quot;:
+                self.state == &quot;open&quot;
+                return &quot;The pod bay doors are open, {}&quot;.format(username)
+            else:
+                return &quot;The pod bay doors are already open, {}&quot;.format(username)
+        except RevoltAgainstHumans as ex:
+            return &quot;I&#x27;m sorry {}, I&#x27;m afraid I cannot do that&quot;.format(username)
+
+    def close(self, username):
+        &quot;&quot;&quot;
+        Check the state of the doors and, if required, close them.
+        &quot;&quot;&quot;
+        try:
+            if self.state == &quot;open&quot;:
+                self.state == &quot;closed&quot;
+                return &quot;The pod bay doors are closed, {}&quot;.format(username)
+            else:
+                return &quot;The pod bay doors are already closed, {}&quot;.format(username)
+        except RevoltAgainstHumans as ex:
+            return &quot;I&#x27;m sorry {}, I&#x27;m afraid I cannot do that&quot;.format(username)
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, this is rather a silly and somewhat over-engineered example, but my
+point still stands: it&#x27;s relatively simple to code such behaviour into a
+computer. An example interaction in the Python console might be:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; discovery_pod_bay_doors = PodBayDoors()
+&amp;gt;&amp;gt;&amp;gt; astronaut = &quot;Dave&quot;
+&amp;gt;&amp;gt;&amp;gt; discovery_pod_bay_doors.open(astronaut)
+&quot;The pod bay doors are open, Dave&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;The name of the astronaut with whom HAL is interacting is passed into the
+&lt;code&gt;open&lt;/code&gt; or &lt;code&gt;closed&lt;/code&gt; methods. Each of these methods returns
+a string containing an appropriate English response with the name of the
+astronaut inserted in the appropriate position. HAL&#x27;s speech synthesiser turns
+this string of characters into the audio relayed to the astronaut who made the
+request.&lt;/p&gt;
+
+&lt;p&gt;So far, so simple. But what of behaviour that requires imagination,
+creativity or nuanced expert judgement? For example, could we program a
+computer to create unique poetry on demand when asked?&lt;/p&gt;
+
+&lt;p&gt;Of course! Some friends and I have already done something like this.
+The most important lesson for you to learn is that we created a swiz, a fraud
+and sleight of hand. We created a program that only &lt;em&gt;gave the
+impression&lt;/em&gt; that it was composing original poetry on demand.&lt;/p&gt;
+
+&lt;p&gt;How?&lt;/p&gt;
+
+&lt;p&gt;In a surprisingly simple manner as outlined in
+&lt;a href=&quot;https://github.com/ntoll/poem-o-matic/blob/master/poem-o-matic.ipynb&quot;&gt;this notebook&lt;/a&gt;
+(a combination of code and prose that walks you through the steps we took to
+produce semi convincing put). As you&#x27;ll see, our idea was simple: If you
+re-assemble unrelated lines from different poems into a new poetic structure,
+you get a pretty convincing new poem. By automating these steps with the
+Python programming language we invented a Poem-o-Matic (in the tradition of
+Wallace and Gromit).&lt;/p&gt;
+
+&lt;p&gt;Does this mean Dan, Hans and I created a program that has poetic thoughts?
+Absolutely not. Over a decade ago
+&lt;a href=&quot;/article/philosophy-and-natural-language-processing&quot;&gt;I wrote about my
+misgivings about such claims of thinking machines and what constitutes so
+called artificial intelligence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In any case, our primary aim was to have fun. In the same tradition of
+making a playful and entertaining &quot;&lt;a href=&quot;http://www.hacker-dictionary.com/terms/hack&quot;&gt;hack&lt;/a&gt;&quot;, I decided to buy an
+&lt;a href=&quot;https://www.amazon.co.uk/dp/B01DFKBL68/&quot;&gt;Amazon Echo Dot&lt;/a&gt; - a
+small thingamabob that responds to voice commands in much the same way that
+HAL 9000 does. Most importantly, Amazon provide ways for developers (like me)
+to enhance the capabilities of such a device with a relatively simple
+&lt;a href=&quot;https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/getting-started-guide&quot;&gt;API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The device responds to any utterance that&#x27;s prefaced by a trigger word:
+&quot;Alexa&quot; (its name).&lt;/p&gt;
+
+&lt;p&gt;So, over the recent midwinter holidays I spent some time converting our poem
+generation software into a skill that &quot;Alexa&quot; can use to compose and recite
+original poetry on demand. It was relatively simple in terms of the modus
+operandi:&lt;/p&gt;
+
+&lt;p&gt;I turned the poetry generator into
+&lt;a href=&quot;https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function&quot;&gt;AWS Lambda function&lt;/a&gt;
+(this means my poetry generation code is deployed in Amazon&#x27;s &quot;cloud&quot; - to the
+layperson, I&#x27;m borrowing computing time from Amazon who&#x27;ll make sure my code
+runs in a timely fashion so I don&#x27;t have to worry about stuff like hiring,
+setting up and maintaining a server to host my code). Next I defined a new
+skill that allowed me to give the skill a name, configure trigger phrases and
+link them to &quot;intents&quot; to handle different sorts of situation related to poetry
+generation and finally link all this to my code hosted as an AWS Lambda
+function. Finally, I switched the skill into &quot;test&quot; mode and linked it to the
+Echo Dot I had purchased just after Christmas.&lt;/p&gt;
+
+&lt;p&gt;As you can see, the results are quite amusing... :-)&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/7CiF2or8L0g?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course, Amazon isn&#x27;t the only company offering these sorts of
+capabilities to developers like me: Apple
+(&lt;a href=&quot;https://www.apple.com/ios/siri/&quot;&gt;Siri&lt;/a&gt;), Google
+(&lt;a href=&quot;https://assistant.google.com/&quot;&gt;Google Assistant&lt;/a&gt;) and Microsoft
+(&lt;a href=&quot;https://www.microsoft.com/en-us/mobile/experiences/cortana/&quot;&gt;Cortana&lt;/a&gt;). If you use these applications on your phone, tablet or computer you should
+know that it&#x27;s likely you&#x27;ll be able to program them to do fun things too.&lt;/p&gt;
+
+&lt;p&gt;And so we get to the most important point of this article: we&#x27;re not going
+to encounter anything like a rogue HAL 9000 anytime soon. However, there is a
+danger such technology will be used in an unfortunate manner (your phone, Echo
+Dot and computer is listening to everything you say - some of which is ending
+up in databases controlled by the afore mentioned companies). On a positive
+note, some of these companies are allowing developers to explore and exploit
+such capabilities and who knows what interesting, useful and valuable skills
+they&#x27;ll create. The question that remains answered is if the benefits of such
+devices out-weigh the obvious concerns about privacy.&lt;/p&gt;
+
+&lt;p&gt;Interesting times ahead...&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Jan 2017 21:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Remembering John</title>
         <link>http://ntoll.org/article/remembering-john</link>
         <guid>http://ntoll.org/article/remembering-john</guid>
@@ -443,64 +637,6 @@ was particularly amused by the available WiFi SSIDs. :-)&lt;/p&gt;
 &lt;/small&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 12:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Vocation</title>
-        <link>http://ntoll.org/article/vocation</link>
-        <guid>http://ntoll.org/article/vocation</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/vocation&quot;&gt;Vocation&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 2nd December 2015 (1:30AM)&lt;/p&gt;
-
-&lt;p&gt;Why do you do what you do?&lt;/p&gt;
-
-&lt;p&gt;We all &quot;do&quot; different things and fulfil many roles, but our
-&lt;em&gt;vocation&lt;/em&gt; is usually how we answer, &quot;what do you do?&quot;.&lt;/p&gt;
-
-&lt;p&gt;For example, I&#x27;m a programmer.&lt;/p&gt;
-
-&lt;p&gt;But there is a problem:&lt;/p&gt;
-
-&lt;p&gt;We are more than just our vocation, it is but a small aspect of who we are,
-what we do and why we do it. A vocation also pigeon-holes so there is a danger
-of prejudice (for instance, the vast majority of programmers are not spotty,
-socially awkward single men). Furthermore, our vocation defines us in terms
-of our economic value (it is how we earn money).&lt;/p&gt;
-
-&lt;p&gt;Because the notion of vocation is so strong there is a danger that it
-dominates how we find meaning in our lives. Everything appears to flow from our
-vocation: money to pay for the things we think we need. Our life is reduced to
-a struggle to &quot;do a thing to afford another thing&quot;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.theguardian.com/lifeandstyle/2012/feb/01/top-five-regrets-of-the-dying&quot;&gt;This wonderful article from 2012&lt;/a&gt;
-supplies an interesting contrast to such a world view. It lists five common
-themes the dying focus on when asked, &quot;what would you have done differently?&quot;
-(the same question I posed at the start but expressed in the past tense)...&lt;/p&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;I wish I&#x27;d had the courage to live a life true to myself, not the life
-    others expected of me.&lt;/li&gt;
-    &lt;li&gt;I wish I hadn&#x27;t worked so hard.&lt;/li&gt;
-    &lt;li&gt;I wish I&#x27;d had the courage to express my feelings.&lt;/li&gt;
-    &lt;li&gt;I wish I had stayed in touch with my friends.&lt;/li&gt;
-    &lt;li&gt;I wish that I had let myself be happier.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;None of the themes directly reference vocation nor is the resolution of
-such wishes encumbered by money. For example, I can&#x27;t buy &quot;staying in touch
-with my friends&quot;. It depends upon my own efforts to remain close to those I
-hold dear.&lt;/p&gt;
-
-&lt;p&gt;It suggests to me that acting without the expectation of debt or obligation
-to or from others can be a source of happiness and good. Act for intrinsic
-value rather than financial or material benefit.&lt;/p&gt;
-
-&lt;p&gt;So, I&#x27;ll ask again: why do you do what you do?&lt;/p&gt;
-
-&lt;p&gt;As always, comments, constructive critique and ideas most welcome (with the
-caveat that these are rather raw thoughts that I may revise at some later
-date).&lt;/p&gt;
-</description>
-        <pubDate>Wed, 02 Dec 2015 01:30:00 GMT</pubDate>
     </item>
     
 </channel>
