@@ -134,8 +134,8 @@ impression&lt;/em&gt; that it was composing original poetry on demand.&lt;/p&gt;
 
 &lt;p&gt;In a surprisingly simple manner as outlined in
 &lt;a href=&quot;https://github.com/ntoll/poem-o-matic/blob/master/poem-o-matic.ipynb&quot;&gt;this notebook&lt;/a&gt;
-(a combination of code and prose that walks you through the steps we took to
-produce semi convincing put). As you&#x27;ll see, our idea was simple: If you
+(a combination of code and prose that walks you through the steps we took)
+As you&#x27;ll see, our idea was simple: If you
 re-assemble unrelated lines from different poems into a new poetic structure,
 you get a pretty convincing new poem. By automating these steps with the
 Python programming language we invented a Poem-o-Matic (in the tradition of
@@ -163,19 +163,19 @@ generation software into a skill that &quot;Alexa&quot; can use to compose and r
 original poetry on demand. It was relatively simple in terms of the modus
 operandi:&lt;/p&gt;
 
-&lt;p&gt;I turned the poetry generator into
+&lt;p&gt;I turned the poetry generator into an
 &lt;a href=&quot;https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function&quot;&gt;AWS Lambda function&lt;/a&gt;
 (this means my poetry generation code is deployed in Amazon&#x27;s &quot;cloud&quot; - to the
 layperson, I&#x27;m borrowing computing time from Amazon who&#x27;ll make sure my code
 runs in a timely fashion so I don&#x27;t have to worry about stuff like hiring,
 setting up and maintaining a server to host my code). Next I defined a new
-skill that allowed me to give the skill a name, configure trigger phrases and
-link them to &quot;intents&quot; to handle different sorts of situation related to poetry
-generation and finally link all this to my code hosted as an AWS Lambda
-function. Finally, I switched the skill into &quot;test&quot; mode and linked it to the
-Echo Dot I had purchased just after Christmas.&lt;/p&gt;
+skill that allowed me to give it a name (in this case &quot;Milton&quot;), configure
+trigger phrases, link them to &quot;intents&quot; to handle different sorts of
+situation related to poetry generation and finally link all this to my code
+hosted as an AWS Lambda function. Finally, I switched the skill into &quot;test&quot;
+mode and linked it to the Echo Dot I had purchased just after Christmas.&lt;/p&gt;
 
-&lt;p&gt;As you can see, the results are quite amusing... :-)&lt;/p&gt;
+&lt;p&gt;As you can see, the results are quite amusing if not completely convincing... :-)&lt;/p&gt;
 
 &lt;div class=&quot;video-container&quot;&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/7CiF2or8L0g?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -185,17 +185,20 @@ Echo Dot I had purchased just after Christmas.&lt;/p&gt;
 capabilities to developers like me: Apple
 (&lt;a href=&quot;https://www.apple.com/ios/siri/&quot;&gt;Siri&lt;/a&gt;), Google
 (&lt;a href=&quot;https://assistant.google.com/&quot;&gt;Google Assistant&lt;/a&gt;) and Microsoft
-(&lt;a href=&quot;https://www.microsoft.com/en-us/mobile/experiences/cortana/&quot;&gt;Cortana&lt;/a&gt;). If you use these applications on your phone, tablet or computer you should
-know that it&#x27;s likely you&#x27;ll be able to program them to do fun things too.&lt;/p&gt;
+(&lt;a href=&quot;https://www.microsoft.com/en-us/mobile/experiences/cortana/&quot;&gt;Cortana&lt;/a&gt;)
+all offer something similar. If you use these applications on your phone,
+tablet or computer you should know that it&#x27;s likely you&#x27;ll be able to program
+them to do fun things too.&lt;/p&gt;
 
 &lt;p&gt;And so we get to the most important point of this article: we&#x27;re not going
 to encounter anything like a rogue HAL 9000 anytime soon. However, there is a
 danger such technology will be used in an unfortunate manner (your phone, Echo
 Dot and computer is listening to everything you say - some of which is ending
-up in databases controlled by the afore mentioned companies). On a positive
-note, some of these companies are allowing developers to explore and exploit
-such capabilities and who knows what interesting, useful and valuable skills
-they&#x27;ll create. The question that remains answered is if the benefits of such
+up in databases controlled by the afore mentioned companies who may use this
+data in ways you find uncomfortable or invasive). On a positive note, some of
+these companies are allowing developers to explore and exploit such
+capabilities and who knows what interesting, useful and valuable skills they&#x27;ll
+create. The question that remains answered is if the benefits of such
 devices out-weigh the obvious concerns about privacy.&lt;/p&gt;
 
 &lt;p&gt;Interesting times ahead...&lt;/p&gt;
