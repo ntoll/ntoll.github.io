@@ -121,8 +121,8 @@ impression</em> that it was composing original poetry on demand.</p>
 
 <p>In a surprisingly simple manner as outlined in
 <a href="https://github.com/ntoll/poem-o-matic/blob/master/poem-o-matic.ipynb">this notebook</a>
-(a combination of code and prose that walks you through the steps we took to
-produce semi convincing put). As you'll see, our idea was simple: If you
+(a combination of code and prose that walks you through the steps we took)
+As you'll see, our idea was simple: If you
 re-assemble unrelated lines from different poems into a new poetic structure,
 you get a pretty convincing new poem. By automating these steps with the
 Python programming language we invented a Poem-o-Matic (in the tradition of
@@ -150,19 +150,19 @@ generation software into a skill that "Alexa" can use to compose and recite
 original poetry on demand. It was relatively simple in terms of the modus
 operandi:</p>
 
-<p>I turned the poetry generator into
+<p>I turned the poetry generator into an
 <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function">AWS Lambda function</a>
 (this means my poetry generation code is deployed in Amazon's "cloud" - to the
 layperson, I'm borrowing computing time from Amazon who'll make sure my code
 runs in a timely fashion so I don't have to worry about stuff like hiring,
 setting up and maintaining a server to host my code). Next I defined a new
-skill that allowed me to give the skill a name, configure trigger phrases and
-link them to "intents" to handle different sorts of situation related to poetry
-generation and finally link all this to my code hosted as an AWS Lambda
-function. Finally, I switched the skill into "test" mode and linked it to the
-Echo Dot I had purchased just after Christmas.</p>
+skill that allowed me to give it a name (in this case "Milton"), configure
+trigger phrases, link them to "intents" to handle different sorts of
+situation related to poetry generation and finally link all this to my code
+hosted as an AWS Lambda function. Finally, I switched the skill into "test"
+mode and linked it to the Echo Dot I had purchased just after Christmas.</p>
 
-<p>As you can see, the results are quite amusing... :-)</p>
+<p>As you can see, the results are quite amusing if not completely convincing... :-)</p>
 
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7CiF2or8L0g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -172,17 +172,20 @@ Echo Dot I had purchased just after Christmas.</p>
 capabilities to developers like me: Apple
 (<a href="https://www.apple.com/ios/siri/">Siri</a>), Google
 (<a href="https://assistant.google.com/">Google Assistant</a>) and Microsoft
-(<a href="https://www.microsoft.com/en-us/mobile/experiences/cortana/">Cortana</a>). If you use these applications on your phone, tablet or computer you should
-know that it's likely you'll be able to program them to do fun things too.</p>
+(<a href="https://www.microsoft.com/en-us/mobile/experiences/cortana/">Cortana</a>)
+all offer something similar. If you use these applications on your phone,
+tablet or computer you should know that it's likely you'll be able to program
+them to do fun things too.</p>
 
 <p>And so we get to the most important point of this article: we're not going
 to encounter anything like a rogue HAL 9000 anytime soon. However, there is a
 danger such technology will be used in an unfortunate manner (your phone, Echo
 Dot and computer is listening to everything you say - some of which is ending
-up in databases controlled by the afore mentioned companies). On a positive
-note, some of these companies are allowing developers to explore and exploit
-such capabilities and who knows what interesting, useful and valuable skills
-they'll create. The question that remains answered is if the benefits of such
+up in databases controlled by the afore mentioned companies who may use this
+data in ways you find uncomfortable or invasive). On a positive note, some of
+these companies are allowing developers to explore and exploit such
+capabilities and who knows what interesting, useful and valuable skills they'll
+create. The question that remains answered is if the benefits of such
 devices out-weigh the obvious concerns about privacy.</p>
 
 <p>Interesting times ahead...</p>
