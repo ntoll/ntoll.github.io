@@ -115,7 +115,7 @@ computer. An example interaction in the Python console might be:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 
 &lt;p&gt;The name of the astronaut with whom HAL is interacting is passed into the
-&lt;code&gt;open&lt;/code&gt; or &lt;code&gt;closed&lt;/code&gt; methods. Each of these methods returns
+&lt;code&gt;open&lt;/code&gt; or &lt;code&gt;close&lt;/code&gt; methods. Both methods return
 a string containing an appropriate English response with the name of the
 astronaut inserted in the appropriate position. HAL&#x27;s speech synthesiser turns
 this string of characters into the audio relayed to the astronaut who made the
