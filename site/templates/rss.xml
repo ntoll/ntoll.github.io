@@ -142,7 +142,7 @@ demand.&lt;/p&gt;
 
 &lt;p&gt;In a surprisingly simple manner as outlined in
 &lt;a href=&quot;https://github.com/ntoll/poem-o-matic/blob/master/poem-o-matic.ipynb&quot;&gt;this notebook&lt;/a&gt;
-(a combination of code and prose that walks you through the steps we took)
+(a combination of code and prose that walks you through the steps we took).
 As you&#x27;ll see, our idea was simple: If you
 re-assemble unrelated lines from different poems into a new poetic structure,
 you get a pretty convincing new poem. By automating these steps with the
