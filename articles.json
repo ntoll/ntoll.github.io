@@ -1,5 +1,12 @@
 [
   {
+    "date": "2017-01-04 21:30:00", 
+    "slug": "liberation-technology", 
+    "title": "Liberation Technology", 
+    "description": "Why I do what I do with the technology that I use",
+    "python": false 
+  },
+  {
     "date": "2017-01-03 21:30:00", 
     "slug": "pod-bay-doors", 
     "title": "Open the Pod Bay Doors...", 
