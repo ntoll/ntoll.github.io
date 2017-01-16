@@ -14,10 +14,150 @@
         <title>Liberation Technology</title>
         <link>http://ntoll.org/article/liberation-technology</link>
         <guid>http://ntoll.org/article/liberation-technology</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/liberation-technology&quot;&gt;Liberation Technology&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 4th January 2017 (9:30pm)&lt;/p&gt;
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/liberation-technology&quot;&gt;Liberation Technology&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 16th January 2017 (3:00pm)&lt;/p&gt;
 
+&lt;p&gt;(Some raw thoughts for you. I welcome feedback and engagement via
+email.)&lt;/p&gt;
+
+&lt;p&gt;Two considerations are core to my work on technical projects: ethics and
+politics.&lt;/p&gt;
+
+&lt;p&gt;I don&#x27;t mean ethics in the sense of a professional code of conduct nor do I
+mean politics in the sense of what goes on in Parliament. I use these terms in
+a philosophical way. For instance, from an ethical point of view, I&#x27;m concerned
+with how I live and behave, how I may be &quot;good&quot; or &quot;bad&quot; and how I&#x27;m able to
+coherently reason about such concepts. In a political sense I wonder how
+diverse groups of people live and work together, how collective decision making
+takes place and the nature of power ~ how it is obtained, exercised and
+controlled.  I reflect upon my life as an individual and my place in our
+society.&lt;/p&gt;
+
+&lt;p&gt;Why is this important?&lt;/p&gt;
+
+&lt;p&gt;I am an atheist: I don&#x27;t believe in an afterlife. Nevertheless, I am alive,
+and as far as I can tell it&#x27;s only going to happen once, so I&#x27;m going to make
+the best of it. Asking &quot;how?&quot; leads to ethics and politics.&lt;/p&gt;
+
+&lt;p&gt;What have ethics and politics to do with technology?&lt;/p&gt;
+
+&lt;p&gt;First, I must be clear that by &quot;technology&quot;, for the purposes of this post,
+I mean computing - machines programmed with instructions to some (hopefully)
+useful end.&lt;/p&gt;
+
+&lt;p&gt;Secondly, such instructions (software) do not distinguish morality or
+legality - they are merely capability. Capability permits certain forms of
+computer based behaviour that in turn pose ethical and political questions,
+requirements and possibilities for both users and programmers (like me). It&#x27;s
+not the computer in and of itself that is ethical or political. Rather, it&#x27;s
+the design and use of the computer &lt;em&gt;by/for/on people&lt;/em&gt; that makes it
+ethical or political.&lt;/p&gt;
+
+&lt;p&gt;Finally, when we write code we&#x27;re engineering a digital world from a certain
+point of view that is reflected in the capabilities of the code we create.
+We choose what and how such capabilities are created. Often code exercises
+power over its users. For instance, your bank&#x27;s website mandates only you to
+access your accounts. This is a desirable use of power. But remember, you have
+no control over the machinations of the bank&#x27;s software - it is exercising
+power over you and was written by someone aligned with your bank&#x27;s point of
+view. Most of the technology you own or use is not under your control.&lt;/p&gt;
+
+&lt;p&gt;It is for these reasons (that people choose what to make computers do, and
+often computers have power over us) that writing software is both an ethical
+and political activity. Furthermore, technology is important because of its
+ubiquity in most aspects of our lives (and it&#x27;s insinuating itself into those
+aspects it isn&#x27;t already a part of). As
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Marc_Andreessen&quot;&gt;Marc Andreessen&lt;/a&gt;
+&lt;a href=&quot;http://www.wsj.com/articles/SB10001424053111903480904576512250915629460&quot;&gt;quipped&lt;/a&gt;,
+&quot;software is eating the world&quot;.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately there is a problem: the vast majority of humanity are merely
+consumers of technology. We consume in complete ignorance about how it works.
+There are two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;For most consumer technology, we don&#x27;t have the freedom to examine, reuse
+  or change the software that defines the capabilities of our computing
+  devices.&lt;/li&gt;
+  &lt;li&gt;Even if we had the afore mentioned freedom, the skills, attitudes and
+  knowledge required to understand, create and control technology are
+  uncommon.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The closed and opaque nature of consumer technology has an antidote: free
+software as championed by organisations such as the
+&lt;a href=&quot;https://fsf.org/&quot;&gt;Free Software Foundation&lt;/a&gt;. Their website
+explains:&lt;/p&gt;
+
+&lt;blockquote&gt; Free software developers guarantee everyone equal rights to their
+programs; any user can study the source code, modify it, and share the program.
+By contrast, most software carries fine print that denies users these basic
+rights, leaving them susceptible to the whims of its owners and vulnerable to
+surveillance.&lt;/blockquote&gt;
+
+&lt;p&gt;Most people in the technology world know about the free software movement
+and its achievements. Unfortunately, the second problem - a lack of skills and
+knowledge - means such achievements are &lt;em&gt;only appreciated by and available
+to people in the technology world who have had the privilege of access to a
+technical education&lt;/em&gt;. This latter problem has been, for many years, largely
+ignored.&lt;/p&gt;
+
+&lt;p&gt;This is to be expected: we&#x27;ve only been programming computers since the
+Second World War (for example, the British Colossus and German Z3) and our
+current notion of programming only emerged in the 1960s. Put simply, humanity
+have not been doing this for very long when compared to other endeavours such
+as writing or composing music.&lt;/p&gt;
+
+&lt;p&gt;We&#x27;re only just getting started and so, proportionally, not many people know
+or care about programming. People who write code have a similar place in
+society as scribes in ancient Egypt - only they understand how such a valuable
+and powerful thing works. It&#x27;s not that programming is hard, it is simply not
+a widely practised skill.&lt;/p&gt;
+
+&lt;p&gt;Today, we don&#x27;t have scribes: most people are literate and literacy is a
+core aim of educational systems - not because everyone will become a writer or
+enjoy reading, but because it&#x27;s such a fundamental skill to flourish in today&#x27;s
+society.&lt;/p&gt;
+
+&lt;p&gt;Imagine if everyone had access to source code &lt;em&gt;and had the skills to make
+the software their own&lt;/em&gt;. Imagine groups currently disenfranchised by
+technology making the digital world their own. Imagine a ubiquity of skill
+such that doctors, musicians, lawyers, teachers, poets, architects, scientists,
+politicians and others involved in a diversity of endeavours are
+&lt;strong&gt;liberated by technology to advance their disciplines&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is what I imagine. This is why technical education is so important.
+This is why I volunteer my time to promote such educational endeavours.&lt;/p&gt;
+
+&lt;p&gt;I also imagine other things: conflict, dubious use of technology, the
+exploitation of others through technical means and technology as a tool for
+domination, bullying and violence.&lt;/p&gt;
+
+&lt;p&gt;So we return to ethics and politics. These disciplines give us the concepts,
+history and vocabulary to think about our own and wider society&#x27;s use of
+technology. It&#x27;s also why I believe all technical education should include
+ethics and politics. The very best programmers I know understand the
+importance of ethics and politics as applied to what they do.&lt;/p&gt;
+
+&lt;p&gt;If you ever wonder why I&#x27;m motivated to work on certain projects, you&#x27;ll
+probably find the answer involves much of the above. I want others to have 
+the privilege of programming computers whilst also developing the ethical and
+moral outlook to help them best apply their skills.&lt;/p&gt;
+
+&lt;p&gt;If you agree, get involved with computing education.&lt;/p&gt;
+
+&lt;p&gt;It&#x27;s a long term project and we won&#x27;t see the fruits of such labours for
+another decade or more. Nevertheless, getting involved today means you help
+shape how things unfold. Remember, while the skill of writing code is neutral
+the intentions behind such code depend upon transmitting an ethical and
+political appreciation of our world.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, education makes our future possible.&lt;/p&gt;
+
+&lt;p&gt;What that future is depends upon who turns up to provide such education.&lt;/p&gt;
+
+&lt;p&gt;Don&#x27;t just sit there, do something!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 04 Jan 2017 21:30:00 GMT</pubDate>
+        <pubDate>Mon, 16 Jan 2017 15:00:00 GMT</pubDate>
     </item>
     
     <item>
