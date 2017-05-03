@@ -1,5 +1,12 @@
 [
   {
+    "date": "2017-05-03 17:30:00", 
+    "slug": "mu-pi", 
+    "title": "Mu", 
+    "description": "News about the code editor for beginner's wot I wrote.",
+    "python":true 
+  },
+  {
     "date": "2017-01-16 15:00:00", 
     "slug": "liberation-technology", 
     "title": "Liberation Technology", 
