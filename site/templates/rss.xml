@@ -11,6 +11,117 @@
     </image>
     
     <item>
+        <title>Mu</title>
+        <link>http://ntoll.org/article/mu-pi</link>
+        <guid>http://ntoll.org/article/mu-pi</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/mu-pi&quot;&gt;Mu&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 3rd May 2017 (5:30pm)&lt;/p&gt;
+
+&lt;p&gt;Mu (&lt;a href=&quot;https://codewith.mu/&quot;&gt;codewith.mu&lt;/a&gt;) is a simple code editor
+for beginner programmers. In case you&#x27;re wondering, you pronounce it like
+&quot;moo&quot;, and it is named after the Greek character &quot;&amp;mu;&quot;, used to represent
+micro units of measurement in the decimal system.&lt;/p&gt;
+
+&lt;p&gt;I wrote the first version in December 2015 as a Sunday-afternoon &quot;hack&quot;. At
+the time I was volunteering effort for the BBC&#x27;s
+&lt;a href=&quot;http://microbit.org/&quot;&gt;micro:bit&lt;/a&gt; project - a computing device for
+kids that encourages them to learn how to code. I had already written a browser
+based editor for the project but, unfortunately, when I tested it on teachers,
+kids and developers it soon became apparent that it wasn&#x27;t a great experience.
+While the convenience of a browser-based editor was initially welcomed, the
+faffing about caused by the browser-imposed limitations of the editor meant it
+wasn&#x27;t a pleasant experience in the long run.&lt;/p&gt;
+
+&lt;p&gt;This problematic situation motivated me to put together the simplest yet
+most useful editor I could imagine. I wrote it so beginner programmers could 
+easily write MicroPython code for the micro:bit. Et voil&amp;agrave;, Mu was
+born.&lt;/p&gt;
+
+&lt;p&gt;I quickly formulated a &quot;Mu philosophy&quot; to help guide my development
+process:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;em&gt;Less is More&lt;/em&gt;: Mu has only the most essential
+    features, so users are not intimidated by a baffling interface.&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;Keep it Simple&lt;/em&gt;: It&#x27;s quick and easy to learn Mu -
+    complexity impedes a novice programmer&#x27;s first steps.&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;Path of Least Resistance&lt;/em&gt;: Whatever the task, there is
+    always only one obvious way to do it with Mu.&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;Have Fun&lt;/em&gt;: Learning should inspire fun - Mu helps
+    learners quickly create and test working code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I had three goals:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;An editor that clearly demonstrated the design philosophy outlined
+    above.&lt;/li&gt;
+    &lt;li&gt;An editor with a simple enough code base that an enthusiastic teenager
+    could learn from and contribute to the project.&lt;/li&gt;
+    &lt;li&gt;An editor that was well tested so we could be confident in the quality
+    and stability of its code, while giving us the confidence to make changes
+    as the project moved forward.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Finally, I used a wishlist enumerated by my buddy
+&lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne&lt;/a&gt; (who is the
+&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;Rasperry Pi&lt;/a&gt;&#x27;s Director of
+Education) as my feature guide.&lt;/p&gt;
+
+&lt;p&gt;Raspberry Pi is &lt;strong&gt;the most successful computing-in-education
+project in history&lt;/strong&gt; if you measure number of devices shipped. This
+success means Carrie Anne has had feedback from a huge number of teachers and,
+most importantly, beginner programmers concerning what it feels like to take
+those first steps in learning to write code. This feedback informed
+her &lt;a href=&quot;https://www.youtube.com/watch?v=_gU7sfTrz4c&quot;&gt;keynote
+address&lt;/a&gt; to 2015&#x27;s &lt;a href=&quot;https://europython.eu/&quot;&gt;EuroPython
+conference&lt;/a&gt; where she listed the sorts of things needed for a beginner&#x27;s
+code editor. This, in turn, inspired me in terms of prioritising and
+implementing features.&lt;/p&gt;
+
+&lt;p&gt;Then something funny happened. My goofy editor became popular.&lt;/p&gt;
+
+&lt;p&gt;It turns out that lots of people love learning with Mu. Its simplicity is
+often described as a key factor. The wider Python community have also taken
+an interest with many fellow Pythonists contributing improvements. It has taken
+on a life of its own with a friendly community of contributors and
+users. This makes me very happy.&lt;/p&gt;
+
+&lt;p&gt;The most requested improvement from our users is that Mu become a &quot;general&quot;
+editor rather than just targetting the micro:bit.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;m delighted to say this will happen very soon.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the support of the Raspberry Pi Foundation I&#x27;ll be spending the
+next three months transitioning Mu into a &quot;generic&quot; beginner&#x27;s editor. I&#x27;ll be
+working closely with Carrie Anne and her colleagues to learn how best to help
+beginner programmers.&lt;/p&gt;
+
+&lt;p&gt;Mu will still work with the micro:bit, but it will also work with other
+boards too (such as those from the awesome people at
+&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;Adafruit&lt;/a&gt; and MicroPython&#x27;s original
+&lt;a href=&quot;https://micropython.org/&quot;&gt;PyBoard&lt;/a&gt;). Of course, it will act as an
+editor for &quot;regular&quot; Python code running on your Raspberry Pi, laptop or PC.
+I&#x27;ve even created a very simple visual debugger to help you watch and inspect
+your code as it runs.&lt;/p&gt;
+
+&lt;p&gt;This is very exciting and I&#x27;ll post regular updates since we aim to follow
+the mantra, &quot;release early, release often&quot;.&lt;/p&gt;
+
+&lt;p&gt;Most importantly, we want &lt;strong&gt;you&lt;/strong&gt; to be involved.&lt;/p&gt;
+
+&lt;p&gt;How?&lt;/p&gt;
+
+&lt;p&gt;Try out a new version when we release it. Tell us about bugs. Can you think
+of a way to improve Mu? What&#x27;s the most useful thing you&#x27;d love Mu to do? Tell
+us about the niggles and gremlins you wish could be ironed out.&lt;/p&gt;
+
+&lt;p&gt;Put simply, Mu belongs to its community and we&#x27;d love you to join us to take
+part in shaping its future.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 May 2017 17:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Liberation Technology</title>
         <link>http://ntoll.org/article/liberation-technology</link>
         <guid>http://ntoll.org/article/liberation-technology</guid>
@@ -363,220 +474,6 @@ devices out-weigh the obvious concerns about privacy.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 03 Jan 2017 21:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Remembering John</title>
-        <link>http://ntoll.org/article/remembering-john</link>
-        <guid>http://ntoll.org/article/remembering-john</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/remembering-john&quot;&gt;Remembering John&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Sunday 23rd October 2016 (8:00pm)&lt;/p&gt;
-
-&lt;p&gt;Last week I was contacted by my old teacher and principal tuba player for
-the &lt;a href=&quot;http://www.bbc.co.uk/philharmonic&quot;&gt;BBC Philharmonic&lt;/a&gt;,
-&lt;a href=&quot;http://www.bbc.co.uk/orchestras/learn/guidetotheorchestra/brass/tuba/&quot;&gt;Chris Evans&lt;/a&gt;.
-Chris taught me immediately prior to my time at the
-&lt;a href=&quot;http://rcm.ac.uk/&quot;&gt;Royal College of Music&lt;/a&gt;. Chris&#x27;s patience and
-help prepared me for my audition with John Jenkins, the tuba professor at
-the RCM and principal tuba in the
-&lt;a href=&quot;http://www.philharmonia.co.uk/&quot;&gt;Philharmonia orchestra&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Chris had got in touch to ask about John (who, alas, passed away in
-2008):&lt;/p&gt;
-
-&lt;blockquote&gt;&quot;I started a John Jenkins group on Facebook a little while ago. I
-didn&#x27;t know him, I just loved his playing. You were taught by him for 4 yrs,
-I&#x27;d be interested to know what lessons were like with him.&quot;&lt;/blockquote&gt;
-
-&lt;p&gt;I emailed Chris a lengthy reply - most of which forms the basis of what
-follows. Please feel free to &lt;a href=&quot;/contact&quot;&gt;get in touch&lt;/a&gt; if you have
-any questions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/tuba.gif&quot; alt=&quot;John Jenkins - tuba professor&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My first year consisted of playing lots of long notes into the corners
-of rooms. It was all about feedback.&lt;/p&gt;
-
-&lt;p&gt;John very patiently forced me to listen to all the aspects of my playing
-concerned with sound production: the way I articulated or sustained the
-note, the graduation of dynamic change, slurring between notes - all
-that sort of thing - the &quot;nuts and bolts&quot; of physically producing a
-sound. We also spent a lot of time on breathing - it was stuff that
-extended the work Chris had  been doing with me prior to the RCM (breath
-from the bottom of your lungs, use your diaphragm to support the note, open up
-your throat to ease the movement of air, that sort of thing).&lt;/p&gt;
-
-&lt;p&gt;Most importantly we spent a lot of time listening to the timbre of the
-note and working out how &lt;em&gt;I&lt;/em&gt; could make the various different sorts of
-sound a tuba player needed to make, be it a sound that was focussed and
-&quot;light&quot; (for solo / chamber work) or something big and &quot;fluffy&quot; (for
-wont of a better word - and I don&#x27;t mean indistinct, rather, it had a
-foundational sort of quality) that would blend with the other bass
-instruments at the bottom of a big orchestral sound. I can&#x27;t over state
-how much we did this, week in week out and concentrating on how &lt;em&gt;I&lt;/em&gt;
-might make the sound.&lt;/p&gt;
-
-&lt;p&gt;Often the conversation would go along the lines of John saying &quot;when I
-do X then Y changes, you try it&quot; and I&#x27;d watch and listen then I&#x27;d have
-a go myself. John demonstrated how &lt;em&gt;he&lt;/em&gt; changed the
-sound then I would try to work out how &lt;/em&gt;I&lt;/em&gt; could do the same as
-&lt;em&gt;him&lt;/em&gt;. At all times John insisted I get it right and wouldn&#x27;t let me off
-the hook. To be honest, he was a bit of a task-master although it was plain
-to me that he was focussed on helping me to work out what I needed to do
-(in a physical sense) to make the sort of sound I needed to develop.&lt;/p&gt;
-
-&lt;p&gt;As an 18 year old youth it was sometimes very frustrating. I came to develop
-an &quot;I&#x27;ll show you, you daft old bugger&quot; sort of attitude which was also very
-satisfying for those times when John gave me a compliment. He knew how to
-balance use of the carrot and stick.&lt;/p&gt;
-
-&lt;p&gt;I remember Steve Follant (who was in his final year during my first
-year) saying something along the following lines to me (paraphrased),
-&quot;the thing about John is you turn up at the RCM all cocky and in the
-first year he kicks your arse around the room, takes your playing apart
-and then helps you to reassemble it. Stick with it, it&#x27;s worth it.&quot;&lt;/p&gt;
-
-&lt;p&gt;I wasn&#x27;t put in an orchestra until my final term of the first year -
-even then I was just 2nd tuba for John Adam&#x27;s
-&lt;a href=&quot;https://www.youtube.com/watch?v=jmDBO-T9nio&quot;&gt;Harmonielehre&lt;/a&gt;. I
-spent most of my time in my first year playing in quintets and brass
-ensembles. This was not a bad thing since I had
-&lt;a href=&quot;https://en.wikipedia.org/wiki/David_Mason_(trumpet_player)&quot;&gt;David Mason&lt;/a&gt;,
-&lt;a href=&quot;https://www.theguardian.com/music/2010/aug/25/classicalmusicandopera&quot;&gt;Arthur Wilson&lt;/a&gt;
-and other hugely experienced musicians pass on a lot of musical
-lore and wrinkles. It was a lot of fun and my love of chamber music is
-directly related to their coaching. I was also coming to terms with the
-rather onerous academic demands I had to meet (I was on an academic rather
-than performance related degree).&lt;/p&gt;
-
-&lt;p&gt;At the end of the year we had to do our technical exams and I was
-expecting some sort of slow / low study a la
-&lt;a href=&quot;http://imslp.org/wiki/70_Tuba_Studies_(Blazhevich,_Vladislav)&quot;&gt;Blazevich&lt;/a&gt;,
-given all the long notes I&#x27;d been playing.&lt;/p&gt;
-
-&lt;p&gt;Actually, he set something from
-&lt;a href=&quot;https://www.scribd.com/doc/108111941/Kopprasch-60selected-Studies-for-Bb-Flat-Tuba&quot;&gt;Kopprasch&lt;/a&gt;
-that was fast and in a &quot;difficult&quot; key - number 20 I think. We re-focussed
-during the summer term on getting around the tuba, being nimble and not just
-&quot;fluffing it&quot;.&lt;/p&gt;
-
-&lt;p&gt;We started very slow, focusing on small chunks, made sure all the notes
-were secure and gradually stitched the piece together and sped things
-up. Again, the discipline of this was a great experience and taught me a
-lot about how it &lt;em&gt;should feel&lt;/em&gt; to go through this process (&lt;em&gt;every&lt;/em&gt;
-teacher says to start slowly and speed up, but John actually forced me
-to do it in the lessons and he wasn&#x27;t satisfied until I&#x27;d done it properly).&lt;/p&gt;
-
-&lt;p&gt;At the end of my first year I was surprised to learn I&#x27;d got a 1st and
-won a prize for my tuba playing. That was important - work appeared
-to be paying off.&lt;/p&gt;
-
-&lt;p&gt;My second and third years were very different ~ I really felt I was
-flourishing as a tuba player: I was literally in &lt;em&gt;everything&lt;/em&gt; in terms
-of ensemble playing through to orchestral work. I was also in some
-really great concerts that I&#x27;ll remember until my dying day - I was
-playing with my friends and loving it. My academic studies were
-also opening up new stuff: I discovered philosophy, re-learned how to
-program computers, spent hours in the London galleries and read poetry
-and literature voraciously. It was an exciting time and John contributed
-to it!&lt;/p&gt;
-
-&lt;p&gt;The lessons changed from being a sort of lobotomy of my playing to
-focusing on orchestral excerpts and having fun playing actual
-pieces of tuba repertoire! I was having fun and I think John was too. I
-remember lots of laughter (squeaking my way through Berlioz&#x27;s Le
-Corsaire ended in tears etc.).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/le_corsaire.png&quot; alt=&quot;John Jenkins - tuba professor&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;In terms of orchestral excerpts I think all of us (students) would look
-at the repertoire he was working on in the Philharmonia. We got to try
-out all sorts of different stuff. We&#x27;d play through the repertoire
-in our lessons with John then go listen to him perform it in the
-evening. This would be in addition to the orchestral repertoire we played
-as members of the various RCM orchestras too. Finally, (although
-I may be mis-remembering this) I think we had to prepare excerpts for
-our technical exams at the end of the year.&lt;/p&gt;
-
-&lt;p&gt;I remember him being opinionated about how orchestral stuff should be
-played and again he was a stickler for detail. It was at this time we
-worked a lot on breathing - basically ensuring we had enough support
-left in the tank for what we needed to do in an orchestral context. I&#x27;m
-pretty certain he had a third lung - he could sustain notes
-louder and longer than anyone I&#x27;ve ever met and his pianissimo pedals
-were smooth and consistent. All thanks to exceptional breath control.
-He was a great musical and technical role model.&lt;/p&gt;
-
-&lt;p&gt;When it came to solo or chamber music he would help from a technical
-perspective but I was left alone to fathom the musicality - he was a lot
-less opinionated about the solo stuff than the orchestral things. Of
-course he&#x27;d make suggestions but since I had lots of ideas about how I
-wanted to play things he just left me to my own devices (although he&#x27;d
-sometimes play devil&#x27;s advocate). I think he quite enjoyed that I knew
-my own mind in this sense: I&#x27;d play something and he&#x27;d have a wry smile
-on his face. I&#x27;d ask &quot;what?&quot; and he&#x27;d reply, &quot;oh, nothing...&quot;. It was
-obvious he wouldn&#x27;t have played it like that but he let me get on with
-it. I guess if I&#x27;d parped out something tasteless that&#x27;s when he&#x27;d
-switch to the devil&#x27;s advocate questions, &quot;why not try..?&quot; or &quot;have you
-thought about..?&quot;.&lt;/p&gt;
-
-&lt;p&gt;Once again, I had the likes of David Mason and Arthur Wilson coaching
-chamber music and full brass sectional orchestral excerpts (I
-particularly remember a great Walton 1 blow through with Arthur - such a
-gentleman) and I think &lt;a href=&quot;http://www.peterbassano.com/&quot;&gt;Peter Bassano&lt;/a&gt;
-took the helm as head of brass at this
-time. He had us doing some fun chamber music - I remember a crazy
-quintet called &quot;The Rite of Lucifuge&quot;, notes all over the place over more than
-a four octave range, great fun to play though, and John had been the tuba
-player at its premier (as a member of the Equale Brass quintet I believe).&lt;/p&gt;
-
-&lt;p&gt;I guess the most important thing about John was that he was there and
-students could watch and listen. Having him sit next to you and produce
-an amazing sounding phrase gave you no room to manoeuver - you had to
-try to play it like that (or that&#x27;s how I felt anyway). It was also fun
-to see him totally cock things up if only to see how he recovered (he&#x27;d
-cock up a phrase, mutter stuff under his breath and try again until he
-was happy with the result - the important take away for me was learning
-what he did to put stuff right).&lt;/p&gt;
-
-&lt;p&gt;Finally, he obviously cared deeply for his students. I remember him
-&quot;having something in his eye&quot; when we left the RCM and got together for
-drinks (three of us finished at the same time: I did a three year
-academic course, and there was another on the four year performer&#x27;s
-diploma and yet another post-grad). There was definitely a &quot;good vibe&quot;
-amongst all of us tuba related folk at the RCM and I remember feeling
-very sad that it was all coming to an end. It was all down to John.&lt;/p&gt;
-
-&lt;p&gt;In the end I won prizes in each of my three years for my
-tuba playing. Again, much of this was down to John&#x27;s stewardship.&lt;/p&gt;
-
-&lt;p&gt;If you want to see him in action, in a pedagogical sense, there are some
-videos online created for a
-&lt;a href=&quot;http://andrewhugill.com/OrchestraManual/tubas.html&quot;&gt;guide to the orchestra&lt;/a&gt;
-by &lt;a href=&quot;http://www.andrewhugill.com/index.html&quot;&gt;Andrew Hugill&lt;/a&gt; (a
-professor at Bath Spa University). With Andrew&#x27;s permission I&#x27;ve collated them
-into the short (18 minute) video of John embedded below:&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/YIxuOKr9x5o?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I still play at a high level, although this depends on my
-&quot;&lt;a href=&quot;/cv&quot;&gt;real work&lt;/a&gt;&quot; related time constraints. Music is
-still very important to me and I often miss playing my
-tuba. However, my work in computing is also lots of fun, affords me the
-opportunity to work with some amazingly smart people and also travel the
-world. Music makes a great counterpoint - I feel it quite a privilege
-that I&#x27;ve had the training so that I can enjoy music in the way that I
-can. It&#x27;s also important in another respect, it&#x27;s how I met Mary and
-it&#x27;s something we have in common and share.&lt;/p&gt;
-
-&lt;p&gt;Writing this makes me realise what a privilege it was to know and learn
-from John. It makes me sad that he&#x27;s gone - I&#x27;d have loved to have been able
-to buy him a drink and say a proper &quot;thank you&quot;.&lt;/p&gt;
-
-&lt;p&gt;Rest in peace.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 23 Oct 2016 20:00:00 GMT</pubDate>
     </item>
     
 </channel>
