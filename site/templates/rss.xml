@@ -11,6 +11,152 @@
     </image>
     
     <item>
+        <title>Saying Thank You</title>
+        <link>http://ntoll.org/article/saying-thank-you</link>
+        <guid>http://ntoll.org/article/saying-thank-you</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/saying-thank-you&quot;&gt;Saying Thank You&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 11th September 2017 (9:00am)&lt;/p&gt;
+
+&lt;p&gt;This year PyCon UK are running the inaugural John Pinner awards for
+community service. For those of you who don&#x27;t know, here&#x27;s some context about
+John, the awards and some encouragement for you to nominate people.&lt;/p&gt;
+
+&lt;p&gt;I attended the very first PyCon UK back in 2007 (I&#x27;ve circled myself in the
+image below).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk2007.jpg&quot; alt=&quot;The very first PyCon UK&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I was a C# developer in a large investment bank in London investigating
+&lt;a href=&quot;http://ironpython.net/&quot;&gt;IronPython&lt;/a&gt; (the version of Python on
+Microsoft&#x27;s .NET platform). While I was an experienced programmer, I knew
+nothing of Python nor did I know anyone in the Python community. Being of a shy
+disposition (yes, honestly!) it was with some trepidation that I turned up to
+the Birmingham Conservatoire with around 200 other people on the first day. We
+were ushered into the hall and a bearded gentleman introduced himself as &quot;John
+Pinner, chair of the organising committee&quot;.&lt;/p&gt;
+
+&lt;p&gt;&quot;I am a Pythonista!&quot;, is how he proudly opened the conference.&lt;/p&gt;
+
+&lt;p&gt;He explained how Python was a language created by a community of volunteers,
+that many such volunteers lived in the UK, how some of these volunteers decided
+there should be a conference for this community, and here we all are, so say
+&quot;hello&quot; to each other, feel welcome and have fun.&lt;/p&gt;
+
+&lt;p&gt;It was clear that this was not like any programming conference I&#x27;d ever
+attended!&lt;/p&gt;
+
+&lt;p&gt;The first day contained a free workshop for beginner Python programmers.
+This sounded right up my street and so I turned up with about 10 other people.
+Into the room strolled John wearing a Cheshire cat grin. He was carrying a
+large cardboard box containing ring-binders full of paper. Everyone was given a
+binder to keep and therein was a step-by-step course for learning Python,
+written by, none other than, John.&lt;/p&gt;
+
+&lt;p&gt;&quot;We&#x27;ll start at the beginning&quot;, he said, &quot;...ask questions and let&#x27;s see how
+far we get.&quot;&lt;/p&gt;
+
+&lt;p&gt;Before letting us loose he gave us all one bit of advice about Python that
+still holds true today and which I use myself with any Python beginners: use
+the REPL with the &lt;code&gt;help&lt;/code&gt; and &lt;code&gt;dir&lt;/code&gt; functions to explore
+the language, so don&#x27;t be afraid to poke around.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the next two days it became clear that John was a
+Pythonic force-of-nature who took part in the conference by training beginners
+(like me), chairing sessions, giving a talk, solving problems at the help desk
+and even making cups of tea in the breaks. This was in addition to the onerous
+task of founding and organising the conference. Most significantly all this
+work was voluntary. He inspired a group of people to create a space for our
+community to come together. As John was to say at the opening of PyCon UK 2013
+(channelling Abraham Lincoln), our conference was &quot;by the community, of the
+community and for the community&quot;.&lt;/p&gt;
+
+&lt;p&gt;John taught Python programming and its community focused values to me and
+many other people in the UK. This kind and gentle man understood the value of
+such an outlook and, through his own voluntary work as the founder and chair of
+PyCon UK, promoted it with great zeal.&lt;/p&gt;
+
+&lt;p&gt;John tragically lost his fight with cancer in 2015. He is a sorely missed
+mentor, leader and friend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/john_pinner.jpg&quot; alt=&quot;John Pinner&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;This year is the 10th anniversary of that first PyCon UK and it seems
+appropriate that we should celebrate this milestone by recognising those in our
+community who volunteer their time and effort to making it the welcoming,
+diverse and interesting place that it is (just as John did). That these awards
+are named after John is a wonderful way to sustain the memory of this
+remarkable man and his ethos of volunteering for the benefit of others.&lt;/p&gt;
+
+&lt;p&gt;Why do we need such community awards?&lt;/p&gt;
+
+&lt;p&gt;For those of you who have never organised a meetup, user group, dojo or
+conference, I want you to understand that it takes a huge amount of time and
+effort to make such things happen. Furthermore, there are many people in our
+community who give freely of their time for others through mentorship, teaching
+or simply answering the many questions that turn up on mailing lists, community
+forums and online chat channels. There are also many people who write
+documentation, create resources and author blog-based tutorials for our
+community. It means Python is a wonderfully accessible language that empowers
+people to grow, explore and take control of their digital world. I hope you
+agree with me when I say that this is &quot;a good thing&amp;trade;&quot;.&lt;/p&gt;
+
+&lt;p&gt;However, there is a cost.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, over the years I have seen many of my friends burn out after
+volunteering for our community. Bringing people together is often a thankless
+task involving a financial burden too (for example, who pays for the deposit on
+the room hire?). Furthermore, some in our community treat those who volunteer
+with an air of entitlement that assumes such volunteers owe them service, some
+sort of on-call technical support or demand that they should change their
+efforts to address such-and-such a point of view. This is a toxic attitude that
+destroys our community - it makes it a demanding and unfriendly place to be.
+It&#x27;s demoralising and mentally draining for those on the receiving end and
+shows a complete lack of respect for others from the perpetrators of such a
+selfish attitude.&lt;/p&gt;
+
+&lt;p&gt;It is obvious that PyCon UK want to foster more of the former positive
+context and challenge those whose behaviour causes the latter hurtful
+environment.&lt;/p&gt;
+
+&lt;p&gt;The contrast to the negativity outlined above is where we, as a community,
+acknowledge, celebrate and thank people for their contributions. If you attend
+a user group, ask questions on a mailing list or follow various blogs because
+they post interesting content (and, let&#x27;s be honest here, that&#x27;s pretty much
+everyone in our community), why not say &quot;thank you&quot; to someone whose
+volunteering helped you in some way? It takes hardly any time or effort on your
+part but it makes those who contribute feel positive, proud and happy to be
+told that their efforts are appreciated. It gives them momentum to continue to
+contribute and, in the context of a community of volunteers, this is the
+antidote to burn out.&lt;/p&gt;
+
+&lt;p&gt;Some of us in the community are lucky to benefit already from our voluntary
+work: we&#x27;re invited to speak at conferences, get interviewed in community
+podcasts and are the recipients of wider community recognition. The John Pinner
+awards are not for such &quot;high profile&quot; members of our community. Why? Because
+there are many in our community who don&#x27;t get the recognition or thanks that
+they deserve. By instigating the John Pinner awards PyCon UK is giving
+&lt;em&gt;you&lt;/em&gt;, the community, an opportunity to recognise and thank those
+oft-overlooked volunteers who make the UK&#x27;s Python community such a wonderful
+place to be.&lt;/p&gt;
+
+&lt;p&gt;If you can think of someone who deserves such recognition (and I certainly
+hope you do), then please visit
+&lt;a href=&quot;http://2017.pyconuk.org/pinner-award/&quot;&gt;the PyCon UK website&lt;/a&gt; and
+fill in the very simple form. It takes but a minute or two. You can nominate as
+many people as you can think of, and PyCon UK will make a fuss of the most
+nominated members of our community with public recognition, a free ticket to
+next year&#x27;s PyCon UK and a rather swanky medal.&lt;/p&gt;
+
+&lt;p&gt;So, what are you waiting for? Don&#x27;t just sit there, nominate someone! It is
+just a little bit of effort put into recognising a friend, colleague of
+collaborator who has helped our wonderful community in some way.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 11 Sep 2017 09:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>20 Years</title>
         <link>http://ntoll.org/article/20-years</link>
         <guid>http://ntoll.org/article/20-years</guid>
@@ -154,156 +300,6 @@ us about the niggles and gremlins you wish could be ironed out.&lt;/p&gt;
 part in shaping its future.&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 May 2017 17:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Liberation Technology</title>
-        <link>http://ntoll.org/article/liberation-technology</link>
-        <guid>http://ntoll.org/article/liberation-technology</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/liberation-technology&quot;&gt;Liberation Technology&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 16th January 2017 (3:00pm)&lt;/p&gt;
-
-&lt;p&gt;(Some raw thoughts for you. I welcome feedback and engagement via
-email.)&lt;/p&gt;
-
-&lt;p&gt;Two considerations are core to my work on technical projects: ethics and
-politics.&lt;/p&gt;
-
-&lt;p&gt;I don&#x27;t mean ethics in the sense of a professional code of conduct nor do I
-mean politics in the sense of what goes on in Parliament. I use these terms in
-a philosophical way. For instance, from an ethical point of view, I&#x27;m concerned
-with how I live and behave, how I may be &quot;good&quot; or &quot;bad&quot; and how I&#x27;m able to
-coherently reason about such concepts. In a political sense I wonder how
-diverse groups of people live and work together, how collective decision making
-takes place and the nature of power ~ how it is obtained, exercised and
-controlled.  I reflect upon my life as an individual and my place in our
-society.&lt;/p&gt;
-
-&lt;p&gt;Why is this important?&lt;/p&gt;
-
-&lt;p&gt;I am an atheist: I don&#x27;t believe in an afterlife. Nevertheless, I am alive,
-and as far as I can tell it&#x27;s only going to happen once, so I&#x27;m going to make
-the best of it. Asking &quot;how?&quot; leads to ethics and politics.&lt;/p&gt;
-
-&lt;p&gt;What have ethics and politics to do with technology?&lt;/p&gt;
-
-&lt;p&gt;First, I must be clear that by &quot;technology&quot;, for the purposes of this post,
-I mean computing - machines programmed with instructions to some (hopefully)
-useful end.&lt;/p&gt;
-
-&lt;p&gt;Secondly, such instructions (software) do not distinguish morality or
-legality - they are merely capability. Capability permits certain forms of
-computer based behaviour that in turn pose ethical and political questions,
-requirements and possibilities for both users and programmers (like me). It&#x27;s
-not the computer in and of itself that is ethical or political. Rather, it&#x27;s
-the design and use of the computer &lt;em&gt;by/for/on people&lt;/em&gt; that makes it
-ethical or political.&lt;/p&gt;
-
-&lt;p&gt;Finally, when we write code we&#x27;re engineering a digital world from a certain
-point of view that is reflected in the capabilities of the code we create.
-We choose what and how such capabilities are created. Often code exercises
-power over its users. For instance, your bank&#x27;s website mandates only you to
-access your accounts. This is a desirable use of power. But remember, you have
-no control over the machinations of the bank&#x27;s software - it is exercising
-power over you and was written by someone aligned with your bank&#x27;s point of
-view. Most of the technology you own or use is not under your control.&lt;/p&gt;
-
-&lt;p&gt;It is for these reasons (that people choose what to make computers do, and
-often computers have power over us) that writing software is both an ethical
-and political activity. Furthermore, technology is important because of its
-ubiquity in most aspects of our lives (and it&#x27;s insinuating itself into those
-aspects it isn&#x27;t already a part of). As
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Marc_Andreessen&quot;&gt;Marc Andreessen&lt;/a&gt;
-&lt;a href=&quot;http://www.wsj.com/articles/SB10001424053111903480904576512250915629460&quot;&gt;quipped&lt;/a&gt;,
-&quot;software is eating the world&quot;.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately there is a problem: the vast majority of humanity are merely
-consumers of technology. We consume in complete ignorance about how it works.
-There are two reasons:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;For most consumer technology, we don&#x27;t have the freedom to examine, reuse
-  or change the software that defines the capabilities of our computing
-  devices.&lt;/li&gt;
-  &lt;li&gt;Even if we had the afore mentioned freedom, the skills, attitudes and
-  knowledge required to understand, create and control technology are
-  uncommon.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The closed and opaque nature of consumer technology has an antidote: free
-software as championed by organisations such as the
-&lt;a href=&quot;https://fsf.org/&quot;&gt;Free Software Foundation&lt;/a&gt;. Their website
-explains:&lt;/p&gt;
-
-&lt;blockquote&gt; Free software developers guarantee everyone equal rights to their
-programs; any user can study the source code, modify it, and share the program.
-By contrast, most software carries fine print that denies users these basic
-rights, leaving them susceptible to the whims of its owners and vulnerable to
-surveillance.&lt;/blockquote&gt;
-
-&lt;p&gt;Most people in the technology world know about the free software movement
-and its achievements. Unfortunately, the second problem - a lack of skills and
-knowledge - means such achievements are &lt;em&gt;only appreciated by and available
-to people in the technology world who have had the privilege of access to a
-technical education&lt;/em&gt;. This latter problem has been, for many years, largely
-ignored.&lt;/p&gt;
-
-&lt;p&gt;This is to be expected: we&#x27;ve only been programming computers since the
-Second World War (for example, the British Colossus and German Z3) and our
-current notion of programming only emerged in the 1960s. Put simply, humanity
-have not been doing this for very long when compared to other endeavours such
-as writing or composing music.&lt;/p&gt;
-
-&lt;p&gt;We&#x27;re only just getting started and so, proportionally, not many people know
-or care about programming. People who write code have a similar place in
-society as scribes in ancient Egypt - only they understand how such a valuable
-and powerful thing works. It&#x27;s not that programming is hard, it is simply not
-a widely practised skill.&lt;/p&gt;
-
-&lt;p&gt;Today, we don&#x27;t have scribes: most people are literate and literacy is a
-core aim of educational systems - not because everyone will become a writer or
-enjoy reading, but because it&#x27;s such a fundamental skill to flourish in today&#x27;s
-society.&lt;/p&gt;
-
-&lt;p&gt;Imagine if everyone had access to source code &lt;em&gt;and had the skills to make
-the software their own&lt;/em&gt;. Imagine groups currently disenfranchised by
-technology making the digital world their own. Imagine a ubiquity of skill
-such that doctors, musicians, lawyers, teachers, poets, architects, scientists,
-politicians and others involved in a diversity of endeavours are
-&lt;strong&gt;liberated by technology to advance their disciplines&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is what I imagine. This is why technical education is so important.
-This is why I volunteer my time to promote such educational endeavours.&lt;/p&gt;
-
-&lt;p&gt;I also imagine other things: conflict, dubious use of technology, the
-exploitation of others through technical means and technology as a tool for
-domination, bullying and violence.&lt;/p&gt;
-
-&lt;p&gt;So we return to ethics and politics. These disciplines give us the concepts,
-history and vocabulary to think about our own and wider society&#x27;s use of
-technology. It&#x27;s also why I believe all technical education should include
-ethics and politics. The very best programmers I know understand the
-importance of ethics and politics as applied to what they do.&lt;/p&gt;
-
-&lt;p&gt;If you ever wonder why I&#x27;m motivated to work on certain projects, you&#x27;ll
-probably find the answer involves much of the above. I want others to have 
-the privilege of programming computers whilst also developing the ethical and
-moral outlook to help them best apply their skills.&lt;/p&gt;
-
-&lt;p&gt;If you agree, get involved with computing education.&lt;/p&gt;
-
-&lt;p&gt;It&#x27;s a long term project and we won&#x27;t see the fruits of such labours for
-another decade or more. Nevertheless, getting involved today means you help
-shape how things unfold. Remember, while the skill of writing code is neutral
-the intentions behind such code depend upon transmitting an ethical and
-political appreciation of our world.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, education makes our future possible.&lt;/p&gt;
-
-&lt;p&gt;What that future is depends upon who turns up to provide such education.&lt;/p&gt;
-
-&lt;p&gt;Don&#x27;t just sit there, do something!&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Jan 2017 15:00:00 GMT</pubDate>
     </item>
     
 </channel>

@@ -11,6 +11,152 @@
     </image>
     
     <item>
+        <title>Saying Thank You</title>
+        <link>http://ntoll.org/article/saying-thank-you</link>
+        <guid>http://ntoll.org/article/saying-thank-you</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/saying-thank-you&quot;&gt;Saying Thank You&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 11th September 2017 (9:00am)&lt;/p&gt;
+
+&lt;p&gt;This year PyCon UK are running the inaugural John Pinner awards for
+community service. For those of you who don&#x27;t know, here&#x27;s some context about
+John, the awards and some encouragement for you to nominate people.&lt;/p&gt;
+
+&lt;p&gt;I attended the very first PyCon UK back in 2007 (I&#x27;ve circled myself in the
+image below).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk2007.jpg&quot; alt=&quot;The very first PyCon UK&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;I was a C# developer in a large investment bank in London investigating
+&lt;a href=&quot;http://ironpython.net/&quot;&gt;IronPython&lt;/a&gt; (the version of Python on
+Microsoft&#x27;s .NET platform). While I was an experienced programmer, I knew
+nothing of Python nor did I know anyone in the Python community. Being of a shy
+disposition (yes, honestly!) it was with some trepidation that I turned up to
+the Birmingham Conservatoire with around 200 other people on the first day. We
+were ushered into the hall and a bearded gentleman introduced himself as &quot;John
+Pinner, chair of the organising committee&quot;.&lt;/p&gt;
+
+&lt;p&gt;&quot;I am a Pythonista!&quot;, is how he proudly opened the conference.&lt;/p&gt;
+
+&lt;p&gt;He explained how Python was a language created by a community of volunteers,
+that many such volunteers lived in the UK, how some of these volunteers decided
+there should be a conference for this community, and here we all are, so say
+&quot;hello&quot; to each other, feel welcome and have fun.&lt;/p&gt;
+
+&lt;p&gt;It was clear that this was not like any programming conference I&#x27;d ever
+attended!&lt;/p&gt;
+
+&lt;p&gt;The first day contained a free workshop for beginner Python programmers.
+This sounded right up my street and so I turned up with about 10 other people.
+Into the room strolled John wearing a Cheshire cat grin. He was carrying a
+large cardboard box containing ring-binders full of paper. Everyone was given a
+binder to keep and therein was a step-by-step course for learning Python,
+written by, none other than, John.&lt;/p&gt;
+
+&lt;p&gt;&quot;We&#x27;ll start at the beginning&quot;, he said, &quot;...ask questions and let&#x27;s see how
+far we get.&quot;&lt;/p&gt;
+
+&lt;p&gt;Before letting us loose he gave us all one bit of advice about Python that
+still holds true today and which I use myself with any Python beginners: use
+the REPL with the &lt;code&gt;help&lt;/code&gt; and &lt;code&gt;dir&lt;/code&gt; functions to explore
+the language, so don&#x27;t be afraid to poke around.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the next two days it became clear that John was a
+Pythonic force-of-nature who took part in the conference by training beginners
+(like me), chairing sessions, giving a talk, solving problems at the help desk
+and even making cups of tea in the breaks. This was in addition to the onerous
+task of founding and organising the conference. Most significantly all this
+work was voluntary. He inspired a group of people to create a space for our
+community to come together. As John was to say at the opening of PyCon UK 2013
+(channelling Abraham Lincoln), our conference was &quot;by the community, of the
+community and for the community&quot;.&lt;/p&gt;
+
+&lt;p&gt;John taught Python programming and its community focused values to me and
+many other people in the UK. This kind and gentle man understood the value of
+such an outlook and, through his own voluntary work as the founder and chair of
+PyCon UK, promoted it with great zeal.&lt;/p&gt;
+
+&lt;p&gt;John tragically lost his fight with cancer in 2015. He is a sorely missed
+mentor, leader and friend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/john_pinner.jpg&quot; alt=&quot;John Pinner&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;This year is the 10th anniversary of that first PyCon UK and it seems
+appropriate that we should celebrate this milestone by recognising those in our
+community who volunteer their time and effort to making it the welcoming,
+diverse and interesting place that it is (just as John did). That these awards
+are named after John is a wonderful way to sustain the memory of this
+remarkable man and his ethos of volunteering for the benefit of others.&lt;/p&gt;
+
+&lt;p&gt;Why do we need such community awards?&lt;/p&gt;
+
+&lt;p&gt;For those of you who have never organised a meetup, user group, dojo or
+conference, I want you to understand that it takes a huge amount of time and
+effort to make such things happen. Furthermore, there are many people in our
+community who give freely of their time for others through mentorship, teaching
+or simply answering the many questions that turn up on mailing lists, community
+forums and online chat channels. There are also many people who write
+documentation, create resources and author blog-based tutorials for our
+community. It means Python is a wonderfully accessible language that empowers
+people to grow, explore and take control of their digital world. I hope you
+agree with me when I say that this is &quot;a good thing&amp;trade;&quot;.&lt;/p&gt;
+
+&lt;p&gt;However, there is a cost.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, over the years I have seen many of my friends burn out after
+volunteering for our community. Bringing people together is often a thankless
+task involving a financial burden too (for example, who pays for the deposit on
+the room hire?). Furthermore, some in our community treat those who volunteer
+with an air of entitlement that assumes such volunteers owe them service, some
+sort of on-call technical support or demand that they should change their
+efforts to address such-and-such a point of view. This is a toxic attitude that
+destroys our community - it makes it a demanding and unfriendly place to be.
+It&#x27;s demoralising and mentally draining for those on the receiving end and
+shows a complete lack of respect for others from the perpetrators of such a
+selfish attitude.&lt;/p&gt;
+
+&lt;p&gt;It is obvious that PyCon UK want to foster more of the former positive
+context and challenge those whose behaviour causes the latter hurtful
+environment.&lt;/p&gt;
+
+&lt;p&gt;The contrast to the negativity outlined above is where we, as a community,
+acknowledge, celebrate and thank people for their contributions. If you attend
+a user group, ask questions on a mailing list or follow various blogs because
+they post interesting content (and, let&#x27;s be honest here, that&#x27;s pretty much
+everyone in our community), why not say &quot;thank you&quot; to someone whose
+volunteering helped you in some way? It takes hardly any time or effort on your
+part but it makes those who contribute feel positive, proud and happy to be
+told that their efforts are appreciated. It gives them momentum to continue to
+contribute and, in the context of a community of volunteers, this is the
+antidote to burn out.&lt;/p&gt;
+
+&lt;p&gt;Some of us in the community are lucky to benefit already from our voluntary
+work: we&#x27;re invited to speak at conferences, get interviewed in community
+podcasts and are the recipients of wider community recognition. The John Pinner
+awards are not for such &quot;high profile&quot; members of our community. Why? Because
+there are many in our community who don&#x27;t get the recognition or thanks that
+they deserve. By instigating the John Pinner awards PyCon UK is giving
+&lt;em&gt;you&lt;/em&gt;, the community, an opportunity to recognise and thank those
+oft-overlooked volunteers who make the UK&#x27;s Python community such a wonderful
+place to be.&lt;/p&gt;
+
+&lt;p&gt;If you can think of someone who deserves such recognition (and I certainly
+hope you do), then please visit
+&lt;a href=&quot;http://2017.pyconuk.org/pinner-award/&quot;&gt;the PyCon UK website&lt;/a&gt; and
+fill in the very simple form. It takes but a minute or two. You can nominate as
+many people as you can think of, and PyCon UK will make a fuss of the most
+nominated members of our community with public recognition, a free ticket to
+next year&#x27;s PyCon UK and a rather swanky medal.&lt;/p&gt;
+
+&lt;p&gt;So, what are you waiting for? Don&#x27;t just sit there, nominate someone! It is
+just a little bit of effort put into recognising a friend, colleague of
+collaborator who has helped our wonderful community in some way.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 11 Sep 2017 09:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Mu</title>
         <link>http://ntoll.org/article/mu-pi</link>
         <guid>http://ntoll.org/article/mu-pi</guid>
@@ -235,316 +381,6 @@ around Bangalore.&lt;/p&gt;
 &lt;p&gt;It was a privilege.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Oct 2015 01:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>The Story of MicroPython on the BBC micro:bit</title>
-        <link>http://ntoll.org/article/story-micropython-on-microbit</link>
-        <guid>http://ntoll.org/article/story-micropython-on-microbit</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/story-micropython-on-microbit&quot;&gt;The Story of MicroPython on the BBC micro:bit&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday 20th October 2015 (8:00AM)&lt;/p&gt;
-
-&lt;p&gt;I am a child of the 1980s.&lt;/p&gt;
-
-&lt;p&gt;One of the formative experiences of my childhood was the arrival of our
-first computer. My father was a headteacher - one half-term holiday he brought
-home his school&#x27;s computer to learn how to use it. Yet it was my brother and I
-who spent most time on it. This was my first program, written in a language
-called &lt;a href=&quot;https://en.wikipedia.org/wiki/BBC_BASIC&quot;&gt;BASIC&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;basic&quot;&gt;10 CLS
-20 PRINT &quot;YOU&#x27;RE AN IDIOT&quot;
-30 GOTO 20&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
-
-&lt;p&gt;I remember the infectious enthusiasm of a number of my teachers: my
-design and technology teacher, a gentleman called Eric Rose, showing me how to
-program a robot arm he&#x27;d made and the school librarian, Philip Wilson,
-encouraging me to explore and experiment with
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Bulletin_board_system&quot;&gt;bulletin-board
-systems&lt;/a&gt; and a long-forgotten service called
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Prestel&quot;&gt;PRESTEL&lt;/a&gt; (forerunners of
-today&#x27;s consumer internet).&lt;/p&gt;
-
-&lt;p&gt;I wouldn&#x27;t be a programmer were it not for such positive formative
-experiences.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/bbcmicro.jpeg&quot; alt=&quot;A BBC Micro&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;The computer I used was, of course, the
-&lt;a href=&quot;https://en.wikipedia.org/wiki/BBC_Micro&quot;&gt;BBC Micro&lt;/a&gt;:
-the result of an extraordinary initiative called the
-&lt;a href=&quot;http://www.naec.org.uk/organisations/bbc-computer-literacy-project/towards-computer-literacy-the-bbc-computer-literacy-project-1979-1983&quot;&gt;BBC Computer Literacy Project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;David Allen, the project&#x27;s producer,
-&lt;a href=&quot;http://www.nesta.org.uk/publications/legacy-bbc-micro&quot;&gt;explained&lt;/a&gt;
-that, &quot;[t]he aim was to democratise computing. We didn&#x27;t want people to be
-controlled by it, but to control it.&quot;&lt;/p&gt;
-
-&lt;p&gt;Fast forward to today.&lt;/p&gt;
-
-&lt;p&gt;Thanks to the efforts of teachers in organisations such as
-&lt;a href=&quot;http://www.computingatschool.org.uk/&quot;&gt;CAS&lt;/a&gt; and extraordinary
-world-changing projects like the
-&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;RaspberryPi&lt;/a&gt;, computing education is
-undergoing a renaissance in the UK and the BBC are stepping up to help once
-more. The Python programming language is part of this effort and
-&lt;strong&gt;you&lt;/strong&gt; can get involved.&lt;/p&gt;
-
-&lt;p&gt;What follows is the story so far...&lt;/p&gt;
-
-&lt;p&gt;In December 2014 the BBC announced their intention to create a mysterious
-computing-in-education project with &quot;partners&quot;. I had recently organised
-&lt;a href=&quot;http://www.pyconuk.org/education/&quot;&gt;PyCon UK&#x27;s education track&lt;/a&gt;,
-people knew I was a
-&lt;a href=&quot;https://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt; (PSF)
-fellow and kept asking me if the PSF was involved. I decided to
-investigate and, with the blessing of the PSF board, applied for the PSF to
-join said partnership.&lt;/p&gt;
-
-&lt;p&gt;The BBC explained a staggering &quot;moon-shot&quot; project: to create a small,
-computing device to be delivered to &lt;strong&gt;ALL&lt;/strong&gt; year 7 children
-(11-12 years old) in the UK. The newly christened
-&lt;a href=&quot;http://www.bbc.co.uk/mediacentre/mediapacks/microbit&quot;&gt;BBC micro:bit&lt;/a&gt;
-would facilitate the first step towards inspiring digital creativity in a new
-generation of school children. I could identify with that!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/microbit.jpg&quot; alt=&quot;A BBC micro:bit&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;At the beginning of 2015 a partnership was formed to deliver such a device
-and the PSF were on board to deliver educational support, resources and Python
-expertise. The BBC told us they already had a partner to create a Python
-&quot;solution&quot; for the device.&lt;/p&gt;
-
-&lt;p&gt;Over the spring I volunteered my time to attended meetings at the BBC and
-got to know several of our fellow partners:
-&lt;a href=&quot;http://www.arm.com/&quot;&gt;ARM&lt;/a&gt; and
-&lt;a href=&quot;https://www.techwillsaveus.com/&quot;&gt;Tech Will Save Us&lt;/a&gt; were designing
-the hardware, Microsoft was to supply a child friendly
-&lt;a href=&quot;https://www.touchdevelop.com/&quot;&gt;development environment&lt;/a&gt; and many
-more were tackling other aspects of the project. I spent my time working out
-how to engage with our extensive network of Python-using teachers who could
-experiment with the device, create resources and train colleagues. I also
-wondered how to engage the wider Python community who, I was certain,
-would be very excited by the project.&lt;/p&gt;
-
-&lt;p&gt;However, I encountered two problems:&lt;/p&gt;
-
-&lt;p&gt;First, the project is covered by an
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Non-disclosure_agreement&quot;&gt;NDA&lt;/a&gt;.
-The partnership agreement states that when the device is delivered all the
-resources needed to recreate the project are to be released under an open
-license ~ the laudable intention being an unencumbered legacy so others can
-build upon and adapt the work of the partnership. The NDA exists for the same
-reason there&#x27;s a pre-broadcast NDA in place for the makers of
-&lt;a href=&quot;http://www.bbc.co.uk/programmes/b006q2x0&quot;&gt;Doctor Who&lt;/a&gt;:
-it avoids spoilers that would lessen the impact of the launch. Unfortunately,
-saying &quot;NDA&quot; to anyone from a free software background (such as Python) is a
-sure-fire way to turn them off (at best) or become hostile (at worst). This
-wouldn&#x27;t be an easy sell!&lt;/p&gt;
-
-&lt;p&gt;Secondly, at the end of April I was asked to a meeting at the BBC where
-I was told the partner tasked to supply Python had dropped out. &quot;We must
-have Python on the micro:bit&quot; said the BBC. &quot;I think you want the moon on a
-stick&quot; I thought. Nevertheless, I agreed to look at Microsoft&#x27;s TouchDevelop
-platform with a view to creating a version of Python to sit on top of the
-development environment and cloud based compilation service. I would need help,
-so asked those UK based Pythonistas I knew who had the right skill-set and
-interest in education to sign the NDA and help me evaluate what to do next.&lt;/p&gt;
-
-&lt;p&gt;Microsoft&#x27;s
-&lt;a href=&quot;https://github.com/Microsoft/TouchDevelop&quot;&gt;TouchDevelop&lt;/a&gt; is a
-fascinating open source project: it&#x27;s a browser based visual IDE for kids that
-generates a
-&lt;a href=&quot;http://json.org/&quot;&gt;JSON&lt;/a&gt; based
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Abstract_syntax_tree&quot;&gt;AST&lt;/a&gt; that&#x27;s
-turned into &lt;a href=&quot;https://en.wikipedia.org/wiki/C%2B%2B&quot;&gt;C++&lt;/a&gt; and sent
-to ARM&#x27;s &lt;a href=&quot;https://www.mbed.com/en/&quot;&gt;mBed&lt;/a&gt; cloud compilation service.
-Ultimately, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Intel_HEX&quot;&gt;hex&lt;/a&gt; file
-is delivered to the user&#x27;s browser and downloaded onto their local file-system.
-Plugging in the micro:bit makes it appear as USB storage and you flash it
-by dragging the hex file onto the device.&lt;/p&gt;
-
-&lt;p&gt;Python is, of course, a dynamic interpreted language rather than a static
-compiled language such as the one used by TouchDevelop. Furthermore, a version
-of Python that compiled to the TouchDevelop AST would be a completely new
-language - a Pythonic
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Shim_(computing)&quot;&gt;shim&lt;/a&gt; to make
-TouchDevelop feel like Python. Finally, TouchDevelop itself is written in
-&lt;a href=&quot;https://en.wikipedia.org/wiki/TypeScript&quot;&gt;TypeScript&lt;/a&gt;, an
-interesting Microsoft-developed language that compiles to JavaScript. None of
-us evaluating TouchDevelop knew TypeScript and the thought of creating a
-new compiler for a sort-of-Python, frankly, gave us the collywobbles.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, designing and creating something Python-ish to work on
-TouchDevelop appeared to be impossibly difficult (or difficultly impossible,
-depending on how you looked at it) for a handful of volunteers working in
-their spare time in an unfamiliar language.&lt;/p&gt;
-
-&lt;p&gt;It was at this time that something amazing happened.&lt;/p&gt;
-
-&lt;p&gt;I was at a partner&#x27;s meeting at the BBC and, quite by accident, struck up a
-tea-break conversation with &quot;Jonny from ARM, pleased to meet you&quot;. It turned
-out that &lt;a href=&quot;https://github.com/jaustin&quot;&gt;Jonny&lt;/a&gt; is a fellow geek, but
-one that inhabits a different layer of the computing stack (I generally work
-in high level languages like Python or JavaScript, Jonny feels more at home
-close to the bare metal hacking hardware).&lt;/p&gt;
-
-&lt;p&gt;After we&#x27;d figured out the above, Jonny asked, &quot;have you ever heard of &lt;a href=&quot;http://micropython.org&quot;&gt;MicroPython&lt;/a&gt;?&quot; (MicroPython is a full
-re-implementation of Python 3 for microcontrollers used in small devices such
-as the micro:bit).&lt;/p&gt;
-
-&lt;p&gt;&quot;Why yes&quot;, I replied, &quot;I&#x27;ve spoken to Damien several times over the phone
-since he was invited to speak at last year&#x27;s PyCon UK&quot;
-(&lt;a href=&quot;https://github.com/dpgeorge&quot;&gt;Damien&lt;/a&gt; is the Cambridge based creator of MicroPython).&lt;/p&gt;
-
-&lt;p&gt;&quot;Cool, I know Damien too, he&#x27;s my next-door-neighbour&quot;, explained Jonny,
-after which he casually told me, &quot;you know, it should be possible to get
-MicroPython to run on the micro:bit&quot;.&lt;/p&gt;
-
-&lt;p&gt;&quot;Really..? The BBC had told me they&#x27;d looked into MicroPython but the
-device had the wrong chipset...&quot;&lt;/p&gt;
-
-&lt;p&gt;&quot;Oh, that was correct for the prototype. But we&#x27;ve changed the chipset.
-I&#x27;m pretty certain it&#x27;ll work now.&quot;&lt;/p&gt;
-
-&lt;p&gt;Soon after I went to see Damien in Cambridge. I explained the project and
-he agreed he&#x27;d be willing to volunteer some time to explore porting MicroPython
-onto the device (Damien, like me, has a full time job). I organised for him to
-sign the NDA and Jonny supplied Damien with the appropriate things needed
-to compile MicroPython for the target chipset.&lt;/p&gt;
-
-&lt;p&gt;About a week later (at the very end of May) Damien emailed myself, Jonny
-and a few interested people at the BBC:&lt;/p&gt;
-
-&lt;blockquote&gt;Thanks Jonny for the nRF mkit dev board, it has proved very useful!
-&lt;br&gt;
-&lt;br&gt;
-I signed up to mbed, exported the blinky example for the mkit and got
-it compiling locally using a local toolchain.  And then using this I
-managed to get MicroPython compiling and running on the mkit!  There
-is a surprisingly large amount of room: I could enable floating point
-support, aribitrary precision integers, most of the Python features
-and a few builtin modules.  The REPL works over the USB-UART with
-history and tab completion.  It even has a working ctrl-C (meaning you
-can break out of an infinite loop).  I implemented a basic &quot;pyb&quot;
-module with LED and Switch classes, and a delay function.  So you can
-do something like:&lt;br&gt;&lt;br&gt;
-led = pyb.LED(1)&lt;br&gt;
-while True:&lt;br&gt;
-&amp;nbsp;&amp;nbsp;led.toggle()&lt;br&gt;
-&amp;nbsp;&amp;nbsp;pyb.delay(100)&lt;br&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;I&#x27;m not ashamed to say that I danced around the room fist-pumping the air
-shouting &quot;woo hoo&quot; when I read Damien&#x27;s email. It confirmed there was a real
-possibility of getting &lt;strong&gt;proper Python to run directly on the
-device itself&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;A week later I was in London for another partner&#x27;s meeting where I was to
-get my hands on one of the very first batch of final-design devices.
-It was heartbreaking to be given such a cool device only to have to pass it to
-Jonny with the sad plea, &quot;can you post this through Damien&#x27;s letter box
-please?&quot;.&lt;/p&gt;
-
-&lt;p&gt;Over the next days Damien, Jonny and I kept in touch as Damien worked
-around some teething problems. Then, on the 17th June, Damien emailed
-again:&lt;/p&gt;
-
-&lt;blockquote&gt;Using your new USB serial firmware and demo program I have now got
-MicroPython running on the micro:bit!&lt;br/&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;We finally had confirmation that MicroPython was going to work on the
-device! Much dancing, fist-pumping and shouts of &quot;woo hoo&quot; took place as I
-emailed the BBC with the good news.&lt;/p&gt;
-
-&lt;p&gt;They asked how we could integrate our work into TouchDevelop so I embarked
-upon writing a browser-based code editor (starting from the excellent
-&lt;a href=&quot;https://ace.c9.io/&quot;&gt;ace&lt;/a&gt; editor). This is mostly done apart from
-some design tweaks. It&#x27;s currently embedded in a test instance of
-TouchDevelop and works really well!&lt;/p&gt;
-
-&lt;p&gt;Interestingly, because this is Python we don&#x27;t have to use the cloud
-compilation toolchain. Since hex files are a simple format we worked out a way
-of encoding Python scripts written in the editor in such a way that
-they can be inserted into the appropriate place in MicroPython&#x27;s hex file.
-When the device starts up it discovers the embedded Python and the script
-is automatically run. Since the size of the MicroPython hex file is a lot less
-than say, the total size of the BBC&#x27;s news
-&lt;a href=&quot;http://www.bbc.co.uk/news&quot;&gt;frontpage&lt;/a&gt;, we embed the hex file
-within our HTML (it&#x27;s in a hidden div) and do all the processing locally in the
-user&#x27;s browser. It means the Python editor will work offline. We also have a
-non-TouchDevelop version to run from your local filesystem (so you
-don&#x27;t need to be connected to the internet at all!).&lt;/p&gt;
-
-&lt;p&gt;Most importantly, it&#x27;s possible to use the Python
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&quot;&gt;REPL&lt;/a&gt;
-via the USB connection. It means it&#x27;s possible to &quot;live code&quot; the device by
-typing commands into a prompt, just like I used to do on my
-old BBC Micro. It&#x27;s a wonderful mechanism for playful exploration and
-experimentation so kids and teachers get to see the results of their code
-running immediately on the device. Such a tight feedback loop is very
-useful and lots of fun!&lt;/p&gt;
-
-&lt;p&gt;More recently, we&#x27;ve implemented a &lt;code&gt;microbit&lt;/code&gt; module to
-access the device&#x27;s hardware (a couple of buttons, an LED matrix, compass,
-IO pins, accelerometer and so on). We also held a code sprint at
-PyCon UK a few weeks ago and, after various bits of NDA related fun, we&#x27;ve been
-able to add some wonderful new collaborators. We&#x27;re pushing ahead on interesting
-new capabilities such as game-related functionality, optimizations
-so it&#x27;s easy to create animations on the LED display and a music API: connect
-a speaker via crocodile clips to the IO pins and listen to bleeps and
-bloops.&lt;/p&gt;
-
-&lt;p&gt;The video below, created for a friend who blogs about &quot;favourite
-modules&quot;, is a few weeks old but gives a flavour of our current status:&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/HAx9sJB1_eY?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We also sent a micro:bit to
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Guido_van_Rossum&quot;&gt;Guido&lt;/a&gt; who appears
-to be quite chipper about the project:&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I&amp;#39;ve been playing with micropython on the BBC micro:bit and it&amp;#39;s amazing! &amp;lt;3&lt;/p&gt;&amp;mdash; Guido van Rossum (@gvanrossum) &lt;a href=&quot;https://twitter.com/gvanrossum/status/653975453691080704&quot;&gt;October 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;But there is still lots to do and we are a small team! The BBC
-understand the danger of a low
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Bus_factor&quot;&gt;bus factor&lt;/a&gt; (especially
-when work is being done by a small ad hoc band of community volunteers) and how
-important it is to engage with existing communities who are sympathetic with
-the cause of computing education.&lt;/p&gt;
-
-&lt;p&gt;As a result I&#x27;m immensely pleased that from today the BBC have agreed that we
-can continue our work in the open and outside the restrictions of the NDA. The
-micro:bit related parts of MicroPython have been released under the MIT
-license and can be found at
-&lt;a href=&quot;https://github.com/bbcmicrobit/micropython&quot;&gt;this GitHub
-repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The browser based code editor will follow soon.&lt;/p&gt;
-
-&lt;p&gt;Please take a look, poke around and help. If you feel you can contribute I
-will &lt;em&gt;try&lt;/em&gt; (&lt;strong&gt;no promises&lt;/strong&gt;) to get you a device for
-development purposes - but I will need to be confident that you&#x27;ll do work and
-push code.&lt;/p&gt;
-
-&lt;p&gt;You can contribute in other ways too: documentation needs writing and we
-want to generate educational resources for the device. Get in touch if this
-interests you! Alternatively, if you have an idea for a fun Python related
-project, tell us about it and I&#x27;ll try (again, no promises) to get you a
-device for testing purposes.&lt;/p&gt;
-
-&lt;p&gt;Contributions are welcome without prejudice from anyone irrespective of age,
-gender, religion, race or sexuality. Good quality code, ideas and engagement
-with respect, humour and intelligence win every time.&lt;/p&gt;
-
-&lt;p&gt;Could &lt;strong&gt;you&lt;/strong&gt; contribute something to a project that will
-touch the lives of 1 million children and create a legacy &lt;em&gt;anyone&lt;/em&gt;
-can use?&lt;/p&gt;
-
-&lt;p&gt;:-)&lt;/p&gt;
-</description>
-        <pubDate>Tue, 20 Oct 2015 08:00:00 GMT</pubDate>
     </item>
     
 </channel>
