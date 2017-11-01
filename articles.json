@@ -1,5 +1,12 @@
 [
   {
+    "date": "2017-11-01 12:30:00", 
+    "slug": "advice", 
+    "title": "Advice for a Beginner Coder", 
+    "description": "Some advice given to a beginner coder trying to get into programming.",
+    "python": true 
+  },
+  {
     "date": "2017-09-11 09:00:00", 
     "slug": "saying-thank-you", 
     "title": "Saying Thank You", 

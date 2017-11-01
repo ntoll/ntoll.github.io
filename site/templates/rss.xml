@@ -11,6 +11,100 @@
     </image>
     
     <item>
+        <title>Advice for a Beginner Coder</title>
+        <link>http://ntoll.org/article/advice</link>
+        <guid>http://ntoll.org/article/advice</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/advice&quot;&gt;Advice for a Beginner Coder&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 1st November 2017 (12:30pm)&lt;/p&gt;
+
+&lt;p&gt;Last week was &lt;a href=&quot;http://2017.pyconuk.org/&quot;&gt;PyCon UK 2017&lt;/a&gt;. It was
+perhaps the best PyCon yet and, as usual, I met many old friends and made
+plenty of new ones. Many thanks to Peter Inglesby (chair) and the other
+volunteers who put so much work into making this such a wonderful space for
+bringing together a community.&lt;/p&gt;
+
+&lt;p&gt;A highlight of the conference for me was the number of young people who were
+&lt;strong&gt;not part of the young coders&#x27; day&lt;/strong&gt; but who were attending the
+conference as regular attendees (and accompanied by ever-supportive
+parents). I got chatting to one such combination of young person and
+accompanying parent and they asked for advice on how to develop as
+a beginner programmer in the Python community.&lt;/p&gt;
+
+&lt;p&gt;What follows is based upon my response:&lt;/p&gt;
+
+&lt;p&gt;What you get out of the Python community is directly related to how
+much you put in. The Python community has a huge number of interesting projects
+with which you could engage and learn from.&lt;/p&gt;
+
+&lt;p&gt;Put simply, look for a project that you find interesting and start to
+contribute.&lt;/p&gt;
+
+&lt;p&gt;Don&#x27;t dive in and submit thousands of lines of code - rather, do something
+small, easy and/or trivial. It&#x27;ll introduce you to the current maintainers of
+the project and demonstrate you&#x27;re competent while allowing you to get used to
+their modus operandi. Be polite and ask questions that demonstrate you&#x27;ve read
+their documentation.&lt;/p&gt;
+
+&lt;p&gt;Don&#x27;t be afraid to ask questions - good developers are
+always asking questions. Knowing how to ask and what the right questions are is
+an essential skill to develop. &lt;strong&gt;Asking questions is NOT a sign you
+don&#x27;t know what you&#x27;re doing&lt;/strong&gt;. To good developers it&#x27;s evidence
+that you&#x27;re exploring the problem and a signal that you&#x27;re engaged and
+interested.&lt;/p&gt;
+
+&lt;p&gt;To be clear, it takes time to get involved in a project and the quickest
+way is often to take small (but secure) steps. Your collaborators, if they&#x27;re
+any good, will provide advice about your contributions. This is invaluable
+mentorship and it also means you&#x27;ll get to know people in the community. When
+you go to conferences, you&#x27;ll have allies and colleagues!&lt;/p&gt;
+
+&lt;p&gt;Be careful to separate criticism of your code from criticism of you. The
+very best developers are humble, listen to advice and understand that code can
+always be improved. Sometimes it&#x27;s hard to hear that your code is not very
+good, but this also helps us to appreciate how to give good (constructive)
+advice.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, if you don&#x27;t get support, if people are rude or there&#x27;s a bad
+smell around the project, just leave. Life is too short to have to deal with
+idiots, and if you have no choice, find experienced, thoughtful and
+conscientious allies to help support you (you&#x27;ll find plenty of them in the
+Python community).&lt;/p&gt;
+
+&lt;p&gt;A good project will have a code of conduct that sets expectations of how
+collaborators are to interact. &lt;strong&gt;This is far more important than
+you may at first realise&lt;/strong&gt; and, happily, many in the Python community
+take this aspect of programming very seriously.&lt;/p&gt;
+
+&lt;p&gt;In a similar vein, one of the best activities to help you learn new things
+is to teach. Being able to explain things indicates you know the craft of
+programming at a deep level. For example, you appreciate what to leave in or
+how much to leave out of an explanation. You have clear enough mental models
+of the concepts of programming that you can accurately analogize and
+summarise. Furthermore, to explain yourself in simple and easy-to-understand
+language demonstrates your own clarity of thought. Perhaps most importantly,
+finding the opportunities to practice the skill of teaching is a sign of
+moral and professional value: you&#x27;re putting something back into the wider
+community and you have shown initiative.&lt;/p&gt;
+
+&lt;p&gt;Our community is at its best when people take the time to create a space
+where people, no matter their background or differences, can flourish
+together. You should endeavour to follow this example. Why? Because inclusion
+that celebrates difference and diversity exercises our capacity for empathy
+and understanding of others&#x27; lives, problems and interests. As a developer,
+how can you be sure what people need from your software? Only by listening to
+others, reflecting, evaluating and experimenting is such valuable knowledge
+revealed. Only then will you know what important problems to solve.
+&lt;strong&gt;This is (also) far more important than you may at first
+realise&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, make sure you&#x27;re having fun. Writing code is often a very
+frustrating activity, but when you make something work, the elation at seeing
+something you&#x27;ve created solve a problem makes all the hours of frustration
+worth it.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 12:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Saying Thank You</title>
         <link>http://ntoll.org/article/saying-thank-you</link>
         <guid>http://ntoll.org/article/saying-thank-you</guid>
@@ -192,117 +286,6 @@ family at our 25th anniversary: 2nd August, 2022.)&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 02 Aug 2017 09:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Mu</title>
-        <link>http://ntoll.org/article/mu-pi</link>
-        <guid>http://ntoll.org/article/mu-pi</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/mu-pi&quot;&gt;Mu&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 3rd May 2017 (5:30pm)&lt;/p&gt;
-
-&lt;p&gt;Mu (&lt;a href=&quot;https://codewith.mu/&quot;&gt;codewith.mu&lt;/a&gt;) is a simple code editor
-for beginner programmers. In case you&#x27;re wondering, you pronounce it like
-&quot;moo&quot;, and it is named after the Greek character &quot;&amp;mu;&quot;, used to represent
-micro units of measurement in the decimal system.&lt;/p&gt;
-
-&lt;p&gt;I wrote the first version in December 2015 as a Sunday-afternoon &quot;hack&quot;. At
-the time I was volunteering effort for the BBC&#x27;s
-&lt;a href=&quot;http://microbit.org/&quot;&gt;micro:bit&lt;/a&gt; project - a computing device for
-kids that encourages them to learn how to code. I had already written a browser
-based editor for the project but, unfortunately, when I tested it on teachers,
-kids and developers it soon became apparent that it wasn&#x27;t a great experience.
-While the convenience of a browser-based editor was initially welcomed, the
-faffing about caused by the browser-imposed limitations of the editor meant it
-wasn&#x27;t a pleasant experience in the long run.&lt;/p&gt;
-
-&lt;p&gt;This problematic situation motivated me to put together the simplest yet
-most useful editor I could imagine. I wrote it so beginner programmers could 
-easily write MicroPython code for the micro:bit. Et voil&amp;agrave;, Mu was
-born.&lt;/p&gt;
-
-&lt;p&gt;I quickly formulated a &quot;Mu philosophy&quot; to help guide my development
-process:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;&lt;em&gt;Less is More&lt;/em&gt;: Mu has only the most essential
-    features, so users are not intimidated by a baffling interface.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Keep it Simple&lt;/em&gt;: It&#x27;s quick and easy to learn Mu -
-    complexity impedes a novice programmer&#x27;s first steps.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Path of Least Resistance&lt;/em&gt;: Whatever the task, there is
-    always only one obvious way to do it with Mu.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Have Fun&lt;/em&gt;: Learning should inspire fun - Mu helps
-    learners quickly create and test working code.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I had three goals:&lt;/p&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;An editor that clearly demonstrated the design philosophy outlined
-    above.&lt;/li&gt;
-    &lt;li&gt;An editor with a simple enough code base that an enthusiastic teenager
-    could learn from and contribute to the project.&lt;/li&gt;
-    &lt;li&gt;An editor that was well tested so we could be confident in the quality
-    and stability of its code, while giving us the confidence to make changes
-    as the project moved forward.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Finally, I used a wish-list enumerated by my buddy
-&lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne&lt;/a&gt; (who is the
-&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;Rasperry Pi&lt;/a&gt;&#x27;s Director of
-Education) as my feature guide.&lt;/p&gt;
-
-&lt;p&gt;Raspberry Pi is &lt;strong&gt;the most successful computing-in-education
-project in history&lt;/strong&gt; if you measure number of devices shipped. This
-success means Carrie Anne has had feedback from a huge number of teachers and,
-most importantly, beginner programmers concerning what it feels like to take
-those first steps in learning to write code. This feedback informed
-her &lt;a href=&quot;https://www.youtube.com/watch?v=_gU7sfTrz4c&quot;&gt;keynote
-address&lt;/a&gt; to 2015&#x27;s &lt;a href=&quot;https://europython.eu/&quot;&gt;EuroPython
-conference&lt;/a&gt; where she listed the sorts of things needed for a beginner&#x27;s
-code editor. This, in turn, inspired me in terms of prioritising and
-implementing features.&lt;/p&gt;
-
-&lt;p&gt;Then something funny happened. My goofy editor became popular.&lt;/p&gt;
-
-&lt;p&gt;It turns out that lots of people love learning with Mu. Its simplicity is
-often described as a key factor. The wider Python community have also taken
-an interest with many fellow Pythonists contributing improvements. It has taken
-on a life of its own with a friendly community of contributors and
-users. This makes me very happy.&lt;/p&gt;
-
-&lt;p&gt;The most requested improvement from our users is that Mu become a &quot;general&quot;
-editor rather than just targeting the micro:bit.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;m delighted to say this will happen very soon.&lt;/p&gt;
-
-&lt;p&gt;Thanks to the support of the Raspberry Pi Foundation I&#x27;ll be spending the
-next three months transitioning Mu into a &quot;generic&quot; beginner&#x27;s editor. I&#x27;ll be
-working closely with Carrie Anne and her colleagues to learn how best to help
-beginner programmers.&lt;/p&gt;
-
-&lt;p&gt;Mu will still work with the micro:bit, but it will also work with other
-boards too (such as those from the awesome people at
-&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;Adafruit&lt;/a&gt; and MicroPython&#x27;s original
-&lt;a href=&quot;https://micropython.org/&quot;&gt;PyBoard&lt;/a&gt;). Of course, it will act as an
-editor for &quot;regular&quot; Python code running on your Raspberry Pi, laptop or PC.
-I&#x27;ve even created a very simple visual debugger to help you watch and inspect
-your code as it runs.&lt;/p&gt;
-
-&lt;p&gt;This is very exciting and I&#x27;ll post regular updates since we aim to follow
-the mantra, &quot;release early, release often&quot;.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, we want &lt;strong&gt;you&lt;/strong&gt; to be involved.&lt;/p&gt;
-
-&lt;p&gt;How?&lt;/p&gt;
-
-&lt;p&gt;Try out a new version when we release it. Tell us about bugs. Can you think
-of a way to improve Mu? What&#x27;s the most useful thing you&#x27;d love Mu to do? Tell
-us about the niggles and gremlins you wish could be ironed out.&lt;/p&gt;
-
-&lt;p&gt;Put simply, Mu belongs to its community and we&#x27;d love you to join us to take
-part in shaping its future.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 May 2017 17:30:00 GMT</pubDate>
     </item>
     
 </channel>

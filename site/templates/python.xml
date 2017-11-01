@@ -11,6 +11,100 @@
     </image>
     
     <item>
+        <title>Advice for a Beginner Coder</title>
+        <link>http://ntoll.org/article/advice</link>
+        <guid>http://ntoll.org/article/advice</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/advice&quot;&gt;Advice for a Beginner Coder&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 1st November 2017 (12:30pm)&lt;/p&gt;
+
+&lt;p&gt;Last week was &lt;a href=&quot;http://2017.pyconuk.org/&quot;&gt;PyCon UK 2017&lt;/a&gt;. It was
+perhaps the best PyCon yet and, as usual, I met many old friends and made
+plenty of new ones. Many thanks to Peter Inglesby (chair) and the other
+volunteers who put so much work into making this such a wonderful space for
+bringing together a community.&lt;/p&gt;
+
+&lt;p&gt;A highlight of the conference for me was the number of young people who were
+&lt;strong&gt;not part of the young coders&#x27; day&lt;/strong&gt; but who were attending the
+conference as regular attendees (and accompanied by ever-supportive
+parents). I got chatting to one such combination of young person and
+accompanying parent and they asked for advice on how to develop as
+a beginner programmer in the Python community.&lt;/p&gt;
+
+&lt;p&gt;What follows is based upon my response:&lt;/p&gt;
+
+&lt;p&gt;What you get out of the Python community is directly related to how
+much you put in. The Python community has a huge number of interesting projects
+with which you could engage and learn from.&lt;/p&gt;
+
+&lt;p&gt;Put simply, look for a project that you find interesting and start to
+contribute.&lt;/p&gt;
+
+&lt;p&gt;Don&#x27;t dive in and submit thousands of lines of code - rather, do something
+small, easy and/or trivial. It&#x27;ll introduce you to the current maintainers of
+the project and demonstrate you&#x27;re competent while allowing you to get used to
+their modus operandi. Be polite and ask questions that demonstrate you&#x27;ve read
+their documentation.&lt;/p&gt;
+
+&lt;p&gt;Don&#x27;t be afraid to ask questions - good developers are
+always asking questions. Knowing how to ask and what the right questions are is
+an essential skill to develop. &lt;strong&gt;Asking questions is NOT a sign you
+don&#x27;t know what you&#x27;re doing&lt;/strong&gt;. To good developers it&#x27;s evidence
+that you&#x27;re exploring the problem and a signal that you&#x27;re engaged and
+interested.&lt;/p&gt;
+
+&lt;p&gt;To be clear, it takes time to get involved in a project and the quickest
+way is often to take small (but secure) steps. Your collaborators, if they&#x27;re
+any good, will provide advice about your contributions. This is invaluable
+mentorship and it also means you&#x27;ll get to know people in the community. When
+you go to conferences, you&#x27;ll have allies and colleagues!&lt;/p&gt;
+
+&lt;p&gt;Be careful to separate criticism of your code from criticism of you. The
+very best developers are humble, listen to advice and understand that code can
+always be improved. Sometimes it&#x27;s hard to hear that your code is not very
+good, but this also helps us to appreciate how to give good (constructive)
+advice.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, if you don&#x27;t get support, if people are rude or there&#x27;s a bad
+smell around the project, just leave. Life is too short to have to deal with
+idiots, and if you have no choice, find experienced, thoughtful and
+conscientious allies to help support you (you&#x27;ll find plenty of them in the
+Python community).&lt;/p&gt;
+
+&lt;p&gt;A good project will have a code of conduct that sets expectations of how
+collaborators are to interact. &lt;strong&gt;This is far more important than
+you may at first realise&lt;/strong&gt; and, happily, many in the Python community
+take this aspect of programming very seriously.&lt;/p&gt;
+
+&lt;p&gt;In a similar vein, one of the best activities to help you learn new things
+is to teach. Being able to explain things indicates you know the craft of
+programming at a deep level. For example, you appreciate what to leave in or
+how much to leave out of an explanation. You have clear enough mental models
+of the concepts of programming that you can accurately analogize and
+summarise. Furthermore, to explain yourself in simple and easy-to-understand
+language demonstrates your own clarity of thought. Perhaps most importantly,
+finding the opportunities to practice the skill of teaching is a sign of
+moral and professional value: you&#x27;re putting something back into the wider
+community and you have shown initiative.&lt;/p&gt;
+
+&lt;p&gt;Our community is at its best when people take the time to create a space
+where people, no matter their background or differences, can flourish
+together. You should endeavour to follow this example. Why? Because inclusion
+that celebrates difference and diversity exercises our capacity for empathy
+and understanding of others&#x27; lives, problems and interests. As a developer,
+how can you be sure what people need from your software? Only by listening to
+others, reflecting, evaluating and experimenting is such valuable knowledge
+revealed. Only then will you know what important problems to solve.
+&lt;strong&gt;This is (also) far more important than you may at first
+realise&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, make sure you&#x27;re having fun. Writing code is often a very
+frustrating activity, but when you make something work, the elation at seeing
+something you&#x27;ve created solve a problem makes all the hours of frustration
+worth it.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 12:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Saying Thank You</title>
         <link>http://ntoll.org/article/saying-thank-you</link>
         <guid>http://ntoll.org/article/saying-thank-you</guid>
@@ -268,122 +362,6 @@ us about the niggles and gremlins you wish could be ironed out.&lt;/p&gt;
 part in shaping its future.&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 May 2017 17:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>PyCon India</title>
-        <link>http://ntoll.org/article/india</link>
-        <guid>http://ntoll.org/article/india</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/india&quot;&gt;PyCon India&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Saturday 24th October 2015 (1:00AM)&lt;/p&gt;
-
-&lt;p&gt;It was an enormous honour to be invited as a keynote speaker at
-&lt;a href=&quot;https://in.pycon.org/&quot;&gt;PyCon India&lt;/a&gt;. It turned out to be one of
-my most enjoyable PyCons.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://python.org/&quot;&gt;Python&lt;/a&gt; programming community is famous
-for being a diverse and welcoming place. Apparently someone once said that
-they&#x27;d came to Python for the programming language, but stayed because of the
-community. That has been my experience too. Visiting PyCon India reinforced
-this outlook.&lt;/p&gt;
-
-&lt;p&gt;Python is free software in two ways: anyone is free to make use of it in
-any way they see fit and it is given away for free. To paraphrase, it is
-both free as in speech and free as in beer. Volunteering time, effort and
-expertise is at the core of the Python community and every PyCon is different
-since it reflects the volunteer community that organises it.&lt;/p&gt;
-
-&lt;p&gt;At around 1500 attendees PyCon India is the second largest PyCon in the
-world. The reason it is so big is because the organisers have managed to
-foster and grow a community of amazing volunteers to run the conference. This
-was brought home to me during my first evening in India: wanting to make some
-friends I turned up at the conference venue to volunteer in some way. I ended
-up stuffing 1500 swag bags (full of leaflets from the conference sponsors),
-in what can only be described as a nerdy form of &quot;keep-fit&quot;.&lt;/p&gt;
-
-&lt;p&gt;It works like this: volunteers
-run around in circles holding open bags while others stand in the middle
-throwing &quot;swag&quot; into them. At the end of each lap yet more volunteers are on
-hand to stack the bags ready for distribution to the attendees the next day.
-This process starts haphazardly, but people change roles and slot
-themselves in where there are bottlenecks in order to improve the efficiency
-of the &quot;bag stuffing algorithm&quot;. Other techniques to speed things up included
-shouting a lot, chanting and laughing at each other. This process is
-beautifully illustrated in the following video of a &quot;lap&quot; that I took on my
-mobile phone:&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/Ejr6iqqCdhc?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;By the end of the evening we were a well oiled machine.&lt;/p&gt;
-
-&lt;p&gt;Friday, the first full conference day, was interesting - I was still used
-to UK time so when my alarm went off at 6am (or around 1:30 am UK time) I
-decided to sleep in for &quot;just another 10 minutes&quot;. Four hours later I was
-woken by a phone call from reception. An Indian buddy had turned up at my
-hotel to look for me and give me a lift.&lt;/p&gt;
-
-&lt;p&gt;He&#x27;d come on a motorbike.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;d never been on a motorbike.&lt;/p&gt;
-
-&lt;p&gt;So, my first time on a motorbike was sitting on the back, hanging onto this
-dude&#x27;s back pack, no helmet, dust in my eyes, zipping through Bangalore&#x27;s
-morning rush-hour.&lt;/p&gt;
-
-&lt;p&gt;&quot;Is it safe?&quot; I asked.&lt;/p&gt;
-
-&lt;p&gt;&quot;Of course it is...&quot;, he replied. &quot;The traffic is so bad we never go faster than 15 mph anyway!&quot;&lt;/p&gt;
-
-&lt;p&gt;The trick appears to be not to pay attention to all the car horns, shouting
-and never to look over your shoulder at what could squish you.&lt;/p&gt;
-
-&lt;p&gt;I also observed that traffic lights in Bangalore are only for decorative
-purposes. I particularly enjoyed getting stuck at a junction and giving an
-ancient lady in a colourful sari sat on the back of an adjacent moped a
-big grin and having it returned (but without teeth).&lt;/p&gt;
-
-&lt;p&gt;The following video (taken from the relative safety of a taxi) doesn&#x27;t
-even begin to convey the chaos of the traffic in Bangalore. Can you spot the
-stray cow?&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/6KOLKBoPF9A?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Throughout the course of the conference I found everyone, without exception,
-to be very friendly and I was made to feel very welcome. Thank you to my new
-friends in India for your wonderful warm hospitality. I hope that if you ever
-make it to the UK we&#x27;ll be able to welcome you as well as you did me.&lt;/p&gt;
-
-&lt;p&gt;Sunday was the day of my keynote. I was addressing all 1500 delegates in
-the main hall and I&#x27;d chosen to focus on education as the topic of my
-presentation. I was actually really looking forward to giving the talk and
-had a lot of fun whilst giving it. The live demo went well, people laughed at
-my jokes, they had lots of interesting questions and it took me about an hour
-and a half to field all the comments I received in the corridor afterwards.
-In fact, one of the organisers told me that my keynote was a top trending item
-on Twitter in India. Wow!&lt;/p&gt;
-
-&lt;p&gt;You can see the whole thing in the video below.&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/Q3kXXtlviiM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As always, I love to get feedback (both good and bad). Please feel free to
-&lt;a href=&quot;/contact&quot;&gt;drop me a line&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Special mention should be made of the two main organisers, Vijay Kumar and
-Kracekumar Ramaraju, who put on an amazing event. I&#x27;d also like to publicly
-thank my friend Kushal Das and his family and colleagues for being my guides
-around Bangalore.&lt;/p&gt;
-
-&lt;p&gt;Will I go back to India? Absolutely! It&#x27;s an amazing place.&lt;/p&gt;
-
-&lt;p&gt;It was a privilege.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 24 Oct 2015 01:00:00 GMT</pubDate>
     </item>
     
 </channel>
