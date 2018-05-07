@@ -11,6 +11,548 @@
     </image>
     
     <item>
+        <title>Why Computers Work</title>
+        <link>http://ntoll.org/article/why-computers-work</link>
+        <guid>http://ntoll.org/article/why-computers-work</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/why-computers-work&quot;&gt;Why Computers Work&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Sunday, 17th December 2017 (9:30PM)&lt;/p&gt;
+
+&lt;p&gt;There are many explanations of computers on the internet. For example, my
+buddy &lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne Philbin&lt;/a&gt; has a
+series of videos introducing &lt;em&gt;how&lt;/em&gt; various aspects of computing work. Go
+watch them, they&#x27;re wonderful videos! Here&#x27;s a flavour of what you can
+expect.&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/tpIctyqH29Q?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I&#x27;m taking a very different approach in this blog post. Rather than
+describing &quot;how&quot;, I&#x27;ll explain &quot;why&quot; computers work.&lt;/p&gt;
+
+&lt;p&gt;What&#x27;s the difference?&lt;/p&gt;
+
+&lt;p&gt;Answers to &quot;how?&quot; questions tell us what method or steps make such-and-such
+a thing work or happen. This is the approach taken in most explanations of
+computers and so successfully demonstrated by Carrie Anne in her wonderful
+video series.&lt;/p&gt;
+
+&lt;p&gt;In contrast, the answers to &quot;why?&quot; questions explain what makes
+something possible, thus providing a broader context and the potential
+to explore something at a more fundamental level.&lt;/p&gt;
+
+&lt;p&gt;It&#x27;s the difference between a car mechanic who may understand &lt;em&gt;how&lt;/em&gt;
+an engine works (so they can fix broken engines), and a mechanical engineer who
+understands the physics and chemistry of &lt;em&gt;why&lt;/em&gt; engines work (so they can
+improve the design of engines). Of course, this is a simplistic metaphor and,
+in reality, experts understand both &quot;how&quot; and &quot;why&quot; aspects of their
+fields.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, just understanding how something works means your frame of
+reference is limited to &lt;em&gt;within the system&lt;/em&gt;, whereas if you know why
+something works you&#x27;re not limited to specific products, solutions or
+practices. Knowing why something is possible is an invitation to be
+creative, explore a problem area and exceed current solutions.&lt;/p&gt;
+
+&lt;p&gt;My aim is to address the inbalance of the large number of &quot;how&quot; explanations
+with a very simple exploration of &quot;why&quot; computers work.&lt;/p&gt;
+
+&lt;p&gt;Happily, the basics of why computing works are easy to understand. I&#x27;m going
+to give you enough information so you can delve into details should you wish to
+explore further.&lt;/p&gt;
+
+&lt;p&gt;Most importantly, be open minded. Explore, experiment and play. Let loose
+your imagination and don&#x27;t limit yourself to thinking in terms of how things
+currently are.&lt;/p&gt;
+
+&lt;p&gt;Our exploration starts with a card game...&lt;/p&gt;
+
+&lt;h2&gt;Following Rules&lt;/h2&gt;
+
+&lt;p&gt;Do you know how to play Snap?&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;A Pile of Cards&quot; src=&quot;/static/images/cards.jpg&quot; /&gt;
+&lt;figcaption&gt;The state of stacks of cards and following rules make playing Snap
+possible.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It&#x27;s the sort of game very young children learn to play. It uses a
+standard deck of cards and the aim is to win all the cards. Here&#x27;s how it
+works:&lt;/p&gt;
+
+&lt;p&gt;Players sit in a circle with one of them acting as dealer. The dealer
+shuffles the cards so they&#x27;re in a random order. The cards are dealt,
+face down, to each player until the dealer has none left. Before the game
+begins, each player should have a neat stack of face-down cards.&lt;/p&gt;
+
+&lt;p&gt;The player to the left of the dealer takes the first turn.&lt;/p&gt;
+
+&lt;p&gt;Players take a turn by moving the top card from their face-down stack onto
+the top of an adjacent stack of face-up cards so the moved card is also facing
+up. If the face-up stack doesn&#x27;t already exist a new stack is created. The
+player to the left always goes next.&lt;/p&gt;
+
+&lt;p&gt;If a player notices two face-up cards on different stacks have the same
+value (for example, two aces are visible) then they shout &quot;SNAP!&quot;. The first
+player who correctly shouts out wins all the cards in the matching stacks of
+cards. The matching stacks are added to the bottom of the winner&#x27;s face-down
+pile. Play continues to the left of the player who turned up the matching
+card.&lt;/p&gt;
+
+&lt;p&gt;If a player mistakenly shouts &quot;SNAP!&quot; at the wrong time they must pay a
+forfeit of one card from their face-down stack to each of the other players.
+These are added to the bottom of the other players&#x27; face-down stacks.&lt;/p&gt;
+
+&lt;p&gt;If two or more players shout &quot;SNAP!&quot; at the same time both of the matching
+stacks are placed in the middle and added to the &quot;Snap Pool&quot;. When &quot;SNAP!&quot; is
+next called correctly, the winning player wins both the matching stacks and the
+Snap Pool.&lt;/p&gt;
+
+&lt;p&gt;If a player runs out of face-down cards they flip over their face-up stack
+and play continues as before. If a player completely runs out of cards, they
+are out of the game.&lt;/p&gt;
+
+&lt;p&gt;Play continues until the winning player holds all the cards.&lt;/p&gt;
+
+&lt;p&gt;These rules describe how, given a certain state of affairs, such and
+such things must happen. States of affairs describe how things are
+in the world. For example, &quot;there are two piles of face-up cards that have
+cards of matching values on the top of each&quot;. When I say that such and such
+must happen, I mean clear and unambiguous instructions tell you how play
+proceeds given a certain state of affairs.&lt;/p&gt;
+
+&lt;p&gt;Playing the game of &quot;Snap&quot; means you modify your behaviour to follow the
+rules of the game. If everyone follows the rules then we can all play
+together.&lt;/p&gt;
+
+&lt;p&gt;We&#x27;re used to following rules. Obviously, we don&#x27;t explain card games in
+such a formal manner to very young children. It&#x27;s a fun game: they learn the
+entertainment of skillfully following the rules to bring about exciting
+situations.&lt;/p&gt;
+
+&lt;p&gt;The computing related rules and states of affairs I&#x27;m about to describe
+are not much more complicated than the game of Snap explained above. However
+what follows may include a few &quot;brain twists&quot; -- where I expect you to use your
+imagination to see things in a seemingly unusual or unintuitive way! It&#x27;s fun
+and can result in rather pleasant &quot;aha&quot; moments (that feeling you get when, if
+you were a cartoon character, a lightbulb would appear above your head).&lt;/p&gt;
+
+&lt;p&gt;I want you to remember the way it feels to follow the rules of a game like
+Snap when when you read what follows. Fundamentally, they&#x27;re no different:
+given a certain state of affairs you should do such and such a thing.&lt;/p&gt;
+
+&lt;p&gt;What follows is the story of how we turn our thoughts into programs that
+instruct computers what to do.&lt;/p&gt;
+
+&lt;h2&gt;Movement of Thought&lt;/h2&gt;
+
+&lt;p&gt;It&#x27;s possible to apply rules to thinking about things.&lt;/p&gt;
+
+&lt;p&gt;This is the study of Logic and applying these rules of thinking is called
+reasoning. Reasoning with such rules makes you rational -- others can follow
+the movements of thought that brought you to a certain conclusion. Furthermore,
+because there are rules of thought it&#x27;s possible to notice when an argument
+doesn&#x27;t make sense.&lt;/p&gt;
+
+&lt;p&gt;There are many types of logic but the one we&#x27;re going to examine is called
+propositional (or sentential) logic. If this sounds complicated or a little bit
+intimidating, remember that one of the fun things about working with computers
+is that you get to speak impressive sounding technobabble. &quot;Propositional&quot; (or
+&quot;sentential&quot;) logic is just a name that describes what it does. This type of
+logic concerns how sentences are formed by combining smaller propositions
+called premises.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s a simple example of propositional logic:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If it is sunny and I&#x27;m wearing a coat then I will get hot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I want to draw your attention to some important aspects of this sentence
+that may not, at first, appear obvious:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;It contains two statements called premises (&quot;It is sunny&quot; and &quot;I&#x27;m
+    wearing a coat&quot;). Premises make assertions about states of affairs that
+    will either be true or false.&lt;/li&gt;
+    &lt;li&gt;It ends with a conclusion (&quot;I will get hot&quot;). A conclusion asserts
+    an expected state of affairs that&#x27;ll also be true or false.&lt;/li&gt;
+    &lt;li&gt;The sentence is in the form of a conditional (&quot;if [premises] then
+    [conclusion]&quot;). A conditional means that if the premises are true then
+    the conclusion &lt;em&gt;must also be true&lt;/em&gt;.&lt;/li&gt;
+    &lt;li&gt;The premises are related to each other by a logical operator called
+    conjunction (&quot;and&quot;). If the related premises are evaluated together,
+    &lt;em&gt;collectively they are true only if all of them are true&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Propositional logic reveals the structure of a sentence so we can understand
+how the argument works. Playing by the rules of logic forces everyone to reach
+the same inevitable conclusion: if we accept that the premises are true
+(it is sunny and that I&#x27;m wearing a coat) propositional logic dictates the
+conclusion must be true (that I will get hot).&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;A weather forecast&quot; src=&quot;/static/images/weather.png&quot; /&gt;
+&lt;figcaption&gt;Is it sunny? Premises make assertions about states of affairs that
+may only be true or false.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here&#x27;s the brain twist: propositional logic doesn&#x27;t care about the meaning
+of the overall sentence nor its component premises.&lt;/p&gt;
+
+&lt;p&gt;I could rewrite the sentence as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+If A and B then C
+&lt;/blockquote&gt;
+
+&lt;p&gt;Propositional logic only cares about truth and how propositions fit
+together.&lt;/p&gt;
+
+&lt;p&gt;It doesn&#x27;t matter what A, B or C stand for nor what they may mean -- from
+the perspective of propositional logic all that matters is there are two
+conjugated premises (A and B) and a conclusion (C) expressed in a conditional
+(if ... then ...). If one or both of the premises is false, then the
+conclusion must also be false. Why? Because the logical rules pertaining to
+conditionals and conjunctions make it that way! The brain twist is divorcing
+yourself from meaning -- just concern yourself with the structure of the
+argument and following the rules.&lt;/p&gt;
+
+&lt;p&gt;In exactly the same way the rules of Snap explain what must happen given a
+certain state of affairs, so the rules of propositional logic do the same with
+logical arguments. Another way to look at it is to remember that the rules of
+Snap don&#x27;t care what the specific values of cards are, just that such values
+may match. Similarly, propositional logic doesn&#x27;t care what the specific
+meanings of the premises or conclusion may be, just that there are such
+propositions connected in a structure that can be evaluated using rules.&lt;/p&gt;
+
+&lt;p&gt;The simplest way to express the rules that govern logical operations for
+connecting propositions is with a truth table. Here&#x27;s how &quot;&lt;code&gt;and&lt;/code&gt;&quot;
+(conjugation) is defined, can you see how it works?&lt;/p&gt;
+
+&lt;table summary=&quot;Conjunction outcomes&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;A&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;B&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;A and B&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;caption&gt;The definition of &quot;and&quot; (conjunction) as a truth table.&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The first two columns represent propositions labelled &lt;code&gt;A&lt;/code&gt; and
+&lt;code&gt;B&lt;/code&gt;. The third column represents the outcome of the
+&quot;&lt;code&gt;and&lt;/code&gt;&quot; operation. Each possible combination of the truth values of
+&lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; is enumerated as a row, and the value for
+each row in the third &quot;&lt;code&gt;A and B&lt;/code&gt;&quot; column defines what the outcome
+must be. It&#x27;s a tabular way to express the rules of propositional logic. If you
+had any doubt how &quot;&lt;code&gt;and&lt;/code&gt;&quot; worked, you&#x27;d find the definitive answer
+in this truth table.&lt;/p&gt;
+
+&lt;p&gt;For example, take the first row: if propositions &lt;code&gt;A&lt;/code&gt; and
+&lt;code&gt;B&lt;/code&gt; are both false (the first two columns), if they&#x27;re evaluated as
+part of an &quot;&lt;code&gt;and&lt;/code&gt;&quot; conjunction (the third column) the rule is that
+the result &lt;em&gt;must be false&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s the truth table that defines the rule for another logical operation
+called &quot;&lt;code&gt;or&lt;/code&gt;&quot; (disjunction):&lt;/p&gt;
+
+&lt;table summary=&quot;Disjunction outcomes&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;A&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;B&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;A or B&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;caption&gt;The definition of &quot;or&quot; (disjunction) as a truth table.&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let&#x27;s pretend that &lt;code&gt;A&lt;/code&gt; is false but &lt;code&gt;B&lt;/code&gt; is true. How
+would you evaluate truth value of &quot;&lt;code&gt;A or B&lt;/code&gt;&quot;? Is it true or
+false?&lt;/p&gt;
+
+&lt;p&gt;The answer is that &quot;&lt;code&gt;A or B&lt;/code&gt;&quot; is true. Why? Because the second
+line tells us so: the &lt;code&gt;A&lt;/code&gt; column is false, the &lt;code&gt;B&lt;/code&gt;
+column is true so the result, expressed in the third column, is true.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s one final truth table for you to ponder. It&#x27;s a bit different to the
+other two since it only works on one premise.&lt;/p&gt;
+
+&lt;table summary=&quot;Negation outcomes&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;A&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;not A&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;caption&gt;The definition of &quot;not&quot; (negation) as a truth table.&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;False&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It&#x27;s easy to see what the &quot;&lt;code&gt;not&lt;/code&gt;&quot; operation does to a
+proposition: it flips its truth value so false becomes true and true becomes
+false.&lt;/p&gt;
+
+&lt;p&gt;While these logical operations have familiar names (&quot;and&quot;, &quot;or&quot; and &quot;not&quot;)
+that &lt;em&gt;appear to relate to how they work&lt;/em&gt;, it is the truth table &lt;em&gt;and
+only the truth table&lt;/em&gt; that defines how they behave not any similarity to
+how we may use such words in everyday English.&lt;/p&gt;
+
+&lt;p&gt;Logical puzzles become fun when you combine logical operations to build more
+complicated structures. Take for example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+(A and B) or (C or not D)
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&#x27;ve put parenthesis around propositions so you can see how they relate to
+the logical operators. If we pretend all the propositions represented by
+letters are false, what is the overall truth value?&lt;/p&gt;
+
+&lt;p&gt;Before you answer, here&#x27;s a hint to help work it out: there are four
+logical operations in the sentence -- an &quot;&lt;code&gt;and&lt;/code&gt;&quot;, &quot;&lt;code&gt;not&lt;/code&gt;&quot;
+and two &quot;&lt;code&gt;or&lt;/code&gt;&quot;s. The &quot;&lt;code&gt;and&lt;/code&gt;&quot; operates on &lt;code&gt;A&lt;/code&gt;
+and &lt;code&gt;B&lt;/code&gt; whereas the &quot;&lt;code&gt;not&lt;/code&gt;&quot; operates on &lt;code&gt;D&lt;/code&gt;.
+The two &quot;&lt;code&gt;or&lt;/code&gt;&quot;s are interesting: one of them operates on
+&lt;code&gt;C&lt;/code&gt; and the result of &lt;code&gt;not D&lt;/code&gt; (notice how the
+&quot;&lt;code&gt;not&lt;/code&gt;&quot; needs to be evaluated before the enclosing &quot;&lt;code&gt;or&lt;/code&gt;&quot;
+can be worked out). The other &quot;&lt;code&gt;or&lt;/code&gt;&quot; operates on the result of the
+&quot;&lt;code&gt;and&lt;/code&gt;&quot; operation and the previously mentioned
+&quot;&lt;code&gt;or&lt;/code&gt;&quot;.&lt;/p&gt;
+
+&lt;p&gt;Given the state of affairs where all the proposition letters represent
+false, how do we use the rules of propositional logic to evaluate the overall
+truth of the sentence?&lt;/p&gt;
+
+&lt;p&gt;We play the logical &quot;game&quot; in the same way we would with Snap: we just
+follow the rules. Here&#x27;s how:&lt;/p&gt;
+
+&lt;p&gt;Start by evaluating the operators within the parenthesis. If we replace the
+propositions &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; with their truth values
+(remember, in this case, all the propositions are false), we get:&lt;/p&gt;
+
+&lt;blockquote&gt;
+(false and false) or (C or not D)
+&lt;/blockquote&gt;
+
+&lt;p&gt;Given the truth table described earlier, the first &quot;&lt;code&gt;and&lt;/code&gt;&quot;
+operation evaluates to false because both the propositions are false. Here&#x27;s
+how the sentence looks as a result:&lt;/p&gt;
+
+&lt;blockquote&gt;
+false or (C or not D)
+&lt;/blockquote&gt;
+
+&lt;p&gt;As I mentioned previously, to evaluate the &quot;&lt;code&gt;or&lt;/code&gt;&quot; in the
+remaining parenthesis we should first evaluate the &quot;&lt;code&gt;not&lt;/code&gt;&quot; operator.
+If &lt;code&gt;D&lt;/code&gt; is false then the truth table for &quot;&lt;code&gt;not&lt;/code&gt;&quot; tells us
+that &quot;&lt;code&gt;not D&lt;/code&gt;&quot; must evaluate to true. Since &lt;code&gt;C&lt;/code&gt; is false,
+the sentence looks like this when &lt;code&gt;C&lt;/code&gt; and &lt;code&gt;not D&lt;/code&gt; are
+replaced by their truth values:&lt;/p&gt;
+
+&lt;blockquote&gt;
+false or (false or true)
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let&#x27;s evaluate the &quot;&lt;code&gt;or&lt;/code&gt;&quot; in the parenthesis. The truth table for
+&quot;&lt;code&gt;or&lt;/code&gt;&quot; tells me that if one of the propositions is
+true then the &quot;&lt;code&gt;or&lt;/code&gt;&quot; operation must evaluate to true, resulting
+in:&lt;/p&gt;
+
+&lt;blockquote&gt;
+false or true
+&lt;/blockquote&gt;
+
+&lt;p&gt;Re-using this rule again to evaluate the final &quot;&lt;code&gt;or&lt;/code&gt;&quot; operator
+gives the result:&lt;/p&gt;
+
+&lt;blockquote&gt;
+true
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;em&gt;only way&lt;/em&gt; to solve such logical puzzles is by following the
+inevitable steps dictated by the rules. If Logic provides an inevitable, almost
+mechanical framework for thinking about things (and propositional logic is only
+one type of logic we may use for this purpose) then we should be able to build
+machines to work with such seemingly mechanical logical rules.&lt;/p&gt;
+
+&lt;p&gt;It turns out that we can and that we call such machines computers!&lt;/p&gt;
+
+&lt;h2&gt;Representation&lt;/h2&gt;
+
+&lt;p&gt;We often pretend one thing represents something else.&lt;/p&gt;
+
+&lt;p&gt;For example, in the UK we know where the Queen is because the
+building, car, boat or aircraft containing the Queen always flies the royal
+standard. Put another way, the presence of the royal standard represents the
+presence of the Queen. This isn&#x27;t a scientific fact -- it&#x27;s not like the Queen
+is also a mysterious force of nature who manipulates flags and flag poles.
+Rather, we collectively understand the royal standard represents the Queen&#x27;s
+presence and somebody, somewhere has the job to make sure flags are correctly
+aligned with what she&#x27;s up to.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;The Royal Standard&quot; src=&quot;/static/images/royal_standard.png&quot; /&gt;
+&lt;figcaption&gt;The Royal Standard for the kingdoms of England, Wales and Northern
+Ireland (Scotland has its own variation).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I imagine this sounds like a lot of trouble to take over a flag, especially
+when you consider the complicated and extensive travel plans of the Queen.&lt;/p&gt;
+
+&lt;p&gt;Instead, imagine Her Majesty insisted on a radical modernisation. Why not
+use electronics to show the Queen&#x27;s presence at the touch of a button? Perhaps
+there could be a light to represent her status: if it were on, she was
+present.&lt;/p&gt;
+
+&lt;p&gt;Such a device could be built using the simple circuit diagram shown
+below:&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;A simple circuit&quot; src=&quot;/static/images/simple_circuit.png&quot; /&gt;
+&lt;figcaption&gt;A simple circuit, fit for a Queen.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The diagram is easy to read. At the top is the symbol representing a battery
+that supplies the electrical power for the components. Notice that it has a &quot;+&quot;
+sign to designate its positive end. Lines form a rectangle to join the battery
+to the other two components at the bottom. The circle containing an &quot;X&quot;
+represents a bulb and the gap created by the line veering off at an angle
+represents a switch.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;Pictures of components&quot; src=&quot;/static/images/components.png&quot; /&gt;
+&lt;figcaption&gt;The components represented by the circuit diagram: a battery, a
+bulb and a switch that can either be on or off.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The switch can be in two states: on (creating a circuit so electrical
+current moves through the components, thus lighting the bulb) or off (where the
+circuit is broken, stopping the electrical current and switching off the
+bulb).&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s a royal brain twist for you: can you think of something else that 
+deals with only two possible states?&lt;/p&gt;
+
+&lt;p&gt;If you thought, &quot;propositional logic!&quot; then you deserve a knighthood.&lt;/p&gt;
+
+&lt;p&gt;Why not use the on and off states of the circuit (as controlled by the
+switch) to represent true and false, respectively? When the tourist walking by
+Buckingham Palace wonders about the truth of the premise, &quot;the Queen is home&quot;
+they can check for the answer by looking at the bulb.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s another royal brain twist: it&#x27;s possible to make simple circuits that
+mimic logical operations (&quot;and&quot;, &quot;or&quot;, &quot;not&quot; and so on).&lt;/p&gt;
+
+&lt;p&gt;The Queen has a husband -- the Duke of Edinburgh. Given the wonders of
+modern technology it&#x27;s possible to light the bulb if both the Queen and her
+husband are present or if only one of them is present. The bulb could
+show:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;The Queen is present &lt;em&gt;and&lt;/em&gt; the Duke of Edinburgh is
+    present;&lt;/li&gt;
+    &lt;li&gt;The Queen is present &lt;em&gt;or&lt;/em&gt; the Duke of Edinburgh is present.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since you were paying attention to propositional logic you&#x27;ll know that
+the two sentences are the same as: &quot;&lt;code&gt;A and B&lt;/code&gt;&quot; and
+&quot;&lt;code&gt;A or B&lt;/code&gt;&quot;.&lt;/p&gt;
+
+&lt;p&gt;Here&#x27;s the diagram for the &quot;&lt;code&gt;and&lt;/code&gt;&quot; circuit:&lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;A simple AND circuit&quot; src=&quot;/static/images/and_circuit.png&quot; /&gt;
+&lt;figcaption&gt;A simple AND circuit. Q = Queen, E = Duke of
+Edinburgh.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are two switches labelled &quot;Q&quot; (for Queen) and &quot;E&quot; (for Duke of
+Edinburgh). &lt;/p&gt;
+
+&lt;figure&gt;&lt;img alt=&quot;A simple OR circuit&quot; src=&quot;/static/images/or_circuit.png&quot; /&gt;
+&lt;figcaption&gt;A simple OR circuit. Q = Queen, E = Duke of Edinburgh.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;h1&gt;Electrical Circuits&lt;/h1&gt;
+
+
+&lt;h1&gt;Transistors&lt;/h1&gt;
+
+
+&lt;h1&gt;Chips&lt;/h1&gt;
+
+
+&lt;h1&gt;Crank the Handle&lt;/h1&gt;
+
+
+&lt;h1&gt;Instructions&lt;/h1&gt;
+
+
+&lt;h1&gt;Assembler&lt;/h1&gt;
+
+
+&lt;h1&gt;Code&lt;/h1&gt;
+
+
+&lt;h1&gt;Python&lt;/h1&gt;
+
+
+</description>
+        <pubDate>Sun, 17 Dec 2017 21:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>(Anti)Social Media</title>
         <link>http://ntoll.org/article/antisocial-media</link>
         <guid>http://ntoll.org/article/antisocial-media</guid>
@@ -202,155 +744,6 @@ something you&#x27;ve created solve a problem makes all the hours of frustration
 worth it.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Nov 2017 12:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Saying Thank You</title>
-        <link>http://ntoll.org/article/saying-thank-you</link>
-        <guid>http://ntoll.org/article/saying-thank-you</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/saying-thank-you&quot;&gt;Saying Thank You&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday 11th September 2017 (9:00am)&lt;/p&gt;
-
-&lt;p&gt;This year PyCon UK will give the inaugural John Pinner awards for
-community service. For those of you who don&#x27;t know, here&#x27;s some context about
-John, the awards and some encouragement for you to nominate potential
-recipients.&lt;/p&gt;
-
-&lt;p&gt;I attended the very first PyCon UK back in 2007 - I&#x27;ve circled myself in the
-photo below (taken by my buddy &lt;a href=&quot;https://twitter.com/tartley&quot;&gt;Jonathan
-Hartley&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/pyconuk2007.jpg&quot; alt=&quot;The very first PyCon UK&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;I was a C# developer in a large investment bank in London investigating
-&lt;a href=&quot;http://ironpython.net/&quot;&gt;IronPython&lt;/a&gt; (the version of Python on
-Microsoft&#x27;s .NET platform). While I was an experienced programmer, I knew
-nothing of Python nor did I know anyone in the Python community. Being of a shy
-disposition (yes, honestly!) it was with some trepidation that I turned up to
-the Birmingham Conservatoire with around 200 other people on the first day. We
-were ushered into the hall and a bearded gentleman introduced himself as &quot;John
-Pinner, chair of the organising committee&quot;.&lt;/p&gt;
-
-&lt;p&gt;&quot;I am a Pythonista!&quot;, is how he proudly opened the conference.&lt;/p&gt;
-
-&lt;p&gt;He explained how Python was a language created by a community of volunteers,
-that many such volunteers lived in the UK, how some of these volunteers decided
-there should be a conference for this community, and here we all are, so say
-&quot;hello&quot; to each other, feel welcome and have fun.&lt;/p&gt;
-
-&lt;p&gt;It was clear that this was not like any programming conference I&#x27;d ever
-attended!&lt;/p&gt;
-
-&lt;p&gt;The first day contained a free workshop for beginner Python programmers.
-This sounded right up my street and so I turned up with about 10 other people.
-Into the room strolled John wearing a Cheshire cat grin. He was carrying a
-large cardboard box containing ring-binders full of paper. Everyone was given a
-binder to keep and therein was a step-by-step course for learning Python,
-written by, none other than, John.&lt;/p&gt;
-
-&lt;p&gt;&quot;We&#x27;ll start at the beginning&quot;, he said, &quot;...ask questions and let&#x27;s see how
-far we get.&quot;&lt;/p&gt;
-
-&lt;p&gt;Before letting us loose he gave us all one bit of advice about Python that
-still holds true today and which I use myself with any Python beginners: use
-the REPL with the &lt;code&gt;help&lt;/code&gt; and &lt;code&gt;dir&lt;/code&gt; functions to explore
-the language, so don&#x27;t be afraid to poke around.&lt;/p&gt;
-
-&lt;p&gt;Over the course of the next two days it became clear that John was a
-Pythonic force-of-nature who took part in the conference by training beginners
-(like me), chairing sessions, giving a talk, solving problems at the help desk
-and even making cups of tea in the breaks. This was in addition to the onerous
-task of founding and organising the conference. Most significantly all this
-work was voluntary. He inspired a group of people to create a space for our
-community to come together. As John was to say at the opening of 
-&lt;a href=&quot;https://www.theguardian.com/info/developer-blog/2013/oct/03/teachers-students-pyconuk&quot;&gt;PyCon UK 2013&lt;/a&gt;
-(channelling Abraham Lincoln), our conference was &quot;of the community, by the
-community and for the community&quot;.&lt;/p&gt;
-
-&lt;p&gt;John taught Python programming and its community focused values to me and
-many other people in the UK. This kind and gentle man understood the value of
-such an outlook and, through his own voluntary work as the founder and chair of
-PyCon UK, promoted it with great zeal.&lt;/p&gt;
-
-&lt;p&gt;John tragically lost his fight with cancer in 2015. He is a sorely missed
-mentor, leader and friend.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/john_pinner.jpg&quot; alt=&quot;John Pinner&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;This year is the 10th anniversary of that first PyCon UK and it seems
-appropriate that we should celebrate such a milestone by recognising those in
-our community who volunteer their time and effort to make it the welcoming,
-diverse and interesting place that it is (just as John did). That these awards
-are named after John is a wonderful way to sustain the memory of this
-remarkable man and his ethos of volunteering for the benefit of others.&lt;/p&gt;
-
-&lt;p&gt;Why do we need such community awards?&lt;/p&gt;
-
-&lt;p&gt;For those of you who have never organised a meetup, user group, dojo or
-conference, I want you to understand that it takes a huge amount of time and
-effort to make such things happen. Furthermore, there are many people in our
-community who give freely of their time for others through mentorship, teaching
-or simply answering the many questions that turn up on mailing lists, community
-forums and online chat channels. There are also many people who write
-documentation, create resources and author blog-based tutorials for our
-community. It means Python is a wonderfully accessible language that empowers
-people to grow, explore and take control of their digital world. I hope you
-agree with me when I say that this is &quot;a good thing&amp;trade;&quot;.&lt;/p&gt;
-
-&lt;p&gt;However, there is a cost.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, over the years I have seen many of my friends burn out after
-volunteering for our community. Bringing people together is often a thankless
-task involving a financial burden too; for example, who pays for the deposit on
-the room hire? Furthermore, some in our community treat those who volunteer
-with an air of entitlement that assumes such volunteers owe them service, some
-sort of on-call technical support or demand that they should change their
-voluntary efforts to address such-and-such a point of view. This is a toxic
-attitude that destroys our community - it makes it a demanding and unfriendly
-place to be. It&#x27;s demoralising and mentally draining for those on the receiving
-end and shows a complete lack of respect for others from the perpetrators of
-such a selfish attitude.&lt;/p&gt;
-
-&lt;p&gt;It is obvious that PyCon UK want to foster more of the former positive
-context and challenge those whose behaviour causes the latter hurtful
-environment.&lt;/p&gt;
-
-&lt;p&gt;The contrast to the negativity outlined above is where we, as a community,
-acknowledge, celebrate and thank people for their contributions. If you attend
-a user group, ask questions on a mailing list or follow various blogs because
-they post interesting content (and, let&#x27;s be honest here, that&#x27;s pretty much
-everyone in our community), why not say &quot;thank you&quot; to someone whose
-volunteering helped you in some way? It takes hardly any time or effort on your
-part but it makes those who contribute feel positive, proud and happy to be
-told that their efforts are appreciated. People who feel appreciated gain the
-momentum to continue to contribute and, in the context of a community of
-volunteers, &lt;em&gt;this is the antidote to burn out&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Some of us in the community are lucky to benefit already from our voluntary
-work: we&#x27;re invited to speak at conferences, get interviewed in community
-podcasts and are the recipients of wider community recognition. The John Pinner
-awards are not for such &quot;high profile&quot; members of our community. Why? Because
-there are many in our community who don&#x27;t get the recognition or thanks that
-they deserve. By instigating the John Pinner awards PyCon UK is giving
-&lt;em&gt;you&lt;/em&gt;, a member of the UK&#x27;s Python community, an opportunity to
-recognise and thank those oft-overlooked volunteers who make the UK&#x27;s Python
-community such a wonderful place to be.&lt;/p&gt;
-
-&lt;p&gt;If you can think of someone who deserves such recognition (and I certainly
-hope you do), then please visit
-&lt;a href=&quot;http://2017.pyconuk.org/pinner-award/&quot;&gt;the PyCon UK website&lt;/a&gt; and
-fill in the very simple form. It takes but a minute or two. You can nominate as
-many people as you can think of, and PyCon UK will make a fuss of the most
-nominated members of our community with public recognition, a free ticket to
-next year&#x27;s PyCon UK and a rather swanky medal.&lt;/p&gt;
-
-&lt;p&gt;So, what are you waiting for? Don&#x27;t just sit there, nominate someone! It is
-just a little bit of effort put into recognising a friend, colleague or
-collaborator who has helped our wonderful community in some way.&lt;/p&gt;
-
-&lt;p&gt;Thank you.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 11 Sep 2017 09:00:00 GMT</pubDate>
     </item>
     
 </channel>

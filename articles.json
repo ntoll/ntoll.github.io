@@ -1,6 +1,13 @@
 [
   {
     "date": "2017-12-17 21:30:00", 
+    "slug": "why-computers-work", 
+    "title": "Why Computers Work", 
+    "description": "Why (not how) computers work.",
+    "python": false 
+  },
+  {
+    "date": "2017-12-17 21:30:00", 
     "slug": "antisocial-media", 
     "title": "(Anti)Social Media", 
     "description": "Why I'm leaving Facebook.",
