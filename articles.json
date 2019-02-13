@@ -1,5 +1,12 @@
 [
   {
+    "date": "2019-02-13 16:00:00", 
+    "slug": "joyful-noise", 
+    "title": "Make a Joyful Noise", 
+    "description": "I have a new tuba. It's awesome.",
+    "python": false 
+  },
+  {
     "date": "2019-01-05 15:30:00", 
     "slug": "codegrades", 
     "title": "CodeGrades", 
