@@ -11,6 +11,180 @@
     </image>
     
     <item>
+        <title>PyWeek Retrospective</title>
+        <link>http://ntoll.org/article/pyweek</link>
+        <guid>http://ntoll.org/article/pyweek</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/pyweek&quot;&gt;PyWeek Retrospective&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Tuesday, 23rd April 2019 (4:00PM)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pyweek.org/&quot;&gt;PyWeek&lt;/a&gt; is a simple idea: write a game
+using the Python programming language,
+from scratch, on a given theme within a week. Take part as either an individual
+or a member of a team entry. At the end of the week is a peer review process
+where all entrants get to play, feedback and score each others&#x27; entries. At
+the end of the process an individual and team are crowned respective champions
+for their category of entry.&lt;/p&gt;
+
+&lt;p&gt;I have taken part in three different iterations of PyWeek. Each one has
+been extraordinarily good fun.&lt;/p&gt;
+
+&lt;p&gt;My first PyWeek was as an individual entry. The theme was &quot;two worlds&quot;, so
+I imagined a paper based battle between the worlds of blue biros and red biros
+(it felt like a good idea at the time...). I wanted to push the limits of my
+&lt;a href=&quot;https://codewith.mu/&quot;&gt;Mu code editor&lt;/a&gt; for beginner programmers and
+&lt;a href=&quot;https://pygame-zero.readthedocs.io/en/stable/&quot;&gt;PyGameZero&lt;/a&gt; (a
+gaming framework for beginner programmers integrated into Mu, developed by my
+buddy [and organiser of PyWeek] &lt;a href=&quot;&quot;http://mauveweb.co.uk/&gt;Dan Pope&lt;/a&gt;).
+The end result was a side-scrolling chase game called
+&lt;a href=&quot;https://github.com/ntoll/paperchase&quot;&gt;PaperChase&lt;/a&gt;. This video shows
+me testing the game with my (then) thirteen year old son... you&#x27;ll quickly
+get the idea:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/z_wGpJubVwI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My next entry was as part of a team. I&#x27;d been helping the author and
+journalist
+&lt;a href=&quot;https://andrewsmithauthor.com/&quot;&gt;Andrew Smith&lt;/a&gt; to
+&lt;a href=&quot;https://www.1843magazine.com/features/code-to-joy&quot;&gt;take his
+first steps into coding&lt;/a&gt;. Making a game seemed like a fun vehicle for
+further fun. The theme was &quot;flow&quot; and so we devised a simple Frogger clone
+where you had to avoid traffic flow whilst being chased by lumbering zombies.
+I did the code and Andrew did the sound and music. The end result
+(&lt;a href=&quot;https://github.com/ntoll/traffic_flowmageddon&quot;&gt;Trafficflowmageddon&lt;/a&gt;)
+is, I feel, quite cute... as zombie relate games go...&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/08mvNmhOVG4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And so we come to the most recent PyWeek.&lt;/p&gt;
+
+&lt;p&gt;Once again, Andrew and I teamed up. We chatted before hand about the sort
+of game we might want to make. Since we both have a love of the written word we
+decided to go with a text-based (rather than graphical) game -- the theory
+being it would play to our &quot;strengths&quot; with the written word.&lt;/p&gt;
+
+&lt;p&gt;In the end, this was (by far and away) my favourite PyWeek so far. Here&#x27;s
+why...&lt;/p&gt;
+
+&lt;p&gt;Graphical games show, text based games describe. Graphical games have an
+added cost of &quot;asset&quot; development (the graphical stuff shown on the screen)
+whereas text based games only need typed characters. Graphical games tend to
+focus on hand/eye skill to progress gameplay, whereas textual games necessarily
+put narrative, meaning and intent at the centre of their process.&lt;/p&gt;
+
+&lt;p&gt;Obviously, these are broad generalisations. But what I want to get to is
+the idea of a player engaging with a game imaginatively, emotionally and
+intellectually via the medium of words. If done properly, the depth of
+engagement is potentially greater. (I&#x27;m not saying one can&#x27;t be engaged in such
+a way with graphical games... rather that textual games are perhaps a medium
+which more easily lend themselves to this end.) Another way to think about this
+point is how it&#x27;s similar to the difference between a book and a film.&lt;/p&gt;
+
+&lt;p&gt;I want to be clear, I&#x27;m not saying one is better than the other, these are
+very different ways to tell a story or play a game, but I can&#x27;t help but feel a
+&quot;reader&quot; has to do more (and the reward is therefore greater) than a
+&quot;viewer&quot;.&lt;/p&gt;
+
+&lt;p&gt;I also think that text-based games are, in a sense, more egalitarian and
+accessible. Again, to continue the book/film similarity... while no mean feat,
+writing a book is within the realms of a single author armed with just a pen
+and paper, whereas making a film requires a cast of collaborators and
+specialists, equipment, facilities, locations and deep pockets. For similar
+reasons, the generation and manipulation of textual game content is far simpler
+and affordable than graphical.&lt;/p&gt;
+
+&lt;p&gt;So what sort of games are textual?&lt;/p&gt;
+
+&lt;p&gt;Easy! &lt;a href=&quot;https://en.wikipedia.org/wiki/Colossal_Cave_Adventure&quot;&gt;Adventure games&lt;/a&gt;!
+If you&#x27;re interested in finding out more about this style of text-based game
+you should watch &lt;a href=&quot;https://www.youtube.com/watch?v=o15itQ_EhRo&quot;&gt;GET LAMP&lt;/a&gt;
+a fascinating documentary the genre. Alternatively, if you want to try playing
+an example of such a game, I&#x27;ve embedded one of my favourites below (just click
+on it and type some commands). It&#x27;s based on
+Douglas Adams&#x27; &quot;Hitchhiker&#x27;s Guide to the Galaxy&quot; (the game itself was
+co-authored by Adams).&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot; style=&quot;border: 1px #ccc solid !important;&quot;&gt;
+&lt;iframe src=&quot;http://iplayif.com/?story=http%3A%2F%2Fwww.douglasadams.com%2Fcreations%2Fhhgg.z3&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here&#x27;s where it gets interesting.&lt;/p&gt;
+
+&lt;p&gt;Such games don&#x27;t have to be single player, solo efforts. While this is a fun
+way to play, things get far more interesting if you can play with others. This
+is not a new idea and I remember playing such games (commonly called
+&lt;a href=&quot;https://en.wikipedia.org/wiki/MUD&quot;&gt;MUD&lt;/a&gt; &quot;Multi-User Dungeons&quot;) via
+surreptitious use of my school&#x27;s single 1200 baud modem when the teacher wasn&#x27;t
+looking. These were often Tolkien-esque fantasy themed virtual worlds where
+players could wander about exploring, socialising and cooperating to achieve
+some in-game outcome (usually a quest of some sort). Later, when I was at
+university in the mid-1990s, I began using a type of multi-user textual world
+called a &lt;a href=&quot;https://en.wikipedia.org/wiki/MOO&quot;&gt;MOO&lt;/a&gt; (Multi-User Object
+Oriented). The wonderful thing about MOO based textual worlds is that they are
+programmable by users (I first got to grips with object-orientation via
+learning to program MOO). In a sense the MOO is both the game and a platform
+for creating games collaboratively. It was this sense of a textual virtual
+world that Andrew and I wanted to recreate.&lt;/p&gt;
+
+&lt;p&gt;Et voilà, &quot;TextSmith&quot; was born.&lt;/p&gt;
+
+&lt;p&gt;The theme for this most recent PyWeek was announced as &quot;six worlds&quot;. This
+fitted our idea for an interactive textual platform. It could contain six
+different literary worlds which players collaboratively create, inhabit and
+explore together. The six literary worlds we &quot;seeded&quot; in our game were:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Jane Austen: Recreate Netherfield, go to a ball, affect regency period
+    manners and etiquette.&lt;/li&gt;
+    &lt;li&gt;Poetic Passions: Everything is a poem, haiku or rhymes, speak in
+    riddles or chat in rhyming couplets.&lt;/li&gt;
+    &lt;li&gt;Hardboiled Detectives: It was about eleven o&#x27;clock in the morning, with
+    the sun not shining. The client asked, &quot;Well, will you take the case or
+    not, bud?&quot;&lt;/li&gt;
+    &lt;li&gt;J.R.R.Fantasy: Orcs! Elves! Wizards! Bleak locations! Ancient mystery!
+    Quests! (And impenetrable prose.)&lt;/li&gt;
+    &lt;li&gt;SciFi and Future Worlds: As the service droids efficiently cleaned up
+    the remains of the ship&#x27;s captain, I wondered how long it would take to
+    make planet-fall on the alien world of Zaonce.&lt;/li&gt;
+    &lt;li&gt;Parry Hotter: Inspired by everyone&#x27;s favourite boy wizard, but in such
+    a way that Warner Brothers don&#x27;t go after us for copyright infringement.
+    :-)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Programming the game was a lot of fun. I managed to build everything mostly
+from scratch (except for the web based front-end which uses the
+&lt;a href=&quot;https://gitlab.com/pgjones/quart&quot;&gt;Quart&lt;/a&gt; web microframework). Most
+importantly, most of it was unfinished, broken and clunkily implemented. The
+important thing is that it has &lt;em&gt;potential&lt;/em&gt;. Below is a screenshot of
+an early version of the game:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;img src=&quot;/static/images/textsmith.png&quot; alt=&quot;The TextSmith client.&quot;/&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Happily, despite the unfinished and rather shonky nature of the end result,
+we placed 4th in the team category..! Our highest result..! The
+&lt;a href=&quot;https://pyweek.org/e/CodeToJoy/ratings/&quot;&gt;feedback&lt;/a&gt;
+from fellow PyWeekers was encouraging too and, as a result, I&#x27;ve decided to
+continue to develop TextSmith. In the immediate term this will involve plugging
+in the almost-finished scripting language I created and knock off some of the
+hard edges. More importantly, once this aspect of the &quot;platform&quot; settles down,
+I&#x27;m looking forward to creating and exploring interactive literary worlds.&lt;/p&gt;
+
+&lt;p&gt;Finally, programming, creating and playing with TextSmith has been a very
+rich seam in terms of both technical and playful contexts. I&#x27;ve had lots of
+fun thinking about the architecture and implementation of such a platform
+while also doing a philosophical deep-dive into what on earth is going on when
+&quot;players&quot; connect to, create within and interact with such a platform.&lt;/p&gt;
+
+&lt;p&gt;Who knows where this may lead..?&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Apr 2019 16:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Make a Joyful Noise</title>
         <link>http://ntoll.org/article/joyful-noise</link>
         <guid>http://ntoll.org/article/joyful-noise</guid>
@@ -287,142 +461,6 @@ practice the skills needed to be effective and inspiring mentors.&lt;/p&gt;
 &lt;p&gt;Happy new year.&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Jan 2019 15:30:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Compassion.py</title>
-        <link>http://ntoll.org/article/compassion</link>
-        <guid>http://ntoll.org/article/compassion</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/compassion&quot;&gt;Compassion.py&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday, 22nd October 2018 (1:00PM)&lt;/p&gt;
-
-&lt;p&gt;I write from a place of love and respect for the UK Python programming community.
-Some of what follows may make painful reading (sorry). But I want to be clear:
-if you misconstrue my words as aggressive, nasty or hurtful, then you have
-completely misunderstood my intent. I will never knowingly be a source of
-vindictive pain.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;m going to shine a light on the (usually hidden) problems I have encountered
-in the UK Python community over the ten years that I&#x27;ve been volunteering.&lt;/p&gt;
-
-&lt;p&gt;It&#x27;s hard to do this without appearing as if mud slinging or trying to diminish
-the considerable public-facing achievements of the UK Python community in doing
-genuinely wonderful things. I am anxious to avoid a situation that undermines
-all the good stuff.&lt;/p&gt;
-
-&lt;p&gt;But only by highlighting and acknowledging such hidden problems can action be
-taken to address them. I hope you bear with me as I try to find the words to
-explain things in a constructive, non-confrontational yet honest way.&lt;/p&gt;
-
-&lt;p&gt;The problems of which I speak are many in number and range from the
-institutional (a woman of limited means put into the humiliating position of
-having to beg for financial support), and petty (describing the John Pinner
-awards as &quot;just a popularity contest&quot;) to plagiarism (members of
-the community claiming the work and intellectual property of others as their
-own) and an exercise of power and control for organisational gain (a sponsor
-taking steps to exclude others from fully participating in a community event
--- they threatened to pull out if they didn&#x27;t get their way). Sadly, I have a
-list as long as my arm full of such things.&lt;/p&gt;
-
-&lt;p&gt;Above and beyond these problems are personal attacks, slights and snark aimed
-directly at me (more on this later). Having said that, I want you to know that
-I bear no ill-will nor grudges.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;m necessarily vague about the details: I don&#x27;t believe finger pointing or
-blame is a useful or constructive way forward. Far better to honestly and
-constructively highlight such problems in the hope that they are acknowledged
-and can be avoided in the future.&lt;/p&gt;
-
-&lt;p&gt;If you&#x27;re thinking, &quot;that&#x27;s not the UK Python community I know&quot;, then I am
-happy for you. You know the joyous, supportive and friendly place that
-welcomed and sustained me as a new Python programmer in 2007. I wish you good
-fortune and hope you cherish, advance and grow this aspect of the community.&lt;/p&gt;
-
-&lt;p&gt;However, such problems are themselves problematic because they are so often
-hidden. Furthermore, I&#x27;ve observed that those involved often don&#x27;t appear to realise they are
-causing a problem. Upon reflection, I believe such situations are caused by a
-lack of just one thing: compassion (an awareness of and sympathy for another&#x27;s
-feelings and suffering, mixed with a pro-active desire to help).&lt;/p&gt;
-
-&lt;p&gt;So my plea to members of the UK Python community is to show more compassion.&lt;/p&gt;
-
-&lt;p&gt;If you remain unconvinced of my plea, I want to explain what happens when we
-lack compassion.&lt;/p&gt;
-
-&lt;p&gt;Over the past three years I have grown despondent about the problems I have
-encountered in the UK&#x27;s Python community. This past year the
-feeling became unbearable, to the extent that I sought professional help to
-deal with mental health problems solely arising from my contact with the UK
-Python community.&lt;/p&gt;
-
-&lt;p&gt;Last weekend a straw broke the camel&#x27;s back and, after a considerable amount of
-thought and reflection, I finally decided to publicly reveal how I felt 
-&lt;a href=&quot;https://twitter.com/ntoll/status/1051134675064897538&quot;&gt;via&lt;/a&gt;
-&lt;a href=&quot;https://twitter.com/ntoll/status/1051195641727242241&quot;&gt;Twitter&lt;/a&gt;.
-I&#x27;d been sitting on a huge amount of pent up frustration and sadness,
-and there needed to be a controlled release. I came to the realisation that
-only by &quot;coming clean&quot; and honestly describing my feelings would I be able to
-heal, move on and allow my life to return to some normality.&lt;/p&gt;
-
-&lt;p&gt;To say the reaction has been &quot;interesting&quot; is an understatement.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;d like to start by thanking the many people who took the time to reach out
-with kind messages of support. You are the best of us, and the reason why the
-UK Python community is often an amazing place. Your compassion and
-thoughtfulness is an example to us all. Thank you.&lt;/p&gt;
-
-&lt;p&gt;However, I was reduced to tears of hurt by the initial reaction of one member
-of our community who went for the jugular (and it saddens me deeply that this
-reaction was &quot;liked&quot; by a number of other people in the UK Python community).
-I have been asked to justify my feelings to others (how dare I feel this way
-about the UK Python community) and I have had my words picked over in public
-leading to unwanted, unhelpful and upsetting comments.&lt;/p&gt;
-
-&lt;p&gt;These latter reactions inadvertently demonstrate why I&#x27;ve been feeling
-despondent. They show a complete lack of compassion and suppress hoped-for
-constructive dialogue or catharsis.&lt;/p&gt;
-
-&lt;p&gt;My despondency and poor mental health is directly linked to encountering and
-dealing with an excessive number of such problems: a sort of death by a
-thousand paper cuts.&lt;/p&gt;
-
-&lt;p&gt;&quot;But why didn&#x27;t you reach out for help?&quot; you may ask.&lt;/p&gt;
-
-&lt;p&gt;I did.&lt;/p&gt;
-
-&lt;p&gt;I was rebuffed when I tried to find support from several individuals in the UK
-Python community. This led me to a downward spiral of frustration, self doubt
-and sadness: &quot;What have I done to deserve this? Am I such an obnoxious person
-that people would refrain from showing support? Why am I not able to speak of
-my pain?&quot;&lt;/p&gt;
-
-&lt;p&gt;I felt a complete failure, rejected and disempowered by the whole situation.&lt;/p&gt;
-
-&lt;p&gt;My only choice has been to step away from the UK Python community. It&#x27;s not the
-ending I would have wanted and it makes me feel extraordinarily sad.&lt;/p&gt;
-
-&lt;p&gt;But my tweets brought acknowledgement from others in the international Python
-community. I&#x27;m not on my own in encountering such problems or the associated
-feelings of despondency. This is definitely not only a UK Python issue.
-My far flung friends highlighted patterns, features and common ground which,
-in turn, helped me realise, &quot;I am not the only one&quot;.&lt;/p&gt;
-
-&lt;p&gt;Personally, by speaking of these things I feel I have turned a corner and have
-felt a great sense of release, although I still carry a huge amount of sadness
-and pain about how things turned out. For what it&#x27;s worth, I hope people in the
-UK Python community never treat one of their own like this ever again.&lt;/p&gt;
-
-&lt;p&gt;What will I do next?&lt;/p&gt;
-
-&lt;p&gt;For me, this boils down to a positive assertion, through deeds and words, of
-humanity, honesty, compassion, patience, love and respect. What that entails
-depends on all sorts of complicated variables: who, what, where, when and how
-a situation is. Ironically for a conversation about a programming community,
-it&#x27;s not a case of following an algorithm -- I&#x27;ll have to exercise that
-unique and precious spark which means I&#x27;m not an unfeeling machine: my
-humanity.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 22 Oct 2018 13:00:00 GMT</pubDate>
     </item>
     
 </channel>
