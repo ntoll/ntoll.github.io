@@ -48,7 +48,7 @@ journalist
 &lt;a href=&quot;https://andrewsmithauthor.com/&quot;&gt;Andrew Smith&lt;/a&gt; to
 &lt;a href=&quot;https://www.1843magazine.com/features/code-to-joy&quot;&gt;take his
 first steps into coding&lt;/a&gt;. Making a game seemed like a fun vehicle for
-further fun. The theme was &quot;flow&quot; and so we devised a simple Frogger clone
+further learning. The theme was &quot;flow&quot; and so we devised a simple Frogger clone
 where you had to avoid traffic flow whilst being chased by lumbering zombies.
 I did the code and Andrew did the sound and music. The end result
 (&lt;a href=&quot;https://github.com/ntoll/traffic_flowmageddon&quot;&gt;Trafficflowmageddon&lt;/a&gt;)
