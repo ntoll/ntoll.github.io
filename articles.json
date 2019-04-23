@@ -1,5 +1,12 @@
 [
   {
+    "date": "2019-04-23 16:00:00", 
+    "slug": "pyweek", 
+    "title": "PyWeek Retrospective", 
+    "description": "PyWeek is Fun!.",
+    "python": false 
+  },
+  {
     "date": "2019-02-13 16:00:00", 
     "slug": "joyful-noise", 
     "title": "Make a Joyful Noise", 
