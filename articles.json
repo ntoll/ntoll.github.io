@@ -1,5 +1,12 @@
 [
   {
+    "date": "2019-11-17 16:00:00", 
+    "slug": "playlist-love", 
+    "title": "A Classical Playlist of Love", 
+    "description": "A playlist of classical music on different aspects of love.",
+    "python": false 
+  },
+  {
     "date": "2019-04-23 16:00:00", 
     "slug": "pyweek", 
     "title": "PyWeek Retrospective", 
