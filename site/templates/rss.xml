@@ -95,9 +95,9 @@ skillfully captured in this piece or &quot;musical impressions&quot; losely asse
 follow the story of Romeo and Juliet. Listen out for the overwhelming &quot;love
 theme&quot; which has become a musical cliché for inevitably doomed lovers.&lt;/p&gt;
 
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Cxj8vSS2ELU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Cxj8vSS2ELU&quot;&gt;This video&lt;/a&gt; (which
+is one of several YouTube won&#x27;t allow me to embed), is of a performance by the
+London Symphony Orchestra at the Proms.&lt;/p&gt;
 
 &lt;h3&gt;Romantic Love&lt;/h3&gt;
 
@@ -111,6 +111,339 @@ theme&quot; which has become a musical cliché for inevitably doomed lovers.&lt;
 
 </description>
         <pubDate>Sun, 17 Nov 2019 16:00:00 GMT</pubDate>
+    </item>
+    
+    <item>
+        <title>Testing CircuitPython Modules</title>
+        <link>http://ntoll.org/article/circuitpython-tests</link>
+        <guid>http://ntoll.org/article/circuitpython-tests</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/circuitpython-tests&quot;&gt;Testing CircuitPython Modules&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday, 25th November 2019 (1:30PM)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://micropython.org/&quot;&gt;MicroPython&lt;/a&gt;, a project by my
+buddy &lt;a href=&quot;http://dpgeorge.net/&quot;&gt;Damien George&lt;/a&gt;, is a
+complete reimplementation of the Python programming language for
+microcontrollers and embedded systems. Put simply, it&#x27;s Python for extremely
+small computers (and I once
+&lt;a href=&quot;http://shop.oreilly.com/product/0636920056515.do&quot;&gt;wrote a book about it&lt;/a&gt;).
+&lt;a href=&quot;https://circuitpython.org/&quot;&gt;CircuitPython&lt;/a&gt;, a friendly fork of
+MicroPython, is sponsored by the fantastic folks
+at &lt;a href=&quot;https://adafruit.com/&quot;&gt;Adafruit&lt;/a&gt;, a company who make playful and
+easy-to-use &quot;hackable&quot; technology while promoting a welcoming, friendly and
+diverse community of makers. They are led by legendary founder and electrical
+engineer extraordinaire, &lt;a href=&quot;http://www.ladyada.net/&quot;&gt;Limor &quot;ladyada&quot; Fried&lt;/a&gt;.
+CircuitPython is MicroPython for Adafruit&#x27;s line of boards and with a
+consistent API for accessing the numerous bits of cool hardware you can use
+with such devices.&lt;/p&gt;
+
+&lt;p&gt;I was privileged to recently complete a block of work for Adafruit: I&#x27;ve
+written a CircuitPython module called &lt;code&gt;adafruit_radio&lt;/code&gt; that makes it
+easy for
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth&quot;&gt;Bluetooth&lt;/a&gt; enabled
+Adafruit boards to communicate with each other. The API is
+a simplified version of the work myself and a number of other volunteers did on
+the
+&lt;a href=&quot;https://microbit-micropython.readthedocs.io/en/v1.0.1/radio.html&quot;&gt;equivalent functionality&lt;/a&gt;
+for the BBC micro:bit (&lt;a href=&quot;https://microbit-micropython.readthedocs.io/en/v1.0.1/tutorials/radio.html&quot;&gt;here&#x27;s a tutorial I wrote for the micro:bit
+radio&lt;/a&gt;, to make electronic &quot;fireflies&quot; blink at each other over
+Bluetooth).&lt;/p&gt;
+
+&lt;p&gt;In the new Adafruit module, sending a message is as simple as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+r.send(&quot;Hello&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Receiving requires a loop (to allow the device to keep checking for
+messages), but is equally as simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+
+while True:
+    message = r.receive()
+    if message:
+        # Do something useful with the message.
+        print(message)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;The best model for thinking about this module is that of kids&#x27;
+walkie-talkies. Each
+radio is tuned to a certain channel upon which it broadcasts and receives.
+If you send a message, anyone else listening in on that channel and within
+range will receive it. You&#x27;ll also receive messages broadcast on that
+channel from others within range. 
+This is an ideal network topology because it&#x27;s both familiar
+yet capable since other, more specialised, network topologies can be built on
+top of it. There is potential for users to grow from a simple &quot;walkie-talkie&quot;
+model of networking to something more sophisticated and of their own
+devising.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/walkie-talkie.jpg&quot; alt=&quot;Kids on walkie-talkies&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The channels in the module are numbered between 0-255 and can be set when
+creating a &lt;code&gt;Radio&lt;/code&gt; object (the default channel number is 42 in
+honour of
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Douglas_Adams&quot;&gt;Douglas Adams&lt;/a&gt;, who
+saw so much humane potential in new technology yet mischievously warned of the
+polluting effect of technology for technology&#x27;s sake via the inept
+work of the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Technology_in_The_Hitchhiker%27s_Guide_to_the_Galaxy#Sirius_Cybernetics_Corporation&quot;&gt;Sirius Cybernetics Corporation&lt;/a&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio(channel=123)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Alternatively, you can change channel at any time via the &lt;code&gt;Radio&lt;/code&gt;
+object&#x27;s &lt;code&gt;configure&lt;/code&gt; method (continuing the example above):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;r.configure(channel=7)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Finally, in addition to sending strings of characters it&#x27;s also possible to
+send and receive arbitrary bytes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+r.send_bytes(b&quot;Hello&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Receiving bytes gives you the full context of the message expressed as a
+Python tuple consisting of three values: the raw bytes, the RSSI reading (i.e.
+strength of the signal, from 0 [max] to -255 [min]), and a timestamp
+representing the number (and fraction of) seconds since the device powered up,
+as demonstrated in the following REPL based example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from adafruit_radio import Radio
+&amp;gt;&amp;gt;&amp;gt; r = Radio()
+&amp;gt;&amp;gt;&amp;gt; r.receive_full()
+(b&#x27;Hello&#x27;, -40, 3245.155408037)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;That&#x27;s it! You can find the code in &lt;a href=&quot;https://github.com/ntoll/Adafruit_CircuitPython_Radio&quot;&gt;this GitHub repository&lt;/a&gt;.
+Special mention and thanks must be made to Adafruit&#x27;s
+&lt;a href=&quot;http://tannewt.org/&quot;&gt;Scott Shawcroft&lt;/a&gt; and
+&lt;a href=&quot;https://danhalbert.org/&quot;&gt;Dan Halbert&lt;/a&gt; who
+wrote the Bluetooth API I used. Because of their
+work I was able to create my module with less than a hundred lines of Python
+(at time of writing). Thanks chaps!&lt;/p&gt;
+
+&lt;p&gt;Armed with this context, I&#x27;m going to explain why and how I created a
+comprehensive test suite for the &lt;code&gt;adafruit_radio&lt;/code&gt; module.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;d summarise my approach to testing as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Testing is fundamental for creating and maintaining well designed
+    software. My experience is that it tends to produce code that is both
+    simple and easy to understand because nobody wants to write complicated
+    tests to exercise equally complicated code. The process of exercising code
+    through tests forces a developer to think carefully about how their code
+    is written while having the added benefit of demonstrating it works as
+    expected. Simplicity and ease of understanding are
+    desirable properties because such code is easier to read, correct and
+    maintain and also indicates the author&#x27;s own clarity of thought (a good
+    sign). I also believe it helpful and friendly to write code that&#x27;s easy
+    for others to read and understand (I often imagine my code will be read by
+    an intelligent beginner coder, because it forces me to explain and address
+    my own assumptions about my code).&lt;/li&gt;
+
+    &lt;li&gt;I personally don&#x27;t practice strict test-driven development, where one
+    writes tests before writing the implementation. I prefer to explore,
+    improvise, extemporise and play at first. I often try various different
+    approaches to the task in hand and regularly re-draft. I&#x27;ll often seek
+    advice and comments from collaborators, colleagues and potential users of
+    my code as soon as possible. Therefore, my highest priority when I start a
+    new project is making my code simple enough so that it is very easy to
+    change. Often this step in the coding process is called a &quot;spike&quot;.&lt;/li&gt;
+
+    &lt;li&gt;Only when a project settles on a certain architecture, implementation
+    or foundation of code do I add tests. I think of this as a sort of
+    &quot;hardening&quot; process. When I&#x27;m happy with an approach I&#x27;ll often re-draft
+    the exploratory code I&#x27;ve already written, alongside writing tests to
+    exercise that specific piece of code. I aim for, and often achieve, 100%
+    test coverage (every line of my code is exercised in some way by a test).
+    This process allows me to get a feel for how my API works from the point of
+    view of a fellow coder encountering it for the first time.&lt;/li&gt;
+
+    &lt;li&gt;The hardening has another effect: I&#x27;ve baked in an expectation for how
+    the code should behave via the tests. I also make sure my tests are
+    commented in such a way that a meaningful intention behind the test is
+    revealed. They&#x27;re also a useful source of information for future users
+    and/or maintainers of my code. Finally, and perhaps most importantly, they
+    help manage change.&lt;/li&gt;
+
+    &lt;li&gt;No useful software is ever finished simply because the universe changes
+    (and so must software). Despite our best efforts, software is often
+    complicated and it&#x27;s easy to forget something or not realise how a change
+    in one part of the
+    code may break another apparently unrelated part. Having a suite of
+    tests to check all the aspects of a codebase helps future maintainers make
+    changes with confidence.&lt;/li&gt;
+
+    &lt;li&gt;Being pragmatic, I sometimes don&#x27;t follow the playful explorations
+    outlined above. If I&#x27;m dealing with a well defined or mature protocol
+    (for example), I&#x27;ll quickly settle on an approach, usually based upon
+    research into how other folks have solved the same problem, and proceed by
+    writing tests based upon the protocol in order to measure the completeness,
+    accuracy and progress of my resulting implementation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem for developers writing for CircuitPython is that such code is
+usually to be run on microcontrollers with certain hardware capabilities. Yet
+such code is invariably written on conventional computers running operating
+systems such as Windows, OSX or Linux. The only way to know your code works is
+to try it on the target device. This is, to say the least, laborious compared
+to having the benefits of running an extensive test suite in a matter of
+seconds.&lt;/p&gt;
+
+&lt;p&gt;Having written my small and simple &lt;code&gt;adafruit_radio&lt;/code&gt; module I
+found myself missing the benefits of a comprehensive test suite. After asking
+around, I found most Python modules for CircuitPython don&#x27;t have a test suite
+and there hadn&#x27;t been much (if any) exploration for how to address this. Scott
+suggested I add what I thought best in terms of testing to my module.&lt;/p&gt;
+
+&lt;p&gt;I wanted my solution to meet the following requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;It works with existing Python testing tools so non-specialist Python
+    developers feel at home and can bring their existing skills to
+    CircuitPython with little effort.&lt;/li&gt;
+
+    &lt;li&gt;It runs on a conventional computer, because that&#x27;s where developers do
+    the majority of their work. (I&#x27;m constantly running and re-running my
+    test-suite as I make changes to code.)&lt;/li&gt;
+
+    &lt;li&gt;It handles the problem of using CircuitPython-only modules in a
+    test-suite run on a conventional computer with standard Python.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided to focus on using an existing, well known and mature Python
+testing tool called &lt;a href=&quot;http://pytest.org/en/latest/&quot;&gt;PyTest&lt;/a&gt; (the
+creation of another friend of mine, the extraordinarily prolific and very
+thoughtful &lt;a href=&quot;https://holgerkrekel.net/&quot;&gt;Holger Krekel&lt;/a&gt;). The
+advantage of using PyTest is that it has a large number of plug-ins that are
+both useful and familiar to a large number of Python programmers. One such
+plug-in I use a lot is the
+&lt;a href=&quot;https://github.com/pytest-dev/pytest-cov&quot;&gt;Pytest coverage tool&lt;/a&gt;,
+which makes it easy to spot areas of a code base that are &lt;em&gt;not&lt;/em&gt; 
+exercised by a test suite. PyTest also has a well defined mechanisms to extend
+it to work in specialist testing situations (such as our own CircuitPython
+based context).&lt;/p&gt;
+
+&lt;p&gt;As far as I was concerned, using PyTest met the first two of my self-imposed
+requirements. I was left with the final problem of dealing with CircuitPython
+only modules that wouldn&#x27;t work on a conventional computer.&lt;/p&gt;
+
+&lt;p&gt;This is where I need to introduce the concept of &quot;mocking&quot; in a test suite
+(as in &quot;mocked up&quot; rather than poking fun). Mocking is a way to replace parts
+of your system under test with &quot;mocked up&quot; objects and then make assertions
+about how such objects have been used. Thanks to another friend of mine (the
+huge hearted, funny and rather hairy
+&lt;a href=&quot;http://www.voidspace.org.uk/&quot;&gt;Michael Foord&lt;/a&gt;), mocking is built
+right into Python&#x27;s standard library.&lt;/p&gt;
+
+&lt;p&gt;My idea was simple: automatically mock away those parts of CircuitPython
+that don&#x27;t work on a conventional computer. Such objects give the developer a
+way to check and ensure the module under test is working as expected with
+CircuitPython. It&#x27;s even possible to specify how such mock objects should
+behave under certain conditions (such as when they may be the source of some
+sort of data which the module under test will use). However, this aspect of
+mocking should be used with great care -- more on which later.&lt;/p&gt;
+
+&lt;p&gt;If a developer creates a &lt;code&gt;conftest.py&lt;/code&gt; file in their test suite
+PyTest will import it before running any of the test code and use various
+functions found therein to configure the test suite. For example, if PyTest
+finds a function called &lt;code&gt;pytest_runtest_setup&lt;/code&gt; in the
+&lt;code&gt;conftest.py&lt;/code&gt; file, then this function will always be called
+immediately prior to any test function. Just what we need!&lt;/p&gt;
+
+&lt;p&gt;My &lt;a href=&quot;https://github.com/ntoll/Adafruit_CircuitPython_Radio/blob/master/tests/conftest.py&quot;&gt;&lt;code&gt;conftest.py file&lt;/code&gt;&lt;/a&gt;
+is very short and simply mocks away named aspects of CircuitPython which cannot
+be run on a conventional computer immediately before any test is run, via the
+aforementioned &lt;code&gt;pytest_runtest_setup&lt;/code&gt; convention.&lt;/p&gt;
+
+&lt;p&gt;It means I can write conventional looking PyTest based unit tests like the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def test_radio_receive_full_no_messages(radio):
+    &quot;&quot;&quot;
+    If no messages are detected by receive_full then it returns None.
+    &quot;&quot;&quot;
+    radio.ble.start_scan.return_value = []
+    assert radio.receive_full() is None
+    radio.ble.start_scan.assert_called_once_with(
+        adafruit_radio.AdafruitRadio, minimum_rssi=-255, timeout=1
+    )
+    radio.ble.stop_scan.assert_called_once_with()
+&lt;/pre&gt;&lt;/code&gt;&lt;br/&gt;
+
+&lt;p&gt;Some things you should know: &lt;code&gt;radio.ble&lt;/code&gt; is a mocked away part of
+CircuitPython. As a result, on the first line of my test function, I&#x27;ve been
+able to tell the mock that the result of calling the &lt;code&gt;start_scan&lt;/code&gt;
+method is an empty list. Then I can assert that the method I want to test (the
+&lt;code&gt;radio.receive_full&lt;/code&gt; method returns &lt;code&gt;None&lt;/code&gt; in this
+context. Furthermore, I&#x27;m able to check in the final two statements of the
+function that the &lt;code&gt;start_scan&lt;/code&gt; method was called with the expected
+arguments, and that an additional &lt;code&gt;stop_scan&lt;/code&gt; method was called
+too.&lt;/p&gt;
+
+&lt;p&gt;When I run the test suite, I see something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pytest --cov-report term-missing --cov=adafruit_radio tests/
+============================= test session starts ==============================
+platform linux -- Python 3.7.5, pytest-5.3.0, py-1.8.0, pluggy-0.13.0
+rootdir: /home/ntoll/src/adafruit_radio
+plugins: cov-2.8.1
+collected 12 items                                                             
+
+tests/test_adafruit_radio.py ............                                [100%]
+
+----------- coverage: platform linux, python 3.7.5-final-0 -----------
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+adafruit_radio.py      61      0   100%
+
+
+============================== 12 passed in 0.09s ==============================
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Note all the feedback about code coverage..! Neat, huh?&lt;/p&gt;
+
+&lt;p&gt;A mock object, by its very nature, is a mock-up of something else... it&#x27;s
+not the real thing..! So what happens when the real thing (that has been
+mocked-up in the test suite) changes? For instance let&#x27;s imagine that the
+result of a call to &lt;code&gt;start_scan&lt;/code&gt; is no longer an empty list, but
+something else. The tests will still pass because the mocked-up object doesn&#x27;t
+reflect the real object, yet when the module under test is used on a real
+device with the changed version of CircuitPython then it won&#x27;t work
+correctly.&lt;/p&gt;
+
+&lt;p&gt;This is obviously not a good situation and why I mention mocks should be
+used with great care and attention.&lt;/p&gt;
+
+&lt;p&gt;The most obvious solution is for the developer in charge of the test
+suite to be careful and check API updates in the release notes of the modules
+being mocked away. However, this becomes a burden if the test suite mocks away
+a huge number of modules. It&#x27;s also open to human error.&lt;/p&gt;
+
+&lt;p&gt;There are several ways to mitigate this problem, but because it&#x27;s early days
+I&#x27;ve not been able to investigate these potential solutions properly. The best
+I can do at this point in time is shrug my shoulders, say things are under
+construction and invite folks to dive in and help. Our community would
+certainly be enriched by such collaborations.&lt;/p&gt;
+
+&lt;p&gt;In conclusion, I&#x27;m quite pleased with this first step in equipping
+CircuitPython modules with comprehensive test suites. Yet there&#x27;s still plenty
+to do -- most notably, ways to address the problems mentioned with mocking.&lt;/p&gt;
+
+&lt;p&gt;As always, comments, constructive criticism and ideas expressed in a
+friendly, collaborative and supportive manner are most welcome.&lt;/p&gt;
+
+&lt;p&gt;Over to you... :-)&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 25 Nov 2019 13:30:00 GMT</pubDate>
     </item>
     
     <item>
@@ -284,185 +617,6 @@ platform.&lt;/p&gt;
 &lt;p&gt;Who knows where this may lead..?&lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Apr 2019 16:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Make a Joyful Noise</title>
-        <link>http://ntoll.org/article/joyful-noise</link>
-        <guid>http://ntoll.org/article/joyful-noise</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/joyful-noise&quot;&gt;Make a Joyful Noise&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday, 13th February 2019 (4:00PM)&lt;/p&gt;
-
-&lt;p&gt;I have a new tuba!&lt;/p&gt;
-
-&lt;p&gt;If my mention of a tuba is a surprise (it
-&lt;a href=&quot;/article/remembering-john&quot;&gt;shouldn&#x27;t&lt;/a&gt;
-&lt;a href=&quot;/article/vaughan-williams-tuba-concerto-programme-notes&quot;&gt;be&lt;/a&gt;),
-check out this short student-film, by my buddy
-&lt;a href=&quot;https://twitter.com/cluttercup&quot;&gt;Jane&lt;/a&gt;, which explains all:&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/YlS9lpybYxo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;My new tuba isn&#x27;t a replacement for my current instrument (which I got when
-I was sixteen years old). Rather, the instruments complement each other. What&#x27;s
-the difference? If my current tuba is a professional &quot;all rounder&quot;, my new
-instrument is a sort of &quot;heavy duty&quot; tuba for big orchestral pieces (most of my
-current playing is orchestral).&lt;/p&gt;
-
-&lt;p&gt;The tuba works by amplifying the buzzing sound I make with my lips
-into a mouthpiece. I change notes by tensing or relaxing my lips (so the
-buzzing sound gets higher or lower) which gives me a limited series of notes
-that are &lt;a href=&quot;https://en.wikipedia.org/wiki/Overtone&quot;&gt;overtones&lt;/a&gt; to the
-&quot;fundamental&quot; (lowest) note produced by blowing down the length of the tube of
-the instrument. I use valves to add tubing to the length of the instrument to
-fill in the notes between the overtones so I can play all the notes I need
-(i.e. a chromatic scale).&lt;/p&gt;
-
-&lt;p&gt;What&#x27;s interesting is how the two instruments are different.&lt;/p&gt;
-
-&lt;p&gt;My original instrument is pitched in Eb (E flat) -- which means the
-instrument&#x27;s fundamental note is the Eb more than an octave below the bass
-clef (i.e. very low). My new instrument is pitched in C, so its fundamental
-note is &lt;em&gt;even lower&lt;/em&gt;, thus making it an instrument more suited to lower
-sounding music.&lt;/p&gt;
-
-&lt;p&gt;The valves on each instrument are different. I have &quot;piston&quot; valves on my
-original instrument. These are spring loaded and when pressed fully down add
-additional lengths of tubing to the instrument. The photograph below is of the
-inside of the valve so you can see the holes in the piston used to connect 
-the different pipes, depending on the valve&#x27;s position (up or down).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/piston_valve.jpg&quot;
-    alt=&quot;The inside of a piston valve.&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;My new instrument uses &quot;rotary&quot; valves. These, as the diagram below shows,
-rotate to connect additional lengths of tubing (the passage of air is indicated
-by the hatched area). A sort of lever is used to actuate each valve. They&#x27;re
-generally much quieter and more reliable than piston valves (less moving parts
-to make clanking sounds) although they can be slower to &quot;engage&quot;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/rotary_valve.jpg&quot;
-    alt=&quot;A diagramatic view of a rotary valve.&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;The picture below shows the rotary valves on my new tuba. Notice the
-levers I press with my fingers to engage the valves.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/rotary_valves.jpg&quot;
-    alt=&quot;Rotary valves on my new tuba.&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;While both tubas look &quot;tuba shaped&quot; my original tuba points to the right
-(as the player is looking at the instrument) whereas my new instrument points
-to the left. This simply means I have to hold them differently and there&#x27;s not
-really any change in sound. You can see this difference in the picture
-below (the new tuba is on the right):&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/static/images/two_tubas.jpg&quot;
-    alt=&quot;My two tubas.&quot;/&gt;&lt;/p&gt;
-
-&lt;p&gt;The final major difference is in the number of valves each instrument has.
-My original instrument has four &quot;compensating&quot; valves which allow me to get a
-full chromatic scale. The new instrument has five &quot;non-compensating&quot; valves:
-the first four work like my original instrument and allow me to play a full
-chromatic scale, but the fifth valve is used to help tune the very lowest
-notes.&lt;/p&gt;
-
-&lt;p&gt;Why does the new tuba need a special extra &quot;tuning&quot; valve and what on earth
-am I talking about when I say &quot;compensating&quot;..? This, dear reader, is where
-maths, acoustics, logic and music come together in a spectacular fashion.&lt;/p&gt;
-
-&lt;p&gt;My new tuba is approximately 524.9 cm in length without any valves engaged.
-This produces the note, &quot;C&quot;. The first valve adds enough pipe to lower the
-pitch by a tone, giving me a &quot;Bb&quot; (B flat) which requires the total length of
-tube to be 589.2 cm. Simple arithmetic tells us the total length of the tube
-added by using the first valve is therefore 64.3 cm (the &quot;open&quot; length of the
-instrument with the added tube should give the correct length to play a tone
-lower). The second valve drops the pitch by a semitone to the note &quot;B&quot; which
-requires a total length of 556.1 cm. Similarly, the third valve lowers the
-pitch by one and a half tones, giving me an &quot;A&quot; which requires the total length
-of tube to be 624.2 cm. Again, the simple arithmetic tells me that the length
-of tube added by the second valve is 31.2 cm while the length added by the
-third valve is 99.3 cm.&lt;/p&gt;
-
-&lt;p&gt;Here&#x27;s where it gets interesting. If I want to play the note &quot;G&quot; I need to
-make the length of the instrument 700.6 cm. Given the note &quot;G&quot; is two and a
-half tones below &quot;C&quot; I could take the tone provided by the first valve and
-one and a half tones of the third valve and use them together. It means the
-resulting length of additional pipe is 64.3 cm (the first valve) + 99.3 cm 
-(the third valve) giving me a total of 163.6 cm. However, the open length of
-the instrument (524.9 cm) with the additional lengths of pipe (163.6) brings
-the total length to 688.5 cm, which isn&#x27;t the 700.6 cm needed to play the
-note in tune!&lt;/p&gt;
-
-&lt;p&gt;The solution is to use my fourth valve, which adds 175.7 cm to the length
-of the instrument, thus making it in tune. However, when I need to use my
-fourth valve in combination with my other three valves I still encounter the
-same sort of &quot;wrong length of pipe&quot; problem I describe above. I &lt;em&gt;must&lt;/em&gt;
-use combinations of valves in order to get all the notes I need in the
-chromatic scale. So what can I do?&lt;/p&gt;
-
-&lt;p&gt;This is where the fifth valve on my new tuba comes into play. It has a
-special tuning slide I can adjust &quot;in real time&quot; as I play, thus allowing me
-to tune the fifth valve as and when I need it. It can also be tuned in such a
-way that it &quot;compensates&quot; (remember that word) for the missing lengths of
-tubing when I use the other valves together.&lt;/p&gt;
-
-&lt;p&gt;Which leaves us with the problem of keeping my current tuba (with only four
-valves) in tune. Thankfully, this instrument has &quot;compensating&quot; valves which
-work in a rather ingenious manner. The schematic representation of my current
-tuba is shown below. The mouthpiece is on the left with the bell on the right
-and between are the four valves and associated tubing (not to scale). None of
-the valves are engaged so the column of air blown through the instrument goes
-directly through without any &quot;detours&quot; (as shown by the pipe filled in with
-blue).&lt;/p&gt;
-
-&lt;img src=&quot;/static/images/compensating_open.png&quot;
-    alt=&quot;Compensating system, no valves pressed.&quot;/&gt;
-
-&lt;p&gt;When I press the first and third valves down the expected two extra lengths
-of tubing are added, as shown by the two loops of pipe filled with blue:&lt;/p&gt;
-
-&lt;img src=&quot;/static/images/compensating_13.png&quot;
-    alt=&quot;Compensating system, valves 1 and 3 pressed.&quot;/&gt;
-
-&lt;p&gt;Here&#x27;s where it gets really clever. When the fourth valve is pressed down,
-not only is the expected additional length of tube added to the length of the
-instrument, but this tube is also diverted back through the other three valves
-which have additional &quot;compensating&quot; tubes to bring the instrument in tune:&lt;/p&gt;
-
-&lt;img src=&quot;/static/images/compensating_134.png&quot;
-    alt=&quot;Compensating system, valves 1, 3 and 4 pressed.&quot;/&gt;
-
-&lt;p&gt;This is, essentially, a logical &lt;code&gt;AND&lt;/code&gt; expressed as pipe-work. If
-the first and fourth valves are pressed then add some new &quot;compensating&quot; length
-of pipe. Clever huh..?&lt;/p&gt;
-
-&lt;p&gt;The disadvantage of this system is the air does two &quot;circuits&quot; around the
-instrument (once through the first three valves, and then again if the fourth
-valve is pressed so the compensating pipes can come into effect). This makes
-the instrument harder to blow (since there are more bends to blow through).
-My new instrument feels like there is less to push against when I&#x27;m
-playing.&lt;/p&gt;
-
-&lt;p&gt;Finally, given all the technical tuba-related geekery described above I want
-to end on an artistic note...&lt;/p&gt;
-
-&lt;p&gt;These instruments are beautiful to look at and playing them is a joy. It&#x27;s
-hard to explain to folks who have never performed music what an amazing
-privilege it is. I get to play beautifully designed and precision engineered
-instruments as part of an orchestra, band or smaller ensemble. By playing with
-my fellow musicians to an audience I&#x27;m taking part in a unique social activity.
-No matter the mood or difficulty of the piece I&#x27;m playing, I love the sense of
-non-verbal communication I have with my fellow musicians and collectively with
-the audience. I love that I am a part of something creative, challenging,
-expressive, collaborative and most definitely greater than the sum of its
-parts. That the audience appreciate these efforts is a lovely positive
-side effect.&lt;/p&gt;
-
-&lt;p&gt;To me, this is always &quot;joyful noise&quot;. :-)&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 13 Feb 2019 16:00:00 GMT</pubDate>
     </item>
     
 </channel>
