@@ -11,6 +11,339 @@
     </image>
     
     <item>
+        <title>Testing CircuitPython Modules</title>
+        <link>http://ntoll.org/article/circuitpython-tests</link>
+        <guid>http://ntoll.org/article/circuitpython-tests</guid>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/circuitpython-tests&quot;&gt;Testing CircuitPython Modules&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Monday, 25th November 2019 (1:30PM)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://micropython.org/&quot;&gt;MicroPython&lt;/a&gt;, a project by my
+buddy &lt;a href=&quot;http://dpgeorge.net/&quot;&gt;Damien George&lt;/a&gt;, is a
+complete reimplementation of the Python programming language for
+microcontrollers and embedded systems. Put simply, it&#x27;s Python for extremely
+small computers (and I once
+&lt;a href=&quot;http://shop.oreilly.com/product/0636920056515.do&quot;&gt;wrote a book about it&lt;/a&gt;).
+&lt;a href=&quot;https://circuitpython.org/&quot;&gt;CircuitPython&lt;/a&gt;, a friendly fork of
+MicroPython, is sponsored by the fantastic folks
+at &lt;a href=&quot;https://adafruit.com/&quot;&gt;Adafruit&lt;/a&gt;, a company who make playful and
+easy-to-use &quot;hackable&quot; technology while promoting a welcoming, friendly and
+diverse community of makers. They are led by legendary founder and electrical
+engineer extraordinaire, &lt;a href=&quot;http://www.ladyada.net/&quot;&gt;Limor &quot;ladyada&quot; Fried&lt;/a&gt;.
+CircuitPython is MicroPython for Adafruit&#x27;s line of boards and with a
+consistent API for accessing the numerous bits of cool hardware you can use
+with such devices.&lt;/p&gt;
+
+&lt;p&gt;I was privileged to recently complete a block of work for Adafruit: I&#x27;ve
+written a CircuitPython module called &lt;code&gt;adafruit_radio&lt;/code&gt; that makes it
+easy for
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Bluetooth&quot;&gt;Bluetooth&lt;/a&gt; enabled
+Adafruit boards to communicate with each other. The API is
+a simplified version of the work myself and a number of other volunteers did on
+the
+&lt;a href=&quot;https://microbit-micropython.readthedocs.io/en/v1.0.1/radio.html&quot;&gt;equivalent functionality&lt;/a&gt;
+for the BBC micro:bit (&lt;a href=&quot;https://microbit-micropython.readthedocs.io/en/v1.0.1/tutorials/radio.html&quot;&gt;here&#x27;s a tutorial I wrote for the micro:bit
+radio&lt;/a&gt;, to make electronic &quot;fireflies&quot; blink at each other over
+Bluetooth).&lt;/p&gt;
+
+&lt;p&gt;In the new Adafruit module, sending a message is as simple as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+r.send(&quot;Hello&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Receiving requires a loop (to allow the device to keep checking for
+messages), but is equally as simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+
+while True:
+    message = r.receive()
+    if message:
+        # Do something useful with the message.
+        print(message)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;The best model for thinking about this module is that of kids&#x27;
+walkie-talkies. Each
+radio is tuned to a certain channel upon which it broadcasts and receives.
+If you send a message, anyone else listening in on that channel and within
+range will receive it. You&#x27;ll also receive messages broadcast on that
+channel from others within range. 
+This is an ideal network topology because it&#x27;s both familiar
+yet capable since other, more specialised, network topologies can be built on
+top of it. There is potential for users to grow from a simple &quot;walkie-talkie&quot;
+model of networking to something more sophisticated and of their own
+devising.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/walkie-talkie.jpg&quot; alt=&quot;Kids on walkie-talkies&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;The channels in the module are numbered between 0-255 and can be set when
+creating a &lt;code&gt;Radio&lt;/code&gt; object (the default channel number is 42 in
+honour of
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Douglas_Adams&quot;&gt;Douglas Adams&lt;/a&gt;, who
+saw so much humane potential in new technology yet mischievously warned of the
+polluting effect of technology for technology&#x27;s sake via the inept
+work of the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Technology_in_The_Hitchhiker%27s_Guide_to_the_Galaxy#Sirius_Cybernetics_Corporation&quot;&gt;Sirius Cybernetics Corporation&lt;/a&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio(channel=123)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Alternatively, you can change channel at any time via the &lt;code&gt;Radio&lt;/code&gt;
+object&#x27;s &lt;code&gt;configure&lt;/code&gt; method (continuing the example above):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;r.configure(channel=7)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Finally, in addition to sending strings of characters it&#x27;s also possible to
+send and receive arbitrary bytes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from adafruit_radio import Radio
+r = Radio()
+r.send_bytes(b&quot;Hello&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Receiving bytes gives you the full context of the message expressed as a
+Python tuple consisting of three values: the raw bytes, the RSSI reading (i.e.
+strength of the signal, from 0 [max] to -255 [min]), and a timestamp
+representing the number (and fraction of) seconds since the device powered up,
+as demonstrated in the following REPL based example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from adafruit_radio import Radio
+&amp;gt;&amp;gt;&amp;gt; r = Radio()
+&amp;gt;&amp;gt;&amp;gt; r.receive_full()
+(b&#x27;Hello&#x27;, -40, 3245.155408037)
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;That&#x27;s it! You can find the code in &lt;a href=&quot;https://github.com/ntoll/Adafruit_CircuitPython_Radio&quot;&gt;this GitHub repository&lt;/a&gt;.
+Special mention and thanks must be made to Adafruit&#x27;s
+&lt;a href=&quot;http://tannewt.org/&quot;&gt;Scott Shawcroft&lt;/a&gt; and
+&lt;a href=&quot;https://danhalbert.org/&quot;&gt;Dan Halbert&lt;/a&gt; who
+wrote the Bluetooth API I used. Because of their
+work I was able to create my module with less than a hundred lines of Python
+(at time of writing). Thanks chaps!&lt;/p&gt;
+
+&lt;p&gt;Armed with this context, I&#x27;m going to explain why and how I created a
+comprehensive test suite for the &lt;code&gt;adafruit_radio&lt;/code&gt; module.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;d summarise my approach to testing as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Testing is fundamental for creating and maintaining well designed
+    software. My experience is that it tends to produce code that is both
+    simple and easy to understand because nobody wants to write complicated
+    tests to exercise equally complicated code. The process of exercising code
+    through tests forces a developer to think carefully about how their code
+    is written while having the added benefit of demonstrating it works as
+    expected. Simplicity and ease of understanding are
+    desirable properties because such code is easier to read, correct and
+    maintain and also indicates the author&#x27;s own clarity of thought (a good
+    sign). I also believe it helpful and friendly to write code that&#x27;s easy
+    for others to read and understand (I often imagine my code will be read by
+    an intelligent beginner coder, because it forces me to explain and address
+    my own assumptions about my code).&lt;/li&gt;
+
+    &lt;li&gt;I personally don&#x27;t practice strict test-driven development, where one
+    writes tests before writing the implementation. I prefer to explore,
+    improvise, extemporise and play at first. I often try various different
+    approaches to the task in hand and regularly re-draft. I&#x27;ll often seek
+    advice and comments from collaborators, colleagues and potential users of
+    my code as soon as possible. Therefore, my highest priority when I start a
+    new project is making my code simple enough so that it is very easy to
+    change. Often this step in the coding process is called a &quot;spike&quot;.&lt;/li&gt;
+
+    &lt;li&gt;Only when a project settles on a certain architecture, implementation
+    or foundation of code do I add tests. I think of this as a sort of
+    &quot;hardening&quot; process. When I&#x27;m happy with an approach I&#x27;ll often re-draft
+    the exploratory code I&#x27;ve already written, alongside writing tests to
+    exercise that specific piece of code. I aim for, and often achieve, 100%
+    test coverage (every line of my code is exercised in some way by a test).
+    This process allows me to get a feel for how my API works from the point of
+    view of a fellow coder encountering it for the first time.&lt;/li&gt;
+
+    &lt;li&gt;The hardening has another effect: I&#x27;ve baked in an expectation for how
+    the code should behave via the tests. I also make sure my tests are
+    commented in such a way that a meaningful intention behind the test is
+    revealed. They&#x27;re also a useful source of information for future users
+    and/or maintainers of my code. Finally, and perhaps most importantly, they
+    help manage change.&lt;/li&gt;
+
+    &lt;li&gt;No useful software is ever finished simply because the universe changes
+    (and so must software). Despite our best efforts, software is often
+    complicated and it&#x27;s easy to forget something or not realise how a change
+    in one part of the
+    code may break another apparently unrelated part. Having a suite of
+    tests to check all the aspects of a codebase helps future maintainers make
+    changes with confidence.&lt;/li&gt;
+
+    &lt;li&gt;Being pragmatic, I sometimes don&#x27;t follow the playful explorations
+    outlined above. If I&#x27;m dealing with a well defined or mature protocol
+    (for example), I&#x27;ll quickly settle on an approach, usually based upon
+    research into how other folks have solved the same problem, and proceed by
+    writing tests based upon the protocol in order to measure the completeness,
+    accuracy and progress of my resulting implementation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem for developers writing for CircuitPython is that such code is
+usually to be run on microcontrollers with certain hardware capabilities. Yet
+such code is invariably written on conventional computers running operating
+systems such as Windows, OSX or Linux. The only way to know your code works is
+to try it on the target device. This is, to say the least, laborious compared
+to having the benefits of running an extensive test suite in a matter of
+seconds.&lt;/p&gt;
+
+&lt;p&gt;Having written my small and simple &lt;code&gt;adafruit_radio&lt;/code&gt; module I
+found myself missing the benefits of a comprehensive test suite. After asking
+around, I found most Python modules for CircuitPython don&#x27;t have a test suite
+and there hadn&#x27;t been much (if any) exploration for how to address this. Scott
+suggested I add what I thought best in terms of testing to my module.&lt;/p&gt;
+
+&lt;p&gt;I wanted my solution to meet the following requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;It works with existing Python testing tools so non-specialist Python
+    developers feel at home and can bring their existing skills to
+    CircuitPython with little effort.&lt;/li&gt;
+
+    &lt;li&gt;It runs on a conventional computer, because that&#x27;s where developers do
+    the majority of their work. (I&#x27;m constantly running and re-running my
+    test-suite as I make changes to code.)&lt;/li&gt;
+
+    &lt;li&gt;It handles the problem of using CircuitPython-only modules in a
+    test-suite run on a conventional computer with standard Python.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided to focus on using an existing, well known and mature Python
+testing tool called &lt;a href=&quot;http://pytest.org/en/latest/&quot;&gt;PyTest&lt;/a&gt; (the
+creation of another friend of mine, the extraordinarily prolific and very
+thoughtful &lt;a href=&quot;https://holgerkrekel.net/&quot;&gt;Holger Krekel&lt;/a&gt;). The
+advantage of using PyTest is that it has a large number of plug-ins that are
+both useful and familiar to a large number of Python programmers. One such
+plug-in I use a lot is the
+&lt;a href=&quot;https://github.com/pytest-dev/pytest-cov&quot;&gt;Pytest coverage tool&lt;/a&gt;,
+which makes it easy to spot areas of a code base that are &lt;em&gt;not&lt;/em&gt; 
+exercised by a test suite. PyTest also has a well defined mechanisms to extend
+it to work in specialist testing situations (such as our own CircuitPython
+based context).&lt;/p&gt;
+
+&lt;p&gt;As far as I was concerned, using PyTest met the first two of my self-imposed
+requirements. I was left with the final problem of dealing with CircuitPython
+only modules that wouldn&#x27;t work on a conventional computer.&lt;/p&gt;
+
+&lt;p&gt;This is where I need to introduce the concept of &quot;mocking&quot; in a test suite
+(as in &quot;mocked up&quot; rather than poking fun). Mocking is a way to replace parts
+of your system under test with &quot;mocked up&quot; objects and then make assertions
+about how such objects have been used. Thanks to another friend of mine (the
+huge hearted, funny and rather hairy
+&lt;a href=&quot;http://www.voidspace.org.uk/&quot;&gt;Michael Foord&lt;/a&gt;), mocking is built
+right into Python&#x27;s standard library.&lt;/p&gt;
+
+&lt;p&gt;My idea was simple: automatically mock away those parts of CircuitPython
+that don&#x27;t work on a conventional computer. Such objects give the developer a
+way to check and ensure the module under test is working as expected with
+CircuitPython. It&#x27;s even possible to specify how such mock objects should
+behave under certain conditions (such as when they may be the source of some
+sort of data which the module under test will use). However, this aspect of
+mocking should be used with great care -- more on which later.&lt;/p&gt;
+
+&lt;p&gt;If a developer creates a &lt;code&gt;conftest.py&lt;/code&gt; file in their test suite
+PyTest will import it before running any of the test code and use various
+functions found therein to configure the test suite. For example, if PyTest
+finds a function called &lt;code&gt;pytest_runtest_setup&lt;/code&gt; in the
+&lt;code&gt;conftest.py&lt;/code&gt; file, then this function will always be called
+immediately prior to any test function. Just what we need!&lt;/p&gt;
+
+&lt;p&gt;My &lt;a href=&quot;https://github.com/ntoll/Adafruit_CircuitPython_Radio/blob/master/tests/conftest.py&quot;&gt;&lt;code&gt;conftest.py file&lt;/code&gt;&lt;/a&gt;
+is very short and simply mocks away named aspects of CircuitPython which cannot
+be run on a conventional computer immediately before any test is run, via the
+aforementioned &lt;code&gt;pytest_runtest_setup&lt;/code&gt; convention.&lt;/p&gt;
+
+&lt;p&gt;It means I can write conventional looking PyTest based unit tests like the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def test_radio_receive_full_no_messages(radio):
+    &quot;&quot;&quot;
+    If no messages are detected by receive_full then it returns None.
+    &quot;&quot;&quot;
+    radio.ble.start_scan.return_value = []
+    assert radio.receive_full() is None
+    radio.ble.start_scan.assert_called_once_with(
+        adafruit_radio.AdafruitRadio, minimum_rssi=-255, timeout=1
+    )
+    radio.ble.stop_scan.assert_called_once_with()
+&lt;/pre&gt;&lt;/code&gt;&lt;br/&gt;
+
+&lt;p&gt;Some things you should know: &lt;code&gt;radio.ble&lt;/code&gt; is a mocked away part of
+CircuitPython. As a result, on the first line of my test function, I&#x27;ve been
+able to tell the mock that the result of calling the &lt;code&gt;start_scan&lt;/code&gt;
+method is an empty list. Then I can assert that the method I want to test (the
+&lt;code&gt;radio.receive_full&lt;/code&gt; method returns &lt;code&gt;None&lt;/code&gt; in this
+context. Furthermore, I&#x27;m able to check in the final two statements of the
+function that the &lt;code&gt;start_scan&lt;/code&gt; method was called with the expected
+arguments, and that an additional &lt;code&gt;stop_scan&lt;/code&gt; method was called
+too.&lt;/p&gt;
+
+&lt;p&gt;When I run the test suite, I see something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pytest --cov-report term-missing --cov=adafruit_radio tests/
+============================= test session starts ==============================
+platform linux -- Python 3.7.5, pytest-5.3.0, py-1.8.0, pluggy-0.13.0
+rootdir: /home/ntoll/src/adafruit_radio
+plugins: cov-2.8.1
+collected 12 items                                                             
+
+tests/test_adafruit_radio.py ............                                [100%]
+
+----------- coverage: platform linux, python 3.7.5-final-0 -----------
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+adafruit_radio.py      61      0   100%
+
+
+============================== 12 passed in 0.09s ==============================
+&lt;/code&gt;&lt;/pre&gt;&lt;br/&gt;
+
+&lt;p&gt;Note all the feedback about code coverage..! Neat, huh?&lt;/p&gt;
+
+&lt;p&gt;A mock object, by its very nature, is a mock-up of something else... it&#x27;s
+not the real thing..! So what happens when the real thing (that has been
+mocked-up in the test suite) changes? For instance let&#x27;s imagine that the
+result of a call to &lt;code&gt;start_scan&lt;/code&gt; is no longer an empty list, but
+something else. The tests will still pass because the mocked-up object doesn&#x27;t
+reflect the real object, yet when the module under test is used on a real
+device with the changed version of CircuitPython then it won&#x27;t work
+correctly.&lt;/p&gt;
+
+&lt;p&gt;This is obviously not a good situation and why I mention mocks should be
+used with great care and attention.&lt;/p&gt;
+
+&lt;p&gt;The most obvious solution is for the developer in charge of the test
+suite to be careful and check API updates in the release notes of the modules
+being mocked away. However, this becomes a burden if the test suite mocks away
+a huge number of modules. It&#x27;s also open to human error.&lt;/p&gt;
+
+&lt;p&gt;There are several ways to mitigate this problem, but because it&#x27;s early days
+I&#x27;ve not been able to investigate these potential solutions properly. The best
+I can do at this point in time is shrug my shoulders, say things are under
+construction and invite folks to dive in and help. Our community would
+certainly be enriched by such collaborations.&lt;/p&gt;
+
+&lt;p&gt;In conclusion, I&#x27;m quite pleased with this first step in equipping
+CircuitPython modules with comprehensive test suites. Yet there&#x27;s still plenty
+to do -- most notably, ways to address the problems mentioned with mocking.&lt;/p&gt;
+
+&lt;p&gt;As always, comments, constructive criticism and ideas expressed in a
+friendly, collaborative and supportive manner are most welcome.&lt;/p&gt;
+
+&lt;p&gt;Over to you... :-)&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 25 Nov 2019 13:30:00 GMT</pubDate>
+    </item>
+    
+    <item>
         <title>Advice for a Beginner Coder</title>
         <link>http://ntoll.org/article/advice</link>
         <guid>http://ntoll.org/article/advice</guid>
@@ -251,117 +584,6 @@ collaborator who has helped our wonderful community in some way.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 11 Sep 2017 09:00:00 GMT</pubDate>
-    </item>
-    
-    <item>
-        <title>Mu</title>
-        <link>http://ntoll.org/article/mu-pi</link>
-        <guid>http://ntoll.org/article/mu-pi</guid>
-        <description>&lt;h1&gt;&lt;a href=&quot;http://ntoll.org/article/mu-pi&quot;&gt;Mu&lt;/a&gt;&lt;/h1&gt;&lt;p class=&quot;published_on&quot;&gt;Wednesday 3rd May 2017 (5:30pm)&lt;/p&gt;
-
-&lt;p&gt;Mu (&lt;a href=&quot;https://codewith.mu/&quot;&gt;codewith.mu&lt;/a&gt;) is a simple code editor
-for beginner programmers. In case you&#x27;re wondering, you pronounce it like
-&quot;moo&quot;, and it is named after the Greek character &quot;&amp;mu;&quot;, used to represent
-micro units of measurement in the decimal system.&lt;/p&gt;
-
-&lt;p&gt;I wrote the first version in December 2015 as a Sunday-afternoon &quot;hack&quot;. At
-the time I was volunteering effort for the BBC&#x27;s
-&lt;a href=&quot;http://microbit.org/&quot;&gt;micro:bit&lt;/a&gt; project - a computing device for
-kids that encourages them to learn how to code. I had already written a browser
-based editor for the project but, unfortunately, when I tested it on teachers,
-kids and developers it soon became apparent that it wasn&#x27;t a great experience.
-While the convenience of a browser-based editor was initially welcomed, the
-faffing about caused by the browser-imposed limitations of the editor meant it
-wasn&#x27;t a pleasant experience in the long run.&lt;/p&gt;
-
-&lt;p&gt;This problematic situation motivated me to put together the simplest yet
-most useful editor I could imagine. I wrote it so beginner programmers could 
-easily write MicroPython code for the micro:bit. Et voil&amp;agrave;, Mu was
-born.&lt;/p&gt;
-
-&lt;p&gt;I quickly formulated a &quot;Mu philosophy&quot; to help guide my development
-process:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;&lt;em&gt;Less is More&lt;/em&gt;: Mu has only the most essential
-    features, so users are not intimidated by a baffling interface.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Keep it Simple&lt;/em&gt;: It&#x27;s quick and easy to learn Mu -
-    complexity impedes a novice programmer&#x27;s first steps.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Path of Least Resistance&lt;/em&gt;: Whatever the task, there is
-    always only one obvious way to do it with Mu.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;Have Fun&lt;/em&gt;: Learning should inspire fun - Mu helps
-    learners quickly create and test working code.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I had three goals:&lt;/p&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;An editor that clearly demonstrated the design philosophy outlined
-    above.&lt;/li&gt;
-    &lt;li&gt;An editor with a simple enough code base that an enthusiastic teenager
-    could learn from and contribute to the project.&lt;/li&gt;
-    &lt;li&gt;An editor that was well tested so we could be confident in the quality
-    and stability of its code, while giving us the confidence to make changes
-    as the project moved forward.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Finally, I used a wish-list enumerated by my buddy
-&lt;a href=&quot;https://twitter.com/MissPhilbin&quot;&gt;Carrie Anne&lt;/a&gt; (who is the
-&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;Rasperry Pi&lt;/a&gt;&#x27;s Director of
-Education) as my feature guide.&lt;/p&gt;
-
-&lt;p&gt;Raspberry Pi is &lt;strong&gt;the most successful computing-in-education
-project in history&lt;/strong&gt; if you measure number of devices shipped. This
-success means Carrie Anne has had feedback from a huge number of teachers and,
-most importantly, beginner programmers concerning what it feels like to take
-those first steps in learning to write code. This feedback informed
-her &lt;a href=&quot;https://www.youtube.com/watch?v=_gU7sfTrz4c&quot;&gt;keynote
-address&lt;/a&gt; to 2015&#x27;s &lt;a href=&quot;https://europython.eu/&quot;&gt;EuroPython
-conference&lt;/a&gt; where she listed the sorts of things needed for a beginner&#x27;s
-code editor. This, in turn, inspired me in terms of prioritising and
-implementing features.&lt;/p&gt;
-
-&lt;p&gt;Then something funny happened. My goofy editor became popular.&lt;/p&gt;
-
-&lt;p&gt;It turns out that lots of people love learning with Mu. Its simplicity is
-often described as a key factor. The wider Python community have also taken
-an interest with many fellow Pythonists contributing improvements. It has taken
-on a life of its own with a friendly community of contributors and
-users. This makes me very happy.&lt;/p&gt;
-
-&lt;p&gt;The most requested improvement from our users is that Mu become a &quot;general&quot;
-editor rather than just targeting the micro:bit.&lt;/p&gt;
-
-&lt;p&gt;I&#x27;m delighted to say this will happen very soon.&lt;/p&gt;
-
-&lt;p&gt;Thanks to the support of the Raspberry Pi Foundation I&#x27;ll be spending the
-next three months transitioning Mu into a &quot;generic&quot; beginner&#x27;s editor. I&#x27;ll be
-working closely with Carrie Anne and her colleagues to learn how best to help
-beginner programmers.&lt;/p&gt;
-
-&lt;p&gt;Mu will still work with the micro:bit, but it will also work with other
-boards too (such as those from the awesome people at
-&lt;a href=&quot;https://www.adafruit.com/&quot;&gt;Adafruit&lt;/a&gt; and MicroPython&#x27;s original
-&lt;a href=&quot;https://micropython.org/&quot;&gt;PyBoard&lt;/a&gt;). Of course, it will act as an
-editor for &quot;regular&quot; Python code running on your Raspberry Pi, laptop or PC.
-I&#x27;ve even created a very simple visual debugger to help you watch and inspect
-your code as it runs.&lt;/p&gt;
-
-&lt;p&gt;This is very exciting and I&#x27;ll post regular updates since we aim to follow
-the mantra, &quot;release early, release often&quot;.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, we want &lt;strong&gt;you&lt;/strong&gt; to be involved.&lt;/p&gt;
-
-&lt;p&gt;How?&lt;/p&gt;
-
-&lt;p&gt;Try out a new version when we release it. Tell us about bugs. Can you think
-of a way to improve Mu? What&#x27;s the most useful thing you&#x27;d love Mu to do? Tell
-us about the niggles and gremlins you wish could be ironed out.&lt;/p&gt;
-
-&lt;p&gt;Put simply, Mu belongs to its community and we&#x27;d love you to join us to take
-part in shaping its future.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 May 2017 17:30:00 GMT</pubDate>
     </item>
     
 </channel>
