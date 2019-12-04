@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Developing Developers</title>
+
+		<meta name="description" content="BCS Edinburgh slides.">
+		<meta name="author" content="Nicholas H.Tollervey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/asyncio.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Developing</h1>
+					<h1>Developers</h1>
+                    <p>(A lazy engineer's long term view)</p>
+					<p>
+						<a href="http://ntoll.org/">Nicholas H.Tollervey</a> / <a href="http://twitter.com/ntoll">@ntoll</a>
+					</p>
+                    <aside class="notes">
+                        <ul>
+                            <li>Thanks for invite.</li>
+                            <li>My name is Nicholas - I'm a freelance Python
+                            developer from England!</li>
+                            <li>Who are you..? Programmers, educators, learners
+                            and not-from-a-computing-background.</li>
+                        </ul>
+                    </aside>
+				</section>
+
+
+                <!-- Nicholas -->
+                <section>
+                    <img src="images/tuba.jpg" alt="Me armed with my tuba"/>
+                    <aside class="notes">
+                    <p>Who am I? Mention music education.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/teacher_me.jpg" alt="Me as a teacher"/>
+                    <aside class="notes">
+                    <p>At 23 a head of department. MA in philosophy of education.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/ntoll_europython.jpg" alt="Me at EuroPython 2019"/>
+                    <aside class="notes">
+                    <p>Describe all the Python / programming things I do.</p>
+                    <p>I'm here to convince you that education is of
+                       great importance for software developers.</p>
+                    <p>I'm going to do this as a "lazy developer", doing as
+                    little original work as possible.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/rpi.jpg"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>What have we done so far..?</li>
+                            <li>Worldwide success... 20m+ units sold.</li>
+                            <li>But what do you do with it..?</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/microbit.jpg"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>Demo via online Python editor.</li>
+                            <li>But what do you do with it?</li>
+                            <li>Nobody asked teachers what they wanted!</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <video preload="auto" muted="" loop="loop" autoplay="" width="100%">
+<source src="images/playground.mp4">
+</video>
+                    <aside class="notes">
+                        <p>Others are creating more complicated and friendly
+                        devices (for example Adafruit). These are open source
+                        boards containing a huge number of sensors and
+                        outputs.</p>
+
+                        <p>Still... "how do I do stuff?"</p>
+                        <p>Answer... "you write software"</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/dawn.jpg"/>
+
+                    <aside class="notes">
+                    <p>Introduce Dawn. Too many blinking LED and magic 8 ball
+                    examples. Where's the progression..?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/8ball.jpg"/>
+                    <aside class="notes">
+                    <p>Also, such problems are solved problems which often
+                    don't speak to beginner programmers.</p>
+                    <p>Beginner programmers are often given simple tools.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/scratch-editor.png"/>
+                    <aside class="notes">
+                    <p>Scratch is a wonderful example of a tool to engage
+                    beginner coders. Yet the extent to which you can get
+                    Scratch to do useful things is (necessarily) limited.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/logo_turtle.jpg"/>
+                    <aside class="notes">
+                    <p>This was definitely my feeling when it came to my own
+                    similar experiences with Logo in the 1980s. While I
+                    enjoyed making the "turtle" move and I learned about
+                    concepts like functions, iterations and variable
+                    assignment, I couldn't actually do anything useful.
+                    I (like many) wanted to do real stuff (I actually used a
+                    piece of software called Communitel - running on a BBC
+                    micro - to set up a school BBS.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/kay_quote.jpg"/>
+                    <aside class="notes">
+                        <p>Alan Kay nails the situation down quite well.</p>
+                        <p>Reminds me of a situation in music education.</p>
+                        <p>Learning music feels like learning to code (to
+                        me).</p>
+                        <p>What exactly does music education do..?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/keyboards.jpg" alt="music keyboards"/>
+                    <aside class="notes">
+                    <p>Such keyboards are easy to get started with. They make
+                    you sound "good" with little effort. They're a great
+                    "gateway" into music and ensure *everyone* gets to have a
+                    go.</p>
+
+                    <p>An opportunity to introduce the basics / core skills.</p>
+
+                    <p>But they're a musical dead end.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/school_band.jpg" alt="School band"/>
+                    <aside class="notes">
+                    <p>However, some kids show more interest / aptitude in
+                    music and want to take things further or get to do "the
+                    real thing". Hence we provide instrumental lessons and
+                    things like school band.</p>
+                    <p>These kids are playing proper instruments, in a real band
+                    and playing real (if simplified) music. They also have a
+                    real conductor, have to "really" listen to each other in
+                    order to play together and put on real concerts at which
+                    parents pay real money for tickets.</p>
+                    </aside>
+                </section>
+
+
+                <section>
+                    <p>What if we taught music like we teach programming?</p>
+                    <aside class="notes">
+                    <p>On a train from NY to Boston. Not Rhapsody in Blue
+                    but... a thought experiment.</p>
+                    <p>"I heard it as a sort of musical kaleidoscope of
+                    America, of our vast melting pot, of our unduplicated
+                    national pep, of our metropolitan madness."</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/bootcamp.png" alt="Bootcamp"/>
+                    <aside class="notes">
+                    <p>Obviously learning to play music takes no time at all
+                    and there's a wonderful job waiting for you!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/getting_started_tuba.png" alt="Tuba"/>
+                    <aside class="notes">
+                    <p>Or you could just read the book about it and wing it.
+                    Nothing beats book reading right..?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/programming24hrs.jpeg" alt="24hr Programming"/>
+                    <aside class="notes">
+                    <p>You mean I don't have to take 12 weeks? ZOMG!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/guido.png" alt="Tuba"/>
+                    <aside class="notes">
+                    <p>Back in the land of coding...</p>
+                    <p>WAT? 30 minutes? Who is this Guido person anyway...
+                    what does HE know...!?!?!?!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <p>If you have £10k, there's nothing wrong with a three
+                    month bootcamp.</p>
+                    <p class="fragment">But you'll program like someone who has
+                    only been coding for three months.</p>
+                    <aside class="notes">
+                        <p>Like learning to play music, learning to code takes
+                        time, effort, discipline and practice.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/ladykillers.png" alt="Musicians"/>
+                    <aside class="notes">
+                        <p>Would you hire these musicians..?</p>
+                        <p>The Lady Killers pass themselves off as musicians
+                        but really just use a record player and have little
+                        skill whatsoever. They're "pretending" and going
+                        through the motions (comically as a ruse).</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/fiddle_kid.jpg"/>
+                    <p>How do we get from this...</p>
+                    <aside class="notes">
+                        <p>When I show you the following pictures, think about
+                        how this maps onto computing education -- especially
+                        programming.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/benedetti.jpg"/>
+                    <p>... to this ...</p>
+                </section>
+
+                <section>
+                    <img src="images/ally_bain.jpg"/>
+                    <p>... this ...</p>
+                </section>
+
+                <section>
+                    <img src="images/bbc_scottish.jpg"/>
+                    <p>... this ...</p>
+                </section>
+
+                <section>
+                    <img src="images/pub_fiddle.jpg"/>
+                    <p>... or this ...</p>
+                </section>
+
+                <section>
+                    <img src="images/rock_cello.jpg"/>
+                    <p>... or even this ..?</p>
+                </section>
+
+                <section>
+                    <h2>500 years of music education</h2>
+                    <p>Good artists copy, great artists steal</p>
+                    <p class="fragment">(Lazy engineers don't reinvent the
+                    wheel...)</p>
+                    <aside class="notes">
+                        <p>It works..!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/blocks_mu.png" alt="Blocks v. Mu"/>
+                    <aside class="notes">
+                    <p>One way to look at the mapping between the worlds of
+                    musical and coding education. Scratch/Blocks et al let
+                    you create something quickly and easily and it looks
+                    "cool", but Python is where the "real" training is
+                    happening.</p>
+                    <p>As Alan Kay said, "you have to work your ass off to
+                    figure out what the real thing is in the learner's
+                    context".</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>What's the REAL THING?</h1>
+                    <aside class="notes">
+                        <p>Describe Mu/PyperCard/CodeGrades UX research.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/mu.gif" alt="Mu"/>
+                    <p>Mu - a beginner's code editor.</p>
+                </section>
+
+                <section>
+                    <img src="images/temperature.gif" alt="PyperCard"
+                        style="max-height: 500px;"/>
+                    <p>PyperCard - HyperCard inspired cross platform GUIs in
+                    Python (this app is only 42 lines of code).</p>
+                </section>
+
+                <section>
+                    <img src="images/codegrades.svg" style="border: 0px; background: none;" width="100%"/>
+                    <p><a href="https://codegrades.com/">https://codegrades.com/</a></p>
+                    <aside class="notes">
+                        <p>CodeGrades is an opportunity to record and learn
+                        from the progress of learners.</p>
+                        <p>Now if only I knew a bunch of folks who were experts
+                        in gaining insights from data..? ;-)</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Education makes our future possible.</h3>
+                    <h3 class="fragment">What that future is depends upon who
+                    turns up to provide such education.</h3>
+                    <h3 class="fragment">Don't just sit there, do
+                    something!</h3>
+                </section>
+
+                <section>
+                    <h1>Questions... :-)</h1>
+                    <p>Please feel free to get in touch..!</p>
+                    <p>Email: <a href="mailto:ntoll@ntoll.org">ntoll@ntoll.org</a>
+                    Twitter: <a href="https://twitter.com/ntoll">@ntoll</a>
+                    Blog: <a href="https://ntoll.org/">ntoll.org</a></p>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
