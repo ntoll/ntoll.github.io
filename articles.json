@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-01-07 17:30:00", 
+    "slug": "circuitpython-2020", 
+    "title": "CircuitPython 2020", 
+    "description": "Hopes, dreams and wishes for CircuitPython in 2020.",
+    "python": true 
+  },
+  {
     "date": "2019-11-28 14:30:00", 
     "slug": "playlist-love", 
     "title": "A Classical Playlist of Love", 
