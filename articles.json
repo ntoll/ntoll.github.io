@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-01-23 08:30:00", 
+    "slug": "sponsorship", 
+    "title": "Sponsorship", 
+    "description": "Is this a way to support volunteers? I doubt it.",
+    "python": false 
+  },
+  {
     "date": "2020-01-07 17:30:00", 
     "slug": "circuitpython-2020", 
     "title": "CircuitPython 2020", 
