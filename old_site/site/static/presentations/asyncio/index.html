@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Lessons learned with asyncio ("Look ma, I wrote a distributed hash table!")</title>
+
+		<meta name="description" content="This talk introduces the asyncio module. I'll cover what it's for, how it works and describe how I used it to write a real-world networked application (a distributed hash table). We'll explore the event loop, co-routines, futures and networking with examples from my code. This won't be an exhaustive exposition. Rather, attendees will grasp enough of asyncio to continue with their own studies.">
+		<meta name="author" content="Nicholas H.Tollervey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/asyncio.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Lessons learned with asyncio</h1>
+					<h5>(&ldquo;Look ma, I wrote a distributed hash
+                    table!&rdquo;)</h5>
+					<p>
+						<a href="http://ntoll.org/">Nicholas H.Tollervey</a> / <a href="http://twitter.com/ntoll">@ntoll</a>
+					</p>
+                    <aside class="notes">
+                        <ul>
+                            <li>My name is Nicholas - I'm a freelance Python
+                            developer from the UK.</li>
+                            <li>This is an introduction to the asyncio module
+                            that arrived in Python 3.4</li>
+                            <li>My only expectation is you know a little bit
+                            about Python</li>
+                            <li>We'll explore some core concepts of asyncio
+                            and I'll tell the story of how I used it to
+                            write a fun personal DHT project</li>
+                            <li>Not exhaustive! Simplifies a lot.</li>
+                            <li>MY AIM: to arm you with enough information
+                            to continue exploring the module.</li>
+                            <li>A personal pedagogical exercise: if I can
+                            explain myself in simple and easy-to-understand
+                            language it demonstrates my own clarity of
+                            thought and understanding of asyncio.</li>
+                        </ul>
+                    </aside>
+				</section>
+
+				<section>
+                    <h2>What does asyncio do..?</h2>
+                    <aside class="notes">
+                        <blockquote cite="https://docs.python.org/3.4/library/asyncio.html">
+                            &ldquo;This module provides infrastructure for writing
+                            single-threaded concurrent code using coroutines,
+                            multiplexing I/O access over sockets and other
+                            resources, running network clients and servers, and
+                            other related primitives.&rdquo;
+                        </blockquote>
+                        <p>While I understand all the terminology from the
+                        documentation it doesn't give me a practical "feel"
+                        for the module.</p>
+                    </aside>
+				</section>
+
+                <section>
+                    <img src="images/grok.jpg" alt="Grok the code, Neo"/>
+                    <aside class="notes">
+                        <p>Such documentation can make the module appear
+                        intimidating and the realm of esoteric 1337
+                        uber-hackers.</p>
+                        <p>Trinity talks in Courier - she's 1337. :-)</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/whoa.jpg" alt="Grok the code, Neo"/>
+                    <aside class="notes">
+                        <p>We can do a lot better than this! KISS! What does
+                        asyncio do..? As Trinity says... Let's be clear about
+                        what this means...</p>
+                        <ul>
+                            <li><strong>Concurrency</strong> - When several
+                            things appear to happen simultaneously.</li>
+                            <li><strong>Asynchronous</strong> - Not
+                            synchronised: there is no way to tell when some
+                            <em>thing</em> may happen.</li>
+                            <li><strong>Network</strong> - The medium for
+                            communicating with another device (usually via
+                            the internet).</li>
+                            <li><strong>I/O</strong> - Input / Output: when a
+                            program communicates with the "outside
+                            world".</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>A problem clearly stated:</h2>
+                    <p>Messages arrive and depart via the network at
+                    unpredictable times - asyncio lets you deal with such
+                    interactions simultaneously.</p>
+                    <aside class="notes">
+                        <p>Given this simple purpose I want to place asyncio
+                        into a practical context. So let's talk about DHT.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>What is a Distributed Hash Table?</h2>
+                </section>
+
+                <section>
+                <h2>Hash Table = dict (in Python)</h2>
+                <pre><code contenteditable class="python">
+&gt;&gt;&gt; home = {}
+&gt;&gt;&gt; home['ntoll'] = 'Towcester'
+&gt;&gt;&gt; home['voidspace'] = 'Bugbrooke'
+&gt;&gt;&gt; home['pinner'] = 'Coventry'
+&gt;&gt;&gt; home
+{
+'ntoll': 'Towcester',
+'voidspace': 'Bugbrooke',
+'pinner': 'Coventry'
+}
+&gt;&gt;&gt; home['ntoll']
+'Towcester'
+                </code></pre>
+                <p>A very simple <strong><u>key</u></strong> /
+                <strong><u>value</u></strong> data store.</p>
+                <aside class="notes">
+                    <p>Hashtable is a synonym for a dictionary in Python. It's
+                    a sort of data dictionary.</p>
+                </aside>
+                </section>
+
+                <section>
+                    <h2>Distributed</h2>
+                    <img src="images/distributed.jpg"/>
+                    <aside class="notes">
+                        <p>It's distributed because the <em>whole</em> is
+                        built from several independent yet related
+                        <em>parts</em>.</p>
+                        <p>The abstract encylopedia is made from volumes that
+                        are independent yet related to each other.</p>
+                        <p>In our case it is a distributed data structure
+                        consisting of many independent nodes collaborating
+                        over the network.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Decentralized</h2>
+                    <img src="images/decentralized.jpg"/>
+                    <aside class="notes">
+                        <p>It's also decentralized: no node is more
+                        important than the others.</p>
+                        <p>There are no client / server relationships - it's a
+                        loose peer-to-peer network of nodes.</p>
+                    </aside>
+                </section>
+
+                <section>
+                <h2>A distributed hash table (DHT) is a peer-to-peer key / value data store</h2>
+
+                <aside class="notes">
+                <p>Why?</p>
+                <p>A really interesting programming problem with some
+                fascinating properties..! :-)</p>
+                <ul>
+                    <li>No single point of failure or control.</li>
+                    <li>Efficiently scale to huge numbers of nodes.</li>
+                    <li>Good handling of fluid network membership.</li>
+                    <li>Solid foundation for more complex services.</li>
+                    <li>Tested in the real world (Bittorrent,
+                    Freenet and others).</li>
+                </ul>
+                        <p>Guess what? DHT Nodes have to concurrently handle
+                        lots of asynchronous network based I/O...</p>
+                </aside>
+                </section>
+
+                <section>
+                    <h1>How?</h1>
+                    <aside class="notes">
+                        <p>We have a context. How does asyncio make this all
+                        work..?</p>
+                        <p>Let's introduce some core concepts. The first
+                        being...</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Core Concept #1</h2>
+                    <h1>The Event Loop</h1>
+                    <aside class="notes">
+                        <p>Some code that keeps looping.</p>
+                        <p>Each iteration of the loop does two things:</p>
+                        <ol>
+                            <li>It polls for I/O events that occurred during
+                            the time it took to complete the previous
+                            iteration of the loop.</li>
+                            <li>It runs any callbacks that need to be run
+                            during this iteration of the loop.</li>
+                        </ol>
+                        <p>The loop also carries out "housekeeping" needed
+                        for callbacks that have yet to be executed.</p>
+                        <p>Important to define polling and callbacks...</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/pollingcallback.jpg" alt="Polling and callbacks as a roadtrip"/>
+                    <p><small>(Based on real events - participants have been
+                    replaced by unreasonably happy actors)</small></p>
+                    <aside class="notes">
+                        <ul>
+                            <li><strong>Polling</strong> - Discovering the
+                            status of something external to the program (in
+                            asyncio: network related I/O events).</li>
+                            <li><strong>Callback</strong> - Code to be
+                            executed when some event has occured (detected
+                            via polling).</li>
+                        </ul>
+                        <p>Humorous metaphor familiar to those with
+                        kids...</p>
+                        <ul>
+                            <li>Polling is "are we there yet..?"</li>
+                            <li>"I'll let you know when we get there" creates
+                            a sort of callback (i.e. a promise to do something
+                            when some condition is met).</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1 class="blink">IMPORTANT!</h1>
+                    <p>PEP 315 states that callbacks are...</p>
+					<blockquote cite="http://legacy.python.org/dev/peps/pep-3156/">
+                    &ldquo;[...] strictly serialized: one callback must finish
+                    before the next one will be called. This is an important
+                    guarantee: when two or more callbacks use or modify shared
+                    state, each callback is guaranteed that while it is
+                    running, the shared state isn't changed by another
+                    callback.&rdquo;
+                    </blockquote>
+                    <aside class="notes">
+                    <ul>
+                        <li>Polling takes place once during <strong><em>each
+                        iteration of the loop</em></strong>.</li>
+                        <li>I/O events discovered by polling
+                        <strong><em>determine which callbacks to
+                        execute during the current
+                        iteration</em></strong> of the loop.</li>
+                        <li>All pending callbacks are
+                        executed <strong><em>one after the
+                        other</em></strong> (see PEP 315).</li>
+                        <li>The loop can't continue - it is
+                        <strong><em>blocked</em></strong>.</li>
+                        <li>The next iteration cannot start
+                        <strong><em>until all the sequentially executed
+                        callbacks finish</em></strong> (in <u>some
+                        sense</u>).</li>
+                    </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Hang on a minute..?</h1>
+                    <h1>That doesn't sound very concurrent!</h1>
+                    <aside class="notes">
+                    <p>There's something wrong here!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/philosophers.jpg" alt="Dining philosophers problem."/>
+                    <aside class="notes">
+                        <p>Unfortunately...</p>
+                        <p>Concurrency is hard and there's more than one way
+                        to do it.</p>
+                        <p>It's worth taking some time to examine why
+                        asyncio works in the way that it does.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Concurrent tasks interfere with shared resources</h2>
+                    <ol>
+                        <li class="fragment">Task A reads a record.</li>
+                        <li class="fragment">Task B reads a record.</li>
+                        <li class="fragment">Both A and B change the
+                        <strong><em>retrieved</em></strong> data in different
+                        ways.</li>
+                        <li class="fragment">Task B writes its changes.</li>
+                        <li class="fragment">Task A writes its changes.</li>
+                    </ol>
+                    <p class="fragment blink">Task A overwrites the
+                    record containing task B's changes.</p>
+                    <aside class="notes">
+                        <p>In the traditional "Threading" model of
+                        concurrency...</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Act synchronously to avoid interference!</h2>
+                    <ol>
+                        <li class="fragment">First do A, then B followed by
+                        C (and so on).</li>
+                        <li class="fragment">Easy to understand and
+                        deterministic.</li>
+                        <li class="fragment">What happens if A needs to wait
+                        for something, for example, a reply from a machine on
+                        the network?</li>
+                        <li class="fragment">The program waits until A's
+                        network call completes.</li>
+                    </ol>
+                    <p class="fragment blink">It can't get on with other stuff while waiting for A.<br/> :-(</p>
+                    <aside class="notes">
+                        <p>Why not wait for one task to finish with a shared
+                        resource before letting other tasks use it?</p>
+
+                        <p>Given the situation in this slide...</p>
+
+                        <p>The program is described as blocked. Unacceptable
+                        if we're writing code that needs to react quickly
+                        to network based events (precisely the sort of
+                        program asyncio is intended to help with).</p>
+
+                        <p>You're probably asking yourself...</p>
+
+                        <p><strong>Why not just get on with tasks B and C
+                        while we wait for A?</strong> Bingo, you've got
+                        asyncio!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Welcome to the most important slide of this talk</h2>
+                    <ul>
+                        <li class="fragment">The program <strong><em>does not wait for a
+                        reply from network calls</em></strong> before continuing.</li>
+                        <li class="fragment">Programmers define callbacks to
+                        be run when the result of a network call is
+                        known.</li>
+                        <li class="fragment">In the meantime the program
+                        continues to poll for and respond to other network
+                        related I/O events.</li>
+                        <li class="fragment">Callbacks execute
+                        during the iteration of the event loop
+                        immediately after the expected network I/O
+                        event is detected.</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Asyncio is event driven:</p>
+                        <p>This means network based I/O is non-blocking.</p>
+                        <p>How does this work..?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Confused..?</h1>
+                    <h2 class="fragment">Don't be, its exactly how humans
+                    think about concurrency.</h2>
+                </section>
+
+                <section>
+                    <img src="images/clotheswash.jpg" alt="Take the clothes out of the washing machine."/>
+                    <p>We make plans: when the washing machine finishes, take
+                    the clothes and hang them out to dry.</p>
+                    <aside class="notes">
+                        <p>In the real world we plan ahead all the time!</p>
+                        <p>"The washing machine finishes" is an expected
+                        event. "Hang the clothes out to dry" is a callback for
+                        when this expected event happens.</p>
+                        <p>How hard can this be..? (Says, stock-photo-dude-with-a-washing-basket)</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/breakfast.jpg" alt="Breakfast"/>
+                    <p>As humans we work on concurrent tasks (like preparing
+                    breakfast) in a similar non-blocking manner.</p>
+                    <aside class="notes">
+                        <p>We skip between the things we need to do while we
+                        wait for other things to happen: we know we'll have
+                        time to squeeze the orange juice while the toast and
+                        eggs are cooking when we make breakfast.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <p><code>asyncio</code> avoids potentially confusing and
+                    complicated &ldquo;threaded&rdquo; concurrency while
+                    retaining the benefits of strictly sequential code.</p>
+
+                    <aside class="notes">
+                        <p>The fundamental advantage of asyncio.</p>
+                        <p>We plan ahead for expected events by defining
+                        callbacks to be called when such events eventually
+                        occur.</p>
+                        <p>In the meantime we sequentially handle the
+                        callbacks relating to other events that may happen
+                        in the intervening time.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Questions:</h2>
+                    <ul>
+                        <li class="fragment">How are asynchronous concurrent
+                        tasks created?</li>
+                        <li class="fragment">How do such tasks pause while
+                        waiting for non-blocking network based I/O?</li>
+                        <li class="fragment">How are callbacks defined (to
+                        handle the eventual result)?</li>
+                    </ul>
+                    <p class="fragment">You need to understand coroutines,
+                    futures and tasks.</li>
+
+                    <aside class="notes">
+                        <p>Given this is an introductory talk there are a
+                        few questions that need answering...</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Core Concept #2</h2>
+                    <h1>Coroutines</h1>
+                    <p>(Are FUN!)</p>
+                    <aside class="notes">
+                    <p>An object representing activity that eventually
+                    completes (or a decorated function that returns such
+                    an object).</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Coroutines are generators</li>
+                        <li class="fragment">They may be suspended (yield
+                        from)</li>
+                        <li class="fragment">They 'yield from' other
+                        objects</li>
+                        <li class="fragment">At the end of the chain
+                        is an object that returns a result or raises an
+                        exception</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>They lazily generate results (calling a
+                            coroutine doesn't start its execution);</li>
+                            <li>Using the 'yield from' syntax (allowing the
+                            event loop to get on with other things);</li>
+                            <li>When the yielded from object has a result,
+                            the coroutine continues from the 'yield from'
+                            statement that suspended it (re-entry);</li>
+                            <li>Rather than yielding from some other
+                            coroutine.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+					<pre><code data-trim contenteditable class="python">
+@asyncio.coroutine
+def handle_request(self, message, payload):
+    """ Handle an incoming HTTP request. """
+    response_code = 405  # Method Not Allowed
+    response_data = None
+    if message.method == 'POST':
+        try:
+            raw_data = yield from payload.read()
+            response_data = yield from self.process_data(raw_data)
+            response_code = 200  # OK
+        except Exception as ex:
+            # Log all errors
+            log.error(ex)
+            response_code = 500  # Internal Server Error
+    # etc...
+    return response
+                    </code></pre>
+                    <aside class="notes">
+                        <p>This is a decorated coroutine method that handles
+                        an incoming HTTP request. Upstream, something is
+                        yielding from a coroutine created by this function in
+                        order to do something with the response.</p>
+
+                        <p>This block of code will pause by yielding from
+                        the coroutine created by payload.read() - a method
+                        that reads in the raw data POSTed as part of the
+                        request.</p>
+
+                        <p>The code pauses again while waiting on the
+                        coroutine created by the self.process_data
+                        method (itself wait on other things such as calls
+                        to an external database).</p>
+
+                        <p>When the task encapsulated in this coroutine is
+                        complete The upstream coroutine gets the returned
+                        result and resumes execution from where it yealded
+                        from this coroutine.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>But what about callbacks?</h2>
+                    <p>How do I handle the result of a coroutine?</p>
+                    <aside class="notes">
+                        <p>We know how asyncronous activity happens. But how
+                        do I handle the result?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Core Concepts #3 &amp; #4</h2>
+                    <h1>Futures and Tasks</h1>
+                    <p>(Are also FUN!)</p>
+                    <aside class="notes">
+                    <p>A Future represents a result that may not be available
+                    yet. Callback functions are added to a sort of to-do
+                    list to be executed when the result is known
+                    (resolved).</p>
+                    <p>A Task is simply a Future that wraps
+                    a coroutine. The resulting object is realised when the
+                    coroutine completes.</p>
+                    </aside>
+                </section>
+
+                <section>
+					<pre><code data-trim contenteditable class="python">
+def handle_resolved_future(future):
+    """
+    This function is a callback. Its only argument is the
+    resolved future whose result it logs.
+    """
+    log.info(future.result())
+
+# Instantiate the future we're going to use to represent the
+# as-yet unknown result.
+my_future = asyncio.Future()
+# Add the callback to the list of things to do when the
+# result is known (the future is resolved).
+my_future.add_done_callback(handle_resolved_future)
+                    </code></pre>
+                    <p class="fragment">(Time passes)</p>
+                    <pre class="fragment"><code data-trim contenteditable class="python">
+# in some coroutine that has the Future referenced
+my_future.set_result('A result set some time later!')
+                    </code></pre>
+                    <aside class="notes">
+                        <ul>
+                            <li>Create a callback function.</li>
+                            <li>Create a future.</li>
+                            <li>Add the future to the callback list.</li>
+                            <li>At some later time in a coroutine, when its
+                            activity is done, resolve the future with the
+                            appropriate result.</li>
+                        </ul>
+                        <p>But this is a bit tedious to set up.</p>
+                    </aside>
+                </section>
+
+                <section>
+					<pre><code data-trim contenteditable class="python">
+def handle_resolved_task(task):
+    """
+    This function is a callback. Its only argument is the
+    resolved task whose result it logs.
+    """
+    log.info(task.result())
+
+task = asyncio.Task(slow_coroutine_operation())
+task.add_done_callback(handle_resolved_task)
+
+loop = asyncio.get_event_loop()
+try:
+    loop.run_until_complete(task)
+finally:
+    loop.close()
+                    </code></pre>
+                    <p>No need to resolve the task in a coroutine!</p>
+                    <aside class="notes">
+                        <p>That's why we need tasks - to take care of all the
+                        boilerplate.</p>
+                        <p>The Task object is automatically resolved when the
+                        coroutine completes. The coroutine doesn't need to
+                        reference the associated Task object.</p>
+                        <p>At the end I execute the code (remember coroutines
+                        are generators) by setting up and running the event
+                        loop.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>First class functions</h2>
+					<pre><code data-trim contenteditable class="python">
+my_future.add_done_callback(handle_resolved_future)
+                    </code></pre>
+                    <div class="fragment">
+                    <h2>First class function calls</h2>
+					<pre><code data-trim contenteditable class="python">
+add_generic_callbacks_to(my_future_or_task)
+                    </code></pre>
+                    </div>
+                    <aside class="notes">
+                        <p>Another perspective...</p>
+                        <p>My buddy Terry Jones likes to point out that
+                        we're used to working with first class functions (we
+                        pass them into functions and return them as
+                        values).</p>
+                        <p>Futures are like first class function calls
+                        (we can also pass them into functions
+                        and return them as values).</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>Recap...</h1>
+                    <h2>(The Story So Far)</h2>
+                    <aside class="notes">
+                    <ul>
+                        <li><strong>Event Loop</strong> - looping code that
+                        polls for I/O and manages event handling
+                        callbacks.</li>
+                        <li><strong>Coroutine</strong> - An object
+                        representing activity that eventually
+                        completes (or a decorated function that returns such
+                        an object).</li>
+                        <li><strong>Future</strong> Represents a result that
+                        may not be available yet. Associated callbacks are
+                        executed when it resolves.</li>
+                        <li><strong>Task</strong> Boilerplate Future that
+                        wraps a coroutine. Realised
+                        when the coroutine completes.</li>
+                    </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>A DHT Example</h2>
+                    <h3>Hashing, distance and lookups</h3>
+                    <aside class="notes">
+                        <p>Given all this theory, how does asyncio work in
+                        practice for my DHT project? Let's explore how a
+                        DHT actually works.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>A clock face of nodes</h2>
+                    <img src="images/nodes.png"/>
+                    <aside class="notes">
+                        <p>I mentioned that a DHT is made up of nodes. The
+                        classic way to visualise this is with a clock
+                        face (you'll see why in a moment).</p>
+                    <aside>
+                </section>
+                <section>
+                    <h3>Node ID is derived from a Hash and indicates its
+                    location</h3>
+                    <img src="images/numbered_nodes.png"/>
+                    <aside class="notes">
+                        <p>Each node has a unique id that is within a set
+                        of all possible values for a certain hash function
+                        (for example, sha512).</p>
+                        <p>The id's value indicates the node's position in
+                        the clock-face.</p>
+                        <p>In this way we can tell where a node
+                        is located in the abstract network, who it is close to
+                        and how far away nodes are from each other (there
+                        is some notion of distance).</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Items are a Key / Value Pair</h2>
+                    <pre><code contenteditable class="python">
+&gt;&gt;&gt; from hashlib import sha512
+&gt;&gt;&gt; item = {
+...     'my_key': 'Some value I want to store'
+... }
+&gt;&gt;&gt; sha512('my_key').hexdigest()
+'176b1c65a58c69bb83cf0f9e06695c4094bc35e69f2576464a027fa52fa53a7a
+b35c2b4a39203aff98606aed641f45abbc0d39d2be0723f44cc04e9b3e7e0f87'
+                    </code></pre>
+                    <aside class="notes">
+                    <p>Data is a key / value pair.</p>
+                    <p>The key is turned into a hash. The value is stored
+                    at nodes whose IDs are <em><u>close</u></em>
+                    to the hash of the key.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Aardvark belongs...</h2>
+                    <img src="images/aardvark.jpg"/>
+                    <aside class="notes">
+                        <p>Its similar to understanding where to look things
+                        up in a multi-volume encyclopedia.</p>
+                        <p>Articles are words (keys) and associated
+                        definitions (values) that are stored in volumes that
+                        cover some alphabetical range.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>... under &quot;A&quot;</h2>
+                    <img src="images/aardvark-entry.png"/>
+                </section>
+                <section>
+                    <h2>But, Zebra belongs...</h2>
+                    <img src="images/zebra.jpg"/>
+                </section>
+                <section>
+                    <h2>... under &quot;Z&quot;</h2>
+                    <img src="images/zebra-entry.png"/>
+                </section>
+
+                <section>
+                    <h2>Tracking via the Routing Table</h2>
+                    <img src="images/me-rt.png"/>
+                    <aside class="notes">
+                        <p>How do nodes know where to look..?</p>
+                        <p>Each node maintains a local "routing table" that
+                        tracks the state of its peers.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Interactions give tracking data</h2>
+                    <img src="images/contact.jpg"/>
+                    <p>(ID, IP address and port etc...)</p>
+                    <aside class="notes">
+                        <p>All interactions result in the exchange of
+                        status information between nodes - that's how the
+                        routing table is populated and kept
+                        up-to-date..</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2><span style="color: blue">Peers</span> stored in
+                    fixed size
+                    <span style="border: 1px #737373 solid; padding-left:8px; padding-right: 8px;">buckets</span></h2>
+                    <img src="images/peers-rt.png"/>
+                    <aside class="notes">
+                        <p>The routing table splits up the "clock face"
+                        of nodes into buckets.</p>
+                    <ul>
+                        <li>Buckets contain the same number of peers;</li>
+                        <li>Buckets cover a smaller range the closer to the
+                        local node they are;</li>
+                        <li>Ergo, the local node knows more closer
+                        nodes.</li>
+                    </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Simple rules</h2>
+                    <p>For the purposes of housekeeping:</p>
+                    <ul>
+                        <li>Reply with a value or X closest peers</li>
+                        <li>Ignore unresponsive peers</li>
+                        <li>Refresh the Routing Table</li>
+                        <li>Re-publish items</li>
+                        <li>etc...</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Each node behaves according to some very simple
+                        rules.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>GET() &amp; SET() require a lookup.</h2>
+                    <p>All interactions are asynchronous.<br/>Lookups are also
+                    parallel (concurrent).</p>
+                    <aside class="notes">
+                        <p>Lookup is a fundamental action for a DHT.</p>
+                        <p>It's how to work out which peers are to be
+                        contacted to get or store a value.</p>
+                        <p>A lookup is concurrent because several peers can be
+                        interrogated at once for this information.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Recursive Lookup</h2>
+                    <img src="images/kevin-bacon.jpg"/>
+                    <aside class="notes">
+                        <p>Here's how it works.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Six degrees of separation</h2>
+                    <img src="images/lookup1.png"/>
+                    <aside class="notes">
+                        <p>Say I want to put a value with a key whose hash
+                        puts it in a position close to 6 o'clock.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Ask <span style="color: #008400">closest known
+                    peers</span></h2>
+                    <img src="images/lookup2.png"/>
+                </section>
+                <section>
+                    <h2><span style="color: #008400">They</span> reply
+                    with <span style="color: #d73f87">closer
+                    peers</span></h2>
+                    <img src="images/lookup3.png"/>
+                </section>
+                <section>
+                    <h2><span style="color: #d73f87">They</span> reply
+                    with the
+                    <span style="color: #ff4b00">target</span></h2>
+                    <img src="images/lookup4.png"/>
+                    <aside class="notes">
+                        <p>The lookup ends when I can't find any nodes closer
+                        to the target key.</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>GET() &amp; SET() require a lookup.</h2>
+                    <p>All interactions are asynchronous.<br/>Lookups are also
+                    parallel (concurrent).</p>
+                    <aside class="notes">
+                        <p>How is this handled within the realm of
+                        asyncio..?</li>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Lookup is a Future</h2>
+                    <pre><code contenteditable class="python">class Lookup(asyncio.Future):
+    """
+    Encapsulates a lookup in the DHT given a particular target
+    key and message type. Will resolve when a result is found
+    or errback otherwise.
+    """
+
+    def __init__(self, key, message_type, node, event_loop):
+        """
+        key - sha512 of target key.
+        message_type - class to create inter-node messages.
+        node - the local node in the DHT.
+        event_loop - the event loop.
+        """
+        ...etc...
+                    </code></pre>
+                    <aside class="notes">
+                        <p>A lookup is something whose result we can't yet
+                        know (until we've finished looking it up).</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Lookup is a Future</h2>
+                    <pre><code contenteditable class="python">my_lookup = Lookup(key, FindValue, my_node, my_event_loop)
+
+def got_result(lookup):
+    """ Naive callback """
+    result = lookup.result()
+    if isinstance(lookup.message_type, FindValue):
+        for remote_node in result:
+            # result is a list of closest nodes to "key".
+            # PUT the value at these nodes.
+            ...etc...
+    else:
+        # result is a value stored at the location of "key"
+        ...etc...
+
+my_lookup.add_done_callback(got_result)
+                    </code></pre>
+                    <aside class="notes">
+                        <p>The state of the lookup (the progess of finding
+                        nodes close to the target) is held within the Lookup
+                        instance. It resolves with the result.</p>
+                        <p>The result is either a value or not_found exception
+                        in the case of a GET(), or a list of closest known
+                        nodes in the case of a PUT().</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>What about Networking?</h1>
+                    <aside class="notes">
+                        <p>How does asyncio handle different networking
+                        protocols?</p>
+                        <p>How do nodes on the DHT handle the "down the wire"
+                        aspect of I/O..?</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Core Concepts #5 &amp; #6</h2>
+                    <h1>Transports and Protocols</h1>
+                    <p>(Are also a lot of FUN!)</p>
+                    <aside class="notes">
+                    <p>Transports are provided by <code>asyncio</code> to
+                    handle TCP, UDP etc. They are handle the low level I/O
+                    layer and buffering and the event loop sets these up.</p>
+                    <p>Protocols handle network protocols at the application
+                    layer (e.g. HTTP or netstring).</p>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Transports</h2>
+                    <img src="images/airplane.jpg"/>
+                    <aside class="notes">
+                        <p>Transports are concerned with how stuff moves
+                        over the network.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Protocols</h2>
+                    <img src="images/border.jpg"/>
+                    <aside class="notes">
+                        <p>Protocols work out what to do with the stuff sent
+                        over the network. They work out how to turn the raw
+                        bytes into some meaningful message (such as a
+                        netstring)</p>
+                        <p>You only need to work with Protocols.</p>
+                    </aside>
+                </section>
+
+                <section>
+					<pre><code data-trim contenteditable class="python" style="max-height: 100%">
+class NetstringProtocol(asyncio.Protocol):
+    """http://cr.yp.to/proto/netstrings.txt"""
+
+    def data_received(self, data):
+        """
+        Called whenever the local node receives data from the
+        remote peer.
+        """
+        self.__data = data
+        try:
+            while self.__data:
+                if self._reader_state == DATA:
+                    self.handle_data()
+                elif self._reader_state == COMMA:
+                    self.handle_comma()
+                elif self._reader_state == LENGTH:
+                    self.handle_length()
+                else:
+                    msg = 'Invalid Netstring mode'
+                    raise RuntimeError(msg)
+        except NetstringParseError:
+            self.transport.close()
+                    </code></pre>
+                    <aside class="notes">
+                        <p>All protocol classes must override the
+                        data_received method to handle the incoming bytes.</p>
+                        <p>My DHT is network agnostic so it can communicate
+                        via HTTP or Netstring.</p>
+                        <p>Taken directly from Twisted. Very close. In fact
+                        asyncio transport/protocol is based upon how Twisted
+                        works in this way.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Final thoughts...</h2>
+                    <ul>
+                        <li>Twisted..?</li>
+                        <li class="fragment">100% unit test coverage</li>
+                        <li class="fragment">DHT &lt; 1000 loc</li>
+                        <li class="fragment">IO vs CPU bound</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>I love Twisted, the DHT was originally written
+                        using it. Very close. Asyncio feels more lightweight
+                        and Pythonic.</p>
+                        <p>Testing is "normal" although how you organise your
+                        code is a key factor.</p>
+                        <p>Asyncio makes it easy to think about concurrent
+                        problems. I believe the abstractions make it easy to
+                        write simple, short and comprehensible solutions.</p>
+                        <p>DON'T USE ASYNCIO if you need to do something with
+                        lots of CPU overhead - it'll block the event loop!</p>
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h1>Fin</h1>
+                    <img src="images/drog.png" style="border: 0;"/>
+                    <p><a href="https://github.com/ntoll/drogulus">github.com/ntoll/drogulus</a></p>
+                    <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
+                    <aside class="notes">
+                        <p>That's it! My DHT project is called the
+                        drogulus.</p>
+                    </aside>
+                </section>
+                <section>
+                    <img src="images/questions_after_talk.jpeg"
+                    alt="Questions" style="float: left;"/>
+                    <h2 style="margin-top: 100px">Questions..?</h2>
+                    <img src="images/drog.png" style="border: 0;"/>
+                    <p><a href="https://github.com/ntoll/drogulus">github.com/ntoll/drogulus</a></p>
+                    <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Oompah.py - Trouble at t'LeedsDataMill</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h2>Trouble at<br/> t'LeedsDataMill:</h2>
+                    <img src="images/not_lowry.jpg"/>
+                    <h3>Oompah.py</br>Big Data meets Big Brass</h3>
+                    <p>
+                        <small>
+                            <a href="http://ntoll.org">Nicholas H.Tollervey</a>
+                            / <a href="http://twitter.com/ntoll">@ntoll</a>
+                            <br/>
+                            <a href="http://github.com/bloodearnest">Simon Davy</a> /
+                            <a href="http://twitter.com/bloodearnest">@bloodearnest</a>
+                        </small>
+                    </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>These are where the speaker's notes go.</li>
+                        <ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Agenda</h2>
+                    <ul>
+                        <li>Oompah.huh..? (Nicholas &amp; Simon)</li>
+                        <li>Data analysis. (Simon)</li>
+                        <li>Musical mischief. (Nicholas)</li>
+                        <li>Questions. (You)</li>
+                        <li>Performance! (Enderby Brass Band)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Oompah.huh..?</h1>
+                </section>
+                <section>
+                    <img src="images/ldm.png"/>
+                    <h2>"We tell stories..."</h2>
+                </section>
+                <section>
+                    <h2>LDM Hack Day</h2>
+                    <p>Can we tell an engaging story about Leeds with data?</p>
+                </section>
+                <section>
+                    <img src="images/ckan.png"/>
+                    <a href="http://leedsdatamill.org/dataset/leeds-city-centre-footfall-data">http://leedsdatamill.org/dataset/leeds-city-centre-footfall-data</a>
+                </section>
+                <section>
+                    <img src="images/footfall.jpg"/>
+                </section>
+                <section>
+                    <h2>Crazy idea #1</h2>
+                    <p class="fragment">Turn the footfall data into music.</p>
+                </section>
+                <section>
+                    <h2>Crazy idea #2</h2>
+                    <p class="fragment">What musical genre epitomizes Leeds?</p>
+                </section>
+                <section>
+                    <img src="images/victorian_brass_band.jpg"/>
+                </section>
+                <section>
+                    <p>Our aim was to write Python scripts that turned raw
+                    footfall data into music for
+                    brass band called "Rhythm of the City".</p>
+                    <p>And so, <code>oompah.py</code> was ironically checked
+                    into Github.</p>
+                </section>
+                <section>
+                    <img src="images/hackday.png"/>
+                </section>
+                <section>
+                    <h1>Data <s>Analysis</s> Munging</h1>
+                </section>
+                <section>
+                    <h3>Excel + Messy Data = Aargh!</h3>
+                    <img src="images/data.png"/>
+                    <p>Please use CSV</p>
+                </section>
+                <section>
+                  <pre>
+Tuesday
+name         |     median |   min            histogram               max|
+-------------------------------------------------------------------------
+00:00        :    33.0 ms [   1.0 ▃▅▆▇▆▇▆▃▄▃▃▂___  _   __  _ _   _ 382.0]
+01:00        :    30.0 ms [   4.0 ▃▆▇▇▇▅▄▆▃▂▃________ __ _____ ___ 397.0]
+02:00        :    28.0 ms [   5.0 ▃▇▇▆▇▅▅▅▄▃▂▂▂____   __ _ ____  _ 321.0]
+03:00        :    23.0 ms [   5.0 ▃▇▇▅▆▅▃▆▃▂▂_______    _  ____ __ 264.0]
+04:00        :    12.0 ms [   2.0 ▅▇▇▅▄▃▂▂______ __ _       ___ __ 180.0]
+05:00        :    17.0 ms [   1.0 ▄▄▆▄▅▇▅▃▃▂___ ____  __     __ __ 186.0]
+06:00        :    64.0 ms [   6.0 ▂▃▃▄▄▂▃▂▄▂▃▂_▃▄▅▇▇▅▄▅▇▅▄▂▂_▂___▂ 163.0]
+07:00        :   205.0 ms [   5.0 ▂___ ___▂▃_▂_▂_▃▄▅▇▆▅▇▄▇▃▄▃___ _ 405.0]
+08:00        :   470.0 ms [  12.0 _ __ ___▂_▂▂▂▂▃▅▄▄▇▅▄▆▇▄▅▄▂▂____ 745.0]
+09:00        :   554.0 ms [  14.0 _____▂_▂▂▆▅▄▅▄▆▇▇▇▆▇▄▄▃▂_____  _ 1096.0]
+10:00        :   931.0 ms [  24.0 __ _▂▂▂_▂▃▄▄▄▅▅▇▇▄▄▃▄▂____ ___ _ 1970.0]
+11:00        :  1357.0 ms [   0.0 _     _ _____▂▂▄▃▅▅▇▇▆▄▃▃▃______ 2478.0]
+12:00        :  1823.0 ms [  56.0 ___ _▂__▂▃_▂▄▆▆▇▅▄▃________    _ 5652.0]
+13:00        :  1823.0 ms [  54.0 _________▃▂▂▂▂▃▂▆▇▆▇▅▄▄▃▂▂▂_____ 3014.0]
+14:00        :  1534.0 ms [  63.0 ___▂▃▂▂▄▃▅▃▃▅▅▇▇▅▅▅▃▃▂▃▂▂___▂___ 2664.0]
+15:00        :  1472.0 ms [  76.0 _ ________▂▃▂▃▄▄▇▇▅▆▄▄▃▅___▂____ 2544.0]
+16:00        :  1416.0 ms [  67.0 ___ _▂__▃▂_▂▂▂▄▄▃▄▄▆▇▇▇▅▇▅▅▂▂▃▂_ 2317.0]
+17:00        :  1140.0 ms [  42.0 _______▂▂▂▂_▂▃▄▃▃▃▆▄▆▇▄▆▃▃▂___ _ 2081.0]
+18:00        :   584.0 ms [  22.0 __▃▃▃▂▂▃▃▂▅▃▄▃▅▇▇▇▇▅▆▆▄▄▃▂▂▂_  _ 1486.0]
+19:00        :   291.0 ms [  12.0 ▃▃▂▃▅▂▃_▂▂▃▅▄▅▇▇▆▅▅▂▅▃▃▂▂▂▂▂____ 788.0]
+20:00        :   176.0 ms [   2.0 ▄▄▅▃▃▃▃▃▂▄▃▅▄▅▇▆▄▇▅▄▄▅▆▅▃▃▂▂▂___ 497.0]
+21:00        :   113.0 ms [   2.0 ▄▆▇▅▂▆▄▂▄▃▅▆▆▆▄▆▃▅▃▅▆▆▂▅▅▂▂▂_▂ _ 442.0]
+22:00        :    79.0 ms [   6.0 ▇▅▆▇▅▅▇▃▅▃▅▅▆▄▆▃▆▅▃▅▃▃▄▇▂▃▂▃▂__▂ 344.0]
+23:00        :    52.0 ms [   2.0 ▇▆▇▄▃▅▅▃▃▄▅▄▆▄▄▄▅▂▆▃▅▃▃_▃▂_▂ ▂▂_ 345.0]
+                 </pre>
+                </section>
+                <section>
+                    <h3>Time Travel FTW</h3>
+                    <pre><code class="python">
+    WEEK = {}
+    WEND = {}
+    for f in glob.glob('*.csv'):
+        voice = f.split('.')[0].lower().replace(' ', '_')
+        WEEK[voice] = defaultdict(list)
+        WEND[voice] = defaultdict(list)
+        with open(f) as fp:
+            for row in csv.DictReader(fp):
+                t = row['Hour']
+                d = row['WeekDay']
+                if d.lower() in ('saturday', 'sunday'):
+                    data = WEND
+                else:
+                    data = WEEK
+                data[voice][t].append(int(row['Count']))
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>Pitch</h3>
+                    <pre><code class="python">
+    def pitch(data, scale):
+        """Generate notes from the scale driven by the data."""
+        index = 0
+        for d in data:
+            index = (index + d) % len(scale)
+            yield scale[index]
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>Duration</h3>
+                    <pre><code class="python">
+    def rhythm(data, mn, mx):
+        """Produce note durations from provided patterns,
+        based on mean intensity
+        """
+        i = threshold(data)
+        pattern = patterns[i]
+
+        # use the data to chose which pattern,
+        # so the process is deterministic
+        index = 0
+        for d in data:
+            index = (index + d) % len(pattern)
+            for duration in pattern[index]:
+                yield duration
+            yield None  # indicates a bar has been produced
+                    </code></pre>
+                    <aside class="notes">
+                        Nick: this starts to tread on the rhythm/intensity
+                        ideas which I assume you want to cover, so I plan to
+                        skim over the deails and say something like "Nick will
+                        say more in a minute" </aside>
+                </section>
+                <section>
+                    <h3>Voice of the Street</h3>
+                    <pre><code class="python" style="max-height: 500px">
+    def voice(data, scale, mn, mx, length=8):
+        """Generate a voice from the data, combining pitch and rhythm"""
+        bars = 0
+        note_iter = pitch(data, scale)
+        for duration in rhythm(data, mn, mx):
+            if duration is None:
+                bars += 1
+                yield '|'
+                if bars == length:
+                    raise StopIteration()
+            elif duration[0] == 'r':
+                yield duration
+            else:
+                note = next(note_iter)
+                if '%s' in duration:
+                    # more complex templated duration (e.g. tuplets)
+                    yield duration % note
+                else:
+                    yield "%s%s" % (note, duration)
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Musical<br/>Mischief</h1>
+                </section>
+                <section>
+                    <h2>BLOOPS!</h2>
+                    <img src="images/musical_ape.jpg"/>
+                    <p><audio src="media/bloops.mp3" preload="auto" controls></audio></p>
+                </section>
+                <section>
+                    <img src="images/charles-ives.jpg"/>
+                    <p>Charles E.Ives</p>
+                </section>
+                <section>
+                    <p>Music affects because of the effects of sound.</p>
+                    <p>Music engages us to listen.</p>
+                    <p>Music, in some sense, tells a story in sound (there
+                    is a discernable narrative).</p>
+                </section>
+                <section>
+                    <h2>Can we reveal the story of the data through music?</h2>
+                </section>
+                <section>
+                    <h2>Elements of Music</h2>
+                    <ul>
+                        <li class="fragment">Pitch: how high or low a note sounds.</li>
+                        <li class="fragment">Rhythm: a sequence of different durations.</li>
+                        <li class="fragment">Melody = Pitch + Rhythm.</li>
+                        <li class="fragment">Timbre: the quality of a sound
+                        (e.g. the difference between a flute and violin).</li>
+                        <li class="fragment">Dynamics: loudness.</li>
+                        <li class="fragment">Key: the set of available pitches.</li>
+                        <li class="fragment">Harmony: how pitches sound
+                        together as polyphony.</li>
+                        <li class="fragment">Texture: how the harmony is
+                        "voiced".</li>
+                        <li class="fragment">Etc, etc...</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>A Musical Mapping</h2>
+                    <p>The ingredients for generating "Rhythm of the City".</p>
+                    <ul>
+                        <li class="fragment">Each instrument group in the band
+                        represents a specific area of the city. Ergo,
+                        cameras/locations are differentiated by timbre.</li>
+                        <li class="fragment">The amount of footfall in a
+                        location changes the intensity of dynamics and
+                        rhythm (more footfall = louder / busier
+                        melodies).</li>
+                        <li class="fragment">Use "nice" sounding pentatonic
+                        keys.</li>
+                        <li class="fragment">Time of day is indicated by
+                        key.</li>
+                        <li class="fragment">Each hour of the day is
+                        represented by an eight bar fragment.</li>
+                        <li class="fragment">Tubular bells sound out the
+                        hours every eight bars.</li>
+
+                    </ul>
+                </section>
+                <section>
+                    <h2>The Result!</h2>
+                    <img src="images/score.png"/>
+                </section>
+                <section>
+                    <h2>Does it work..?</h2>
+                </section>
+                <section>
+                    <h2>IT'S TUBA TIME!</h2>
+                    <img src="images/tubatime.jpg"/>
+                    <p>1am, 7am, 12 noon</p>
+                </section>
+                <section>
+                    <h1>Questions</h1>
+                </section>
+                <section>
+                    <h1>Performance</h1>
+                </section>
+                <section>
+                    <img src="images/enderby_band.jpg"/>
+                    <img src="images/champion_band.jpg"/>
+                    <p>Enderby Brass Band, 2014</p>
+                    <audio src="media/rhythm_of_the_city_cleaned.mp3" preload="auto" controls></audio>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'sky', // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
