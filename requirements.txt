@@ -1,1 +1,1 @@
-flask
+Nikola[extras]

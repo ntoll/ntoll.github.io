@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mu - A Python IDE for the micro:bit on the Raspberry Pi</title>
+
+		<meta name="description" content="Raspberry Pi Birthday slides.">
+		<meta name="author" content="Nicholas H.Tollervey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/asyncio.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+                    <img src="images/splash-screen.png" style="border: none;"/>
+				</section>
+
+                <!-- Part 1. Who are we? -->
+
+                <!-- Nicholas -->
+                <section>
+                    <img src="images/tuba.jpg" alt="Me armed with my tuba"/>
+                </section>
+
+                <section>
+                    <img src="images/teacher_me.jpg" alt="Me as a teacher"/>
+                </section>
+
+                <!-- Carrie Anne -->
+
+                <section>
+                    <img src="https://media.giphy.com/media/3ohzdW5SanxZxJxObC/giphy.gif"/>
+                </section>
+
+								<section>
+                    <img src="images/educationsprint.jpg"alt="As a teacher at my first PyCon UK"/>
+                </section>
+
+								<section>
+										<img src="images/ep-philbin.jpg"alt="Euro Python Keynote 2015"/>
+								</section>
+
+                <!-- Part 2. The Problem (Carrie Anne) -->
+
+                <!-- Please discard the four images below, but they might be
+                useful as examples of how coding environments exist on a wide
+                ranging continuum of friendliness. I used them in the talk I
+                gave at the RPi Birthday party last year. -->
+
+                <section>
+                    <h1>The problem</h1>
+                </section>
+
+                <section>
+									<h3>Have you ever tried to teach 8 year olds to program?</h3>
+									<img src="images/IMG_9378.JPG"/>
+                </section>
+
+                <section>
+									  <h3>The transition from visual to text based programming is hard</h3>
+                    <img src="images/owl.jpg"/>
+                </section>
+
+                <section>
+									  <h3>IDEs are for developers and not learners</h3>
+                    <img src="images/vim.jpg"/>
+                </section>
+
+                <section>
+									  <h3>Why not use IDLE?</h3>
+                    <img src="https://gifimage.net/wp-content/uploads/2017/08/shaking-my-head-gif-17.gif"/>
+								</section>
+
+                <!-- Part 3. Introducing Mu (Nicholas) -->
+
+                <section>
+                    <img src="images/mu.png" style="border: none;"/>
+                </section>
+
+                <section>
+                    <img src="images/jeremy_tweets_mu.png"/>
+                </section>
+
+                <section>
+                    <img src="images/babbage.jpg"/>
+                </section>
+
+                <section>
+                    <h1>Modus Operandi:</h1>
+                </section>
+
+                <section>
+                    <h3>Ask teachers what would help</h3>
+                    <img src="images/video_images.png"/>
+                </section>
+
+                <section>
+                    <h3>Observe students writing Python</h3>
+                    <img src="images/kids3.jpg"/>
+                </section>
+
+                <section>
+                    <h3>Draw upon developer experience</h3>
+                    <img src="images/python.png"/>
+                </section>
+
+                <section>
+                    <h2>Experiment, test, fix (repeat)</h2>
+                    <img src="images/nuclear.jpeg"/>
+                </section>
+
+                <section>
+                    <p>The Mu philosophy:</p>
+                    <ul>
+                    <li class="fragment">Less is more (remove all unnecessary distractions);
+                    <li class="fragment">Keep it simple (so Mu is easy to understand);
+                    <li class="fragment">Walk the path of least resistance (Mu should be easy);
+                    <li class="fragment">Have fun (learning should be a positive experience).
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="images/kay_quote.jpg"/>
+                </section>
+
+                <!-- Part 4: Live DEMO! TODO: Sacrifice chicken to demo
+                gods -->
+
+                <section>
+                    <h1>Live Demo</h1>
+                </section>
+
+                <!-- Part 5: Call to action (come help in the sprints) -->
+
+                <section>
+                    <h3>Education makes our future possible.</h3>
+
+                    <h3 class="fragment">What that future is depends upon who
+                    turns up to provide such education.</h3>
+
+                    <h3 class="fragment">Don't just sit there, do something!</h3>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

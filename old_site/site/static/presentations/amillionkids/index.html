@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>A Million Children and MicroPython</title>
+
+		<meta name="description" content="EuroPython 2016 Keynote slides.">
+		<meta name="author" content="Nicholas H.Tollervey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/asyncio.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>A Million Children</h1>
+                    <h2>(and MicroPython)</h2>
+					<p>
+						<a href="http://ntoll.org/">Nicholas H.Tollervey</a> / <a href="http://twitter.com/ntoll">@ntoll</a>
+					</p>
+                    <aside class="notes">
+                        <p>It's a great pleasure and honour to be here. My
+                        keynote is a story about a million children and
+                        Python.</p>
+                    </aside>
+				</section>
+
+                <section>
+                    <img src="images/tuba.jpg" alt="Me armed with my tuba"/>
+                    <aside class="notes">
+                        <p>In case you don't know me:</p>
+                        <ul>
+                            <li>Classically trained musician</li>
+                            <li>Philosophy graduate</li>
+                            <li>Writer (for O'Reilly)</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/teacher_me.jpg" alt="Me as a teacher"/>
+                    <aside class="notes">
+                        <p>... and a teacher.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/carrieanne.png"/>
+                    <aside class="notes">
+                        <p>Not the first to talk about education at EuroPython.
+                        Can you remember how Carrie Anne concluded?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Last year...</p>
+                    <video src="video/ep2015.mp4" controls style="width: 100%;"/>
+                    <aside class="notes">
+                    <ul>
+                        <li>Listed her wish list of things she
+                        would love the Python community to help build in
+                        an educational context.</li>
+                        <li>She set some homework</li>
+                        <li>I'm here to collect it in!</li>
+                    </ul>
+                    <p>Actually I'm here to tell you a story about how, since
+                    last year, the UK's Python community have been involved in
+                    a computing in education project organised by the BBC</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>My First Computer</h2>
+                    <a href="jsbeeb/index.html" target="_blank"><img src="images/bbcmicro.jpeg"/></a>
+                    <aside class="notes">
+                    <p>But first, some history...</p>
+                    <p>David Allen, the project's producer, explained that, "[t]he aim was to democratise computing. We didn't want people to be controlled by it, but to control it."</p>
+                    <p>Click the photo to start the emulator!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <video src="video/microbit.mp4" controls style="width: 100%;"/>
+                    <aside class="notes">
+                        <p>Rekindle that sense of wonder. Foster a "can do"
+                        rather than "consumer" attitude. Cherish creativity
+                        and exploration over rote learning and tests.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/partners.png"/>
+                    <aside class="notes">
+                        <p>Almost 30 partners involved in the project.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/python.png"/>
+                    <aside class="notes">
+                        <p>One of whom was the PSF.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/microbit.png"/>
+                    <aside class="notes">
+                        <p>PSF originally education partners - to provide
+                        resources and expertise.</p>
+                        <p>The story of how MicroPython came to the
+                        micro:bit</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/damien.png"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>MicroPython started as a side project</li>
+                            <li>Extraordinarily successful Kickstarter</li>
+                            <li>Full reimplementation of Python 3 for
+                            microcontrollers</li>
+                            <li>PyBoard, ESP8266, European Space Agency</li>
+                            <li>Flourishing community</li>
+                            <li>Testament to Damien's talent and determination</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/web-editor.png"/>
+                    <aside class="notes">
+                        <p>In addition to the runtime, the BBC wanted a
+                        web-based editor. We wrote one, but discovered that
+                        we needed to build a whole eco-system.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/diagram.jpg"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>We need a cross platform native editor</li>
+                            <li>We need tools for the command line</li>
+                            <li>We need projects to inspire others</li>
+                            <li>We need a website for Python in education to
+                            spread the word</li>
+                        </ul>
+                        <p>So we got to work (around 60-80 different developers
+                        from as young as 11 have been involved in the project
+                        to a greater or lesser extent).</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/mu.png"/>
+                    <p><a href="http://codewith.mu/">http://codewith.mu/</a></p>
+                    <aside class="notes">
+                        <p>An editor for kids, created from the feedback
+                        received by the Raspberry Pi Foundation. Currently
+                        only micro:bit specific, but generic version coming
+                        soon.</p>
+
+                        <p>Designed to take ZERO effort to use.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>PyZeroZero</h2>
+                    <p><a href="https://github.com/py-zerozero">https://github.com/py-zerozero</a></p>
+                    <ul>
+                        <li class="fragment"><a href="http://pygame-zero.readthedocs.org/">PyGame Zero</a> - A zero-boilerplate 2D games framework.</li>
+                        <li class="fragment"><a href="http://gpiozero.readthedocs.org/">GPIO Zero</a> - A simple interface to everyday GPIO components used with Raspberry Pi.</li>
+                        <li class="fragment"><a href="http://networkzero.readthedocs.org/">Network Zero</a> - Making it easy for learners to use simple networking in Python.</li>
+                    </ul>
+                    <p class="fragment">TL;DR ~ simple child-friendly APIs on top of real modules.</p>
+                    <aside class="notes">
+                        <p>What other libraries could we "Zero"..?</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/uflash.png"/>
+                    <p><a href="http://uflash.rtfd.org/">http://uflash.rtfd.org/</a></p>
+                    <aside class="notes">
+                        <p>Use your editor of choice... flash the device with
+                        uflash from the command line.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/projects.png"/>
+                    <p><a href="http://microworldtour.github.io/">http://microworldtour.github.io/</a></p>
+                    <aside class="notes">
+                        <p>Most of initial work was done with just one device.</p>
+                        <p>When we got 5 more we wanted to get the wider community involved: so we sent them on a world tour.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <video src="video/bob.mp4" controls style="width: 100%;"/>
+                    <aside class="notes">
+                        <p>Go see Radomir's talk on Tuesday about robots!</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/pyedweb.png"/>
+                    <p><a href="http://pythonineducation.org/">http://pythonineducation.org/</a></p>
+                    <aside class="notes">
+                        <p>PSF providing support for design of a site to act
+                        as a focus for Python in education - not just the
+                        micro:bit, but also the RPi and many other educational
+                        efforts.</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/nuclear.jpeg"/>
+                    <aside class="notes">
+                        <p>But what can it do..?</p>
+                        <ul>
+                            <li>Hardware overview</li>
+                            <li>Simple "Hello world" via editor</li>
+                            <li>Animate clocks</li>
+                            <li>Sparkle pictures</li>
+                            <li>REPL play music</li>
+                            <li>REPL musical instrument</li>
+                            <li>Code Speech</li>
+                            <li>Radio (conductor)</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <p>"Asking what sort of education and learning our community
+                    supports is how we decide what sort of community we
+                    become.</p>
+
+                    <p>For it is through education and learning that we engage
+                    with our future colleagues, friends and supporters."</p>
+                    <p><small>Nicholas Tollervey, 2015. :-)</small></p>
+                    <aside class="notes">
+                        <p>What has education got to do with you..?</p>
+                        <ul>
+                            <li>Part of our job as developers is to teach /
+                            mentor each other.</li>
+                            <li>To describe programming so kids understand you
+                            indicates you know your craft at a deep level:</li>
+                            <li>You know what to leave in and appreciate what
+                            should be left out of an explanation.</li>
+                            <li>You have clear enough mental models of the
+                            concepts of programming that you can accurately
+                            analogize and summarise.</li>
+                            <li>By explaining yourself in simple and easy to
+                            understand languages demonstrates your own clarity
+                            of thought.</li>
+                            <li>Finally, it is unambiguously good to put
+                            something back into the wider Python
+                            community.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!--section>
+                    <img src="images/pi-v-bit.jpg"/>
+                    <aside class="notes">
+                        <ul>
+                            <li>Education, by its nature, is
+                            collaborative.</li>
+                            <li>Many articles like this have appeard in the
+                            past few months.</li>
+                            <li>They are based on a false premise and, to be
+                            honest, are damaging and unhelpful to our
+                            efforts.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="images/pycake.jpg"/>
+                </section>
+
+                <section>
+                    <img src="images/cupcakes.jpg"/>
+                </section -->
+
+                <section>
+                    <h2>We need help with:</h2>
+                    <ul>
+                        <li class="fragment">The Mu editor - generic Python support!</li>
+                        <li class="fragment">FooBarZero and tools - See Dan Pope's talk this afternoon!</li>
+                        <li class="fragment">pythonineducation.org - early days. Internationalisation!</li>
+                        <li class="fragment">Playful resources that will inspire kids, teachers and developers - content!</li>
+                        <li class="fragment">Other cool stuff - Jupyter for micro:bit!</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>This week:</h1>
+                    <div class="fragment">
+                    <h1>Everything is open!</h1>
+                    <a href="https://www.microbit.co.uk/open-source">https://www.microbit.co.uk/open-source</a></div>
+                    <aside class="notes">
+                        <p>Finally, it's a great pleasure to announce that...</p>
+                        <p>...imagine what you would do with such an interesting
+                        project in your own locale, country and home.</p>
+
+                        <p>It's an opportunity for the European Python community
+                        to adopt and adapt a truly free software and hardware
+                        project aimed at beginner programmers.</p>
+                        <ul>
+                            <li>One more thing...</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <p>One more thing...</p>
+                    <div class="fragment">
+                    <h1>Everyone gets a micro:bit</h1>
+                    <h3>(Thank you BBC)</h3>
+                    <p>Present your conference ticket at the desk in the Maker Area.</p>
+                    <p>Technical deep-dive into MicroPython follows this keynote!</p>
+                    <aside class="notes">
+                        <p>Please do something worthwhile with these devices.
+                        If you don't want or need it, pass it on.</p>
+                    </aside>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="images/questions_after_talk.jpeg"
+                    alt="Questions" style="float: left;"/>
+                    <h2 style="margin-top: 200px">Questions..?</h2>
+                    <p><a href="http://ntoll.org/">ntoll.org</h2>
+                    <p><a href="https://twitter.com/ntoll">twitter.com/ntoll</a></p>
+                    <aside class="notes">
+                        <p>That's it...</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>MicroPython on the BBC micro:bit</h2>
+                    <ul>
+                        <li>The source: <a href="https://github.com/bbcmicrobit/micropython">https://github.com/bbcmicrobit/micropython</a></li>
+                        <li>The docs: <a href="https://microbit-micropython.readthedocs.io/en/latest/">http://microbit-micropython.rtfd.org/</a></li>
+                        <li>The tools: <a href="http://uflash.rtfd.org">http://uflash.rtfd.org</a></li>
+                        <li>The editor: <a href="http://codewith.mu/">http://codewith.mu/</a></li>
+                        <li>Examples!</li>
+                        <li>Questions.</li>
+                    </ul>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>

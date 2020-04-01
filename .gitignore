@@ -1,2 +1,6 @@
 *.tgz
 *.swp
+cache
+.doit.db
+__pycache__
+output
