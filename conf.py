@@ -253,7 +253,7 @@ TIMEZONE = "Europe/London"
 # Date format used to display post dates. (translatable)
 # Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time
 # You can also use 'full', 'long', 'medium', or 'short'
-# DATE_FORMAT = 'yyyy-MM-dd HH:mm'
+DATE_FORMAT = 'EEE, MMM d, yyyy h:mm a' #yyyy-MM-dd HH:mm'
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # Used by moment.js: https://momentjs.com/docs/#/displaying/format/
@@ -892,10 +892,21 @@ IMAGE_FOLDERS = {'images': 'images'}
 # FAVICONS contains (name, file, size) tuples.
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
-# FAVICONS = (
-#     ("icon", "/favicon.ico", "16x16"),
-#     ("icon", "/icon_128x128.png", "128x128"),
-# )
+FAVICONS = (
+    ("apple-touch-icon", "/apple-icon-57x57.png", "57x57"),
+    ("apple-touch-icon", "/apple-icon-60x60.png", "60x60"),
+    ("apple-touch-icon", "/apple-icon-72x72.png", "72x72"),
+    ("apple-touch-icon", "/apple-icon-76x76.png", "76x76"),
+    ("apple-touch-icon", "/apple-icon-114x114.png", "114x114"),
+    ("apple-touch-icon", "/apple-icon-120x120.png", "120x120"),
+    ("apple-touch-icon", "/apple-icon-144x144.png", "144x144"),
+    ("apple-touch-icon", "/apple-icon-152x152.png", "152x152"),
+    ("apple-touch-icon", "/apple-icon-180x180.png", "180x180"),
+    ("icon", "/android-icon-192x192.png", "192x192"),
+    ("icon", "/favicon-32x32.png", "32x32"),
+    ("icon", "/favicon-96x96.png", "96x96"),
+    ("icon", "/favicon-16x16.png", "16x16"),
+)
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
 # INDEX_TEASERS = False
@@ -1271,7 +1282,9 @@ INDEX_DISPLAY_POST_COUNT = 5
 # }
 
 # Additional metadata that is added to a post when creating a new_post
-# ADDITIONAL_METADATA = {}
+ADDITIONAL_METADATA = {
+    "previewimage": "/preview-image.png",
+}
 
 # Nikola supports Twitter Card summaries, but they are disabled by default.
 # They make it possible for you to attach media to Tweets that link
@@ -1280,13 +1293,13 @@ INDEX_DISPLAY_POST_COUNT = 5
 # Uncomment and modify to following lines to match your accounts.
 # Images displayed come from the `previewimage` meta tag.
 # You can specify the card type by using the `card` parameter in TWITTER_CARD.
-# TWITTER_CARD = {
-#     # 'use_twitter_cards': True,  # enable Twitter Cards
-#     # 'card': 'summary',          # Card type, you can also use 'summary_large_image',
-#                                   # see https://dev.twitter.com/cards/types
-#     # 'site': '@website',         # twitter nick for the website
-#     # 'creator': '@username',     # Username for the content creator / author.
-# }
+TWITTER_CARD = {
+    'use_twitter_cards': True,  # enable Twitter Cards
+    'card': 'summary',          # Card type, you can also use 'summary_large_image',
+                                  # see https://dev.twitter.com/cards/types
+    'site': '@ntoll',         # twitter nick for the website
+    'creator': '@ntoll',     # Username for the content creator / author.
+}
 
 # Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
 # environment but is not recommended for HTTP/2.0 when caching is used.
