@@ -1,7 +1,7 @@
 <!--
 .. title: On Being Together
 .. slug: on-being-together
-.. date: 2020-08-16 10:00:00 UTC+01:00
+.. date: 2020-08-21 14:30:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -10,77 +10,169 @@
 .. author: Nicholas H.Tollervey
 -->
 
-I have LOTS of projects (software, [classical] music, gardening, writing, goofy
-stuff) that I share with LOTS of different folks. This is a privilege and a
-source of happiness and growth; yet it has also been a source of pain
-(interactions with aspects of the Python community spring to mind).
+(Some raw thoughts I've written down solely to help me clarify my thinking.)
 
-My feelings and thinking about collaboration have changed significantly over
-the past couple of years.
+Being together with people I love and who love me in return is a source of
+great joy and solace.
 
-I used to be all about promoting "the community" (a sort of amorphous blob of
-folks rallying under a banner - e.g. #python), contributing and volunteering my
-code, time, effort and money, and generally trying hard to be a positive part
-of "something" (the aforementioned amorphous blob). For the past 12 years or
-so, this was the organised Python programming community, but it has also
-included various formal and informal educational and musical stuff too.
+Yet being with people can also lead to distress.
 
-Now my feeling is that I want nothing to do with any notion of "community" in
-an organised, formal or hierarchical sense. I'm afraid I've seen such notions
-tragically or unintentionally undermined (at best), or turned into toxic
-dumpster fires full of malice (at worst). While my experience of the Python
-community has mostly been extraordinarily positive, there was enough
-not-good-stuff that I've ended up stepping away.
+Like many, I've encountered rejection and resulting feelings of loneliness,
+I've been the target of ignorant nastiness, and some make it clear I am of no
+value while others happily place unreasonable burdens upon me. My own
+experiences are but a small selection from the menu of unwelcome situations
+that could be, and often are, meted out to people.
 
-Yet I don't want to find myself in a chaotic "bottom up" ad hoc space either.
-My experience of such communities is that there's still a hierarchy, along with
-impositions of power and other negative political machinations. These are often
-lived out via a hidden or tacit hierarchy or communication channels. Often the
-loudest or most charismatic people hold sway and folks are either "in" or "out"
-of the circle of those "movers and shakers"
-([this rather interesting essay](https://www.lewissociety.org/innerring/), by
-C.S.Lewis of all people, actually captures aspects of what I'm talking about
-quite well, in a dated sort of a way if you can see past the 1950s era
-language).
+Dealing with complicated experiences and finding a way to work through
+challenging encounters often feels painful and can lead to a sense of failure
+or hopelessness. But I believe this process is also an opportunity for growth,
+albeit through small, difficult, and often misplaced, steps. Allowing
+complicated feelings, pain and failure to manifest is certainly better than the
+alternative: sweeping things out of sight means the distress is never
+addressed, explored or dealt with.
 
-At least the formal communities are mostly up front about the hierarchy, the
+So, being together requires conscious work and reflection.
+
+The good stuff can take as much effort as the bad. To be loving, compassionate,
+tolerant and forgiving towards others requires great strength of character. The
+bad stuff shows we are all flawed sensitive beings whose strength often fails
+us. We have an endless capacity to hurt and be hurt by each other. This is
+especially true if we don't allow ourselves the time and energy to reflect upon
+and consciously adjust our behaviour towards each other.
+
+Sadly, some simply don't care for others or for such self reflection.
+
+For example, narcissists (by definition) lack empathy or compassion and only
+make an effort in relationships if they see a benefit to themselves. This is a
+tragic form of ignorance, for they will never know the joy of relationships
+shared with loved ones who reciprocate emotional investment and mutual care.
+For them, being together is an exercise in self aggrandisement, domination or
+profit.
+
+Ironically, the origins of such self-centredness are complicated, so worthy of
+introspection and self-reflection ~ the very traits such people fail to
+exercise. Everyone has a unique and valuable journey through life, even if
+their current location or direction of travel is deeply problematic.
+Recognising this with a narcissist, making it possible to be together without
+getting crushed by the weight of their ego, takes (the afore mentioned)
+strength of character. Sadly, sometimes this is simply not possible and you
+have to cut your losses and move on.
+
+I often wonder how to respond to the difficulties that arise from being
+together with others. My feelings about about this subject have changed
+significantly over the past couple of years. 
+
+I continue to believe that being together is usually a privilege and a source
+of happiness and growth. Yet some of my recent collaborations have also been a
+source of great pain (interactions with aspects of the Python community
+[spring to mind](https://ntoll.org/article/compassion/)).
+
+I used to be all about promoting "the community" as a way of being together.
+An immediate problem is "the community" is an amorphous blob of a
+term that folks never pin down. This is a significant cause of many problems as
+misunderstanding is rife. In any case, I naively contributed and volunteered my
+code, time, effort and money. In short, I tried very hard to be a positive part
+of "something". For the past 12 years or so, this "something" was the Python
+programming community.
+
+I've always been reticent about "top down" notions of community. They are
+bureaucratic, formal and hierarchical in nature. I'm afraid I've seen such
+notions tragically, incompetently or unintentionally undermined (at best), or
+turned into toxic dumpster fires full of malice (at worst). While my experience
+of the "formal" Python community has mostly been extraordinarily positive,
+there has been enough not-so-good-stuff that I've ended up choosing to step
+away.
+
+But I don't want to find myself in a chaotic "bottom up" community either.
+While these are ad hoc, improvised and informal, there is still a hierarchy,
+along with impositions of power and other negative political machinations.
+These are lived out through hidden communication channels, gossip or because
+the loudest or most charismatic folks hold the floor. People are either "in"
+or "out" of the circle of these "movers and shakers".
+
+At least more formal communities appear to be up front about hierarchy, the
 exercise of power, the scope and relations of roles and how one assumes
 positions therein..!
 
-Rather, I want to continue to work with folks who are open to compassionate,
-collaborative, cooperative ways of working but without any extra notions of
-"community" (as described above). I want to simply bring myself, and welcome
-others who also bring themselves to a place where there's a connection, frisson
-or creative energy from which we can mutually grow.
+For me the key is personal character - of both myself (how I reflect and
+choose to behave) and the others with whom I find myself.
 
-My inevitable musical analogy is that it's the difference in scale and
-(inter-personal) dynamics between a string quartet and a full scale
-professional symphony orchestra or an amateur community choir. I guess I'm
-thinking out loud about a "chamber community" (viz, the scale and nature of
-"chamber music"), rather than the more common concert-hall scale music making.
-I may even be describing a camerata of sorts. (?)
+I'm reminded of [this rather interesting essay](https://www.lewissociety.org/innerring/),
+by C.S.Lewis. I first read it when I was a music undergraduate and found it via
+a Christian room-mate. Lewis describes an "Inner Ring", something akin to the
+circle of "movers and shakers" vying for influence, power and prestige that I
+describe above. The part of the essay that most speaks to me, comes at the very
+end:
 
-So here's the thing... the tech world is (sadly) full of enough folks who still
-need reminding what makes a place positive, friendly and safe when working with
-each other.
+> "And if in your spare time you consort simply with the people you like, you
+> will again find that you have come unawares to a real inside: that you are
+> indeed snug and safe at the centre of something which, seen from without,
+> would look exactly like an Inner Ring. But the difference is that the secrecy
+> is accidental, and its exclusiveness a by-product, and no one was led thither
+> by the lure of the esoteric: for it is only four or five people who like one
+> another meeting to do things that they like. This is friendship. Aristotle
+> placed it among the virtues. It causes perhaps half of all the happiness in
+> the world, and no Inner Ring can ever have it."
 
-In a well organised community setting this would be covered by a code of
+Reaching back in time to feel like my 18 year old self again, I want to be with
+folks who are open to compassionate, collaborative, cooperative ways of working
+but without any extra problematic notions of "community" (as described above).
+I simply want to bring myself, and welcome others who want to join me into
+place where there's a connection, frisson or creative energy from which we can
+mutually grow.
+
+In other words, I am inviting friendship.
+
+Friendship requires trust, honesty, tolerance, compassion and forgiveness...
+all those things that depend upon strength of character. Putting in such effort
+for others is the antipode of the machinations needed to be one of the "in"
+crowd.
+
+So here's the thing... the tech world has its fair share of folks who forget
+what makes a place positive, friendly and safe when being with each other. Such
+folks see collaboration in terms of gaining access to the "in" crowd, prestige
+and power. This is the stuff of narcissistic day dreams.
+
+In an organised community such behaviour is addressed by a code of
 conduct (and the Python community spend a lot of time and energy acting on this
-~ to varying degrees of success from hollow virtue signalling through to some
-very effective networks of support). Conversely, the informal communities tend
-to lack these sorts of public or explicit "frameworks" with often detrimental
-results (folks are able to capitalize, abuse or manipulate the informal
-"hidden" networks and relationships to selfish or unpleasant ends).
+~ with varying degrees of success, from hollow virtue signalling through to
+some very effective networks of support). Conversely, the informal communities
+tend to lack these sorts of public or explicit "frameworks" often with
+detrimental results (folks are able to capitalize, abuse or manipulate the
+informal "hidden" networks and relationships to selfish or unpleasant ends).
 
-It's why I've found myself writing this - a sort of personal code I call
-"on being together". It's very much a work in progress and has become an
-expression of what you can expect from me and what I may expect from you should
-we find ourselves "being together" in a place and collaborating or working
-together. Coming into contact with Xe's Creator's Code started the ball
-rolling.
+It's why I've found myself writing a sort of personal code I call
+"[on being together](https://github.com/ntoll/being_together)". Encountering
+[Xe's Creator's Code](https://github.com/Xe/creators-code) inspired this
+effort.  It's very much a work in progress and has become an expression of what
+you can expect from me and what I may expect from you should we find ourselves
+"being together" in a place to collaborate or work with each other:
 
-Like I said, thoughts, ideas, feedback and constructive critique most welcome
-since I'm painfully aware that I write from rather a privileged position that
-will have plenty of blind spots.
-
-Thank you..!
+<blockquote>
+<br/>
+When working together or if things go wrong,<br/>
+we acknowledge and work through differences.<br/>
+In so doing, we transform and enlarge each other.<br/>
+<br/>
+To nurture our mutual growth,<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this is a place of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning, understanding, and sharing;<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this is a place to<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affirm tolerance and compassion;<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this is a place for<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collaborative creativity.<br/>
+<br/>
+All the aspects of yourself you choose to bring to this place<br/>
+are welcome here.<br/>
+<br/>
+Reciprocate! Welcome, embrace and learn from others<br/>
+(even in the face of apparent hostility or misunderstanding).<br/>
+<br/>
+To act against this spirit invites ostracism,<br/>
+a loss that diminishes us all.<br/>
+<br/>
+Thank you.
+</blockquote>
