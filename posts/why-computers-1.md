@@ -10,39 +10,47 @@
 .. author: Nicholas H.Tollervey
 -->
 
-In a relatively short period of time computers have become ubiquitous. They
-touch all aspects of our lives. As a result, computers are interesting and many
-people want to know **how** they work ([this is a typical response](https://www.youtube.com/watch?v=tpIctyqH29Q)).
+Computers are ubiquitous.
 
-I'm going to take a different approach: I'm going to concisely explore **why**
-computers work.
+They touch all aspects of our lives, from mediating our social interactions and
+storing our personal data to modelling and predicting aspects of our culture
+and controlling the everyday infrastructure of society.
+
+Therefore, for technical, social, political and ethical reasons, computers are
+interesting and folks want to know **how** they work. It's not unreasonable to
+want to know about the machines that automate and control so much of our world 
+([and this is a typical response](https://www.youtube.com/watch?v=tpIctyqH29Q)).
+
+I'm going to take a different approach. I'm going to explore **why** computers
+work.
 
 What's the difference?
 
 Answers to "how?" questions tell us what method or steps make something happen.
-In contrast, the answers to "why?" questions describe what makes
-something possible ~ an opportunity to encounter a more fundamental
-perspective. It's the difference between a car mechanic who may understand
-*how* an engine works (so they can fix broken engines), and a mechanical
-engineer who understands the physics and chemistry relating to *why* engines
-work (so they can improve the design of engines). Knowing how something works
-means your frame of reference is *within the system*, whereas if you understand
-why something works you're not bound by existing products, solutions or
-cultural practices.
+In contrast, the answers to "why?" questions describe what makes something
+possible ~ an opportunity to encounter a more fundamental perspective. It's the
+difference between a car mechanic who may understand *how* an engine works (so
+they can fix broken engines), and a mechanical engineer who understands the
+physics and chemistry relating to *why* engines work (so they can improve the
+design of engines). Knowing how something works means your frame of reference
+is *within the system*, whereas if you understand why something works you're
+not bound by existing products, solutions or cultural practices.
 
 Most importantly, cultivating an understanding of why something is possible is
 an invitation for playful creativity, fearless exploration and careful
 refinement of alternatives to the current crop of answers to "how?". It is an
-opportunity to enlarge and change our world; a form of intellectual
-empowerment and autonomy.
+opportunity to enlarge and change our world; a form of intellectual empowerment
+and autonomy.
 
-We'll start our journey by learning all about...
+Knowing "how" is good, but understanding "why" is better.
+
+To start our journey, we'll learn all about...
 
 ## Following Rules
 
 Do you know how to play Snap?
 
-(Bear with me.)
+(Bear with me, I promise it'll be worth it.)
 
 It's the sort of game very young children learn to play. It uses a standard
 deck of cards and the aim is to win all the cards by taking turns to play.
@@ -69,11 +77,10 @@ cards in the matching stacks of cards. The matching stacks are added to the
 bottom of the winner's face-down pile. Play continues to the left of the player
 who turned up the matching card.
 
-If a player mistakenly or incorrectly shouts "SNAP!" (there are not two
-matching face-up card values visible at that point in the game), then they must
-pay a forfeit by giving one card from their face-down stack to each of the
-other players. These are added to the bottom of the other players' face-down
-stacks.
+If a player mistakenly shouts "SNAP!" (there are not two matching face-up card
+values visible at that point in the game), then they must pay a forfeit by
+giving one card from their face-down stack to each of the other players. These
+are added to the bottom of the other players' face-down stacks.
 
 If two or more players shout "SNAP!" at the same time, both of the matching
 stacks are placed in the middle and added to the "Snap pool". When "SNAP!" is
@@ -106,10 +113,11 @@ Knowing how to play Snap is analogous to knowing how computers work. Looking
 beyond the rules of Snap to appreciate that human behaviour and enjoyment
 motivates people to follow the rules of the game, shows us why Snap is
 played. This insight may also inspire us to invent new games. Perhaps we become
-inspired to explore further aspects of human behaviour relating to following
-rules. Or we may even reflect upon the nature of play or games. In any case,
-knowing *why* rather than *how* provides a fascinating perspective from outside
-the system (of Snap, in this case).
+inspired to explore further aspects of [human behaviour relating to following
+rules](https://en.wikipedia.org/wiki/Milgram_experiment). Or we may even
+[reflect upon the nature of play or games](https://theoryoffun.com/). In any
+case, knowing *why* rather than *how* provides a fascinating perspective from
+outside the system (of Snap, in this case).
 
 We need to achieve an analogous enlargement of perspective beyond how computers
 work in order to understand why computers work. Only by acquiring a perspective
@@ -120,10 +128,10 @@ actual change.
 
 The computing related rules and states of affairs I'm going to describe are not
 much more complicated than the game of Snap explained above. However, what
-follows may include a few "brain twists" -- where I expect you to use your
+follows may include a few *brain twists* where I expect you to use your
 imagination to see things in a seemingly unusual or unintuitive way! I'm
 challenging you to acquire a new perspective about seemingly everyday things.
-The external world remains as it was before, but you will have changed -- your
+The external world remains as it was before, but you will have changed. Your
 newly acquired perspective provides a deeper understanding of what you're
 observing and why this makes computing possible. It's fun and can result in
 rather pleasant "aha" moments (if you were a cartoon character, it's that
@@ -133,5 +141,5 @@ What follows is the story of why it's possible to turn our thoughts and
 intentions into programs. Programs describe what computers must do to
 autonomously act in accordance with such instructions.
 
-The first step in our story is a beautiful brain twist: to think about
+The next step in our story is a beautiful brain twist: to think about
 thinking...

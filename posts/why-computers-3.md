@@ -62,7 +62,7 @@ represents the truth value of the proposition, "the Queen is present".
 
 Here's another royal brain twist: it's also possible to make simple circuits
 that mimic the logical operations found in propositional logic ("and", "or",
-"not" and the rest).
+"not" and all the rest).
 
 By re-arranging the physical components of the circuit, from a logical point of
 view, the illuminated bulb can represent the presence of both the Queen and/or
@@ -181,11 +181,11 @@ This is the "why" of the logical circuit: a human gets to say what the
 behaviour of a physical object apparently represents. Without the meaningful
 human-ascribed behaviour there is just an object described by physics.
 
-For instance, there is no physical law described by science that explains why
-green means "go" and red means "stop" at traffic lights - yet the traffic
-lights are very much a physical system that can be described by physics. If
-meaning is involved, then humans are needed to make sense of it (rather than
-science).
+Here's another instance of this phenomenon: there is no physical law described
+by science that explains why green means "go" and red means "stop" at traffic
+lights - yet the traffic lights are very much a physical system that can be
+described by physics. If meaning is involved, then humans and their cultueal
+norms are needed to make sense of it to explain what it represents.
 
 Teleology (using meaningful purpose or design to explain phenomena) isn't a
 part of the "how" of physics-based descriptions of the world - yet humans
