@@ -12,7 +12,8 @@
 
 ## Movements of Thought
 
-It is possible to describe rules for thinking (movements of thought).
+In a similar way that it is possible to describe rules for a game of cards, it
+is possible to describe rules for thinking, rules for movements of thought.
 
 This is the study of *Logic*, and applying these rules is called reasoning.
 Reasoning with logical rules makes you rational -- others who know such rules
@@ -28,8 +29,8 @@ forming sentences by combining propositions. In logic, *propositions make
 assertions that are either true or false*.
 [George Boole](https://en.wikipedia.org/wiki/George_Boole) (1815-1864) invented
 a system of mathematical algebra that works like propositional logic (it also
-deals with values that are either true or false) and so "boolean" is often used
-synonymously.
+deals with values that are either true or false) and so the term "boolean" is
+often used synonymously.
 
 Here's a contrived example of a sentence in propositional logic:
 
@@ -93,10 +94,10 @@ Here's the definition of "and" (conjugation):
 ```
  A | B | A and B
 ----------------
- F | F | F
- F | T | F
- T | F | F
- T | T | T
+ F | F |    F
+ F | T |    F
+ T | F |    F
+ T | T |    T
 ```
 
 Can you see how it works?
@@ -119,10 +120,10 @@ called "or" (disjunction):
 ```
  A | B | A or B
 ---------------
- F | F | F
- F | T | T
- T | F | T
- T | T | T
+ F | F |   F
+ F | T |   T
+ T | F |   T
+ T | T |   T
 ```
 
 Let's pretend that "A" is false but "B" is true. How would you evaluate the
@@ -138,8 +139,8 @@ only works on a single proposition:
 ```
  A | not A
 ----------
- T | F
- F | T
+ T |   F
+ F |   T
 ```
 
 It's easy to see what the "not" (negation) operation does to a proposition: it
