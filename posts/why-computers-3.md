@@ -1,7 +1,7 @@
 <!--
-.. title: Why Computers Work (part 3) 
+.. title: Representation
 .. slug: why-computers-3
-.. date: 2020-08-08 19:00:00 UTC+01:00
+.. date: 2021-01-27 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -10,14 +10,14 @@
 .. author: Nicholas H.Tollervey
 -->
 
-## Representation
+## Why Computers Work (part 3) 
 
 It's easy to imagine one thing representing another. We do this all the time.
 
 For example, in the UK the royal standard always flies from buildings
-containing the Queen. This flag is understood to represent the Queen's presence
-and somebody ensures it is flown at the right moment from the buildings she
-visits.
+containing the monarch. This flag is understood to represent the Queen's
+presence and somebody ensures it is flown at the right moment from the
+buildings she visits.
 
 ![Royal Standard over Buckingham Palace](/images/royal_standard.jpg)
 
@@ -53,7 +53,7 @@ is broken, stopping the current and extinguishing the bulb).
 Here's a royal brain twist for you: can you think of something else that deals
 with only two possible states?
 
-If you thought, "propositional logic!" then you deserve a knighthood.
+If you thought, "propositional logic" then you deserve a knighthood!
 
 The two possible states of the circuit, as controlled by the switch, mirrors
 the two possible states encountered in propositional logic: on/true and
@@ -65,14 +65,14 @@ that mimic the logical operations found in propositional logic ("and", "or",
 "not" and all the rest).
 
 By re-arranging the physical components of the circuit, from a logical point of
-view, the illuminated bulb can represent the presence of both the Queen and/or
-her consort, the Duke of Edinburgh:
+view, the illuminated bulb could represent the presence of both the Queen
+and/or her hier, the Prince of Wales:
 
-* The Queen is present *AND* the Duke of Edinburgh is present.
-* The Queen is present *OR* the Duke of Edinburgh is present.
+* The Queen is present *AND* the Prince of Wales is present.
+* The Queen is present *OR* the Prince of Wales is present.
 
 Remember, propositional logic doesn't care about the meaning of the
-propositions ("the Queen is present", "the Duke of Edinburgh is present"), so
+propositions ("the Queen is present", "the Prince of Wales is present"), so
 the circuit's behaviour could be generalised to represent "A and B" or
 "A or B".
 
@@ -80,12 +80,12 @@ Here's the diagram for the "and" circuit:
 
 ![And circuit](/images/and_circuit.png)
 
-The two switches are labelled "A" and "B" because they represent the
-propositions "A" and "B". Because of the **consecutive** arrangement of the
-switches, the states of the switches and the resulting behaviour of the bulb
-match the truth table for "and": if both switches are on, then the bulb is on
-(representing "true"), othewise, in all other combination of switch states, the
-bulb is off (representing "false").
+The two switches are labelled to show how they represent the propositions "A"
+and "B". Because of the **consecutive** arrangement of the switches, the states
+of the switches and the resulting behaviour of the bulb match the truth table
+for "and": if both switches are on, then the bulb is on (representing "true"),
+othewise, in all other combination of switch states, the bulb is off
+(representing "false").
 
 Here's the diagram for the "or" circuit:
 
@@ -135,18 +135,18 @@ microchip with the parts labelled.
 ![Transistor on a microchip](/images/transistor_on_chip.png)
 
 Back to the "not" circuit: remember that electricity will always flow the
-shortest way to "ground" (for instance via a lightning rod)? The following
+shortest way to "ground" (for instance via a lightning rod). The following
 (very simplified) circuit diagram shows how a transistor and ground is used to
 make something that behaves like a logical "not".
 
 On the left, the button labelled "A" is attached to the "gate" of the
 transistor. Since the button is off (representing false) then current is unable
-to pass through the transistor. As a result, the electrical current (in
-red) flows through the lamp to illuminate it (representing true). On the right,
-the button is on (in green, representing voltage applied to the transistor's
-"gate"). The current is now able to flow through the transister from the
-"source" to the "drain" and then to ground (so no current flows to the bulb to
-illuminate it).
+to pass through the transistor to ground. As a result, the electrical current
+(in red) flows through the lamp to illuminate it (representing true). On the
+right, the button is on (in green, representing voltage applied to the
+transistor's "gate"). The current is now able to flow through the transister
+from the "source" to the "drain" and then to ground (so no current flows to the
+bulb to illuminate it).
 
 ![Not circuit](/images/not_circuit.png)
 
@@ -155,9 +155,10 @@ so the circuit mirrors the behaviour of a logical "not". If the switch is off,
 the light is on and if the switch is on, the light is off.
 
 The important brain twist is understanding that we can design physical systems
-(i.e.  electrical circuits) that appear to behave as logical ones. A further
-brain twist is that you should divorce logical rules from the circuits
-described above.
+(i.e. electrical circuits) that _appear to behave as logical ones_.
+
+Yet another seemingly contradictory brain twist is to _remove "logic" from any
+explanation of the circuits_.
 
 From a scientific point of view of the circuit, an observer can only describe
 physical properties and behaviours in terms of electrical current, the
@@ -170,21 +171,21 @@ circuit.
 Yet if we agree the on/off states of the switches represent the true/false
 values of propositions "A" and "B" and the on/off status of the light
 represents a resulting logical outcome (true/false) then the behaviour of the
-first circuit undoubtedly mirrors the truth table for "and". Thus the circuit
-is able to represent the rules associated with a logical "and" operation.
-It's not logic that makes the circuit behave in this way (it's actually
-physics!), but because we play along in a game where physical states mirror and
-thus accurately represent logical ones, then the circuit acquires an additional
+first circuit undoubtedly mirrors the truth table for "and". Remember, it's not
+logic that makes the circuit behave in this way (it's actually physics!), but
+because we play along in a game where physical states mirror and thus
+accurately represent logical ones, then the circuit acquires an additional
 layer of meaning in terms of the rules of logic.
 
-This is the "why" of the logical circuit: a human gets to say what the
-behaviour of a physical object apparently represents. Without the meaningful
-human-ascribed behaviour there is just an object described by physics.
+This is the "why" of the logical circuit: a human is needed to understand what
+the behaviour of a physical object apparently represents. Without the
+meaningful human-ascribed behaviour there is just an object described by
+physics.
 
 Here's another instance of this phenomenon: there is no physical law described
 by science that explains why green means "go" and red means "stop" at traffic
 lights - yet the traffic lights are very much a physical system that can be
-described by physics. If meaning is involved, then humans and their cultueal
+described by science. If meaning is involved, then humans and their cultural
 norms are needed to make sense of it to explain what it represents.
 
 Teleology (using meaningful purpose or design to explain phenomena) isn't a
@@ -195,12 +196,12 @@ operations or traffic lights. The brain twist is to realise where and when such
 human interventions assign meaning to the physical world, such as in the case
 of the logic circuits I've described.
 
-Imagine an arrangement of many such circuits (representing various logical
-operations), chained together so the output of one circuit provides the input
-to the next, as can be done with transistors. This yet-more-complicated
-arrangement of logical circuits can be used to define the behaviour of a
-device. Such a device, like the logical circuits, will have inputs and outputs
-along with an additional capability to change its own state in order to store
-information.
+Imagine an arrangement of many transistor based circuits (representing various
+logical operations), chained together so the output of one circuit provides the
+input to the next. This yet-more-complicated arrangement of logical circuits
+defines the meaningful behaviour of a device. Such a device, like its
+constituent logical circuits, connects to the outside world via inputs and
+outputs and has a strange capability: to change its own state in order to store
+and process information.
 
-I am, of course, describing a computer.
+The next post will explore such a machine.

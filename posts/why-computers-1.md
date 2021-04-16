@@ -1,7 +1,7 @@
 <!--
-.. title: Why Computers Work (part 1) 
-.. slug: why-computers-1_2
-.. date: 2020-08-06 19:00:00 UTC+01:00
+.. title: An Introduction and Following Rules
+.. slug: why-computers-1
+.. date: 2021-01-25 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -10,41 +10,87 @@
 .. author: Nicholas H.Tollervey
 -->
 
+<style>
+.section_break {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.section_break:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+</style>
+
+## Why Computers Work (part 1) 
+
+This is the first of five short blog posts exploring _why computers work_.
+
+I'm going to present a friendly introductory overview for laypeople, from zero
+to Turing machines, automata and abstraction. My aim is conciseness and
+clarity, so I've necessarily missed out, glossed over and simplified things.
+There are plenty of more advanced resources online should you wish to
+investigate this subject further. Most importantly, I hope to stimulate your
+thinking about computers by creating a context for exploring ideas.
+
+I hope you enjoy these articles and, as always, I love getting constructive
+feedback [via email](/contact).
+
+<hr class="section_break"/>
+
+> αἰὼν παῖς ἐστι παίζων, πεσσεύων· παιδὸς ἡ βασιληίη.
+>
+> (The universe is a child's game. A child's kingdom.)
+>
+> ~ [Heraclitus](https://plato.stanford.edu/entries/heraclitus/) (Fragment B52)
+
+## Introduction
+
 Computers are ubiquitous.
 
-They touch all aspects of our lives, from mediating our social interactions and
-storing our personal data to modelling and predicting aspects of our culture
-and controlling the everyday infrastructure of society.
+They touch all aspects of our lives, from mediating our social interactions to
+modelling aspects of our culture and managing the everyday infrastructure of
+society.
 
-Therefore, for technical, social, political and ethical reasons, computers are
-interesting and folks want to know **how** they work. It's not unreasonable to
-want to know about the machines that automate and control so much of our world 
-([and this is a typical response](https://www.youtube.com/watch?v=tpIctyqH29Q)).
+Therefore, computers are interesting and, understandably, folks want to know
+**how** the machines that automate and control so much of our world work.
+[This is a typical response](https://www.youtube.com/watch?v=tpIctyqH29Q).
 
-I'm going to take a different approach. I'm going to explore **why** computers
-work.
+I'm going to take a different approach.
+
+I'm going to explore **why** computers work.
 
 What's the difference?
 
 Answers to "how?" questions tell us what method or steps make something happen.
 In contrast, the answers to "why?" questions describe what makes something
-possible ~ an opportunity to encounter a more fundamental perspective. It's the
-difference between a car mechanic who may understand *how* an engine works (so
-they can fix broken engines), and a mechanical engineer who understands the
-physics and chemistry relating to *why* engines work (so they can improve the
-design of engines). Knowing how something works means your frame of reference
-is *within the system*, whereas if you understand why something works you're
-not bound by existing products, solutions or cultural practices.
+possible ~ an opportunity to encounter a more fundamental perspective.
+
+It's the difference between a car mechanic who may understand *how* an engine
+works (so they can fix broken engines), and a mechanical engineer who
+understands the physics and chemistry relating to *why* engines work (so they
+can improve the design of engines). Knowing how something works means your
+frame of reference is *within the system*, whereas if you understand why
+something works you're not bound by existing products, solutions or cultural
+practices.
 
 Most importantly, cultivating an understanding of why something is possible is
 an invitation for playful creativity, fearless exploration and careful
 refinement of alternatives to the current crop of answers to "how?". It is an
-opportunity to enlarge and change our world; a form of intellectual empowerment
-and autonomy.
+opportunity to enlarge and change our world -- a form of intellectual
+empowerment and growth.
 
-Knowing "how" is good, but understanding "why" is better.
+Knowing _how_ is good, but understanding _why_ is better.
 
-To start our journey, we'll learn all about...
+With the scene suitably set, to start our journey, we'll learn all about...
 
 ## Following Rules
 
@@ -52,79 +98,104 @@ Do you know how to play Snap?
 
 (Bear with me, I promise it'll be worth it.)
 
-It's the sort of game very young children learn to play. It uses a standard
-deck of cards and the aim is to win all the cards by taking turns to play.
+It's the sort of game children learn to play. It uses a standard deck of cards
+and the aim is to win all the cards by _taking turns to play_.
 
-Players sit in a circle with one of them acting as dealer. The dealer shuffles
-the cards so they're in a random order. The cards are dealt, face down, in
-equal quantity to the players until the dealer has none left. Before the game
-begins, each player should have a neat stack of the same number of face-down
-cards.
+Siblings Penelope (11), Sam (8) and Will (5) are playing a game. This is what
+happens:
 
-The player to the left of the dealer takes the first turn.
+Penelope (for no other reason than she's the oldest) acts a dealer. She
+shuffles the deck of cards so they're in a random order and deals them, face
+down and in equal quantity, to each player until there are none left to deal.
+This is the starting state from which all games begin.
+
+Sam, the player to the left of the dealer, takes the first turn.
 
 Players take a turn by moving the top card from their face-down stack onto the
 top of an adjacent stack of face-up cards, so the newly moved card is also
-facing up. If the face-up stack doesn't already exist, a new stack is created
-by the first face-up card. The player to the left always goes next.
+facing up. Since this is Sam's first turn, the face-up stack doesn't exist,
+so a new stack is created with Sam's first face-up card taken from his pile of
+face-down cards.
+
+So ends Sam's turn.
 
 ![Snap!](/images/snap.jpg)
 
-If, at any time, any of the players notice face-up cards on the top of
-different stacks have the same value (for example, two aces are visible), then
-they shout "SNAP!". The first player who correctly shouts "SNAP!" wins all the
-cards in the matching stacks of cards. The matching stacks are added to the
-bottom of the winner's face-down pile. Play continues to the left of the player
-who turned up the matching card.
+The next player to the left, William, takes his turn in a similar fashion and
+so the game continues from one player to the next.
 
-If a player mistakenly shouts "SNAP!" (there are not two matching face-up card
-values visible at that point in the game), then they must pay a forfeit by
-giving one card from their face-down stack to each of the other players. These
-are added to the bottom of the other players' face-down stacks.
+After a while Sam shouts "SNAP". He's noticed that two face-up cards on top of
+different stacks have the same value (for example, two aces are visible on top
+of Penelope and Will's stacks). Since he was first to shout "SNAP" he wins all
+the cards in the matching stacks of cards. He gleefully scoops up all the cards
+in the face-up stacks belonging to Penelope and Will.
 
-If two or more players shout "SNAP!" at the same time, both of the matching
-stacks are placed in the middle and added to the "Snap pool". When "SNAP!" is
-next called correctly, the winning player wins both the matching stacks and any
-cards in the "Snap pool".
+Play continues to the left of the player who turned up the matching card.
 
-If a player runs out of face-down cards they flip over their face-up stack and
-play continues as before. If a player completely runs out of cards, they are
-out of the game.
+A few moments later Penelope shouts "SNAP". But there is a problem: there are
+no matching face-up cards! William points this out to Penelope and reminds her
+she has to pay a forfeit by giving one card to each of the other players from
+her face-down stack. Sam and Will get a card each and Penelope is two cards
+down.
 
-Play continues until a player holds all the cards. The player with all the
-cards is the winner and the game is over.
+At this point in the game Sam has the most cards. Will and Penelope have less
+with only a card's difference between the quantities in their face-down stacks.
 
-These deliberately precise rules describe how, given certain states of affairs,
-such and such things must happen. States of affairs unambiguously describe how
-things are in the world. For example, "there are two stacks of face-up cards
-whose top cards are of matching value". When I say that such and such must
-happen, I mean clear and unambiguous instructions describe *how* play proceeds
-given a certain state of affairs.
+Things are hotting up and the three children become more excited: when two
+matching face-up cards appear again all three of them shout "SNAP" at the same
+time. Since nobody can claim to have shouted "SNAP" first, and to avoid
+arguments, both the matching stacks are placed in the middle and added to the
+"Snap pool". When "SNAP" is next called unambiguously and correctly, the winner
+will get both the matching stacks and any cards in the "Snap pool". The stakes
+have suddenly got higher.
 
-*Why* do such rules work? Because, in addition to knowing the rules, playing
-the game of Snap means modifying one's behaviour to follow these rules. If
-everyone modifies their behaviour in accordance with the rules then folks can
-play together. Obviously, we don't explain card games in such a formal manner
-to very young children. It's good fun to informally learn how to play such
-games. Children discover it's entertaining to learn and skillfully follow rules
-that bring about exciting situations.
+Things quieten down for a few rounds until Sam runs out of face-down cards to
+put onto his face-up stack. At this point he simply flips over his face-up
+stack and it becomes his face-down stack. Play continues as before.
+
+Eventually, after a few more calls of "SNAP", Penelope finds that she's run out
+of cards and so out of the game.
+
+Sam and Will play together until, through luck and fast reactions, Sam finds
+himself with all the cards and he's declared the winner of the game.
+
+That's how you play Snap..!
+
+These deliberately precise rules describe *how*, given certain states of
+affairs, such and such things must happen. States of affairs unambiguously
+describe how things are in the world. For example, "there are two stacks of
+face-up cards whose top cards are of matching value". When I describe how such
+and such must happen, I mean clear and unambiguous instructions describe *how*
+play proceeds given a certain state of affairs.
+
+Put simply, this is *how* the game of Snap is played.
+
+But *why* is Snap played?
+
+Because, addition to knowing the rules, we understand that playing the game of
+Snap means modifying one's behaviour to follow these rules. If everyone
+modifies their behaviour in accordance with the rules then folks can play
+together. Obviously, we don't explain card games in such a formal manner to
+very young children. But as my description shows, children discover it's lots
+of fun to informally learn and skillfully follow rules that bring about
+exciting situations in games.
 
 Knowing how to play Snap is analogous to knowing how computers work. Looking
 beyond the rules of Snap to appreciate that human behaviour and enjoyment
-motivates people to follow the rules of the game, shows us why Snap is
+motivates people to follow the rules of the game, shows us _why_ Snap is
 played. This insight may also inspire us to invent new games. Perhaps we become
 inspired to explore further aspects of [human behaviour relating to following
-rules](https://en.wikipedia.org/wiki/Milgram_experiment). Or we may even
+rules](https://en.wikipedia.org/wiki/Milgram_experiment), or we may even
 [reflect upon the nature of play or games](https://theoryoffun.com/). In any
 case, knowing *why* rather than *how* provides a fascinating perspective from
 outside the system (of Snap, in this case).
 
-We need to achieve an analogous enlargement of perspective beyond how computers
-work in order to understand why computers work. Only by acquiring a perspective
-outside current norms can we possibly hope to invent or refine technology and
-explore the nature and use of such devices. The alternative is churn and
-recycling of ideas and effort within the current system with little or no
-actual change.
+We need to achieve an analogous enlargement of perspective beyond _how_
+computers work in order to understand _why_ computers work. Only by acquiring a
+perspective outside current norms can we possibly hope to invent or improve
+technology and explore the nature and use of such devices. The alternative is
+churn and the recycling of existing ideas within the current system resulting
+in a lack of innovation or positive change.
 
 The computing related rules and states of affairs I'm going to describe are not
 much more complicated than the game of Snap explained above. However, what
@@ -132,14 +203,10 @@ follows may include a few *brain twists* where I expect you to use your
 imagination to see things in a seemingly unusual or unintuitive way! I'm
 challenging you to acquire a new perspective about seemingly everyday things.
 The external world remains as it was before, but you will have changed. Your
-newly acquired perspective provides a deeper understanding of what you're
+newly acquired perspective reveals a deeper understanding of what you're
 observing and why this makes computing possible. It's fun and can result in
 rather pleasant "aha" moments (if you were a cartoon character, it's that
 feeling you get when a lightbulb appears above your head).
-
-What follows is the story of why it's possible to turn our thoughts and
-intentions into programs. Programs describe what computers must do to
-autonomously act in accordance with such instructions.
 
 The next step in our story is a beautiful brain twist: to think about
 thinking...
