@@ -1224,7 +1224,10 @@ INDEX_DISPLAY_POST_COUNT = 5
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = """
+<meta name="author" content="Nicholas H.Tollervey" />
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
