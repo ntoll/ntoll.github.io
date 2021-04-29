@@ -1,7 +1,7 @@
 <!--
 .. title: Automated Rule Following Machines
 .. slug: why-computers-4
-.. date: 2021-01-28 09:00:00 UTC+01:00
+.. date: 2021-05-06 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -56,16 +56,8 @@ or right to a new square before continuing its strange flashing and clicking
 operation.
 
 On the front of the machine is a little window. The window is labelled
-"`STATE`" and contains numbers that change when each square is "processed" by
+"`STATE`" and contains a number that changes when each square is "processed" by
 the head.
-
-The numbers look like those used to display a date on analog wrist watches:
-there appear to be a finite amount of numbered states written on a circular
-disk behind the window and the disk rotates to display a new number, presumably
-used to identify the _next_ state required by machine for processing the next
-square on the tape.
-
-![A date on a wristwatch](/images/wristwatch.png)
 
 After a while the machine comes to a stop. The state window contains the number
 0 (zero). By the head, on the tape, are a sequence of squares containing the
@@ -230,7 +222,7 @@ the tape and the tape should move _86 squares to the right_.
 
 But what is the purpose of this machine? What does it do?
 
-It follows the four rules that start the instruction manual to repeatedly
+It follows the four rules, that start the instruction manual, to repeatedly
 perform the logical steps defined in the "What to do next" table. The steps in
 the table react to and change the state of the characters on the tape in order
 to arrive at a desired end result. What that end result is depends upon what's
@@ -264,82 +256,19 @@ children's game. Computing a result is the same as following a set of
 instructions for changing states of affairs. Such unambiguous instructions
 are called algorithms.
 
-_How_ might this imaginary machine actually work?
+Since the rules in the "what to do next" table are logical, they can be 
+represented by the sorts of electrical circuitry described in the previous
+post. Such circuitry recieves input signals from the components in the head,
+and controls other components such as the motors that control the tape.
 
-Just like the logical circuits described in part three, everything about this
-machine relies upon physics and the arrangement of its parts in relation to
-each other.
-
-Let us pretend it contains the following arrangement of components:
-
-* Two small electric motors, attached to the spools holding the tape, control
-  the tape's direction and distance of travel.
-* A head reads characters from and writes characters to the frames on the tape.
-  The flash of light happens when the character is read from the tape, and the
-  clicking sound happens when the current character is deleted and potentially
-  replaced with a new character. The head is connected to the rest of the
-  device by two bundles of wires, one labelled "read" the other "write". Each
-  bundle contains as many wires as there are possible characters to read or
-  write on the tape. So, if the head reads the character "A" this is signalled
-  by electrical current in the wire labelled "A" in the read bundle.
-  Conversely, if the wire for "Z" in the write bundle is on, it acts as a
-  signal that the head should write the character "Z" to the current frame on
-  the tape.
-* Many numbered electrical circuits, all of which are connected to wires
-  labelled "input" and "output", control how the machine transitions to the
-  next state of affairs. The logical rules in the "What to do next" table are
-  encoded by arrangement of transistors on these circuits. The circuit numbered
-  as 1, represents the logic for state 1. There is one circuit for each
-  possible state.
-* A single
-  [rotary switching system](https://en.wikipedia.org/wiki/Rotary_system),
-  similar to those found in pre-digital telephone exchanges, connects the wires
-  from the head and the motors attached to the spools to one circuit at a time
-  via a rotating arm. As the arm rotates a different circuit is engaged. As a
-  result, the rotary switch defines the current state. In fact, the disk with
-  the numbers displayed through the "STATE" window is directly attached to
-  the arm. If the number 1 on the disk lines up with the "STATE" window, then
-  the arm is in the position to connect the head and motors to the circuit
-  numbered as 1, corresponding to the rules defined for state 1 in the "What to
-  do next" table. It's important to note that one of the output wires from each
-  circuit connects, via the switch, to the arm of the switch. In this way, the
-  engaged circuit can control where the arm turns next.
-
-When the machine is switched on, the arm is in position 1 (we know this because
-the number 1 is displayed through the "STATE" window). After a flash, a wire
-in the head's read bundle becomes live. It indicates the character read from
-the current frame on the tape. These wires are routed via the switch to
-become the "input" wires going into the circuit relating to state 1. If the
-wire for the letter "A" is on then, thanks to the unique arrangement of
-transistors, the circuit will produce a consistent output relating to what to
-do when in state 1 with letter "A" under the head. If the letter "A" is the
-input, the circuit will always produce the same output.
-
-By output I mean the circuit's "output" wires (representing characters) are
-routed via the switch to the head's "write" bundle. Let's pretend the wire
-relating to the character "5" is live. As a result, the head updates the
-current frame on the tape to "5". Additional outputs from the circuit include
-the wire connected via the switch to the motor that drives the spools for
-moving the tape to the left. It is used to indicate to the motor to move one
-frame to the left. A final output wire from the circuit is connected via the
-switch to the arm. This is used to indicate the arm should move 784 steps to
-the position that corresponds to state 785.
-
-At this point, the machine starts all over again but with the tape in a new
-position (one frame to the left of where it started), with a new value to read
-from the head (whatever is in this new frame) and with a new circuit engaged
-via the switch (relating to state 785, which is the number displayed by the
-disk behind the "STATE" window).
-
-If the switch ever engages state 0, the associated circuit does one thing: it
-switches the machine off.
-
-For this machine to do anything meaningful, someone will have had to have
-carefully crafted the "what to do next" rules so the state of the tape when the
-machine is switched on in state 1, is transformed into a completely new yet
-useful state when the machine achieves state 0. The transitions to take the
-machine from state 1 to state 0 collectively define the algorithm encoded by
-the machine's numbered circuits.
+For this machine to do anything meaningful, someone will have carefully
+crafted the "what to do next" rules so the symbols on the tape when the machine
+is switched on in state 1, are transformed into a completely-new-yet-useful
+set of symbols when the machine achieves state 0. The algorithm is defined by
+the "what to do next" rules written in the table and encoded in the
+circuitry. The machine transitions from state 1 and what may be found on the
+tape at that moment, via a huge number of intervening states, to state 0 and a
+computed result written on the tape.
 
 ![Alan Turing](/images/alan_turing.jpg)
 
@@ -357,11 +286,12 @@ simplified in a couple of ways:
 1. The machine could use multiple tapes with multiple heads rather than a
    single tape and a single head. The information used to make a computation
    is available in concurrent squares on several tapes, rather than as a
-   sequence or individual values on one single tape.
-2. The alphabet of characters that could be read to or from the tape need only
-   consist of two characters: one representing "on", and the other representing
-   "off". Put simply, information is represented in a binary fashion as shown
-   in the following illustration (white or "1" is on, black or "0" is off).
+   sequence of individual values on one single tape.
+2. The alphabet of characters that could be written to or read from the tape
+   need only consist of two characters: one representing "on", and the other
+   representing "off". Put simply, information is represented in a binary
+   fashion as shown in the following illustration (white or "1" is on, black or
+   "0" is off).
 
 <table class="tape">
     <tr>
@@ -391,19 +321,19 @@ I've described, but they may make the machine easier to build and program.
 
 The computer you're using to read this article obviously works in a completely
 different way to the seemingly ramshackle contraption I describe. While there
-is no tape, head or switch inside your computing device, there are transistors
+is no tape or head inside your computing device, there are transistors
 etched into silicon chips that react to and change the state of values stored
 in memory, billions of times a second. The chips connect to other parts of your
-device via input/output pins. The other parts of your device will be connected
-via spacialist hardware and might include things like a screen, keyboard,
-mouse, speaker or microphone.
+device via input/output pins. The other parts of your device, connected via
+spacialist hardware, might include things like a screen, keyboard, mouse,
+speaker or microphone.
 
 Just as a Turing machine iterates over the same cycle of reading from the head,
 writing to the tape and transitioning to a new state, a microprocessor chip,
-synchronised by a clock, carries out a similar iterative cycle or working. In
-fact, the clock speed of your machine's CPU tells you how many instructions the
-chip will carry out each second (for instance, a 3Ghz chip will carry out 3
-billion instructions a second).
+synchronised by a clock, carries out a similar iterative cycle of work one
+instruction after another. In fact, the clock speed of your machine's CPU tells
+you how many instructions the chip will carry out each second (for instance, a
+3Ghz chip will manage 3 billion instructions a second).
 
 If you're interested in how an actual chip behaves,
 [this link takes you to a simulation of an ARM1 chip](http://www.visual6502.org/sim/varm/armgl.html)
@@ -415,8 +345,8 @@ connected to and interact with each other.
 
 If a computer is simply something that is Turing complete, why is it that we're
 able to use such devices to read and write words, hear music, draw pictures,
-watch videos and all the other valuable stuff for which we find computers so
+watch videos and all the other meaningful stuff for which we find computers so
 useful?
 
-The answer relates to our human talent for abstraction and recognising
-patterns.
+The answer relates to how we perceve things, our talent for abstraction and our
+cultural context.

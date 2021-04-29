@@ -1,7 +1,7 @@
 <!--
 .. title: Representation
 .. slug: why-computers-3
-.. date: 2021-01-27 09:00:00 UTC+01:00
+.. date: 2021-05-05 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -14,24 +14,25 @@
 
 It's easy to imagine one thing representing another. We do this all the time.
 
-For example, in the UK the royal standard always flies from buildings
-containing the monarch. This flag is understood to represent the Queen's
-presence and somebody ensures it is flown at the right moment from the
-buildings she visits.
+For example, in the UK the
+[Royal Standard](https://en.wikipedia.org/wiki/Royal_Standard_of_the_United_Kingdom)
+always flies from buildings containing the monarch. This flag is understood to
+represent the Queen's presence and somebody ensures it is flown at the right
+moment from the buildings she visits.
 
 ![Royal Standard over Buckingham Palace](/images/royal_standard.jpg)
 
 Here's a twist...
 
-Instead of the royal standard, a light on top of a building's flag pole could
+Instead of the Royal Standard, a light on top of a building's flag pole could
 represent the Queen's presence. If it were on, she was present.
 
 Notice there are two possible states for the Queen (she's either present or
 not), this is mirrored by the two possible states for the light (it is either
 illuminated or not), and we are playing along in a sort of game that provides
 meaning for such a representation (we understand that the Queen is present if
-the light is illuminated, just like we do when we see the flying of the royal
-standard). One thing (a light) is representing something else (the Queen's
+the light is illuminated, just like we do when we see the flying of the Royal
+Standard). One thing (a light) is representing something else (the Queen's
 presence).
 
 Such a device could be built using the circuit shown in the diagram below:
@@ -73,7 +74,7 @@ and/or her hier, the Prince of Wales:
 
 Remember, propositional logic doesn't care about the meaning of the
 propositions ("the Queen is present", "the Prince of Wales is present"), so
-the circuit's behaviour could be generalised to represent "A and B" or
+the circuits' behaviour could be generalised to represent "A and B" or
 "A or B".
 
 Here's the diagram for the "and" circuit:
