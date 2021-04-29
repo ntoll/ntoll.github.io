@@ -1,7 +1,7 @@
 <!--
-.. title: An Introduction and Following Rules
+.. title: Why Computers Work: An Introduction and Following Rules
 .. slug: why-computers-1
-.. date: 2021-01-25 09:00:00 UTC+01:00
+.. date: 2021-05-03 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -35,11 +35,13 @@
 This is the first of five short blog posts exploring _why computers work_.
 
 I'm going to present a friendly introductory overview for laypeople, from zero
-to Turing machines, automata and abstraction. My aim is conciseness and
+to Turing machines, automata, abstraction and more. My aim is conciseness and
 clarity, so I've necessarily missed out, glossed over and simplified things.
 There are plenty of more advanced resources online should you wish to
-investigate this subject further. Most importantly, I hope to stimulate your
-thinking about computers by creating a context for exploring ideas.
+investigate this subject further.
+
+Most importantly, I hope to stimulate your thinking about computers by creating
+a place to explore ideas.
 
 I hope you enjoy these articles and, as always, I love getting constructive
 feedback [via email](/contact).
@@ -85,7 +87,7 @@ practices.
 Most importantly, cultivating an understanding of why something is possible is
 an invitation for playful creativity, fearless exploration and careful
 refinement of alternatives to the current crop of answers to "how?". It is an
-opportunity to enlarge and change our world -- a form of intellectual
+opportunity to enlarge and change our world ~ a form of intellectual
 empowerment and growth.
 
 Knowing _how_ is good, but understanding _why_ is better.
@@ -94,20 +96,16 @@ With the scene suitably set, to start our journey, we'll learn all about...
 
 ## Following Rules
 
-Do you know how to play Snap?
+Do you know how to play children's card game, Snap? (Bear with me, I promise
+it'll be worth it.) Using a standard deck of cards, the aim is to win all the
+cards by _taking turns to play_.
 
-(Bear with me, I promise it'll be worth it.)
-
-It's the sort of game children learn to play. It uses a standard deck of cards
-and the aim is to win all the cards by _taking turns to play_.
-
-Siblings Penelope (11), Sam (8) and Will (5) are playing a game. This is what
-happens:
+Let's follow along as siblings Penelope (11), Sam (8) and Will (5) play a game:
 
 Penelope (for no other reason than she's the oldest) acts a dealer. She
 shuffles the deck of cards so they're in a random order and deals them, face
 down and in equal quantity, to each player until there are none left to deal.
-This is the starting state from which all games begin.
+This is the starting state from which all games of Snap begin.
 
 Sam, the player to the left of the dealer, takes the first turn.
 
@@ -139,7 +137,8 @@ her face-down stack. Sam and Will get a card each and Penelope is two cards
 down.
 
 At this point in the game Sam has the most cards. Will and Penelope have less
-with only a card's difference between the quantities in their face-down stacks.
+with only a few cards difference between the quantities in their face-down
+stacks.
 
 Things are hotting up and the three children become more excited: when two
 matching face-up cards appear again all three of them shout "SNAP" at the same
@@ -149,9 +148,9 @@ arguments, both the matching stacks are placed in the middle and added to the
 will get both the matching stacks and any cards in the "Snap pool". The stakes
 have suddenly got higher.
 
-Things quieten down for a few rounds until Sam runs out of face-down cards to
-put onto his face-up stack. At this point he simply flips over his face-up
-stack and it becomes his face-down stack. Play continues as before.
+Things quieten down for a few rounds until Penelope runs out of face-down cards
+to put onto her face-up stack. At this point she simply flips over her face-up
+stack and it becomes her face-down stack. Play continues as before.
 
 Eventually, after a few more calls of "SNAP", Penelope finds that she's run out
 of cards and so out of the game.
@@ -162,21 +161,21 @@ himself with all the cards and he's declared the winner of the game.
 That's how you play Snap..!
 
 These deliberately precise rules describe *how*, given certain states of
-affairs, such and such things must happen. States of affairs unambiguously
+affairs, such-and-such things must happen. States of affairs unambiguously
 describe how things are in the world. For example, "there are two stacks of
-face-up cards whose top cards are of matching value". When I describe how such
-and such must happen, I mean clear and unambiguous instructions describe *how*
-play proceeds given a certain state of affairs.
+face-up cards whose top cards are of matching value". When I describe how
+such-and-such must happen, I mean clear and unambiguous instructions describe
+*how* play proceeds given a certain state of affairs.
 
 Put simply, this is *how* the game of Snap is played.
 
 But *why* is Snap played?
 
-Because, addition to knowing the rules, we understand that playing the game of
-Snap means modifying one's behaviour to follow these rules. If everyone
+Because, in addition to knowing the rules, we understand that playing the game
+of Snap means modifying one's behaviour to follow these rules. If everyone
 modifies their behaviour in accordance with the rules then folks can play
 together. Obviously, we don't explain card games in such a formal manner to
-very young children. But as my description shows, children discover it's lots
+very young children. But, as my description shows, children discover it's lots
 of fun to informally learn and skillfully follow rules that bring about
 exciting situations in games.
 

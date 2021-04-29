@@ -1,7 +1,7 @@
 <!--
 .. title: Movements of Thought
 .. slug: why-computers-2
-.. date: 2021-01-26 09:00:00 UTC+01:00
+.. date: 2021-05-04 09:00:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -15,7 +15,7 @@
 Just as one can describe rules for a game of cards, it is possible to describe
 rules for thinking: rules for movement of thought.
 
-This is the study of *Logic*, and applying these rules is called reasoning.
+This is the study of *Logic*, and using these rules is called reasoning.
 Reasoning with logical rules allows others, who know such rules, to follow the
 movements of thought that brought you to a certain conclusion. Furthermore,
 because there are rules, it's possible to notice when they're ignored or used
@@ -60,7 +60,7 @@ work out if a sentence is true or false.
 
 Here's the brain twist: propositional logic doesn't care about meaning. The
 important logical aspects of the example above don't concern my state in the
-real world (which is why the example sentence may read slightly odd).
+real world (which is why the sentence sounds slightly odd).
 *Propositional logic only cares about truth and how propositions fit together*.
 I could revise the example to:
 
@@ -87,7 +87,8 @@ that such propositions connect in a sentence that can be evaluated with rules
 dealing in just two possible states: **true** and **false**.
 
 The simplest way to express the rules that govern logical operations for
-connecting propositions is with a truth table.
+connecting propositions is with a
+[truth table](https://en.wikipedia.org/wiki/Truth_table).
 
 Here's the definition of "and" (conjunction):
 
@@ -208,7 +209,7 @@ follow unambiguous rules because we want to determine the truth of sentences in
 propositional logic (the aim of playing this sort of logic game). Furthermore,
 by pretending propositions represent states of affairs in the real world, we
 can use logic to describe and, in a sense, encode aspects of the real world.
-For instance, we could describe the rules of Snap with logic.
+For instance, we could describe the rules of Snap _with logic_.
 
 Here's a final "brain twist" for you:
 
