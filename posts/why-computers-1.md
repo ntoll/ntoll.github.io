@@ -2,6 +2,7 @@
 .. title: Why Computers Work: An Introduction and Following Rules
 .. slug: why-computers-1
 .. date: 2021-05-03 09:00:00 UTC+01:00
+.. status: private
 .. tags: 
 .. category: 
 .. link: 

@@ -2,6 +2,7 @@
 .. title: Automated Rule Following Machines
 .. slug: why-computers-4
 .. date: 2021-05-06 09:00:00 UTC+01:00
+.. status: private
 .. tags: 
 .. category: 
 .. link: 

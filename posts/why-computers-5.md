@@ -2,6 +2,7 @@
 .. title: Perception, Abstraction and Culture
 .. slug: why-computers-5
 .. date: 2021-05-07 09:00:00 UTC+01:00
+.. status: private
 .. tags: 
 .. category: 
 .. link: 
