@@ -1,7 +1,7 @@
 <!--
 .. title: Automated Rule Following Machines
 .. slug: why-computers-4
-.. date: 2021-04-06 09:00:00 UTC+01:00
+.. date: 2021-05-27 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -54,7 +54,7 @@ like a badly behaved cinema projector.
   <a href="https://creativecommons.org/licenses/by/3.0/deed.en" target="_blank">CC BY 3.0</a>
 </figure>
 
-The "head" (where the tape passes through the device) covers exacty one
+The "head" (where the tape passes through the device) covers exactly one
 square's worth of the tape. There's a flash of light from the head when a new
 square is completely contained therein. Sometimes this is followed by a
 clicking sound. When the click is heard the symbol in the square is changed:
@@ -257,7 +257,7 @@ When I say that such and such must happen, I mean clear and unambiguous
 instructions describe how the machine proceeds given a certain state of
 affairs.
 
-This is how I described the game of Snap in the first article!
+This is how I described the game of Snap [in the first article](/article/why-computers-1#rules_of_snap)!
 
 It turns out that computing a result is not that different to playing a
 children's game. Computing a result is the same as following a set of
@@ -265,9 +265,10 @@ instructions for changing states of affairs. Such unambiguous instructions
 are called _algorithms_.
 
 Since the rules in the "what to do next" table are logical, they can be 
-represented by the sorts of electrical circuitry described in the previous
-post. Such circuitry receives input signals from the components in the head,
-and controls other components such as the motors that control the tape.
+represented by the sorts of electrical circuitry described
+[in the previous post](/article/why-computers-3). Such circuitry receives input
+signals from the components in the head, and controls other components such as
+the motors that control the tape.
 
 For this machine to do anything meaningful, someone will have carefully
 crafted the "what to do next" rules so the symbols on the tape when the machine
@@ -372,5 +373,5 @@ able to use such devices to read and write words, hear music, draw pictures,
 watch videos and all the other meaningful stuff for which we find computers so
 useful?
 
-The answer relates to how we perceve things, our talent for abstraction and our
+The answer relates to how we perceive things, our talent for abstraction and our
 cultural context. The next and final post will explore these concepts.

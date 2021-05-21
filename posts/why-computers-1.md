@@ -1,7 +1,7 @@
 <!--
 .. title: Why Computers Work: An Introduction to Following Rules
 .. slug: why-computers-1
-.. date: 2021-04-03 09:00:00 UTC+01:00
+.. date: 2021-05-24 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -173,12 +173,13 @@ himself with all the cards and he's declared the winner of the game.
 
 That's how you play Snap..!
 
-The rules illustrated in this deliberately precise story describe *how*, given
-certain states of affairs, such-and-such things must happen. States of affairs
-unambiguously describe how things are in the world. For example, "there are two
-stacks of face-up cards whose top cards are of matching value". When I describe
-how such-and-such must happen, I mean clear and unambiguous instructions
-describe *how* play proceeds given a certain state of affairs.
+<p id="rules_of_snap">The rules illustrated in this deliberately precise story describe
+<em>how</em>, given certain states of affairs, such-and-such things must
+happen. States of affairs unambiguously describe how things are in the world.
+For example, "there are two stacks of face-up cards whose top cards are of
+matching value". When I describe how such-and-such must happen, I mean clear
+and unambiguous instructions describe <em>how</em> play proceeds given a
+certain state of affairs.</p>
 
 Put simply, this is *how* the game of Snap is played.
 
@@ -189,7 +190,7 @@ of Snap means modifying one's behaviour to follow these rules. If everyone
 modifies their behaviour in accordance with the rules then folks can play
 together. Obviously, we don't explain card games in such a formal manner to
 very young children. But, as my description shows, children discover it's lots
-of fun to informally learn and skillfully follow rules that bring about
+of fun to informally learn and skilfully follow rules that bring about
 exciting situations in games.
 
 <p>Knowing how to play Snap is analogous to knowing how computers work. Looking
@@ -207,8 +208,8 @@ We need to achieve an analogous enlargement of perspective beyond _how_
 computers work in order to understand _why_ computers work. Only by acquiring a
 perspective outside current norms can we possibly hope to invent or improve
 technology and explore the nature and use of such devices. The alternative is
-churn and recycling of existing ideas within the current system ~ stifling
-innovation or positive change.
+churn and recycling of existing ideas within the current system ~ a situation
+that stifles innovation or positive change.
 
 The computing-related rules and states of affairs I'm going to describe are not
 much more complicated than the game of Snap explained above. However, what
