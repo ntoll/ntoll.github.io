@@ -1,7 +1,7 @@
 <!--
 .. title: Movements of Thought
 .. slug: why-computers-2
-.. date: 2021-04-04 09:00:00 UTC+01:00
+.. date: 2021-05-25 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -13,7 +13,7 @@
 
 ## Why Computers Work (part 2) 
 
-Just as one can describe rules for a game of cards, it is possible to describe
+Just as one can describe rules for a card game, it is possible to describe
 rules for thinking: rules for movement of thought.
 
 This is the study of *Logic*, and using these rules is called *reasoning*.
@@ -91,7 +91,7 @@ dealing in just two possible states: **true** and **false**.
 <p>The simplest way to express the rules that govern such logical operations
 for connecting propositions is with a
 <a href="https://en.wikipedia.org/wiki/Truth_table" target="_blank">truth
-table</a>.
+table</a>.</p>
 
 Here's the definition of "and" (conjunction):
 
@@ -170,7 +170,7 @@ more complicated structures. Take for example:
 
 > (A and B) or (C or not D)
 
-I've put parenthesese (`(` and `)`) around propositions so you can see how they
+I've put parentheses ("`(`" and "`)`") around propositions so you can see how they
 relate to the logical operators (the `and`, `or` and `not`). If we pretend all
 the propositions represented by letters are false, what is the overall truth
 value of the sentence?
@@ -178,19 +178,19 @@ value of the sentence?
 To find the answer we play the logical "game" in the same way we would with
 Snap: we follow the rules.
 
-Start by evaluating the operators within the parenthesese. If we replace the
+Start by evaluating the operators within the parentheses. If we replace the
 propositions "A" and "B" with their truth values (remember, all the
 propositions are false), we get:
 
 > (false and false) or (C or not D)
 
 Given the rule set out in the truth table for "and", the propositions in the
-first parenthesese evaluate to false. Here's how the sentence looks as a
+first parentheses evaluate to false. Here's how the sentence looks as a
 result:
 
 > false or (C or not D)
 
-To evaluate the "or" in the remaining parenthesese we should first evaluate the
+To evaluate the "or" in the remaining parentheses we should first evaluate the
 "not" operator to find the truth value of the proposition on the right. If "D"
 is false, then the truth table for "not" tells us that "not D" must evaluate to
 true. Since "C" is false, the sentence looks like this when "C" and "not D" are
@@ -198,7 +198,7 @@ replaced by their truth values:
 
 > false or (false or true)
 
-The truth table for "or", when applied to values in the remaining parenthesese
+The truth table for "or", when applied to values in the remaining parentheses
 tells us that if one of the propositions is true, then the "or" operation must
 evaluate to true, giving us:
 
@@ -223,11 +223,11 @@ For instance, we could describe the rules of Snap _with logic_.
 But *why* is logic useful?
 
 Because logic clearly and unambiguously describes the relationships between
-current states of affairs and a new next state. Consider, for example, this
-conditional statement: if the card on top of stack A is the same as the card on
-top of stack B, then shout "SNAP!". Logic encodes the movement of thought
-needed to participate in the card game (or any other useful structured
-activity).
+states of affairs (premises), and allows us to take action given a resulting
+truth value. Consider, for example, this conditional statement: `IF` the card
+on top of stack A is an ace `AND` the card on top of stack B is an ace, `THEN`
+shout "SNAP!". Logic describes the movement of thought needed to participate in
+the card game (or any other useful structured activity).
 
 Here's a final "brain twist" for you:
 

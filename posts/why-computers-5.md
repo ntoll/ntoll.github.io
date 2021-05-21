@@ -1,7 +1,7 @@
 <!--
 .. title: Perception, Abstraction and Culture
 .. slug: why-computers-5
-.. date: 2021-04-07 09:00:00 UTC+01:00
+.. date: 2021-05-28 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -78,20 +78,22 @@ millions of colours can be generated. If you step back from your screen,
 squint your eyes and look at the blocks of colour you'll see this effect in
 action.
 
-For completeness, here's close-up of an individual RGB cell:
+For completeness, here's a close-up of one of the individual RGB cells:
 
 ![An RGB square pixel](/images/rgb_pixel.jpg)
 
 There are likely to be several hundred of these minute electrical components
 per square-inch of the screen you're using to read this article.
 
-Our perception of what we encounter depends on its scale. Furthermore, what we
+<p>Our perception of what we encounter depends on its scale. Furthermore, what
+we
 encounter may not be what we see, as René Magritte forces us to acknowledge
 with The Treachery of Images (we see a pipe when we're actually encountering a
 painting, or pixels, or a screen, and so on). There is a
-[phenomenological](https://plato.stanford.edu/entries/phenomenology/) aspect to
-our relationship to things: we can't help but add meaning coloured by our
-unique experience of the world. We have a unique and personal perspective.
+<a href="https://plato.stanford.edu/entries/phenomenology/" target="_blank">phenomenological</a>
+aspect to our relationship to things: we can't help but add meaning coloured by
+our unique experience of the world. We have a unique and personal
+perspective.</p>
 
 This applies to other encounters with the world too.
 
@@ -118,7 +120,7 @@ other aspects of the piece remaining the same ~ notes, instrumentation, and so
 on), it becomes something completely different. It sounds like an ambient
 musical experiment by the likes of
 [Brian Eno](https://en.wikipedia.org/wiki/Brian_Eno) and our recognition of
-melody, form or harmonic structure disintigrates - even though the original
+melody, form or harmonic structure disintegrates - even though the original
 melody, form and harmonic structures are still present. Such a temporal zoom,
 as well as hiding aspects of the music, also reveals new details: I find myself
 concentrating on the timbre of the instruments and enjoying the indistinct
@@ -147,7 +149,7 @@ perspective. Or, put another way, can you "brain twist" brain twists..?
 Our capacity to shift perspective due to scale is a fundamental reason _why_
 computers appear to work. They work so fast at such a small scale that our
 sense of time and space means we don't see our computer re-drawing a static
-image on a flat screen made up of millions or RGB cells at a rate of around 64
+image on a flat screen made up of millions of RGB cells at a rate of around 64
 images per second. Rather, we see this blog post consisting of words, images,
 sound and video - things that are meaningful to us. The computer is working at
 a completely different scale of time (3 billion instructions a second), space
@@ -403,7 +405,7 @@ upside down:
 </table>
 
 A further outcome of such mirroring is that this final state *must* transition
-back to the first state of affairs but moved left by one cell.
+back to the first state of affairs but moved by one cell to the left.
 
 <p>Such an arrangement and coordination of cells, combined with the rules of
 the Game of Life, create a looping pattern of four steps that always moves in a
@@ -411,9 +413,9 @@ single direction until it bumps into another pattern of cells. It appears to
 humans as if something is flying across the grid of squares (which is why this
 pattern is called
 <a href="https://www.conwaylife.com/wiki/Spaceship" target="_blank">a
-spaceship</a>.
+spaceship</a>.</p>
 
-Skillful combination and arrangement of such small groups of cells in the Game
+Skilful combination and arrangement of such small groups of cells in the Game
 of Life show how abstraction, scale and perspective interact. In the following
 video, as the camera zooms out the tempo of change speeds up to reveal
 structures within structures, and something rather amazing.
@@ -422,8 +424,8 @@ structures within structures, and something rather amazing.
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ra14IjqXS1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-A similar stack of abstraction is required for you to read this blog post
-on _your computer_.
+<p>A similar stack of abstraction is required for you to read this blog post
+on <em>your computer</em>.</p>
 
 <p>My website is created using an easy-to-read-and-write programming language
 called <a href="https://python.org" target="_blank">Python</a>. Python is,
@@ -464,8 +466,8 @@ All these levels of abstraction are required to get to this fragment of Python:
 ![Hello World in Python](/images/hello_world.gif)
 
 As I come to the end of this exploration of computing, I can't help but feel
-there's something missing or yet undiscovered about our relationship with (or
-to) computers.
+there is one final brain twist ~ something missing or yet undiscovered about
+our relationship with (or to) computers.
 
 To use a musical metaphor, this series of blog posts is like explaining why a
 piano works (the tuning, acoustic properties, action of the keyboard and
@@ -518,19 +520,20 @@ prejudices). Computer games are mostly beautiful looking yet formulaic
 variations on a theme, target driven and hardly allow a player to express
 themselves.
 
-So, I want to end by _asking something of you_:
+So, I want to end by _asking some things of you_:
 
-Look beyond the _why_ of computers. Question and challenge the incumbent
-small-minded use of computing. Most of all, be
-[affirmative](https://democracyclub.org.uk/),
-[liberated](https://freedom.press/)
-and [expressive](http://inbflat.net/) in the things you create, imagine
-and emphasize with computers.
+<p>Please look beyond the <em>why</em> of computers. Don't be afraid to
+question and challenge shallow, disappointing and exploitative uses of
+computing. But most of all, strive to be
+<a href="https://democracyclub.org.uk/" target="_blank">affirmative</a>,
+<a href="https://freedom.press/" target="_blank">liberating</a>
+and
+<a href="http://inbflat.net/" target="_blank">expressive</a>
+in the things you imagine, create and emphasize with computers.</p>
 
-In other words: **make great art**.
-
-[Together](/article/on-being-together/), let's uncover, explore and develop the
-oft-missing "music" of computing. After all, we are
-[only just getting started](/article/thought-in-motion/).
+In other words, let's [together](/article/on-being-together) uncover, explore
+and develop the oft-missing "music" of computing. After all, we are
+[only just getting started](/article/thought-in-motion/) with these strange
+machines.
 
 Peace.

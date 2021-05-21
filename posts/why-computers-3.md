@@ -1,7 +1,7 @@
 <!--
 .. title: Representation
 .. slug: why-computers-3
-.. date: 2021-04-05 09:00:00 UTC+01:00
+.. date: 2021-05-26 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -92,7 +92,7 @@ The two switches are labelled to show how they represent the propositions "A"
 and "B". Because of the **consecutive** arrangement of the switches, the states
 of the switches and the resulting behaviour of the bulb match the truth table
 for "and": if both switches are on, then the bulb is on (representing "true"),
-othewise, in all other combination of switch states, the bulb is off
+otherwise, in all other combination of switch states, the bulb is off
 (representing "false").
 
 Here's the diagram for the "or" circuit:
@@ -105,7 +105,7 @@ of the switches are on, then the bulb is on, otherwise, when both switches are
 off, the bulb is off.
 
 The circuit for "not" is slightly different and allows me to introduce a new
-(but important) electronic component: the *transistor*.
+(but important) electrical component: the *transistor*.
 
 Transistors control flow of electrical current with three connections called
 "gate", "source" and "drain". Electrical current flows between "source" and
