@@ -1,8 +1,7 @@
 <!--
 .. title: Why Computers Work: An Introduction to Following Rules
 .. slug: why-computers-1
-.. date: 2021-05-24 09:00:00 UTC+01:00
-.. status: private
+.. date: 2021-05-24 08:50:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -222,5 +221,5 @@ observing and why this makes computing possible. It's fun and can result in
 rather pleasant "aha" moments (if you were a cartoon character, it's that
 feeling you get when a lightbulb appears above your head).
 
-The next step in our story is a beautiful brain twist: to think about
+The next chapter in our story is a beautiful brain twist: to think about
 thinking...
