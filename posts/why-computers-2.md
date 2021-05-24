@@ -1,7 +1,7 @@
 <!--
 .. title: Movements of Thought
 .. slug: why-computers-2
-.. date: 2021-05-25 09:00:00 UTC+01:00
+.. date: 2021-04-25 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -29,9 +29,17 @@ propositional (or sentential, or boolean) logic.
 logic that deals with forming sentences by combining propositions. In logic,
 <em>propositions make assertions that are either true or false</em>.
 <a href="https://en.wikipedia.org/wiki/George_Boole" target="_blank">George
-Boole</a> (1815-1864) invented a system of mathematical algebra that works like
-propositional logic (it also deals with values that are either true or false)
-and so the term "boolean" is often used synonymously.</p>
+Boole</a> (1815-1864), shown below, invented a system of mathematical algebra
+that works like propositional logic (it also deals with values that are either
+true or false) and so the term "boolean" is often used synonymously.</p>
+
+<figure>
+<img src="/images/boole.png" alt="George Boole"/>
+<figcaption>
+  <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_George_Boole.png" target="_blank">Source</a>
+  - this image is in the
+  <a href="https://en.wikipedia.org/wiki/Public_domain" target="_blank">public domain</a>.
+</figure>
 
 Here's a contrived example of a sentence in propositional logic:
 
