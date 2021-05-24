@@ -1,7 +1,7 @@
 <!--
 .. title: Perception, Abstraction and Culture
 .. slug: why-computers-5
-.. date: 2021-05-28 09:00:00 UTC+01:00
+.. date: 2021-04-28 09:00:00 UTC+01:00
 .. status: private
 .. tags: 
 .. category: 
@@ -472,7 +472,7 @@ our relationship with computers.
 To use a musical metaphor, I feel like I've explained why a piano works (the
 tuning, acoustic properties, action of the keyboard and hammers) and shown why
 this relates to musical theory. Yet I've said nothing about the art or
-performance of music, the emotions we feel when we hear or perform music, or
+performance of music, the emotions we feel when we hear or play music, or
 that music moves us at a fundamental and human level.
 
 We are missing the "music" of computers (and we miss it at our peril).
@@ -521,41 +521,37 @@ computers to unsatisfactorily automate human activity (including our latent
 prejudices). Computer games are mostly beautiful looking yet formulaic
 variations on a theme, target driven and hardly allow a player to express
 themselves. Our world is polluted by complicated and unpleasant computerised
-gizmos: "intelligent" washing machines with so many options that they're only
-ever used with the "all-in-one" setting because that's the one that seems to
-work, coffee makers that take a whole morning to set up because they need
-programming to take into account the hardness of the water from the tap,
-strength of the coffee grind and type of coffee desired, automatic point of
-sale machines that never appear to believe you've placed the item you've just
-scanned onto the bagging area. And, of course, no aspect of life is too small
-to be "solved" by an app (a perculiarly problematic outlook ~ it's as if we're
-all broken and need technology to fix us).
+gizmos: "intelligent" washing machines, programmable coffee makers, automatic
+point-of-sale machines... all of which are frustrating to use. And, of course,
+no aspect of life is too small to be "solved" by an app available on your
+mobile device (a perculiarly problematic outlook ~ it's as if we're all broken
+and need technology to fix us).
 
-Perhaps we deserve such a shallow, invasive and unfulfilling computing world.
-It reflects our collective failure to think creatively while we focus on
-automating things in the most trivial, complicated or inconvenient manner.
-Realising such a sad state of affairs is, actually, quite helpful, for then
-something can be done to balance things out.
+Such a shallow, invasive and unfulfilling world of computing is perhaps
+inevitable. It reflects our failure to think creatively while we focus on
+automating things in the most trivial, complicated or inconvenient manner. Yet
+highlighting such a problematic state of affairs is quite helpful, for then we
+can begin to compensate and re-balance.
 
-I can't help but feel the missing part of our relationship with computers is an
-emphasis on things like contemplation, culture and creativity ~ activities and
-aspects of our lives that are affirmative, raise up our existence or provoke
-useful reflection and personal growth.
+Personally, I can't help but feel the missing part of our relationship with
+computers is an emphasis on things like contemplation, culture and creativity ~
+activities and aspects of our lives that are affirmative, raise up our
+existence or provoke useful reflection and personal growth.
 
-So the final brain twist is to imagine and participate in a meaningful,
-authentic and engaging culture expressed with and through computers. One in
-which computers become a medium for
+The final brain twist I have for you is to rise above the merely technical. Try
+to imagine, create and participate in a meaningful, authentic and engaging
+culture expressed with and through computers. One in which computers become a
+medium for
 <a href="https://democracyclub.org.uk/" target="_blank">affirmative</a>,
 <a href="https://freedom.press/" target="_blank">liberating</a>
 and
 <a href="http://inbflat.net/" target="_blank">expressive</a>
-activities that enlarge our world and affirm our place in it.
+activities that enlarge our world and our place in it.
 
-In other words, let's [together](/article/on-being-together) uncover, explore
-and develop the oft-missing "music" of computing.
+In other words, let's [together](/article/on-being-together) compose the
+oft-missing "music" of computing.
 
-After all, we are
-[only just getting started](/article/thought-in-motion/) with these strange
-machines.
+After all, we are [only just getting started](/article/thought-in-motion/) with
+these strange instruments of automation.
 
-Peace.
+Thank you for reading. Peace.
