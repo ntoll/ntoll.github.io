@@ -467,12 +467,12 @@ All these levels of abstraction are required to get to this fragment of Python:
 
 As I come to the end of this exploration of computing, I can't help but feel
 there is one final brain twist ~ something missing or yet undiscovered about
-our relationship with (or to) computers.
+our relationship with computers.
 
-To use a musical metaphor, this series of blog posts is like explaining why a
-piano works (the tuning, acoustic properties, action of the keyboard and
-hammers) and showing why this relates to musical theory. Yet I've said nothing
-about the art of music, the emotions we feel when we hear or perform music, or
+To use a musical metaphor, I feel like I've explained why a piano works (the
+tuning, acoustic properties, action of the keyboard and hammers) and shown why
+this relates to musical theory. Yet I've said nothing about the art or
+performance of music, the emotions we feel when we hear or perform music, or
 that music moves us at a fundamental and human level.
 
 We are missing the "music" of computers (and we miss it at our peril).
@@ -491,48 +491,70 @@ Wittgenstein best sums up my feeling:
 >
 > ~ Ludwig Wittgenstein, [Culture and Value](https://en.wikipedia.org/wiki/Culture_and_Value) (MS 124:93)
 
-We should, rightly, be amazed by the technical marvel of computers; but it is
-all too easy to be overwhelmed by, and focus on, the apparent cleverness (or
-[Rube Goldberg](https://en.wikipedia.org/wiki/Rube_Goldberg_machine)-iness) of
-it all. Sadly, in so doing we miss the opportunity for an enlarged, more
-creative and expressive encounter with computing.
+<p>We should, rightly, be amazed by the technical marvel of computers; but it
+is all too easy to be overwhelmed by, and focus on, the apparent cleverness (or
+<a href="https://en.wikipedia.org/wiki/Rube_Goldberg_machine" target="_blank">Rube Goldberg</a>-iness)
+of it all. Sadly, in so doing we miss the opportunity for an enlarged, more
+creative and expressive encounter with computing.</p>
 
 Computers are not just machines for rapidly evaluating logical instructions.
 They are a medium through which we share and express our values, culture,
-social world and forms of life. They are only useful because we create and
-express things of significance _through computers_. Computing for the sake of
-computers is a diminished, sad, in-humane and insular outlook. Computers work
-because of humanity, and shine when they enlarge us in a humane, creative and
-expressive way.
+social world and forms of life. They are only valuable because we are able to
+create and express things of significance _through computers_. Furthermore,
+_the way we express things with computers_, and _that we choose this form of
+expression_ is also of cultural significance. Like other forms of creative 
+endeavour, computers reflect those who make, inhabit and consume in such a
+medium.
 
-Perhaps the missing part of our relationship with computers is an emphasis on
-things like contemplation, culture and creativity ~ activities and aspects of
-our lives that make life worth living, raise up our existence or provoke useful
-reflection and personal growth.
+Computers shine when they enlarge us in an affirmative, humane, creative and
+expressive way. Yet computing for the sake of computers, with no regard for
+culture, is a diminished, inhumane and insular form of ignorance.
 
 I look at how we currently use and think of computers and can't help but feel
-disappointed. Social media is anything but social... it's an efficient
-advertising laboratory that turns humanity into lab rats caged in echo chambers
-of digitally digested packets of small mindedness. "Artificial intelligence",
-"machine learning", "blockchain" and other such buzzwords are nerdy PR for the
-clever use of code to unsatisfactorily ape human activity (including our latent
+disappointed.
+
+Social media is anything but social... it's an efficient advertising laboratory
+that turns humanity into lab rats caged in echo chambers of digitally digested
+packets of small-mindedness. "Artificial intelligence", "machine learning",
+"blockchain" and other such buzzwords are nerdy PR for the clever use of
+computers to unsatisfactorily automate human activity (including our latent
 prejudices). Computer games are mostly beautiful looking yet formulaic
 variations on a theme, target driven and hardly allow a player to express
-themselves.
+themselves. Our world is polluted by complicated and unpleasant computerised
+gizmos: "intelligent" washing machines with so many options that they're only
+ever used with the "all-in-one" setting because that's the one that seems to
+work, coffee makers that take a whole morning to set up because they need
+programming to take into account the hardness of the water from the tap,
+strength of the coffee grind and type of coffee desired, automatic point of
+sale machines that never appear to believe you've placed the item you've just
+scanned onto the bagging area. And, of course, no aspect of life is too small
+to be "solved" by an app (a perculiarly problematic outlook ~ it's as if we're
+all broken and need technology to fix us).
 
-So, I want to end by _asking some things of you_:
+Perhaps we deserve such a shallow, invasive and unfulfilling computing world.
+It reflects our collective failure to think creatively while we focus on
+automating things in the most trivial, complicated or inconvenient manner.
+Realising such a sad state of affairs is, actually, quite helpful, for then
+something can be done to balance things out.
 
-<p>Please look beyond the <em>why</em> of computers. Don't be afraid to
-question and challenge shallow, disappointing and exploitative uses of
-computing. But most of all, strive to be
+I can't help but feel the missing part of our relationship with computers is an
+emphasis on things like contemplation, culture and creativity ~ activities and
+aspects of our lives that are affirmative, raise up our existence or provoke
+useful reflection and personal growth.
+
+So the final brain twist is to imagine and participate in a meaningful,
+authentic and engaging culture expressed with and through computers. One in
+which computers become a medium for
 <a href="https://democracyclub.org.uk/" target="_blank">affirmative</a>,
 <a href="https://freedom.press/" target="_blank">liberating</a>
 and
 <a href="http://inbflat.net/" target="_blank">expressive</a>
-in the things you imagine, create and emphasize with computers.</p>
+activities that enlarge our world and affirm our place in it.
 
 In other words, let's [together](/article/on-being-together) uncover, explore
-and develop the oft-missing "music" of computing. After all, we are
+and develop the oft-missing "music" of computing.
+
+After all, we are
 [only just getting started](/article/thought-in-motion/) with these strange
 machines.
 
