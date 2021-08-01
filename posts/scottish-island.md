@@ -1,5 +1,5 @@
 <!--
-.. title: On a Scottish Island 
+.. title: On a Scottish Island
 .. slug: scottish-island 
 .. date: 2021-08-01 18:30:00 UTC+01:00
 .. tags: 
