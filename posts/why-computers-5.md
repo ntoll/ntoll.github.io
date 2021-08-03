@@ -40,6 +40,11 @@ table td, table th {
 
 ## Why Computers Work (part 5) 
 
+([Part 1](/article/why-computers-1/),
+[part 2](/article/why-computers-2/),
+[part 3](/article/why-computers-3/),
+[part 4](/article/why-computers-4/))
+
 [The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images)
 by [René Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte) is a
 thought provoking visual brain twist. It shows a pipe, under which is written

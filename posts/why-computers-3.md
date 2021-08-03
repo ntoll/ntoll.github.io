@@ -12,6 +12,11 @@
 
 ## Why Computers Work (part 3) 
 
+([Part 1](/article/why-computers-1/),
+[part 2](/article/why-computers-2/),
+[part 4](/article/why-computers-4/),
+[part 5](/article/why-computers-5/))
+
 It's easy to imagine one thing representing another. We do this all the time.
 
 For example, in the UK the Royal Standard always flies from buildings

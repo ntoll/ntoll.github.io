@@ -32,6 +32,11 @@
 
 ## Why Computers Work (part 1) 
 
+([Part 2](/article/why-computers-2/),
+[part 3](/article/why-computers-3/),
+[part 4](/article/why-computers-4/),
+[part 5](/article/why-computers-5/))
+
 This is the first of five short blog posts exploring _why computers work_.
 
 I'm going to present a friendly introductory overview for laypeople, from zero
