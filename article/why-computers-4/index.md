@@ -34,6 +34,11 @@ table td, table th {
 
 ## Why Computers Work (part 4) 
 
+([Part 1](/article/why-computers-1/),
+[part 2](/article/why-computers-2/),
+[part 3](/article/why-computers-3/),
+[part 5](/article/why-computers-5/))
+
 What follows isn't so much a brain twist, as an extended make-pretend that
 points the way to what a computer is.
 

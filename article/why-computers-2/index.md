@@ -12,6 +12,11 @@
 
 ## Why Computers Work (part 2) 
 
+([Part 1](/article/why-computers-1/),
+[part 3](/article/why-computers-3/),
+[part 4](/article/why-computers-4/),
+[part 5](/article/why-computers-5/))
+
 Just as one can describe rules for a card game, it is possible to describe
 rules for thinking: rules for movement of thought.
 
