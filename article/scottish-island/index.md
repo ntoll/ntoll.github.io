@@ -34,7 +34,7 @@ a kitchen and a bathroom. Running water is pumped into cisterns from an ancient
 well, there is no electricity except that provided intermittently by a
 generator and the bathroom is unplumbed with a compost toilet and wash basin.
 
-Outside the cottage, an old barn is used for storage and contains a sheltered
+Outside the cottage an old barn is used for storage and contains a sheltered
 outdoor room called the "Breeze Inn". In the garden are various home-made seats
 around a campfire, a vegetable plot and, to one side, an improvised "hot tub"
 made from a large ancient Victorian bath (what a wonderful view!). A fence
@@ -60,7 +60,7 @@ Walking the mudflats allows me to exercise more than just my legs. My senses
 are stimulated too. The short walk from the car park to the slipway is along a
 verdant tree-lined dappled road. We're accompanied by the distant laughter of
 gulls, the piping of oyster catchers and bubbling whistle of curlews. The air
-is full of the smell of sweet honeysuckle and an undercurrent of the salty
+is full of the smell of sweet honeysuckle with an undercurrent of the salty
 twang of seaweed. Once barefoot on the mudflats, walking is a warm, wet,
 rhythmic sensation that feels like a gentle massage.
 
@@ -157,8 +157,8 @@ jellyfish.
 
 Ultimately, it doesn't really matter how you occupy yourself on the island. As
 my father-in-law commented, "only the seagulls are here to complain, so don't
-worry". I'd add that seagulls always sound as if they're complaining so are
-very easy to ignore!
+worry". I'd add that seagulls always sound as if they're complaining, so it
+becomes very easy to ignore them!
 
 <figure>
 <img src="/images/island_beach.jpg" alt="The beach" title="The beach"/>
@@ -195,8 +195,8 @@ fish.
 
 When I stand up and make my presence known, it's as if the inhabitants of the
 pools are playing Grandmother's Footsteps (as we do back in the cottage
-garden)... everything suddenly stops as if nobody wants to be noticed making a
-move.
+garden)... everything suddenly stops, statue like, as if nobody wants to be
+noticed making a move.
 
 <figure>
 <img src="/images/island_rockpool.jpg" alt="A typical rock pool" title="A typical rock pool"/>
@@ -209,14 +209,14 @@ Closer to the sea one finds all sorts of interesting smelling seaweed and I
 often wonder (but always forget to try) if these fruits of the sea are edible
 and suitable for cooking. When I once mentioned this to the elderly fisherman
 who used to be the lighthouse keeper on the island, he told me the only use
-he'd have for the seaweed was as manure for his garden.
+he'd have for the seaweed was as compost for his garden.
 
 The rocks and pebbles are an endless source of interest. Often it's fun to
-play target practice and throw or skim stones. Other times some of the pebbles
-have been polished in such a way that an interesting shape or colour is
-revealed. Sometimes we find flotsam or jetsam stuck in the rocks: wood
-collected for the fire, a deflated
-football, bones from a sheep, an old trainer or a dead gull are typical finds.
+play target practice and throw or skim stones. Other times one finds pebbles
+that have been polished in such a way that an interesting shape or colour is
+revealed. Sometimes we find strange flotsam or jetsam stuck in the rocks: wood
+collected for the fire, a deflated football, bones from a sheep, an old trainer
+or a dead gull are typical finds.
 
 The flinty smell of the rocks, the sounds of birds and waves as well as the
 need to retain balance while carefully jumping from rock to rock mean there's a
@@ -257,8 +257,8 @@ its magic for them. Projects, games and exploration are the order of the day.
 It's a special place for all of us (which makes it all the more special,
 because it is a shared specialness private to our family).
 
-Here we are on the island last week, along with our long suffering and ever
-patient dog, Burt.
+Here we are on the island last week, along with our long suffering, faithful
+and ever patient dog, Burt.
 
 <figure>
 <img src="/images/island_family.jpg" alt="Me and my family on the island" title="Me and my family on the island"/>
