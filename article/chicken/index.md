@@ -1,6 +1,6 @@
 <!--
 .. title: Chicken chicken chicken
-.. slug: chicken 
+.. slug: chicken
 .. date: 2021-10-20 17:00:00 UTC+01:00
 .. tags: 
 .. category: 
