@@ -3,7 +3,96 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Tue, 03 Aug 2021 14:01:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On a Scottish Island</title><link>https://ntoll.org/article/scottish-island/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;My wife's family have the lease for a 19th century cottage on a small,
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 20 Oct 2021 16:04:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chicken chicken chicken</title><link>https://ntoll.org/article/chicken%20/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;A large part of my day job involves reading and writing what folks
+optimistically call "technical documentation". It's usually about as much
+fun as sticking forks in one's eyes, rubbing a cheese grater up and down one's
+nose or reading the complete unabridged works of Ayn Rand.&lt;/p&gt;
+&lt;p&gt;Happily, there are examples of great technical documentation (the
+&lt;a href="https://docs.djangoproject.com/en/3.2/"&gt;Django project&lt;/a&gt; immediately springs to
+mind, and the wonderful folks at
+&lt;a href="https://www.writethedocs.org/"&gt;Write the Docs&lt;/a&gt; do amazing work in this
+space). But for every example of great documentation, there are many more
+incomprehensible, incomplete or incoherent tomes where knowledge goes to die.&lt;/p&gt;
+&lt;p&gt;Joking aside, quality is clearly a subjective judgement.&lt;/p&gt;
+&lt;p&gt;It's easy to make innocuous claims like, "good technical writing is clear,
+coherent and engaging; bad documentation is the opposite ~ complicated, chaotic
+and opaque". Yet trying to pin down terms like "clear" "coherent" or "engaging"
+is a slippery exercise and, ultimately, a matter of personal taste.&lt;/p&gt;
+&lt;p&gt;A more nuanced approach would say diversity of voices and perspectives is
+at play here, and &lt;em&gt;it's important to always keep this in mind&lt;/em&gt;. Every reader
+and writer comes to documentation from their own unique point of view and lived
+experience. That's why pointing out examples of allegedly poor documentation or
+claiming there is a "one true way" to write it is unhelpful. It's disrespectful
+of difference, arrogantly presumptuous and there are more supportive and open
+minded ways to engage when (inevitable) difficulties arise.&lt;/p&gt;
+&lt;p&gt;For instance, constructive, compassionate and clear feedback can highlight
+unintended misunderstanding. It acknowledges there is a difficulty of some
+sort, but does so in a way that encourages writers to reflect, refine and
+revise their work. It's also perfectly reasonable for the writer to decline to
+change things: perhaps you are not the intended audience, they simply don't
+have the time (many docs written for open source projects are created by
+volunteers), or they disagree with you and stand by their work.&lt;/p&gt;
+&lt;p&gt;Let many flowers bloom!&lt;/p&gt;
+&lt;p&gt;If I'm honest, I love to read (even stuff I find difficult or disagreeable ~
+like Ayn Rand). It is a connection with others, a source of creative
+stimulation and an enlargement of my world. I read because I am curious to
+reach out beyond myself and into the lives of others. I love the change and
+growth this brings. I also love to write - it is an opportunity for self
+reflection, a source of consolation, an invitation to connect, and a rewarding
+skill to develop and practice.&lt;/p&gt;
+&lt;p&gt;That's why I write this blog: I enjoy the art of writing.&lt;/p&gt;
+&lt;p&gt;The artistry involved in writing is something to celebrate,
+cherish and promote. Sadly, and far too often, a focus on form, structure or
+process is held up as the best approach to writing technical documentation.
+Artistry, taste or style are hardly mentioned, if at all.&lt;/p&gt;
+&lt;p&gt;Most documentation looks like what most people think documentation should look
+like. There are good reasons why documentation is often organised in the way
+that it is, &lt;em&gt;but to follow these conventions is not enough&lt;/em&gt;. Going through the
+motions in a structural sense or following a certain form or process is no
+guarantee of "quality" (whatever that might mean).&lt;/p&gt;
+&lt;p&gt;A wonderful and humorous example of this is Doug Zongker's "Chicken chicken
+chicken".&lt;/p&gt;
+&lt;p&gt;Originally
+&lt;a href="https://isotropic.org/papers/chicken.pdf"&gt;created in the form of an academic paper&lt;/a&gt;,
+and then delivered in the form of a typical academic conference presentation,
+Doug created two parodies that focus on process, form and structure at the
+expense of meaningful content:&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yL_-1d9OSdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(I love how the audience all sound like chickens because they're laughing so
+hard.)&lt;/p&gt;
+&lt;p&gt;Doug's work got me wondering, would the "chicken" effect work for the tropes
+and conventions of a software project? I'm pleased to report
+&lt;a href="https://chicken.readthedocs.io/en/latest/"&gt;that it does&lt;/a&gt;. It even works
+&lt;a href="https://github.com/ntoll/chckn/blob/chicken/chicken.py"&gt;for the source code&lt;/a&gt;,
+&lt;a href="https://github.com/ntoll/chckn"&gt;Git repository&lt;/a&gt; and the
+&lt;a href="https://pypi.org/project/chckn/"&gt;packaging metadata&lt;/a&gt; too.&lt;/p&gt;
+&lt;p&gt;The "chicken" code highlights what a deeply problematic oversight this
+focus on form, structure and process is for technical documentation. Imagine
+if teaching the composition of poetry only dealt with structure, rhyme
+or rhythm at the expense of meaning, metaphor, story-telling, pacing, symbolism
+and expression.&lt;/p&gt;
+&lt;p&gt;We'd end up with limericks like this:&lt;/p&gt;
+&lt;blockquote&gt;
+Chicken chicken chicken chicken,&lt;br&gt;
+Chicken chicken chicken chicken,&lt;br&gt;
+    Chicken chicken chick,&lt;br&gt;
+    Chicken chicken chick,&lt;br&gt;
+Chicken chicken chicken chicken.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Why this interest in technical documentation?&lt;/p&gt;
+&lt;p&gt;I'm in the midst of a writing marathon for some of my personal
+projects (Mu and CodeGrades). I'm really enjoying the opportunity to reflect
+upon, and work both inside and outside, the usual conventions for technical
+documentation. Process, form and structure are always the servants of
+authentically expressing myself in my own unique writing voice. If I am
+ever disatisfied with my output, it's usually because I've forgotten
+this (and I just had to write this blog post to say so!).&lt;/p&gt;
+&lt;p&gt;As always with any of my work, I welcome constructive, compassionate and clear
+feedback. :-)&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/chicken%20/</guid><pubDate>Wed, 20 Oct 2021 16:00:00 GMT</pubDate></item><item><title>On a Scottish Island</title><link>https://ntoll.org/article/scottish-island/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;My wife's family have the lease for a 19th century cottage on a small,
 otherwise uninhabited, Scottish island. Every year, since Mary and I first
 became an item, I have returned to the island for an off-the-grid retreat of
 rest, recuperation and reflection.&lt;/p&gt;
@@ -1873,66 +1962,4 @@ technology for talking directly to the imagination...  &lt;/p&gt;
 faith. Assuming the lock-downs have eased, next year's EuroPython will be in
 Dublin, Éire.&lt;/p&gt;
 &lt;p&gt;I love Ireland. Can't wait!&lt;/p&gt;
-&lt;p&gt;See you at next year's EuroPython!&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/twisty-passages-at-europython/</guid><pubDate>Sat, 15 Aug 2020 21:00:00 GMT</pubDate></item><item><title>2020 Changes</title><link>https://ntoll.org/article/2020-changes/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;I've spent today updating everything to do with ntoll.org. Many
-thanks to my buddy &lt;a href="https://kushaldas.in/"&gt;Kushal Das&lt;/a&gt; for the invaluable
-advice on various technical matters.&lt;/p&gt;
-&lt;p&gt;Here's what I've done:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The website is run using &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; ~ a Python based
-   static site generator. It was &lt;em&gt;very&lt;/em&gt; easy to migrate away from my previous
-   hand-coded solution made with a custom
-   &lt;a href="https://palletsprojects.com/p/flask/"&gt;Flask&lt;/a&gt; script and HTML.&lt;/li&gt;
-&lt;li&gt;It's hosted on &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; which is both free
-   and makes it very easy to manage code and deployment.&lt;/li&gt;
-&lt;li&gt;I've switched email hosting to &lt;a href="https://www.fastmail.com/"&gt;Fastmail&lt;/a&gt;, who 
-   made the whole migration process extraordinarily easy. &lt;/li&gt;
-&lt;li&gt;I've archived the code for the old website for "safe keeping", even though
-   all the content has moved over to the new site.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Lots of things have changed in addition to my own technical infrastructure.&lt;/p&gt;
-&lt;p&gt;I've just finished a very busy period of freelance work with two clients -
-the &lt;a href="https://freedom.press/"&gt;Freedom of the Press Foundation&lt;/a&gt; for whom I
-contributed Python code to an
-&lt;a href="https://securedrop.org/"&gt;application for journalists&lt;/a&gt;, and
-&lt;a href="https://digital.nhs.uk/"&gt;NHSDigital&lt;/a&gt; for whom I fulfilled the remote role of a
-code mentor / developer coach (like an agile coach, but much more technical).
-I was collaborating with a team of Java developers who were learning Python and
-Django while building APIs for internal customers and users. I also provided
-Python training, which was very rewarding since I love teaching and the
-NHSDigital folks were already technically very strong and lots of fun. Both
-teams were exceptionally talented and friendly. I had a blast and made lots of
-new friends.&lt;/p&gt;
-&lt;p&gt;In just over a week I'll be starting a new gig with the
-&lt;a href="https://mojdigital.blog.gov.uk/"&gt;Ministry of Justice&lt;/a&gt; as a senior Python
-engineer. I'm &lt;em&gt;really&lt;/em&gt; looking forward to this since the work is useful,
-interesting and challenging. I'm looking forward to learning from my new
-colleagues and making contributions to our collective effort.&lt;/p&gt;
-&lt;p&gt;What does this mean for all my other projects (for instance
-&lt;a href="https://codegrades.com/"&gt;CodeGrades&lt;/a&gt; or &lt;a href="https://codewith.mu/"&gt;Mu&lt;/a&gt;)..?
-Ironically, I believe I'll have more rhythm to my day and so my work on these
-projects will continue in my own time, but at a more predictable pace. Watch
-this space. :-)&lt;/p&gt;
-&lt;p&gt;Finally, the current Corona virus pandemic is affecting life in rather
-unforeseen ways: my daughter and older son have had their summer exams
-cancelled. Apparently, their results will be based upon their predicted grades.
-It means my daughter is going to read Mathematics at university with a
-scholarship (dependent on her achieving her target grades, which she will in
-light of the current situation) and my son will have the grades needed to go
-onto study Physics, Maths, Music and Design Technology at "A" level (his
-current plan is to read engineering at university). My youngest son continues
-school lessons, completed at home via an online platform.&lt;/p&gt;
-&lt;p&gt;We've also had to purchase some home-studio equipment (mics, pre-amp, monitor
-speakers, midi keyboard and related audio software). Mary, my wife, uses this
-to teach her many instrumental students remotely via video calls. It soon
-became apparent that laptop or mobile phone mics are not great for cello
-or piano teaching. Happily, the new equipment is proving to be a great success
-and Mary is able to continue teaching most students without disruption and from
-the comfort of our own music room:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Our home studio" src="https://ntoll.org/images/studio.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;It also means &lt;em&gt;I&lt;/em&gt; have the equipment available to produce my own (Python)
-training materials and the kids are having a great time mixing all sorts of
-different types of music.&lt;/p&gt;
-&lt;p&gt;Here's hoping you stay safe and remain healthy during this challenging time.
-Since most of us are in lock-down, don't hesitate to get in touch if you fancy
-a chat..! Social distancing rules don't mean you have to be anti-social.&lt;/p&gt;
-&lt;p&gt;:-)&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/2020-changes/</guid><pubDate>Wed, 01 Apr 2020 18:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;See you at next year's EuroPython!&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/twisty-passages-at-europython/</guid><pubDate>Sat, 15 Aug 2020 21:00:00 GMT</pubDate></item></channel></rss>
