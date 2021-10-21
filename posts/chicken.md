@@ -26,8 +26,8 @@ Joking aside, quality is clearly a subjective judgement.
 
 It's easy to make innocuous claims like, "good technical writing is clear,
 coherent and engaging; bad documentation is the opposite ~ complicated, chaotic
-and opaque". Yet trying to pin down terms like "clear" "coherent" or "engaging"
-is a slippery exercise and, ultimately, a matter of personal taste.
+and opaque". Yet trying to pin down terms like "clear", "coherent" or
+"engaging" is a slippery exercise and, ultimately, a matter of personal taste.
 
 A more nuanced approach would say diversity of voices and perspectives is
 at play here, and _it's important to always keep this in mind_. Every reader
