@@ -37,8 +37,10 @@ claiming there is a "one true way" to write it is unhelpful. It's disrespectful
 of difference, arrogantly presumptuous and there are more supportive and open
 minded ways to engage when (inevitable) difficulties arise.
 
-For instance, constructive, compassionate and clear feedback can highlight
-unintended misunderstanding. It acknowledges there is a difficulty of some
+For instance, feedback that is constructive (offered from a desire to help),
+compassionate (aware of another's feelings) and unambigous (specific and
+actionable) can highlight
+unintended misunderstanding<sup id="chicken-sup">[<a href="#chicken-edit">edit</a>]</sup>. It acknowledges there is a difficulty of some
 sort, but does so in a way that encourages writers to reflect, refine and
 revise their work. It's also perfectly reasonable for the writer to decline to
 change things: perhaps you are not the intended audience, they simply don't
@@ -118,5 +120,14 @@ authorial voice to make a space for the reader to think, engage and learn. If I
 am ever disatisfied with my output, it's usually because I've forgotten this
 (and I just had to write this blog post to say so!).
 
-As always with any of my work, I welcome constructive, compassionate and clear
-feedback. :-)
+As always with any of my work, I welcome constructive, compassionate and
+unambiguous feedback. :-)
+
+<p id="chicken-edit"><strong>EDIT (18th Nov 2021):</strong> Thank you to the
+person (who wishes
+to remain anonymous) who reached out to point out that, "constructive,
+compassionate and unambigous", are also slippery terms. I've added
+clarifications in brackets and would especially like to point out that they
+embodied the very best of constructive, compassionate and unambiguous
+feedback in their correspondence with me. :-)
+<a href="#chicken-sup">Return to text</a>.</p>
