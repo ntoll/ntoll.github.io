@@ -1,6 +1,6 @@
 <!--
 .. title: Wedding Anniversary Plans
-.. slug: 25-anniversary-plans 
+.. slug: 25-anniversary-plans
 .. date: 2022-01-15 21:30:00 UTC+01:00
 .. tags: 
 .. category: 
