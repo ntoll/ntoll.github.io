@@ -25,13 +25,13 @@ the [Royal College of Music](https://www.rcm.ac.uk/library/). Mary and I were
 the only two people in the
 <a href="https://www.google.com/maps/@51.4994838,-0.1770779,2a,75y,272.48h,94.45t/data=!3m6!1e1!3m4!1sV2M1OLSwpd3LHD0jlX1_MQ!2e0!7i13312!8i6656">Donaldson Room</a>,
 a study area with large oak desks, and she happened to be sat opposite me. I
-think there was an immediate attraction because we kept looking at each other.
-When I idly chewed my pen to try to hide that I was really checking her out,
-she caught my eye and smiled at me. I involuntarily bit down on my pen in
-panicked shyness (I'd been found out!) and split the pen lid while also
-chipping the corner of my front tooth. I soon fled in embarrassment. Moments
-later, I first felt the roughness where my tooth had chipped. I reflected that
-the chip in my tooth would be a permanent reminder of the pretty girl in the
+think there was an immediate attraction because we kept surreptitiously looking
+at each other. When I idly chewed my pen to try to hide that I was really
+checking her out, she caught my eye and smiled at me. I involuntarily bit down
+on my pen in panicked shyness (I'd been found out!) and split the pen lid while
+also chipping the corner of my front tooth. I soon fled in embarrassment.
+Later, I felt the roughness where my tooth had chipped and reflected that
+the chip in my tooth would be a permanent reminder of that pretty girl in the
 library. For the rest of my life, when I felt the roughness on my tooth, I'd
 ask myself "I wonder who she was?".
 
@@ -39,10 +39,10 @@ It didn't take long for me to find out.
 
 The following Wednesday, just after lunch, (yes, I have all the dates, times
 and places recorded in my diary of the time) I returned to the Donaldson Room
-only to find Mary sat at a desk with her friend and fellow cellist, Ellen. I
-sat down at the opposite end of their table (realising I'd found the pretty
-girl again) and soon realised they were not working on an academic assignment,
-but goofing around playing the game of
+with a buddy only to find Mary sat at a desk with her friend and fellow
+cellist, Ellen. I sat down at the opposite end of their table (realising I'd
+found the pretty girl again) and soon found they were not working on an
+academic assignment, but goofing around playing the game of
 [hang man](https://en.wikipedia.org/wiki/Hangman_(game)).
 
 Mary had a unique tactic... whereas most people do something sensible like
@@ -59,11 +59,11 @@ hang man, do you?"</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;"Oh yes I do. I'm just choosing to play it like
 this", was her mock-offended response.</p>
 
-We struck up a conversation, Ellen (bored of our flirting) left us in peace and
-we spent the afternoon talking. We talked about all sorts: science, philosophy,
-plants, gardens, music, books and many other things. All too soon Mary noticed
-the time ~ it was 5pm and we had spent three hours in deep joyful conversation.
-Time just flew by, but Mary was late for a rehearsal.
+We struck up a conversation, our friends (bored of our flirting) soon left us
+in peace and we spent the afternoon chatting. We talked about all sorts:
+science, philosophy, plants, gardens, music, books and many other things. All
+too soon Mary noticed the time ~ it was 5pm and we had spent three hours in
+deep joyful conversation. Time just flew by, but Mary was late for a rehearsal.
 
 I'll never forget how we parted.
 
@@ -75,11 +75,11 @@ Over the following weeks and months we got to know each other, talked a LOT and
 eventually shared our true feelings for each other in the spring. It didn't
 take much longer for us both to realise we'd found our life-long soulmate and
 by the end of the year we were announcing our engagement. A couple of years
-later, a few weeks after Mary graduated from the RCM, we were married. She was
-22, I was 23 and we've been an "us" ever since.
+later, only a few weeks after Mary graduated from the RCM, we were married. She
+was 22, I was 23 and we've been an "us" ever since.
 
 Meeting Mary was the most important moment in my life. Living life's journey
-with Mary has been my life's biggest privilege and full of wonderful moments -
+with Mary has been my life's greatest privilege and full of wonderful moments -
 the most important highlights being the arrival and growth of our three
 beautiful children, Penelope, Sam and William.
 
@@ -89,8 +89,8 @@ beautiful children, Penelope, Sam and William.
 </figure>
 
 To celebrate 25 years of sharing our journey through life together, Mary and I
-have decided to make another symbolic journey together. We're going to walk
-over 170 miles during the Easter holidays of 2022, along
+have decided to make another (symbolic) journey together. We're going to walk
+over 170 miles, during the Easter holidays, along
 <a href="https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/">Offa's Dyke</a>,
 a 1300 year old earthwork barrier created by Offa, king of the ancient
 <a href="https://en.wikipedia.org/wiki/Mercia">Anglo-Saxon kingdom of Mercia</a>.
@@ -103,7 +103,7 @@ staying in bed-and-breakfasts or hotels along the way.
 It being April we expect fresh showers,
 but hope for sun to encourage spring flowers.
 
-We're not the first to have had the idea of an April journey:
+We're not the first to have had the idea of an [April journey](https://en.wikipedia.org/wiki/General_Prologue):
 
 > Whan that Aprille with his shoures soote,<br/>
 > The droghte of March hath perced to the roote,<br/>
