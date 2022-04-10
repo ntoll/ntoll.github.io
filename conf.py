@@ -1227,6 +1227,9 @@ INDEX_DISPLAY_POST_COUNT = 5
 EXTRA_HEAD_DATA = """
 <meta name="author" content="Nicholas H.Tollervey" />
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+<link rel="stylesheet" href="/static/css/leaflet.css" />
+<script src="/static/js/leaflet.js"></script>
+<script src="/static/js/gpx.min.js"></script>
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
