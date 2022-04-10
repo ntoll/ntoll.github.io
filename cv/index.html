@@ -29,7 +29,8 @@
 <link rel="icon" href="../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../static/css/leaflet.css">
+<script src="../static/js/leaflet.js"></script><script src="../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <meta property="og:site_name" content="ntoll.org">
 <meta property="og:title" content="Curriculum Vitae">
 <meta property="og:url" content="https://ntoll.org/cv/">
@@ -45,7 +46,7 @@
     
     Computing, music, philoso">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2022-02-11T15:55:50Z">
+<meta property="article:published_time" content="2022-04-07T14:23:23+01:00">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@ntoll">
 <meta name="twitter:creator" content="@ntoll">
@@ -756,9 +757,7 @@
             <script src="../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

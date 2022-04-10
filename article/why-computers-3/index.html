@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../why-computers-2/" title="Movements of Thought" type="text/html">
 <link rel="next" href="../why-computers-4/" title="Automated Rule Following Machines" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -89,8 +90,7 @@ For example, in the UK the Royal Standard always flies from b">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h3>Why Computers Work (part 3)</h3>
+    <h3>Why Computers Work (part 3)</h3>
 <p>(<a href="../why-computers-1/">Part 1</a>,
 <a href="../why-computers-2/">part 2</a>,
 <a href="../why-computers-4/">part 4</a>,
@@ -254,7 +254,6 @@ constituent logical circuits, connects to the outside world via inputs and
 outputs and has a strange capability: to change its own state in order to store
 and process information.</p>
 <p>The next post will explore such a machine.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -274,9 +273,7 @@ and process information.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

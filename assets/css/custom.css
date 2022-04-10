@@ -83,8 +83,8 @@ a:hover, a:focus { text-decoration: underline; }
 }
 
 img {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     max-width: 100%;
 }

@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../scottish-island/" title="On a Scottish Island" type="text/html">
 <link rel="next" href="../25-anniversary-plans/" title="Wedding Anniversary Plans" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -85,8 +86,7 @@ fun as sticking forks in one's eyes, rubbing a cheese grate">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>A large part of my day job involves reading and writing what folks
+    <p>A large part of my day job involves reading and writing what folks
 optimistically call "technical documentation". It's usually about as much
 fun as sticking forks in one's eyes, rubbing a cheese grater up and down one's
 nose or reading the complete unabridged works of Ayn Rand.</p>
@@ -187,7 +187,6 @@ clarifications in brackets and would especially like to point out that they
 embodied the very best of constructive, compassionate and unambiguous
 feedback in their correspondence with me. :-)
 <a href="#chicken-sup">Return to text</a>.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -207,9 +206,7 @@ feedback in their correspondence with me. :-)
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

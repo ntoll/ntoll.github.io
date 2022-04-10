@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../sponsorship/" title="Sponsorship" type="text/html">
 <link rel="next" href="../twisty-passages-at-europython/" title="Twisty Passages at EuroPython 2020 " type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -88,8 +89,7 @@ The website is run using N">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>I've spent today updating everything to do with ntoll.org. Many
+    <p>I've spent today updating everything to do with ntoll.org. Many
 thanks to my buddy <a href="https://kushaldas.in/">Kushal Das</a> for the invaluable
 advice on various technical matters.</p>
 <p>Here's what I've done:</p>
@@ -152,7 +152,6 @@ different types of music.</p>
 Since most of us are in lock-down, don't hesitate to get in touch if you fancy
 a chat..! Social distancing rules don't mean you have to be anti-social.</p>
 <p>:-)</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -172,9 +171,7 @@ a chat..! Social distancing rules don't mean you have to be anti-social.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
