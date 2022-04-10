@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../twisty-passages-at-europython/" title="Twisty Passages at EuroPython 2020 " type="text/html">
 <link rel="next" href="../social-media-hermit/" title="A Social Media Hermit" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -86,8 +87,7 @@ Yet being with people can ">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>(Some raw thoughts I've written down solely to help me clarify my thinking.)</p>
+    <p>(Some raw thoughts I've written down solely to help me clarify my thinking.)</p>
 <p>Being together with people I love and who love me in return is a source of
 great joy and solace.</p>
 <p>Yet being with people can also lead to distress.</p>
@@ -239,7 +239,6 @@ To act against this spirit invites ostracism,<br>
 a loss that diminishes us all.<br><br>
 Thank you.<br><br>
 </blockquote>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -259,9 +258,7 @@ Thank you.<br><br>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

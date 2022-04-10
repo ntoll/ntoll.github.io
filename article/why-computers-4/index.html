@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../why-computers-3/" title="Representation" type="text/html">
 <link rel="next" href="../why-computers-5/" title="Perception, Abstraction and Culture" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -95,8 +96,7 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<style>
+    <style>
 .tape td {
     border: 1px solid black;
     width: 2em;
@@ -414,7 +414,6 @@ watch videos and all the other meaningful stuff for which we find computers so
 useful?</p>
 <p>The answer relates to how we perceive things, our talent for abstraction and
 our cultural context. The next and final post will explore these concepts.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -434,9 +433,7 @@ our cultural context. The next and final post will explore these concepts.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

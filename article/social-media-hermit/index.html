@@ -29,7 +29,8 @@
 <link rel="icon" href="../../favicon-16x16.png" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-<meta name="author" content="Nicholas H.Tollervey">
+<link rel="stylesheet" href="../../static/css/leaflet.css">
+<script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../on-being-together/" title="On Being Together" type="text/html">
 <link rel="next" href="../why-computers-1/" title="Why Computers Work: An Introduction to Following Rules" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
@@ -91,8 +92,7 @@ Honestly, that's all there is to it (an">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>I have deleted my Twitter account.</p>
+    <p>I have deleted my Twitter account.</p>
 <p>Why?</p>
 <ol>
 <li>I no longer use it.</li>
@@ -110,7 +110,6 @@ use of monosyllabic words.</p>
 <p>If folks genuinely want to connect with me, they'll be in touch (as I will be
 with them).</p>
 <p>Peace.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -130,9 +129,7 @@ with them).</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
