@@ -1,7 +1,7 @@
 <!--
 .. title: Offa's Dyke - Day 1:
 .. slug: offas-dyke-1
-.. date: 2022-03-10 20:30:00 UTC+01:00
+.. date: 2022-04-10 20:30:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
