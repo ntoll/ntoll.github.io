@@ -32,7 +32,7 @@ mile or so to the starting stone, only to have to retrace our steps to within
 a short distance of the guest house. Given that day 1 was also the longest day
 by quite some distance (19.5 miles) we thought we'd give ourselves a head start
 and walk the first mile in the evening, thus saving us some time in the
-morning. And so, as the dusk was falling we trekked south from Chepstow to
+morning. And so, as the dusk was falling, we trekked south from Chepstow to
 the starting stone.
 
 <figure>
@@ -44,8 +44,8 @@ the starting stone.
 
 We were _very excited_ to find the stone, look across the Severn estuary and
 take in that we were taking our first steps together on a very very long
-journey, just as we had done so (metaphorically speaking) all those years ago
-on the day of our wedding.
+journey. This was just as we had done so (metaphorically speaking) all those
+years ago on the day of our wedding.
 
 <figure>
 <img src="/images/offa1/at_the_starting_stone.jpg"
@@ -56,8 +56,8 @@ on the day of our wedding.
 
 In the morning, we were met at breakfast with a
 [full English](https://en.wikipedia.org/wiki/Full_breakfast) (vegetarian) and
-lots of coffee that seemed to do the trick and put the fire in our bellies. The
-helpful waitress took this photo of us, just as we were about to set off.
+lots of coffee. That seemed to do the trick and put the fire in our bellies.
+The helpful waitress took this photo of us, just as we were about to set off.
 
 <figure>
 <img src="/images/offa1/setting_off.jpg"
@@ -66,18 +66,19 @@ helpful waitress took this photo of us, just as we were about to set off.
 <figcaption>Setting off from The First Hurdle.</figcaption>
 </figure>
 
-Yes dear reader, completely independently of each other we have purchased
-pretty much the same GorTex jackets and trousers, so we definitely look like a
+Yes dear reader, independently of each other we have purchased
+pretty much the same GorTex jackets and trousers. We definitely look like
 the middle aged "Mr. and Mrs." that we so clearly and unwittingly are. :-)
 
 I have on my phone an [Ordinance Survey](https://www.ordnancesurvey.co.uk/) app
 into which I can load pre-planned [GPX files](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
 that define our route. I created our GPX routes back in January (based upon the
-official "Offa's Dyke" guide - sadly Offa is no longer with us to sign such
-books), and careful testing during our training sessions showed the OS app was
-the clear winner for ease of use and simplicity.
+official "Offa's Dyke" guide - sadly [Offa](https://en.wikipedia.org/wiki/Offa_of_Mercia)
+is no longer with us to sign such books), and careful testing during our
+training sessions showed the Ordinance Survey app was the clear winner for ease
+of use and simplicity.
 
-However, we could have saved ourselves the trouble, because a squirrel like
+However, we could have saved ourselves the trouble: a squirrel like
 ranger, with a love of acorns had clearly marked our route at every turn.
 Actually, because the Offa's Dyke route is designated a [National Trail](https://en.wikipedia.org/wiki/National_Trails)
 (and there are several of these in the UK) an acorn logo is used to tell you you're
@@ -164,9 +165,11 @@ Or of some hermit’s cave, where by his fire<br/>
 The hermit sits alone.</q>
 </blockquote>
 
-Here we are, a few miles above Tintern Abbey. We tramped the steep and lofty
+Here we are, a few miles above Tintern Abbey.
+
+We tramped the steep and lofty
 cliff, saw plots of cottage ground in the villages below, and carefully found
-our way through woods and copses as we travelled through the wild green
+our way through woods and copses as we travelled over the wild green
 landscape.
 
 <figure>
@@ -178,21 +181,24 @@ landscape.
 
 As we descended into Brockweir we started having thoughts of food. Sadly, there
 wasn't the hoped for pub, cafe or other means of nourishment. Brockweir hasn't
-a lot going for it apart from the beautiful river Wye. The scenery more than
+a lot going for it apart from the beautiful river Wye and the scenery more than
 made up for the lack of food and drink!
 
 It was as we walked north along the river bank that today's "incident" took
 place. At some point, and we're not sure where or how, Mary dropped her mobile
-phone. We had got about 2 miles north of Brockweir when Mary discovered her
-mobile was missing. At this point we put on the hand-brake, did a swift 180
+phone. We had got about 2 miles north of Brockweir when Mary discovered it 
+was missing. At this point we put on the hand-brake, did a swift 180°
 turn and stomped in completely the wrong direction while regularly phoning
 Mary's missing mobile to no avail. After perhaps 1.5 miles the phone was
 answered by a friendly lady.
 
-I described myself as, "a middle age chap, wearing
-a TUBA t-shirt, with a heavy backpack and staff".
+To ensure I was easily identified as the husband of the owner of the phone, I
+described myself as, "a middle age chap, wearing a TUBA t-shirt, with a heavy
+backpack and staff".
 
-She replied that she was heading north and, at this point, I could see a lady
+She replied that she was heading north.
+
+At this point, I could see a lady
 in the distance talking on a phone. So I mentioned I was furiously waving my
 staff above my head and she replied,
 
@@ -205,10 +211,10 @@ I wish I could say this was the only incident on day 1.
 
 But, our naivete about the culinary qualities of Brockweir meant we didn't have
 anywhere to grab lunch. As a result, we drank all our water (which was rather
-concerning) and cracked open emergency supply of chocolate Easter eggs. (Just
-writing this down, makes me feel stupid, dear reader.) And so the last few
-miles into Redbrook was more of a struggle than they should have been given
-our empty tummies and the onset of thirst.
+concerning) and cracked open the emergency supply of chocolate Easter eggs.
+(Just writing this down, makes me feel stupid, dear reader.) And so the last
+few miles into Redbrook were more of a struggle than they should have been
+given our empty tummies and the onset of thirst.
 
 Yet, as with our journey through life, we both enjoyed ourselves during the
 good times (for instance, walking in the woods), and supported and encouraged
@@ -237,9 +243,9 @@ repast, we creaked back into gear for the final push to Monmouth.
 When we arrived at the [Queen's Head Inn](https://queensheadmonmouth.co.uk/) we
 were cheerfully greeted by Neil, the publican, who made us feel very welcome
 and recommended a fantastic Italian restaurant for our evening meal. I'm not
-sure what the waiters made of us, but I think we set some sort of speed of
-eating record in their restaurant, because we woofed down some amazing, fresh
-and locally sourced Italian cuisine.
+sure what the waiters made of us, but I think we set some sort of
+speed-of-eating record in their restaurant, because we woofed down some
+amazing, fresh and locally sourced Italian cuisine.
 
 As I write this post, below us we hear live music from the bar, and Mary and I
 will soon descend for a final drink, and listen to the music for a while before
@@ -253,7 +259,7 @@ think we managed somewhere north of 22 miles.
 
 Tomorrow we head to Llangattock Lingoed, which is, as far as we can tell,
 completely in the middle of nowhere. As a result, we've spied a good bakery
-in Monmouth and will stock up with provisions for tomorrow and the day
+in Monmouth and will stock up with picnic provisions for tomorrow and the day
 after (which will end in Hay-on-Wye).
 
 Onwards! :-)
