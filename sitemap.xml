@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2022-04-08T08:38:00Z</lastmod>
+  <lastmod>2022-04-12T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -91,7 +91,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2022-04-11T17:29:00Z</lastmod>
+  <lastmod>2022-04-14T07:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -374,6 +374,18 @@
   <lastmod>2022-04-11T16:08:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/article/offas-dyke-3-4-5/</loc>
+  <lastmod>2022-04-14T14:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/offas-dyke-3-4/</loc>
+  <lastmod>2022-04-14T07:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/offas-dyke-3/</loc>
+  <lastmod>2022-04-12T19:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/article/on-being-together/</loc>
   <lastmod>2022-04-08T08:38:00Z</lastmod>
  </url>
@@ -647,7 +659,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-23.html</loc>
-  <lastmod>2022-04-11T17:29:00Z</lastmod>
+  <lastmod>2022-04-14T07:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-24.html</loc>
+  <lastmod>2022-04-12T19:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
