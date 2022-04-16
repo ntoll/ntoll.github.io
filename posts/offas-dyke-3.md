@@ -256,7 +256,7 @@ she was so settled and happy with her new partner.
 
 This morning, after a good night's sleep and a lovely relaxed breakfast we
 decided to drive back to Hay-on-Wye and look around... with both of us being
-avid readers, the thought of all the books shops, for which Hay is so famous,
+avid readers, the thought of all the book shops, for which Hay is so famous,
 was a real draw.
 
 Yet, within minutes of our arrival we could see yesterday's taxi driver was
