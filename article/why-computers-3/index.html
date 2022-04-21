@@ -90,7 +90,8 @@ For example, in the UK the Royal Standard always flies from b">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <h3>Why Computers Work (part 3)</h3>
+    <div>
+<h3>Why Computers Work (part 3)</h3>
 <p>(<a href="../why-computers-1/">Part 1</a>,
 <a href="../why-computers-2/">part 2</a>,
 <a href="../why-computers-4/">part 4</a>,
@@ -254,6 +255,7 @@ constituent logical circuits, connects to the outside world via inputs and
 outputs and has a strange capability: to change its own state in order to store
 and process information.</p>
 <p>The next post will explore such a machine.</p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -273,7 +275,9 @@ and process information.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

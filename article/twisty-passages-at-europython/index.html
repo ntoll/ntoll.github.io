@@ -87,7 +87,8 @@ it's w">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p><a href="https://ep2020.europython.eu/">EuroPython</a> took place last month and the
+    <div>
+<p><a href="https://ep2020.europython.eu/">EuroPython</a> took place last month and the
 raw video footage of the talks has just been published online. EuroPython has
 always been one of my favourite conferences and is a special place for me:
 it's where I gave my first ever programming talk back in 2010. It's also one of
@@ -172,6 +173,7 @@ faith. Assuming the lock-downs have eased, next year's EuroPython will be in
 Dublin, Éire.</p>
 <p>I love Ireland. Can't wait!</p>
 <p>See you at next year's EuroPython!</p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -191,7 +193,9 @@ Dublin, Éire.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

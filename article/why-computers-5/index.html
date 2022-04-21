@@ -96,7 +96,8 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <style>
+    <div>
+<style>
 .tape td {
     border: 1px solid black;
     width: 2em;
@@ -579,6 +580,7 @@ oft-missing "music" of computing.</p>
 these strange instruments of automation.</p>
 <p>Thank you for reading.</p>
 <p>Peace.</p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -598,7 +600,9 @@ these strange instruments of automation.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

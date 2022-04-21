@@ -86,7 +86,8 @@ conversation, and she joined us for a sociable evening of">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Our meal at the end of day 2 was lots of fun. As we walked into the
+    <div>
+<p>Our meal at the end of day 2 was lots of fun. As we walked into the
 pub we met again the lady who had found Mary's phone on day 1, struck up a
 conversation, and she joined us for a sociable evening of chatter over rustic
 grub. It turned out Caroline was a teacher and so we had a fine old time
@@ -313,6 +314,7 @@ new L.GPX(gpx_day3, {
 }).addTo(map_day3);
 </script>
 </div>
+    </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../offas-dyke-2/" rel="prev" title="Offa's Dyke - Day 2:">Previous post</a>
@@ -331,7 +333,9 @@ new L.GPX(gpx_day3, {
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

@@ -72,7 +72,8 @@
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <p>I have deleted my Twitter account.</p>
+    <div>
+<p>I have deleted my Twitter account.</p>
 <p>Why?</p>
 <ol>
 <li>I no longer use it.</li>
@@ -90,6 +91,7 @@ use of monosyllabic words.</p>
 <p>If folks genuinely want to connect with me, they'll be in touch (as I will be
 with them).</p>
 <p>Peace.</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/on-being-together/" class="u-url">On Being Together</a></h1>
         <div class="metadata">
@@ -102,7 +104,8 @@ with them).</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <p>(Some raw thoughts I've written down solely to help me clarify my thinking.)</p>
+    <div>
+<p>(Some raw thoughts I've written down solely to help me clarify my thinking.)</p>
 <p>Being together with people I love and who love me in return is a source of
 great joy and solace.</p>
 <p>Yet being with people can also lead to distress.</p>
@@ -254,6 +257,7 @@ To act against this spirit invites ostracism,<br>
 a loss that diminishes us all.<br><br>
 Thank you.<br><br>
 </blockquote>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/twisty-passages-at-europython/" class="u-url">Twisty Passages at EuroPython 2020 </a></h1>
         <div class="metadata">
@@ -266,7 +270,8 @@ Thank you.<br><br>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <p><a href="https://ep2020.europython.eu/">EuroPython</a> took place last month and the
+    <div>
+<p><a href="https://ep2020.europython.eu/">EuroPython</a> took place last month and the
 raw video footage of the talks has just been published online. EuroPython has
 always been one of my favourite conferences and is a special place for me:
 it's where I gave my first ever programming talk back in 2010. It's also one of
@@ -351,6 +356,7 @@ faith. Assuming the lock-downs have eased, next year's EuroPython will be in
 Dublin, Éire.</p>
 <p>I love Ireland. Can't wait!</p>
 <p>See you at next year's EuroPython!</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/2020-changes/" class="u-url">2020 Changes</a></h1>
         <div class="metadata">
@@ -363,7 +369,8 @@ Dublin, Éire.</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <p>I've spent today updating everything to do with ntoll.org. Many
+    <div>
+<p>I've spent today updating everything to do with ntoll.org. Many
 thanks to my buddy <a href="https://kushaldas.in/">Kushal Das</a> for the invaluable
 advice on various technical matters.</p>
 <p>Here's what I've done:</p>
@@ -426,6 +433,7 @@ different types of music.</p>
 Since most of us are in lock-down, don't hesitate to get in touch if you fancy
 a chat..! Social distancing rules don't mean you have to be anti-social.</p>
 <p>:-)</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/sponsorship/" class="u-url">Sponsorship</a></h1>
         <div class="metadata">
@@ -534,7 +542,9 @@ nub of what I want to demonstrate in this blog post.)</p>
             <script src="assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>
