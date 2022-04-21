@@ -193,11 +193,12 @@ grass as our bespectacled friend started to tell us a story. I won't describe
 what she and her friend told us - I heartily encourage you to seek out such folk
 and let them cast their magic... but as they told their tales in Harlech, they
 embodied the worlds they described in a way that only a story teller can. The
-best special effects happen as part of the story seen inside one's head, and
-the connection between the story teller and their audience adds an extra
+best special effects happen as part of the story seen inside one's head, 
+the interaction between the story teller and their audience adds an extra
 dimension of connectivity to the telling of tales that our screen laden world
 often lacks and, ultimately, our stories are just that... connections between
-ourselves that deeply and fundamentally move us through time and space.
+ourselves that deeply and fundamentally move and speak to us through distances
+of time and space.
 
 Here's the video segment broadcast by ITV, it is but a shadow cast by the
 brilliance of their story telling:
