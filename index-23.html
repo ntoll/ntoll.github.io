@@ -72,7 +72,8 @@
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <style>
+    <div>
+<style>
 .tape td {
     border: 1px solid black;
     width: 2em;
@@ -555,6 +556,7 @@ oft-missing "music" of computing.</p>
 these strange instruments of automation.</p>
 <p>Thank you for reading.</p>
 <p>Peace.</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/why-computers-4/" class="u-url">Automated Rule Following Machines</a></h1>
         <div class="metadata">
@@ -567,7 +569,8 @@ these strange instruments of automation.</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <style>
+    <div>
+<style>
 .tape td {
     border: 1px solid black;
     width: 2em;
@@ -885,6 +888,7 @@ watch videos and all the other meaningful stuff for which we find computers so
 useful?</p>
 <p>The answer relates to how we perceive things, our talent for abstraction and
 our cultural context. The next and final post will explore these concepts.</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/why-computers-3/" class="u-url">Representation</a></h1>
         <div class="metadata">
@@ -897,7 +901,8 @@ our cultural context. The next and final post will explore these concepts.</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <h3>Why Computers Work (part 3)</h3>
+    <div>
+<h3>Why Computers Work (part 3)</h3>
 <p>(<a href="article/why-computers-1/">Part 1</a>,
 <a href="article/why-computers-2/">part 2</a>,
 <a href="article/why-computers-4/">part 4</a>,
@@ -1061,6 +1066,7 @@ constituent logical circuits, connects to the outside world via inputs and
 outputs and has a strange capability: to change its own state in order to store
 and process information.</p>
 <p>The next post will explore such a machine.</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/why-computers-2/" class="u-url">Movements of Thought</a></h1>
         <div class="metadata">
@@ -1073,7 +1079,8 @@ and process information.</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <h3>Why Computers Work (part 2)</h3>
+    <div>
+<h3>Why Computers Work (part 2)</h3>
 <p>(<a href="article/why-computers-1/">Part 1</a>,
 <a href="article/why-computers-3/">part 3</a>,
 <a href="article/why-computers-4/">part 4</a>,
@@ -1166,6 +1173,7 @@ table</a>.</p>
  T | T |    T
 </code></pre>
 
+
 <p>Can you see how it works?</p>
 <p>The first two columns represent propositions labelled "A" and "B". The third
 column represents the outcome of the "and" operation, given the values of "A"
@@ -1187,6 +1195,7 @@ called "or" (disjunction):</p>
  T | T |   T
 </code></pre>
 
+
 <p>Let's pretend that "A" is false but "B" is true. How would you evaluate the
 truth value of "A or B"? Is it true or false?</p>
 <p>The answer is that "A or B" is true. Why? Because the second row tells us so:
@@ -1199,6 +1208,7 @@ only works on a single proposition:</p>
  T |   F
  F |   T
 </code></pre>
+
 
 <p>It's easy to see what the "not" (negation) operation does to a proposition: it
 flips its truth value so false becomes true, and true becomes false.</p>
@@ -1280,6 +1290,7 @@ describing movements of thought then we should be able to build machines to
 work with such seemingly mechanical logical rules.</p>
 <p>It turns out that we can, and describing such machines is the next step in
 describing why computers work!</p>
+</div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/why-computers-1/" class="u-url">Why Computers Work: An Introduction to Following Rules</a></h1>
         <div class="metadata">
@@ -1292,7 +1303,8 @@ describing why computers work!</p>
             </p>
         </div>
     </header><div class="e-content entry-content">
-    <style>
+    <div>
+<style>
 .section_break {
     border: none;
     border-bottom: 1px solid black;
@@ -1461,6 +1473,7 @@ rather pleasant "aha" moments (if you were a cartoon character, it's that
 feeling you get when a lightbulb appears above your head).</p>
 <p>The next chapter in our story is a beautiful brain twist: to think about
 thinking...</p>
+</div>
     </div>
     </article>
 </div>
@@ -1483,7 +1496,9 @@ thinking...</p>
             <script src="assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="../../static/css/leaflet.css">
 <script src="../../static/js/leaflet.js"></script><script src="../../static/js/gpx.min.js"></script><meta name="author" content="Nicholas H.Tollervey">
 <link rel="prev" href="../offas-dyke-7-8-9/" title="Offa's Dyke - Days 7, 8 and 9:" type="text/html">
+<link rel="next" href="../offa-all/" title="Offa's Dyke - Complete" type="text/html">
 <meta property="og:site_name" content="ntoll.org">
 <meta property="og:title" content="Offa's Dyke - Days 10, 11 and 12:">
 <meta property="og:url" content="https://ntoll.org/article/offas-dyke-final/">
@@ -85,7 +86,8 @@ during each day. As you'll see from the">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>We found our relaxing rhythm during the final few days of our holiday. Our lack
+    <div>
+<p>We found our relaxing rhythm during the final few days of our holiday. Our lack
 of a plan allowed us to follow our noses, and intuitively improvise an itinerary
 during each day. As you'll see from the photos below, we spent a lot of time
 focusing on four things: historic monuments, gardens, food and travel through
@@ -230,10 +232,14 @@ forward to seeing our children again and giving them gifts we found on our way.<
 <p>But I think this won't be the last time Mary and I do this.</p>
 <p>We've had too much fun not to do it again.</p>
 <figure><img src="../../images/offa10/offas_selfie.jpg" alt="The two of us, at the end of our adventure." title="The two of us, at the end of our adventure."><figcaption>The two of us, at the end of our adventure.</figcaption></figure><p>Onwards!</p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../offas-dyke-7-8-9/" rel="prev" title="Offa's Dyke - Days 7, 8 and 9:">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../offa-all/" rel="next" title="Offa's Dyke - Complete">Next post</a>
             </li>
         </ul></nav></aside></article></main><footer id="footer"><p></p>
 <p>Contents © 2022         <a href="mailto:ntoll@ntoll.org">Nicholas H.Tollervey</a></p> 
@@ -246,7 +252,9 @@ forward to seeing our children again and giving them gifts we found on our way.<
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

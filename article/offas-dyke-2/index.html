@@ -86,7 +86,8 @@ Queen's Head Inn yesterday evening, and we were pleasantly su">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Music is a gift and it's a privilege to listen to highly skilled and
+    <div>
+<p>Music is a gift and it's a privilege to listen to highly skilled and
 engaging musicians. We wondered what sort of music might be on at the
 Queen's Head Inn yesterday evening, and we were pleasantly surprised by the
 quality, versatility and mellow tones of the unnamed guitarist shown below.</p>
@@ -202,6 +203,7 @@ new L.GPX(gpx_day2, {
 }).addTo(map_day2);
 </script>
 </div>
+    </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../offas-dyke-1/" rel="prev" title="Offa's Dyke - Day 1:">Previous post</a>
@@ -220,7 +222,9 @@ new L.GPX(gpx_day2, {
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>

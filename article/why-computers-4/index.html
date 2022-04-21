@@ -96,7 +96,8 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <style>
+    <div>
+<style>
 .tape td {
     border: 1px solid black;
     width: 2em;
@@ -414,6 +415,7 @@ watch videos and all the other meaningful stuff for which we find computers so
 useful?</p>
 <p>The answer relates to how we perceive things, our talent for abstraction and
 our cultural context. The next and final post will explore these concepts.</p>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -433,7 +435,9 @@ our cultural context. The next and final post will explore these concepts.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
     </script>
 </body>
 </html>
