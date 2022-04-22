@@ -190,15 +190,15 @@ over the bridge into the castle.
 
 Inside we found perhaps a hundred people sitting on benches, low walls and the
 grass as our bespectacled friend started to tell us a story. I won't describe
-what she and her friend told us - I heartily encourage you to seek out such folk
-and let them cast their magic... but as they told their tales in Harlech, they
-embodied the worlds they described in a way that only a story teller can. The
-best special effects happen as part of the story seen inside one's head, 
-the interaction between the story teller and their audience adds an extra
-dimension of connectivity to the telling of tales that our screen laden world
-often lacks and, ultimately, our stories are just that... connections between
-ourselves that deeply and fundamentally move and speak to us through distances
-of time and space.
+stories she and her colleague told. Rather, I heartily encourage you to seek
+out such folk and let them cast their magic. In our case, as they told their
+tales in Harlech, the story tellers embodied and communicated the worlds they
+described in a way that only an oral story teller can. The best special effects
+happen as part of the story seen inside one's head, the interaction between the
+story teller and their audience adds an extra dimension of connectivity to the
+telling of tales that our screen laden world often lacks and, ultimately, our
+stories are just that... connections between ourselves that deeply and
+fundamentally move and speak to us through distances of time and space.
 
 Here's the video segment broadcast by ITV, it is but a shadow cast by the
 brilliance of their story telling:
