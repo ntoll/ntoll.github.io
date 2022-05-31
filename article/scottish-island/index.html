@@ -86,8 +86,7 @@ became an item, I have returned to the island for an o">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>My wife's family have the lease for a 19th century cottage on a small,
+    <p>My wife's family have the lease for a 19th century cottage on a small,
 otherwise uninhabited, Scottish island. Every year, since Mary and I first
 became an item, I have returned to the island for an off-the-grid retreat of
 rest, recuperation and reflection.</p>
@@ -236,7 +235,6 @@ because it is a shared specialness private to our family).</p>
 and ever patient dog, Burt.</p>
 <figure><img src="../../images/island_family.jpg" alt="Me and my family on the island" title="Me and my family on the island"><figcaption>Me and my family on the island.</figcaption></figure><p>(All photographs were taken by the author in the week immediately prior to
 the publication of this post.)</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -256,9 +254,7 @@ the publication of this post.)</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

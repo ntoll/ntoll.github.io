@@ -89,8 +89,7 @@ The website is run using N">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>I've spent today updating everything to do with ntoll.org. Many
+    <p>I've spent today updating everything to do with ntoll.org. Many
 thanks to my buddy <a href="https://kushaldas.in/">Kushal Das</a> for the invaluable
 advice on various technical matters.</p>
 <p>Here's what I've done:</p>
@@ -153,7 +152,6 @@ different types of music.</p>
 Since most of us are in lock-down, don't hesitate to get in touch if you fancy
 a chat..! Social distancing rules don't mean you have to be anti-social.</p>
 <p>:-)</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -173,9 +171,7 @@ a chat..! Social distancing rules don't mean you have to be anti-social.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

@@ -88,8 +88,7 @@ inspiring organis'>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Yesterday was our first proper "touring" day, and we made the most of our relative
+    <p>Yesterday was our first proper "touring" day, and we made the most of our relative
 (but not actual) closeness to <a href="https://en.wikipedia.org/wiki/Machynlleth">Machynlleth</a>
 to visit
 the <a href="https://cat.org.uk/">Centre for Alternative Technology</a> (CAT) - an
@@ -171,7 +170,6 @@ had thought provoking visits.
 Clearly CAT won't appeal to everyone, but nobody can ignore their hard work to
 promote a much needed different perspective... an alternative vision of
 "technology".</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -191,9 +189,7 @@ promote a much needed different perspective... an alternative vision of
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

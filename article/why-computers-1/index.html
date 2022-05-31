@@ -95,8 +95,7 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<style>
+    <style>
 .section_break {
     border: none;
     border-bottom: 1px solid black;
@@ -265,7 +264,6 @@ rather pleasant "aha" moments (if you were a cartoon character, it's that
 feeling you get when a lightbulb appears above your head).</p>
 <p>The next chapter in our story is a beautiful brain twist: to think about
 thinking...</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -285,9 +283,7 @@ thinking...</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

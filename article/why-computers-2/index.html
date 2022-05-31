@@ -91,8 +91,7 @@ This is the s">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h3>Why Computers Work (part 2)</h3>
+    <h3>Why Computers Work (part 2)</h3>
 <p>(<a href="../why-computers-1/">Part 1</a>,
 <a href="../why-computers-3/">part 3</a>,
 <a href="../why-computers-4/">part 4</a>,
@@ -302,7 +301,6 @@ describing movements of thought then we should be able to build machines to
 work with such seemingly mechanical logical rules.</p>
 <p>It turns out that we can, and describing such machines is the next step in
 describing why computers work!</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -322,9 +320,7 @@ describing why computers work!</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>
