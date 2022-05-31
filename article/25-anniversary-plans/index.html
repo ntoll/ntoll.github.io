@@ -91,8 +91,7 @@ I first encountered Mary late on an autumnal Frida">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Mary and I will celebrate our 25th wedding anniversary on the 2nd of August
+    <p>Mary and I will celebrate our 25th wedding anniversary on the 2nd of August
 this year.</p>
 <figure><img src="../../static/images/wedding.jpg" alt="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire." title="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire."><figcaption>Our wedding, 2nd August 1997 at Bourton Manor, Shropshire.</figcaption></figure><p>I first encountered Mary late on an autumnal Friday afternoon in the library of
 the <a href="https://www.rcm.ac.uk/library/">Royal College of Music</a>. Mary and I were
@@ -187,7 +186,6 @@ there are many wonderful pubs on our local rambles, and we'd love to share
 their hospitality with any of our friends who happen to be passing by.</p>
 <p>Happy new year for 2022 and here's hoping you find fulfilment and flourish over
 the coming 12 months.</p>
-</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
@@ -207,9 +205,7 @@ the coming 12 months.</p>
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

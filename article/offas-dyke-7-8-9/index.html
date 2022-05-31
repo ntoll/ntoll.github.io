@@ -86,8 +86,7 @@ Mary's part of the world (the beautiful Shrops">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Since we are supposed to be on a walking holiday, Mary and I decided to try
+    <p>Since we are supposed to be on a walking holiday, Mary and I decided to try
 out a shorter walk, and one with which we were familiar, on day 7. We were in
 Mary's part of the world (the beautiful Shropshire hills) and so we found
 ourselves driving to <a href="https://en.wikipedia.org/wiki/Stiperstones">Stiperstones</a>.</p>
@@ -207,7 +206,6 @@ new L.GPX(gpx_day7, {
 }).addTo(map_day7);
 </script>
 </div>
-    </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../offas-dyke-6/" rel="prev" title="Offa's Dyke - Day 6:">Previous post</a>
@@ -226,9 +224,7 @@ new L.GPX(gpx_day7, {
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-    }});
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
 </body>
 </html>

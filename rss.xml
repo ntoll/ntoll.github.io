@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 22 Apr 2022 10:37:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Offa's Dyke - Complete</title><link>https://ntoll.org/article/offa-all/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;For completeness, here's a list of all the Offa's Dyke related blog posts in
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Tue, 31 May 2022 10:22:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Offa's Dyke - Complete</title><link>https://ntoll.org/article/offa-all/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;For completeness, here's a list of all the Offa's Dyke related blog posts in
 chronological order.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-1/"&gt;Day 1&lt;/a&gt; - Chepstow, pizza and first steps.&lt;/li&gt;
@@ -13,7 +13,7 @@ chronological order.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-7-8-9/"&gt;Days 7, 8 and 9&lt;/a&gt; - Shropshire hills, Welsh lakes and castles.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-final/"&gt;Days 10, 11 and 12&lt;/a&gt; - Improvising and going with the flow to our destination.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offa-all/</guid><pubDate>Thu, 21 Apr 2022 14:30:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 10, 11 and 12:</title><link>https://ntoll.org/article/offas-dyke-final/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;We found our relaxing rhythm during the final few days of our holiday. Our lack
+&lt;p&gt;Enjoy!&lt;/p&gt;</description><guid>https://ntoll.org/article/offa-all/</guid><pubDate>Thu, 21 Apr 2022 14:30:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 10, 11 and 12:</title><link>https://ntoll.org/article/offas-dyke-final/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;We found our relaxing rhythm during the final few days of our holiday. Our lack
 of a plan allowed us to follow our noses, and intuitively improvise an itinerary
 during each day. As you'll see from the photos below, we spent a lot of time
 focusing on four things: historic monuments, gardens, food and travel through
@@ -231,7 +231,7 @@ forward to seeing our children again and giving them gifts we found on our way.&
 &lt;figcaption&gt;The two of us, at the end of our adventure.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Onwards!&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-final/</guid><pubDate>Thu, 21 Apr 2022 13:40:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 7, 8 and 9:</title><link>https://ntoll.org/article/offas-dyke-7-8-9/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;Since we are supposed to be on a walking holiday, Mary and I decided to try
+&lt;p&gt;Onwards!&lt;/p&gt;</description><guid>https://ntoll.org/article/offas-dyke-final/</guid><pubDate>Thu, 21 Apr 2022 13:40:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 7, 8 and 9:</title><link>https://ntoll.org/article/offas-dyke-7-8-9/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Since we are supposed to be on a walking holiday, Mary and I decided to try
 out a shorter walk, and one with which we were familiar, on day 7. We were in
 Mary's part of the world (the beautiful Shropshire hills) and so we found
 ourselves driving to &lt;a href="https://en.wikipedia.org/wiki/Stiperstones"&gt;Stiperstones&lt;/a&gt;.&lt;/p&gt;
@@ -409,7 +409,7 @@ new L.GPX(gpx_day7, {
 }).on('loaded', function(e) {
   map_day7.fitBounds(e.target.getBounds());
 }).addTo(map_day7);
-&lt;/script&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-7-8-9/</guid><pubDate>Mon, 18 Apr 2022 17:00:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 6:</title><link>https://ntoll.org/article/offas-dyke-6/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;Yesterday was our first proper "touring" day, and we made the most of our relative
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-7-8-9/</guid><pubDate>Mon, 18 Apr 2022 17:00:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 6:</title><link>https://ntoll.org/article/offas-dyke-6/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Yesterday was our first proper "touring" day, and we made the most of our relative
 (but not actual) closeness to &lt;a href="https://en.wikipedia.org/wiki/Machynlleth"&gt;Machynlleth&lt;/a&gt;
 to visit
 the &lt;a href="https://cat.org.uk/"&gt;Centre for Alternative Technology&lt;/a&gt; (CAT) - an
@@ -520,7 +520,7 @@ interesting and important uses.&lt;/p&gt;
 had thought provoking visits.
 Clearly CAT won't appeal to everyone, but nobody can ignore their hard work to
 promote a much needed different perspective... an alternative vision of
-"technology".&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-6/</guid><pubDate>Sat, 16 Apr 2022 06:30:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 3, 4 and 5:</title><link>https://ntoll.org/article/offas-dyke-3-4-5/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;Our meal at the end of day 2 was lots of fun. As we walked into the
+"technology".&lt;/p&gt;</description><guid>https://ntoll.org/article/offas-dyke-6/</guid><pubDate>Sat, 16 Apr 2022 06:30:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 3, 4 and 5:</title><link>https://ntoll.org/article/offas-dyke-3-4-5/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Our meal at the end of day 2 was lots of fun. As we walked into the
 pub we met again the lady who had found Mary's phone on day 1, struck up a
 conversation, and she joined us for a sociable evening of chatter over rustic
 grub. It turned out Caroline was a teacher and so we had a fine old time
@@ -800,7 +800,7 @@ new L.GPX(gpx_day3, {
 }).on('loaded', function(e) {
   map_day3.fitBounds(e.target.getBounds());
 }).addTo(map_day3);
-&lt;/script&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-3-4-5/</guid><pubDate>Thu, 14 Apr 2022 17:20:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 2:</title><link>https://ntoll.org/article/offas-dyke-2/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;Music is a gift and it's a privilege to listen to highly skilled and
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-3-4-5/</guid><pubDate>Thu, 14 Apr 2022 17:20:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 2:</title><link>https://ntoll.org/article/offas-dyke-2/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Music is a gift and it's a privilege to listen to highly skilled and
 engaging musicians. We wondered what sort of music might be on at the
 Queen's Head Inn yesterday evening, and we were pleasantly surprised by the
 quality, versatility and mellow tones of the unnamed guitarist shown below.&lt;/p&gt;
@@ -955,7 +955,7 @@ new L.GPX(gpx_day2, {
 }).on('loaded', function(e) {
   map_day2.fitBounds(e.target.getBounds());
 }).addTo(map_day2);
-&lt;/script&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-2/</guid><pubDate>Mon, 11 Apr 2022 19:50:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 1:</title><link>https://ntoll.org/article/offas-dyke-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;As mentioned in the previous blog post, we want to celebrate our 25th wedding
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-2/</guid><pubDate>Mon, 11 Apr 2022 19:50:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 1:</title><link>https://ntoll.org/article/offas-dyke-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;As mentioned in the previous blog post, we want to celebrate our 25th wedding
 anniversary in style. Mary suggested we walk
 &lt;a href="https://offasdyke.org.uk/"&gt;Offa's Dyke&lt;/a&gt; and I only went ahead and actually
 booked it all for a twelve day hike. You see, as a devoted husband, I do as
@@ -1173,7 +1173,7 @@ new L.GPX(gpx, {
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
-&lt;/script&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/offas-dyke-1/</guid><pubDate>Sun, 10 Apr 2022 19:30:00 GMT</pubDate></item><item><title>Wedding Anniversary Plans</title><link>https://ntoll.org/article/25-anniversary-plans/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;Mary and I will celebrate our 25th wedding anniversary on the 2nd of August
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-1/</guid><pubDate>Sun, 10 Apr 2022 19:30:00 GMT</pubDate></item><item><title>Wedding Anniversary Plans</title><link>https://ntoll.org/article/25-anniversary-plans/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Mary and I will celebrate our 25th wedding anniversary on the 2nd of August
 this year.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src="https://ntoll.org/static/images/wedding.jpg" alt="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire." title="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire."&gt;
@@ -1277,7 +1277,7 @@ visit and share a walk with us as we prepare... we forgot to mention
 there are many wonderful pubs on our local rambles, and we'd love to share
 their hospitality with any of our friends who happen to be passing by.&lt;/p&gt;
 &lt;p&gt;Happy new year for 2022 and here's hoping you find fulfilment and flourish over
-the coming 12 months.&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/25-anniversary-plans/</guid><pubDate>Sat, 15 Jan 2022 20:30:00 GMT</pubDate></item><item><title>Chicken chicken chicken</title><link>https://ntoll.org/article/chicken/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;A large part of my day job involves reading and writing what folks
+the coming 12 months.&lt;/p&gt;</description><guid>https://ntoll.org/article/25-anniversary-plans/</guid><pubDate>Sat, 15 Jan 2022 20:30:00 GMT</pubDate></item><item><title>Chicken chicken chicken</title><link>https://ntoll.org/article/chicken/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;A large part of my day job involves reading and writing what folks
 optimistically call "technical documentation". It's usually about as much
 fun as sticking forks in one's eyes, rubbing a cheese grater up and down one's
 nose or reading the complete unabridged works of Ayn Rand.&lt;/p&gt;
@@ -1377,7 +1377,7 @@ compassionate and unambigous", are also slippery terms. I've added
 clarifications in brackets and would especially like to point out that they
 embodied the very best of constructive, compassionate and unambiguous
 feedback in their correspondence with me. :-)
-&lt;a href="https://ntoll.org/article/chicken/#chicken-sup"&gt;Return to text&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/chicken/</guid><pubDate>Wed, 20 Oct 2021 16:00:00 GMT</pubDate></item><item><title>On a Scottish Island</title><link>https://ntoll.org/article/scottish-island/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;div&gt;&lt;p&gt;My wife's family have the lease for a 19th century cottage on a small,
+&lt;a href="https://ntoll.org/article/chicken/#chicken-sup"&gt;Return to text&lt;/a&gt;.&lt;/p&gt;</description><guid>https://ntoll.org/article/chicken/</guid><pubDate>Wed, 20 Oct 2021 16:00:00 GMT</pubDate></item><item><title>On a Scottish Island</title><link>https://ntoll.org/article/scottish-island/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;My wife's family have the lease for a 19th century cottage on a small,
 otherwise uninhabited, Scottish island. Every year, since Mary and I first
 became an item, I have returned to the island for an off-the-grid retreat of
 rest, recuperation and reflection.&lt;/p&gt;
@@ -1590,4 +1590,4 @@ and ever patient dog, Burt.&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;(All photographs were taken by the author in the week immediately prior to
-the publication of this post.)&lt;/p&gt;&lt;/div&gt;</description><guid>https://ntoll.org/article/scottish-island/</guid><pubDate>Sun, 01 Aug 2021 17:30:00 GMT</pubDate></item></channel></rss>
+the publication of this post.)&lt;/p&gt;</description><guid>https://ntoll.org/article/scottish-island/</guid><pubDate>Sun, 01 Aug 2021 17:30:00 GMT</pubDate></item></channel></rss>
