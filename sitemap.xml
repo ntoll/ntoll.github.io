@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2022-05-31T10:22:00Z</lastmod>
+  <lastmod>2022-06-02T20:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -91,7 +91,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2022-05-31T10:22:00Z</lastmod>
+  <lastmod>2022-06-20T16:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -410,6 +410,14 @@
   <lastmod>2022-05-31T10:22:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/article/pastures-new%20/</loc>
+  <lastmod>2022-06-02T20:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/pastures-new/</loc>
+  <lastmod>2022-06-02T20:43:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/article/philosophy-and-natural-language-processing/</loc>
   <lastmod>2022-05-31T10:22:00Z</lastmod>
  </url>
@@ -671,7 +679,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-24.html</loc>
-  <lastmod>2022-05-31T10:22:00Z</lastmod>
+  <lastmod>2022-06-20T16:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-25.html</loc>
+  <lastmod>2022-06-02T20:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -1308,6 +1320,10 @@
  <url>
   <loc>https://ntoll.org/static/presentations/mu/test/test.html</loc>
   <lastmod>2020-11-12T15:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/static/presentations/music_and_code/</loc>
+  <lastmod>2022-06-02T20:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/oopy/</loc>
