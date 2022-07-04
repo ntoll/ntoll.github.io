@@ -17,174 +17,781 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-          <h1>🎹+💻</h1>
+          <h1 style="font-size:6em;">🎹+💻</h1>
           <p>Nicholas H.Tollervey</p>
           <p><small>ntoll@ntoll.org</small></p>
           <aside class="notes">
-            <p>I'm a UK based Python developer, and I have been privileged to
-            have had a varied career. I've worked as a professional classical
-            musician, a teacher, writer and I also have a background in
-            academic philosophy.</p>
-            <p>I've wanted to give a version of this talk for well over a
-            decade.</p>
-            <p>Put simply, we're going to compare and contrast the disciplines
-            of software development and classical music. In so doing, I hope
-            we can reflect upon how we pay attention to education, learning
-            and pedagogy within our community.</p>
-          </aside>
-        </section>
-        <section>
-          <div style="text-align: left">
-            <p>Asking what sort of education and learning our community supports is how we decide what sort of community we become.</p>
-            <p>For it is through education and learning that we engage with our future colleagues, friends and supporters.</p>
-          </div>
-          <aside class="notes">
-            <p>I have a passion for education, learning, pedagogy and how that
-            interacts with coding, in the broadest sense of the term. Put
-            simply, when we ask what sort of community we want to become, then
-            education is how we answer this question.</p>
-            <p>I hope you agree, this is an important question.</p>
+            <p>I'm Nicholas, I'm based in the UK and work as a principal
+            engineer at Anaconda, where I'm a member of the wonderful PyScript
+            team.</p>
+            <p>But this is going to be a very personal talk, and nothing to do
+            with my day job.</p>
+            <p>In this talk, I'm going to use music as a metaphor, a contrast
+            and a foil to coding. It's an opportunity to explore, re-evaluate
+            and re-encounter coding from an unusual and hopefully stimulating
+            perspective. I'll be paying particular attention to teaching,
+            learning and the place of software within our culture. I hope you
+            enjoy it and find it interesting.</p>
+            <p>But before embarking, I want to learn a bit about you.</p>
           </aside>
         </section>
         <section>
           <h2>You..?</h2>
-          <p>Code (Python) ✅</p>
-          <p class="fragment">Musicians? <span class="fragment">✅</span></p>
-          <p class="fragment">Students? <span class="fragment">✅</span></p>
-          <p class="fragment">Teachers? <span class="fragment">✅</span></p>
           <aside class="notes">
-            <p>But before embarking on my talk, I want to find out about you,
-            too.</p>
-            <p>Are there any musicians in the audience? Anyone consider
-            themselves tone deaf? No musical skill needed for this talk.</p>
-            <p>Any students here? How many of you are still coding with
-            exactly the same set of tools and frameworks as 10, 5, or even 2
-            years go..? Change is constant and part of being a good developer
-            is to always be learning. Right..? So we're all eternal
-            students.</p>
-            <p>Any teachers in the room? If you work in a school or educational
-            establishment, thank you so much for the work that you do.</p>
-            <p>Who answers questions online, writes documentation, pair
-            programs, presents ideas or code to users or colleagues or offers
-            help so others can learn and grown? Teaching and mentoring is a
-            core aspect of our job as developers.</p>
-            <p>I hope you agree, education, learning and pedagogy are important
-            and fundamental aspects of our work as software engineers.</p>
+            <p>Any musicians in the audience? I must apologise in advance for
+            my piano playing.</p>
+            <p>I'm really an orchestral tuba player and piano is very much my
+            second study. For non-musicians, what I've just said is something
+            along the lines of, as Python is to my tuba playing, so copy and
+            pasting JavaScript from StackOverflow is to my piano playing. Thus
+            demonstrating the power of analogy and metaphor to reveal
+            interesting insights about the world. I'll be doing a lot of that
+            during this talk.</p>
+            <p>Any students or teachers here?</p>
+            <p>I hoped you'd all put your hand up. A wonderful yet challenging
+            aspect of our work as engineers is that we're always learning new
+            technology. We're lifelong students. Inevitably, if you write code,
+            you'll also write documentation, explain code for review or to
+            colleagues, give talks at conferences like this one or support
+            collaborators or users of your application. A core part of being
+            an engineer is to explain yourself, and that means you're a
+            teacher. Pedagogy, the skill of mentoring and supporting learning,
+            is an essential aspect of what it is to be an effective
+            engineer.</p>
           </aside>
         </section>
         <section>
-          <h2>First subject:</h2>
-          <h1>Music</h1>
+          <h1>Part 1.<br/>The Knowledge</h1>
+          <aside class="notes">
+            <p>With the scene suitably set, let's start by exploring different
+            types of skill, knowledge and ways to pay attention to the world.
+            These are, after all, the sorts of things we need to learn about in
+            order to do meaningful stuff.</p>
+            <p>We start with a musical example.</p>
+          </aside>
         </section>
         <section>
-          <h2>Second subject:</h2>
-          <h1>Code</h1>
+          <h2>Nature</h2>
+          <aside class="notes">
+            <p>There are many elements that make up music and one of the more
+            important is the concept of pitch. How do we know what pitches to
+            play? We use the naturally occuring harmonic series in a circular
+            process that give us our 12 note scale. Pythagoras is,
+            traditionally, said to have discovered these relationships.
+            Instruments are then tuned - their physical characteristics are
+            changed - so they play the notes arrived at via these mathematical
+            relationships.</p>
+          </aside>
+        </section>
+        <section data-background-video="video/turing_machine.webm">
+          <aside class="notes">
+            <p>In computing, an equivalent might be to describe the mechanical
+            processes of a Turing machine as a way to define a computer.</p>
+            <p>The repeated steps of reading a symbol from a tape and looking
+            up a machine's numbered state, to discover a next step that defines
+            updating or ignoring the symbol at the current position on the
+            tape, transitioning to a new machine state and moving the tape one
+            way or another is, unambiguously, the foundations of computing.</p>
+            <p>What's important, is we are describing aspects of and processes
+            relating to a purely physical view of the world. Yet our world is
+            so much richer than just such a view because we can't help but
+            give meaning to those aspects of the physical world we've just been
+            exploring.</p>
+          </aside>
         </section>
         <section>
-          <h2>Development</h2>
+          <h2>Meaning</h2>
+          <aside class="notes">
+            <p>What do I mean?</p>
+            <p>In music we group pitches into keys, we describe the
+            relationship between pitches with "intervals" and such intervals
+            are categorised as either consonant or dissonant.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/splash_screen.gif">
+          <aside class="notes">
+            <p>In computing sequences of bits are used to represent things. We
+            even have to agree on the "endian-ness" to make sure we get the
+            order of bits the right way round when reading or writing memory,
+            eating eggs, or transmitting data via a network. You don't need me
+            to tell you the on/off state of bits is used to represent binary
+            numbers, which themselves represent other things... such as
+            characters in a string of text.</p>
+            <p>Introduce Mu</p>
+            <pre><code>&gt;&gt;&gt; ord("A")
+65
+&gt;&gt;&gt; chr(65)
+'A'
+&gt;&gt;&gt; bin(65)
+'0b1000001'</code></pre>
+           <p>Keys, consonance or dissonance, endianness or that the number 65
+           represents the character "A" are not true facts in a scientific
+           sense: they are meaningful concepts that map onto the physical world
+           in some way, but most definitely are the result of the designs,
+           choices or traditions of humans. Philosophers would describe them as
+           socially constructed facts rather than "laws of nature".</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Abstraction</h2>
+          <aside class="notes">
+            <p>Not only do we ascribe meaning to things, but we combine and
+            build with such relationships to create more complicated things. In
+            other words, we make use of abstraction.</p>
+            <p>Here's a couple of musical abstractions:</p>
+            <p>If melody is pitches of a certain duration ordered through time,
+            then harmony concerns pitches played together at the same time.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/melody_harmony.png">
+          <aside class="notes">
+            <p>In other words, melody is the X axis, harmony is the Y.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/hymn.png">
+          <aside class="notes">
+            <p>The intervals we encountered earlier allow us to build chords
+            (that is, notes played together as a harmony) in a certain key and
+            the consonance / dissonance categories allow us to resolve chords
+            into one another.</p>
+            <p>The notion of chords and harmonic resolution depends on the
+            lower level concepts of pitch, keys and intervals.</p>
+          </aside>
+        </section>
+        <section>
+          <pre style="font-size: 1.5em;"><code data-trim data-noescape>print("Hello, world!")</code></pre>
+          <aside class="notes">
+            <p>Similarly, the way we ascribed numbers to characters allows us
+            to make groups of such numbers that represent strings of textual
+            information... for example, Python code that has a certain formal
+            syntax that allows us to combine meaningful abstractions.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Art(efacts)</h2>
+          <aside class="notes">
+            <p>Such abstractions, when sufficiently powerful, allow us to
+            express ourselves, create cultural artefacts that influence and
+            interact with people.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/prelude.jpg">
+          <aside class="notes">
+            <p>For example, remember that hymn like example from just a moment
+            ago. Here's the same chord sequence, but re-imagined by a dude
+            called Johann Sebastian Bach.</p>
+            <ul>
+              <li>Chords become broken chords - feeling of movement and
+              flow.</li>
+              <li>Texture - how the notes are arranged together give a feeling
+              of distance: either squashed together or spaced wide apart.</li>
+              <li>Rubato, articulation, dynamics, phrasing: Used to create a
+              performer's tone of voice (like an actor).</li>
+            </ul>
+            <p>This piece of music is brought into the world by the imagination
+            of Bach and my wiggling my fingers so as to hit the right
+            notes.</p>
+          <aside>
+        </section>
+        <section data-background-video="video/microbit_hello.webm">
+          <aside class="notes">
+            <p>Python code, made through the imagination of the programmer, is
+            also brought into the world by executing it on a computer: it
+            interacts with the wider world in some valuable, entertaining or
+            other significant way.</p>
+            <pre><code>from microbit import *
+import random
+import music
+# With apologies to Polish speakers, there are no accents in the Microbit "font". ;-)
+greetings = ["Hello", "Bonjour", "Ciao", "Mora duit", "Hola", "Hallo", "Hej", "Czesc", ]
+message = "{greet} EuroPython!".format(greet=random.choice(greetings))
+display.scroll(message, wait=False, delay=70)
+music.play(music.POWER_UP)</code></pre>
+          </aside>
+        </section>
+        <section>
+          <h2>Culture</h2>
+          <aside class="notes">
+            <p>And all this happens within a cultural context that informs our
+            decisions and reflects our unique personal tastes, backgrounds and,
+            dare I say it, prejudices.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/dead_germans.png">
+          <aside class="notes">
+            <p>We stand on the shoulders of giants, and who we choose to
+            celebrate as our giants is itself a reflection of our culture and
+            values. Here's a slide with lots of dead German dudes - which is a
+            pretty narrow minded view of the rich and diverse world of music.
+            But this is synonymous with...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/business_leaders.png">
+          <aside class="notes">
+            <p>...a slide with lots of rich white men (who don't actually write
+            that much code).</p>
+            <p>Ten years ago it was all the rage to "inspire" kids with the
+            view that they should aspire to make as much money as possible as
+            coders.</p>
+            <p>I believe this is a very narrow-minded, simplistic and not
+            particularly helpful way to encourage folks to code. In fact it's
+            quite mercenary and frames the value of code in terms of
+            money...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/actual_coders.png">
+          <aside class="notes">
+            <p>May I venture a more enlarged version of the previous slide?</p>
+            <ul>
+              <li>Ada Lovelace - the world's first computer programmer.</li>
+              <li>Sophie Wilson - designer of the ARM architecture.</li>
+              <li>Alan Turing - formalised the definition of a computer.</li>
+              <li>Annie Easley - one of the first computer/rocket scientists at
+              NASA.</li>
+            </ul>
+            <p>I hope we can all agree, a more enlightened and nuanced view
+            promotes a deeper and more subtle view of coding as an art or
+            rewarding skill practiced by all sorts of interesting people (not
+            just billionaires) that allows you to make cool things, rather than
+            how much money you can make from it.</p>
+            <p>The important aspect of culture that I want to highlight, is
+            that it's diverse, which means context and an awareness of context
+            matters.</p>
+            <p>This may strike you as not a particularly pleasant chord...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/judy.jpg">
+          <aside class="notes">
+            <p>There are different styles of music. You like jazz, I like
+            classical.</p>
+            <p>Each brings a different aspect of the world to light.</p>
+            <p>If you try to analyse such things, you're doing it wrong because
+            we're talking about culture, values, politics, ethics, aesthetics,
+            feelings and expression.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/perl_python.png">
+          <aside class="notes">
+            <p>Such attention is also relevant to programming languages - each
+            one presents a different attitude or way to pay attention to the
+            world, that in turn affects and changes those who use such
+            languages.</p>
+            <p>Take, for instance, the different aesthetics of Perl and Python.
+            Any many respects they're similar languages: high level, running on
+            virtual machines, written as collaborative open source projects
+            with large international communities. Yet we have the Zen of Python
+            and Perl users like to introduce people to the friend Tim.
+            Tim Towtdi (There is more than one way to do it).</p>
+            <p>Who's right?</p>
+            <p>Trick question.... nobody's right... they're just different and
+            perhaps we should let many flowers bloom. Diversity is a strength,
+            right..?</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Part 2.<br/>The Journey</h1>
+          <aside class="notes">
+            <p>We've only briefly explored the many different aspects, skills,
+            knowledge and ways to pay attention to and interact with the
+            world.</p>
+            <p>Anyone who claims learning music is simply limited to acquiring
+            the ability to read notes, is just as ignorant as someone claiming
+            that learning coding merely involves learning what a "while" loop
+            is.</p>
+            <p>Clearly, the world, and us humans who inhabit it, is a
+            complicated place.</p>
+            <p> It turns out that, given such a rich, deep and complex
+            situation, learning anything to any degree of competence requires
+            a long term investment of time and effort to acquire a set of
+            skills, theory, knowledge and experience that have been understood
+            enough such that folks know how to effectively apply them to
+            whatever it is that they find meaningful.</p>
+            <p>This is a journey to experience.</p>
+          </aside>
         </section>
         <section data-background-image="img/fiddle_kid.jpg">
+          <aside class="notes">
+            <p>In a musical sense, how do we help this young violinist
+            explore what music has to offer, encounter the support she needs to
+            build the confidence required to grow into the musician she wants
+            to become.</p>
+            <p>How do we get from this...</p>
+          </aside>
         </section>
         <section data-background-image="img/benedetti.jpg">
+          <aside class="notes">
+            <p>...to perhaps this. Nicola Benedetti, the Scottish concert
+            violinist.</p>
+          </aside>
         </section>
         <section data-background-image="img/ally_bain.jpg">
+          <aside class="notes">
+            <p>...or this? Aly Bain, a Shetlander and renowned folk
+            fiddler.</p>
+          </aside>
         </section>
         <section data-background-image="img/pub_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Just a group of friends, amateur musicians, coming
+            together for a session in the pub.</p>
+          </aside>
         </section>
         <section data-background-image="img/chineke.jpg">
+          <aside class="notes">
+            <p>...or this? Chineke: a world class orchestra created by and for
+            classical musicians from under-represented ethnic minority
+            groups.</p>
+          </aside>
         </section>
         <section data-background-image="img/hindustani_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Kala Ramnath, the grammy award winning Hindustani
+            violinist who comes from a long line of traditional Indian
+            classical musicians.</p>
+          </aside>
         </section>
         <section data-background-image="img/jasserhajyoussef.jpg">
+          <aside class="notes">
+            <p>...or this? Jasser Haj Youssef, a Tunisian violinist,
+            musicologist, composer and performer who crosses genres by playing
+            western classical, Jazz, north African and Arabian music.
+          </aside>
         </section>
         <section data-background-image="img/rock_cello.jpg">
+          <aside class="notes">
+            <p>...or even this? This is "Apocalyptica"... how can I put this,
+            they're a cello quartet from Finland who play metal. They're
+            awesome.</p>
+          </aside>
         </section>
         <section>
-          <p>Music represents</p>
+          <h1>Music represents</h1>
+          <aside class="notes">
+            <p>Each musician embodies a different way to make music. Their
+            efforts, training, understanding, creativity and imagination
+            enriches our world.</p>
+            <p>So how DO you get from the beginner fiddler to any one of these
+            musicians?</p>
+            <p>I'm going to answer this question by telling you about my
+            journey to becoming a professional orchestral tuba player...</p>
+          </aside>
         </section>
-        <section>
-          <img src="img/oreilly.png" alt="O'Rly book"/>
+        <section data-background-image="img/octubafest.jpg">
+          <aside class="notes">
+            <p>I attended something called "Octubafest" organised by a lady
+            called Rachel. The aim of Octubafest is to inspire folks to fall
+            in love with a full stack instrumental framework called tubas. They
+            organize free tuba workshops, create
+            online tuba tutorials and curate amazing first experiences with
+            sousaphones.</p>
+            <p>It was a blast..!</p>
+          </aside>
         </section>
         <section>
           <img src="img/24h.jpg" alt="Learn Tuba in 24 hours"/>
+          <aside class="notes">
+            <p>My tuba mentor at Octubafest suggested a few books to read, so
+            I started with this one since it promised to get me up to speed
+            really quickly.</p>
+          </aside>
+        </section>
+        <section>
+          <img src="img/oreilly.png" alt="O'Rly book"/>
+          <aside class="notes">
+            <p>But that book didn't really work for me, so I bought this one
+            instead. At over 800 pages I was certain I'd be able to learn
+            everything I needed to play the tuba.</p>
+            <p>But I have to admit, I tried reading this book, but I couldn't
+            really connect with the material. It felt too complicated and I
+            even started to doubt the tuba was for me.</p>
+            <p>I have to admit, that's when I started watching videos about
+            an alternative, more light-weight musical instrument framework
+            called "the recorder".</p>
+          </aside>
         </section>
         <section data-background-video="video/recorder.webm">
+          <aside class="notes">
+            <p>It soon became apparent that my calling was for the bass end of
+            things so I soon abandoned the recorder, which was a lot more
+            difficult to play than I at first imagined.</p>
+            <p>A friend knew someone who was an actual musician with a degree
+            in music theory, and they suggested I look into the technical
+            details of music.</p>
+            <p>Apparently, in actual real-life music auditions you have to
+            solve harmony problems on a white board, so this seemed like a
+            really good idea.</p>
+            <p>So I found a series of two minute videos about music
+            theory.</p>
+          </aside>
         </section>
         <section data-background-video="video/augmented_5th.webm">
+          <aside class="notes">
+            <p>But none of it made any sense.</p>
+            <p>Music theory makes quantum mechanics look like an episode of
+            Peppa Pig.</p>
+            <p>It was then I spotted a poster on the London underground for a
+            bootcamp. If I handed over several thousand of pounds, and lived
+            off my savings for three months, the bootcamp would teach me
+            everything I needed to know.</p>
+            <p>They even told me they had an 80% success rate at placing
+            graduates of the course in the music industry within one year of
+            completing.</p>
+          </aside>
         </section>
-				<section data-background-image="img/music_bootcamp.png" data-background-position="top"></section>
-        <section data-background-video="video/plum.webm">
+				<section data-background-image="img/music_bootcamp.png" data-background-position="top">
+          <aside class="notes">
+            <p>I learned about all sorts of things I never encountered in the
+            books or video courses:</p>
+            <ul>
+              <li>How to read musical notes.</li>
+              <li>How to play the core seven notes all musicians use on my
+              Tuba.</li>
+              <li>How to wear a tuxedo at an orchestra concert.</li>
+              <li>Turning the pages of the score without making them
+              rustle.</li>
+              <li>Bowing during applause.</li>
+              <li>The tutors even flagged advanced concepts like key
+              signatures and time signatures, but said we'd pick them up
+              better, once we'd found our first role.</li> 
+            </ul>
+            <p>Out of the cohort of 50 who started the course, only 5 of us
+            actually finished, and of those, 4 of us do have jobs relating to
+            music.</p>
+          </aside>
         </section>
         <section>
-          <h2>Recapitulation</h2>
+          <h1>🤔</h1>
+          <aside class="notes">
+            <p>I imagine many of us own SAMS 24h and O'Reilly books. Octubafest
+            is a real thing, totally awesome and run by the effervescent Rachel
+            Coles. Sarah Jeffery's "Team Recorder" channel and  Jesse
+            Strickland's "Two Minute Music Theory" channel are wonderful
+            examples of two formidably talented musicians who mentor through a
+            digital medium. Yet none of these folks would claim their resources
+            should replace a conventional music education. Rather, they
+            complement one.</p>
+            <p>I wanted to show you how all the sorts of things we do in coding
+            education; the books, Django Girls, beginner coding videos and
+            computer science channels appear to non-programmers.</p>
+            <p>Many conscientious, passionate and generous hearted people in
+            our community give up their time and put a huge amount of effort
+            to make many wonderful educational resources and events.</p>
+            <p>But something doesn't quite feel right to me...</p>
+            <p>The epitome is in the the bootcamp slide. It's of an actual
+            London based boot camp's website with references to code replaced 
+            by references to equivaent musical terms. I have to ask, would you
+            hire a band of musicians to play at your wedding, funeral, bar
+            mitzvah if you knew they were recent graduates of a three month
+            music boot camp? In a sense, we're setting up folks to encounter
+            very uncomfortable situations, and over the past two years several
+            investigative journalists have examined and found serious problems
+            with the claims of such courses. A good place to start would be
+            Business Insider's piece from last year.</p>
+          </aside>
         </section>
         <section>
-          <h2>Music</h2>
+          <img src="img/guido.png" alt="Guido in 30 minutes"/>
+          <aside class="notes">
+            <p>I think my unease is with the speed at which we seem to think
+            folks will learn coding, and that we provide didactic, expert led,
+            courses, books and videos. We even use euphemisms like "zero to
+            thirty", as if we're in some sort of a grand prix. I think this is
+            unfair to beginner coders,
+            naive at best, and morally suspect at worse. We're simply not
+            being truthful about the amount of time, work, effort and, let's be
+            honest here, frustration, it takes to even start to come to terms
+            with coding in any meaningful way.</p>
+            <p>And we've not even touched upon the exploratory, imaginative
+            and creative aspects of coding.</p>
+            <p>So, you're probably thinking, "ok smart-arse, what would you
+            suggest"?</p>
+          </aside>
         </section>
-        <section data-background-video="video/conductor.webm">
-        </section>
-				<section data-background-image="img/mfy.png" data-background-position="top"></section>
         <section>
-          <h2>Code</h2>
+          <h1>Part 3.<br/>Embodiment</h1>
+          <aside class="notes">
+            <p>As lazy engineers (in
+            a good sense), we can ask ourselves, "surely others have solved
+            this problem before?" and look for examples that work.</p>
+            <p>You'll be entirely unsurprised to hear that I think we could
+            learn a lot from how music education, at its most effective, is
+            practiced.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/mfy.png" data-background-position="top">
+          <aside class="notes">
+            <p>On Friday, all three of my kids were playing in the Symphony
+            Hall, Birmingham, as part of the national festival of music for
+            youth.</p>
+            <p>What is that?</p>
+            <p>It's life changing performance and progression opportunities,
+            regardless of background or musical style.</p>
+            <p>It's an opportunity to participate in, and be empowered by,
+            high-quality musical activities.</p>
+            <p>It's free to every young person.</p>
+            <p>Most importantly, it is a process, set of practices and group of
+            people who embody a vision of a certain sort of inclusive musical
+            culture. Remember, music represents.</p>
+          </aside>
         </section>
         <section>
           <img src="img/john_pinner.jpg" alt="John Pinner"/>
+          <aside class="notes">
+            <p>In 2011, John Pinner asked me to look into starting an education
+            track at PyConUK. John was also a musical connoisseur and we used
+            Music For Youth as one of our north stars, when putting together
+            the very first kids day in 2012.</p>
+            <p>Asking what sort of education and learning our community
+            supports is how we decide what sort of community we become.</p>
+            <p>For it is through education and learning that we engage with our
+            future colleagues, friends and supporters.</p>
+            <p>Education isn't just explaining stuff. As educators, it is
+            encumbant on us to embody the sort of behaviour, attitude, skill
+            and knowledge we hope to inspire in our students.</p>
+            <p>This is a long, slow and at times frustrating journey. But it's
+            a journey made possible because mentors, teachers, guides and
+            other helpers step up and encourage learners on their own journey
+            to experience. By taking steps on this journey learners encounter
+            and practice what it is to be a Python coder in an inclusive,
+            supportive and diverse community.</p>
+            <p>Between 2013-2015, each year, we welcomed 50 teachers and
+            over 100 kids to our conference, to take their first steps.</p>
+            <p>I'm proud to say, we encountered many moments like these three
+            young coders, autonomously debugging a Python script running
+            something crazy in Minecraft.</p>
+          </aside>
         </section>
         <section>
-          <blockquote style="text-align: left;">
-          By the end of day 2 [of PyConUK] I was running the education summit.
-          </blockquote>
-          <blockquote style="text-align: left;">
-          The John Pinner awards are just a popularity contest, anyway.
-          </blockquote>
-          <blockquote style="text-align: left;">
-          They just want to fluff up their profile in the community.
-          </blockquote>
+          <aside class="notes">
+            <p>2017 was difficult year for me.</p>
+            <p>It was made very clear, in no uncertain terms, that my
+            contributions to the education track were not welcome, unless they
+            were "on message". The education track no longer embodied a
+            cosmopolitan community, in which everyone was made welcome to
+            contribute and participate in a way that reflected our wonderfully
+            diversity. Rather, we had to conform to a certain PR led view of
+            Python in education in the UK.</p>
+            <p>When I carefully, politely and respectfully raised concerns, I
+            was put in my place.</p>
+          </aside>
         </section>
         <section>
           <img src="img/twitter_edu.png" alt="Education track request"/>
+          <aside class="notes">
+            <p>The following year, wonderful Ben Nuttall was put in charge of
+            the education track.</p>
+            <p>Here's Ben allaying my fears in a way that is kind, thoughtful
+            and, importantly, embodies just the sort of community we want to
+            encourage through an education track.</p>
+          </aside>
         </section>
         <section>
           <blockquote style="text-align: left;">
-          I think you should delete that tweet. You're suggesting @PyConUK is not a welcoming place.
+          I think you should delete that tweet. You're suggesting @PyConUK is
+          not a welcoming place.
           </blockquote>
+          <aside class="notes">
+            <p>Yet things soon took an unfortunate turn.</p>
+            <p>I don't think the sender of this clearly unwelcoming message was
+            doing it to make a weird ironic joke.</p>
+            <p>I want to be very clear: the UK Python community and PyCon UK is
+            full of many wonderful people, who selflessly throw themselves into
+            the community, who bring out the best in each other and who show
+            mutual respect, tolerance and support despite our inevitable
+            differences created from our wonderful diversity.</p>
+            <p>Yet, my experience of PyCon UK was that I felt unwelcome.</p>
+            <p>Furthermore, I think it unhelpful to ignore folks who have
+            encountered problems in our community. I believe we should
+            acknowledge that not everyone has a wonderful time in the Python
+            community. If we delete such things, we ignore problems, and
+            that can't lead anywhere good. It also means we're not embodying
+            what it is to be a welcoming, inclusive, tolerant and supportive
+            community.</p>
+          </aside>
         </section>
         <section>
           <img src="img/hate_mail.png" alt="Hate mail"/>
+          <aside class="notes">
+            <p>The Python community has many wonderful aspects to it.</p>
+            <p>The Python community also contains folks who exhibit behaviour
+            that make it hard to be a member of this community.</p>
+            <p>This was my in-box a few months ago. I wasn't the only Mu
+            maintainer to be on the receiving end of such email.</p>
+            <p>Clearly this behaviour is unacceptable and all of us involved
+            in Mu hope the sender is in a better place so they're able to
+            understand the affects of such emails.</p>
+            <p>By 2018 I had run out of steam.</p>
+            <p>The ill judged, thoughtless and sometimes nasty interactions I
+            encountered in the Python community felt like death by a 1000
+            paper cuts.</p>
+            <p>I was sitting on top of years of the very worst
+            the Python community had to offer.</p>
+            <p>One day, I reposted an announcement from the PSF about something
+            or other... I think it was related to fund raising.</p>
+            <p>It contained a spelling mistake or some grammatical errors. In
+            any case, the volunteer who wrote it clearly hadn't proof read it.
+            Busy people are busy and sometimes they don't catch every little
+            mistake. I certainly missed it.</p>
+            <p>But I was contacted by a member of the UK Python community who
+            decided to complain in a way that was both unkind and rude about
+            the original author of the announcement.</p>
+            <p>That was the straw that broke the camel's back.</p>
+          </aside>
         </section>
         <section>
           <img src="img/tweets.png"/>
+          <aside class="notes">
+            <p>Sitting on a decade of pent up frustration I tweeted.</p>
+            <p>Many folks in the UK Python community replied with compassion,
+            thoughfulness and support. They are the best of us.</p>
+          </aside>
         </section>
         <section>
           <blockquote style="text-align: left;">
-          I am a senior member of the UK Python community. How dare you bad mouth our community with such a lack of courtesy and respect on an international platform.
+          I am a senior member of the UK Python community. How dare you bad
+          mouth our community on an international platform.
           </blockquote>
+          <aside class="notes">
+            <p>This response, since deleted, reduced me to tears.</p>
+            <p>I was, once again, being put in my place. Clearly I had missed
+            the PSF board resolution that said the Python community was now
+            hierarchical with senior and other levels of status.</p>
+            <p>I replied that I was sorry this person felt so angry, but that
+            I was dealing with a lot of pent up sadness and frustration.
+            Clearly, the UK Python community had taken a toll on my mental
+            health.</p>
+            <p>A far flung friend pointed out that my comments should be taken
+            as a gift of constructive criticism. I was just about to respond
+            with thanks, when another UK based Python organiser replied to say
+            that my comments were in fact passive aggressive and my intent was
+            clearly to harm the community. Then other decided to join in
+            along similar lines.</p>
+            <p>It doesn't matter who said these things. I'm taking great care
+            to avoid pointing fingers or apportioning blame. That really would
+            be unhelpful. Rather I want to highlight behaviour
+            in the Python community that makes it difficult for folks on the
+            receiving end of things, to remain in the community.</p>
+          </aside>
         </section>
         <section>
           <h2 class="fragment">Crushed</h2>
           <h2 class="fragment">Humiliated</h2>
           <h2 class="fragment">Despondent</h2>
+          <aside class="notes">
+            <p>How did this experience make me feel?</p>
+            <p>Crushed, because a community that prides itself on being
+            welcoming, inclusive and supportive, clearly wasn't.</p>
+            <p>Much of this played out on social media. I'm actually a very
+            shy and private person, despite who you think you see on stage at
+            this moment in time. I no longer use social media as a direct
+            result of my interactions with folks in the UK Python
+            community.</p>
+            <p>If my sadness due to the death by a thousand paper cuts wasn't
+            enough, this series of events was a tipping point. Since 2018, I
+            have had no contact with the "formal" UK Python community or PyCon
+            UK, although, of course, I keep in touch with friends.</p>
+            <p>I still carry a huge amount of sadness and pain about how things
+            turned out. For what it's worth, I hope people in the UK Python
+            community never treat one of their own like this ever again.</p>
+          </aside>
         </section>
         <section>
           <h2>Hope?</h2>
+          <aside class="notes">
+            <p>Sometimes when folks encounter such aspects of the Python
+            community they repond by saying we should be positive about
+            Python, we should emphasise and celebrate the good stuff.</p>
+            <p>You should be hopeful, Nicholas.</p>
+            <p>Here's what I hope:</p>
+            <p>When we're together in this community, especially if things
+            go wrong, we acknowledge and work through differences. In so
+            doing, we transform and enlarge each other.</p>
+            <p>To nurture such mutual growth, I hope our community is a place
+            of learning, understanding and sharing. I hope our community is a
+            place to affirm tolerance and compassion. I hope our community is
+            a place for collaboratove creativity.</p>
+            <p>All the diverse aspects of ourselves we choose to bring to this
+            community should be welcome. Reciprocate! Welcome, embrace and
+            learn from others (even in the face of apparent
+            misunderstanding).</p>
+            <p>To act against this spirit invites ostracism... a loss that
+            diminishes us all.</p>
+          </aside>
         </section>
         <section>
-          <h2>Coda</h2>
+          <h1>Part 4.<br/>Expression</h1>
+          <aside class="notes">
+            <p>If our community is not a safe place in which to express
+            yourself then we
+            extinguish any possibility of you becoming fully a part of the
+            community. In so doing we are all diminished: your contribution is
+            curtailed, your unique gifts are cast aside and you have no way to
+            become fully yourself as a member of the community.</p>
+            <p>Why is this so important?</p>
+            <p>Code isn't written for computers.</p>
+            <p>We write code because we are human beings, imbued with ideas,
+            imagination and feelings. Code expresses our thoughts made digital:
+            a medium for our values, cultures and ways of life.</p>
+            <p>In other words, we are expressing ourselves when we write
+            code.</p>
+            <p>The word "express" means to manifest or make known. When we
+            write code we express our vision of what a digital world should
+            look like or behave. It reflects who we are. It reflects where we
+            come from. It reflects how we want to be in the world.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/yoyo.webp">
+          <aside class="notes">
+            <p>A last musical metaphor...</p>
+            <p>In a recent interview with Chinese American cellist
+            explains,</p>
+            <p>"The job of a musician is to transcend technique in order to
+            express something of value. We explore lots of different music
+            through our instruments and we love it because it allows us to
+            encounter different states of mind."</p>
+            <p>As developers, as we write code, we're trying to express
+            something of value. We're exploring and interacting with our world
+            through code and the applications we write.</p>
+            <p>But what does he mean by transcend technique?</p>
+            <p>At the start we examined lots of different aspects of knowledge
+            and paying attention to the world. The sorts of things we learn
+            about when we become musicians or coders.</p>
+            <p>We talked about the physics that tunes this instrument,
+            the organisation of notes, some of which are consonant or
+            dissonant, how the context of chords gives us harmony, how
+            arpeggio, tempo, dynamics and rubato are used to make a piece
+            sound interesting. These are techniques, just like those I also
+            mentioned relating to coding.</p>
+            <p>When we express ourselves, we take all this stuff, assemble it,
+            refine it, fix it, break it and play around with it... but in the
+            end, and if we're in a safe place, we send it into the world so
+            others can make sense of it.</p>
+          </aside>
         </section>
 				<section data-background-image="img/moon.jpg">
           <aside class="notes">
             <p>All the things that are fundamental, all the things that, to the
             human spirit, are most profoundly significant, can only be
             experienced, not expressed. ~ Aldous Huxley</p>
+            <p>Imagine it is a warm summer's night.</p>
+            <p>The moon is shining and it's very peaceful.</p>
+            <p>You're with a friend or someone you love.</p>
+            <p>Close your eyes. Can you see that place..?</p>
+            <p>Cue music...</p>
           </aside>
         </section>
-        <section>
-          <h1>Questions?</h1>
+        <section data-background-image="img/music_end.jpg">
+          <aside class="notes">
+            <p>Questions?</p>
+          <aside>
         </section>
         <section>
-          <p>Credits (educational fair use):</p>
+          <p>Image/Video Credits (educational fair use):</p>
+          <div style="font-size: 0.6em; display: flex; width: 100%;">
+          <div style="flex-grow: 1;">
           <ul>
-            <li>2001: Portsmouth Sinfonia Plays the Popular Classics</li>
+            <li>Prelude in C: <a href="https://commons.wikimedia.org/wiki/File:Bach-wtc1-prelude1-ms.jpg">Wikimedia</a></li>
+            <li>Judy Garland: <a href="https://commons.wikimedia.org/wiki/File:Judy_Garland_Over_the_Rainbow_2.jpg">Wikimedia</a></li>
             <li>Fiddle kid: <a href="https://greenwichmusicschool.org.uk/">Greenwich Music School</a></li>
             <li>Nicola Benedetti: <a href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3e50996a-1d17-11ec-8d6d-67649e90fafa.jpg?crop=3134%2C1763%2C22%2C22">The Times</a></li>
             <li>Pub fiddle: screen grab from <a href="https://www.youtube.com/watch?v=O9a8pVGa1Mo">this video</a></li>
@@ -196,8 +803,15 @@
             <li>Recorder: <a href="https://www.youtube.com/watch?v=z4tLQ09_YZE">
 Sarah Jeffery / Team Recorder</a></li>
             <li>Augmented 5th: <a href="https://www.youtube.com/watch?v=Jxhccy7MFVA">Jesse Strickland</a></li>
-            <li>Conductor, Mirga Gražinytė-Tyla: <a href="https://www.youtube.com/watch?v=HTS6prjVNgQ">Going for the impossible</a></li>
             <li>Moon: <a href="https://www.flickr.com/photos/he-boden/7149415469/">Heinz-Eberhard Boden</a></li>
+          </ul>
+          </div>
+          <div style="flex-grow: 1;">
+          <ul>
+            <li>Bach: <a href="https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg">Wikimedia</a></li>
+            <li>Beethoven: <a href="https://commons.wikimedia.org/wiki/File:Beethoven_Waldmuller_1823.jpg">Wikimedia</a></li>
+            <li>Wagner: <a href="https://commons.wikimedia.org/wiki/File:RichardWagner.jpg">Wikimedia</a></li>
+            <li>Bruckner: <a href="https://commons.wikimedia.org/wiki/File:Anton_bruckner.jpg">Wikimedia</a></li>
             <li>Steve Jobs: <a href="https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg">Wikimedia</a></li>
             <li>Mark Zuckerberg: <a href="https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg">Wikimedia</a></li>
             <li>Elon Musk: <a href="https://commons.wikimedia.org/wiki/File:Elon_Musk_Royal_Society_(crop2).jpg">Wikimedia</a></li>
@@ -206,8 +820,11 @@ Sarah Jeffery / Team Recorder</a></li>
             <li>Sophie Wilson: <a href="https://commons.wikimedia.org/wiki/File:Sophie_Wilson.jpg">Wikimedia</a></li>
             <li>Alan Turing: <a href="http://totallyhistory.com/wp-content/uploads/2013/07/alan-turing.jpg">Totally History</a></li>
             <li>Annie Easley: <a href="https://commons.wikimedia.org/wiki/File:Annie_Easley.jpg">Wikimedia</a></li>
-            <li>Alan Kay: <a href="https://commons.wikimedia.org/wiki/File:Alan_Kay_and_the_prototype_of_the_Dynabook_(3009206205).jpg">Wikimedia</a></li>
+            <li>Turing Machine Animation: <a href="https://www.youtube.com/watch?v=dNRDvLACg5Q">from Computerphile</a></li>
+            <li>YoYo Ma: <a href="https://eu.freep.com/story/entertainment/arts/2019/02/27/yo-yo-ma-cultural-ann-arbor-flint/2991179002/">Freep</a></li>
           </ul>
+          </div>
+          </div>
         </section>
 			</div>
 		</div>
