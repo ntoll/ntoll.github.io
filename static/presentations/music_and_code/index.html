@@ -1,0 +1,646 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Music and Code - EuroPython 2022</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1 style="font-size:6em;">🎹+💻</h1>
+          <p>Nicholas H.Tollervey</p>
+          <p><small>ntoll@ntoll.org</small></p>
+          <aside class="notes">
+            <p>Thank organisers.</p>
+            <ul>
+              <li>I'm Nicholas. I'm a principal engineer at Anaconda, working
+              in the PyScript team.</li>
+              <li>A personal talk. Nothing to do with my day job.</li>
+              <li>Music as a <b>metaphor, a contrast and a foil to
+              coding</b>.</li>
+              <li>Why: an opportunity to <b>explore, re-evaluate and
+              re-encounter</b> coding from an unusual and stimulating
+              perspective.</li>
+              <li>I'll be paying special attention to teaching, learning and
+              the place of software within our culture.</li>
+            </ul>
+            <ul>
+              <li>Any musicians? Apologise for piano.</li>
+              <li>Explain 2nd study: <b>as Python is to my tuba playing, so
+              copy and pasting JavaScript from StackOverflow is to my piano
+              playing</b>.</li>
+              <li>Thus demonstrating the power of analogy and metaphor to
+              reveal <b>interesting insights about the world</b>.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>Part 1.<br/>Concepts</h1>
+          <aside class="notes">
+            <ul>
+              <li>We'll start by exploring different types of skill,
+              knowledge and ways of attending to the world.</li>
+              <li>These are the concepts we all learn and cultivate to do
+              meaningful work together.</li>
+              <li>We start with some musical examples.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <aside class="notes">
+            <ul>
+              <li><b>Theoretical underpinnings</b>: notes stand in relation to
+              each other and create tension and release in music. It's how we
+              make music interesting and engaging. How..? Time after time.</li>
+              <li><b>Performance practice</b>: it's not just an academic
+              musical outlook that matters. The practicalities of how we play
+              music matter. Expression, dynamics, rubato. First Prelude.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/dead_germans.png">
+          <aside class="notes">
+            <ul>
+              <li>Music happens in a cultural context.</li>
+              <li>Who we celebrate reflects our culture.</li>
+              <li>Reflects our tastes, backgrounds and prejudices.</li>
+            </ul>
+            <p>The dead germans are a very limited view of the colourful and
+            diverse world of music.</p>
+            <p>Music is conceptually and historically rich and contains many
+            different types of knowledge, skill and ways of attending.</p>
+            <p>Let's go on a similar exploration in the world of code and
+            computers.</p>
+          </aside>
+        </section>
+        <section>
+          <aside class="notes">
+            <ul>
+              <li><b>Theoretical underpinnings</b>: we organise code in an
+              editor. We're going to make a game with some assets.</li>
+              <li><b>Style</b>: we're using PyGameZero - a framework whose
+              where we override pre-defined functions. What's a function?</li>
+              <li><b>Performance</b>: it's not just code that matters... I have
+              to make something fun and interesting. Show splat-a-cat.</li>
+            <pre><code style="font-size: 0.6em;">import random
+
+cats = ["cat1", "cat2", "cat3", "cat4", ]
+meows = [sounds.meow1, sounds.meow2, sounds.meow3,
+  sounds.meow4, sounds.meow5, ]
+current_cats = []
+music.play("disco")
+
+
+def draw():
+    screen.fill((255, 255, 255))
+    for cat in current_cats:
+        cat.draw()
+
+
+def update():
+    if random.randint(1, 100) == 1:
+        cat_sprite = random.choice(cats)
+        meow_sound = random.choice(meows)
+        x = random.randint(100, 700)
+        y = random.randint(100, 500)
+        new_cat = Actor(cat_sprite, pos=(x, y))
+        current_cats.append(new_cat)
+        meow_sound.play()
+    for cat in current_cats:
+        cat.angle += 10</code></pre>
+          </aside>
+        </section>
+        <section data-background-image="img/business_leaders.png">
+          <aside class="notes">
+            <ul>
+              <li>Code exists in a cultural context too.</li>
+              <li>Who do we celebrate as giants of our world..?</li>
+              <li>Dead composers = rich white men who run big tech.</li>
+              <li>Ten years ago, all the rage.</li>
+              <li>Reduces code to merely financial or economic worth.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>Part 2.<br/>The Journey</h1>
+          <aside class="notes">
+            <ul>
+              <li>Fundamental question: how do we cultivate the skills,
+              knowledge and ways of attending to the world we've just
+              explored?</li>
+              <li>This is a journey to experience.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/fiddle_kid.jpg">
+          <aside class="notes">
+            <p>In a musical sense, how do we get from this beginner
+            violinist...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/benedetti.jpg">
+          <aside class="notes">
+            <p>...to this. Nicola Benedetti, the Scottish concert
+            violinist.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/pub_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Just a group of friends, amateur musicians, coming
+            together for a session in the pub.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/hindustani_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Kala Ramnath, the grammy award winning Hindustani
+            violinist who comes from a long line of traditional Indian
+            classical musicians.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/rock_cello.jpg">
+          <aside class="notes">
+            <p>...or even this? This is "Apocalyptica"... how can I put this,
+            they're a cello quartet from Finland who play metal. They're
+            awesome.</p>
+          </aside>
+        </section>
+        <section>
+          <aside class="notes">
+            <ul>
+              <li>How do we support the beginner fiddler to grow into, find and
+              express their style, just like any one of these musicians?</li>
+              <li>How might we do the same for beginner coders..?</li>
+              <li>I'm going to answer, by telling you about my musical
+              journey... :-P</li>
+          </aside>
+        </section>
+        <section data-background-image="img/octubafest.jpg">
+          <aside class="notes">
+            <ul>
+              <li>I attended something called "Octubafest" organised by a
+              fantastic tuba-girl called Rachel.</li>
+              <li>The aim of Octubafest is to inspire folks to fall in love
+              with a full stack instrumental framework called "the tuba".</li>
+              <li>Octubafest organize free tuba workshops, create online tuba
+              tutorials and curate amazing first experiences with
+              sousaphones.</li>
+              <li>It was a blast..!</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/24h.jpg" alt="Learn Tuba in 24 hours"/>
+          <aside class="notes">
+            <ul>
+              <li>My Octubafest mentor suggested some books.</li>
+              <li>This one looked good - get me up to speed quickly.</li>
+              <li>But it wasn't as fun as Octubafest!</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/oreilly.png" alt="O'Rly book"/>
+          <aside class="notes">
+            <ul>
+              <li>...this promised to be much more comprehensive.</li>
+              <li>At over 900 pages, it should include everything?</li>
+              <li>Material was too technical and advanced.</li>
+              <li>I began to doubt the tuba was for me.</li>
+              <li>Started watching educational videos about an alternative,
+              more light-weight, musical instrument framework called
+              "the recorder"</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-video="video/recorder.webm">
+          <aside class="notes">
+            <ul>
+              <li>Despite being small the recorder is quite hard to play!</li>
+              <li>I soon returned to my first love, the full stack "tuba"
+              framework.</li>
+              <li>Then a musical friend told me auditions involve solving
+              harmony and counterpoint problems on a whiteboard.</li>
+              <li>So I found some 2 minute music theory videos.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-video="video/augmented_5th.webm">
+          <aside class="notes">
+            <ul>
+              <li>Any idea what he's on about?</li>
+              <li>Spotted a poster on the tube for a bootcamp.</li>
+              <li>£6000, and live off savings for three months.</li>
+              <li>They teach you everything you need to get a job.</li>
+              <li>80% success rate at placing graduates within a year of
+              completing.</li>
+              <li>Surely this is too good to be true?</li>
+          </aside>
+        </section>
+				<section data-background-image="img/music_bootcamp.png"
+          data-background-position="top">
+          <aside class="notes">
+            <p>I learned about all sorts of things:</p>
+            <ul>
+              <li><b>Theory</b>: How to read musical notes.</li>
+              <li><b>Delivery</b>: How to use my tuba to play notes in the
+              first octave.</li>
+              <li><b>Infrastructure</b>: How to wear a tuxedo for an orchestra
+              concert.</li>
+              <li><b>Best practices</b>: Like turning the pages of the score
+              without making them rustle in the quiet bits.</li>
+              <li><b>Next steps</b>: advanced concepts to look out for and pick
+              up in my first gig, like key signatures and time signatures.</li>
+              <li>But out of cohort of 50, only 5 graduated.</li>
+              <li>Out of those five, four of us (80%) have found jobs relating
+              to music (although non of us actually play our instruments).</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>🤔</h1>
+          <aside class="notes">
+            <p>Joking aside...</p>
+            <p>I want you to see how all the books, Django Girls taster days,
+            beginner coding videos, and computer science channels appear to
+            non-coders.</p>
+            <ul>
+              <li>Octubafest is a real thing, totally awesome and run by the
+              wonderful Rachel Coles.</li>
+              <li>Sarah Jeffery's "Team Recorder" channel.</li>
+              <li>Jesse Strickland's "Two Minute Music Theory" channel.</li>
+              <li>formidably talented musicians who mentor through a digital
+              medium.</li>
+            </ul>
+            <p>But something doesn't quite feel right to me...</p>
+          </aside>
+        </section>
+				<section data-background-image="img/music_bootcamp.png"
+          data-background-position="top">
+          <aside class="notes">
+            <ul>
+              <li>Would you turn up to dance, if I told you tomorrow evening's
+              social has a ceili band of recent graduates from a music
+              bootcamp?</li>
+              <li>Dangerous PR: over promising, set up folks to struggle in the
+              industry, and promoting an imagined hipster-hacker
+              lifestyle.</li>
+              <li>Investigative journalism uncovered "creative statistics" in
+              the claims made by many bootcamps.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/guido.png" alt="Guido in 30 minutes"/>
+          <aside class="notes">
+            <ul>
+              <li>It takes a long time to get proficient.</li>
+              <li>My unease: the speed at which we seem to think folks will
+              pick this up. Zero to thirty? Is this some sort of a race?</li>
+              <li>My unease: concentrating on syntax and language constructs
+              at the exclusion of all else. Very limited view of coding.</li>
+              <li>My unease: very didactic, expert led show and tell. What
+              about activities and examples that foster autonomy, playful
+              exploration, problem solving, evaluating mental models or
+              creative thinking?</li>
+            </ul>
+            <p>What do musicians really do?</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Part 3.<br/>Embodiment</h1>
+          <aside class="notes">
+            <ul>
+              <li>They're honest - learning music is hard.</li>
+              <li>They use progressive processes and practices to sustain
+              learners. Stepping stones to fording a river.</li>
+              <li>The best educators embody musical practices so learners
+              encounter a real musician doing musical things.</li>
+              <li>They encompass all knowledge, skills and ways of
+              attending to music. Not just a narrow "academic" view.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/mfy.png"
+          data-background-position="top">
+          <aside class="notes">
+            <ul>
+              <li>I want to share and celebrate but one of many examples of
+              amazing music education.</li>
+              <li>Music for Youth.</li>
+              <li>National charity in the UK.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/mfy_performers.png">
+          <aside class="notes">
+            <ul>
+              <li>Performance and <b>progression</b> opportunities.</li>
+              <li>All backgrounds and styles are welcome.</li>
+              <li>It's a safe space to be creative.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/mary_mfy.jpg" alt="Music mentor"/>
+          <aside class="notes">
+            <ul>
+              <li>Participation in real musical activities.</li>
+              <li>Music mentors give guidance and constructive critique.</li>
+              <li>A group of passionate musicians who embody a certain sort of
+              inclusive musical culture.</li>
+              <li>It's free.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/john_pinner.jpg" alt="John Pinner"/>
+          <aside class="notes">
+            <ul>
+              <li>Introduce John. Founded PyConUK 2007. EuroPython chair
+              2009-2010, lost his fight with cancer in 2015. An excellent
+              engineer, formidable organiser and wonderful mentor.</li>
+              <li>John Pinner and I used Music for Youth as our template for
+              the PyConUK education track.</li>
+              <li>This is important because...</li>
+              <li>Asking what sort of education and learning our community
+              supports is how we decide what sort of community we become.</li>
+              <li>For it is through education and learning that we engage with
+              our future colleagues, friends and supporters.</li>
+              <li>Coding education isn't just explaining stuff.</li>
+              <li>We attempted to embody the sorts of behaviour, attitudes,
+              skills, attention and knowledge we hoped to...</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/kids1.jpg">
+          <aside class="notes">
+            <p>...inspire in our newest Pythonistas.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids2.jpg">
+          <aside class="notes">
+            <p>We wanted them to see this is a long, slow...</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids3.jpg">
+          <aside class="notes">
+            <p>...and at times frustrating journey.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids4.jpg">
+          <aside class="notes">
+            <p>But it's a journey made possible because folks (no matter their
+            age or level of coding) were encouraged to step up and support
+            learners.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids5.jpg">
+          <aside class="notes">
+            <p>By taking these steps learners encountered and practiced what it
+            is to be a Python coder...</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids6.jpg">
+          <aside class="notes">
+            <p>...in an inclusive, supportive and diverse community.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids7.jpg">
+          <aside class="notes">
+            <p>Between 2012-2015, each year, we welcomed up to 50 teachers and
+            over 100 kids to PyConUK.</p>
+            <p>We encouraged folks to sustain their learning journey, build on
+            from what they had encountered at the conference, and step into our
+            community.</p>
+            <p>(Just as the music mentors at Music for Youth do.)</p>
+          </aside>
+        </section>
+        <section>
+          <h1>😔</h1>
+          <aside class="notes">
+            <ul>
+              <li>I want to briefly, respectfully and carefully describe 
+              my personal experience of what
+              happens when we don't embody this sort of community...</li>
+              <li>In 2017, it was made very clear, in no uncertain terms, that
+              my contributions to the education track were unwelcome unless
+              they were "on message" and conformed to a certain corporate led
+              view of Python in education in the UK.</li>
+              <li>The education track no longer embodied an inclusive coding
+              culture where everyone was welcome to contribute and participate
+              in a way that reflected their part in our wonderfully diverse
+              community.</li>
+              <li>When I carefully and respectfully raised concerns, I was
+              put in my place.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/twitter_edu.png" alt="Education track request"/>
+          <aside class="notes">
+            <p>The following year, wonderful Ben Nuttall was in charge of
+            the education track. I hoped we could return to our original vision
+            and I reached out.</p>
+            <p>Here's Ben engaging with my fears in a way that is kind,
+            thoughtful and, importantly, embodies just the sort of community we
+            want to encourage through an education track.</p>
+          </aside>
+        </section>
+        <section>
+          <blockquote style="text-align: left;">
+          I think you should delete that tweet. You're suggesting @PyConUK is
+          not a welcoming place.
+          </blockquote>
+          <aside class="notes">
+            <ul>
+              <li>But things started to go wrong for me...</li>
+              <li>I don't think the sender of this (clearly unwelcoming)
+              message was doing it to make a weird paradoxical ironic
+              joke.</li>
+              <li>Silencing genuine concerns about our community, with ill
+              judged and unwelcoming messages like this, just proves such
+              concerns are well founded.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <blockquote style="text-align: left;">
+          I am a senior member of the UK Python community. How dare you bad
+          mouth our community on an international platform.
+          </blockquote>
+          <aside class="notes">
+            <ul>
+              <li>If folks express sadness, frustration or come to our
+              community from a heart-felt place of difficulty, please show 
+              compassion. That's how to show leadership.</li>
+              <li>Because we need to be honest.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/hate_mail.png" alt="Hate mail"/>
+          <aside class="notes">
+            <ul>
+              <li>Despite our best efforts, folk in the Python community can
+              be difficult.</li>
+              <li>By way of example, this was my Mu related inbox from a few
+              months ago.</li>
+              <li>I wish I could say these things are rare, but sadly they are
+              not.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2 class="fragment">Crushed</h2>
+          <h2 class="fragment">Humiliated</h2>
+          <h2 class="fragment">Despondent</h2>
+          <aside class="notes">
+            <p>How did my experience of the UK community make me feel?</p>
+            <p><b>Crushed</b>: because a community that prides itself on being
+            welcoming, inclusive and supportive, clearly wasn't and, as
+            demonstrated by my inbox, still isn't.</p>
+            <p><b>Humiliated</b>: much of this played out on social media. I'm
+            a very shy and private person, despite who you think you see on
+            stage at this moment. It is deeply wounding to be personally
+            attacked.</p>
+            <p><b>Despondent</b>: 2018 was a tipping point, and since then,
+            for the sake of my mental health, I have had no contact with the
+            "formal" UK Python community or PyCon UK.</p>
+            <p>For what it's worth, I hope people in the UK Python community
+            never treat one of their own like this ever again.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Part 4.<br/>Expression</h1>
+          <aside class="notes">
+            <p>Why is this so important..?</p>
+            <p>Code isn't written for computers, in
+            the same way music isn't written for instruments.</p>
+            <p>We write code because we are human beings, imbued with ideas,
+            imagination and feelings. Code expresses our thoughts made digital:
+            a medium for our values, cultures and ways of life.</p>
+            <p>In other words, we are expressing ourselves when we write
+            code. Our code reflects who we are. It reflects where we come from.
+            It reflects how we want to be in the world.</p>
+            <p>If there's one thing I hope we coders learn from the best
+            of the musical world, it's compassion, tolerance and respect for
+            freedom of expression in all the ways music represents.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/yoyo.webp">
+          <aside class="notes">
+            <p>In a recent interview the Chinese American cellist Yo Yo Ma,
+            explains,</p>
+            <p>"The job of a musician is to transcend technique in order to
+            express something of value. We explore lots of different music
+            through our instruments and we love it because it allows us to
+            encounter different states of mind."</p>
+            <p>As developers, as we write code, we're trying to express
+            something of value. We're exploring and interacting with our world
+            through code and the applications we write.</p>
+            <p>But what does he mean by transcending technique?</p>
+          </aside>
+        </section>
+				<section>
+          <aside class="notes">
+            <p>At the start we examined lots of different skills, aspects of
+            knowledge and ways to pay attention to the world. The sorts of
+            things we learn about when we become musicians or coders.</p>
+            <p>I think these are what YoYo Ma means by techniques to be
+            transcended.</p>
+            <p>When we express ourselves, we take all this stuff, assemble it,
+            refine it, fix it, break it and play around with it...</p>
+            <p>In so doing, we also put something of ourselves into the thing
+            we're making.</p>
+            <p>Only when we feel safe and secure do we send it into the world
+            so others experience it.</p>
+            <p>I get to encounter a little bit of you in this thing you have
+            created, and my world is made larger as a result.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/moon.jpg">
+          <aside class="notes">
+            <p>To finish, I'm going to attempt to transcend my really
+            shonky piano technique, and play you a final piece of music.</p>
+            <p>While I play, consider the ways in which you may 
+            transcend programming technique and create something that
+            expresses your unique and valuable place in our world.</p>
+            <p>To help you assume a thoughtful mood....</p>
+            <p>Close your eyes.</p>
+            <p>Relax.</p>
+            <p>Imagine it is a warm summer's night.</p>
+            <p>The moon is shining, and it's very peaceful.</p>
+            <p>You're with a friend or someone you love.</p>
+            <p>Can you see that place..?</p>
+          </aside>
+        </section>
+        <section data-background-image="img/music_end.jpg">
+          <aside class="notes">
+            <p>Questions?</p>
+          <aside>
+        </section>
+        <section>
+          <p>Image/Video Credits (educational fair use):</p>
+          <div style="font-size: 0.6em; display: flex; width: 100%;">
+          <div style="flex-grow: 1;">
+          <ul>
+            <li>Fiddle kid: <a href="https://greenwichmusicschool.org.uk/">Greenwich Music School</a></li>
+            <li>Nicola Benedetti: <a href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3e50996a-1d17-11ec-8d6d-67649e90fafa.jpg?crop=3134%2C1763%2C22%2C22">The Times</a></li>
+            <li>Pub fiddle: screen grab from <a href="https://www.youtube.com/watch?v=O9a8pVGa1Mo">this video</a></li>
+            <li>Kala Ramnath: <a href="https://www.thehindu.com/entertainment/music/kala-ramnath-pushes-boundaries-with-the-singing-violin/article32456435.ece">The Hindu</a></li>
+            <li>Heavy metal cello: <a href="https://www.apocalyptica.com/">Apocalyptica</a></li>
+            <li>Octubafest: <a href="https://www.nmpat.co.uk/">NMPAT</a></li>
+            <li>Recorder: <a href="https://www.youtube.com/watch?v=z4tLQ09_YZE">
+Sarah Jeffery / Team Recorder</a></li>
+            <li>Augmented 5th: <a href="https://www.youtube.com/watch?v=Jxhccy7MFVA">Jesse Strickland</a></li>
+            <li>Moon: <a href="https://www.flickr.com/photos/he-boden/7149415469/">Heinz-Eberhard Boden</a></li>
+            <li>Music for Youth: <a href="https://www.mfy.org.uk">Official website</a></li>
+          </ul>
+          </div>
+          <div style="flex-grow: 1;">
+          <ul>
+            <li>John Pinner: <a href="https://www.europython-society.org/">EuroPython</a></li>
+            <li>Bach: <a href="https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg">Wikimedia</a></li>
+            <li>Beethoven: <a href="https://commons.wikimedia.org/wiki/File:Beethoven_Waldmuller_1823.jpg">Wikimedia</a></li>
+            <li>Wagner: <a href="https://commons.wikimedia.org/wiki/File:RichardWagner.jpg">Wikimedia</a></li>
+            <li>Bruckner: <a href="https://commons.wikimedia.org/wiki/File:Anton_bruckner.jpg">Wikimedia</a></li>
+            <li>Steve Jobs: <a href="https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg">Wikimedia</a></li>
+            <li>Mark Zuckerberg: <a href="https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg">Wikimedia</a></li>
+            <li>Elon Musk: <a href="https://commons.wikimedia.org/wiki/File:Elon_Musk_Royal_Society_(crop2).jpg">Wikimedia</a></li>
+            <li>Bill Gates: <a href="https://commons.wikimedia.org/wiki/File:Bill_Gates_2017_(cropped).jpg">Wikimedia</a></li>
+            <li>YoYo Ma: <a href="https://eu.freep.com/story/entertainment/arts/2019/02/27/yo-yo-ma-cultural-ann-arbor-flint/2991179002/">Freep</a></li>
+          </ul>
+          </div>
+          </div>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
