@@ -3,7 +3,83 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Tue, 21 Jun 2022 07:00:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pastures New</title><link>https://ntoll.org/article/pastures-new/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I have been a freelance software engineer for almost 17 years. In that time, as
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 22 Jul 2022 13:21:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>EuroPython 2022</title><link>https://ntoll.org/article/europython-2022/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I had a wonderful time at &lt;a href="https://ep2022.europython.eu/"&gt;EuroPython&lt;/a&gt;, last
+week, in Dublin.&lt;/p&gt;
+&lt;p&gt;The most important aspect of the conference, for me personally, involved giving
+my talk entitled "Music and Code". It was an opportunity for me to reveal and
+explore how I feel about programming, teaching and learning and the place of
+tech in our wider culture. I've wanted to give a talk like this for over ten
+years, but only recently have I figured out how to express what I wanted to say
+through music as a metaphor.&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4McW0mrONLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Another important aspect of the conference was friendship and it was a huge
+pleasure to be a small part of the organising team.&lt;/p&gt;
+&lt;p&gt;I especially
+want to highlight collaborating with &lt;a href="https://blog.europython.eu/humans-of-europython-vicky/"&gt;Vicky&lt;/a&gt;
+(a remarkable friend who embodies so many of the wonderful aspects of our
+Python community: a pro-active "can do" attitude, an inclusive and
+compassionate outlook towards others, and a formidable determination to
+thoughtfully do "the right thing" for the benefit of the whole community). The
+two of us flapped and faffed to fulfil a
+&lt;a href="https://en.wikipedia.org/wiki/Maker_culture"&gt;Maker&lt;/a&gt; space within EuroPython.
+Given the amount of positive engagement from attendees, I hope this becomes a
+regular feature of the conference. A case in point being the DIY robots
+competing to solve a maze in the fastest time, organised by the energetic and
+enthusiastic folks at the &lt;a href="http://niraspberryjam.com/"&gt;Northern Ireland Jam&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TGb4g-E70Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also want to mention &lt;a href="https://www.linkedin.com/in/boyang-dou/"&gt;Raquel&lt;/a&gt;, who
+chaired this year's EuroPython. Her clear leadership, &lt;em&gt;from the front&lt;/em&gt;, her
+apparently infinite energy, &lt;em&gt;displayed through her considerable efforts&lt;/em&gt;, and
+her humane connection with folks, &lt;em&gt;embodied by her patience, friendliness and
+compassion&lt;/em&gt; are generous gifts she has shared with us all. I sincerely hope
+she's taking some post-conference time off, and I want to thank her for
+reaching out to me, all those months ago, to become a part of organising
+EuroPython. And I have to say all my fellow organisers were an absolute joy to
+work with. Their collective courtesy, hard work, enthusiasm and friendliness is
+a very rare and special thing that I hope we can sustain, nourish and
+cultivate.&lt;/p&gt;
+&lt;p&gt;One other group of friends deserves a mention - my fellow maintainers of
+&lt;a href="https://codewith.mu/"&gt;the Mu code editor&lt;/a&gt;. It was a huge amount of fun for us
+to be together in the same place for the first time ever. I was especially
+delighted to meet &lt;a href="https://github.com/xbecas"&gt;Vasco&lt;/a&gt;, face to face, for the
+first time.&lt;/p&gt;
+&lt;p&gt;The final part of EuroPython were two days of "code sprints", where open-source
+collaborators work together on their projects, meet to discuss technical and
+other aspects of our collective work, and welcome new collaborators and friends
+to our efforts. We, the maintainers of Mu, had a wonderful time focusing on
+Mu related things, and collaborating with new contributors who have made
+welcome enhancements to Mu.&lt;/p&gt;
+&lt;p&gt;Here's a picture of all the Mu maintainers at EuroPython:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/mu_maintainers.jpg" alt="The five core Mu maintainers" title="The five core Mu maintainers"&gt;
+&lt;figcaption&gt;The five core Mu maintainers:
+&lt;a href="https://github.com/tjguk"&gt;Tim&lt;/a&gt;,
+&lt;a href="https://github.com/tmontes"&gt;Tiago&lt;/a&gt;,
+&lt;a href="https://github.com/carlosperate"&gt;Carlos&lt;/a&gt;,
+myself and
+&lt;a href="https://github.com/xbecas"&gt;Vasco&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Of course, I heard many wonderful talks, enjoyed the conversations with many
+friends old and new in the famous corridor track and took part in some really
+stimulating workshops (with my amazing daughter, who was attending her first
+PyCon as a proper attendee with an interest in data science - she especially
+enjoyed both
+&lt;a href="https://djangogirls.org/en/dublin/"&gt;Django Girls&lt;/a&gt; and
+&lt;a href="https://ep2022.europython.eu/humble-data"&gt;Humble Data&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;I love EuroPython's culturally cosmopolitan feeling, something that's hard to
+recreate at a national PyCon. I love how folks keep coming back to EuroPython,
+there are people who mean a lot to me, who I only ever see at this conference.
+I also love EuroPython's peripatetic nature, as a community we are welcomed to
+all sorts of fun places and have an opportunity to soak up the vibe of
+different countries and cultures.&lt;/p&gt;
+&lt;p&gt;Long may it last, and I hope to see you at next year's EuroPython.&lt;/p&gt;</description><guid>https://ntoll.org/article/europython-2022/</guid><pubDate>Fri, 22 Jul 2022 13:20:00 GMT</pubDate></item><item><title>Pastures New</title><link>https://ntoll.org/article/pastures-new/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I have been a freelance software engineer for almost 17 years. In that time, as
 is usual for a freelancer, I have changed roles every 18 months to two years.
 Often I took time off between gigs to work on personal projects, write, reflect
 or learn something new. For instance, in 2008 I left my role as a senior .NET
@@ -1306,104 +1382,4 @@ visit and share a walk with us as we prepare... we forgot to mention
 there are many wonderful pubs on our local rambles, and we'd love to share
 their hospitality with any of our friends who happen to be passing by.&lt;/p&gt;
 &lt;p&gt;Happy new year for 2022 and here's hoping you find fulfilment and flourish over
-the coming 12 months.&lt;/p&gt;</description><guid>https://ntoll.org/article/25-anniversary-plans/</guid><pubDate>Sat, 15 Jan 2022 20:30:00 GMT</pubDate></item><item><title>Chicken chicken chicken</title><link>https://ntoll.org/article/chicken/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;A large part of my day job involves reading and writing what folks
-optimistically call "technical documentation". It's usually about as much
-fun as sticking forks in one's eyes, rubbing a cheese grater up and down one's
-nose or reading the complete unabridged works of Ayn Rand.&lt;/p&gt;
-&lt;p&gt;Happily, there are examples of great technical documentation (the
-&lt;a href="https://docs.djangoproject.com/en/3.2/"&gt;Django project&lt;/a&gt; immediately springs to
-mind, and the wonderful folks at
-&lt;a href="https://www.writethedocs.org/"&gt;Write the Docs&lt;/a&gt; do amazing work in this
-space). But for every example of great documentation, there are many more
-incomprehensible, incomplete or incoherent tomes where knowledge goes to die.&lt;/p&gt;
-&lt;p&gt;Joking aside, quality is clearly a subjective judgement.&lt;/p&gt;
-&lt;p&gt;It's easy to make innocuous claims like, "good technical writing is clear,
-coherent and engaging; bad documentation is the opposite ~ complicated, chaotic
-and opaque". Yet trying to pin down terms like "clear", "coherent" or
-"engaging" is a slippery exercise and, ultimately, a matter of personal taste.&lt;/p&gt;
-&lt;p&gt;A more nuanced approach would say diversity of voices and perspectives is
-at play here, and &lt;em&gt;it's important to always keep this in mind&lt;/em&gt;. Every reader
-and writer comes to documentation from their own unique point of view and lived
-experience. That's why pointing out examples of allegedly poor documentation or
-claiming there is a "one true way" to write it is unhelpful. It's disrespectful
-of difference, arrogantly presumptuous and there are more supportive and open
-minded ways to engage when (inevitable) difficulties arise.&lt;/p&gt;
-&lt;p&gt;For instance, feedback that is constructive (offered from a desire to help),
-compassionate (aware of another's feelings) and unambigous (specific and
-actionable) can highlight
-unintended misunderstanding&lt;sup id="chicken-sup"&gt;[&lt;a href="https://ntoll.org/article/chicken/#chicken-edit"&gt;edit&lt;/a&gt;]&lt;/sup&gt;. It acknowledges there is a difficulty of some
-sort, but does so in a way that encourages writers to reflect, refine and
-revise their work. It's also perfectly reasonable for the writer to decline to
-change things: perhaps you are not the intended audience, they simply don't
-have the time (many docs written for open source projects are created by
-volunteers), or they disagree with you and stand by their work.&lt;/p&gt;
-&lt;p&gt;Let many flowers bloom!&lt;/p&gt;
-&lt;p&gt;If I'm honest, I love to read (even stuff I find difficult or disagreeable ~
-like Ayn Rand). It is a connection with others, a source of creative
-stimulation and an enlargement of my world. I read because I am curious to
-reach out beyond myself and into the lives of others. I love the change and
-growth this brings. I also love to write - it is an opportunity for self
-reflection, a source of consolation, an invitation to connect, and a rewarding
-skill to develop and practice.&lt;/p&gt;
-&lt;p&gt;That's why I write this blog: I enjoy the art of writing.&lt;/p&gt;
-&lt;p&gt;The artistry involved in writing is something to celebrate,
-cherish and promote. Sadly, and far too often, a focus on form, structure or
-process is held up as the best approach to writing technical documentation.
-Artistry, taste or style are hardly mentioned, if at all.&lt;/p&gt;
-&lt;p&gt;Most documentation looks like what most people think documentation should look
-like. There are good reasons why documentation is often organised in the way
-that it is, &lt;em&gt;but to follow these conventions is not enough&lt;/em&gt;. Going through the
-motions in a structural sense or following a certain form or process is no
-guarantee of "quality" (whatever that might mean).&lt;/p&gt;
-&lt;p&gt;A wonderful and humorous example of this is Doug Zongker's "Chicken chicken
-chicken".&lt;/p&gt;
-&lt;p&gt;Originally
-&lt;a href="https://isotropic.org/papers/chicken.pdf"&gt;created in the form of an academic paper&lt;/a&gt;,
-and then delivered in the form of a typical academic conference presentation,
-Doug created two parodies that focus on process, form and structure at the
-expense of meaningful content:&lt;/p&gt;
-&lt;div class="video-container"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yL_-1d9OSdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;(I love how the audience all sound like chickens because they're laughing so
-hard.)&lt;/p&gt;
-&lt;p&gt;Doug's work got me wondering, would the "chicken" effect work for the tropes
-and conventions of a software project? I'm pleased to report
-&lt;a href="https://chicken.readthedocs.io/en/latest/"&gt;that it does&lt;/a&gt;. It even works
-&lt;a href="https://github.com/ntoll/chckn/blob/chicken/chicken.py"&gt;for the source code&lt;/a&gt;,
-&lt;a href="https://github.com/ntoll/chckn"&gt;Git repository&lt;/a&gt; and the
-&lt;a href="https://pypi.org/project/chckn/"&gt;packaging metadata&lt;/a&gt; too.&lt;/p&gt;
-&lt;p&gt;The "chicken" code highlights what a deeply problematic oversight this
-focus on form, structure and process is for technical documentation. Imagine
-if teaching the composition of poetry only dealt with structure, rhyme
-or rhythm at the expense of meaning, metaphor, story-telling, pacing, symbolism
-and expression.&lt;/p&gt;
-&lt;p&gt;We'd end up with limericks like this:&lt;/p&gt;
-&lt;blockquote&gt;
-Chicken chicken chicken chicken,&lt;br&gt;
-Chicken chicken chicken chicken,&lt;br&gt;
-    Chicken chicken chick,&lt;br&gt;
-    Chicken chicken chick,&lt;br&gt;
-Chicken chicken chicken chicken.
-&lt;/blockquote&gt;
-
-&lt;p&gt;Why this interest in technical documentation?&lt;/p&gt;
-&lt;p&gt;I'm in the midst of a writing marathon for some of my personal projects (Mu and
-CodeGrades). I'm enjoying the opportunity to reflect upon, and work both inside
-and outside, the usual conventions for technical documentation. I can't help
-but wonder that process, form and structure are best thought of as the servants
-of an authentic expression of thoughts, feelings and values through one's own
-authorial voice to make a space for the reader to think, engage and learn. If I
-am ever disatisfied with my output, it's usually because I've forgotten this
-(and I just had to write this blog post to say so!).&lt;/p&gt;
-&lt;p&gt;As always with any of my work, I welcome constructive, compassionate and
-unambiguous feedback. :-)&lt;/p&gt;
-&lt;p id="chicken-edit"&gt;&lt;strong&gt;EDIT (18th Nov 2021):&lt;/strong&gt; Thank you to the
-person (who wishes
-to remain anonymous) who reached out to point out that, "constructive,
-compassionate and unambigous", are also slippery terms. I've added
-clarifications in brackets and would especially like to point out that they
-embodied the very best of constructive, compassionate and unambiguous
-feedback in their correspondence with me. :-)
-&lt;a href="https://ntoll.org/article/chicken/#chicken-sup"&gt;Return to text&lt;/a&gt;.&lt;/p&gt;</description><guid>https://ntoll.org/article/chicken/</guid><pubDate>Wed, 20 Oct 2021 16:00:00 GMT</pubDate></item></channel></rss>
+the coming 12 months.&lt;/p&gt;</description><guid>https://ntoll.org/article/25-anniversary-plans/</guid><pubDate>Sat, 15 Jan 2022 20:30:00 GMT</pubDate></item></channel></rss>
