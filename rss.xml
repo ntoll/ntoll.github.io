@@ -3,7 +3,159 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 22 Jul 2022 13:21:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>EuroPython 2022</title><link>https://ntoll.org/article/europython-2022/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I had a wonderful time at &lt;a href="https://ep2022.europython.eu/"&gt;EuroPython&lt;/a&gt;, last
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 17 Aug 2022 15:03:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Great Code Reviews</title><link>https://ntoll.org/article/code-reviews/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;As I've &lt;a href="https://ntoll.org/article/pastures-new/"&gt;mentioned elsewhere&lt;/a&gt;, I've just started a new
+role at &lt;a href="https://anaconda.com/"&gt;Anaconda&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A week after joining I was asked to contribute an article to an internal
+newsletter called "Consider This!". The format is simple: write something
+thoughtful on a subject of interest to folks within the company, and, at the
+end, curate a list of questions to prompt further thought and reflection.&lt;/p&gt;
+&lt;p&gt;I was invited to explore what I considered important aspects of great code
+reviews. Thanks to Anaconda, the article is reproduced below. Additional thanks
+to my colleagues Elise and Dan who provided invaluable and stimulating feedback
+to significantly improve my first draft.&lt;/p&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;p&gt;Ask a room of engineers what makes a great code review, and you’ll have as many
+different opinions as there are engineers. Yet, in my experience, common themes
+and archetypes emerge from the gloriously colourful and diverse descriptions of
+a great code review. This article aims to explore what they might be.&lt;/p&gt;
+&lt;p&gt;At its core, a code review is exactly what it says: asking another to review
+code.&lt;/p&gt;
+&lt;p&gt;Why might one do this? Often the simple answer is, “because I have to”.&lt;/p&gt;
+&lt;p&gt;Code hosting sites, like GitHub, make it easy for code reviews to be part of
+the development process through concepts like pull requests (PRs for short).
+Simply make a change to the code, bundle your changes into a PR, submit it and
+wait for feedback from maintainers or colleagues. Sometimes you have to submit
+code for review because of corporate governance, your employer or the open
+source project to which you’re contributing may have an existing review process
+for all contributions. Or it may simply be habit or herd instinct to follow
+so-called “best practices”... folks do code reviews because everyone else does
+code reviews and so they’re living up to expectations.&lt;/p&gt;
+&lt;p&gt;A code review could be an assessment to overcome, where someone in authority
+accepts or rejects your changes. It might involve checking your changes to
+ensure you’ve followed stylistic and technical conventions for a project, like
+a teacher correcting work with a red pen. Furthermore, opinions about the
+approach taken, methodology used or even the intention behind the change might
+be offered, like a critic describing a restaurant, film or concert.&lt;/p&gt;
+&lt;p&gt;But there’s another, more engaging reason to participate in code reviews: if
+done well, your world as a coder is enlarged by the process, be that as a
+reviewer or contributor. In so doing, engagement with the project is a process
+of growth, and the quality of the codebase is improved to reflect the shared
+goals, ideas and aesthetic of those bringing the project into the world.&lt;/p&gt;
+&lt;p&gt;If a code review is used as a means of exercising authority then it’s no better
+than pandering to another’s ego. Many projects have stylistic and technical
+conventions, and checking such things can be easily automated so contributors
+are confident their changes meet such minimum requirements before ever
+submitting their code for review. Finally, if a critique of the approach,
+methodology or intent is offered as part of a code review, then it’s happening
+too late; such things should be discussed before code is submitted for
+inclusion in the project, perhaps in early drafts (so called “code spikes”) or
+exploratory proofs-of-concept.&lt;/p&gt;
+&lt;p&gt;From the contributor’s point of view, a code review is an opportunity to share
+their work so others understand and see what they are offering. In other words,
+a code review is an exercise in education as others encounter and explore new
+aspects of the code base. From a reviewer’s point of view, a code review is an
+opportunity to explore, internalise and offer constructive feedback of
+another’s contribution. Once again, it’s an exercise in education as the
+contributor is invited to explore their own work through the fresh eyes and
+constructive commentary of the reviewer.&lt;/p&gt;
+&lt;p&gt;Earlier, I deliberately used the word “enlarge” when I said a code review
+enlarges the world of those who participate. Enlargement is not synonymous with
+“fun”, “positive” or “easy”. The process of enlarging one’s view of the code
+might feel uncomfortable (perhaps you’re trying to get your head around a
+difficult or unfamiliar concept), negative (you feel frustrated with yet
+another bug in a hard-to-fathom part of the project) or difficult (the task at
+hand is complex and requires much effort simply to engage effectively).&lt;/p&gt;
+&lt;p&gt;Yet, enlargement implies growth, understanding and progress, and I’m reminded
+of the types of fun mountaineers use to categorise climbs.&lt;/p&gt;
+&lt;p&gt;A climb that is &lt;em&gt;type one fun&lt;/em&gt; is fun because it’s fun to do, &lt;em&gt;type two fun&lt;/em&gt;
+is not fun at the time but fun to recollect afterwards because of the
+achievement gained or lesson learned, and &lt;em&gt;type three fun&lt;/em&gt; is not fun at the
+time, nor fun to recollect because you realise you never want to be in that
+situation ever again. Given a receptive spirit of learning, a mountaineer’s
+view of the world is enlarged through a mixture of both &lt;em&gt;positive and
+affirmative&lt;/em&gt;, as well as &lt;em&gt;negative and difficult&lt;/em&gt;, experiences.&lt;/p&gt;
+&lt;p&gt;So, how do we foster a spirit of enlargement in code reviews?&lt;/p&gt;
+&lt;p&gt;I believe mutual respect is key. Respect involves showing empathy, gratitude
+and acknowledgement that, when difficulties arise, folks involved are acting
+with the best of intentions. Another key factor is trust, an attribute of a
+team that only comes through working together over time, making mistakes
+together, and seeing evidence that folks support each other. I’d add that
+compassion (an awareness of and sympathy for another’s feelings and situation,
+mixed with a proactive desire to engage) is a great way to show support. When
+things inevitably become difficult, then compassion for each other is a way to
+embody mutual respect and build trust.&lt;/p&gt;
+&lt;p&gt;In the context of code reviews, such attributes help our judgement to become
+deeper, more refined and aware of the wider context of the project and its
+participants. A code review is no longer just an arbitrary measurement of
+“quality” (have you followed our code conventions?), but becomes an exercise
+in mutual learning and improvement that encompasses both enjoyable and
+challenging aspects of participating in a coding project. At the heart of this
+process is a strangely humorous paradox, as demonstrated by this old joke:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;STUDENT: O Guru, what is the secret of success?&lt;br&gt;
+GURU: Good judgement.&lt;br&gt;
+STUDENT: How do you get good judgement?&lt;br&gt;
+GURU: Experience.&lt;br&gt;
+STUDENT: How do you get experience?&lt;br&gt;
+GURU: Bad judgement!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Only when folks feel safe to exercise potentially bad judgement (through the
+code they offer or the feedback they give), will they be able to gain
+experience and learn good judgement. The code review is a place to pay
+attention to each other’s contributions to facilitate mutual learning and
+growth. This will, ultimately, improve the project as a whole, and help its
+participants better engage with the tasks at hand.&lt;/p&gt;
+&lt;p&gt;“But”, I hear you ask, “what things should one do in a code review?”&lt;/p&gt;
+&lt;p&gt;If you’re expecting a “top ten interventions to make in a code review” type
+post, you’re in the wrong place. In fact, such naive shopping lists
+demonstrate a rather transactional and limited view of the process of a code
+review, while completely missing the point I’m trying to make. I hope you
+focus on embodying and passing on the sort of attributes that make a project
+an enlarging place in which to contribute: mutual respect, trust and
+compassion.&lt;/p&gt;
+&lt;p&gt;Perhaps we could learn by examining what other disciplines do when something
+is offered and feedback is given. For example, such a process is at the heart
+of musicians rehearsing (no matter the genre of music).&lt;/p&gt;
+&lt;p&gt;This short fragment shows Leonard Bernstein rehearsing an orchestra. Clearly
+the triangle players are not playing to the high standard he expects.&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ebf6_7nHciw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I want to draw your attention to the relationship between the musicians
+involved. How do Bernstein and the percussionists appear to you?&lt;/p&gt;
+&lt;p&gt;Folks might think Bernstein is condescending, sarcastic and not particularly
+supportive. Others might see him as setting clear (and very high) expectations
+through humour. Others might focus on Bernstein’s clear ignorance of triangle
+playing and the resulting laughter from the percussionists. That we see the
+same thing in different ways is itself an interesting and important outcome of
+our diverse and multifaceted backgrounds (and it’s important to acknowledge and
+recognise such differences).&lt;/p&gt;
+&lt;p&gt;The important relationship, upon which I want us to focus, is that between
+Bernstein and the musicians. Only when there's mutual respect, a feeling of
+safety and trust can such potentially difficult conversations, involving the
+giving and receiving of constructive criticism to fulfil some important end,
+take place. How such discussions unfold will reflect the unique relationship
+cultivated between the participants. So long as both parties share a bond of
+trust and respect, and we recognise and respect such a bond &lt;em&gt;reflects their
+unique relationship with each other&lt;/em&gt;, then we can engage with and learn from
+the feedback and what the outcome tells us about the endeavour. In other words,
+our world is enlarged by observing their interactions.&lt;/p&gt;
+&lt;p&gt;Questions to Explore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How has your world been enlarged through a recent code review?&lt;/li&gt;
+&lt;li&gt;Remember a time when you received valuable feedback or an important lesson
+  that enlarged your world; how was it revealed to you?&lt;/li&gt;
+&lt;li&gt;What is your team’s approach to code reviews?&lt;/li&gt;
+&lt;li&gt;How do you and your collaborators cultivate a place of mutual respect, trust,
+  and compassion?&lt;/li&gt;
+&lt;li&gt;Put yourself in Bernstein’s shoes, what would you say to the percussionists?&lt;/li&gt;
+&lt;li&gt;Imagine you’re the percussionists, how would you respond to Bernstein’s
+  feedback?&lt;/li&gt;
+&lt;li&gt;Think of a recent PR submitted for you to review. How did you help enlarge
+  the world of the author? How was your world enlarged?&lt;/li&gt;
+&lt;/ul&gt;</description><guid>https://ntoll.org/article/code-reviews/</guid><pubDate>Wed, 17 Aug 2022 15:00:00 GMT</pubDate></item><item><title>EuroPython 2022</title><link>https://ntoll.org/article/europython-2022/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I had a wonderful time at &lt;a href="https://ep2022.europython.eu/"&gt;EuroPython&lt;/a&gt;, last
 week, in Dublin.&lt;/p&gt;
 &lt;p&gt;The most important aspect of the conference, for me personally, involved giving
 my talk entitled "Music and Code". It was an opportunity for me to reveal and
@@ -1278,108 +1430,4 @@ new L.GPX(gpx, {
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
-&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-1/</guid><pubDate>Sun, 10 Apr 2022 19:30:00 GMT</pubDate></item><item><title>Wedding Anniversary Plans</title><link>https://ntoll.org/article/25-anniversary-plans/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Mary and I will celebrate our 25th wedding anniversary on the 2nd of August
-this year.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/static/images/wedding.jpg" alt="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire." title="Our wedding, 2nd August 1997 at Bourton Manor, Shropshire."&gt;
-&lt;figcaption&gt;Our wedding, 2nd August 1997 at Bourton Manor, Shropshire.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I first encountered Mary late on an autumnal Friday afternoon in the library of
-the &lt;a href="https://www.rcm.ac.uk/library/"&gt;Royal College of Music&lt;/a&gt;. Mary and I were
-the only two people in the
-&lt;a href="https://www.google.com/maps/@51.4994838,-0.1770779,2a,75y,272.48h,94.45t/data=!3m6!1e1!3m4!1sV2M1OLSwpd3LHD0jlX1_MQ!2e0!7i13312!8i6656"&gt;Donaldson Room&lt;/a&gt;,
-a study area with large oak desks, and she happened to be sat opposite me. I
-think there was an immediate attraction because we kept surreptitiously looking
-at each other. When I idly chewed my pen to try to hide that I was really
-checking her out, she caught my eye and smiled at me. I involuntarily bit down
-on my pen in panicked shyness (I'd been found out!) and split the pen lid while
-also chipping the corner of my front tooth. I soon fled in embarrassment.
-Later, I felt the roughness where my tooth had chipped and reflected that
-it would be a permanent reminder of that pretty girl in the
-library. For the rest of my life, when I felt the roughness on my tooth, I'd
-ask myself "I wonder who she was?".&lt;/p&gt;
-&lt;p&gt;It didn't take long for me to find out.&lt;/p&gt;
-&lt;p&gt;The following Wednesday, just after lunch, (yes, I have all the dates, times
-and places recorded in my diary of the time) I returned to the Donaldson Room
-with a buddy only to find Mary sat at a desk with her friend and fellow
-cellist, Ellen. I sat down at the opposite end of their table (realising I'd
-found the pretty girl again) and soon found they were not working on an
-academic assignment, but goofing around playing the game of
-&lt;a href="https://en.wikipedia.org/wiki/Hangman_(game)"&gt;hang man&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Mary had a unique tactic... whereas most people do something sensible like
-start with the vowels or other common letters (to help figure out the skeleton
-or shape of the word), Mary used the least expected letters. She started games
-with "X", followed by "Q", then "W" or "Z".&lt;/p&gt;
-&lt;p&gt;I found this hilarious and, after watching her play for a few minutes,
-couldn't resist to interrupt and say,&lt;/p&gt;
-&lt;p&gt;    "You really have no idea how to play
-hang man, do you?"&lt;/p&gt;
-
-&lt;p&gt;    "Oh yes I do. I'm just choosing to play it like
-this", was her mock-offended response.&lt;/p&gt;
-
-&lt;p&gt;We struck up a conversation, our friends (bored of our flirting) soon left us
-in peace and we spent the afternoon chatting. We talked about all sorts:
-science, philosophy, plants, gardens, music, books and many other things. All
-too soon Mary noticed the time ~ it was 5pm and we had spent three hours in
-deep joyful conversation. Time just flew by, but Mary was late for a rehearsal.&lt;/p&gt;
-&lt;p&gt;I'll never forget how we parted.&lt;/p&gt;
-&lt;p&gt;    "I'm afraid I'm going to have to go to my rehearsal," she said, "but I'd much rather be talking with you."&lt;/p&gt;
-
-&lt;p&gt;That was it.&lt;/p&gt;
-&lt;p&gt;Over the following weeks and months we got to know each other, talked a LOT and
-eventually shared our true feelings for each other in the spring. It didn't
-take much longer for us both to realise we'd found our life-long soulmate and
-by the end of the year we were announcing our engagement. A couple of years
-later, only a few weeks after Mary graduated from the RCM, we were married. She
-was 22, I was 23 and we've been an "us" ever since.&lt;/p&gt;
-&lt;p&gt;Meeting Mary was the most important moment in my life. Living life's journey
-with Mary has been my life's greatest privilege and full of wonderful moments -
-the most important highlights being the arrival and growth of our three
-beautiful children, Penelope, Sam and William.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/family_selfie.jpg" alt="A serious family selfie from 2018." title="A serious family selfie from 2018."&gt;
-&lt;figcaption&gt;A serious family selfie from 2018.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;To celebrate 25 years of sharing our journey through life together, Mary and I
-have decided to make another (symbolic) journey together. We're going to walk
-over 170 miles, during the Easter holidays, along
-&lt;a href="https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/"&gt;Offa's Dyke&lt;/a&gt;,
-a 1300 year old earthwork barrier created by Offa, king of the ancient
-&lt;a href="https://en.wikipedia.org/wiki/Mercia"&gt;Anglo-Saxon kingdom of Mercia&lt;/a&gt;.
-Nobody knows why the dyke was built, but the modern Welsh/English border
-roughly follows its path and it passes through some of the most beautiful parts
-of Wales and England.&lt;/p&gt;
-&lt;p&gt;We'll start in the south and walk an average of 15 miles a day,
-staying in bed-and-breakfasts or hotels along the way.
-It being April we expect fresh showers,
-but hope for sun to encourage spring flowers.&lt;/p&gt;
-&lt;p&gt;We're not the first to have had the idea of an &lt;a href="https://en.wikipedia.org/wiki/General_Prologue"&gt;April journey&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Whan that Aprille with his shoures soote,&lt;br&gt;
-The droghte of March hath perced to the roote,&lt;br&gt;
-And bathed every veyne in swich licóur&lt;br&gt;
-Of which vertú engendred is the flour;&lt;br&gt;
-Whan Zephirus eek with his swete breeth&lt;br&gt;
-Inspired hath in every holt and heeth&lt;br&gt;
-The tendre croppes, and the yonge sonne&lt;br&gt;
-Hath in the Ram his halfe cours y-ronne,&lt;br&gt;
-And smale foweles maken melodye,&lt;br&gt;
-That slepen al the nyght with open ye,&lt;br&gt;
-So priketh hem Natúre in hir corages,&lt;br&gt;
-Thanne longen folk to goon on pilgrimages.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;We expect our adventure to take us 12 days.&lt;/p&gt;
-&lt;p&gt;Over the coming weekends we'll spend our time training by rambling similar
-daily distances in the rolling Northamptonshire countryside that surrounds
-&lt;a href="https://en.wikipedia.org/wiki/Towcester"&gt;Towcester&lt;/a&gt;. We'll also
-blog each day of the journey as a memento of our progress - we both suspect our
-adventure along Offa's Dyke will be something we'll want to remember.&lt;/p&gt;
-&lt;p&gt;If you're at a loose end in the weekends before Easter, get in touch, come
-visit and share a walk with us as we prepare... we forgot to mention
-there are many wonderful pubs on our local rambles, and we'd love to share
-their hospitality with any of our friends who happen to be passing by.&lt;/p&gt;
-&lt;p&gt;Happy new year for 2022 and here's hoping you find fulfilment and flourish over
-the coming 12 months.&lt;/p&gt;</description><guid>https://ntoll.org/article/25-anniversary-plans/</guid><pubDate>Sat, 15 Jan 2022 20:30:00 GMT</pubDate></item></channel></rss>
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-1/</guid><pubDate>Sun, 10 Apr 2022 19:30:00 GMT</pubDate></item></channel></rss>
