@@ -1,0 +1,14 @@
+build/extmod/vfs_fat_diskio.o: ../../extmod/vfs_fat_diskio.c \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h
+../../extmod/vfs_fat_diskio.c :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h :
