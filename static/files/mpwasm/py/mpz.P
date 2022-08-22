@@ -1,0 +1,30 @@
+build/py/mpz.o: ../../py/mpz.c \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  ../../py/mpz.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  ../../py/misc.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdbool.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h
+../../py/mpz.c :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/string.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  ../../py/mpz.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h :
+  ../../py/misc.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdbool.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h :

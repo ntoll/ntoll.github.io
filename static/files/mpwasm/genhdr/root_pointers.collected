@@ -1,0 +1,9 @@
+MP_REGISTER_ROOT_POINTER(const char *readline_hist[(8)]);
+
+MP_REGISTER_ROOT_POINTER(mp_obj_list_t mp_sys_argv_obj);
+
+MP_REGISTER_ROOT_POINTER(mp_obj_list_t mp_sys_path_obj);
+
+MP_REGISTER_ROOT_POINTER(mp_sched_item_t sched_queue[(1)]);
+
+MP_REGISTER_ROOT_POINTER(vstr_t * repl_line);

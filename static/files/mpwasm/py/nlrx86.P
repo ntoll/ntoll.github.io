@@ -1,0 +1,40 @@
+build/py/nlrx86.o: ../../py/nlrx86.c ../../py/mpstate.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h \
+  ../../py/mpthread.h ../../py/misc.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdbool.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h \
+  ../../py/nlr.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/limits.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h \
+  ../../py/obj.h ../../py/qstr.h build/genhdr/qstrdefs.generated.h \
+  ../../py/mpprint.h ../../py/runtime0.h ../../py/objlist.h \
+  ../../py/objexcept.h ../../py/objtuple.h build/genhdr/root_pointers.h
+../../py/nlrx86.c ../../py/mpstate.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h :
+  ../../py/mpthread.h ../../py/misc.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdbool.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h :
+  ../../py/nlr.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/limits.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/limits.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h :
+  ../../py/obj.h ../../py/qstr.h build/genhdr/qstrdefs.generated.h :
+  ../../py/mpprint.h ../../py/runtime0.h ../../py/objlist.h :
+  ../../py/objexcept.h ../../py/objtuple.h build/genhdr/root_pointers.h :
