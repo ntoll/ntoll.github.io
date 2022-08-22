@@ -1,0 +1,14 @@
+build/py/emitnarm.o: ../../py/emitnarm.c ../../py/mpconfig.h \
+  mpconfigport.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h
+../../py/emitnarm.c ../../py/mpconfig.h :
+  mpconfigport.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h :

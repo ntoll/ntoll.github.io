@@ -1,0 +1,28 @@
+build/py/objdeque.o: ../../py/objdeque.c \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/posix.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h
+../../py/objdeque.c :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/unistd.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stddef.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/lib/clang/15.0.0/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/bits/posix.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/string.h :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/emscripten/emsdk/upstream/emscripten/cache/sysroot/include/alloca.h :
