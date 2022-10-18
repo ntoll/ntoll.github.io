@@ -1,0 +1,18 @@
+<html>
+<body>
+          <video autoplay="true" id="videoElement" style="height:100%; width:100%;top:0;bottom:0;left:0;right:0;"></video>
+          <script>
+          var video = document.querySelector("#videoElement");
+
+          if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+              .then(function (stream) {
+                video.srcObject = stream;
+              })
+              .catch(function (err0r) {
+                console.log("Something went wrong!");
+              });
+          }
+          </script>
+</body>
+</html>
