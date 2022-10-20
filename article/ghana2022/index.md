@@ -1,6 +1,6 @@
 <!--
 .. title: PyCon Ghana 2022
-.. slug: ghana2022 
+.. slug: ghana2022
 .. date: 2022-10-20 14:30:00 UTC+01:00
 .. tags: 
 .. category: 
