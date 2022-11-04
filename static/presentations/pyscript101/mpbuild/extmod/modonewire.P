@@ -1,0 +1,38 @@
+build/extmod/modonewire.o: ../../extmod/modonewire.c \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  ../../py/obj.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  ../../py/mpconfig.h mpconfigport.h ../../py/misc.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h \
+  ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+  ../../py/runtime0.h ../../py/mphal.h mphalport.h \
+  ../../shared/runtime/interrupt_char.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/errno.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h \
+  ../../extmod/virtpin.h
+../../extmod/modonewire.c :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdio.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  ../../py/obj.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  ../../py/mpconfig.h mpconfigport.h ../../py/misc.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h :
+  ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+  ../../py/runtime0.h ../../py/mphal.h mphalport.h :
+  ../../shared/runtime/interrupt_char.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/errno.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h :
+  ../../extmod/virtpin.h :
