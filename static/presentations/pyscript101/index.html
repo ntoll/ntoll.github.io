@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PyScript - What you need to know.</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>PyScript</h1>
+          <h2>What you need to know</h2>
+          <p>Nicholas H.Tollervey</p>
+          <p><small>ntollervey@anaconda.com</small></p>
+        </section>
+        <section>
+          <img src="img/py.jpg"/>
+          <aside class="notes">
+            <p>Thank organisers.</p>
+            <ul>
+              <li>I'm Nicholas. I'm a principal engineer at Anaconda, working
+              in the PyScript team.</li>
+              <li>This is a talk about PyScript - a platform for running Python
+              in the browser.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+          <aside class="notes">
+            <ul>
+              <li>This is me in my natural environment...</li>
+              <li>Core concepts so you have a good mental model of
+              PyScript</li>
+              <li>How it works</li>
+              <li>Some examples</li>
+              <li>Where we're going</li>
+            </ul> 
+          </aside>
+        </section>
+        <section>
+          <h2><u>PyScript</u> is an <u>open-source</u> <u>platform</u> to bring
+          <u>Python</u> to the <u>browser</u> via <u>WASM</u></h2>
+        </section>
+        <section>
+          <iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/qKfkCY7cmBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <aside class="notes">
+            <p>First announced this year by Anaconda CEO, Peter Wang, in his
+            keynote at PyCon US 2022.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Show me</h2>
+          <p>See: <a href="https://pyscript.net/examples/">https://pyscript.net/examples/</a></p>
+          <ul>
+            <li class="fragment"><a href="https://pyscript.net/examples/hello_world.html" target="_blank">Hello, World!</a></li>
+            <li class="fragment"><a href="https://pyscript.net/examples/repl.html">A notebook like REPL</a></li>
+            <li class="fragment"><a href="https://pyscript.net/examples/matplotlib.html" target="_blank">Matplotlib</a></li>
+            <li class="fragment"><a href="https://pyscript.net/examples/panel_deckgl.html" target="_blank">New York Taxi data</a></li>
+            <li class="fragment"><a href="https://pyscript.net/examples/numpy_canvas_fractals.html" target="_blank">Benoit B.Mandelbrot</a></li>
+          </ul>
+        </section>
+        <section data-background-image="img/possibilities.png">
+          <aside class="notes">
+            <p>We're marrying the most ubiquitous computing platform on the
+            planet, with the vibrant, expressive and powerful world of our
+            beloved Python.</p>
+            <p>BUT HOW..?</p>
+            <p>Let's explore...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/guido.jpg">
+          <aside class="notes">
+            <p>We start with the abstract notion of "Python".</p>
+            <ul>
+              <li>The syntax and structure of the language.</li>
+              <li>The concepts core to Python (objects, dicts etc...).</li>
+              <li>The aesthetic of the language (Zen of Python).</li>
+              <li>The culture of the language (friendly, open, Monty Python).</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/runtimes.png">
+          <aside class="notes">
+            <p>The abstract notion of Python is implemented as various
+            different runtimes.</p>
+            <ul>
+              <li>CPython is the official version of Python and the one we
+              probably most use. Written in C.</li>
+              <li>MicroPython is a runtime designed to work in very constrained
+              computing environments. Written in C.</li>
+              <li>PyPy is a version of Python written in Python, with cool
+              features like a JIT.</li>
+              <li>IronPython (and Jython etc) are versions of Python written
+              for other computing platforms such as .NET or the JVM.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/chipsets.png">
+          <aside class="notes">
+            <p>The runtimes are compiled to work on different target chipsets.</p>
+            <ul>
+              <li>The AMD64 target is what you're probably using on a PC.</li>
+              <li>The classic Intel i386 is the 32bit version for your PC.</li>
+              <li>ARM based chips are used in Apple, and mobile devices.</li>
+              <li>And then we come to WASM.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/web_assembly.webp">
+          <aside class="notes">
+            <p>WebAssembly (also WASM): provides near native code execution
+            speeds for code compiled to WASM.</p>
+            <ul>
+              <li>Not a chipset, but a definition of the instructions
+              for a virtual chipset implemented by a runtime (like your browser
+              or WASMtime).</li>
+              <li>A young technology - still lots of exciting things to do in
+              this space.</li>
+              <li>Compiled with Emscripten - so any LLVM supported language.</li>
+              <li>Bindings for lots of common interfaces such as WebGL etc.</li>
+              <li>Runs in the same sandbox as JavaScript</li>
+              <li>Not just for browsers! (See WASMtime)</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/not_transpiled.png">
+          <aside class="notes">
+            <p>Please do not mistake what I've said.</p>
+            <ul>
+              <li>Some projects (like Brython) transpile Python to JS</li>
+              <li>But it is STILL JavaScript that is run under the hood.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/but_compiled.png">
+          <aside class="notes">
+            <p>Rather, I'm talking about Python interpreters, compiled via
+            Emscripten, to target WASM.</p>
+            <ul>
+              <li>It's real Python</li>
+              <li>Just compiled to a different target</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/wasm_py.png">
+          <aside class="notes">
+            <p>There are several projects porting Python into WASM</p>
+            <ul>
+              <li>The oldest (and most mature) is Pyodide.</li>
+              <li>MicroPython also easily compiles to WASM (and is very fast).</li>
+              <li>CPython (thanks to Christian) now compiles to WASM by default.</li>
+              <li>Zython, a new kid on the block, that uses the Zig language to help compiled Python to WASM.</li>
+              <li>There are probably others too...</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/pyscript.png">
+          <aside class="notes">
+            <p>So where does PyScript fit into all this.</p>
+            <ul>
+              <li>PyScript is a PLATFORM for using Python in browsers.</li>
+              <li>It works with Python runtimes (currently only Pyodide) that target WASM</li>
+              <li>It's browser native, so you don't have to configure a bunch
+              of things with JS.</li>
+              <li>Instead, just use tags, like HTML.</li>
+              <li>PyScript takes care of the rest.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-markdown>
+        ```python
+          &lt;py-script&gt;
+            def hello(name="World!"):
+              """
+              Return a friendly greeting.
+              """
+              return f"Hello, {name}"
+
+            print(hello("PyCon Sweden!"))
+          &lt;/py-script&gt;
+        ```
+        </section>
+        <section>
+          <h2>The Future..?</h2>
+          <p class="fragment">(Is closer than you think)</p>
+        </section>
+        <section>
+          <div style="text-align: left;width:120%; margin-left: -10%;">
+            <poly-repl></poly-repl>
+          </div>
+        </section>
+        <section>
+          <h2>Questions..?</h2>
+          <p>TL;DR: <a href="https://pyscript.net/">pyscript.net</a></p>
+        </section>
+			</div>
+		</div>
+
+    <poly-config>
+    {
+      "runtime": "micropython",
+      "files": {
+        "arrr.py": "/arrr.py"
+      }
+    }
+    </poly-config>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+    <script src="customtags.js"></script>
+    <script src="polyscript.js" type="module"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+			});
+		</script>
+	</body>
+</html>

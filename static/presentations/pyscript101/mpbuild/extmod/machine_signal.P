@@ -1,0 +1,12 @@
+build/extmod/machine_signal.o: ../../extmod/machine_signal.c \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h
+../../extmod/machine_signal.c :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :

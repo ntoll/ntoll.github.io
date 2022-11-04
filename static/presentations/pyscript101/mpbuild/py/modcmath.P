@@ -1,0 +1,32 @@
+build/py/modcmath.o: ../../py/modcmath.c ../../py/builtin.h \
+  ../../py/obj.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  ../../py/mpconfig.h mpconfigport.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/misc.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h \
+  ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+  ../../py/runtime0.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/compat/math.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/math.h
+../../py/modcmath.c ../../py/builtin.h :
+  ../../py/obj.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  ../../py/mpconfig.h mpconfigport.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/misc.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h :
+  ../../py/qstr.h build/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+  ../../py/runtime0.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/compat/math.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/math.h :

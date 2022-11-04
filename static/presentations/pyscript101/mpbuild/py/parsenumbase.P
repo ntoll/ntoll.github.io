@@ -1,0 +1,20 @@
+build/py/parsenumbase.o: ../../py/parsenumbase.c ../../py/mpconfig.h \
+  mpconfigport.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/misc.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h \
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h \
+  ../../py/parsenumbase.h
+../../py/parsenumbase.c ../../py/mpconfig.h :
+  mpconfigport.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/misc.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stdbool.h :
+  /home/ntoll/src/anaconda/pyscriptlite/emsdk/upstream/lib/clang/16.0.0/include/stddef.h :
+  ../../py/parsenumbase.h :
