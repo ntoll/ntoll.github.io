@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Configurable interpreters</title>
+    <meta name="theme-color" content="#0b0c0c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="gd.css">
+  </head>
+  <body>
+    <py-config>
+    {
+      "interpreter": "micropython",
+      "files": {
+        "arrr.py": "arrr.py",
+        "polyplug.py": "polyplug.py"
+      }
+    }
+    </py-config>
+    <a href="#main-content" class="hide">Skip to main content</a>
+    <a name="top"></a>
+  <main id="main-content">
+    <h1>Arrr 🏴‍☠️</h1>
+    <form id="inputForm">
+      <label for="english">Translate English 🇬🇧 to Pirate speak 🏴‍☠️:</label>
+      <input type="text" name="english" id="english"
+        placeholder="Type English here..." />
+      <p><input type="submit" value="Translate"/></p>
+      <div id="output"></div>
+    </form>
+    <py-script>
+import arrr
+from polyplug import plug, update, receive
+
+
+@plug("#inputForm", "submit")
+def handle_form(event):
+  """
+  Take the English input from the form, turn it into Pirate talk and update
+  the DOM with the result.
+  """
+  english = event.target.find("#english").value
+  pirate_text = arrr.translate(english)
+  output = event.target.find("#output")
+  output.innerHTML = f"<p>{pirate_text}</p>"
+  update("#output", output)
+    </py-script>
+    <hr/>
+  </body>
+  <script src="polyplug.js"></script>
+  <script src="pyscript.js" type="module"></script>
+</html>
