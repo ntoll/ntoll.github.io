@@ -189,6 +189,9 @@ are welcome here.<br/>
 Reciprocate! Welcome, embrace and learn from others<br/>
 (even in the face of apparent hostility or misunderstanding).<br/>
 <br/>
+Thoughtful, careful and courteous contributions are a gift,<br/>
+and we never knowingly diminish, dehumanize or harm others.<br/>
+<br/>
 To act against this spirit invites ostracism,<br/>
 a loss that diminishes us all.<br/>
 <br/>
