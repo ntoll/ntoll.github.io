@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 01 Jan 2023 21:01:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>8-Bit Archaeology: Part 1</title><link>https://ntoll.org/article/8-bit-archaeology-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;This is the first in a semi-regular series of posts about digital archaeology
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 01 Jan 2023 22:20:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>8-Bit Archaeology: Part 1</title><link>https://ntoll.org/article/8-bit-archaeology-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;This is the first in a semi-regular series of posts about digital archaeology
 relating to 1980s era 8-bit microcomputers. In a strange turn of events, not
 only am I the archaeologist, but it is my own code that is to be uncovered and
 interpreted.&lt;/p&gt;
@@ -165,9 +165,9 @@ parent's loft. With their permission I took my finds to the UK's
 ~ a mere 15 minute drive from where I live). I'll describe the details in a
 follow-up post, but with the generous help of others, I was able to extract the
 content of the disks.&lt;/p&gt;
-&lt;p&gt;By way of preview, embedded below is a BBC emulator running a sort of
-"greatest hits" compilation of programmed musical performances. I put together
-the disk
+&lt;p&gt;By way of preview, &lt;a href="https://bbc.godbolt.org/?&amp;amp;disc1=https://ntoll.org/static/bbcdiscs/music.ssd&amp;amp;autoboot" target="_blank"&gt;this link takes you to an online BBC emulator running a
+sort of "greatest hits" compilation of programmed musical performances&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I put together the disk
 from various sources floating around my friendship group, and included some of
 my own code too. The disk's menu system is of my own creation but based upon
 two other fragments of code I found in a magazine: one for driving a disk menu,
@@ -178,18 +178,12 @@ by &lt;a href="https://en.wikipedia.org/wiki/Donald_Swann"&gt;Donald Swann&lt;/a
 correctly, I was thirteen years old (in year 9, 1987) when I put this disk
 together. As we'll see in future posts, it was a significant year for me in
 terms of coding and music.&lt;/p&gt;
-&lt;p&gt;Click on the red LEDs at the bottom-left (so the embedded emulator has
-keyboard focus), then use the up and down arrows on your keyboard to navigate
-the menu. Click anywhere else on the main part of the page to remove keyboard
-focus. Keys like &lt;code&gt;RETURN&lt;/code&gt; (to make a selection) and &lt;code&gt;ESCAPE&lt;/code&gt; (to stop a piece
-and return to the menu) will behave as usual. However, I'm sorry to report I
-used the &lt;code&gt;*FX 200,3&lt;/code&gt; trick with "The Swan" ~ you're just going to have to sit
-through that monstrosity in its entirety without the use of the &lt;code&gt;ESCAPE&lt;/code&gt; key.&lt;/p&gt;
+&lt;p&gt;Use the up and down arrows on your keyboard to navigate the menu. Keys like
+&lt;code&gt;RETURN&lt;/code&gt; (to make a selection) and &lt;code&gt;ESCAPE&lt;/code&gt; (to stop a piece and return to the
+menu) will behave as usual. However, I'm sorry to report I used the &lt;code&gt;*FX 200,3&lt;/code&gt;
+trick with "The Swan" ~ you're just going to have to sit through that
+monstrosity in its entirety without the use of the &lt;code&gt;ESCAPE&lt;/code&gt; key.&lt;/p&gt;
 &lt;p&gt;"You're welcome", says my thirteen year old self. ;-)&lt;/p&gt;
-&lt;div class="bbc-container"&gt;
-&lt;iframe src="https://bbc.godbolt.org/?&amp;amp;disc1=https://ntoll.org/static/bbcdiscs/music.ssd&amp;amp;autoboot&amp;amp;embed" width="100%" height="600"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
 &lt;p&gt;This is but a small example of some of the fascinating things I've found.&lt;/p&gt;
 &lt;p&gt;In future posts I'll reveal more about my programming, dive a little
 into the technology I was using and try to place it all into the context of
