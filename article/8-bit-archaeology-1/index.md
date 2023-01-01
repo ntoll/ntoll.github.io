@@ -10,26 +10,6 @@
 .. author: Nicholas H.Tollervey
 -->
 
-<style>
-.section_break {
-    border: none;
-    border-bottom: 1px solid black;
-    width: 50%;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-.section_break:after {
-    background: #fff;
-    content: '§';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-}
-</style>
-
 This is the first in a semi-regular series of posts about digital archaeology
 relating to 1980s era 8-bit microcomputers. In a strange turn of events, not
 only am I the archaeologist, but it is my own code that is to be uncovered and
@@ -221,9 +201,10 @@ parent's loft. With their permission I took my finds to the UK's
 follow-up post, but with the generous help of others, I was able to extract the
 content of the disks.
 
-By way of preview, embedded below is a BBC emulator running a sort of
-"greatest hits" compilation of programmed musical performances. I put together
-the disk
+By way of preview, <a href="https://bbc.godbolt.org/?&disc1=https://ntoll.org/static/bbcdiscs/music.ssd&autoboot" target="_blank">this link takes you to an online BBC emulator running a
+sort of "greatest hits" compilation of programmed musical performances</a>.
+
+I put together the disk
 from various sources floating around my friendship group, and included some of
 my own code too. The disk's menu system is of my own creation but based upon
 two other fragments of code I found in a magazine: one for driving a disk menu,
@@ -235,22 +216,13 @@ correctly, I was thirteen years old (in year 9, 1987) when I put this disk
 together. As we'll see in future posts, it was a significant year for me in
 terms of coding and music.
 
-Click on the red LEDs at the bottom-left (so the embedded emulator has
-keyboard focus), then use the up and down arrows on your keyboard to navigate
-the menu. Click anywhere else on the main part of the page to remove keyboard
-focus. Keys like `RETURN` (to make a selection) and `ESCAPE` (to stop a piece
-and return to the menu) will behave as usual. However, I'm sorry to report I
-used the `*FX 200,3` trick with "The Swan" ~ you're just going to have to sit
-through that monstrosity in its entirety without the use of the `ESCAPE` key.
+Use the up and down arrows on your keyboard to navigate the menu. Keys like
+`RETURN` (to make a selection) and `ESCAPE` (to stop a piece and return to the
+menu) will behave as usual. However, I'm sorry to report I used the `*FX 200,3`
+trick with "The Swan" ~ you're just going to have to sit through that
+monstrosity in its entirety without the use of the `ESCAPE` key.
 
 "You're welcome", says my thirteen year old self. ;-)
-
-<div class="bbc-container">
-<iframe
-    src="https://bbc.godbolt.org/?&disc1=https://ntoll.org/static/bbcdiscs/music.ssd&autoboot&embed"
-    width="100%" height="600"
-/>
-</div>
 
 This is but a small example of some of the fascinating things I've found.
 
