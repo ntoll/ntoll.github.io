@@ -120,3 +120,21 @@ figcaption {
     font-size: 0.8em;
     text-align: center;
 }
+
+.section_break {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.section_break:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
