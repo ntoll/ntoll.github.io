@@ -1,9 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ntoll.org</title><link>https://ntoll.org/</link><description>Everything I say is false...</description><atom:link href="https://ntoll.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:ntoll@ntoll.org"&gt;Nicholas H.Tollervey&lt;/a&gt; 
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ntoll.org</title><link>https://ntoll.org/</link><description>Everything I say is false...</description><atom:link href="https://ntoll.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:ntoll@ntoll.org"&gt;Nicholas H.Tollervey&lt;/a&gt; 
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Mon, 26 Dec 2022 13:35:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PyCon Ghana 2022</title><link>https://ntoll.org/article/ghana2022/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;It was an extraordinary privilege to be one of the keynote speakers at this
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 01 Jan 2023 21:01:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>8-Bit Archaeology: Part 1</title><link>https://ntoll.org/article/8-bit-archaeology-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;This is the first in a semi-regular series of posts about digital archaeology
+relating to 1980s era 8-bit microcomputers. In a strange turn of events, not
+only am I the archaeologist, but it is my own code that is to be uncovered and
+interpreted.&lt;/p&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The aim was to democratise computing. We didn’t want people to be controlled
+by it, but to control it.&lt;/p&gt;
+&lt;p&gt;~ &lt;a href="https://www.nesta.org.uk/report/the-legacy-of-bbc-micro/"&gt;David Allen, Project Editor, BBC Computer Literacy Project&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As a child, the first programming language I learned was
+&lt;a href="https://en.wikipedia.org/wiki/Sophie_Wilson"&gt;Sophie Wilson's&lt;/a&gt;
+&lt;a href="https://en.wikipedia.org/wiki/BBC_BASIC"&gt;BBC Basic&lt;/a&gt;, written for Acorn's
+&lt;a href="https://en.wikipedia.org/wiki/BBC_Micro"&gt;BBC Micro&lt;/a&gt;. Without this formative
+experience, I wouldn't have become a professional software engineer.&lt;/p&gt;
+&lt;p&gt;Most of my childhood was spent in the 1980s, and in 1982-ish the UK Government
+ensured every school in the UK had a BBC micro.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/bbc_micro.jpg" alt="A BBC micro from the 1980s" title="A BBC micro from the 1980s"&gt;
+&lt;figcaption&gt;A BBC Micro from the 1980s. Source: &lt;a href="https://commons.wikimedia.org/wiki/File:BBC_Micro_Front_Restored.jpg"&gt;StuartBrady, Public domain, via Wikimedia Commons&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;My father was headteacher of a school, and so brought his newly arrived
+computer back home one holiday to figure out how to use it. It didn't take very
+long to prize the device away from him, and so I started to explore the
+"Welcome" software, loaded from a tape via a sequence of squeaks and growls
+(representing the bytes to load into the computer's memory). Since I would have
+only been eight at the time the
+&lt;a href="https://ntoll.org/static/files/BBC_User_Guide.pdf"&gt;user guide&lt;/a&gt; was beyond my understanding,
+so a trip to the local library furnished me with a new book aimed at kids who
+wanted to play games on their computers. The book in question was
+&lt;a href="https://drive.google.com/file/d/0Bxv0SsvibDMTNlMwTi1PTlVxc2M/view?resourcekey=0-kaU6eyAmIVhT3_H8RkHfHA"&gt;Computer Spacegames&lt;/a&gt; published by
+&lt;a href="https://usborne.com/"&gt;Usborne&lt;/a&gt;, a title in their famously brilliant series of
+&lt;a href="https://usborne.com/gb/books/computer-and-coding-books"&gt;colourful and engaging books about coding&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first proper program I ever typed into the BBC can be found on page 5. It's
+a sort of text based rocket pilot game... you have to take off before the
+aliens get you:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="nl"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;CLS&lt;/span&gt;
+&lt;span class="nl"&gt;20&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"STARSHIP TAKE-OFF"&lt;/span&gt;
+&lt;span class="nl"&gt;30&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;LET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;G&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kr"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kr"&gt;RND&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="il"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="il"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nl"&gt;40&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;LET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;W&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kr"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kr"&gt;RND&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="il"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="il"&gt;40&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nl"&gt;50&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;LET&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;R&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="vg"&gt;G&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="vg"&gt;W&lt;/span&gt;
+&lt;span class="nl"&gt;60&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"GRAVITY= "&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;G&lt;/span&gt;
+&lt;span class="nl"&gt;70&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"TYPE IN FORCE"&lt;/span&gt;
+&lt;span class="nl"&gt;80&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;FOR&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="il"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="il"&gt;10&lt;/span&gt;
+&lt;span class="nl"&gt;90&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;INPUT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;F&lt;/span&gt;
+&lt;span class="nl"&gt;100&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;IF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;F&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="vg"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;THEN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"TOO HIGH"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nl"&gt;110&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;IF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;F&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="vg"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;THEN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"TOO LOW"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nl"&gt;120&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;IF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;F&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="vg"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;THEN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;GOTO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;190&lt;/span&gt;
+&lt;span class="nl"&gt;130&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;IF&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;C&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;gt;&lt;/span&gt;&lt;span class="il"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;THEN&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;", TRY AGAIN"&lt;/span&gt;
+&lt;span class="nl"&gt;140&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;NEXT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vg"&gt;C&lt;/span&gt;
+&lt;span class="nl"&gt;150&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;
+&lt;span class="nl"&gt;160&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"YOU FAILED -"&lt;/span&gt;
+&lt;span class="nl"&gt;170&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"THE ALIENS GOT YOU"&lt;/span&gt;
+&lt;span class="nl"&gt;180&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;STOP&lt;/span&gt;
+&lt;span class="nl"&gt;190&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"GOOD TAKE OFF"&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I have a vivid memory of my aunt, uncle and cousins visiting at the
+time. My cousin Michael (five years older than me) shared a fascination with
+computers. As a teenager he was clearly at a more advanced level of
+understanding, and it was from him that I got lots of tips, tricks and
+encouragement to goof around.&lt;/p&gt;
+&lt;p&gt;So I did.&lt;/p&gt;
+&lt;p&gt;I changed line 160 to read:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="nl"&gt;160&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"YOU ARE AN IDIOT"&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Then I persuaded my unsuspecting Uncle Colin to play.&lt;/p&gt;
+&lt;p&gt;Since he's an engineer I think he got the
+impression there was some sort of simulated Newtonian mechanics going on and
+took it quite seriously. Of course, if you read the code, it's just a glorified
+guessing game. When he inevitably failed to take off, I remember he exclaimed
+"how rude", muttered something about the computer being broken then wandered
+off to escape any further computer-related space piloting catastrophes. But my
+eight-year-old self was delighted. I spent the next ten minutes laughing
+like a maniac at having hoodwinked an adult with my modified code.&lt;/p&gt;
+&lt;p&gt;Emboldened by this turn of events (and Michael's mischievous teenager-y
+encouragement) I soon graduated to a new form of entertainment when dragged
+shopping by my parents. I'd wander off on my own to find the computer
+stands in retailers. Being a kid, I was mostly ignored as I typed code into
+the demonstration machines.&lt;/p&gt;
+&lt;p&gt;Code like this:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="nl"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;CLS&lt;/span&gt;
+&lt;span class="nl"&gt;20&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;PRINT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"YOU ARE AN IDIOT"&lt;/span&gt;
+&lt;span class="nl"&gt;30&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;GOTO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;20&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I'd walk away (after typing &lt;code&gt;RUN&lt;/code&gt;) and surreptitiously observe the next person
+to encounter the demonstration machines... all telling them they were an idiot
+ad infinitum. I soon realised the shop assistants could clear my
+school-boy silliness by pressing the &lt;code&gt;ESCAPE&lt;/code&gt; or &lt;code&gt;BREAK&lt;/code&gt; keys. Yet I also
+realised it was possible for the function of such keys to be modified: some of
+the code ran on my school's BBC micro clearly made sure any accidental or
+deliberate use of &lt;code&gt;ESCAPE&lt;/code&gt; or &lt;code&gt;BREAK&lt;/code&gt; didn't interfere with whatever
+software the teacher had set up for us to use.&lt;/p&gt;
+&lt;p&gt;I had to wait for the next visit of my cousin Michael to learn how to "improve"
+my code so it defeated shop assistants. To cut a long story short it's possible
+to rebind the &lt;code&gt;ESCAPE&lt;/code&gt; and &lt;code&gt;BREAK&lt;/code&gt; keys to the extent that the only way to stop
+the machine from doing what it's doing is to switch it off and on again. My
+cousin pointed out that the answers to such problems could be found in the
+(afore linked) user guide. In fact rebinding &lt;code&gt;BREAK&lt;/code&gt; was explained on page 143
+and disabling &lt;code&gt;ESCAPE&lt;/code&gt; involved this magic incantation at the start of your
+source code:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="nl"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="vg"&gt;FX&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="il"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="il"&gt;3&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I was off!&lt;/p&gt;
+&lt;p&gt;Most importantly, I realised the user guide wasn't a boring manual for adults
+but, if approached in the right way, it was the source of all sorts of useful
+knowledge and information and I merely had to figure out how to find it. I was
+also helped by yet-more-computer-books from Usborne and my local library, a
+subscription to
+&lt;a href="https://archive.org/search.php?query=acorn+user&amp;amp;sin=&amp;amp;and%5B%5D=mediatype%3A%22texts%22"&gt;Acorn User Magazine&lt;/a&gt;
+and various aspects of the BBC's magnificent
+&lt;a href="https://clp.bbcrewind.co.uk/"&gt;Computer Literacy Project&lt;/a&gt;,
+including TV programmes like this one:&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jtMWEiCdsfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can &lt;a href="https://clp.bbcrewind.co.uk/programmes"&gt;watch all the original 146 programmes online&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But in the end I learned an important ethical lesson.&lt;/p&gt;
+&lt;p&gt;After leaving my unstoppable and mildly
+insulting code running on a BBC micro at the Mansfield branch of
+&lt;a href="https://en.wikipedia.org/wiki/WHSmith"&gt;WHSmith&lt;/a&gt;, I was horrified to see one of
+the retail assistants reprimanded by their supervisor. My joke wasn't funny and
+I realised my code had consequences for others. A lesson that stays with me
+to this day.&lt;/p&gt;
+&lt;p&gt;I also learned that revealing technical skill and knowledge can be tricky and,
+at times, intimidating to others.&lt;/p&gt;
+&lt;p&gt;I remember getting a severe telling-off after I tried to help one of my
+parent's teaching colleagues, the subject matter specialist for computing. I
+was still at Primary school (probably around ten years old) and the ensuing
+conversation, in front of my class mates, revealed the teacher's ignorance of
+some aspect of how the BBC micro created sounds.&lt;/p&gt;
+&lt;p&gt;The conversation went something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TEACHER: "You can only make sounds like &lt;em&gt;this&lt;/em&gt;."&lt;br&gt;
+ME: "But Mrs.S, it's easier to make sounds like &lt;strong&gt;that&lt;/strong&gt;."&lt;br&gt;
+TEACHER: "You're wrong Nicholas. That simply won't work."&lt;br&gt;
+ME: "Oh yes it will."&lt;br&gt;
+(I demonstrate the damn thing working.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In my enthusiasm to share a cool hack, I undermined the teacher and paid the
+price with a bollocking.&lt;/p&gt;
+&lt;p&gt;To be clear, I wasn't rude. But I was certainly a confident enough ten-year-old
+to know I had an easier way to make things work, while being naive to think
+this would be welcomed. To be fair, I don't think they did themselves any
+favours by telling me it simply wouldn't work. A more open minded teacher would
+have said something like, "OK Nicholas, show me your way and let's compare
+notes", and used the situation as an opportunity for learning. Yet, as a former
+teacher myself, I know that it's often impossible to go off piste in a tightly
+structured or time constrained lesson.&lt;/p&gt;
+&lt;p&gt;Such reminiscences are a prelude to the real digital archaeology.&lt;/p&gt;
+&lt;p&gt;Last year I found my old BBC micro, and a box full of floppy disks, in my
+parent's loft. With their permission I took my finds to the UK's
+&lt;a href="https://www.tnmoc.org/"&gt;National Museum of Computing&lt;/a&gt; (based at Bletchley Park
+~ a mere 15 minute drive from where I live). I'll describe the details in a
+follow-up post, but with the generous help of others, I was able to extract the
+content of the disks.&lt;/p&gt;
+&lt;p&gt;By way of preview, embedded below is a BBC emulator running a sort of
+"greatest hits" compilation of programmed musical performances. I put together
+the disk
+from various sources floating around my friendship group, and included some of
+my own code too. The disk's menu system is of my own creation but based upon
+two other fragments of code I found in a magazine: one for driving a disk menu,
+the other for using arrow keys for selecting items. I'm also responsible for
+the rather awful renditions of "The Swan" and "The Road Goes Ever On" (a
+musical setting of some of J.R.R.Tolkien's poetry from the Lord of the Rings,
+by &lt;a href="https://en.wikipedia.org/wiki/Donald_Swann"&gt;Donald Swann&lt;/a&gt;). If I remember
+correctly, I was thirteen years old (in year 9, 1987) when I put this disk
+together. As we'll see in future posts, it was a significant year for me in
+terms of coding and music.&lt;/p&gt;
+&lt;p&gt;Click on the red LEDs at the bottom-left (so the embedded emulator has
+keyboard focus), then use the up and down arrows on your keyboard to navigate
+the menu. Click anywhere else on the main part of the page to remove keyboard
+focus. Keys like &lt;code&gt;RETURN&lt;/code&gt; (to make a selection) and &lt;code&gt;ESCAPE&lt;/code&gt; (to stop a piece
+and return to the menu) will behave as usual. However, I'm sorry to report I
+used the &lt;code&gt;*FX 200,3&lt;/code&gt; trick with "The Swan" ~ you're just going to have to sit
+through that monstrosity in its entirety without the use of the &lt;code&gt;ESCAPE&lt;/code&gt; key.&lt;/p&gt;
+&lt;p&gt;"You're welcome", says my thirteen year old self. ;-)&lt;/p&gt;
+&lt;div class="bbc-container"&gt;
+&lt;iframe src="https://bbc.godbolt.org/?&amp;amp;disc1=https://ntoll.org/static/bbcdiscs/music.ssd&amp;amp;autoboot&amp;amp;embed" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is but a small example of some of the fascinating things I've found.&lt;/p&gt;
+&lt;p&gt;In future posts I'll reveal more about my programming, dive a little
+into the technology I was using and try to place it all into the context of
+my life at the time. As some of you already know, I'm actually a classically
+trained musician, and this has some bearing on what I've managed to find... or
+more accurately, what I've managed to find has some bearing on why I'm a
+classically trained musician, who works as a software engineer with a passion
+for computing education.&lt;/p&gt;
+&lt;p&gt;Finally, it turns out that the BBC micro didn't
+&lt;a href="https://www.nesta.org.uk/report/the-legacy-of-bbc-micro/"&gt;create a legacy of fond memories and technical skill just for me&lt;/a&gt;.
+There are many folks of my age who have similar stories to tell.&lt;/p&gt;
+&lt;p&gt;Happy new year! More soon...&lt;/p&gt;</description><guid>https://ntoll.org/article/8-bit-archaeology-1/</guid><pubDate>Sun, 01 Jan 2023 20:00:00 GMT</pubDate></item><item><title>PyCon Ghana 2022</title><link>https://ntoll.org/article/ghana2022/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;It was an extraordinary privilege to be one of the keynote speakers at this
 year's &lt;a href="https://gh.pycon.org/"&gt;PyCon Ghana&lt;/a&gt;. I was also very lucky to have the
 support of my employer (&lt;a href="https://anaconda.com/"&gt;Anaconda&lt;/a&gt;) who covered the
 costs associated with the trip for myself and my colleague,
@@ -1165,159 +1363,4 @@ new L.GPX(gpx_day3, {
 }).on('loaded', function(e) {
   map_day3.fitBounds(e.target.getBounds());
 }).addTo(map_day3);
-&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-3-4-5/</guid><pubDate>Thu, 14 Apr 2022 17:20:00 GMT</pubDate></item><item><title>Offa's Dyke - Day 2:</title><link>https://ntoll.org/article/offas-dyke-2/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Music is a gift and it's a privilege to listen to highly skilled and
-engaging musicians. We wondered what sort of music might be on at the
-Queen's Head Inn yesterday evening, and we were pleasantly surprised by the
-quality, versatility and mellow tones of the unnamed guitarist shown below.&lt;/p&gt;
-&lt;p&gt;He played a selection of classic pop music, some of his own compositions and
-plenty of folk music. At the end he was joined by two others, a mandolin player
-(a mandolinian?) and a soprano saxophonist (who confirmed that the only
-difference between a lawn mower and a saxophone, is the fingering). Actually,
-joking aside, the sax player was quite virtuosic. ;-)&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/music_night.jpg" alt="Music night at the Queen's Head Inn, Monmouth." title="Music night at the Queen's Head Inn, Monmouth."&gt;
-&lt;figcaption&gt;Music night at the Queen's Head Inn, Monmouth.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;We had an unplanned and unexpectedly lovely evening just sitting back and
-letting someone else perform a set of toe tapping music in such a friendly and
-warm atmosphere (the locals were all pleased to make our acquaintance).&lt;/p&gt;
-&lt;p&gt;After a continental breakfast, at which Neil gave us advice about the next pub
-at which to eat (and his advice about yesterday evening's Italian restaurant
-was spot on), we packed our bags and headed for the high street to stock up
-on picnic supplies. As a result, we were relatively late setting off from
-Monmouth at 9:30am.&lt;/p&gt;
-&lt;p&gt;Clearly, we arrived yesterday by the more welcoming direction of travel.
-Because, here's a photo of the Welsh facing gate house / toll booth / fortified
-bridge out of which Mary and I left the town.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/gatehouse.jpg" alt="Leaving Monmouth via the gate house bridge." title="Leaving Monmouth via the gate house bridge."&gt;
-&lt;figcaption&gt;Leaving Monmouth via the gate house bridge.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;A few miles out of Monmouth were some wooded hills. This, I thought to
-myself, would be a repeat of yesterday's wonderful forest walking: at the foot
-of the hill I heard a woodpecker and the birds were singing &lt;em&gt;fortissimo con
-animato&lt;/em&gt;. Here's a recording of the ambient sounds of the woods at the foot of
-the hills... including the odd tapping noise of the distant woodpecker.&lt;/p&gt;
-&lt;p&gt;&lt;audio controls&gt;
-  &lt;source src="https://ntoll.org/static/files/woodpecker.mp3" type="audio/mpeg"&gt;
-  Your browser does not support the audio tag.
-&lt;/source&gt;&lt;/audio&gt;&lt;/p&gt;
-&lt;p&gt;I also took this photo immediately after making the audio recording and have
-decided to name this place "woodpecker grove".&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/woodpecker_grove.jpg" alt="The grove in the woods with the woodpecker." title="The grove in the woods with the woodpecker."&gt;
-&lt;figcaption&gt;The woodpecker grove.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;However, the hills took a sharp turn in an upwards direction (as hills are wont
-to do). It's not so much that the hills were huge, it was just that conditions
-under foot were very bad and the path was exceptionally steep. Also, at this
-point early in the walk, my boots and ankles had a disagreement and I'm afraid
-I suffered the painful consequences. Honestly, how Mary put up with the
-constant irritated chuntering coming from my direction, like the sound of a
-grumpy steam locomotive, I will never know. But she did, and I was glad she
-did, because that steep incline was a struggle for all the wrong reasons.&lt;/p&gt;
-&lt;p&gt;Yet, despite the pain, difficulty under foot and exceptional effort needed to
-climb up the steep inclines, we eventually reached the top... as Mary kept
-insisting we would.&lt;/p&gt;
-&lt;p&gt;We met a family resting on the bench, who made encouraging sounds about it
-being downhill all the way out of the forest from this point on. We suspected
-they were being generous with their encouragement, especially given all the
-"bloody backpack" type comments coming from my direction.&lt;/p&gt;
-&lt;p&gt;This was not, actually, the first time we had encouragement on our walk.
-Yesterday evening, just as we were walking over the welcoming, less fortified
-bridge into Monmouth, a woman drove past, wound down her window and shouted at
-Mary, "you go girl!". At that point in the day, Mary probably had a grim look
-of determination on her face as the hotel was in sight.&lt;/p&gt;
-&lt;p&gt;In any case, our downward route was a mixed experience. Mary's knees decided to
-complain, yet we found ourselves surrounded by flowers, the forest and the
-sounds of nature. Mary's knees also encouraged us to make many stops
-to make a closer examination of the flora and fauna we might see. This common
-dog violet being a prime example of Mary's knees' keen interest in nature.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/flowers.jpg" alt="Flowers in the woods." title="Flowers in the woods."&gt;
-&lt;figcaption&gt;Flowers in the woods (a common dog violet).&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;After the ups and downs (literally) of exploring the wooded hills, we felt we
-deserved elevenses. And so, once we found a suitable spot (perching on a bridge
-over a stream) we soon made short work of some banana Soreen bars. &lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/elevenses.jpg" alt="Elevenses, sitting on a bridge over a stream." title="Elevenses, sitting on a bridge over a stream."&gt;
-&lt;figcaption&gt;Elevenses, sitting on a bridge over a stream.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Suitably fuelled up, we pressed on over the rolling countryside (or, as Neil at
-the Queen's Head described it, gently undulating farmland) and made good
-progress. Especially now that I had intervened in the argument between my boots
-and ankles. A quick examination of the lacing situation caused me to reconsider
-my options. I realised that the boots were simply too helpful in offering
-unneeded support for my ankles. So I just ignored a bunch of hooks on my boots,
-that seemed to be causing my discomfort, much to the relief of my ankles.&lt;/p&gt;
-&lt;p&gt;Our lunchtime picnic was in the middle of a wonderfully tranquil orchard. We
-sat down, took off our boots and just let ourselves relax into the grass. It was
-lovely.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/orchard.jpg" alt="Lunch time orchard." title="Lunch time orchard."&gt;
-&lt;figcaption&gt;The orchard in which we had our lunch.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Getting up a head of steam after lunch took a bit of time, but we managed it.
-We also encountered some hills that were less inclined to incline, if you see
-what I mean. Actually, they were not too much of a challenge to walk and I,
-true to form, fell into my habit of stomping &lt;em&gt;allegro con brio&lt;/em&gt; up such hills
-as &lt;strong&gt;I found my rhythm&lt;/strong&gt;. Mary has had to deal with such an enthusiastic
-response to hills for over 25 years, and can usually be found a little way
-behind me insisting that I slow down and take in the views, dammit.&lt;/p&gt;
-&lt;p&gt;This photo, is a case in point:&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/stomping.jpg" alt="Stomping." title="Stomping."&gt;
-&lt;figcaption&gt;When I see a hill, I tend to stomp my way up it, and Mary is VERY patient with me.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Once again, we lamented the various aches and pains we were coming to know and
-love. For both of us, mid-afternoon, these took the form of the first, dreaded,
-blisters. Yet we pushed on through, despite an enforced detour due to an unsafe
-bridge that took us off the Offa's Dyke route. This took us through
-several flocks of unamused sheep and lambs. Mary reckons we added at least
-another couple of miles to our (14.5 mile) route. I think that's the blisters
-talking!&lt;/p&gt;
-&lt;p&gt;Eventually, we rejoined the route and could see our destination ahead with
-tomorrow's challenge, the Brecon Beacons, on the horizon. It was at this point
-we realised there had only been four kissing gates on today's route.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa2/looking_at_the_view.jpg" alt="Looking over the rolling countryside to the Brecon Beacons." title="Looking over the rolling countryside to the Brecon Beacons."&gt;
-&lt;figcaption&gt;Looking over the rolling countryside to the Brecon Beacons (tomorrow's challenge).&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This evening, we have a meal booked at a recommended pub. In fact, it's the
-only damn pub for miles and miles. Let's see if they've even heard of
-vegetarians in this part of Wales.&lt;/p&gt;
-&lt;p&gt;Tomorrow will be a challenging day. It's going to rain, both of us have
-blisters, and it's going to be tough walking up and over the Black
-Mountains towards Hay on Wye.&lt;/p&gt;
-&lt;p&gt;Even the name sounds ominous... surely the Black Mountains belong in Mordor..?&lt;/p&gt;
-&lt;p&gt;Mary put a positive spin on things: at least we get to try out our new
-waterproof trousers.&lt;/p&gt;
-&lt;p&gt;Onwards!&lt;/p&gt;
-&lt;div id="map-day2" style="height: 400px"&gt;&lt;/div&gt;
-
-&lt;script&gt;
-var map_day2 = L.map('map-day2').setView([51.505, -0.09], 13);
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &amp;copy; &lt;a href="http://www.osm.org"&gt;OpenStreetMap&lt;/a&gt;'
-}).addTo(map_day2);
-var gpx_day2 = "/static/files/gpx/OffasDyke_Day_02_bespoke.gpx"; // URL to your GPX file or the GPX itself
-new L.GPX(gpx_day2, {
-  async: true,
-  marker_options: {
-    startIconUrl: '/static/images/pin-icon-start.png',
-    endIconUrl: '/static/images/pin-icon-end.png',
-    shadowUrl: '/static/images/pin-shadow.png'
-  }
-}).on('loaded', function(e) {
-  map_day2.fitBounds(e.target.getBounds());
-}).addTo(map_day2);
-&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-2/</guid><pubDate>Mon, 11 Apr 2022 19:50:00 GMT</pubDate></item></channel></rss>
+&lt;/script&gt;</description><guid>https://ntoll.org/article/offas-dyke-3-4-5/</guid><pubDate>Thu, 14 Apr 2022 17:20:00 GMT</pubDate></item></channel></rss>
