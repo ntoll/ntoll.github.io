@@ -32,7 +32,7 @@
 <!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <link rel="stylesheet" href="static/css/leaflet.css">
-<script src="static/js/leaflet.js"></script><script src="static/js/gpx.min.js"></script><link rel="prefetch" href="article/ghana2022/" type="text/html">
+<script src="static/js/leaflet.js"></script><script src="static/js/gpx.min.js"></script><link rel="prefetch" href="article/8-bit-archaeology-1/" type="text/html">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -60,7 +60,231 @@
     
     
     </ul></nav></header><main id="content"><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/ghana2022/" class="u-url">PyCon Ghana 2022</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/8-bit-archaeology-1/" class="u-url">8-Bit Archaeology: Part 1</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Nicholas H.Tollervey
+            </span></p>
+            <p class="dateline">
+            <a href="article/8-bit-archaeology-1/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-01-01T21:00:00+01:00" itemprop="datePublished" title="Sun, Jan 1, 2023 9:00 PM">Sun, Jan 1, 2023 9:00 PM</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <style>
+.section_break {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.section_break:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+</style>
+<p>This is the first in a semi-regular series of posts about digital archaeology
+relating to 1980s era 8-bit microcomputers. In a strange turn of events, not
+only am I the archaeologist, but it is my own code that is to be uncovered and
+interpreted.</p>
+<hr class="section_break">
+<blockquote>
+<p>The aim was to democratise computing. We didn’t want people to be controlled
+by it, but to control it.</p>
+<p>~ <a href="https://www.nesta.org.uk/report/the-legacy-of-bbc-micro/">David Allen, Project Editor, BBC Computer Literacy Project</a>.</p>
+</blockquote>
+<p>As a child, the first programming language I learned was
+<a href="https://en.wikipedia.org/wiki/Sophie_Wilson">Sophie Wilson's</a>
+<a href="https://en.wikipedia.org/wiki/BBC_BASIC">BBC Basic</a>, written for Acorn's
+<a href="https://en.wikipedia.org/wiki/BBC_Micro">BBC Micro</a>. Without this formative
+experience, I wouldn't have become a professional software engineer.</p>
+<p>Most of my childhood was spent in the 1980s, and in 1982-ish the UK Government
+ensured every school in the UK had a BBC micro.</p>
+<figure><img src="images/bbc_micro.jpg" alt="A BBC micro from the 1980s" title="A BBC micro from the 1980s"><figcaption>A BBC Micro from the 1980s. Source: <a href="https://commons.wikimedia.org/wiki/File:BBC_Micro_Front_Restored.jpg">StuartBrady, Public domain, via Wikimedia Commons</a>.</figcaption></figure><p>My father was headteacher of a school, and so brought his newly arrived
+computer back home one holiday to figure out how to use it. It didn't take very
+long to prize the device away from him, and so I started to explore the
+"Welcome" software, loaded from a tape via a sequence of squeaks and growls
+(representing the bytes to load into the computer's memory). Since I would have
+only been eight at the time the
+<a href="static/files/BBC_User_Guide.pdf">user guide</a> was beyond my understanding,
+so a trip to the local library furnished me with a new book aimed at kids who
+wanted to play games on their computers. The book in question was
+<a href="https://drive.google.com/file/d/0Bxv0SsvibDMTNlMwTi1PTlVxc2M/view?resourcekey=0-kaU6eyAmIVhT3_H8RkHfHA">Computer Spacegames</a> published by
+<a href="https://usborne.com/">Usborne</a>, a title in their famously brilliant series of
+<a href="https://usborne.com/gb/books/computer-and-coding-books">colourful and engaging books about coding</a>.</p>
+<p>The first proper program I ever typed into the BBC can be found on page 5. It's
+a sort of text based rocket pilot game... you have to take off before the
+aliens get you:</p>
+<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
+<span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"STARSHIP TAKE-OFF"</span>
+<span class="nl">30</span><span class="w"> </span><span class="kd">LET</span><span class="w"> </span><span class="vg">G</span><span class="o">=</span><span class="kr">INT</span><span class="p">(</span><span class="kr">RND</span><span class="p">(</span><span class="il">1</span><span class="p">)</span><span class="o">*</span><span class="il">20</span><span class="p">)</span>
+<span class="nl">40</span><span class="w"> </span><span class="kd">LET</span><span class="w"> </span><span class="vg">W</span><span class="o">=</span><span class="kr">INT</span><span class="p">(</span><span class="kr">RND</span><span class="p">(</span><span class="il">1</span><span class="p">)</span><span class="o">*</span><span class="il">40</span><span class="p">)</span>
+<span class="nl">50</span><span class="w"> </span><span class="kd">LET</span><span class="w"> </span><span class="vg">R</span><span class="o">=</span><span class="vg">G</span><span class="o">*</span><span class="vg">W</span>
+<span class="nl">60</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"GRAVITY= "</span><span class="p">;</span><span class="w"> </span><span class="vg">G</span>
+<span class="nl">70</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"TYPE IN FORCE"</span>
+<span class="nl">80</span><span class="w"> </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">C</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">10</span>
+<span class="nl">90</span><span class="w"> </span><span class="kr">INPUT</span><span class="w"> </span><span class="vg">F</span>
+<span class="nl">100</span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="vg">F</span><span class="o">&gt;</span><span class="vg">R</span><span class="w"> </span><span class="kr">THEN</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"TOO HIGH"</span><span class="p">;</span>
+<span class="nl">110</span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="vg">F</span><span class="o">&lt;</span><span class="vg">R</span><span class="w"> </span><span class="kr">THEN</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"TOO LOW"</span><span class="p">;</span>
+<span class="nl">120</span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="vg">F</span><span class="o">=</span><span class="vg">R</span><span class="w"> </span><span class="kr">THEN</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">190</span>
+<span class="nl">130</span><span class="w"> </span><span class="kr">IF</span><span class="w"> </span><span class="vg">C</span><span class="o">&lt;&gt;</span><span class="il">10</span><span class="w"> </span><span class="kr">THEN</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">", TRY AGAIN"</span>
+<span class="nl">140</span><span class="w"> </span><span class="kr">NEXT</span><span class="w"> </span><span class="vg">C</span>
+<span class="nl">150</span><span class="w"> </span><span class="kr">PRINT</span>
+<span class="nl">160</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU FAILED -"</span>
+<span class="nl">170</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"THE ALIENS GOT YOU"</span>
+<span class="nl">180</span><span class="w"> </span><span class="kr">STOP</span>
+<span class="nl">190</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"GOOD TAKE OFF"</span>
+</pre>
+
+<p>I have a vivid memory of my aunt, uncle and cousins visiting at the
+time. My cousin Michael (five years older than me) shared a fascination with
+computers. As a teenager he was clearly at a more advanced level of
+understanding, and it was from him that I got lots of tips, tricks and
+encouragement to goof around.</p>
+<p>So I did.</p>
+<p>I changed line 160 to read:</p>
+<pre class="code literal-block"><span class="nl">160</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU ARE AN IDIOT"</span>
+</pre>
+
+<p>Then I persuaded my unsuspecting Uncle Colin to play.</p>
+<p>Since he's an engineer I think he got the
+impression there was some sort of simulated Newtonian mechanics going on and
+took it quite seriously. Of course, if you read the code, it's just a glorified
+guessing game. When he inevitably failed to take off, I remember he exclaimed
+"how rude", muttered something about the computer being broken then wandered
+off to escape any further computer-related space piloting catastrophes. But my
+eight-year-old self was delighted. I spent the next ten minutes laughing
+like a maniac at having hoodwinked an adult with my modified code.</p>
+<p>Emboldened by this turn of events (and Michael's mischievous teenager-y
+encouragement) I soon graduated to a new form of entertainment when dragged
+shopping by my parents. I'd wander off on my own to find the computer
+stands in retailers. Being a kid, I was mostly ignored as I typed code into
+the demonstration machines.</p>
+<p>Code like this:</p>
+<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
+<span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU ARE AN IDIOT"</span>
+<span class="nl">30</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">20</span>
+</pre>
+
+<p>I'd walk away (after typing <code>RUN</code>) and surreptitiously observe the next person
+to encounter the demonstration machines... all telling them they were an idiot
+ad infinitum. I soon realised the shop assistants could clear my
+school-boy silliness by pressing the <code>ESCAPE</code> or <code>BREAK</code> keys. Yet I also
+realised it was possible for the function of such keys to be modified: some of
+the code ran on my school's BBC micro clearly made sure any accidental or
+deliberate use of <code>ESCAPE</code> or <code>BREAK</code> didn't interfere with whatever
+software the teacher had set up for us to use.</p>
+<p>I had to wait for the next visit of my cousin Michael to learn how to "improve"
+my code so it defeated shop assistants. To cut a long story short it's possible
+to rebind the <code>ESCAPE</code> and <code>BREAK</code> keys to the extent that the only way to stop
+the machine from doing what it's doing is to switch it off and on again. My
+cousin pointed out that the answers to such problems could be found in the
+(afore linked) user guide. In fact rebinding <code>BREAK</code> was explained on page 143
+and disabling <code>ESCAPE</code> involved this magic incantation at the start of your
+source code:</p>
+<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="o">*</span><span class="vg">FX</span><span class="w"> </span><span class="il">200</span><span class="p">,</span><span class="il">3</span>
+</pre>
+
+<p>I was off!</p>
+<p>Most importantly, I realised the user guide wasn't a boring manual for adults
+but, if approached in the right way, it was the source of all sorts of useful
+knowledge and information and I merely had to figure out how to find it. I was
+also helped by yet-more-computer-books from Usborne and my local library, a
+subscription to
+<a href="https://archive.org/search.php?query=acorn+user&amp;sin=&amp;and%5B%5D=mediatype%3A%22texts%22">Acorn User Magazine</a>
+and various aspects of the BBC's magnificent
+<a href="https://clp.bbcrewind.co.uk/">Computer Literacy Project</a>,
+including TV programmes like this one:</p>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jtMWEiCdsfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p>You can <a href="https://clp.bbcrewind.co.uk/programmes">watch all the original 146 programmes online</a>.</p>
+<p>But in the end I learned an important ethical lesson.</p>
+<p>After leaving my unstoppable and mildly
+insulting code running on a BBC micro at the Mansfield branch of
+<a href="https://en.wikipedia.org/wiki/WHSmith">WHSmith</a>, I was horrified to see one of
+the retail assistants reprimanded by their supervisor. My joke wasn't funny and
+I realised my code had consequences for others. A lesson that stays with me
+to this day.</p>
+<p>I also learned that revealing technical skill and knowledge can be tricky and,
+at times, intimidating to others.</p>
+<p>I remember getting a severe telling-off after I tried to help one of my
+parent's teaching colleagues, the subject matter specialist for computing. I
+was still at Primary school (probably around ten years old) and the ensuing
+conversation, in front of my class mates, revealed the teacher's ignorance of
+some aspect of how the BBC micro created sounds.</p>
+<p>The conversation went something like this:</p>
+<blockquote>
+<p>TEACHER: "You can only make sounds like <em>this</em>."<br>
+ME: "But Mrs.S, it's easier to make sounds like <strong>that</strong>."<br>
+TEACHER: "You're wrong Nicholas. That simply won't work."<br>
+ME: "Oh yes it will."<br>
+(I demonstrate the damn thing working.)</p>
+</blockquote>
+<p>In my enthusiasm to share a cool hack, I undermined the teacher and paid the
+price with a bollocking.</p>
+<p>To be clear, I wasn't rude. But I was certainly a confident enough ten-year-old
+to know I had an easier way to make things work, while being naive to think
+this would be welcomed. To be fair, I don't think they did themselves any
+favours by telling me it simply wouldn't work. A more open minded teacher would
+have said something like, "OK Nicholas, show me your way and let's compare
+notes", and used the situation as an opportunity for learning. Yet, as a former
+teacher myself, I know that it's often impossible to go off piste in a tightly
+structured or time constrained lesson.</p>
+<p>Such reminiscences are a prelude to the real digital archaeology.</p>
+<p>Last year I found my old BBC micro, and a box full of floppy disks, in my
+parent's loft. With their permission I took my finds to the UK's
+<a href="https://www.tnmoc.org/">National Museum of Computing</a> (based at Bletchley Park
+~ a mere 15 minute drive from where I live). I'll describe the details in a
+follow-up post, but with the generous help of others, I was able to extract the
+content of the disks.</p>
+<p>By way of preview, embedded below is a BBC emulator running a sort of
+"greatest hits" compilation of programmed musical performances. I put together
+the disk
+from various sources floating around my friendship group, and included some of
+my own code too. The disk's menu system is of my own creation but based upon
+two other fragments of code I found in a magazine: one for driving a disk menu,
+the other for using arrow keys for selecting items. I'm also responsible for
+the rather awful renditions of "The Swan" and "The Road Goes Ever On" (a
+musical setting of some of J.R.R.Tolkien's poetry from the Lord of the Rings,
+by <a href="https://en.wikipedia.org/wiki/Donald_Swann">Donald Swann</a>). If I remember
+correctly, I was thirteen years old (in year 9, 1987) when I put this disk
+together. As we'll see in future posts, it was a significant year for me in
+terms of coding and music.</p>
+<p>Click on the red LEDs at the bottom-left (so the embedded emulator has
+keyboard focus), then use the up and down arrows on your keyboard to navigate
+the menu. Click anywhere else on the main part of the page to remove keyboard
+focus. Keys like <code>RETURN</code> (to make a selection) and <code>ESCAPE</code> (to stop a piece
+and return to the menu) will behave as usual. However, I'm sorry to report I
+used the <code>*FX 200,3</code> trick with "The Swan" ~ you're just going to have to sit
+through that monstrosity in its entirety without the use of the <code>ESCAPE</code> key.</p>
+<p>"You're welcome", says my thirteen year old self. ;-)</p>
+<div class="bbc-container">
+<iframe src="https://bbc.godbolt.org/?&amp;disc1=https://ntoll.org/static/bbcdiscs/music.ssd&amp;autoboot&amp;embed" width="100%" height="600"></iframe>
+</div>
+
+<p>This is but a small example of some of the fascinating things I've found.</p>
+<p>In future posts I'll reveal more about my programming, dive a little
+into the technology I was using and try to place it all into the context of
+my life at the time. As some of you already know, I'm actually a classically
+trained musician, and this has some bearing on what I've managed to find... or
+more accurately, what I've managed to find has some bearing on why I'm a
+classically trained musician, who works as a software engineer with a passion
+for computing education.</p>
+<p>Finally, it turns out that the BBC micro didn't
+<a href="https://www.nesta.org.uk/report/the-legacy-of-bbc-micro/">create a legacy of fond memories and technical skill just for me</a>.
+There are many folks of my age who have similar stories to tell.</p>
+<p>Happy new year! More soon...</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/ghana2022/" class="u-url">PyCon Ghana 2022</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Nicholas H.Tollervey
@@ -475,35 +699,6 @@ develop projects such as <a href="https://codegrades.com/">CodeGrades</a> in my 
 as has been the case so far.  </p>
 <p>Here's to new adventures.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/offa-all/" class="u-url">Offa's Dyke - Complete</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Nicholas H.Tollervey
-            </span></p>
-            <p class="dateline">
-            <a href="article/offa-all/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-04-21T15:30:00+01:00" itemprop="datePublished" title="Thu, Apr 21, 2022 3:30 PM">Thu, Apr 21, 2022 3:30 PM</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>For completeness, here's a list of all the Offa's Dyke related blog posts in
-chronological order.</p>
-<ul>
-<li>
-<a href="article/offas-dyke-1/">Day 1</a> - Chepstow, pizza and first steps.</li>
-<li>
-<a href="article/offas-dyke-2/">Day 2</a> - Monmouth to Pandy over rolling countryside.</li>
-<li>
-<a href="article/offas-dyke-3-4-5/">Days 3, 4 and 5</a> - Things don't go to plan.</li>
-<li>
-<a href="article/offas-dyke-6/">Day 6</a> - The Centre for Alternative Technology.</li>
-<li>
-<a href="article/offas-dyke-7-8-9/">Days 7, 8 and 9</a> - Shropshire hills, Welsh lakes and castles.</li>
-<li>
-<a href="article/offas-dyke-final/">Days 10, 11 and 12</a> - Improvising and going with the flow to our destination.</li>
-</ul>
-<p>Enjoy!</p>
-    </div>
     </article>
 </div>
 
@@ -512,7 +707,7 @@ chronological order.</p>
                 <a href="index-25.html" rel="next">Older posts</a>
             </li>
         </ul></nav></main><footer id="footer"><p></p>
-<p>Contents © 2022         <a href="mailto:ntoll@ntoll.org">Nicholas H.Tollervey</a></p> 
+<p>Contents © 2023         <a href="mailto:ntoll@ntoll.org">Nicholas H.Tollervey</a></p> 
 <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
             
