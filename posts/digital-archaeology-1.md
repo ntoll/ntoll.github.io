@@ -1,7 +1,7 @@
 <!--
 .. title: 8-Bit Archaeology: Part 1
 .. slug: 8-bit-archaeology-1
-.. date: 2022-07-23 14:20:00 UTC+01:00
+.. date: 2023-01-01 14:20:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
