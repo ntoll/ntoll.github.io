@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Build yourself a PyScript</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>Build Yourself a PyScript</h1>
+            <aside class="notes">
+                <p>Thank organisers.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/paul.jpg">
+            <aside class="notes">
+              <p><strong>Nicholas</strong> introduces Paul.</p>
+              <ul>
+                <li>Developer advocate at JetBrains.</li>
+                <li>Python oldster.</li>
+                <li>Girls lacrosse coach.</li>
+                <li>US Navy.</li>
+                <li>Zope / Plone.</li>
+                <li>PSF pioneer.</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+            <aside class="notes">
+              <p><strong>Paul</strong> introduces Nicholas.</p>
+              <ul>
+                <li>Classically trained former professional orchestral
+                musician.</li>
+                <li>Teacher (mostly UK inner-city teenagers), but also
+                kindergarten to adult education seniors (and everything
+                inbetween).</li>
+                <li>Writer (The Guardian, several O'Reilly titles, and other
+                magazine related stuff).</li>
+                <li>Academic background in Philosophy.</li>
+                <li>Principal engineer on the PyScript team at Anaconda.</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/wrestlers.jpg">
+            <aside class="notes">
+                <p><strong>Nicholas</strong> This talk in a single slide.</p>
+                <p><strong>Paul</strong>
+                <ul>
+                    <li>Given the subject matter it might feel like watching a
+                    tag wrestling match.</li>
+                    <li>Yes, it can be painful.</li>
+                    <li>But hopefully, it's also entertaining.</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/pieces_of_the_platform_puzzle.png">
+            <aside class="notes">
+                <p><strong>Nicholas</strong> So, what is PyScript?</p>
+                <ul>
+                    <li><strong>P</strong> A platform for Python in the
+                    browser.</li>
+                    <li><strong>N</strong> Sits on top of Python interpreters
+                    compiled to web assembly (e.g. Pyodide, MicroPython
+                    etc).</li>
+                    <li><strong>P</strong> Different interpreters have
+                    different strengths and weaknesses.</li>
+                    <li><strong>N</strong> PyScript makes it simple and easy to
+                    create and use frameworks or your own application code on
+                    top of the platform.</li>
+                </ul>
+                <p>That's it!</p>
+            </aside>
+        </section>
+        <section>
+            <p>What we'll cover:</p>
+            <ol>
+                <li>Get Python</li>
+                <li>Python's context</li>
+                <li>Interacting with the browser</li>
+            </ol>
+            <aside class="notes">
+            <ol>
+                <li><strong>P</strong> How do we get Python into the
+                browser?</li>
+                <li><strong>N</strong> Once there, what exactly is the Python
+                context within the browser?</li>
+                <li><strong>P</strong> Quick fire round exploring how Python
+                and the browser interact.</li>
+            </ol>
+            </aside>
+        </section>
+        <section>
+            <h2>1. Get Python</h2>
+            <aside class="notes">
+              <p><strong>Nicholas</strong></p>
+            </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;A simple PyScript example&lt;/title&gt;
+  &lt;script defer src="pyscript.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;py-script&gt;print("Hello, world")&lt;/py-script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+          <a href="example1/index.html" target="_blank">View</a>
+          <aside class="notes">
+            <p><strong>Nicholas</strong>: explain geography of this first
+            example.</p>
+          </aside>
+        </section>
+        <section>
+            <p>pyscript.js</p>
+            <pre><code data-trim data-noescape data-line-numbers="1-6|7-11|12-13|14-15|16-18|22-23">
+/*
+Create a new custom tag by inheriting from the
+HTMLElement class.
+*/
+
+class PyScript extends HTMLElement {
+    connectedCallback() {
+        /*
+        Called when the element is first encountered in
+        the DOM.
+        */
+        // Grab the source code.
+        const code = this.textContent;
+        // Instantiate a "Python interpreter". ;-)
+        const re = /"(.*?)"/;
+        // Evaluate and emit to STDOUT ;-)
+        const output = code.match(re)[0].slice(1, -1);
+        this.textContent = output;
+    }
+}
+
+// Register the class for the given element name.
+customElements.define("py-script", PyScript);
+          </code></pre>
+          <h3 class="fragment">😲</h3>
+          <aside class="notes">
+            <p><strong>Paul</strong>: talk through how it works as an
+            HtmlElement.</p>
+          </aside>
+        </section>
+        <section data-background-color="white">
+            <svg
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="342"
+                    height="342"
+                    id="svg2">
+                <path
+                        d="m 0,0 h 164 v 267 h 14 V 0 H 342 V 342 H 267 V 75 H 253 V 342 H 89 V 75 L 75,75.5 V 342 H 0 Z m 317,278 h -20 v 34 h 20 z"
+                        id="path4"/>
+            </svg>
+            <aside class="notes">
+              <p><strong>Nicholas</strong></p>
+                <p>Let's add an actual Python interpreter shall we?</p>
+                <p>All told, MicroPython is around a 300k download, and starts
+                    very quickly, even on mobile based browsers.</p>
+                <p>Small and fast.</p>
+            </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="8-16">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;A simple PyScript example&lt;/title&gt;
+  &lt;script defer src="pyscript.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;py-script&gt;
+def hello(name="world!"):
+  """
+  Return a friendly greeting to the named entity.
+  """
+  return f"Hello, {name} (from MicroPython)."
+
+print(hello())
+  &lt;/py-script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+            <a href="example2/index.html" target="_blank">View</a>
+          <aside class="notes">
+            <p><strong>Paul</strong>: a much more sophisticated Python 
+            program for our simple PyScript to run:</p>
+            <ul>
+              <li>Function definition / function call</li>
+              <li>f-strings</li>
+              <li>Comments</li>
+              <li>Default args etc...</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+            <p>pyscript.js</p>
+            <pre><code data-trim data-noescape data-line-numbers="3-6|7-8|9-18|19-20|25-28|29-39|40-41">
+class PyScript extends HTMLElement {
+    connectedCallback() {
+        // grab the source code.
+        const code = this.textContent;  
+        // Remove the code from the DOM.
+        this.textContent = "";  
+        // JavaScript oh my..! 🤦
+        const self = this;
+        // Handle STDOUT events.
+        document.addEventListener('micropython-print', 
+            function(e) {
+                // Just append event data to the textual
+                // content of this element.
+                const output = self.textContent + e.data;
+                self.textContent = output;
+            }, 
+            false
+        );
+        // Eval the code.
+        mp_js_do_str(code);
+    }
+}
+
+
+// Inject MicroPython compiled to WASM into the page, via
+// a script tag.
+const pyElement = document.createElement("script");
+pyElement.src = "micropython.js";
+pyElement.onload = function(e) {
+    // Start up MicroPython
+    let mp_js_startup = Module['onRuntimeInitialized'];
+    Module["onRuntimeInitialized"] = async function() {
+        mp_js_startup();
+        mp_js_init(1024*1024);
+        // Register the class for the given element name,
+        // only after MicroPython is configured.
+        customElements.define("py-script", PyScript);
+    }
+}
+const head = document.getElementsByTagName('head')[0];
+head.appendChild(pyElement);
+          </code></pre>
+          <h3 class="fragment">😬😲🤔😱</h3>
+          <aside class="notes">
+            <p><strong>Nicholas</strong>: talk through how it works as an
+            we add an actual interpreter to the HtmlElement.</p>
+          </aside>
+        </section>
+        <section>
+            <h2>2. Python's context</h2>
+            <aside class="notes">
+              <h2>TIMECHECK: 15mins</h2>
+              <p><strong>Paul</strong></p>
+            </aside>
+        </section>
+        <section data-background-image="img/multi-interpreters.png">
+            <aside class="notes">
+                <p><strong>Paul</strong> There are several choices of
+                interpreter:</p>
+                <ul>
+                  <li>Pyodide - the original and most highly developed
+                  solution</li>
+                  <li>cPython - thanks to the work of Christian Heimes and
+                  Brett Cannon, WASM is now a compilation target for
+                  cPython.</li>
+                  <li>MicroPython - not what Damien was expecting, but it works
+                  really well. He's currently spending time refining
+                  MicroPython's WASM story.</li>
+                  <li>Weird stuff - Zython, etc...</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/emscripten.png">
+            <aside class="notes">
+              <p><strong>Nicholas</strong>: but what about the operating
+              system layer..?</p>
+              <p>Emscripten allows you to port existing C/C++ code to WASM on
+              a web platform.</p>
+              <p>It's like the libc / POSIX / win32 layer, that abstracts
+              away the browser to provide common concepts like a
+              filesystem.</p>
+            </aside>
+        </section>
+        <section data-background-video="img/unreal.webm" data-background-video-loop>
+            <aside class="notes">
+                <p><strong>Nicholas</strong> It's fast!</p>
+                <p>This is Unreal Engine running in a browser, on top of
+                Emscripten.</p>
+                <p>Thanks to Emscripten we have an efficient way to get to our
+                underlying computing platform.</p>
+                <p>But what about getting all our
+                Python stuff into the browser..?</p>
+                <p>What about packaging?</p>
+            </aside>
+        </section>
+        <section data-background-image="img/packaging.png">
+            <aside class="notes">
+                <p><strong>Paul</strong> Packaging with PyScript is mostly
+                like Python:</p>
+                <ul>
+                    <li>your browser tab is like your venv</li>
+                    <li>`micropip` installs from PyPI</li>
+                    <li>It just works!</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/packaging2.jpg">
+            <aside class="notes">
+                <p><strong>Nicholas</strong> Except, packaging with PyScript is
+                mostly like Python:</p>
+                <ul>
+                  <li>packages with C extensions need to be compiled to
+                  WASM.</li>
+                  <li>you have to install all the packages each time you
+                  navigate to a URL.</li>
+                  <li>sometimes, the browser isn't friendly to popular packages
+                  (e.g. requests).</li>
+                </ul>
+                <p>Work is ongoing to solve these puzzles.</p>
+            </aside>
+        </section>
+        <section>
+            <h2>3. Interacting with the browser</h2>
+            <p>Quickfire round</p>
+            <aside class="notes">
+              <h2>TIMECHECK: 20 mins</h2>
+              <p><strong>Paul</strong></p>
+            </aside>
+        </section>
+        <section data-background-image="img/performance_budget.jpg">
+            <aside class="notes">
+            <p><strong>Paul</strong> Performance Budget</p>
+            <p>3G feature phone in countryside:</p>
+            <ul>
+                <li>Download</li>
+                <li>Time-to-interactive</li>
+                <li>Battery</li>
+            </ul>
+            <p><strong>Nicholas</strong> Mobile web is <em>a</em> priority, not
+            <em>the</em> priority (see MicroPython).</p>
+            </aside>
+        </section>
+        <section data-background-image="img/google.jpg">
+            <aside class="notes">
+            <p><strong>Paul</strong> PageRank is also influenced by this.</p>
+            </aside>
+        </section>
+
+
+        <section data-background-image="img/dom.jpg">
+            <aside class="notes">
+              <p><strong>Nicholas</strong> but how does Python
+              interact with the DOM - the page in the browser?</p>
+            </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="1-4|7-13|16-17|18-20">
+# js is globalThis (the browser window).
+from js import document
+# ffi is foreign function interface.
+from pyodide import ffi
+
+
+def handler(event):
+  """
+  Handle an event. Append something to the DOM.
+  """
+  output = document.createElement("span")
+  output.innerHTML = "🖱️"
+  document.body.appendChild(output)
+
+
+# Wrap the handler in a JS proxy.
+handler_proxy = ffi.create_proxy(handler)
+# Find the button, add the event listener.
+button = document.querySelector("button#click-me")
+button.addEventListener("click", handler_proxy)
+          </code></pre>
+            <a href="https://3fd38942-d35c-4bf6-9b8a-37cec059f572.pyscriptapps.com/39917e09-5407-486e-85f5-98f1d0a295ef/latest/" target="_blank">View</a>
+            <aside class="notes">
+              <p><strong>Nicholas</strong> talk through interacting with the DOM via ffi and js</p>
+            </aside>
+        </section>
+        <section data-background-image="img/competition.jpg">
+            <aside class="notes">
+              <p><strong>Paul</strong> This is a competitive market!</p>
+              <ul>
+                <li>JS frontends have become really innovative</li>
+                <li>Server-side pre-rendering is changing the landscape</li>
+              </ul>
+              <p><strong>Nicholas</strong> this is a major effort within
+              PyScript.</p>
+              <ul>
+                <li>As we'll soon see, it's a challenging topic!</li>
+                <li>If you have experience/ideas...come see us</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/storage.jpg">
+            <aside class="notes">
+            <p><strong>Paul</strong> Re-think your concept of "storage":</p>
+            <ul>
+                <li>There ain't no stinking disk</li>
+                <li>JS Options: Local Storage, IndexedDB</li>
+                <li>Pyodide storages</li>
+                <li>The rise of OPFS and SQLite</li>
+            </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/possibilities.png">
+            <aside class="notes">
+            <p><strong>Nicholas</strong> despite these differences...</p>
+            <p>Imagine: Offline-first Python apps
+            running in the browser. These are called Progressive web apps
+            and there is a W3C standard for it.</p>
+            <p><strong>Paul</strong> Repeat: If you have experience... come see
+            us. Python everywhere the browser runs... (which is pretty much
+            everywhere).</p>
+            <p><strong>Nicholas</strong> all of a sudden we get a wonderful
+            way to share our elegant and performant Python code with the
+            world.</p>
+            </aside>
+        </section>
+        <section data-background-color="white" data-transition="none fast">
+          <img src="img/beachball.gif"/>
+            <aside class="notes">
+            <p><strong>Paul</strong> BUT! Ever seen this on a web page?</p>
+            <p>We're blocking the UI because browsers usually use a single
+            "MAIN" thread for all JavaScript on a web page.</p>
+            <p>It's the same with PyScript.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/workers.jpg">
+            <aside class="notes">
+              <p><strong>Nicholas</strong> fortunately there's a solution.</p>
+              <ul>
+                <li>Web Workers: similar to a separate process running on the
+                same web page.</li>
+                <li>PyScript has coming support for web workers.</li>
+                <li>Close with: "we're golden, right"</li>
+              </ul>
+            </aside>
+        </section>
+        <section>
+            <h2>🛑 Slow your roll 🛑</h2>
+            <aside class="notes">
+              <p><strong>Paul</strong></p>
+                <ul>
+                    <li>Web workers don't have access to the DOM, so are not
+                    able to manipulate the UI.</li>
+                    <li>Communication between main thread and web worker is
+                    just message passing.</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background-color="white">
+          <video data-autoplay src="img/chat.webm" loop></video>
+            <aside class="notes">
+            <p><strong>Nicholas</strong> Have no fear, PyScript is here!</p>
+            <p>https://chat-animator.com/</p>
+                <ul>
+                    <li>Promote the Hood/Anthony work: synclink proxies between
+                    the MAIN thread and the WORKER.</li>
+                    <li>Transparent message passing done in a way that will
+                    pause the worker (allowing synchronous Python code) while
+                    the MAIN thread remains unblocked.</li>
+                    <li>Achieved via a web standard for sharing memory between
+                    workers and the main thread, called Atomics.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section>
+            <h2>Final thoughts</h2>
+            <ul>
+                <li class="fragment">PyScript is a <em>platform</em>.</li>
+                <li class="fragment">Write code and frameworks on PyScript (ask me about PyperCard).</li>
+                <li class="fragment">It's open source... come play!</li>
+                <li class="fragment">For the 99% (not just coders).</li>
+            </ul>
+            <aside class="notes">
+              <h2>TIMECHECK: 35mins</h2>
+              <p><strong>Paul</strong> starts with the first bullet,
+              <strong>Nicholas</strong> the second.
+            </aside>
+        </section>
+        <section>
+            <h2>Other stuff at PyCon!</h2>
+            <ul>
+              <li class="fragment"><strong>PyScript for Education.</strong><br/>
+              Blake Rayfield (Sat, 10:45am)</li>
+              <li class="fragment"><strong>The CPU in your browser: WASM demystified.</strong><br/>
+              Antonio Cuni (Sat, 12:15pm)</li>
+              <li class="fragment"><strong>PyScript and the magic of Python in the browser.</strong><br/>
+              Fabio Pliger (Sat, 1:30pm)</li>
+              <li class="fragment"><strong>Anaconda booth.</strong> (PyScript
+              info, demos &amp; <u>swag</u>!)</li>
+              <li class="fragment"><strong>An open space.</strong> (Sunday - see the board)</li>
+              <li class="fragment"><strong>Sprint with us!</strong> (Monday to Thursday)</li>
+            </ul>
+            <aside class="notes">
+              <p><strong>Paul</strong> starts with the first bullet,
+              <strong>Nicholas</strong> the second.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Questions..?</h2>
+            <p>TL;DR:</p>
+            <p><a href="https://pyscript.com/">pyscript.com</a> - IDE (<u>start here</u>)</p>
+            <p><a href="https://pyscript.net/">pyscript.net</a> - docs</p>
+        </section>
+
+        <section>
+          <h2>Image credits</h2>
+    <p>Photo by <a href="https://unsplash.com/pt-br/@beccatapert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Becca Tapert</a> on <a href="https://unsplash.com/photos/QofjUnxy9LY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+    <p>Photo by <a href="https://unsplash.com/fr/@christianw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian Wiediger</a> on <a href="https://unsplash.com/photos/zhZydTyNMPg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+    <p>Photo by <a href="https://unsplash.com/@valerysysoev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valery Sysoev</a> on <a href="https://unsplash.com/photos/p9OkL4yW3C8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+  <p>Photo by <a href="https://unsplash.com/de/@cadop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathew Schwartz</a> on <a href="https://unsplash.com/s/photos/competition?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+    <p>Photo by <a href="https://unsplash.com/@melodi2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lia Trevarthen</a> on <a href="https://unsplash.com/s/photos/storage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+  <p>Photo by <a href="https://unsplash.com/@cloudveilczjx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric Wang</a> on <a href="https://unsplash.com/photos/umD2Bj4FmMU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+        </section>
+    </div>
+</div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="customtags.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+</script>
+</body>
+</html>
