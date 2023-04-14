@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A simple PyScript example</title>
+  <script defer src="pyscript.js" type="module"></script>
+</head>
+<body>
+  <py-script>
+def hello(name="world!"):
+  """
+  Return a friendly greeting to the named entity.
+  """
+  return f"Hello, {name} (from MicroPython)."
+
+print(hello())
+  </py-script>
+</body>
+</html>
