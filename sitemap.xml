@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2023-04-14T16:13:00Z</lastmod>
+  <lastmod>2023-04-14T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2023-04-14T16:13:00Z</lastmod>
+  <lastmod>2023-04-15T13:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -578,6 +578,10 @@
   <lastmod>2023-04-14T16:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/article/victorian-python-allegory/</loc>
+  <lastmod>2023-04-14T16:47:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/article/vista-and-aimlbot/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
  </url>
@@ -699,7 +703,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-25.html</loc>
-  <lastmod>2023-04-14T16:13:00Z</lastmod>
+  <lastmod>2023-04-15T13:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-26.html</loc>
+  <lastmod>2023-04-14T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -1059,7 +1067,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/build-pyscript/</loc>
-  <lastmod>2023-04-14T16:13:00Z</lastmod>
+  <lastmod>2023-04-14T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/build-pyscript/example1/</loc>
