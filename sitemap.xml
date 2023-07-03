@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2023-04-15T13:56:00Z</lastmod>
+  <lastmod>2023-04-27T09:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2023-04-15T13:55:00Z</lastmod>
+  <lastmod>2023-04-27T09:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -530,6 +530,10 @@
   <lastmod>2023-04-14T16:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/article/talk-not-accepted%20/</loc>
+  <lastmod>2023-07-03T17:33:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/article/tdd-cargo-cult/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
  </url>
@@ -576,6 +580,10 @@
  <url>
   <loc>https://ntoll.org/article/vaughan-williams-tuba-concerto-programme-notes/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/victorian-python-allegory/</loc>
+  <lastmod>2023-04-27T09:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/vista-and-aimlbot/</loc>
@@ -699,7 +707,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-25.html</loc>
-  <lastmod>2023-04-15T13:55:00Z</lastmod>
+  <lastmod>2023-04-27T09:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-26.html</loc>
+  <lastmod>2023-04-27T09:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
