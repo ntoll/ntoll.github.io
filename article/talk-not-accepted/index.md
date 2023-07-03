@@ -1,6 +1,6 @@
 <!--
 .. title: Rejection and Renewal
-.. slug: talk-not-accepted 
+.. slug: talk-not-accepted
 .. date: 2023-07-03 19:00:00 UTC+01:00
 .. tags: 
 .. category: 
