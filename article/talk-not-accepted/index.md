@@ -38,7 +38,7 @@ from the _quality of the interactions between individual participants_.
 Sometimes such interactions are unavoidably painful: as when a proposed
 contribution to a community event is rejected by the organisers.
 
-Yet it is at these moments where embodiment by individuals, and the emergent
+Yet it is at these moments when embodiment by individuals, and the emergent
 community spirit, are so important.
 
 This applies to both organisers and participants.
