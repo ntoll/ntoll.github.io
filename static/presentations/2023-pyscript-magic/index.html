@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>PyScript and the magic of Python in the browser</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>PyScript 🐍📜<br/>and the magic 🪄 🧙<br/>of Python 🐍<br/>in the browser 💻🚀</h2>
+            <aside class="notes">
+                <p>Thank organisers.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/fabio.jpg">
+            <aside class="notes">
+              <ul>
+                <li>Fabio Pliger.</li>
+                <li>My friend and colleague at Anaconda.</li>
+                <li>Creator if PyScript.</li>
+                <li>Former EuroPython chair, and EuroPython fellow.</li>
+                <li>Smoking hot and photogenic</li>
+                <li>Not here.</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+            <aside class="notes">
+              <ul>
+                <li>Classically trained former professional orchestral
+                musician.</li>
+                <li>Teacher (mostly UK inner-city teenagers), but also
+                kindergarten to adult education seniors (and everything
+                inbetween).</li>
+                <li>Writer (The Guardian, several O'Reilly titles, and other
+                magazine related stuff).</li>
+                <li>Academic background in Philosophy.</li>
+                <li>Principal engineer on the PyScript team at Anaconda.</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/pyscript_party.jpg">
+            <aside class="notes">
+            <p>Explain bunnies and Anaconda's relationship to PyScript.</p>
+            <ol>
+                <li>How exactly does it work?</li>
+                <li>What exactly do you get?</li>
+                <li>What exactly can you do?</li>
+            </ol>
+            </aside>
+        </section>
+        <section data-background-image="img/pieces_of_the_platform_puzzle.png">
+            <aside class="notes">
+                <p><strong>Nicholas</strong> So, what is PyScript?</p>
+                <ul>
+                    <li>A platform for Python in the
+                    browser.</li>
+                    <li>Sits on top of Python interpreters
+                    compiled to web assembly (e.g. Pyodide, MicroPython
+                    etc).</li>
+                    <li> Different interpreters have
+                    different strengths and weaknesses.</li>
+                    <li>PyScript makes it simple and easy to
+                    create and use frameworks or your own application code on
+                    top of the platform.</li>
+                </ul>
+                <p>That's it!</p>
+            </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;A simple PyScript example&lt;/title&gt;
+  &lt;script defer src="pyscript.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;py-script&gt;print("Hello, world")&lt;/py-script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+          <a href="example1/index.html" target="_blank">View</a>
+          <aside class="notes">
+            <p>Explain geography of this first example.</p>
+          </aside>
+        </section>
+        <section>
+            <p>pyscript.js</p>
+            <pre><code data-trim data-noescape data-line-numbers="1-6|7-11|12-13|14-15|16-18|22-23">
+/*
+Create a new custom tag by inheriting from the
+HTMLElement class.
+*/
+
+class PyScript extends HTMLElement {
+    connectedCallback() {
+        /*
+        Called when the element is first encountered in
+        the DOM.
+        */
+        // Grab the source code.
+        const code = this.textContent;
+        // Instantiate a "Python interpreter". ;-)
+        const re = /"(.*?)"/;
+        // Evaluate and emit to STDOUT ;-)
+        const output = code.match(re)[0].slice(1, -1);
+        this.textContent = output;
+    }
+}
+
+// Register the class for the given element name.
+customElements.define("py-script", PyScript);
+          </code></pre>
+          <h3 class="fragment">😲</h3>
+        </section>
+        <section data-background-color="white">
+            <svg
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="342"
+                    height="342"
+                    id="svg2">
+                <path
+                        d="m 0,0 h 164 v 267 h 14 V 0 H 342 V 342 H 267 V 75 H 253 V 342 H 89 V 75 L 75,75.5 V 342 H 0 Z m 317,278 h -20 v 34 h 20 z"
+                        id="path4"/>
+            </svg>
+            <aside class="notes">
+                <p>Let's add an actual Python interpreter shall we?</p>
+                <p>All told, MicroPython is around a 300k download, and starts
+                    very quickly, even on mobile based browsers.</p>
+                <p>Small and fast.</p>
+            </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="8-16">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;A simple PyScript example&lt;/title&gt;
+  &lt;script defer src="pyscript.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;py-script&gt;
+def hello(name="world!"):
+  """
+  Return a friendly greeting to the named entity.
+  """
+  return f"Hello, {name} (from MicroPython)."
+
+print(hello())
+  &lt;/py-script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+            <a href="example2/index.html" target="_blank">View</a>
+          <aside class="notes">
+            <p>A much more sophisticated Python 
+            program for our simple PyScript to run:</p>
+            <ul>
+              <li>Function definition / function call</li>
+              <li>f-strings</li>
+              <li>Comments</li>
+              <li>Default args etc...</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+            <p>pyscript.js</p>
+            <pre><code data-trim data-noescape data-line-numbers="3-6|7-8|9-18|19-20|25-28|29-39|40-41">
+class PyScript extends HTMLElement {
+    connectedCallback() {
+        // grab the source code.
+        const code = this.textContent;  
+        // Remove the code from the DOM.
+        this.textContent = "";  
+        // JavaScript oh my..! 🤦
+        const self = this;
+        // Handle STDOUT events.
+        document.addEventListener('micropython-print', 
+            function(e) {
+                // Just append event data to the textual
+                // content of this element.
+                const output = self.textContent + e.data;
+                self.textContent = output;
+            }, 
+            false
+        );
+        // Eval the code.
+        mp_js_do_str(code);
+    }
+}
+
+
+// Inject MicroPython compiled to WASM into the page, via
+// a script tag.
+const pyElement = document.createElement("script");
+pyElement.src = "micropython.js";
+pyElement.onload = function(e) {
+    // Start up MicroPython
+    let mp_js_startup = Module['onRuntimeInitialized'];
+    Module["onRuntimeInitialized"] = async function() {
+        mp_js_startup();
+        mp_js_init(1024*1024);
+        // Register the class for the given element name,
+        // only after MicroPython is configured.
+        customElements.define("py-script", PyScript);
+    }
+}
+const head = document.getElementsByTagName('head')[0];
+head.appendChild(pyElement);
+          </code></pre>
+          <h3 class="fragment">😬😲🤔😱</h3>
+          <aside class="notes">
+            <p>Talk through how it works as an
+            we add an actual interpreter to the HtmlElement.</p>
+            <p>But why would you want to do this..?</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Question:</h2>
+          <p>You want to share this Python app with Grandma.</p>
+          <pre style="font-size: 1.4em;"><code>
+ print("Hello, world!")
+          </code></pre>
+          <h3 class="fragment">How?</h3>
+          <h3 class="fragment">😬😲🤔😱</h3>
+        </section>
+        <section data-background-image="img/grandma.jpg">
+            <aside class="notes">
+              <p>Grandma is clearly a proxy for someone non-technical. Let's
+              just consider all the skeletons in Python's cupboard for
+              getting our work to end users.</p>
+              <p>Install Python and then pip install blah... not a good
+              look.</p>
+              <p>Shout out to BeeWare trying to work within the walled gardens
+              of native apps.</p>
+            </aside>
+        </section>
+        <section>
+            <h2>PyScript is...</h2>
+            <h2>...A platform for Python</h2>
+            <h2><u>in the browser</u>.</h2>
+            <aside class="notes">
+              <p>Python runs anywhere there's a browser.</p>
+            </aside>
+        </section>
+        <section data-background-video="img/inthebrowser.webm">
+            <aside class="notes">
+              <ul>
+                <li>On your desktop</li>
+                <li>On your mobile or tablet</li>
+                <li>...and any other appliance with a built-in browser!</li>
+              </ul>
+            </aside>
+        </section>
+        <section>
+          <p>Antonio's PyBunny 🐰</p>
+          <img src="img/bunny_qr.png"/>
+          <p><a href="https://tinyurl.com/h66e32nk" target="_blank">https://tinyurl.com/h66e32nk</a></p>
+            <aside class="notes">
+              <p>But how is Python able to run the the browser? What about the
+              operating system layer..?</p>
+            </aside>
+        </section>
+        <section data-background-image="img/emscripten.png">
+            <aside class="notes">
+              <p>Emscripten allows you to port existing C/C++ code to WASM on
+              a web platform.</p>
+              <p>It's like the libc / POSIX / win32 layer, that abstracts
+              away the browser to provide common concepts like a
+              filesystem.</p>
+              <p>So how do you create an environment in which to run
+              Python?</p>
+            </aside>
+        </section>
+        <section data-background-image="img/packaging.png">
+            <aside class="notes">
+                <p>Packaging with PyScript is mostly like Python:</p>
+                <ul>
+                    <li>your browser tab is like your venv</li>
+                    <li>`micropip` installs from PyPI</li>
+                    <li>It just works!</li>
+                </ul>
+            </aside>
+        </section>
+        <section data-background-image="img/packaging2.jpg">
+            <aside class="notes">
+                <p>Except, packaging with PyScript is
+                mostly like Python:</p>
+                <ul>
+                  <li>packages with C extensions need to be compiled to
+                  WASM.</li>
+                  <li>you have to install all the packages each time you
+                  navigate to a URL.</li>
+                  <li>sometimes, the browser isn't friendly to popular packages
+                  (e.g. requests).</li>
+                </ul>
+                <p>Work is ongoing to solve these puzzles.</p>
+            </aside>
+        </section>
+        <section data-background-color="white">
+          <img src="img/arrr.png"/><br/>
+          <a href="https://arrr.readthedocs.io/en/latest/" target="_blank">arrr.py</a>
+        </section>
+        <section>
+          <p>The Black PERL 🏴‍☠️ 🦜☠️</p>
+          <img src="img/pirate_qr.png"/>
+          <p><a href="https://tinyurl.com/46h66bn9" target="_blank">https://tinyurl.com/46h66bn9</a></p>
+            <aside class="notes">
+              <p>Walk through via PyScript.com</p>
+            </aside>
+        </section>
+        <section>
+          <h2>Runtimes</h2>
+          <ul style="list-style-type: none;">
+            <li class="fragment"><img src="img/pyodide.png" style="vertical-align: middle;"/> Pyodide</li>
+            <li class="fragment"><img src="img/micropython.png" style="vertical-align: middle;"/> MicroPython</li>
+            <li class="fragment"><img src="img/lua.png" style="vertical-align: middle;"/> Lua</li>
+            <li class="fragment"><img src="img/ruby.png" style="vertical-align: middle;"/> Ruby</li>
+            <li class="fragment">???</li>
+          </ul>
+            <aside class="notes">
+              <p>And what version of Python do you get?</p>
+              <p>Actually, at the heart of PyScript is a kernel called
+              "polyscript" - led by the amazing work of my colleague
+              Andrea Giammarchi.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/dom.jpg">
+            <aside class="notes">
+              <p>But how does Python
+              interact with the DOM - the page in the browser?</p>
+            </aside>
+        </section>
+        <section>
+          <pre style="font-size: 1.4em;"><code>
+import js  # globalThis
+          </code></pre>
+        </section>
+        <section>
+          <pre style="font-size: 0.7em;">
+&lt;button id="click-me"&gt;Click me! 🐭&lt;/button&gt;
+          </pre>
+        </section>
+        <section>
+          <pre><code>from js import document
+
+
+def handler(e):
+    """
+    It's just Python! Access the DOM!
+    """
+    output = document.createElement("span")
+    output.innerHTML = "🖱️"
+    document.body.appendChild(output)
+
+
+button = document.querySelector("button#click-me")
+button.addEventListener("click", handler)</code></pre>
+        </section>
+        <section>
+          <p>Clicky Mouse-o-Matic 🐁</p>
+          <img src="img/mouse_qr.png"/>
+          <p><a href="https://tinyurl.com/yc4hjz33" target="_blank">https://tinyurl.com/yc4hjz33</a></p>
+            <aside class="notes">
+              <p>Given we have access to JavaScript's globalThis, we have
+              full access to the browser's APIs.</p>
+            </aside>
+        </section>
+        <section>
+          <pre style="font-size: 0.7em;">
+&lt;p&gt;&lt;button micropython-click="camera_click"&gt;
+  Start Camera 🎥
+&lt;/button&gt;&lt;/p&gt;
+&lt;video id="video" width="600" height="400" autoplay /&gt;
+          </pre>
+        </section>
+        <section>
+          <pre><code>import js
+
+
+async def camera_click(e):
+    media = js.Object.new()
+    media.audio = False
+    media.video = True
+    stream = await js.navigator.mediaDevices.getUserMedia(
+        media
+    )
+    video = js.document.querySelector("#video")
+    video.srcObject = stream</code></pre>
+        </section>
+        <section>
+          <p>Lights 💡 Cameras 🎥 Action 😄</p>
+          <img src="img/camera_qr.png"/>
+          <p><a href="https://tinyurl.com/4dtpmrcw" target="_blank">https://tinyurl.com/4dtpmrcw</a></p>
+            <aside class="notes">
+              <p>This example is based upon some work by a buddy of mine,
+              Professor Chris Rogers of Tufts University.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/tufts.jpg">
+            <aside class="notes">
+              <p>Explain CEEO</p>
+            </aside>
+        </section>
+        <section>
+          <h2>Egg roller video placeholder</h2>
+        </section>
+
+
+
+
+
+        <section>
+          <p>Egg roller (needs Lego) 🥚</p>
+          <p>PLACEHOLDER</p>
+          <img src="img/camera_qr.png"/>
+          <p><a href="https://tinyurl.com/4dtpmrcw" target="_blank">https://tinyurl.com/4dtpmrcw</a></p>
+            <aside class="notes">
+              <p>Such egg rolling recently went on at the White House.</p>
+              <p>BUT! There's more..!</p>
+            </aside>
+        </section>
+
+
+
+
+        <section data-background-color="white" data-transition="none fast">
+          <img src="img/beachball.gif"/>
+            <aside class="notes">
+            <p>Ever seen this on a web page?</p>
+            <p>We're blocking the UI because browsers usually use a single
+            "MAIN" thread for all JavaScript on a web page.</p>
+            <p>It's the same with PyScript.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/workers.jpg">
+            <aside class="notes">
+              <p>Fortunately there's a solution.</p>
+              <ul>
+                <li>Web Workers: similar to a separate process running on the
+                same web page.</li>
+                <li>PyScript's next version has support for web workers.</li>
+                <li>It even has a simple API for working with the DOM from
+                the web-worker.</li>
+                <li>How do they work?</li>
+              </ul>
+            </aside>
+        </section>
+        <section data-background-color="white">
+          <video data-autoplay src="img/workers.webm"></video>
+            <aside class="notes">
+            <p>https://chat-animator.com/</p>
+            <ul>
+              <li>There's a Xworker proxy between the MAIN thread and the
+              WORKER.</li>
+              <li>Transparent message passing done in a way that will
+              pause the worker (allowing synchronous Python code) while
+              the MAIN thread remains unblocked.</li>
+              <li>Achieved via a web standard for sharing memory between
+              workers and the main thread, called Atomics.</li>
+            </ul>
+            <p>What does that look like in Python?</p>
+            </aside>
+        </section>
+        <section>
+          <p>Main thread</p>
+          <pre><code>from xworker import XWorker
+
+for i in range(12):
+    sync = XWorker(
+      "pompom.py", config="turtle.toml", type="micropython"
+    )</code></pre>
+        </section>
+        <section>
+          <p>Worker code (1)</p>
+          <pre><code>turtle.speed(8)
+turtle.pensize(12)
+
+for i in range(100):
+    turtle.penup()
+    turtle.setpos(0, 0)
+    turtle.left(random.randint(1, 360))
+    turtle.pendown()
+    turtle.color(random.choice(colours))
+    turtle.forward(random.randint(20, 90))</code></pre>
+        </section>
+        <section>
+          <p>Worker code (2)</p>
+          <pre><code>turtle.Screen().show_scene()
+result = turtle.svg()
+
+from xworker import xworker
+
+document = xworker.window.document
+container = document.createElement("span")
+document.body.appendChild(container)
+container.innerHTML = result</code></pre>
+        </section>
+        <section data-background-video="img/pompom.webm">
+            <aside class="notes">
+              <ul>
+                <li>On your desktop</li>
+                <li>On your mobile or tablet</li>
+                <li>...and any other applience with a built-in browser!</li>
+              </ul>
+            </aside>
+        </section>
+        <section>
+          <p>Turtles on workers 🐢🐢🐢</p>
+          <img src="img/turtles_qr.png"/>
+          <p><a href="https://tinyurl.com/5n8zjj9p" target="_blank">https://tinyurl.com/5n8zjj9p</a></p>
+            <aside class="notes">
+              <p>It's very early days and we're only just scratching the
+              surface of PyScript's potential, both for the Python world and
+              the world of the browser.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/potential.png">
+            <aside class="notes">
+              <p>PyScript is what you get if the web and Python had a baby.
+              But now it needs nurturing.</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Final thoughts</h2>
+            <ul>
+                <li class="fragment">PyScript is a <em>platform</em>.</li>
+                <li class="fragment">Write code and frameworks on PyScript.</li>
+                <li class="fragment">It's open source... come play!</li>
+                <li class="fragment">For the 99% (not just coders).</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+        </section>
+        <section data-background-image="img/pyscript_team.jpg">
+            <aside class="notes">
+              <p>These are some of the PyScript maintainers at a code sprint
+              earlier this year.</p>
+              <p>Come join us!</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Questions..?</h2>
+            <p>TL;DR:</p>
+            <p>👉<a href="https://pyscript.com/">pyscript.com</a>👈 - IDE 💻</p>
+            <p><a href="https://pyscript.net/">pyscript.net</a> - docs 📖</p>
+            <p><a href="https://discord.gg/HxvBtukrg2">discord.gg/HxvBtukrg2</a> - chat 💬</p>
+            <p><a href="https://ntoll.org/presentations/">ntoll.org/presentations/</a> - slides 🖥️</p>
+        </section>
+
+        <section>
+          <h2>Image credits</h2>
+
+          <p>Photo by <a href="https://unsplash.com/es/@dulceylima?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dulcey Lima</a> on <a href="https://unsplash.com/photos/ydU-eneGPbw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+    <p>Photo by <a href="https://unsplash.com/pt-br/@beccatapert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Becca Tapert</a> on <a href="https://unsplash.com/photos/QofjUnxy9LY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+    <p>Photo by <a href="https://unsplash.com/fr/@christianw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian Wiediger</a> on <a href="https://unsplash.com/photos/zhZydTyNMPg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+    <p>Photo by <a href="https://unsplash.com/@valerysysoev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valery Sysoev</a> on <a href="https://unsplash.com/photos/p9OkL4yW3C8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+  <p>Photo by <a href="https://unsplash.com/de/@cadop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathew Schwartz</a> on <a href="https://unsplash.com/s/photos/competition?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+    <p>Photo by <a href="https://unsplash.com/@melodi2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lia Trevarthen</a> on <a href="https://unsplash.com/s/photos/storage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+  <p>Photo by <a href="https://unsplash.com/@cloudveilczjx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric Wang</a> on <a href="https://unsplash.com/photos/umD2Bj4FmMU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+        </section>
+    </div>
+</div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="customtags.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+</script>
+</body>
+</html>
