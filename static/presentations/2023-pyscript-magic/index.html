@@ -28,10 +28,10 @@
               <ul>
                 <li>Fabio Pliger.</li>
                 <li>My friend and colleague at Anaconda.</li>
-                <li>Creator if PyScript.</li>
+                <li>Creator of PyScript.</li>
                 <li>Former EuroPython chair, and EuroPython fellow.</li>
-                <li>Smoking hot and photogenic</li>
-                <li>Not here.</li>
+                <li>Smoking hot and photogenic in a Zoolander sort of a way.</li>
+                <li>Not here. Hence me instead.</li>
               </ul>
             </aside>
         </section>
@@ -53,6 +53,7 @@
         <section data-background-image="img/pyscript_party.jpg">
             <aside class="notes">
             <p>Explain bunnies and Anaconda's relationship to PyScript.</p>
+            <p>What we'll cover about PyScript:</p>
             <ol>
                 <li>How exactly does it work?</li>
                 <li>What exactly do you get?</li>
@@ -62,7 +63,7 @@
         </section>
         <section data-background-image="img/pieces_of_the_platform_puzzle.png">
             <aside class="notes">
-                <p><strong>Nicholas</strong> So, what is PyScript?</p>
+                <p>So, what is PyScript?</p>
                 <ul>
                     <li>A platform for Python in the
                     browser.</li>
@@ -139,9 +140,10 @@ customElements.define("py-script", PyScript);
             </svg>
             <aside class="notes">
                 <p>Let's add an actual Python interpreter shall we?</p>
-                <p>All told, MicroPython is around a 300k download, and starts
+                <p>All told, MicroPython is around a 170k download, and starts
                     very quickly, even on mobile based browsers.</p>
                 <p>Small and fast.</p>
+                <p>Smaller than most images you find on the web.</p>
             </aside>
         </section>
         <section>
@@ -271,7 +273,7 @@ head.appendChild(pyElement);
           <img src="img/bunny_qr.png"/>
           <p><a href="https://tinyurl.com/h66e32nk" target="_blank">https://tinyurl.com/h66e32nk</a></p>
             <aside class="notes">
-              <p>But how is Python able to run the the browser? What about the
+              <p>But how is Python able to run in the browser? What about the
               operating system layer..?</p>
             </aside>
         </section>
@@ -314,6 +316,10 @@ head.appendChild(pyElement);
         <section data-background-color="white">
           <img src="img/arrr.png"/><br/>
           <a href="https://arrr.readthedocs.io/en/latest/" target="_blank">arrr.py</a>
+            <aside class="notes">
+              <p>Let's explore how we might go about using the Arrr package
+              that's published on PyPI.</p>
+            </aside>
         </section>
         <section>
           <p>The Black PERL 🏴‍☠️ 🦜☠️</p>
@@ -354,6 +360,9 @@ import js  # globalThis
           <pre style="font-size: 0.7em;">
 &lt;button id="click-me"&gt;Click me! 🐭&lt;/button&gt;
           </pre>
+            <aside class="notes">
+              <p>Consider this very simple example...</p>
+            </aside>
         </section>
         <section>
           <pre><code>from js import document
@@ -414,30 +423,28 @@ async def camera_click(e):
         <section data-background-image="img/tufts.jpg">
             <aside class="notes">
               <p>Explain CEEO</p>
+              <p>They're very interested in using IoT.</p>
             </aside>
         </section>
-        <section>
-          <h2>Egg roller video placeholder</h2>
+        <section data-background-video="img/egg_roller.webm">
+            <aside class="notes">
+            <p>This is PyScript interacting with a Lego Spike Prime device
+            that is itself running MicroPython.</p>
+            <p>The PyScript app uses the browser's USB serial API to connect
+            to MicroPython running on the Lego device.</p>
+            <p>The device itself, is an Easter Egg roller, for decorating
+            eggs.</p>
+            </aside>
         </section>
-
-
-
-
-
         <section>
           <p>Egg roller (needs Lego) 🥚</p>
-          <p>PLACEHOLDER</p>
-          <img src="img/camera_qr.png"/>
-          <p><a href="https://tinyurl.com/4dtpmrcw" target="_blank">https://tinyurl.com/4dtpmrcw</a></p>
+          <img src="img/egg_qr.png"/>
+          <p><a href="https://tinyurl.com/4cc4bd2x" target="_blank">https://tinyurl.com/4cc4bd2x</a></p>
             <aside class="notes">
-              <p>Such egg rolling recently went on at the White House.</p>
-              <p>BUT! There's more..!</p>
+              <p>Tufts' Prof.Ethan recently demoed this at the White House.</p>
+              <p>Talking of things that spin! There's more..!</p>
             </aside>
         </section>
-
-
-
-
         <section data-background-color="white" data-transition="none fast">
           <img src="img/beachball.gif"/>
             <aside class="notes">
@@ -445,6 +452,7 @@ async def camera_click(e):
             <p>We're blocking the UI because browsers usually use a single
             "MAIN" thread for all JavaScript on a web page.</p>
             <p>It's the same with PyScript.</p>
+            <p>Please don't block the main thread!</p>
             </aside>
         </section>
         <section data-background-image="img/workers.jpg">
@@ -512,11 +520,9 @@ container.innerHTML = result</code></pre>
         </section>
         <section data-background-video="img/pompom.webm">
             <aside class="notes">
-              <ul>
-                <li>On your desktop</li>
-                <li>On your mobile or tablet</li>
-                <li>...and any other applience with a built-in browser!</li>
-              </ul>
+              <p>This is a video of the code we just examined.</p>
+              <p>I don't want my laptop to melt.</p>
+              <p>You get the idea...</p>
             </aside>
         </section>
         <section>
@@ -531,7 +537,7 @@ container.innerHTML = result</code></pre>
         </section>
         <section data-background-image="img/potential.png">
             <aside class="notes">
-              <p>PyScript is what you get if the web and Python had a baby.
+              <p>PyScript is what you get if the Web and Python had a baby.
               But now it needs nurturing.</p>
             </aside>
         </section>
@@ -539,6 +545,7 @@ container.innerHTML = result</code></pre>
             <h2>Final thoughts</h2>
             <ul>
                 <li class="fragment">PyScript is a <em>platform</em>.</li>
+                <li class="fragment">It runs everywhere a browser runs.<li>
                 <li class="fragment">Write code and frameworks on PyScript.</li>
                 <li class="fragment">It's open source... come play!</li>
                 <li class="fragment">For the 99% (not just coders).</li>
