@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2023-07-12T15:08:00Z</lastmod>
+  <lastmod>2023-07-25T15:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -232,6 +232,10 @@
  <url>
   <loc>https://ntoll.org/article/databases-concise-and-simple/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/debugging/</loc>
+  <lastmod>2023-07-25T15:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/django-microformats/</loc>
@@ -707,7 +711,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-26.html</loc>
-  <lastmod>2023-07-12T15:08:00Z</lastmod>
+  <lastmod>2023-07-25T15:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -903,7 +907,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/2023-pyscript-magic/</loc>
-  <lastmod>2023-07-14T14:58:00Z</lastmod>
+  <lastmod>2023-07-14T16:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/2023-pyscript-magic/example1/</loc>
@@ -911,7 +915,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/2023-pyscript-magic/example2/</loc>
-  <lastmod>2023-07-12T16:19:00Z</lastmod>
+  <lastmod>2023-07-14T16:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/agile/</loc>

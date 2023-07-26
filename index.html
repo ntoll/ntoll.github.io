@@ -32,7 +32,7 @@
 <!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Nicholas H.Tollervey">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <link rel="stylesheet" href="static/css/leaflet.css">
-<script src="static/js/leaflet.js"></script><script src="static/js/gpx.min.js"></script><link rel="prefetch" href="article/talk-not-accepted/" type="text/html">
+<script src="static/js/leaflet.js"></script><script src="static/js/gpx.min.js"></script><link rel="prefetch" href="article/debugging/" type="text/html">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -60,7 +60,113 @@
     
     
     </ul></nav></header><main id="content"><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/talk-not-accepted/" class="u-url">Rejection and Renewal</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/debugging/" class="u-url">On Debugging</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Nicholas H.Tollervey
+            </span></p>
+            <p class="dateline">
+            <a href="article/debugging/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-07-26T12:15:00+01:00" itemprop="datePublished" title="Wed, Jul 26, 2023 12:15 PM">Wed, Jul 26, 2023 12:15 PM</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>One of the stand-out collaborations of my career has been with my buddy
+<a href="https://dpgeorge.net/">Damien George</a>. He's the creator of
+<a href="https://micropython.org/">MicroPython</a> ~ a lean and efficient implementation
+of the Python programming language optimised to run in constrained
+environments. When Damien created MicroPython I think he imagined "constrained
+environments" to mean microcontrollers - the small single chip computers
+beloved of embedded systems engineers, Internet of Things enthusiasts and the
+Maker community.</p>
+<p>Little did he realise that MicroPython was an amazing fit for another computing
+context: the browser.</p>
+<p><img alt="MicroPython" src="images/MicroPython_Logo.jpg"></p>
+<p>The browser is an interesting space in which to work because of its unique
+combinations of constraints.</p>
+<p>Firstly, everything needed to view a web page needs to be delivered over the
+network. So, the smaller the asset to be delivered can be, the better.
+MicroPython, when compressed for delivery to the browser is only around 170k in
+size - smaller than most images you find on most websites.</p>
+<p>Secondly, the browser is perhaps the world's most battle tested sand boxed
+computing environment. By this I mean that web browsers encounter all sorts of
+interesting, nefarious, ill-performing, badly written and otherwise shonky
+code. Such code should be constrained into a virtual sandbox, so it can't do
+any damage to the user's wider system. Because of the recent development of
+<a href="https://bytecodealliance.org/">web assembly</a> (shortened to WASM ~ a sort of
+virtual microprocessor working in the browser), code written in C can be
+compiled to run in the browser. MicroPython is written in C and Damien has
+created <a href="https://github.com/micropython/micropython/tree/master/ports/webassembly">a port for web assembly</a>.</p>
+<p>Third and finally, the browser makes available to the developer of websites a
+JavaScript object called <code>globalThis</code>, through which all the other objects,
+functions and data structures needed to
+<a href="https://developer.mozilla.org/en-US/docs/Web/API">access the capabilities of the browser</a>
+are made available. By constraining developers to a single means of interacting
+with the browser, there is only one way to go about making things happen.
+MicroPython compiled to WASM has access to the full capabilities of the
+sandboxed browser thanks to some of Damien's recent work on a foreign function
+interface (FFI) that interacts with the JavaScript based APIs and capabilities
+defined by <code>globalThis</code>.</p>
+<p>Given this context, what does MicroPython allow you to do?</p>
+<p>From within MicroPython running in the browser, one simply imports the <code>js</code>
+module (short for JavaScript). It's an object in MicroPython that acts as a
+proxy for <code>globalThis</code> in the browser. It makes interacting with the browser
+from MicroPython an absolute joy. It's worth pointing out that Damien's work is
+based upon the <code>js</code> work done as part of the
+<a href="https://pyodide.org/en/stable/">Pyodide project</a> (a version of the CPython
+interpreter for the browser), so no matter the version of Python you use in the
+browser, you access the browser's capabilities in exactly the same way.</p>
+<p>But recently, there was a problem.</p>
+<p>I was due to give a talk about <a href="https://pyscript.com/">PyScript</a> (a platform
+for taking MicroPython and Pyodide and making them easy to use in the browser)
+at <a href="https://europython.eu/">EuroPython</a> and I was putting together code
+examples of ever increasing complexity to present as part of my talk. But I
+kept hitting strange errors when using MicroPython. My colleague and
+web-guru <a href="https://webreflection.medium.com/">Andrea</a> managed to isolate the
+problem but had been unable to work out why it was happening. Put simply,
+somewhere in MicroPython's FFI, at that point where JavaScript and MicroPython
+were interacting, unwanted JavaScript objects were unexpectedly leaking into
+the MicroPython world thus causing things to crash. Think of it as a JavaScript
+shaped spanner in the MicroPython works.</p>
+<p>This wasn't a good situation to find oneself in, a few days before presenting
+at one of the Python world's largest and most prestigious conferences.</p>
+<p>Damien and I decided to debug the problem, and we recorded ourselves doing so
+because Andrea wasn't available at the time of our call. We figured that if he
+could watch our debugging session, he might spot something we hadn't and
+suggest a fix.</p>
+<p>In any case, what followed was a lot of fun, and the video of the debugging
+session is embedded below.</p>
+<p>There are some things you need to know before you watch the video:</p>
+<ul>
+<li>Both Damien and I know JavaScript to a sufficient level to be
+  "dangerous". We can get stuff done, but we're not guru level like Andrea.</li>
+<li>Damien is an expert in C (the language used to implement MicroPython) and
+  clearly knows his way around the MicroPython codebase including the FFI that
+  kept crashing. I am familiar enough with C to be able to read it, but not
+  very experienced at writing it, and I certainly don't know anything about the
+  MicroPython internals, including the FFI.</li>
+<li>We were using a collaboration technique called pair programming: where one
+  developer (Damien) is the "pilot" with the other developer (me) acting as
+  "co-pilot". As you'll see in the video, Damien was sharing his screen so I
+  could see what he was looking at and he'd often describe things, processes or
+  problems to me, only for me to confirm them, explain them back or ask
+  questions as a way to help maintain focus. As the one most ignorant of the
+  language and code-base, I was in a good position to play the beginner to
+  Damien's expert, and ask for clarifications.</li>
+<li>Our debugging involved taking very careful steps to investigate and change
+  the code so the problem was (happily) eventually revealed, tested and fixed.
+  As the Chinese proverb explains: when crossing a river, it's best to do so
+  slowly and by feeling with one's toes.</li>
+<li>Both of us were having a lot of fun in different ways. Damien was clearly
+  fascinated by delving into the problem. I was enjoying Damien's virtuosic
+  debugging performance, and found out some fun stuff as we went along.</li>
+</ul>
+<p>So grab your popcorn, and enjoy the show:</p>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uqBgSMB9dRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/talk-not-accepted/" class="u-url">Rejection and Renewal</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Nicholas H.Tollervey
@@ -628,90 +734,6 @@ our world is enlarged by observing their interactions.</p>
   the world of the author? How was your world enlarged?</li>
 </ul>
 </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="article/europython-2022/" class="u-url">EuroPython 2022</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Nicholas H.Tollervey
-            </span></p>
-            <p class="dateline">
-            <a href="article/europython-2022/" rel="bookmark">
-            <time class="published dt-published" datetime="2022-07-22T14:20:00+01:00" itemprop="datePublished" title="Fri, Jul 22, 2022 2:20 PM">Fri, Jul 22, 2022 2:20 PM</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p>I had a wonderful time at <a href="https://ep2022.europython.eu/">EuroPython</a>, last
-week, in Dublin.</p>
-<p>The most important aspect of the conference, for me personally, involved giving
-my talk entitled "Music and Code". It was an opportunity for me to reveal and
-explore how I feel about programming, teaching and learning and the place of
-tech in our wider culture. I've wanted to give a talk like this for over ten
-years, but only recently have I figured out how to express what I wanted to say
-through music as a metaphor.</p>
-<div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4McW0mrONLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<p>Another important aspect of the conference was friendship and it was a huge
-pleasure to be a small part of the organising team.</p>
-<p>I especially
-want to highlight collaborating with <a href="https://blog.europython.eu/humans-of-europython-vicky/">Vicky</a>
-(a remarkable friend who embodies so many of the wonderful aspects of our
-Python community: a pro-active "can do" attitude, an inclusive and
-compassionate outlook towards others, and a formidable determination to
-thoughtfully do "the right thing" for the benefit of the whole community). The
-two of us flapped and faffed to fulfil a
-<a href="https://en.wikipedia.org/wiki/Maker_culture">Maker</a> space within EuroPython.
-Given the amount of positive engagement from attendees, I hope this becomes a
-regular feature of the conference. A case in point being the DIY robots
-competing to solve a maze in the fastest time, organised by the energetic and
-enthusiastic folks at the <a href="http://niraspberryjam.com/">Northern Ireland Jam</a>:</p>
-<div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TGb4g-E70Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<p>I also want to mention <a href="https://www.linkedin.com/in/boyang-dou/">Raquel</a>, who
-chaired this year's EuroPython. Her clear leadership, <em>from the front</em>, her
-apparently infinite energy, <em>displayed through her considerable efforts</em>, and
-her humane connection with folks, <em>embodied by her patience, friendliness and
-compassion</em> are generous gifts she has shared with us all. I sincerely hope
-she's taking some post-conference time off, and I want to thank her for
-reaching out to me, all those months ago, to become a part of organising
-EuroPython. And I have to say all my fellow organisers were an absolute joy to
-work with. Their collective courtesy, hard work, enthusiasm and friendliness is
-a very rare and special thing that I hope we can sustain, nourish and
-cultivate.</p>
-<p>One other group of friends deserves a mention - my fellow maintainers of
-<a href="https://codewith.mu/">the Mu code editor</a>. It was a huge amount of fun for us
-to be together in the same place for the first time ever. I was especially
-delighted to meet <a href="https://github.com/xbecas">Vasco</a>, face to face, for the
-first time.</p>
-<p>The final part of EuroPython were two days of "code sprints", where open-source
-collaborators work together on their projects, meet to discuss technical and
-other aspects of our collective work, and welcome new collaborators and friends
-to our efforts. We, the maintainers of Mu, had a wonderful time focusing on
-Mu related things, and collaborating with new contributors who have made
-welcome enhancements to Mu.</p>
-<p>Here's a picture of all the Mu maintainers at EuroPython:</p>
-<figure><img src="images/mu_maintainers.jpg" alt="The five core Mu maintainers" title="The five core Mu maintainers"><figcaption>The five core Mu maintainers:
-<a href="https://github.com/tjguk">Tim</a>,
-<a href="https://github.com/tmontes">Tiago</a>,
-<a href="https://github.com/carlosperate">Carlos</a>,
-myself and
-<a href="https://github.com/xbecas">Vasco</a>.</figcaption></figure><p>Of course, I heard many wonderful talks, enjoyed the conversations with many
-friends old and new in the famous corridor track and took part in some really
-stimulating workshops (with my amazing daughter, who was attending her first
-PyCon as a proper attendee with an interest in data science - she especially
-enjoyed both
-<a href="https://djangogirls.org/en/dublin/">Django Girls</a> and
-<a href="https://ep2022.europython.eu/humble-data">Humble Data</a>).</p>
-<p>I love EuroPython's culturally cosmopolitan feeling, something that's hard to
-recreate at a national PyCon. I love how folks keep coming back to EuroPython,
-there are people who mean a lot to me, who I only ever see at this conference.
-I also love EuroPython's peripatetic nature, as a community we are welcomed to
-all sorts of fun places and have an opportunity to soak up the vibe of
-different countries and cultures.</p>
-<p>Long may it last, and I hope to see you at next year's EuroPython.</p>
-    </div>
     </article>
 </div>
 
