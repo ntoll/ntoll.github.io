@@ -39,8 +39,9 @@ code. Such code should be constrained into a virtual sandbox, so it can't do
 any damage to the user's wider system. Because of the recent development of
 [web assembly](https://bytecodealliance.org/) (shortened to WASM ~ a sort of
 virtual microprocessor working in the browser), code written in C can be
-compiled to run in the browser. MicroPython is written in C and Damien has
-created [a port for web assembly](https://github.com/micropython/micropython/tree/master/ports/webassembly).
+compiled to run in the browser. MicroPython is written in C and Damien and his
+collaborators have worked together to create
+[a port for web assembly](https://github.com/micropython/micropython/tree/master/ports/webassembly).
 
 Third and finally, the browser makes available to the developer of websites a
 JavaScript object called `globalThis`, through which all the other objects,
