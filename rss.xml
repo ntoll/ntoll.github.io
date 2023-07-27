@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 26 Jul 2023 11:21:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Debugging</title><link>https://ntoll.org/article/debugging/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;One of the stand-out collaborations of my career has been with my buddy
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Thu, 27 Jul 2023 10:11:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Debugging</title><link>https://ntoll.org/article/debugging/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;One of the stand-out collaborations of my career has been with my buddy
 &lt;a href="https://dpgeorge.net/"&gt;Damien George&lt;/a&gt;. He's the creator of
 &lt;a href="https://micropython.org/"&gt;MicroPython&lt;/a&gt; ~ a lean and efficient implementation
 of the Python programming language optimised to run in constrained
@@ -27,8 +27,9 @@ code. Such code should be constrained into a virtual sandbox, so it can't do
 any damage to the user's wider system. Because of the recent development of
 &lt;a href="https://bytecodealliance.org/"&gt;web assembly&lt;/a&gt; (shortened to WASM ~ a sort of
 virtual microprocessor working in the browser), code written in C can be
-compiled to run in the browser. MicroPython is written in C and Damien has
-created &lt;a href="https://github.com/micropython/micropython/tree/master/ports/webassembly"&gt;a port for web assembly&lt;/a&gt;.&lt;/p&gt;
+compiled to run in the browser. MicroPython is written in C and Damien and his
+collaborators have worked together to create
+&lt;a href="https://github.com/micropython/micropython/tree/master/ports/webassembly"&gt;a port for web assembly&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Third and finally, the browser makes available to the developer of websites a
 JavaScript object called &lt;code&gt;globalThis&lt;/code&gt;, through which all the other objects,
 functions and data structures needed to
