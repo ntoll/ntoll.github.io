@@ -1,0 +1,757 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Creating a Coding Culture - PyCon MEA (Dubai) 2023</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Creating a Coding Culture</h1>
+          <p>Nicholas H.Tollervey</p>
+          <p><small>ntoll@ntoll.org</small></p>
+          <aside class="notes">
+            <p>Thank organisers.</p>
+            <ul>
+              <li>I'm Nicholas. I'm a principal engineer at Anaconda, working
+              in the PyScript team.</li>
+              <li>A personal talk. Nothing to do with my day job.</li>
+              <li>I want to pay attention to teaching, learning and
+              the place of software within our culture.</li>
+              <li>Or perhaps I mean the place of culture within our
+              software?</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+                    <aside class="notes">
+                    <p>Who am I? I'm mostly a musician - in this talk, music
+                    will be a stimulating foil and contrast with the world of
+                    software.</p>
+                    <p>Proving metaphor is a powerful yet not data driven way
+                    to learn interesting things about our world.</p>
+                    </aside>
+        </section>
+
+        <section data-background-image="img/teacher_me.jpg">
+                    <aside class="notes">
+                    <p>At 23 a head of department. MA in philosophy of
+                    education.</p>
+                    </aside>
+        </section>
+
+        <section data-background-image="img/ntoll_europython.jpg">
+                    <aside class="notes">
+                    <p>MSc in Computing - dissertation about Neural Networks
+                    and genetic algorithms.</p>
+                    <p>Still a very active teacher.</p>
+                    </aside>
+        </section>
+        <section data-background-image="img/dubai1995.jpeg">
+                    <aside class="notes">
+                      <p>Last time in Dubai = music tour.</p>
+                    </aside>
+        </section>
+
+        <section>
+          <h1>Part 1.<br/>The Narrative</h1>
+          <aside class="notes">
+            <ul>
+              <li>We all know the story around computing...</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/ai.png">
+          <aside class="notes">
+            <ul>
+              <li>The future is full of utopian potential to be
+              "unleashed"...</li>
+              <li>This is a view of AI from 1979 - the year of the first
+              GITEX.</li>
+              <li>The year 2000 felt far into the future...</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/gitex2000.png">
+          <aside class="notes">
+            <ul>
+              <li>Actually, this is what the (GITEX) world looked like in
+              2000.</li>
+              <li>A classic website of its time.</li>
+              <li>Sun was huge. No longer exists. What on earth is a
+              SunRay?</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/gitex2023.png">
+          <aside class="notes">
+            <ul>
+              <li>This is GITEX today.</li>
+              <li>How the web has changed!</li>
+              <li>How the future is still full of utopian potential to be
+              "unleashed"...</li>
+              <li>That still has robots, just like in 1979!</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>2040-<span style="text-transform:lowercase;">ish?</h1>
+          <aside class="notes">
+            <ul>
+              <li>Question: what will GITEX look like in the 2040s?</li>
+              <li>Will the future still be a utopian dream?</li>
+              <li>Perhaps this says more about human beings and optimism, than
+              the actual future or current state of technology?</li>
+            </ul>
+          </aside>
+        </section>
+
+
+        <section>
+          <q>
+          Change is the only constant.
+          </q><br/>
+          ~ Heraclitus<br/>
+          <br/>
+          <q>
+          It is difficult to predict (especially the future).
+          </q><br/>
+          ~ Niels Bohr
+          <aside class="notes">
+            <ul>
+              <li>Here's the only accurate slide in the presentation: and all
+              we can say for certain.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-background-image="img/eating_the_world.png">
+          <aside class="notes">
+            <ul>
+              <li>Although I suspect Marc Andreeson will still be right.</li>
+            </ul>
+          </aside>
+
+        </section>
+        <section>
+          <img src="img/program_or_be_programmed.jpg" style="float: left; margin-right: 48px;"/>
+          <br/><br/><br>
+          <q>The real question is, do we direct technology, or do we
+
+          let ourselves be directed by it and those who have mastered
+          it?</q>
+          <p>~ <a href="https://rushkoff.com/books/program-or-be-programmed/">Doug Rushkoff</a></p>
+          <aside class="notes">
+            <ul>
+              <li>Doug's point is that ignorance of technology disempowers
+              you in today's world.</li>
+              <li>If you can code, you have autonomy to make the digital world
+              as you see fit.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section style="text-align: left;">
+          <p>Asking <em>what sort of education we want</em> is the same as
+          asking
+          <em>what sort of society we want to become</em>.</p>
+          <p class="fragment">For education is the process through which we interact with our
+          <em>future colleagues, collaborators and customers</em>.</p>
+          <p style="text-align: right;" class="fragment">~ Nicholas Tollervey ;-)</p>
+          <aside class="notes">
+            <ul>
+              <li>This is why education is SO important.</li>
+              <li>So what are we doing RIGHT NOW, about technical
+              education?</li>
+            </ul>
+          </aside>
+        </section>
+
+
+        <section>
+          <h1>Part 2.<br/>Learn Code</h1>
+          <aside class="notes">
+            <ul>
+              <li>This is the stock answer for technical education.</li>
+              <li>What exactly does that look like?</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-background-video="video/microbit_gitex.webm"
+          data-background-video-loop>
+          <aside class="notes">
+              <ul>
+                  <li>A lot of work has gone into making hardware available.</li>
+                  <li>BBC recapturing the gloy days of the 1980s.</li>
+                  <li>But what do you do with it?</li>
+                  <li>Nobody asked teachers what they wanted! (I
+                  should know, I helped make this.</li>
+                  <li>A lot of work has also gone into software.</li>
+              </ul>
+          </aside>
+        </section>
+
+        <section data-background-video="video/code_evolution.webm">
+          <aside class="notes">
+              <ul>
+                <li>Meeting folks where they are.</li>
+                <li>Scratch - first steps in coding.</li>
+                <li>EduBlocks - a bridge from blocks to text.</li>
+                <li>Mu - a beginner focused code editor.</li>
+              </ul>
+          </aside>
+        </section>
+
+        <section>
+          <p>School exams 🇬🇧 😬</p>
+          <img src="img/GCSE_exam2.png"/>
+          <aside class="notes">
+              <ul>
+                <li>State education has an opinion. But this is a joke.</li>
+                <li>As a result of this horrific situation, the community has
+                stepped up.</li>
+              </ul>
+          </aside>
+        </section>
+
+        <section data-background-video="video/dg.webm"
+          data-background-video-loop>
+          <aside class="notes">
+              <ul>
+                <li>Events like Django Girls, TransCode, The London Python
+                Code Dojo, and others, provide safe spaces for beginner
+                coders.</li>
+                <li>Of course there are online courses, endless YouTube
+                tutorials, and that old classic: books...</li>
+              </ul>
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/python24h.jpg" alt="Learn Python in 24 hours"/>
+          <aside class="notes">
+            <ul>
+              <li>Some promise remarkably time efficient progress.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/python_oreilly.jpg">
+          <aside class="notes">
+            <ul>
+              <li>While others claim to be comprehensive.</li>
+              <li>They also double up as door stops too.</li>
+              <li>Jeff Gilflet uses my books to keep his monitor at the
+              right height.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/cw-london-6.webp" data-background-opacity=0.3>
+          <h1>Join our coding
+bootcamp in London</h1>
+          <h3>(£6000 for 3 months)</h3>
+          <aside class="notes">
+            <ul>
+              <li>Finally, there are so called boot-camps that promise to turn
+              a normal human being into a programmer in just 3 months with the
+              aid of several thousand pounds.</li>
+              <li>The efficacy of these is (rightly) disputed.</li>
+              <li>Investigative journalists found, in 2021, widespread
+              fraudulent claims of success rates.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-background-image="img/dawn.jpg">
+          <aside class="notes">
+            <p>What do education folks think of this..?</p>
+            <p>Introduce Dawn. Too many "solutions". Where's the progress..?</p>
+          </aside>
+        </section>
+
+        <section>
+          <h1>Part 3.<br/>Progress is a Journey</h1>
+          <aside class="notes">
+            <ul>
+              <li>Fundamental question: how do we cultivate the skills,
+              knowledge and ways of attending to the world required to
+              effectively become an autonomous and capable coder?</li>
+              <li>This is a long term journey to experience.</li>
+              <li>Could we avoid re-inventing the wheel and learn from other
+              disciplines whose skills require long term investment.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/fiddle_kid.jpg">
+          <aside class="notes">
+            <p>In a musical sense, how do we get from this beginner
+            violinist...</p>
+          </aside>
+        </section>
+        <section data-background-image="img/benedetti.jpg">
+          <aside class="notes">
+            <p>...to this. Nicola Benedetti, the Scottish concert
+            violinist.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/pub_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Just a group of friends, amateur musicians, coming
+            together for a session in the pub.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/hindustani_fiddle.jpg">
+          <aside class="notes">
+            <p>...or this? Kala Ramnath, the grammy award winning Hindustani
+            violinist who comes from a long line of traditional Indian
+            classical musicians.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/rock_cello.jpg">
+          <aside class="notes">
+            <p>...or even this? This is "Apocalyptica"... how can I put this,
+            they're a cello quartet from Finland who play metal. They're
+            awesome.</p>
+          </aside>
+        </section>
+        <section>
+          <h3>Thought experiment</h3>
+          <p>What if we taught music like we teach programming?</p>
+          <aside class="notes">
+            <ul>
+              <li>How do we support the beginner fiddler to grow into, find and
+              express their style, just like any one of these musicians?</li>
+              <li>How might we do the same for beginner coders..?</li>
+              <li>I'm going to answer, by telling you about my musical
+              journey... :-P</li>
+          </aside>
+        </section>
+        <section data-background-image="img/breaking-news.png">
+          <aside class="notes">
+            <ul>
+              <li>Clearly, all folks need are instruments (the hardware), and
+              they'll figure it all out for themselves.</li>
+              <li>Sadly, most of the tubas given to children were never used
+              because (it turns out), most folks don't want to play tuba.</li>
+              <li>Also, nobody asked music teachers what they needed.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <p>School exams 🎺 😬</p>
+          <img src="img/GCSE_music.png"/>
+          <aside class="notes">
+            <ul>
+              <li>Luckily for us, Michael Gove, the education minister
+              refocused the UK's exam system on traditional academic
+              exams.</li>
+              <li>All the progressive clap-trap about project based learning,
+              or building a portfolio of practical evidence of educational
+              attainment was removed from the education system.</li>
+              <li>What could possibly go wrong?</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/octubafest.jpg">
+          <aside class="notes">
+            <ul>
+              <li>I got interested at this point.</li>
+              <li>The community stepped up for those wanting something more
+              practical... and a fantastic "tuba girl" called Rachel organised
+              "Octubafest".</li>
+              <li>The aim of Octubafest is to inspire folks to fall in love
+              with a full stack instrumental framework called "the tuba".</li>
+              <li>Octubafest organize free tuba workshops, create online tuba
+              tutorials and curate amazing first experiences with
+              sousaphones.</li>
+              <li>It was a blast..!</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/24h.jpg" alt="Learn Tuba in 24 hours"/>
+          <aside class="notes">
+            <ul>
+              <li>My Octubafest mentor suggested some books.</li>
+              <li>This one looked good - get me up to speed quickly.</li>
+              <li>But it wasn't as fun as Octubafest!</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/oreilly.png" alt="O'Rly book"/>
+          <aside class="notes">
+            <ul>
+              <li>...this promised to be much more comprehensive.</li>
+              <li>At over 900 pages, it should include everything?</li>
+              <li>Material was too technical and advanced.</li>
+              <li>Then I saw an advert on the London Underground for a
+              MUSIC bootcamp.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/music_bootcamp.png"
+          data-background-position="top">
+          <aside class="notes">
+            <p>I learned about all sorts of things:</p>
+            <ul>
+              <li><b>Theory</b>: How to read musical notes.</li>
+              <li><b>Delivery</b>: How to use my tuba to play notes in the
+              first octave.</li>
+              <li><b>Infrastructure</b>: How to wear a tuxedo for an orchestra
+              concert.</li>
+              <li><b>Best practices</b>: Like turning the pages of the score
+              without making them rustle in the quiet bits.</li>
+              <li><b>Next steps</b>: advanced concepts to look out for and pick
+              up in my first gig, like key signatures and time signatures.</li>
+              <li>But out of cohort of 50, only 5 graduated.</li>
+              <li>Out of those five, four of us (80%) have found jobs relating
+              to music (although non of us actually play our instruments).</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>🤔</h1>
+          <aside class="notes">
+            <p>Joking aside...</p>
+            <p>I want you to see how all the books, Django Girls taster days,
+            beginner coding videos, and computer science channels appear to
+            non-coders.</p>
+            <ul>
+              <li>Octubafest is a real thing, totally awesome and run by the
+              wonderful Rachel Coles.</li>
+              <li>Would you hire musicians to play at your wedding if they'd
+              just graduated from a music boot camp?</li>
+              <li>Dangerous PR: over promising, set up folks to struggle in the
+              industry, and promoting an imagined hipster-hacker
+              lifestyle.</li>
+              <li>Investigative journalism uncovered "creative statistics" in
+              the claims made by many bootcamps.</li>
+            </ul>
+            <p>So what do musicians actually do..?</p>
+            <p>What could we coders copy?</p>
+          </aside>
+        </section>
+				<section data-background-image="img/mfy.png"
+          data-background-position="top">
+          <aside class="notes">
+            <ul>
+              <li>I want to share and celebrate but one of many examples of
+              amazing music education.</li>
+              <li>Music for Youth.</li>
+              <li>National charity in the UK.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/mfy_performers.png">
+          <aside class="notes">
+            <ul>
+              <li>Performance and <b>progression</b> opportunities.</li>
+              <li>All backgrounds and styles are welcome.</li>
+              <li>It's a safe space to be creative.</li>
+              <li>Participation in real musical activities.</li>
+              <li>Music mentors give guidance and constructive critique.</li>
+              <li>A group of passionate musicians who embody a certain sort of
+              inclusive musical culture.</li>
+              <li>It's free.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h1>Part 4.<br/>Culture And Code</h1>
+          <aside class="notes">
+            <ul>
+              <li>Clearly it's not just about the theory of music.</li>
+              <li>Should it really be about the very narrow aspects of coding
+              that deal with syntax, algorithms or computer science.</li>
+              <li>As WE all know - there is a coding culture to learn too:
+              practices, processes and people-skills that allow us to
+              collaboratively build the digital world together.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Thought experiment</h3>
+          <p>What if we taught programming like we teach music?</p>
+          <aside class="notes">
+            <ul>
+              <li>How might we transmit the essentials of a coding culture?</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <img src="img/john_pinner.jpg" alt="John Pinner"/>
+          <aside class="notes">
+            <ul>
+              <li>Introduce John. Founded PyConUK 2007. EuroPython chair
+              2009-2010, lost his fight with cancer in 2015. An excellent
+              engineer, formidable organiser and wonderful mentor.</li>
+              <li>John Pinner and I used Music for Youth as our template for
+              the PyConUK education track.</li>
+              <li>Coding education isn't just explaining stuff.</li>
+              <li>We attempted to embody the sorts of behaviour, attitudes,
+              skills, attention and knowledge we hoped to...</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/kids1.jpg">
+          <aside class="notes">
+            <p>...inspire in our newest Pythonistas.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids2.jpg">
+          <aside class="notes">
+            <p>We wanted them to see this is a long, slow...</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids3.jpg">
+          <aside class="notes">
+            <p>...and at times frustrating journey.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids4.jpg">
+          <aside class="notes">
+            <p>But it's a journey made possible because folks (no matter their
+            age or level of coding) were encouraged to step up and support
+            learners.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids5.jpg">
+          <aside class="notes">
+            <p>By taking these steps learners encountered and practiced what it
+            is to be a Python coder...</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids6.jpg">
+          <aside class="notes">
+            <p>...in an inclusive, supportive and diverse community.</p>
+          </aside>
+        </section>
+				<section data-background-image="img/kids7.jpg">
+          <aside class="notes">
+            <p>Between 2012-2015, each year, we welcomed up to 50 teachers and
+            over 100 kids to PyConUK.</p>
+            <p>We encouraged folks to sustain their learning journey, build on
+            from what they had encountered at the conference, and step into our
+            community.</p>
+            <p>(Just as the music mentors at Music for Youth do.)</p>
+            <p>And we were not the only ones to do this.</p>
+          </aside>
+        </section>
+
+
+				<section data-background-image="img/josh_8.png">
+          <aside class="notes">
+            <ul>
+              <li>This is Josh.</li>
+              <li>He's presenting at a local community organised coding
+              event, created by a teacher called Alan O'Donohoe.</li>
+              <li>He's explaining how he's made an operating system in
+              Scratch.</li>
+              <li>Josh made lots of friends at this event.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/josh_12.png">
+          <aside class="notes">
+            <ul>
+              <li>Josh has learned the importance of engagement, compassion
+              and cultivating a creative and playful attitude to
+              technology.</li>
+              <li>He's just announcing a new initiative of his own
+              devising called "EduPython".</li>
+              <li>It aims to help kids like him get into coding.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/josh_14.png">
+          <aside class="notes">
+            <ul>
+              <li>Things go well for Josh.</li>
+              <li>He's invited to keynote at the education summit at PyConUS.
+              This is a huge honour.</li>
+              <li>He also makes new friends.</li>
+              <li>Notice the presence of Les.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/josh_today.png">
+          <aside class="notes">
+            <ul>
+              <li>Today, Josh is 19.</li>
+              <li>This is Josh with Alan - who ran that first meeting.</li>
+              <li>Michelle is a friend of Alan's. She was the first person
+              he met at the event, and made him feel welcome.</li>
+            </ul>
+          </aside>
+        </section>
+				<section data-background-image="img/josh_19.jpg">
+          <aside class="notes">
+            <ul>
+              <li>What a journey.</li>
+              <li>EduPython evolved into Edublocks.</li>
+              <li>The Edublocks project was acquired by Anaconda.</li>
+              <li>Josh is now my colleague.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <q>What we have to learn to do, we learn by doing; thus we become
+          builders by building houses, and musicians by playing music.</q>
+          <br/>
+          <br/>
+          ~ Aristotle (Nicomachean Ethics)
+          <aside class="notes">
+            <ul>
+              <li>Josh learned by doing.</li>
+              <li>Josh was supported by the community.</li>
+              <li>Josh participated in our coding culture.</li>
+            </ul>
+            <p>What patterns can we re-use from music and elsewhere to
+            promote this sort of learning.</p>
+          </aside>
+        </section>
+
+
+				<section data-background-image="img/codegrades_landing.png">
+          <aside class="notes">
+            <ul>
+              <li>CodeGrades are inspired by music grades.</li>
+              <li>Like belts in martial arts.</li>
+              <li>My COVID project and collaboration with Ghanaian friends.</li>
+            </ul>
+            <p>How does it work..? We become coders by doing the things coders
+            do. Organised into grades.</p>
+          </aside>
+        </section>
+
+				<section data-background-video="video/cg_summary.webm">
+          <aside class="notes">
+            <ul>
+              <li>Explain the process.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <p>
+            <a href="https://www.codegrades.com/user/Khadija/python2023/grade2/" target="_blank">Roman Numerals (Grade 2)</a>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>A real example.</li>
+            </ul>
+          </aside>
+        </section>
+
+				<section data-background-image="img/poem.png">
+          <aside class="notes">
+            <ul>
+              <li>This is the CodeGrades philosophy.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-background-image="img/teacher_me.jpg">
+                    <aside class="notes">
+                    <p>Remember this..?</p>
+                    </aside>
+        </section>
+
+        <section>
+          <h1>🤣 Homework 🤣</h1>
+          <h3>Due at GITEX 2040</h3>
+          <aside class="notes">
+            <ul>
+              <li>Technical stuff is necessary but not sufficient.</li>
+              <li>The technology we use today will look quaint in the
+              2040s.</li>
+              <li>Your task: pay attention to an enlarged creative coding
+              culture and education.</li>
+              <li>Mentor folks into our community.</li>
+              <li>Focus on humans and actual intelligence not technical
+              solutions (for the sake of technology).</li>
+              <li>As Alan Kay once said, "the best way to predict the future,
+              is to invent it".</li>
+              <li>Can we invent something we can be proud of?</li>
+              <li>Can we express ourselves with digital voices that reflect
+              our many cultures and historic backgrounds?</li>
+              <li>We need strong and unique digital voices from Arabia, Africa
+              and Asia.</li>
+              <li>See you in 2040.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h1>The End</h1>
+        </section>
+
+        <section>
+          <p>Image/Video Credits (educational fair use):</p>
+          <div style="font-size: 0.6em; display: flex; width: 100%;">
+          <div style="flex-grow: 1;">
+          <ul>
+            <li>Fiddle kid: <a href="https://greenwichmusicschool.org.uk/">Greenwich Music School</a></li>
+            <li>Nicola Benedetti: <a href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3e50996a-1d17-11ec-8d6d-67649e90fafa.jpg?crop=3134%2C1763%2C22%2C22">The Times</a></li>
+            <li>Pub fiddle: screen grab from <a href="https://www.youtube.com/watch?v=O9a8pVGa1Mo">this video</a></li>
+            <li>Kala Ramnath: <a href="https://www.thehindu.com/entertainment/music/kala-ramnath-pushes-boundaries-with-the-singing-violin/article32456435.ece">The Hindu</a></li>
+            <li>Heavy metal cello: <a href="https://www.apocalyptica.com/">Apocalyptica</a></li>
+            <li>Octubafest: <a href="https://www.nmpat.co.uk/">NMPAT</a></li>
+            <li>Recorder: <a href="https://www.youtube.com/watch?v=z4tLQ09_YZE">
+Sarah Jeffery / Team Recorder</a></li>
+            <li>Augmented 5th: <a href="https://www.youtube.com/watch?v=Jxhccy7MFVA">Jesse Strickland</a></li>
+            <li>Moon: <a href="https://www.flickr.com/photos/he-boden/7149415469/">Heinz-Eberhard Boden</a></li>
+            <li>Music for Youth: <a href="https://www.mfy.org.uk">Official website</a></li>
+          </ul>
+          </div>
+          <div style="flex-grow: 1;">
+          <ul>
+            <li>John Pinner: <a href="https://www.europython-society.org/">EuroPython</a></li>
+            <li>Bach: <a href="https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg">Wikimedia</a></li>
+            <li>Beethoven: <a href="https://commons.wikimedia.org/wiki/File:Beethoven_Waldmuller_1823.jpg">Wikimedia</a></li>
+            <li>Wagner: <a href="https://commons.wikimedia.org/wiki/File:RichardWagner.jpg">Wikimedia</a></li>
+            <li>Bruckner: <a href="https://commons.wikimedia.org/wiki/File:Anton_bruckner.jpg">Wikimedia</a></li>
+            <li>Steve Jobs: <a href="https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg">Wikimedia</a></li>
+            <li>Mark Zuckerberg: <a href="https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg">Wikimedia</a></li>
+            <li>Elon Musk: <a href="https://commons.wikimedia.org/wiki/File:Elon_Musk_Royal_Society_(crop2).jpg">Wikimedia</a></li>
+            <li>Bill Gates: <a href="https://commons.wikimedia.org/wiki/File:Bill_Gates_2017_(cropped).jpg">Wikimedia</a></li>
+            <li>YoYo Ma: <a href="https://eu.freep.com/story/entertainment/arts/2019/02/27/yo-yo-ma-cultural-ann-arbor-flint/2991179002/">Freep</a></li>
+          </ul>
+          </div>
+          </div>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
