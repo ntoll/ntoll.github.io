@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2023-10-13T13:54:00Z</lastmod>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -299,7 +299,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/article/heraclitus%20/</loc>
-  <lastmod>2023-08-31T14:08:00Z</lastmod>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/hide/</loc>
@@ -715,7 +715,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-26.html</loc>
-  <lastmod>2023-10-13T13:54:00Z</lastmod>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -908,6 +908,18 @@
  <url>
   <loc>https://ntoll.org/static/presentations/2020_bcs_codegrades/test/test.html</loc>
   <lastmod>2020-11-12T15:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/static/presentations/2023-pyscript-dojo/</loc>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/static/presentations/2023-pyscript-dojo/example1/</loc>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/static/presentations/2023-pyscript-dojo/example2/</loc>
+  <lastmod>2023-10-27T13:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/2023-pyscript-magic/</loc>
@@ -1103,7 +1115,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/creating-coding-culture/</loc>
-  <lastmod>2023-10-13T13:54:00Z</lastmod>
+  <lastmod>2023-10-18T10:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/dhtcs/</loc>
