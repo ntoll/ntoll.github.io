@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 27 Oct 2023 13:43:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Debugging</title><link>https://ntoll.org/article/debugging/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;One of the stand-out collaborations of my career has been with my buddy
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Tue, 14 Nov 2023 18:26:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Debugging</title><link>https://ntoll.org/article/debugging/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;One of the stand-out collaborations of my career has been with my buddy
 &lt;a href="https://dpgeorge.net/"&gt;Damien George&lt;/a&gt;. He's the creator of
 &lt;a href="https://micropython.org/"&gt;MicroPython&lt;/a&gt; ~ a lean and efficient implementation
 of the Python programming language optimised to run in constrained
@@ -97,7 +97,19 @@ session is embedded below.&lt;/p&gt;
 &lt;p&gt;So grab your popcorn, and enjoy the show:&lt;/p&gt;
 &lt;div class="video-container"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uqBgSMB9dRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description><guid>https://ntoll.org/article/debugging/</guid><pubDate>Wed, 26 Jul 2023 11:15:00 GMT</pubDate></item><item><title>Rejection and Renewal</title><link>https://ntoll.org/article/talk-not-accepted/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;It is a rare privilege to find oneself in a community who genuinely cherish and
+&lt;/div&gt;</description><guid>https://ntoll.org/article/debugging/</guid><pubDate>Wed, 26 Jul 2023 11:15:00 GMT</pubDate></item><item><title>Rejection and Renewal</title><link>https://ntoll.org/article/talk-not-accepted/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;In June I was contacted by a friend in the EuroPython community.&lt;/p&gt;
+&lt;p&gt;They were looking for articles about how to deal with rejection and what to do
+when one's proposal for a conference talk wasn't accepted. Since they couldn't
+find anything suitable, they asked ChatGPT for suggestions, and this is how it
+responded:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://ntoll.org/images/chat-gpt-not-accepted.png" title="Talk not accepted"&gt;&lt;/p&gt;
+&lt;p&gt;In an entirely predictable turn of events, &lt;em&gt;ChatGPT was wrong&lt;/em&gt; (no such post
+existed at that time), and so I puckishly proposed writing such a post. We
+can't have ChatGPT telling lies can we?&lt;/p&gt;
+&lt;p&gt;This is it.&lt;/p&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;p&gt;It is a rare privilege to find oneself in a community who genuinely cherish and
 support the participation of all. Such company guarantees we encounter folk
 who are different to ourselves: an opportunity to learn from each other's
 contrasting backgrounds, experiences and perspectives. It's why &lt;em&gt;diversity is a
@@ -113,16 +125,16 @@ interactions of many different individuals.&lt;/p&gt;
 &lt;p&gt;Here's the challenge: it's not enough for a group to say they're inclusive,
 open-minded and whatnot... that's just empty virtue signalling. Merely
 "going through the motions" is an ignorant and insidious sort of cultural cargo
-cult ~ communication at the expense of community. It happens far too often, and
-normalizing such behaviour actively diminishes the possibility of a genuinely
-inclusive and open-minded space.&lt;/p&gt;
+cult ~ &lt;em&gt;communication at the expense of community&lt;/em&gt;. It happens far too often,
+and normalizing such behaviour actively diminishes the possibility of a
+genuinely inclusive and open-minded space.&lt;/p&gt;
 &lt;p&gt;Rather, such a community spirit springs
 from the &lt;em&gt;quality of the interactions between individual participants&lt;/em&gt;.
 Sometimes such interactions are unavoidably painful: as when a proposed
 contribution to a community event is rejected by the organisers.&lt;/p&gt;
 &lt;p&gt;Yet it is at these moments when embodiment by individuals, and the emergent
 community spirit, are so important.&lt;/p&gt;
-&lt;p&gt;This applies to both organisers and participants.&lt;/p&gt;
+&lt;p&gt;This equally applies both to organisers and participants.&lt;/p&gt;
 &lt;p&gt;If you are an organiser of a community event, and have a call for proposals but
 limited space, then you will inevitably reject (and therefore exclude) some of
 the proposed contributions. If you believe in a diverse and inclusive culture
@@ -132,36 +144,35 @@ answer.&lt;/p&gt;
 &lt;p&gt;Actually, the notion that there &lt;em&gt;is an answer&lt;/em&gt; to such a situation is, I
 believe, deeply flawed. Rather, &lt;em&gt;how you choose to conduct yourself, pay
 attention to the situation and engage with the unfolding events&lt;/em&gt; will reveal
-your community's spirit. I hope you choose compassion, empathy and
-thoughtfulness over going through the motions of a brain dead cultural cargo
-cult.&lt;/p&gt;
+your community's spirit. I hope you make a conscious personal decision to
+choose compassion, empathy and thoughtfulness over going through the motions of
+a performative brain dead cultural cargo cult.&lt;/p&gt;
 &lt;p&gt;Alternatively for participants, it can be deeply upsetting if your contribution
 to an event has been rejected. All sorts of complicated feelings may come up
 (although some may just shrug and move on). I want to reassure you that it is
 natural and understandable to feel sad, disappointed or upset by such
 rejection. Lean into such feelings and give them the time and space they
 deserve. The worst thing you can do is ignore them.&lt;/p&gt;
-&lt;p&gt;The most important thing is what happens next.&lt;/p&gt;
+&lt;p&gt;Most importantly, pay attention to what happens next.&lt;/p&gt;
 &lt;p&gt;If the organisers of the event embody an inclusive and empowering community
 spirit, their interactions with you will be affirmative, compassionate and
-supportive. If you engage in good faith such organisers will likely welcome
+supportive. If you engage in good faith, such organisers will likely welcome
 feedback or suggestions. But please remember they're human beings too and they
 may respectfully disagree with you. This is what it is to be in a
 diverse community - you'll meet folk with different outlooks to your own.&lt;/p&gt;
 &lt;p&gt;It's an opportunity to learn!&lt;/p&gt;
 &lt;p&gt;As an exercise in self-understanding and growth, you may want to
 explore why your proposal was rejected (if this hasn't already been
-explained). Such feedback is best received when you treat it as a gift, shared
-with you in a spirit of constructive collaboration. You'll either discover how
+explained). Such feedback is best received in a spirit of constructive
+collaboration. You'll either discover how
 to improve your next proposal or come to see how the event in question isn't a
 good fit for what you want to contribute.&lt;/p&gt;
 &lt;p&gt;If the former, reflect and refine for next time.&lt;/p&gt;
 &lt;p&gt;If the latter, your niche might be elsewhere, so keep exploring!&lt;/p&gt;
 &lt;p&gt;If the event organisers are simply going through the motions, you'll know to
 avoid the event in future.&lt;/p&gt;
-&lt;p&gt;In any case, be you an organiser of or participant in community events, I want
-to wish you the best of luck.&lt;/p&gt;
-&lt;p&gt;Just remember flouishing and fulfilling communities are all about the quality
+&lt;p&gt;In any case, be you an organiser of or participant in community events,
+best of luck. Just remember flouishing and fulfilling communities are all about the quality
 of individual interactions, something over which you have direct control: &lt;em&gt;how
 &lt;strong&gt;you&lt;/strong&gt; choose to participate&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Peace.&lt;/p&gt;</description><guid>https://ntoll.org/article/talk-not-accepted/</guid><pubDate>Mon, 03 Jul 2023 18:00:00 GMT</pubDate></item><item><title>8-Bit Archaeology: Part 1</title><link>https://ntoll.org/article/8-bit-archaeology-1/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;This is the first in a semi-regular series of posts about digital archaeology
