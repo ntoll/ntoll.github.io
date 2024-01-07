@@ -1,9 +1,639 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ntoll.org</title><link>https://ntoll.org/</link><description>Everything I say is false...</description><atom:link href="https://ntoll.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:ntoll@ntoll.org"&gt;Nicholas H.Tollervey&lt;/a&gt; 
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ntoll.org</title><link>https://ntoll.org/</link><description>Everything I say is false...</description><atom:link href="https://ntoll.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2024 &lt;a href="mailto:ntoll@ntoll.org"&gt;Nicholas H.Tollervey&lt;/a&gt; 
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Tue, 19 Dec 2023 14:41:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CERN</title><link>https://ntoll.org/article/cern/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Last week I visited &lt;a href="https://home.cern/"&gt;CERN&lt;/a&gt; with my youngest (16yo) son,
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 07 Jan 2024 12:39:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Heraclitus: The Unity of Opposites</title><link>https://ntoll.org/article/heraclitus/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Two weeks after turning 18, I arrived in London to study for a music degree at
+the &lt;a href="https://rcm.ac.uk/"&gt;Royal College of Music&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ntoll.org/article/remembering-john/"&gt;It was an awakening&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In those first months in London, as I began to fathom my situation, I realised
+two things: I wouldn't become a professional musician and making sense of the
+universe is a deeply challenging, subtle yet rewarding experience.
+Imperceptibly, an awareness kindled within me: music, like all art, is a potent
+and fluid process of encountering, understanding and expressing. It's how we
+discern our dynamic and diverse universe yet, at the same time, change and
+enlarge it through our creative contributions and collaborations. It is, I
+believe, the most important and rewarding activity we can do, both singularly
+as individuals and collectively shared with others.&lt;/p&gt;
+&lt;p&gt;Upon graduating, I needed a broader context in which to make
+sense of things, so I embarked on a philosophy degree. It was an exciting
+time...  I had &lt;a href="https://ntoll.org/article/25-anniversary-plans/"&gt;just met Mary&lt;/a&gt; and I was
+acquiring a sense of the historic philosophical terrain while working out where
+I found myself on the philosophical map.&lt;/p&gt;
+&lt;p&gt;A turning point was my first encounter with ancient Greek philosopher
+&lt;a href="https://en.wikipedia.org/wiki/Heraclitus"&gt;Heraclitus&lt;/a&gt;, who has remained a
+constant philosophical companion throughout my life. This blog post briefly
+explores why Heraclitus resonates so much with me.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/heraclitus.jpg" alt="Heraclitus"&gt;
+&lt;figcaption&gt;A pensive Heraclitus, as depicted by Raphael in
+&lt;a href="https://en.wikipedia.org/wiki/The_School_of_Athens"&gt;The School of Athens&lt;/a&gt;.
+(The figure is actually a portrait of
+&lt;a href="https://en.wikipedia.org/wiki/Michelangelo"&gt;Michelangelo&lt;/a&gt;, who
+shared a misanthropic reputation with Heraclitus. To the right, in blue, is
+Socrates.)
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Not much is known about Heraclitus, but what is probably true about him can be
+said in a paragraph of four sentences.&lt;/p&gt;
+&lt;p&gt;Heraclitus, son of Bloson (or Heracon), was born and lived in
+&lt;a href="https://en.wikipedia.org/wiki/Ephesus"&gt;Ephesus&lt;/a&gt; - a Greek city on the
+west coast of modern day Turkey. He was a member of an aristocratic family and
+gave up his hereditary right of "kingship" to his brother. His
+&lt;em&gt;acme&lt;/em&gt; (ancient Greek for "prime" - usually regarded as around the age of 40)
+was considered by
+&lt;a href="https://en.wikipedia.org/wiki/Apollodorus_of_Athens"&gt;Apollodorus&lt;/a&gt; to have
+been the &lt;a href="https://en.wikipedia.org/wiki/Olympiad"&gt;69th Olympiad&lt;/a&gt; (504–501 BC),
+and he probably died approximately thirty years later. He wrote a single
+philosophical work, well known in antiquity but now lost, that may have been
+titled "On Nature", a copy of which he placed as a 
+&lt;a href="https://en.wikipedia.org/wiki/Votive_offering"&gt;votive deposit&lt;/a&gt; in the
+&lt;a href="https://en.wikipedia.org/wiki/Temple_of_Artemis"&gt;temple of Artemis&lt;/a&gt; at
+Ephesus.&lt;/p&gt;
+&lt;p&gt;That's it!&lt;/p&gt;
+&lt;p&gt;However, many spurious claims have been made about Heraclitus; the main source
+being &lt;a href="https://en.wikipedia.org/wiki/Diogenes_Laertius"&gt;Diogenes Laertius&lt;/a&gt;'s
+book
+&lt;a href="https://www.gutenberg.org/files/57342/57342-h/57342-h.htm"&gt;Lives and Opinions of Eminent Philosophers&lt;/a&gt;,
+written in the 3rd century CE, around 700 years after Heraclitus flourished.
+Diogenes is a problematic figure because he's a mixture of unreliable and
+highly speculative gossip columnist, uncritical historical biographer and
+scatter-gun reporter of "facts" (often lacking context, evidence or relevance).&lt;/p&gt;
+&lt;p&gt;His account of Heraclitus is a corker of a hatchet job, worthy of any British
+&lt;a href="https://en.wikipedia.org/wiki/Tabloid_journalism#Red_tops"&gt;red top&lt;/a&gt; tabloid.&lt;/p&gt;
+&lt;p&gt;According to Diogenes, Heraclitus was an
+&lt;a href="https://en.wikipedia.org/wiki/Autodidacticism"&gt;autodidact&lt;/a&gt;
+who claimed to know
+everything, regarded everyone else as a moron (with a few notable exceptions),
+and preferred to play games with children than engage with his fellow citizens.
+Because of his unpopularity and misanthropic nature he was forced to leave
+Ephesus and live on a vegetarian diet, alone in the mountains. Eventually he
+fell victim to &lt;a href="https://en.wikipedia.org/wiki/Edema"&gt;dropsy&lt;/a&gt; and returned to
+Ephesus where he sought treatment from the town's doctors by posing them
+riddles. Unable to make sense of the riddles, the doctors failed to cure him.
+Heraclitus took matters into his own hands and decided to cover himself in
+bovine faeces in the hope the warmth of the fresh dung would dry out his
+dropsy. This failed and he died at the age of seventy, after which his
+"bullshit" encrusted body was devoured by a pack of dogs.&lt;/p&gt;
+&lt;p&gt;Yet Diogenes also reports that
+&lt;a href="https://en.wikipedia.org/wiki/Socrates"&gt;Socrates&lt;/a&gt;, no less, was a puckish fan:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;They say that &lt;a href="https://en.wikipedia.org/wiki/Euripides"&gt;Euripides&lt;/a&gt;, giving
+him [Socrates] a work of Heraclitus to read, asked him what he thought of it,
+and he replied: "The part I understand is excellent, and so too is, I dare
+say, the part I do not understand; but it needs a Delian diver to get to the
+bottom of it".&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(A Delian diver fishes for pearls.)&lt;/p&gt;
+&lt;p&gt;This is a good illustration of Heraclitus's reputation in antiquity as obscure,
+cryptic and difficult to fathom.
+&lt;a href="https://en.wikipedia.org/wiki/Aristotle"&gt;Aristotle&lt;/a&gt; complained about
+Heraclitus's ambiguous punctuation and style in his
+&lt;a href="https://www.perseus.tufts.edu/hopper/text?doc=aristot.+rh.+1407b"&gt;Rhetoric&lt;/a&gt;
+(a treatise in the technique of argument), and Aristotle's student
+&lt;a href="https://en.wikipedia.org/wiki/Theophrastus"&gt;Theophrastus&lt;/a&gt; reported 
+Heraclitus's book was disjointed and unfinished, attributing this to
+Heraclitus's melancholic nature (resulting in Heraclitus's epithet "the weeping
+philosopher").&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/weeping_philosopher.jpg" alt="Heraclitus as the weeping philosopher"&gt;
+&lt;figcaption&gt;Heraclitus, the weeping philosopher, as painted by
+&lt;a href="https://en.wikipedia.org/wiki/Johannes_Moreelse"&gt;Johannes Moreelse&lt;/a&gt;
+in around 1630.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But Aristotle missed a subtle aspect of Heraclitus's technique of argument (in
+his own work on the technique of argument!). Heraclitus's enigmatic style is
+not a result of grammatical failings nor foggy thinking. He knew what he
+wanted to say, and &lt;em&gt;how he wanted to say it&lt;/em&gt;. His prose is often a subtle
+embodiment of his philosophy. In fact, Heraclitus hints at this when he says,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;The Lord whose &lt;a href="https://en.wikipedia.org/wiki/Pythia"&gt;oracle is at Delphi&lt;/a&gt;
+neither declares nor conceals, but shows by sign.&lt;/q&gt;
+(&lt;cite&gt;B93&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;Similarly, Heraclitus's writing neither declares nor conceals, but shows by
+sign. His enigmatic writing style forces his readers to actively engage in the
+analysis, comprehension and
+literary appreciation of his words, as a vehicle to demonstrate his wider
+philosophical point. To me this is more akin to poetry, perhaps because
+Heraclitus was one of the first Greek prose writers - until that time, most
+Greek writing had been poetry - and the basic conventions of prose writing had
+not yet been established.&lt;/p&gt;
+&lt;p&gt;This first direct quote from Heraclitus about the Delphic oracle provides an
+opportunity to explain the nature and organisation of the fragments that have
+survived.&lt;/p&gt;
+&lt;p&gt;All that remains of Heraclitus's work are a small group of around 130
+quotations, paraphrases and aphorisms found in the works of later authors
+(such as Aristotle's quote from Heraclitus in his work on rhetoric). We have no
+idea how most of these fragments relate to each other, nor where they appear in
+the original book.&lt;/p&gt;
+&lt;p&gt;This is a double-edged sword.&lt;/p&gt;
+&lt;p&gt;On the one hand, it is impossible to tell how Heraclitus organised his book's
+philosophical narrative, how it was thematically arranged or discern the
+structure of its exposition or the subsequent development of ideas. While I
+believe there is strong evidence Heraclitus had a cogent and coherent structure
+to the book, &lt;em&gt;what that was has been lost&lt;/em&gt;. Therefore, arranging the fragments
+is a deeply troublesome undertaking. To organise and interpret them according
+to the themes found therein may help to capture the coherence of thought
+behind the work, but risks speculation, educated guesswork and interpretation
+reflecting the background, interests and prejudices of the curator. The
+alternative, and most common practice, is to recognise the shortcomings of such
+an approach and present them in an alternative fashion. This was how
+&lt;a href="https://en.wikipedia.org/wiki/Hermann_Alexander_Diels"&gt;Hermann Diels&lt;/a&gt; 
+compiled all the extant works of ancient Greek philosophers in a book called
+Die Fragmente der Vorsokratiker (The Fragments of the Pre-Socratics). In this
+&lt;a href="https://en.wikipedia.org/wiki/Diels%E2%80%93Kranz_numbering"&gt;Diels–Kranz [DK] numbering&lt;/a&gt;
+system the fragments are mostly arranged according to the alphabetical order of
+the names of the sources from which the fragments were taken. For instance
+fragments found in the works of Aristotle come before those quoted in Diogenes.
+This has become the standard, and the identifier B93 is the DK number for the
+fragment quoted above.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/fragment.jpg" alt="A papyrus fragment quoting Heraclitus"&gt;
+&lt;figcaption&gt;Fragment B103a written on an ancient papyrus (Papyrus Oxyrhynchus
+3710, col. ii 43-47).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;On the other hand, the fractured provenance of the fragments is an opportunity
+to honour Heraclitus's desire that we actively engage with his words and ideas.
+Put simply, we need to pay close attention and work out for ourselves our own
+interpretation and arrangement of the themes and ideas. For me, it matters not
+that &lt;em&gt;our&lt;/em&gt; view of the remaining fragments will be different to what Heraclitus
+originally intended, yet it is of the utmost importance that we engage with and
+are stimulated by the thoughts found therein.&lt;/p&gt;
+&lt;p&gt;Heraclitus says as much:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Upon those who step into the same stream ever different waters flow.&lt;/q&gt;
+(&lt;cite&gt;B12&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;The person who loves wisdom must be a good inquirer into a great many
+things.&lt;/q&gt;
+(&lt;cite&gt;B35&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;In reading Heraclitus, I like to think we're undertaking a sort of
+philosophical
+&lt;a href="https://en.wikipedia.org/wiki/Cut-up_technique"&gt;cut-up technique&lt;/a&gt; (découpé).
+Or perhaps we are using a more contemporary Internet-age share/remix/reuse
+process, as championed by the &lt;a href="https://creativecommons.org/"&gt;Creative Commons&lt;/a&gt;.
+My point is that [re]assembling Heraclitus's work is a fundamental aspect of
+encountering and comprehending it. It's a very unconventional yet valuable
+philosophical situation, and that's something to welcome!&lt;/p&gt;
+&lt;p&gt;Fragment B12, quoted above, is usually paraphrased into English as "one cannot
+step into the same river twice", and is one of Heraclitus's best known
+aphorisms. It is also a good example of the various linguistic quirks of
+Heraclitus that make translation of the fragments a challenge.&lt;/p&gt;
+&lt;p&gt;There are broadly three aspects of translation that inform our understanding 
+of the fragments.&lt;/p&gt;
+&lt;p&gt;It is important to be aware of the philological aspects of Heraclitus's
+writing: his place in the history and development of ancient Greek, that he
+wrote in the &lt;a href="https://en.wikipedia.org/wiki/Ionic_Greek"&gt;Ionian dialect&lt;/a&gt;
+and that his prose style was perhaps deliberately aphoristic and even oracular
+in tone at a point in time when such a prose style of writing was not yet
+established nor refined to have widely understood conventions and
+characteristics.&lt;/p&gt;
+&lt;p&gt;The semantic context of Heraclitus's writing is often fascinating and (as
+Aristotle pointed out) sometimes frustrating. Heraclitus is deliberately
+ambiguous yet careful in his choice of words, and a full understanding of a
+fragment often depends upon recognising the sophisticated multi-layered
+significance in the terminology Heraclitus employs (often as a way to embody
+the concept[s] he is exploring or describing). Part of the fun in reading
+Heraclitus is to uncover the colourful, intriguing and often revealing
+interplay of such subtle linguistic layers.&lt;/p&gt;
+&lt;p&gt;Heraclitus's style of writing often contains puns, wordplay, neologisms,
+assonance, alliteration, onomatopoeia and other compositional techniques
+more commonly associated with poetry rather than prose. As has been mentioned,
+Heraclitus was an early writer of ancient Greek prose so existing and well
+established poetic techniques that would become absent in later forms of prose
+still find their way into Heraclitus's writing. I find this aspect of
+Heraclitus's style very engaging and appealing.&lt;/p&gt;
+&lt;p&gt;Returning to fragment B12, "one cannot step into the same river twice", while
+mostly accurate in the broad sense of what the fragment is literally saying,
+misses the more subtle aspects of the language employed. For instance, the
+original ancient Greek is pronounced in such a way that the sentence
+onomatopoeically babbles like a river, while the grammar makes it ambiguous if
+the river or the person stepping into it have changed. This grammatical twist
+demonstrates a subtle philosophical point: the fragment can be read in
+different ways (one cannot step into the same sentence twice!), and thus the
+meaning is changed as one reads the sentence one way or the other. It
+(literally) illustrates the changing nature of re-encountering changed things
+— precisely the concept the fragment is exploring. For me, this is but
+one example of Heraclitus's engaging, playful and sophisticated literary style.&lt;/p&gt;
+&lt;p&gt;These points are beautifully explored in this short audio extract from an
+&lt;a href="https://www.bbc.co.uk/programmes/b017x3p4"&gt;episode on Heraclitus&lt;/a&gt; from the
+magnificent BBC radio series,
+&lt;a href="https://www.bbc.co.uk/programmes/b006qykl"&gt;In Our Time&lt;/a&gt;.
+I hope you especially pay attention to the babbling pronunciation of the
+fragment.&lt;/p&gt;
+&lt;p&gt;&lt;audio src="https://ntoll.org/static/files/heraclitus.mp3" controls style="width: 100%;"&gt;&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;There are many English translations of Heraclitus. They range from the literal
+side-by-side with the ancient Greek
+(&lt;a href="https://www.loebclassics.com/view/LCL526/2016/volume.xml"&gt;Loeb&lt;/a&gt;), or the
+poetic
+(&lt;a href="https://www.amazon.co.uk/Greeks-New-Directions-Paperbook-799/dp/0811212882"&gt;Guy Davenport&lt;/a&gt;)
+to the academic (&lt;a href="https://www.amazon.co.uk/Art-Thought-Heraclitus-Arrangement-Philosophical/dp/052128645X"&gt;Charles H.Khan&lt;/a&gt;)
+and the literary (&lt;a href="https://www.amazon.co.uk/Heraclitus-Translation-Analysis-Dennis-Sweet/dp/0761833676"&gt;Dennis Sweet&lt;/a&gt;).
+Each reveals a different aspect of Heraclitus's writing and reading numerous
+translations (as I have done) is itself a stimulating exploration of how others
+have [re]assembled, [re]interpreted and [re]presented Heraclitus's words and
+philosophy. It feels to me like listening to different musicians performing 
+contrasting interpretations of a composer's work.&lt;/p&gt;
+&lt;p&gt;Remember the sentence that so annoyed Aristotle? Here's the original Greek and
+how each of the afore mentioned translations render it - along with any
+translator's notes relating to the sentence. It's the famous first
+line of the first fragment which, we can be reasonably confident, opened
+Heraclitus's book. It introduces the important concept of &lt;em&gt;logos&lt;/em&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;τοῦ δὲ λόγου τοῦδ ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι καὶ πρόσθεν ἢ ἀκοῦσαι καὶ ἀκούσαντες τὸ πρῶτον·&lt;/q&gt;
+(&lt;cite&gt;Original&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;And of this account (&lt;em&gt;logos&lt;/em&gt;) that is—always—humans are
+uncomprehending, both before they hear it and once they have first heard it.
+&lt;/q&gt;
+(&lt;cite&gt;Loeb&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;The Logos is eternal&lt;br&gt;
+but men have not heard it&lt;br&gt;
+and men have heard it and not understood.&lt;/q&gt;
+(&lt;cite&gt;Davenport&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Although this account holds forever, men ever fail to comprehend, both
+before hearing it and once they have heard.&lt;/q&gt;
+(&lt;cite&gt;Khan&lt;/cite&gt;)
+&lt;p&gt;&lt;small&gt;&lt;strong&gt;account:&lt;/strong&gt; &lt;em&gt;logos&lt;/em&gt;, saying, speech, discourse,
+statement, report; account, explanation, reason, principle; esteem, reputation;
+collection, enumeration, ratio, proportion; &lt;em&gt;logos&lt;/em&gt; is translated
+'account' here (twice) and also in III, XXVII, LX and LXII; it is rendered
+'report' in XXXV, XXXVI and CI; 'amount' in XXXIX.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;strong&gt;holds forever:&lt;/strong&gt; text is ambiguous between 'this
+account is forever, is eternal' and 'this account is true (but men ever fail
+to comprehend)'.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Of this eternally existing&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref1"&gt;1&lt;/a&gt;]&lt;/sup&gt; &lt;em&gt;logos&lt;/em&gt; people lack
+understanding, both before and after they hear the primary
+thing&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref2"&gt;2&lt;/a&gt;]&lt;/sup&gt;.&lt;/q&gt;
+(&lt;cite&gt;Sweet&lt;/cite&gt;)
+&lt;p id="ref1"&gt;1 &lt;small&gt;I follow Diels and Zeller (after Clement, Hippolytus, and Amelius)
+in putting ἀεὶ with ἐόντος, &lt;em&gt;contra&lt;/em&gt; Reinhardt, Snell, Gigon, and Kirk,
+who connect it with ἀξύνετοι. This seems to be a more natural grammatical
+construction and is more consistent with Heraclitus's doctrine of the eternity
+of the &lt;em&gt;logos&lt;/em&gt;. Cf fr. 30.&lt;/small&gt;&lt;/p&gt;
+&lt;p id="ref2"&gt;2 &lt;small&gt;Since τὸ πρῶτον contains an article and is in the accusative
+case, it is treated here as the object of ἀκοῦσαι and ἀκούσαντες. This
+interpretation implies the fundamental nature of the &lt;em&gt;logos&lt;/em&gt; rather
+than simply indicating the first hearing of the idea (&lt;em&gt;contra&lt;/em&gt; Kirk
+[1962], p.33).&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For what it's worth, in this blog post I use Dennis Sweet's translations into
+English because he attempts to retain the flavour of the original Greek, while
+rendering the fragments into coherent English that carefully acknowledge the
+inherent playful poetic style and multiple layers of meaning. I'm also very
+fond of Davenport's poetic rendering of the fragments, although these very much
+reflect &lt;em&gt;his&lt;/em&gt; personal aesthetic and interpretation, and may not appeal to
+scholars or "purists" (like the Jacques Loussier Trio
+&lt;a href="https://www.youtube.com/watch?v=JnvEG9cDiwk"&gt;performing Bach&lt;/a&gt; to Jazz
+afficionados or fans of
+&lt;a href="https://en.wikipedia.org/wiki/Historically_informed_performance"&gt;historically informed performance&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Given such context and back story, I can finally begin to explain &lt;em&gt;my personal&lt;/em&gt;
+impressions of Heraclitus's philosophical themes. These are offered as a record
+of my own encounter with Heraclitus's work, and certainly shouldn't be treated
+as learned or scholarly. What do I know? I'm just a humble tuba player.&lt;/p&gt;
+&lt;p&gt;Heraclitus's philosophical project is to explore an apparent paradox: the
+&lt;em&gt;unity of the universe&lt;/em&gt; in the face of apparent &lt;em&gt;diversity and change&lt;/em&gt;, and
+core to this account is the eternal λόγος (logos).&lt;/p&gt;
+&lt;p&gt;Logos had many related meanings over time, and Heraclitus plays on this
+richness of meaning. In the context of ancient Greek it originally meant
+"selecting" or "picking out". The meaning shifted to "reckon", "measure" and
+"proportion". Further refinement of its usage led to it meaning "thought", 
+"reason", as well as "formula", "law" and "plan". It also had connotations
+around speaking, via a common etymological root with the ancient Greek verb
+λέγω (lego, "to speak"). So logos can also mean a spoken word, a statement,
+account, discourse or report. It is also the source for our modern English
+word, "logic".&lt;/p&gt;
+&lt;p&gt;Heraclitus uses it to mean three broad concepts: the order (unity) underlying a
+universe of diversity and change, the capacity of a person to discern and make
+sense of such a situation (although very few people exercise this talent),
+and our ability to communicate our thoughts about such things with others. Each
+is a different facet of the eternal logos.&lt;/p&gt;
+&lt;p&gt;Put in a more personal (and musical) manner, the eternal logos consists of
+three aspects: the singularly unified universe full of diversity and change
+&lt;em&gt;that we encounter&lt;/em&gt;, our cultivated and refined mental faculties &lt;em&gt;through which
+we understand&lt;/em&gt; the universe, and our &lt;em&gt;skill at expressing&lt;/em&gt; our shared feelings
+about, experiences and understanding of the universe with one another.&lt;/p&gt;
+&lt;p&gt;In Heraclitus's own words:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Listening not to me but rather to the &lt;em&gt;logos&lt;/em&gt; it is wise to
+agree&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref46"&gt;46&lt;/a&gt;]&lt;/sup&gt; that all things are one.&lt;/q&gt;
+(&lt;cite&gt;B50&lt;/cite&gt;)
+&lt;p id="ref46"&gt;46 &lt;small&gt;A play upon the words &lt;em&gt;logos&lt;/em&gt; and &lt;em&gt;homologein&lt;/em&gt; =
+to agree.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Seizures&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref11"&gt;11&lt;/a&gt;]&lt;/sup&gt; —wholes and non-wholes, being combined and
+differentiated, in accord and dissonant: unity is from everything and from
+everything is unity.&lt;/q&gt;
+(&lt;cite&gt;B10&lt;/cite&gt;)
+&lt;p id="ref11"&gt;11 &lt;small&gt;sullapsies (συλλάψιες)—following Marcovich, Kirk, etc.,
+&lt;em&gt;contra&lt;/em&gt; Diels' συνάψιες. I have translated this word in its archaic
+sense, which gives the notion of physical seizure or grasping. Snell, Kirk,
+Marcovich, and Bollack-Wismann employ later senses ('Zusammensetzungen',
+'things taken together', 'connections', and 'assemblages', respectively) in
+their translations. All of these terms suggest a putting together and
+unification of diverse things. Cf. the discussion of
+&lt;em&gt;harmonia&lt;/em&gt;.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Thinking is common to all.&lt;/q&gt;
+(&lt;cite&gt;B113&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;For since everything comes to be according to this &lt;em&gt;logos&lt;/em&gt;, they are
+like ignorant people when experiencing such words&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref3"&gt;3&lt;/a&gt;]&lt;/sup&gt; and actions as
+I expound—when I describe each according to its nature&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref4"&gt;4&lt;/a&gt;]&lt;/sup&gt;,
+indicating how it is.&lt;/q&gt;
+(&lt;cite&gt;B1 - second sentence.&lt;/cite&gt;)
+&lt;p id="ref3"&gt;3 &lt;small&gt;&lt;em&gt;epeon&lt;/em&gt; (ἐπέων)—also suggests oracular
+advice.&lt;/small&gt;&lt;/p&gt;
+&lt;p id="ref4"&gt;4 &lt;small&gt;&lt;em&gt;kata phusin&lt;/em&gt; (κατὰ φύσιν) = according to its
+constitution.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The notions of commonality and universality are attributes that facilitate the
+eternal logos. Sharing aspects both in common and universally, explains how
+different things are able to correspond and coordinate with each other. Such
+ordering relates to all things, and can be discerned, understood and
+communicated by those rare persons who explore and engage with the eternal
+logos.&lt;/p&gt;
+&lt;p&gt;Clearly Heraclitus was prickly when trying to acknowledge that not everyone
+recognises, values or is capable of such philosophical explorations. He
+explains that "the many are worthless and good people are few" (in fragment
+B104), and is unflattering about his fellow citizens:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;The Ephesians deserve, from the young men to the old, to be hanged, and to
+leave the city to the beardless youths, since they cast out Hermodorus, their
+best man, saying, 'let no one be the best among us: if he is, let him be so
+elsewhere and among others'.&lt;/q&gt;
+(&lt;cite&gt;B121&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;But could this be because "nature tends to hide itself" (fragment B123) or
+because most people, "know neither how to listen nor how to speak"
+(fragment B19)?&lt;/p&gt;
+&lt;p&gt;Sadly, things don't look good for most people because,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Learning many things&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref38"&gt;38&lt;/a&gt;]&lt;/sup&gt; does not teach good
+sense&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref39"&gt;39&lt;/a&gt;]&lt;/sup&gt;; for it would have taught
+&lt;a href="https://en.wikipedia.org/wiki/Hesiod"&gt;Hesiod&lt;/a&gt; and
+&lt;a href="https://en.wikipedia.org/wiki/Pythagoras"&gt;Pythagoras&lt;/a&gt;, and also
+&lt;a href="https://en.wikipedia.org/wiki/Xenophanes"&gt;Xenophanes&lt;/a&gt; and
+&lt;a href="https://en.wikipedia.org/wiki/Hecataeus_of_Miletus"&gt;Hecataeus&lt;/a&gt;.&lt;/q&gt;
+(&lt;cite&gt;B40&lt;/cite&gt;)
+&lt;p id="ref38"&gt;38 &lt;small&gt;&lt;em&gt;polymathie&lt;/em&gt; (πολυμαθίη)—a cognate with mathontes
+(fr. 17) and mathesis (fr. 55) = learning. This term (i.e., polymath) was
+probably coined by Heraclitus.&lt;/small&gt;&lt;/p&gt;
+&lt;p id="ref39"&gt;39 &lt;small&gt;&lt;em&gt;noon&lt;/em&gt; (νόον) = mindfulness, understanding. Cf. frs. 104,
+114.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Clearly if the learning of intellectual Titans like Hesiod and Pythagoras
+et al, doesn't result in understanding, what chance do mere mortals have?
+Perhaps it's just a case of luck since "one's character is one's divine
+fortune" (fragment 119)? Clearly a good metaphor is needed to illuminate the
+nature of the logos to the ignorant hoi polloi. This is precisely what
+Heraclitus does when he poetically plays with "fire".&lt;/p&gt;
+&lt;p&gt;Early Greek philosophers were traditionally interested in discerning the
+"&lt;a href="https://en.wikipedia.org/wiki/First_principle"&gt;arche&lt;/a&gt;" — the first
+principle or element from which everything else can be derived. For instance,
+&lt;a href="https://en.wikipedia.org/wiki/Thales_of_Miletus"&gt;Thales&lt;/a&gt; claimed
+water was the arche, while
+&lt;a href="https://en.wikipedia.org/wiki/Anaximander"&gt;Anaximander&lt;/a&gt; said it was "the
+infinite", and
+&lt;a href="https://en.wikipedia.org/wiki/Anaximenes_of_Miletus"&gt;Anaximenes&lt;/a&gt; considered it
+air.&lt;/p&gt;
+&lt;p&gt;It is often claimed that Heraclitus believed fire was the arche. In one sense
+it is true, because Heraclitus uses fire to symbolise the logos (his own
+underlying principle from which everything else follows), but in another sense
+it is false because I don't think Heraclitus thought everything was (literally)
+derived from fire - although some appear to believe this the case. I suspect,
+given the playful and poetic personality of Heraclitus, he's using a metaphor.&lt;/p&gt;
+&lt;p&gt;Fire is actually a very good metaphor for logos. Fire represents change because
+it transforms the burning things. Yet fire is also unchanging alongside change,
+it retains its unity through time (so the flame flickering at the top of a
+candle at the start of the evening is the same flame as that at the end of the
+evening). Fire is also dry - an important property that Heraclitus uses to
+indicate an enlightened person (who has a dry soul). This is also perhaps why
+Diogenes claimed Heraclitus died of dropsy (he had a wet soul that he tried to
+dry out with bullshit). Significantly, fire is created through friction
+(opposition and strife), such as when striking flints or rubbing sticks
+together. As we shall see, opposition and strife are important aspects of
+Heraclitus's account of the eternal logos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Fire, having come upon them, will distinguish&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref66"&gt;66&lt;/a&gt;]&lt;/sup&gt; and seize all
+things.&lt;/q&gt;
+(&lt;cite&gt;B66&lt;/cite&gt;)
+&lt;p id="ref66"&gt;66 &lt;small&gt;&lt;em&gt;krinei&lt;/em&gt; (κρινεῖ) = separate, pick out, choose, decide,
+judge&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;It is delight or&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref74"&gt;74&lt;/a&gt;]&lt;/sup&gt; death for souls to become moist.&lt;/q&gt;
+(&lt;cite&gt;B77&lt;/cite&gt;)
+&lt;p id="ref74"&gt;74 &lt;small&gt;I follow Diels and Marcovich in reading ἢ (&lt;em&gt;contra&lt;/em&gt; Kahn's
+μἡ), since it lends itself more readily to the two senses of a 'moist soul'
+which Heraclitus intends. On the one hand, a moist soul is said to be found in
+the person who is drunk or ignorant (confused by appearances). On the other
+hand, when the ignorant person dies, that person's moist soul disintegrates and
+unites with water in an endless cycle of elemental change.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Change, in a universe of unity (i.e. &lt;em&gt;all things are one&lt;/em&gt;), is caused by
+conflict and strife between opposites interacting via the common and
+universal. Change emerges in both the external and internal worlds. The
+external universe is in a state of constant flux through conflict, but a
+person's understanding, perspective and way of paying attention can also
+change. The logos is how we encounter, understand and express this state of
+affairs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;What is in opposition is in agreement, and the most beautiful harmony comes
+out of things in conflict (and all happens&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref10"&gt;10&lt;/a&gt;]&lt;/sup&gt; according to
+strife).&lt;/q&gt;
+(&lt;cite&gt;B8&lt;/cite&gt;)
+&lt;p id="ref10"&gt;10 &lt;small&gt;&lt;em&gt;ginesthai&lt;/em&gt; (γίνεσθαι) = is born&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Cold things get warm; warm cools off; moist dries up; parched is wetted.&lt;/q&gt;
+(&lt;cite&gt;B126&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;(Human opinions are children's playthings&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref71"&gt;71&lt;/a&gt;]&lt;/sup&gt;.)&lt;/q&gt;
+(&lt;cite&gt;B70&lt;/cite&gt;)
+&lt;p id="ref71"&gt;71 &lt;small&gt;&lt;em&gt;athurmata&lt;/em&gt; (ἀθύρματα) = toys, delights, joys.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;The way up and down is one and the same.&lt;/q&gt;
+(&lt;cite&gt;B60&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;This resonates with my musical side: discord resolves to consonance,
+contrasting themes somehow fit together, differences within musical elements
+(loud/soft, fast/slow, high/low etc.) engage attention. Yet the piece is a
+musical integration of such contrasts, and the manner in which such contrasts
+unfold and interact through time gives the piece its unity. Furthermore, one's
+perception of a piece changes upon repeated performances as new details are
+revealed, the strange becomes familiar or a new perspective is acquired because
+of the ongoing enlargement of one's lived experience.&lt;/p&gt;
+&lt;p&gt;By recognizing the interdependence and fitting together of things in opposition
+we glimpse a yet more fundamental and hidden unity. Heraclitus claims the unity
+of opposites is essential &lt;em&gt;for the existence of the different things in
+opposition&lt;/em&gt;, for their mutual dependency unifies them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Disease makes health sweet and good; hunger satiety, weariness repose.&lt;/q&gt;
+(&lt;cite&gt;B111&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;Furthermore, some things only exist because they arise from the strife of
+mixing or fitting together of different opposing parts, that would otherwise
+separate from each other.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;(Even the potion&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref116"&gt;116&lt;/a&gt;]&lt;/sup&gt; separates unless stirred).&lt;/q&gt;
+(&lt;cite&gt;B125&lt;/cite&gt;)
+&lt;p id="ref116"&gt;116 &lt;small&gt;&lt;em&gt;kukeon&lt;/em&gt; (κυκεὼν) — a drink mentioned in the
+&lt;em&gt;Iliad&lt;/em&gt; (XI 637 ff.), which was composed of wine, barley-meal, and
+grated cheese.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(Kukeon apparently behaved much like a modern-day vinaigrette.)&lt;/p&gt;
+&lt;p&gt;Heraclitus uses the word ἁρμονίη (harmony) to mean a sort of concordant,
+satisfying and purposeful fitting together. The most beautiful harmony comes
+about when things are in conflict: as in music, a dissonance makes the harmony
+beautiful, in contrast to the bland aural goop of continuous consonance. Only
+by becoming conscious of the hidden harmony in the universe — change
+through an unending process of the fitting together of conflict, opposition and
+strife — can one comprehend the paradox that the apparently disjointed
+and diverse appearance of things is actually a unified whole - the eternal
+logos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;The hidden harmony is superior&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref53"&gt;53&lt;/a&gt;]&lt;/sup&gt; to the visible.&lt;/q&gt;
+(&lt;cite&gt;B54&lt;/cite&gt;)
+&lt;p id="ref53"&gt;53 &lt;small&gt;&lt;em&gt;kreitton&lt;/em&gt; (κρείττων) = stronger, more desirable.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How does one become conscious of such hidden logos-related things?&lt;/p&gt;
+&lt;p&gt;As we have seen, Heraclitus believed most people don't develop such awareness.
+Instead they act as if isolated, asleep or ignorant.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;But although the &lt;em&gt;logos&lt;/em&gt; is common, most people live as though they
+possess a private purpose&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref7"&gt;7&lt;/a&gt;]&lt;/sup&gt;.&lt;/q&gt;
+(&lt;cite&gt;B2&lt;/cite&gt; - second sentence)
+&lt;p id="ref7"&gt;7 &lt;small&gt;&lt;em&gt;phronesis&lt;/em&gt; (φρόνησις)—Alternative
+definitions of this word, such as 'to strive', 'to decide' and 'to intend',
+suggest "knowledge related to action." See Jaeger, p.460&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;For those awake there is one common world; but for those sleeping each
+deserts into a private world.&lt;/q&gt;
+(&lt;cite&gt;B89&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;Those listening without understanding are like the deaf. The saying bears
+witness to them: absent while being present.&lt;/q&gt;
+(&lt;cite&gt;B34&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nor did he believe learning and study help with the acquisition of such a
+rarefied and enlightened point of view.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Most people do not comprehend&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref16"&gt;16&lt;/a&gt;]&lt;/sup&gt; however
+they encounter such things, nor do they understand what they learn; they
+believe only themselves.&lt;/q&gt;
+(&lt;cite&gt;B17&lt;/cite&gt;)
+&lt;p id="ref16"&gt;16 &lt;small&gt;&lt;em&gt;ou gar phroneousi&lt;/em&gt; (οὐ γὰρ φρονέουσι)—see
+&lt;a href="https://ntoll.org/article/heraclitus/#ref7"&gt;footnote 7&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rather, he preferred direct experience (over academic learning) and deep
+self reflection as complementary ways to perceive the eternal logos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;q&gt;Eyes are more accurate witnesses than ears.&lt;/q&gt;
+(&lt;cite&gt;B101a&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;I searched for myself.&lt;/q&gt;
+(&lt;cite&gt;B101&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;To be of sound mind&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref107"&gt;107&lt;/a&gt;]&lt;/sup&gt; is the greatest
+excellence and wisdom; to speak and act with truth, detecting things according
+to their nature&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref108"&gt;108&lt;/a&gt;]&lt;/sup&gt;.&lt;/q&gt;
+(&lt;cite&gt;B112&lt;/cite&gt;)
+&lt;p id="ref107"&gt;107 &lt;small&gt;&lt;em&gt;sophronein&lt;/em&gt; (σωφρονεῖν) = to be temperate,
+discreet, to show self-control. This is a cognate with &lt;em&gt;phronesis&lt;/em&gt;.&lt;/small&gt;&lt;/p&gt;
+&lt;p id="ref108"&gt;108 &lt;small&gt;&lt;em&gt;phusin&lt;/em&gt; (φύσιν) = natural qualities,
+constitution, condition.&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;All people are able to know themselves and to learn
+self-control&lt;sup&gt;[&lt;a href="https://ntoll.org/article/heraclitus/#ref112"&gt;112&lt;/a&gt;]&lt;/sup&gt;.&lt;/q&gt;
+(&lt;cite&gt;B116&lt;/cite&gt;)
+&lt;p id="ref112"&gt;112 &lt;small&gt;&lt;em&gt;sophronein&lt;/em&gt; (σωφρονεῖν)—cf.
+&lt;a href="https://ntoll.org/article/heraclitus/#ref107"&gt;footnote 107&lt;/a&gt;.
+&lt;/small&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;q&gt;The soul is a law that increases its own power.&lt;/q&gt;
+(&lt;cite&gt;B115&lt;/cite&gt;)
+&lt;/blockquote&gt;
+
+&lt;p&gt;When learning by listening to another (fragment 17), one often does not hear
+(comprehend) what they are saying. Rather, a direct &lt;em&gt;encounter&lt;/em&gt; with the
+universe, through one's own eyes or because of one's own efforts, is preferable
+(fragments 101a and 101). When paired with a sound mind and disciplined soul
+(fragments 112 and 116) one &lt;em&gt;understands&lt;/em&gt; the true nature of things. This is a
+self-transformative virtuous circle (fragment 115) that becomes more effective
+with more practise (like learning a musical instrument!). Direct experience and
+self-reflection — an immediate, lived and first-hand appreciation of the
+eternal logos — is how to encounter, understand, express and ultimately
+transcend the paradox of the &lt;em&gt;unity of the universe&lt;/em&gt; in the face of apparent
+&lt;em&gt;diversity and change&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Heraclitus is a challenging philosopher: his writing forces us to engage in the
+self-reflection needed to make sense of our direct experience of the universe.
+In fact, we should work things out for ourselves and not rely on the teachings
+of others, perhaps explaining why he neither declares nor conceals, but shows
+by sign. Heraclitus points the way but expects us to make sense of the universe
+ourselves: a deeply challenging, subtle yet rewarding experience that appeals
+to very few. The ambiguous poetry of his words, the fragmentary and fractured
+organisation of his thoughts, and the playfully demonstrative crafting of his
+aphorisms ensures Heraclitus is a perennially intriguing, stimulating and
+relevant philosopher to those who are tuned in and receptive to his peculiar
+yet profound and transfiguring exploration of the universe.&lt;/p&gt;
+&lt;p&gt;For upon those who read the same words, thoughts and aphorisms, ever different
+reflections and responses will flow.&lt;/p&gt;
+&lt;p&gt;One can never step into the same Heraclitus twice. :-)&lt;/p&gt;</description><guid>https://ntoll.org/article/heraclitus/</guid><pubDate>Sun, 07 Jan 2024 11:30:00 GMT</pubDate></item><item><title>CERN</title><link>https://ntoll.org/article/cern/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Last week I visited &lt;a href="https://home.cern/"&gt;CERN&lt;/a&gt; with my youngest (16yo) son,
 William.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src="https://ntoll.org/images/i_heart_cern.jpg" alt="We love CERN"&gt;
@@ -1078,222 +1708,4 @@ chronological order.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-7-8-9/"&gt;Days 7, 8 and 9&lt;/a&gt; - Shropshire hills, Welsh lakes and castles.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-final/"&gt;Days 10, 11 and 12&lt;/a&gt; - Improvising and going with the flow to our destination.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;</description><guid>https://ntoll.org/article/offa-all/</guid><pubDate>Thu, 21 Apr 2022 14:30:00 GMT</pubDate></item><item><title>Offa's Dyke - Days 10, 11 and 12:</title><link>https://ntoll.org/article/offas-dyke-final/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;We found our relaxing rhythm during the final few days of our holiday. Our lack
-of a plan allowed us to follow our noses, and intuitively improvise an itinerary
-during each day. As you'll see from the photos below, we spent a lot of time
-focusing on four things: historic monuments, gardens, food and travel through
-beautiful places.&lt;/p&gt;
-&lt;p&gt;Our tenth day started with breakfast in Ruthin, at Gail's coffee and tea rooms
-on Upper Clwyd Street. Many of our stop overs have provided us with spectacular
-food and drink, and the vegetarian full cooked breakfast at this modest and
-out of the way cafe was up there with the best. Their friendly chef suggested
-a few sights to see in Ruthin and furnished us with a map. And so our typical
-modus operandi of chatting with locals and improvising on the spur of the
-moment led us to the grounds of Ruthin castle.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/ruthin_castle_display.jpg" alt="Peacocks in the gardens of Ruthin Castle." title="Peacocks in the gardens of Ruthin Castle."&gt;
-&lt;figcaption&gt;Peacocks in the gardens of Ruthin Castle.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The chef at Gail's had explained the peacocks who live in the castle grounds
-were a friendly bunch, and we were not disappointed to find several of them
-displaying to the peahens.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/ruthin_castle_gardens.jpg" alt="Ruthin Castle gardens." title="Ruthin Castle gardens."&gt;
-&lt;figcaption&gt;Ruthin Castle gardens.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The castle itself was undergoing renovation, since the original fortified
-remains had been converted into a stately pile during the 19th century, and
-were now used as a hotel of some sort. With the abundance of dramatic castles
-in this part of the world, it was inevitable we'd find a few that had been
-repurposed.&lt;/p&gt;
-&lt;p&gt;Our chef at Gail's also suggested we visit the Ruthin Arts Centre, and we
-spent an extended period of time wandering the relatively small but open plan
-galleries. Both Mary and I particularly enjoyed the exhibition of
-husband-and-wife artists
-&lt;a href="https://paulineburbidge-quilts.com/"&gt;Pauline Burbridge&lt;/a&gt; and
-&lt;a href="https://charlespoulsenartwork.co.uk/"&gt;Charlie Poulsen&lt;/a&gt;. We immersed ourselves
-in the artworks and lost track of time... as we encountered the art in three
-distinct phases:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;slow wandering around the exhibition as we let our intuition guide us as we
-were drawn different pieces,&lt;/li&gt;
-&lt;li&gt;a sort of inquisitive "deep dive" as we read the prose attached to the
-exhibitions and watched a couple of videos where the artists describe their
-works, process and intents,&lt;/li&gt;
-&lt;li&gt;a recapitulation as we explore the exhibition one final time now that we're
-more familiar with the pieces, the artists and the story being told.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/artwork.jpg" alt="A fragment from a Charlie Poulsen piece." title="A fragment from a Charlie Poulsen piece."&gt;
-&lt;figcaption&gt;A fragment from a Charlie Poulsen piece.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This was a wonderful state of mind to inhabit and we both wished there had
-been more of this to explore and encounter.&lt;/p&gt;
-&lt;p&gt;Having put us both in a thoughtful mood, and given the glorious weather, Mary
-suggested we go visit &lt;a href="https://en.wikipedia.org/wiki/Bodnant_Garden"&gt;Bodnant garden&lt;/a&gt;
-to continue our pensive strolling. Since we had the car and we felt like
-touring through North Wales, we instructed the sat-nav and slowly wound our way
-to our destination.&lt;/p&gt;
-&lt;p&gt;We were not disappointed.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/bodnant_gardens.jpg" alt="Bodnant gardens." title="Bodnant gardens."&gt;
-&lt;figcaption&gt;Bodnant gardens.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;We found ourselves in a large and
-varied garden containing an abundance of benches on which we could both sit,
-look, listen and soak up our surroundings. I think my favourite aspect of the
-gardens were the woods containing paths and shallow brooks and many different
-sorts of tree and woodland life.&lt;/p&gt;
-&lt;p&gt;As with the art gallery, our slow meandering meant we encountered and
-re-encountered aspects of the garden in a manner that encouraged a slow and
-thoughtful attention to all the ways the garden stimulated our senses: the
-colourful floral displays, smell of pine, sound of running water or warmth of
-the sun touching our faces.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/bodnant_gardens_terrace.jpg" alt="Bodnant gardens terraces." title="Bodnant gardens terraces."&gt;
-&lt;figcaption&gt;Bodnant gardens terraces.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In the evening we found ourselves staying at a community run inn that was
-holding a quiz night. After an early dinner we joined the locals and had a
-friendly evening answering questions about such diverse topics as the game of
-Cluedo, Elton John's back catalogue, the plural noun for crows (it's a "murder"
-of crows, in case you're wondering), and other out of the way trivia. The quiz
-was both taken seriously, yet in a spirit of silliness, as many of the locals
-made humorous commentary of the emerging themes in the questions.&lt;/p&gt;
-&lt;p&gt;Once again, our modus operandi of chatting with locals and improvising on the
-spur of the moment led us to something fun.&lt;/p&gt;
-&lt;p&gt;Our penultimate day started with the realisation that it was our penultimate
-day. So, we decided to make use of the car and go visit the seaside, since that
-was the only type of terrain we'd not yet visited during our break. We chose to
-head towards Porthmadoc since it would mean driving through the beautiful Welsh
-mountain range called &lt;a href="https://en.wikipedia.org/wiki/Snowdonia"&gt;Snowdonia&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The journey was, indeed a sight to behold as we made our way to the coast, yet
-upon our arrival at Porthmadoc we both felt underwhelmed by the place.
-Wondering what our options might be, and in the spirit of improvisation, we
-spotted a castle on the coastline in the distance and pointed the car in that
-general direction only to pick up signs for
-&lt;a href="https://en.wikipedia.org/wiki/Harlech_Castle"&gt;Harlech Castle&lt;/a&gt;.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/harlech_castle.jpg" alt="Harlech castle." title="Harlech castle."&gt;
-&lt;figcaption&gt;Harlech castle.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This well preserved ruin is an imposing sight so we imagined it would be very
-busy with tourists, due to its prominence. Yet the village was relatively
-empty and we easily got into the castle.&lt;/p&gt;
-&lt;p&gt;Not only was the castle an amazing sight, but the views from it were
-magnificent as we were able to take in a full panorama from the Irish sea to
-the mountains of Snowdonia.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/harlech_view.jpg" alt="The view of Snowdonia from Harlech." title="The view of Snowdonia from Harlech."&gt;
-&lt;figcaption&gt;The view of Snowdonia from Harlech.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Because of its good state of repair, it was possible to explore many different
-parts of the castle. For instance, we walked up and down spiral staircases to
-get to the battlements and then to the very highest tower. I'm OK with heights
-but Mary (and several others) found the drop from the walls rather intimidating
-and so we didn't spend &lt;em&gt;that&lt;/em&gt; long up there. Luckily it was a bright sunny day
-with little wind to speak of, otherwise I imagine the reaction of folks might
-be very different.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/harlech_walls.jpg" alt="Walking the castle walls of Harlech." title="Walking the castle walls of Harlech."&gt;
-&lt;figcaption&gt;Walking the castle walls of Harlech.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;As we were having our lunch we noticed a cameraman and several people faffing
-about and talking about "positioning", "shots" and "delivery". One of them, a
-lady in sunglasses, spotted us watching the events unfold and came over to
-explain what was going on.&lt;/p&gt;
-&lt;p&gt;It turned out she and her colleague were professional story tellers
-specialising in Welsh legends (particularly, the 
-&lt;a href="https://en.wikipedia.org/wiki/Mabinogion"&gt;Mabinogion&lt;/a&gt;), and were at Harlech to
-tell stories in both English and beginner level Welsh, to help keep this
-beautifully musical language alive. The UK's &lt;a href="https://www.itv.com/"&gt;ITV news&lt;/a&gt;
-had turned up to do a short feature on their work and were just filming a
-talking head segment in front of the castle before filming the actual story
-telling in the castle.&lt;/p&gt;
-&lt;p&gt;We didn't realise such bardic activity was going on, but both of us love
-listening to a well told yarn, so quickly finished our lunch and headed back
-over the bridge into the castle.&lt;/p&gt;
-&lt;p&gt;Inside we found perhaps a hundred people sitting on benches, low walls and the
-grass as our bespectacled friend started to tell us a story. I won't describe
-stories she and her colleague told. Rather, I heartily encourage you to seek
-out such folk and let them cast their magic. In our case, as they told their
-tales in Harlech, the story tellers embodied and communicated the worlds they
-described in a way that only an oral story teller can. The best special effects
-happen as part of the story seen inside one's head, the interaction between the
-story teller and their audience adds an extra dimension of connectivity to the
-telling of tales that our screen laden world often lacks and, ultimately, our
-stories are just that... connections between ourselves that deeply and
-fundamentally move and speak to us through distances of time and space.&lt;/p&gt;
-&lt;p&gt;Here's the video segment broadcast by ITV, it is but a shadow cast by the
-brilliance of their story telling:&lt;/p&gt;
-&lt;div class="video-container"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Oo9uypliq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We must have spent hours in the castle, since we both mentioned exploring the
-village of Harlech at the same time. Almost immediately we discovered a small
-ice cream shop, selling home made produce made earlier in the day. This was some
-of the best ice cream either of us have ever tasted, and the owner explained how
-she hand made the produce fresh each day. Clearly this woman had a passion
-for ice cream, and we could taste it in abundance.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/mary_icecream.jpg" alt="Mary, with her amazing ice cream." title="Mary, with her amazing ice cream."&gt;
-&lt;figcaption&gt;Mary, with her amazing ice cream.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Just around the corner was an knick-knack shop in which I found a piano. On
-the music stand was Debussy's &lt;a href="https://en.wikipedia.org/wiki/Suite_bergamasque#3._Clair_de_lune"&gt;Clair de Lune&lt;/a&gt; (which I know),
-so I rattled it off, after finding a very convenient candelabra to help free up
-a hand.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/nicholas_piano.jpg" alt="Nicholas on the piano, but where is his ice cream?" title="Nicholas on the piano, but where is his ice cream?"&gt;
-&lt;figcaption&gt;Nicholas on the piano, but where is his ice cream?&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;It was lovely to play after more than a week away, and I even got a round of
-applause!&lt;/p&gt;
-&lt;p&gt;Upon leaving Harlech we decided to take the long and winding road over
-the mountains of Snowdonia, just to take in the views and make space for
-enjoying a slow and gently winding journey together.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/snowdonia.jpg" alt="Snowdonia." title="Snowdonia."&gt;
-&lt;figcaption&gt;Snowdonia.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;On the morning of our final day (today), we finished the last of many full
-breakfasts and set off for Prestatyn to conclude our walk.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/offas_sign.jpg" alt="The sign to Chepstow." title="The sign to Chepstow."&gt;
-&lt;figcaption&gt;The sign to Chepstow.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Little did we realise, almost a fortnight ago, how different our adventure
-along Offa's Dyke would be, compared to what we had imagined or prepared for.
-We certainly enjoyed walking the first third of the trail (almost 60 miles),
-and we both reflected that the injuries and improvised change to a touring
-holiday had taught us a lesson: go with the flow, and unexpected change is to
-be embraced and welcomed if you're going to make something of it.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/offas_stone.jpg" alt="The stone marking the end of Offa's Dyke." title="The stone marking the end of Offa's Dyke."&gt;
-&lt;figcaption&gt;The stone marking the end of Offa's Dyke.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In the end, as I write this back at home in Towcester, both Mary and I feel
-glad to have returned after our journey together. We're especially looking
-forward to seeing our children again and giving them gifts we found on our way.&lt;/p&gt;
-&lt;p&gt;But I think this won't be the last time Mary and I do this.&lt;/p&gt;
-&lt;p&gt;We've had too much fun not to do it again.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="https://ntoll.org/images/offa10/offas_selfie.jpg" alt="The two of us, at the end of our adventure." title="The two of us, at the end of our adventure."&gt;
-&lt;figcaption&gt;The two of us, at the end of our adventure.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Onwards!&lt;/p&gt;</description><guid>https://ntoll.org/article/offas-dyke-final/</guid><pubDate>Thu, 21 Apr 2022 13:40:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Enjoy!&lt;/p&gt;</description><guid>https://ntoll.org/article/offa-all/</guid><pubDate>Thu, 21 Apr 2022 14:30:00 GMT</pubDate></item></channel></rss>
