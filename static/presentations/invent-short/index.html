@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Invent Workshop at Tufts</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+          <img src="img/invent.svg"/>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-color="white">
+          <img src="img/splash.png"/>
+          <h2>PyperCard (2019)</h2>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-image="img/pyscript_party.jpg">
+            <aside class="notes">
+            </aside>
+        </section>
+        <section data-background-image="img/pypercard_workshop.png">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-image="img/tufts.jpg">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <img src="img/mvp.jpg"/>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-video="video/tufts_showreel2.webm" data-background-video-loop>
+        </section>
+        <section>
+          <h2>Core Concepts</h2>
+          <p>An Invent application is made of this:</p>
+          <ul style="font-size: 0.8em;">
+            <li class="fragment"><em>Pages</em> contain <em>components</em> 
+            used in the app 📱 🎚️ ▶️</li>
+            <li class="fragment"><em>Media</em> are assets used
+            by the app. 🖼️ 🎶 🎥</li>
+            <li class="fragment"><em>Functions</em> define custom
+            behaviour. ⚙️💪</li>
+            <li class="fragment"><em>Channels</em> carry messages to
+            coordinate behaviour. 💬📡</li>
+            <li class="fragment"><em>Datastore</em> keeps state, stores
+            key/value data. ✍️  📖</li>
+            <li class="fragment"><em>Tasks</em> do background stuff 
+            then store results in datastore. 🚚 📦</li>
+          </ul>
+          <aside class="notes">
+          <aside>
+        </section>
+        <section data-background-image="img/boom.jpg">
+          <aside class="notes">
+            <p>Demo time.</p>
+          </aside>
+        </section>
+    </div>
+</div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="customtags.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+</script>
+</body>
+</html>
