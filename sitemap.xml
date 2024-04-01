@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2024-01-07T12:39:00Z</lastmod>
+  <lastmod>2024-04-01T13:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -99,7 +99,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2024-03-29T06:36:00Z</lastmod>
+  <lastmod>2024-04-01T18:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -140,6 +140,10 @@
  <url>
   <loc>https://ntoll.org/article/advice/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain/</loc>
+  <lastmod>2024-04-01T13:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -727,7 +731,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-26.html</loc>
-  <lastmod>2024-03-29T06:36:00Z</lastmod>
+  <lastmod>2024-04-01T18:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-27.html</loc>
+  <lastmod>2024-04-01T13:05:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
