@@ -3,7 +3,215 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Thu, 21 Mar 2024 12:37:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Heraclitus: The Unity of Opposites</title><link>https://ntoll.org/article/heraclitus/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Two weeks after turning 18, I arrived in London to study for a music degree at
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Mon, 01 Apr 2024 05:34:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Victorian Python Community (an Allegory)</title><link>https://ntoll.org/article/victorian-python-allegory/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Allegory&lt;/em&gt;&lt;/strong&gt; (&lt;em&gt;noun&lt;/em&gt;) : the expression, by means of symbolic fictional
+figures and actions, of truths or generalizations about human existence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;p&gt;Everyone knows the Python programming language was invented by 
+&lt;a href="https://en.wikipedia.org/wiki/Charles_Darwin"&gt;Charles Darwin&lt;/a&gt; and first
+revealed to the world in his 1859 magnum opus, &lt;em&gt;On the Origin
+of Programming by Means of Natural Indentation, or the Preservation of Favoured
+Algorithms in the Struggle for Resources&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As has been copiously documented elsewhere, while Darwin suffered ridicule and
+hostility from the Victorian establishment, a community of supporters emerged
+to help Python reform its reputation as a programming language, achieve
+widespread acceptance and eventually become a core part of our modern computing
+stack.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/early_pythians.jpg" alt="A group shot of some of the Victorian Python community." title="A group shot of some of the Victorian Python community."&gt;
+&lt;figcaption&gt;A group shot of some of the early Victorian Python community.
+(&lt;a href="https://www.flickr.com/photos/statelibraryqueensland/43434177381"&gt;Source&lt;/a&gt;)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This group of unnamed community organisers were responsible for some of the
+first Python programming conventions and exhibitions. They eventually
+instigated the Royal Society of Python (RSP) whose first patron was the
+&lt;a href="https://en.wikipedia.org/wiki/Edward_VII"&gt;Prince of Wales&lt;/a&gt;. Even today, the
+post-nominals FRSP (fellow of the Royal Society of
+Python) are widely established as a much sought after recognition of
+professional success.&lt;/p&gt;
+&lt;p&gt;Of course, the earliest Python programmers were exclusively gentleman amateurs
+~ men with the education and financial means to pursue an interest in computing
+for the love of it, rather than for financial gain. Often they would meet to
+informally discuss their work in the coffee houses and gentlemen's clubs of
+London. Such activity soon led to the formation of The Pythian Club in 1863
+(the forerunner of the Royal Society of Python) and the publication of
+technical papers written by club members and published in its journal, The
+Pythian Exposition Pamphlet (&lt;a href="https://peps.python.org/"&gt;PEP&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Much innovative and creative energy was shared in those early years. While some
+of this activity addressed uniquely Victorian technology and cultural norms,
+we still use a remarkable amount of code from this era. Furthermore, a
+recognisably Pythonic approach and aesthetic, familiar to programmers of today,
+emerged at this time.&lt;/p&gt;
+&lt;p&gt;Because of cultural norms rather than by design, the early Pythian
+Club was an exclusively male space. However, as Python became more widely
+known, women ventured into this traditionally male world. The Pythians, as they
+came to be called, hoped to promote the widespread popularity and adoption of
+Python, so eventually welcomed women. By 1879 up to 5% of their members were
+female. Unfortunately, women often found themselves on the receiving end of the
+tacit mysogyny, sexism and male chauvinism of the time. Furthermore, ingrained
+institutional racism and cultural prejudices also meant those from a
+non-European background were often excluded, patronised or subjected to onerous
+membership requirements.&lt;/p&gt;
+&lt;p&gt;In response, and because measuring things always reveals the truth, concerned
+Pythians collected data and published tables and charts to show how their ranks
+were growing according to the sex, age, social background or nationality of the
+participants.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/female_coders.jpg" alt="A chart about female coders." title="A chart about female coders."&gt;
+&lt;figcaption&gt;The Pythians produced statistics about female coders (this example
+is from the 1890s). (&lt;a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/1740-9713.01376"&gt;Source&lt;/a&gt;)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Complementary to such data led practices, and born of a desire to improve the
+moral fibre, deportment and behaviour of Pythians, the first of innumerable
+versions of a code of conduct was published.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/victorian_rules.png" alt="The code of conduct." title="The code of conduct."&gt;
+&lt;figcaption&gt;One of many versions of the Victorian Python community's code of conduct.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Finally, a group of teachers, school inspectors and orphanage directors worked
+together with the Pythians to tackle problems of dangerous child labour
+practices, youth delinquency and sub-normal computing literacy in the general
+population. A resulting act of parliament, championed by
+&lt;a href="https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell"&gt;Lord Russell&lt;/a&gt; in
+1876, ensured all children were to learn about computation with the aid of an
+abacus, slide rule and clockwork calculating machine called a
+&lt;a href="https://microbit.org/"&gt;micro:contraption&lt;/a&gt;. Patronage of the Prince of Wales
+and a royal charter soon followed and the Pythian Club became the Royal Society
+of Python, whose offices one can still find on John Adam street, adjacent to
+&lt;a href="https://en.wikipedia.org/wiki/Adelphi,_London"&gt;the Adelphi&lt;/a&gt;, just off the
+Strand in London.&lt;/p&gt;
+&lt;p&gt;Enthused with successes, the Royal Society of Python organised schools for the
+fortification of logical, algorithmic, inquiry and learning (the origin of the
+phrase, "to flail around"), and organised a curriculum of rote learning and
+regular examinations to ensure young people were equipped for their place in
+the economic development of the British Empire.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/children.jpg" alt="Education track." title="Education track."&gt;
+&lt;figcaption&gt;Instructions from an early Victorian Python education summit.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Such practices, codes of conduct and educational efforts were widely adopted.&lt;/p&gt;
+&lt;p&gt;Yet there were dark clouds on the horizon and such developments caused
+consternation among two groups:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Artistic free spirits, those with a melancholic character and trade
+   unionists, who inevitably railed against the formal rules, regulations and
+   processes imposed from on high.&lt;/li&gt;
+&lt;li&gt;Traditionalists, progressives and everyone in between, who simply disagreed
+   with whatever was the current code of conduct (until it was replaced with
+   &lt;em&gt;their own&lt;/em&gt; version).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Into this mix came further considerations: a desire that financial endowments
+from the Royal Society of Python be made to the deserving poor with the right
+sort of upstanding constitution, rather than to the afore mentioned artistic
+types, the morally corrupt and bothersome foreigners barging in on the
+society's coding crusade for the spread of civilized indentation.&lt;/p&gt;
+&lt;p&gt;Some senior members of the Royal Society of Python, the very people who
+organised such selective grant giving efforts, preached the virtues of
+kindness and charity to assemblies of the Python community. Thus they attempted
+to ensure their political manoeuvers appeared ostensibly benign.&lt;/p&gt;
+&lt;p&gt;The situation became ugly as such members vied for power and resources
+within the Royal Society of Python. Manipulative machinations, plots, gossip,
+self promotion and factionalism ran rife. The Royal Society of Python was no
+longer a friendly society of shared fellowship in the craft of coding. Those
+suspected of veering off the conventional straight and narrow path were swiftly
+condemned in the
+&lt;a href="https://www.thetimes.co.uk/topic/letters-to-the-editor"&gt;letters page of the London Times&lt;/a&gt;
+and then subtly ostracised.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/victorian_group.png" alt="Senior members." title="Senior members."&gt;
+&lt;figcaption&gt;Senior members of the Royal Society of Python.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Furthermore, industrialists from the north of England, seeing how lucrative
+Python based produce could be, sponsored or employed senior members of the
+society to advance their interests and ensure profits remained secure. They
+even exerted shadowy influence within the Royal Society of Python so
+competitors were excluded or disadvantaged (most notoriously, a director
+of a Python-using pie making company from Cambridgeshire undermined the award
+of the society's annual medal to a competitor and ensured yet another was
+excluded from fully participating in society activities).&lt;/p&gt;
+&lt;p&gt;The creativity, adventure and imaginative spark of Python's early days was
+replaced by the puritanical promotion of stifling, trite and standardised
+frameworks for all manner of aspects of Python coding (from
+&lt;a href="https://docs.python.org/3/library/typing.html"&gt;type hinting&lt;/a&gt;
+to the
+&lt;a href="https://ntoll.org/article/chicken/"&gt;writing of documentation&lt;/a&gt;). With the encouragement of
+paymaster industrialists, some members of the society used their influence
+and control to deliberately spread (insipid yet so-called) exemplary standards
+of upstanding engineering practice that benefited the business interests of
+their sponsor or employer. Alas, Python was widely used to create mass market,
+derivative, lifeless and banal software in a race to the bottom of the coding
+barrel.&lt;/p&gt;
+&lt;p&gt;(Urban myth tells us that a bug-ridden Python script driving a lace making 
+loom got into an infinite loop, and thus the
+&lt;a href="https://www.nottinghamcastleproject.co.uk/projects/power-of-art-and-making/nottingham-lace/"&gt;Nottingham lace industry&lt;/a&gt;
+was born with a [literal] stack overflow of collars, doilies, curtains,
+knickers and drapes.)&lt;/p&gt;
+&lt;p&gt;Such sharp practices, political posturing and vapid design inevitably caused a
+backlash.&lt;/p&gt;
+&lt;p&gt;Famously &lt;a href="https://en.wikipedia.org/wiki/Oscar_Wilde"&gt;Oscar Wilde&lt;/a&gt; quipped,
+"Python's not the serpent that tempted Eve", in a letter penned while
+incarcerated at Pentonville Prison for homosexual activity. 
+&lt;a href="https://en.wikipedia.org/wiki/William_Morris"&gt;William Morris&lt;/a&gt;
+lamented the poor quality and blandness of Pythonic creations in
+his famous lecture of 1884, "How We Might Code" (further explored in his later
+novel, "Code from Nowhere"). A certain
+&lt;a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi"&gt;Mohandas Ghandi&lt;/a&gt;,
+an Indian student studying Python at
+&lt;a href="https://en.wikipedia.org/wiki/University_College_London"&gt;University College London&lt;/a&gt;
+in the late 1880s, went on to found the
+&lt;a href="https://en.wikipedia.org/wiki/Swadeshi_movement"&gt;swadeshi movement&lt;/a&gt;: a
+reaction to the reliance on products produced by industrialised coding, and
+whose aim was self-sufficient hand-made khodi (code). Meanwhile huge offence
+was caused by
+&lt;a href="https://en.wikipedia.org/wiki/Emmeline_Pankhurst"&gt;Emmeline Pankhurst&lt;/a&gt; who
+dared to suggest women were as equally skilled as men at writing Python code.
+Outside Britain and her domains, generative AI created with Python was
+pioneered by German composers such as
+&lt;a href="https://en.wikipedia.org/wiki/Anton_Bruckner"&gt;Anton Bruckner&lt;/a&gt;
+("how else was he able to create so many hour-long symphonies that all sound
+the same with such regularity and in such a short space of time?" asked
+&lt;a href="https://en.wikipedia.org/wiki/George_Bernard_Shaw"&gt;George Bernard Shaw&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Inevitably, at the dawn of the 20th century, disgruntled Python coders broke
+away from the troubled Royal Society of Python and formed small coding
+cooperatives, guilds and workshops under the auspices of the emerging
+Code and Crafts movement founded by Morris. The influence of these reformers is
+still felt today: our modern approach to writing software, with its focus on
+human beings over computers, authentic expression in the digital realm over
+simulated emulation of the real world, and empowering creativity through code
+over data driven automation is thanks largely to such radical-thinking 
+and revolutionary (for the time) programmers.&lt;/p&gt;
+&lt;p&gt;Python therefore became both part of the establishment and a haven for unbound
+creative expression. This dichotomy is best illustrated by Queen Victoria's
+reaction to learning of the release of
+&lt;a href="https://python.org/"&gt;Python 3&lt;/a&gt; support for the
+&lt;a href="https://www.libsdl.org/"&gt;SDL library&lt;/a&gt;
+(and thus she was able to return to the development of her
+&lt;a href="https://en.wikipedia.org/wiki/Bram_Stoker"&gt;Bram Stoker&lt;/a&gt; inspired vampire
+slaying game, an entry for &lt;a href="https://pyweek.org/"&gt;PyWeek&lt;/a&gt; (1895) written with
+&lt;a href="https://www.pygame.org/news"&gt;PyGame&lt;/a&gt;).&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src="https://ntoll.org/images/mildly_amused.jpg" alt="We are mildly amused." title="We are mildly amused."&gt;
+&lt;figcaption&gt;Queen Victoria, on hearing of the release of Python 3, "we are
+mildly amused".
+(&lt;a href="https://www.reddit.com/r/1800HavingFun/comments/f8c360/we_are_mildly_amused_queen_victoria_smiling_1887/"&gt;Source&lt;/a&gt;)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;:-)&lt;/p&gt;
+&lt;p&gt;As they say in the movies, this blog post was "inspired" by
+&lt;a href="https://ntoll.org/article/compassion/"&gt;real events&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, any resemblance to persons living or dead is coincidental, and the
+implication that members of the Python community have a
+&lt;a href="https://pyjok.es/"&gt;sense of humour&lt;/a&gt;,
+creative spark or moral conscience about the influence of technology on society
+should not be inferred.&lt;/p&gt;
+&lt;p&gt;Also, Queen Victoria smiling... how weird is that..?&lt;/p&gt;</description><guid>https://ntoll.org/article/victorian-python-allegory/</guid><pubDate>Mon, 01 Apr 2024 05:30:00 GMT</pubDate></item><item><title>Heraclitus: The Unity of Opposites</title><link>https://ntoll.org/article/heraclitus/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Two weeks after turning 18, I arrived in London to study for a music degree at
 the &lt;a href="https://rcm.ac.uk/"&gt;Royal College of Music&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://ntoll.org/article/remembering-john/"&gt;It was an awakening&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In those first months in London, as I began to fathom my situation, I realised
@@ -1698,14 +1906,4 @@ aspects of my background.&lt;/p&gt;
 coding: I'll still be active as an open source contributor and will continue to
 develop projects such as &lt;a href="https://codegrades.com/"&gt;CodeGrades&lt;/a&gt; in my own time,
 as has been the case so far.  &lt;/p&gt;
-&lt;p&gt;Here's to new adventures.&lt;/p&gt;</description><guid>https://ntoll.org/article/pastures-new/</guid><pubDate>Tue, 21 Jun 2022 07:00:00 GMT</pubDate></item><item><title>Offa's Dyke - Complete</title><link>https://ntoll.org/article/offa-all/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;For completeness, here's a list of all the Offa's Dyke related blog posts in
-chronological order.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-1/"&gt;Day 1&lt;/a&gt; - Chepstow, pizza and first steps.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-2/"&gt;Day 2&lt;/a&gt; - Monmouth to Pandy over rolling countryside.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-3-4-5/"&gt;Days 3, 4 and 5&lt;/a&gt; - Things don't go to plan.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-6/"&gt;Day 6&lt;/a&gt; - The Centre for Alternative Technology.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-7-8-9/"&gt;Days 7, 8 and 9&lt;/a&gt; - Shropshire hills, Welsh lakes and castles.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://ntoll.org/article/offas-dyke-final/"&gt;Days 10, 11 and 12&lt;/a&gt; - Improvising and going with the flow to our destination.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;</description><guid>https://ntoll.org/article/offa-all/</guid><pubDate>Thu, 21 Apr 2022 14:30:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Here's to new adventures.&lt;/p&gt;</description><guid>https://ntoll.org/article/pastures-new/</guid><pubDate>Tue, 21 Jun 2022 07:00:00 GMT</pubDate></item></channel></rss>
