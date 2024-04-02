@@ -116,7 +116,7 @@ Such practices, codes of conduct and educational efforts were widely adopted.
 Yet there were dark clouds on the horizon and such developments caused
 consternation among two groups:
 
-1. Artistic free spirits, those of a melancholic spirit, anarchists, and
+1. Artistic free spirits, those of a melancholic disposition, anarchists, and
    trade unionists, who inevitably railed against the formal rules, regulations
    and processes imposed from on high.
 2. Traditionalists, progressives and everyone in between, who simply disagreed
