@@ -91,7 +91,7 @@ together with the Pythians to tackle the problems of dangerous child labour
 practices, youth delinquency and sub-normal computing literacy in the general
 population. An act of parliament, championed by
 [Lord Russell](https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell) in
-1876, forced all children were to learn about computation with the aid of an
+1876, forced all children to learn about computation with the aid of an
 abacus, slide rule and clockwork calculating machine called a
 [micro:contraption:for:computing:results](https://microbit.org/). Patronage of
 the Prince of Wales and a royal charter soon followed and the Pythian Club
