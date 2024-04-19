@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 19 Apr 2024 08:48:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Victorian Python Community (an Allegory)</title><link>https://ntoll.org/article/victorian-python-allegory/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;blockquote&gt;
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 19 Apr 2024 09:00:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Victorian Python Community (an Allegory)</title><link>https://ntoll.org/article/victorian-python-allegory/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Allegory&lt;/em&gt;&lt;/strong&gt; (&lt;em&gt;noun&lt;/em&gt;) : the expression, by means of symbolic fictional
 figures and actions, of truths or generalizations about human existence.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -72,19 +72,21 @@ versions of a code of conduct was published.&lt;/p&gt;
 &lt;figcaption&gt;One of many versions of the Victorian Python community's code of conduct.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Finally, a group of teachers, school inspectors and orphanage directors worked
+&lt;p&gt;Finally, a group of teachers, school inspectors and orphanage directors
+worked
 together with the Pythians to tackle the problems of dangerous child labour
 practices, youth delinquency and sub-normal computing literacy in the general
 population. An act of parliament, championed by
-&lt;a href="https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell"&gt;Lord Russell&lt;/a&gt; in
-1876, forced all children to learn about computation with the aid of an
+&lt;a href="https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell"&gt;Lord Russell&lt;/a&gt;
+in 1876, forced all children to learn about computation with the aid of an
 abacus, slide rule and clockwork calculating machine called a
-&lt;a href="https://microbit.org/"&gt;micro:contraption:for:computing:splendid:results&lt;/a&gt;.
+&lt;span&gt;&lt;a href="https://microbit.org/"&gt;micro:contraption:for:computing:&lt;wbr&gt;&lt;/wbr&gt;splendid:results&lt;/a&gt;&lt;/span&gt;.
 Patronage of the Prince of Wales and a royal charter soon followed and the
 Pythian Club became the Royal Society of Python, whose offices one can still
 find on John Adam street, adjacent to
-&lt;a href="https://en.wikipedia.org/wiki/Adelphi,_London"&gt;the Adelphi&lt;/a&gt;, just off the
-Strand in London.&lt;/p&gt;
+&lt;a href="https://en.wikipedia.org/wiki/Adelphi,_London"&gt;the Adelphi&lt;/a&gt;,
+just off the Strand in London.&lt;/p&gt;
+
 &lt;p&gt;Enthused with successes, the Royal Society of Python organised schools for the
 fortification of logical, algorithmic, inquiry and learning (the origin of the
 phrase, "to flail around"), and organised a curriculum of rote learning and
