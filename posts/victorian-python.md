@@ -93,10 +93,10 @@ population. An act of parliament, championed by
 [Lord Russell](https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell) in
 1876, forced all children to learn about computation with the aid of an
 abacus, slide rule and clockwork calculating machine called a
-[micro:contraption:for:computing:results](https://microbit.org/). Patronage of
-the Prince of Wales and a royal charter soon followed and the Pythian Club
-became the Royal Society of Python, whose offices one can still find on John
-Adam street, adjacent to
+[micro:contraption:for:computing:splendid:results](https://microbit.org/).
+Patronage of the Prince of Wales and a royal charter soon followed and the
+Pythian Club became the Royal Society of Python, whose offices one can still
+find on John Adam street, adjacent to
 [the Adelphi](https://en.wikipedia.org/wiki/Adelphi,_London), just off the
 Strand in London.
 
