@@ -86,19 +86,20 @@ versions of a code of conduct was published.
 <figcaption>One of many versions of the Victorian Python community's code of conduct.</figcaption>
 </figure>
 
-Finally, a group of teachers, school inspectors and orphanage directors worked
+<p>Finally, a group of teachers, school inspectors and orphanage directors
+worked
 together with the Pythians to tackle the problems of dangerous child labour
 practices, youth delinquency and sub-normal computing literacy in the general
 population. An act of parliament, championed by
-[Lord Russell](https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell) in
-1876, forced all children to learn about computation with the aid of an
+<a href="https://en.wikipedia.org/wiki/John_Russell,_1st_Earl_Russell">Lord Russell</a>
+in 1876, forced all children to learn about computation with the aid of an
 abacus, slide rule and clockwork calculating machine called a
-[micro:contraption:for:computing:splendid:results](https://microbit.org/).
+<span><a href="https://microbit.org/">micro:contraption:for:computing:<wbr/>splendid:results</a></span>.
 Patronage of the Prince of Wales and a royal charter soon followed and the
 Pythian Club became the Royal Society of Python, whose offices one can still
 find on John Adam street, adjacent to
-[the Adelphi](https://en.wikipedia.org/wiki/Adelphi,_London), just off the
-Strand in London.
+<a href="https://en.wikipedia.org/wiki/Adelphi,_London">the Adelphi</a>,
+just off the Strand in London.</p>
 
 Enthused with successes, the Royal Society of Python organised schools for the
 fortification of logical, algorithmic, inquiry and learning (the origin of the
