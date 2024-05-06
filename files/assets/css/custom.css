@@ -26,8 +26,13 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Mebinac';
+    src: url('/static/fonts/mebinac/mebinac.otf') format('opentype');
+}
+
 body {
-    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-family: 'Mebinac', 'Linux Libertine','Georgia','Times',serif;
     font-weight: 400;
 }
 
@@ -35,6 +40,10 @@ body {
   body {
     font-size: 1.4em;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
 }
 
 #menu ul li,
@@ -109,7 +118,7 @@ img {
 
 .entry-title {
     font-size: 2.2em; 
-    font-weight: 600;
+    font-weight: 400;
 }
 
 figure {
