@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sat, 01 Jun 2024 12:00:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Paying Attention</title><link>https://ntoll.org/article/attention/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;&lt;a href="https://us.pycon.org/2024/"&gt;PyCon US 2024&lt;/a&gt; has been and gone. It was mostly
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sat, 01 Jun 2024 15:45:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Paying Attention</title><link>https://ntoll.org/article/attention/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;&lt;a href="https://us.pycon.org/2024/"&gt;PyCon US 2024&lt;/a&gt; has been and gone. It was mostly
 lovely, and huge thanks to the team of volunteers who made it happen.&lt;/p&gt;
 &lt;p&gt;I was privileged to help plan the
 &lt;a href="https://us.pycon.org/2024/events/webassembly-summit/"&gt;web assembly summit&lt;/a&gt;
@@ -208,7 +208,7 @@ didn't quite make sense in the way I had hoped.&lt;/p&gt;
 &lt;p&gt;I was prompted by chatting with Guido at 2023's PyCon. I noticed he had covered
 his name on his conference badge with a post-it note saying, "no selfies".
 Guido is, of course, the inventor of Python.&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;blockquote class="poem"&gt;
 &lt;strong&gt;No Selfies&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
 Said Guido, a programmer Dutch,&lt;br&gt;
 “I really hate selfies. As such:&lt;br&gt;
@@ -234,7 +234,7 @@ These programmers really must drop,&lt;br&gt;
 incomplete at the time. It's clearly more serious than the previous effort, and
 shows my frustration with the overly logical, rational and measurement driven
 world created by technology.&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;blockquote class="poem"&gt;
 &lt;strong&gt;Ode to a Data Scientist&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
 This has 97 words, 12 lines and 3 verses,&lt;br&gt;
 Rhymes A-A-B-B in a scheme that traverses,&lt;br&gt;
@@ -262,7 +262,7 @@ encompass my interest in philosophy, and my sprained ankle would be my
 educational efforts. The rest would just be music.&lt;/p&gt;
 &lt;p&gt;I was in a puckish and annoyed mood when I wrote this final poem. I simply
 wanted to poke fun at the barren world view of the tech bros.&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;blockquote class="poem"&gt;
 &lt;strong&gt;The Plural Noun for Tech Bros&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
 A herd of tech bros circle together,&lt;br&gt;
   bleating about the Pythonic weather.&lt;br&gt;
