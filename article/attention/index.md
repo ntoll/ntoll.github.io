@@ -148,7 +148,7 @@ celebrities. He published a book,
 [The Philosophy of Andy Warhol (from A to B and back again)](https://en.wikipedia.org/wiki/The_Philosophy_of_Andy_Warhol),
 ghostwritten by someone else using recordings of Warhol as source material.
 Explicit homoerotic portraits drawn with a black ballpoint pen announce his
-overt homosexually... drawn at a time of discrimination and prejudice against
+overt homosexuality... drawn at a time of discrimination and prejudice against
 the LGBT+ community.
 [Taylor Mead's Ass](https://en.wikipedia.org/wiki/Taylor_Mead%27s_Ass)
 is a glorious 76 minutes of actor
