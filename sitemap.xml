@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2024-04-01T18:49:00Z</lastmod>
+  <lastmod>2024-05-19T22:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -99,7 +99,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2024-05-06T18:22:00Z</lastmod>
+  <lastmod>2024-05-19T22:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -164,6 +164,10 @@
  <url>
   <loc>https://ntoll.org/article/asyncio/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/attention/</loc>
+  <lastmod>2024-05-24T19:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/augmented-reality-a-developers-perspective/</loc>
@@ -727,7 +731,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-26.html</loc>
-  <lastmod>2024-05-06T18:22:00Z</lastmod>
+  <lastmod>2024-05-19T22:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-27.html</loc>
+  <lastmod>2024-05-19T22:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
