@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 02 Jun 2024 08:06:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Paying Attention</title><link>https://ntoll.org/article/attention/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;&lt;a href="https://us.pycon.org/2024/"&gt;PyCon US 2024&lt;/a&gt; has been and gone. It was mostly
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Sun, 02 Jun 2024 08:35:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Paying Attention</title><link>https://ntoll.org/article/attention/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;&lt;a href="https://us.pycon.org/2024/"&gt;PyCon US 2024&lt;/a&gt; has been and gone. It was mostly
 lovely, and huge thanks to the team of volunteers who made it happen.&lt;/p&gt;
 &lt;p&gt;I was privileged to help plan the
 &lt;a href="https://us.pycon.org/2024/events/webassembly-summit/"&gt;web assembly summit&lt;/a&gt;
@@ -350,13 +350,13 @@ within nature.&lt;/p&gt;
 &lt;p&gt;As Joe, our mature yet sprightly guide, showed us around the property he
 brought our attention to hidden details while telling the story of the life of
 the house. He skilfully illustrated aspects of Lloyd Wright's philosophy. For
-example, the notion of "destruction of the box" - so the rooms were varying,
-often open and flowing into each other - was mentioned several times. An
-attention to details relating to the fixtures, furniture, windows, aural
-experience of the waterfall and accessibility to the stream, sun and trees in
-the surrounding area was revealing. Everything about this building was done
-consciously, with care and through a process of attending to the way the parts
-"organically" cohered and emerged into a whole.&lt;/p&gt;
+example, the notion of "destruction of the box" was mentioned several times:
+the rooms were varying in shape, often open and flowed into each other. Joe
+brought our attention to details relating to the fixtures, furniture, windows,
+bathrooms, materials, lighting, the aural experience of the waterfall and
+accessibility to the stream, sun and trees in the surrounding area. Everything
+about this building was done consciously, with care and through a process of
+attending to the way the parts "organically" cohered and emerged into a whole.&lt;/p&gt;
 &lt;p&gt;While chatting with the ever-thoughtful Martin, we both commented on how this
 attitude to building structures was very different to the usual way we build
 software. We agreed (to paraphrase our conversation) that coders,
