@@ -176,7 +176,7 @@ Naomi and I discussed how we couldn't really imagine such provocative
 playfulness at PyCon, nor any pointed subversions during the conference talks.
 I was left in a thoughtful (i.e. grumpy) mood about our contemporary culture
 contaminated by social media. Thanks to such exploitative technology, folks
-don't have 15 minutes of fame, but an infinity of prompted performative
+don't have 15 minutes of fame, but an eternity of prompted performative
 obscurity. If everyone is doing "famous", then nobody is famous and we're all
 just sacrificing ourselves to assessment by algorithms.
 
