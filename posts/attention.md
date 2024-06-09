@@ -46,10 +46,9 @@ Pay attention! What does the conference brand design express about PyCon?
 
 I must admit to mixed feelings when I consider the way some of my programming
 peers pay attention to the world. Put another way, there have always been
-aspects of the Python community that I have found deeply uncomfortable.
-
-Without wishing to tarnish the good stuff at PyCon, here's what makes me
-pause for thought...
+aspects of the Python community that I have found deeply uncomfortable. Without
+wishing to tarnish the good stuff at PyCon, here's what makes me pause for
+thought...
 
 Despite welcome community representation, the exhibitor's hall at PyCon is
 mostly full of companies vying for attention with banal booths hosting
@@ -76,7 +75,7 @@ dominated by
 [Hacker News](https://news.ycombinator.com/) startup culture
 with a 
 [surveillance capitalist](https://en.wikipedia.org/wiki/Surveillance_capitalism)
-bent. Euphemisms and
+bent. In this cuture euphemisms and
 [doublespeak](https://en.wikipedia.org/wiki/Doublespeak), such as "get
 to know your users" or "deliver value faster", misdirect attention from often
 sinister and manipulative uses of technology: the intention behind the examples
@@ -99,12 +98,10 @@ Woe betide criticism of such a culture, or you'll be labelled a
 To be clear, I'm not against technology (no shit Sherlock, it's actually
 fucking useful!). Rather, I'm against shallow, stupid and stunted ways of
 paying attention to tech and coding. I believe we can (and must!) do better
-than this sorry state of affairs.
-
-As programmers we can shine a light on such things in the hope we explore and
-encourage alternative ways to pay attention, express ourselves, empower folks
-and carefully enlarge the world through creative, evocative and joyful
-technology.
+than this sorry state of affairs. As programmers we can shine a light on such
+things in the hope we explore and encourage alternative ways to pay attention,
+express ourselves, empower folks and carefully enlarge the world through
+creative, evocative and joyful technology.
 
 All this probably explains why, for me, the most interesting and stimulating
 aspects of PyCon were the opportunities to be away from PyCon. They jarringly
@@ -149,11 +146,11 @@ celebrities. He published a book,
 ghostwritten by someone else using recordings of Warhol as source material.
 Explicit homoerotic portraits drawn with a black ballpoint pen announce his
 overt homosexuality... drawn at a time of discrimination and prejudice against
-the LGBT+ community.
+the LGBT+ community. The film
 [Taylor Mead's Ass](https://en.wikipedia.org/wiki/Taylor_Mead%27s_Ass)
 is a glorious 76 minutes of actor
 [Taylor Mead](https://en.wikipedia.org/wiki/Taylor_Mead)'s
-naked backside capriciously capering around as a celluloid reaction to a
+naked backside capriciously capering around as a celluloid riposte to a
 film critic who complained he was bored of films containing Mead's ass (it's a
 silent film, and I wondered out loud to Naomi about the possibility of adding
 comedy sound effects). The playfully manufactured and entirely unnatural
@@ -197,10 +194,10 @@ And then we saw it: a
 [create your own screen test](https://warholscreentest.com/AWM) room just off
 the main gallery space.
 
-"I will if you will", I said to Naomi, who gamely took a seat and kicked off
-the capture of four minutes of awkward "so now what do I do?" exasperated looks
-into a fake film camera making faux whirring noises. As I sat during my
-session, I counted in my head, listened to
+"I will if you will", I said to Naomi. She gamely took a seat and kicked off
+the immortalization of four minutes of awkward "so now what do I do?"
+exasperated looks into a fake film camera making faux whirring noises. As I
+sat during my session, I counted in my head, listened to
 [Colonel Bogey](https://www.youtube.com/watch?v=bIvIqyhzoKw) with my inner
 ear, and tried very hard to ignore the various passers-by (to varying degrees
 of success). Ultimately, for four minutes I'd become another exhibit... a
@@ -269,9 +266,7 @@ These programmers really must drop,<br/>
 I'm proud to say, everyone at dinner was politely bemused!
 
 I didn't share this next poem at the dinner because it was still relatively
-incomplete at the time. It's clearly more serious than the previous effort, and
-shows my frustration with the overly logical, rational and measurement driven
-world created by technology.
+incomplete at the time.
 
 <blockquote class="poem">
 <strong>Ode to a Data Scientist</strong><br/><br/>
@@ -292,6 +287,7 @@ Through a universe to live in, embrace and transcend.<br/>
 </blockquote>
 
 This is my plea for a more nuanced, expressive and felt view of the world.
+
 Truth be told, I don't see myself as a programmer. In my mind's eye I'm a
 musician who just happens to use code as their medium (reflect on 
 [Charles Ives](https://en.wikipedia.org/wiki/Charles_Ives)'s famous question,
@@ -336,14 +332,13 @@ What do we call such a desperate crew?<br/>
 A wank of tech bros, that'll do.<br/>
 </blockquote>
 
-It felt good... nope... it felt __great__ to read out such silliness to
-friends: paying attention to the prevailing coding culture in a contrasting
-manner that reflects my creative, playful and expressive side while gleefully
-ignoring the earnest performative moralising and tone policing that often goes
-on in the ([Victorian](/article/victorian-python-allegory)) Python community.
-We desperately need writers, poets, artists, dancers, sculptors, actors,
-architects, comedians and musicians in the world of coding, if only to save us
-from the currently brain dead prevalent coding culture. **Programming
+It felt good... nope... it felt __great__ to read out such silliness to friends
+~ paying attention to coding culture with my creative, playful and expressive
+side while gleefully ignoring the performative moralising and tone policing
+that often goes on in the ([Victorian](/article/victorian-python-allegory))
+Python community. We desperately need writers, poets, artists, dancers,
+sculptors, actors, architects, comedians and musicians in the world of coding,
+if only to save us from the currently brain dead coding culture. **Programming
 is an art**, so please come join in... we're not all thoughtlessly tone deaf
 like Elon, charismatically challenged like Zuck or so easily forgettable like
 those dudes, whose names escape me, that run Google.
@@ -426,9 +421,9 @@ actual needs.
 I quite like the sound of "organic software", although I'm unsure what it might
 be. Right now it's a rough sketch in my head of an attitude or way of paying
 attention to the creative act of writing code. Perhaps that's the nub of it:
-organic software is the same as empowering folks to pay attention, change and
-control the code in their digital life so it reflects their unique and precious
-presence in the world.
+organic software empowers folks to pay attention, change and control the code
+in their digital life so it reflects their unique and precious presence in the
+world.
 
 I can't help but wonder that a whole is never the same as the sum of its parts,
 be that a building, a piece of music or even software. Rather, there are simply
@@ -446,7 +441,7 @@ An inevitable musical metaphor illustrates what I mean. As a performer I could
 just play in a mechanical-yet-very-accurate manner, only paying attention to
 the formal and technical aspects of a piece. Yet this is clearly a diminished
 performance because of the absence of attention to expression, feeling or
-"ensemble" (the connection with other performers and the audience) ~ those
+"ensemble" (the connection with other performers and the audience), those
 aspects of performance that fall under the realm of musicianship. The former
 attention to musical technique is only worthwhile if the latter attention to
 musicianship is present. To be a good musician you need to bring to bear many
