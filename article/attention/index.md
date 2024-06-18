@@ -125,11 +125,11 @@ Rachel Cobcroft. Some rights reserved:
 
 Prior to my visit, I had only limited encounters with the work of Warhol: the
 "15 minutes of fame" quote, garish quartets of Marilyn Monroe prints,
-Campbell's soup cans, and photos of a vacant looking eccentric with blonde
-hair and glasses from my '80s childhood. The Warhol museum certainly captured
-and stimulated my attention. I especially enjoyed sharing this time with Naomi,
-who is always such a playful presence with a large dollop of thoughtfulness
-thrown in for good measure (more on this soon).
+Campbell's soup cans, and 80s-era photos of a vacant looking eccentric with
+blonde hair and glasses. Yet the Warhol museum captured and stimulated my
+attention. I especially enjoyed sharing this time with Naomi, who is always
+such a playful presence with a large dollop of thoughtfulness thrown in for
+good measure (more on this soon).
 
 My impression of Warhol is of a man who found himself in an adverse world, then
 dared to make a space for himself by subverting the familiar. His subversions
