@@ -99,7 +99,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2024-05-19T22:02:00Z</lastmod>
+  <lastmod>2024-06-18T03:19:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -140,6 +140,10 @@
  <url>
   <loc>https://ntoll.org/article/advice/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain/</loc>
+  <lastmod>2024-06-18T02:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -735,7 +739,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-27.html</loc>
-  <lastmod>2024-05-19T22:02:00Z</lastmod>
+  <lastmod>2024-06-18T03:19:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -2216,5 +2220,9 @@
  <url>
   <loc>https://ntoll.org/static/presentations/troubleatleedsdatamill/test/test.html</loc>
   <lastmod>2020-11-12T15:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/static/pyscript/create_greeting/</loc>
+  <lastmod>2024-06-18T02:38:00Z</lastmod>
  </url>
 </urlset>
