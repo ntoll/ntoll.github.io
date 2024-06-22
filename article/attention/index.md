@@ -75,7 +75,7 @@ dominated by
 [Hacker News](https://news.ycombinator.com/) startup culture
 with a 
 [surveillance capitalist](https://en.wikipedia.org/wiki/Surveillance_capitalism)
-bent. In this cuture euphemisms and
+bent. In this culture euphemisms and
 [doublespeak](https://en.wikipedia.org/wiki/Doublespeak), such as "get
 to know your users" or "deliver value faster", misdirect attention from often
 sinister and manipulative uses of technology: the intention behind the examples
