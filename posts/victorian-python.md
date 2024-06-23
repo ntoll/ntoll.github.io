@@ -199,7 +199,7 @@ was caused by
 [Emmeline Pankhurst](https://en.wikipedia.org/wiki/Emmeline_Pankhurst) who
 dared to suggest women were as equally skilled as men at writing Python code.
 Outside Britain and her dominions, the use of generative AI written in Python
-was pioneered by German composers such as
+was pioneered by Austro-Germanic composers such as
 [Anton Bruckner](https://en.wikipedia.org/wiki/Anton_Bruckner)
 ("how else was he able to create so many hour-long symphonies that all sound
 the same, with such regularity and in such a short space of time?" asked
