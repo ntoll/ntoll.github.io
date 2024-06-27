@@ -225,7 +225,7 @@ the release of [Python 3](https://python.org/) support for the
 [SDL library](https://www.libsdl.org/)
 (she was able to return to the development of her
 [Bram Stoker](https://en.wikipedia.org/wiki/Bram_Stoker) inspired vampire
-slaying game, an entry for [PyWeek](https://pyweek.org/) (1895) written with
+slaying game, an entry for [PyWeek](https://pyweek.org/) (1898) written with
 [PyGame](https://www.pygame.org/news)).
 
 <figure>
