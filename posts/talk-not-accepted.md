@@ -27,6 +27,8 @@ This is it.
 
 <hr class="section_break"/>
 
+<h2>What to do when your talk is not accepted</h2>
+
 It is a rare privilege to find oneself in a community who genuinely cherish and
 support the participation of all. Such company guarantees we encounter folk
 who are different to ourselves: an opportunity to learn from each other's
