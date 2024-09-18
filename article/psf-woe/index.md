@@ -128,8 +128,8 @@ The PSF tragically excluded folks acting in good faith. The PSF doubled down on
 the "welcoming community" narrative at the exclusion of acknowledging things
 are awry (and that the PSF has some part in this unfortunate situation).
 Frustratingly to my eyes, the PSF's corporate "PR" diminishes the carefully
-cultivated good standing and authenticity of the organisation. As a result,
-Python is no longer much fun.
+cultivated good standing and authenticity of the organisation. Remember when
+Python was fun? Me neither... :-/
 
 Open source is hard work. Everyone involved wants Python to flourish. I have no
 doubt we all mean well. My disappointment is that the PSF promote ideals in a
