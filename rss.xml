@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Mon, 16 Sep 2024 17:07:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>From a recovering former Python community member </title><link>https://ntoll.org/article/psf-woe/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I really don't want to write this blog post. So, it's offered in a spirit of
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 18 Sep 2024 13:56:04 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>From a recovering former Python community member </title><link>https://ntoll.org/article/psf-woe/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I really don't want to write this blog post. So, it's offered in a spirit of
 polite resignation.&lt;/p&gt;
 &lt;p&gt;A couple of days ago a friend and current board member of the
 &lt;a href="https://www.python.org/psf-landing/"&gt;Python Software Foundation&lt;/a&gt; (PSF) reached
@@ -57,7 +57,7 @@ community&lt;/em&gt;. The alternative is the disintegration of Python into somet
 to the
 &lt;a href="https://www.youtube.com/watch?v=a0BpfwazhUA"&gt;"People's front of Judea" segment&lt;/a&gt;
 of Monty Python's "Life of Brian".&lt;/p&gt;
-&lt;p&gt;I sincerely hope the PSF find ways to show leadership and engage with
+&lt;p&gt;I sincerely hope the PSF find ways to listen, show leadership and engage with
 compassion. Only then can hurt be healed, collaboration re-established and
 trust regained. I'm not so much trying to call out the PSF as to call them in ~
 into a more enlarged and empathetic approach than has hitherto been apparent to
@@ -72,6 +72,41 @@ PSF. For no amount of PR gobble-de-gook, high handed pronouncements or a witch
 hunt will fix such a deeply broken situation.&lt;/p&gt;
 &lt;p&gt;Until things change to a more compassionate and less performative approach, I'd
 rather not be involved (thank you very much).&lt;/p&gt;
+&lt;p&gt;Peace.&lt;/p&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;p&gt;&lt;strong id="psf-addendum"&gt;Addendum (2024-09-18)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I want to publicly acknowledge and thank my PSF board member friend. They
+graciously responded, "I am sorry you feel so bad about the situation. I
+understand your decision, no hard feelings." This embodies the best of the
+Python community. Bravo.&lt;/p&gt;
+&lt;p&gt;I want to add that I don't feel bad.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I feel disappointed&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The unravelling in the Python community has caused me to pause and wonder how
+the actions taken by the PSF represent the sort of community we want to be. My
+hope has always been for a tolerant appreciation of the subtleties of context,
+a focus on open minded mutual care and understanding, along with a large dollop
+of big hearted compassion and a sense of fun.&lt;/p&gt;
+&lt;p&gt;Alas, recent PSF activity is hard to reconcile with such a hope.&lt;/p&gt;
+&lt;p&gt;There appears to be confusion between things that should be celebrated (like
+passion, humour, honesty, differences of culture and diversity of experience)
+and things that are genuinely problematic (like deliberate bad-faith activity
+or intentionally diminishing, dehumanizing, harming or harassing others).&lt;/p&gt;
+&lt;p&gt;The PSF tragically excluded folks acting in good faith. The PSF doubled down on
+the "welcoming community" narrative at the exclusion of acknowledging things
+are awry (and that the PSF has some part in this unfortunate situation).
+Frustratingly to my eyes, the PSF's corporate "PR" diminishes the carefully
+cultivated good standing and authenticity of the organisation. As a result,
+Python is no longer much fun.&lt;/p&gt;
+&lt;p&gt;Open source is hard work. Everyone involved wants Python to flourish. I have no
+doubt we all mean well. My disappointment is that the PSF promote ideals in a
+way that appears to embody their polar opposite. Furthermore, their actions
+appear to suggest the PSF no longer stands for the community... the PSF stands
+for the PSF.&lt;/p&gt;
+&lt;p&gt;I hope my words stimulate a more reflective, humble and heartfelt outlook;
+otherwise I fear we'll continue to decline into yet more fractious schisms.&lt;/p&gt;
+&lt;p&gt;Reconciliation is something we can only do together, and it won't be easy. &lt;/p&gt;
 &lt;p&gt;Peace.&lt;/p&gt;</description><guid>https://ntoll.org/article/psf-woe/</guid><pubDate>Mon, 16 Sep 2024 17:00:00 GMT</pubDate></item><item><title>On Paying Attention</title><link>https://ntoll.org/article/attention/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;&lt;a href="https://us.pycon.org/2024/"&gt;PyCon US 2024&lt;/a&gt; has been and gone. It was mostly
 lovely, and huge thanks to the team of volunteers who made it happen.&lt;/p&gt;
 &lt;p&gt;I was privileged to help plan the
