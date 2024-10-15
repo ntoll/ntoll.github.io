@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Paying attention with Python - PyCon Portugal 2024</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Paying attention with Python</h1>
+          <p>Nicholas H.Tollervey</p>
+          <p><small>ntoll@ntoll.org</small></p>
+          <aside class="notes">
+            <ul>
+              <li>Thank organisers.</li>
+              <li>I'm Nicholas. I'm a principal engineer at Anaconda, working
+              in the PyScript team.</li>
+              <li>Thank Anaconda for their support.</li>
+              <li>When I told my workmates I was keynoting, my Portuguese 
+              colleague Fabio posted this on our team Slack channel.</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/codfish.png">
+          <aside class="notes">
+            <p>Can someone please explain this to me..?</p>
+          </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+            <aside class="notes">
+            <p>Who am I? I'm really a musician.</p>
+            <p>Not a great career move.</p>
+            </aside>
+        </section>
+
+        <section data-background-image="img/tuba-data.png">
+            <p><strong>Data science FTW, baby!</strong></p>
+            <aside class="notes">
+            <p>I'd have more chance of work if I were born an ape.</p>
+            <p>Furthermore, the monkey would have a far better quality of
+            life.</p>
+            </aside>
+        </section>
+
+        <section>
+          <ul>
+            <li>Orangutan 🦧
+              <ul>
+                <li class="fragment">Free bananas 🍌</li>
+                <li class="fragment">Zero work hours 👌</li>
+                <li class="fragment">No training necessary ✅</li>
+              </ul>
+            </li>
+            <li>Classical musician 🎶
+              <ul>
+                <li class="fragment">Low pay 📉</li>
+                <li class="fragment">Late night work 🌙</li>
+                <li class="fragment">Years of intense practice 😓</li>
+              </u>
+            </li>
+          </ul>
+          <aside class="notes">
+            <p>This is why my online avatar is always an orangutan.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/ntoll_github.png">
+          <aside class="notes">
+            <p>So how did I get from music to code?</p>
+          </aside>
+        </section>
+        <section data-background-image="img/teacher_me.jpg">
+            <aside class="notes">
+            <p>Like most unemployed musicians, I became a music
+            teacher.</p>
+            <p>At 23 a head of department. MA in philosophy of
+            education.</p>
+            </aside>
+        </section>
+        <section data-background-image="img/ntoll_europython.jpg">
+          <aside class="notes">
+            <p>Now I'm an engineer, I still pay attention to my interest in
+            teaching through my passion for Python in education.</p>
+            <p>WHY?</p>
+          </aside>
+        </section>
+        <section style="text-align: left;">
+          <p>Asking <em>what sort of education we want</em> is the same as
+          asking
+          <em>what sort of community we want to become</em>.</p>
+          <p class="fragment">For education is the process through which we
+          interact with our <em>future colleagues, collaborators and
+          friends</em>.</p>
+          <aside class="notes">
+            <ul>
+              <li>This is why education is SO important.</li>
+              <li>Thinking about education is a form of paying attention to
+              the future... it's how you change things.</li>
+              <li>It's also how we embody WHAT and HOW engineers should pay
+              attention to their work.</li>
+              <li>In this way folks learn to become engineers.</li>
+            </ul>
+            <p>This is what we'll explore in this talk.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h1>Software</h1>
+          <h2>(For beginner coders)</h2>
+          <aside class="notes">
+            <p>Let's start by paying attention to the sort of tools beginners
+            may encounter if they want to become coders.</p>
+            <p>Since beginners want to do the stuff we do, we should pay
+            attention to the tools we use.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/vim.png">
+        </section>
+        <section data-background-image="img/bigredbutton.jpg">
+        </section>
+        <section data-background-image="img/vscode.png">
+        </section>
+        <section data-background-image="img/shuttle.jpg">
+        </section>
+
+
+        <section data-background-video="video/mu_code.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <p>I want to introduce you to Mu.</p>
+            <ul>
+              <li>Mu is a beginner friendly Python editor</li>
+              <li>Created as part of the micro:bit project (how hard can it
+              be?)</li>
+              <li>Taken on a life of its own.</li>
+              <li>Millions of downloads, books, learning resources and
+              videos.</li>
+              <li>Used in all sorts of places, from schools in rural China to
+              Ivy League universities in the US.</li>
+            </ul>
+            <p>But who needs Mu?</p>
+          </aside>
+        </section>
+        <section data-background-video="video/mbpt.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <p>This is a BBC MicroBit.</p>
+            <ul>
+              <li>Story of MicroPython</li>
+              <li>A million children</li>
+              <li>I coordinated the PSF's partnership with the project</li>
+              <li>UK based volunteers created the Python software for
+              launch</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/teacher_mu.jpg">
+          <aside class="notes">
+            <p>We obsess over teacher and student feedback.</p>
+            <p>The story of zoom!</p>
+            <p>Accessibility!</p>
+          </aside>
+        </section>
+        <section>
+          <h1>💬 🧄 🇫🇷 🥐 🎉</h1>
+          <img src="img/french_mu.jpg"/>
+          <h1 class="fragment">😬</h1>
+          <aside class="notes">
+            <p>We pay close attention to cultural context.</p>
+            <p>It's not the programming language, but the language of the
+            tools that is important.</p>
+            <p>Also, the French can never agree on their translations. :-)</p>
+          </aside>
+        </section>
+        <section>
+          <p>By paying attention to Mu in a certain way, we're demonstrating
+          a certain coding culture.</p>
+          <p class="fragment">Mu is also the means of passing on such a culture.</p>
+          <p class="fragment">That culture is open, collaborative and supportive,</p>
+          <p class="fragment">...and so is Mu.</p>
+        </section>
+        <section>
+          <h1>INSERT COFFEE PHOTO WITH TIAGO</h1>
+          <aside class="notes">
+            <p>Mu is why I'm here in Portugal.</p>
+            <p>My friend Tiago and I intend to work on Mu while we're here.</p>
+            <p>We're also helped by our friends Vasco, Carlos and Tim.</p>
+            <p>It's mostly for fun.</p>
+            <p>Now, let's explore further how the way we pay attention as
+            coders influences our work. And we're going to start with one
+            of the gods of the internet.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/edsger_dijkstra.jpg">
+          <aside class="notes">
+            <p>This is Edsger Dijkstra - one of the founders of computer
+            science</p>
+            <p>Dijkstra said programming was, "a practical exercise in the
+            effective exploitation of one’s powers of abstraction".</p>
+            <p>Abstraction is the means by which we model the world we
+            encounter.</p>
+            <p>The world we encounter depends upon how we pay attention to
+            it.</p>
+            <p>In the world of programming, it turns out that paying attention
+            to "paying attention" is worthy of paying attention.</p>
+            <p>Let's pay attention to a story about encouraging others to
+            pay attention in a certain sort of a way.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h1>Paying attention</h1>
+          <p>The danger is we are...</p>
+          <ul>
+            <li class="fragment">Finding problems that don't exist</li>
+            <li class="fragment">Creating thoughtless solutions</li>
+            <li class="fragment">Writing complicated code</li>
+            <li class="fragment">Measuring success in dubious ways</li>
+            <li class="fragment">Following shallow "best practices"</li>
+          </ul>
+          <aside class="notes">
+            <p>With a world full of code of questionable quality and purpose,
+            someone, somewhere thought such software was a good idea.</p>
+            <p>Let's reflect upon what happens as we engage, disengage, or
+            even mis-engage with the world through Python code.</p>
+            <p>For there is a LOT of danger...</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Pathologising the world</h2>
+          <aside class="notes">
+            <p>Put simply, as engineers we often see the world as a series of
+            problems that require solutions.</p>
+            <p>I'm more with Soren Kierkegaard on this: life is not a problem
+            to solve but a reality to experience.</p>
+            <p>For example...</p>
+          </aside>
+        </section>
+        <section data-background-video="video/coffee2.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <p>I have a mokka pot, and have had one for years.</p>
+            <p>It is part of the ceremony of my morning routine. There is
+            something rather wonderful in making coffee with a Mokka, the
+            simplicity, the smell, the great tasting coffee.</p>
+            <p>I guess it's not that great if you're in a hurry though (but
+            why hurry a coffee?).</p>
+            <p>Yet someone, somewhere thought it a problem that we don't
+            have instant coffee.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Thoughtless solutions</h2>
+          <aside class="notes">
+            <p>So, instant coffee isn't so much a thoughtless solution, as
+            a tasteless one.</p>
+            <p>Like the annoying AI doors from H2G2 that swoosh with the
+            satisfaction of a job well done.</p>
+          </aside>
+        </section>
+        <section data-background-video="video/coffee1.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <p>Has anyone ever had a nice cup of instant coffee?</p>
+            <p>I guess it has one advantage: convenience.</p>
+            <p>However, it has multiple disadvantages: that it tastes like
+            dishwater being perhaps the most important.</p>
+            <p>Never fear: TECH WILL SAVE US!</p>
+          </aside>
+        </section>
+        <section data-background-video="video/coffee3.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <p>Yes, we can have great tasting coffee through the convenience
+            of the touch of a button on a machine with all the beauty of
+            a collection of spare parts for a DALEK.</p>
+            <p>But what about the ceremony of coffee making?</p>
+            <p>Also, this is about as much fun as writing YAML to configure
+            a k8s cluster.</p>
+            <p>This definitely reminds me of the useless technology in
+            H2G2.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/dontpanic.jpg">
+          <aside class="notes">
+          <p>When I recently re-read this quote from Douglas Adams, I felt
+          seen. It's about Sirius Cybernetics Corp - who make all sorts of
+          "convenient" technical solutions in the H2G2 universe.</p>
+          <p>It is very easy to be blinded to the essential useless-ness
+          of [their products] by the sense of achievement you get from getting
+          them to work at all. In other words &mdash; and this is the rock
+          solid principle on which the whole of the Corporation's Galaxy-wide
+          success is founded &mdash; <em>their fundamental design flaws are
+          completely hidden by their superficial design flaws.</em></p>
+          </aside>
+        </section>
+        <section data-background-video="video/mind-blown.mp4" data-background-video-loop="True">
+          <div style="background: rgba(0, 0, 0, 0.5); border-radius: 8px; text-align: left; font-size: 2em; padding: 16px;">
+          <p><q>The fundamental design flaws are completely hidden by the
+          superficial design flaws.</q></p>
+          </div>
+          <aside class="notes">
+            <p>BINGO. The utter uselessness of the technology distracts our
+            attention from the mistake of ever creating such a thing in the
+            first place.</p>
+            <p>My story of the coffee machine (this is personal).</p>
+            <p>Nobody asked if it was a good idea to create a technical
+            solution to the "problem" of making coffee... there likely isn't
+            a problem. Rather, folks feel so relieved the damn machine makes
+            them a coffee that they forget they probably don't need the
+            machine in the first place.</p>
+            <p>Reminds me of the urban myth about the zero-G writing tool
+            developed at a cost of millions of dollars by NASA. The Russians
+            just used a pencil.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Difficult implementation</h2>
+          <aside class="notes">
+            <p>The same over-complication and blindness to superficial
+            problems at the expense of fundamental problems also happens when
+            we write code.</p>
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape>
+          print("Hello, world!")  # Beginner 👶
+          </code></pre>
+          <pre class="fragment"><code data-trim data-noescape>
+          def hello(name="world!"):  # Junior coder 🧑‍🎓
+            return f"Hello, {name}"
+
+          print(hello())
+          </code></pre>
+          <pre class="fragment"><code data-trim data-noescape>
+          class Hello:  # Enterprise programmer 👔
+
+            def __init__(self, name="world!"):
+              self.name = name
+
+            @property
+            def greet(self):
+              return f"{self.__class__.__name__} {name}"
+          
+          print(Hello().greet)
+          </code></pre>
+          <pre class="fragment"><code data-trim data-noescape>
+          print("Hello, world!")  # Experienced engineer 👷
+          </code></pre>
+
+          <pre class="fragment"><code data-trim data-noescape>
+          # YAGNI ;-) a virtuoso coder 🤦
+          </code></pre>
+
+          <aside class="notes">
+            <p>Consider the classic joke about how to write "Hello World".
+            It puts into focus how the way we
+            pay attention to our work has influence over the quality of the
+            work we produce.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Measuring success?</h2>
+          <aside class="notes">
+            <p>Of course, we often find ways to highlight attention away from
+            anything actually helpful, useful or meaningful.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/stars.jpg">
+          <aside class="notes">
+            <p>I want to draw your attention to a slide from a recent
+            presentation about UV that I came across.</p>
+            <p>Clearly GitHub stars are now a unit of measurement.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/stars_fixed.jpg" data-transition="none" data-background-transition="none">
+          <aside class="notes">
+            <p>To be honest, we might as well be measuring Orangutans, for all
+            the meaning such graphs indicate.</p>
+            <p>Actually, asking what such a graph means is a good question.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/stars_pr.jpg" data-transition="none" data-background-transition="none">
+          <aside class="notes">
+            <p>It means this project has good PR / dev-rel.</p>
+            <p>Well done team! Best of luck to UV.</p>
+            <p>Perhaps we can all agree, there are more important or helpful
+            things to which we should be paying attention when it comes to
+            coding..?</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>"Best practices"</h2>
+          <aside class="notes">
+            <p>Finally we come to "best practices" who promise: if you pay
+            attention to the things we tell you, everything will be OK.</p>
+            <p>Right now, the use of AI is being promoted as a "best practice"
+            in coding. But let's just remember that AI is just an acronym for
+            PR.</p>
+          </aside>
+        </section>
+        <section data-background-video="video/eleGPT.webm">
+          <aside class="notes">
+            <p>AI was bound to make an appearance at some point. You can't
+            help but be amazed by some of the amazing results it produces.</p>
+            <p>What I find interesting is how we pay attention to the outputs
+            from AI.</p>
+            <p>I'm also delightfully amazed at the way in which AI 
+            misdirects its attention... often with comic or unfortunate side
+            effects.</p>
+            <p>Explain Tufts quality of questions research findings.</p>
+            <p>Perhaps taking advice from an AI is not "best practice"?</p>
+            <p>But where does such "best practice" come from?</p>
+          </aside>
+        </section>
+        <section data-background-image="img/yoda_guru.png">
+          <aside class="notes">
+            <p>Beware people who offer themselves as gurus, who
+            promote a "system" or offer pithy "best practices".</p>
+            <p>Paying attention to them can often be detrimental simply
+            because you cede responsibility for thinking for yourself. This
+            is also perhaps true when paying attention to AI..? The computer
+            says so in such a convincing manner, so it must be right.</p>
+              <p>Here's the thing about such "best practices": they're often
+              really stupid and rely on the inherent intelligence and
+              humanity of participants to ensure they're meaningful.</p>
+              <p>Just look at the poor reputation "Agile" methodology has
+              these days, as rules, processes and "best practices" are
+              enforced at the expense of, you know, actually intelligent,
+              insightful or compassionate ways of working.</p>
+              <p>Such tropes are often satirised... perhaps the most famous
+              one in terms of developers, being Doug Zonkger's "Chicken".</p>
+            </aside>
+          </section>
+
+        <section>
+          <object data="./chicken.pdf" type="application/pdf" width="100%" height="600px">
+          </object>
+            <aside class="notes">
+              <p>In the early 2000s, Doug wrote an academic paper that
+              followed all the guidelines, conventions and best practices of
+              a computer science report. But it only contains the word
+              "chicken"</p>
+            </aside>
+        </section>
+        <section>
+          <object data="./chicken_presentation.pdf" type="application/pdf" width="100%" height="600px">
+          </object>
+            <aside class="notes">
+              <p>He also gave a classic academic conference presentation
+              containing just the word "chicken".</p>
+              <p>It can be found on YouTube.</p>
+              <p>Of course, we Python coders are far beyond being sent up
+              for our own coding practices, right?</p>
+            </aside>
+        </section>
+
+        <section>
+          <h1>🐔</h1>
+          <p class="fragment"><code>chicken<span class="fragment">.py?</span></code></p>
+          <p class="fragment">Chicken chicken (chicken), <code>chicken.py</code> CHICKEN!</p>
+        </section>
+        <section data-background-video="video/chicken_demo.webm">
+        </section>
+        <section data-background-image="img/github_chicken.png">
+        </section>
+        <section>
+          <pre class="r-stretch"><code data-trim data-noescape style="font-size: 0.8em;" data-line-numbers="1-23|24-27|30|31|38-51|54-60|63-74|77-88|89-91|92-99|100-103|106-107">
+"""
+Chicken chicken chicken chicken chicken chicken chicken.
+
+Chicken (c) 2021 Nicholas H.Tollervey.
+
+Chicken chicken chicken chicken chicken chicken chicken chicken
+chicken chicken chicken chicken chicken chicken chicken chicken
+chicken. Chicken chicken chicken chicken chicken chicken chicken
+chicken. Chicken, chicken chicken chicken, chicken chicken, chic-
+ken chicken chicken “chicken chicken” chicken “chicken chicken”
+chicken.
+
+Chicken chicken chicken chicken chicken. Chicken-chicken chic-
+ken chicken chicken chicken chicken chicken, chicken chicken chi-
+cken chicken, chicken, chicken chicken chicken “chicken” chicken.
+
+CHICKEN, CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHI-
+CKEN (CHICKEN CHICKEN) CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN,
+CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN
+CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN. cHICKEN CHICKEN CHICKEN
+CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN, CHICKEN CHICKEN
+CHICKEN, CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN CHICKEN.
+"""
+import sys as chk
+from builtins import print as chicken
+from builtins import range as freerange
+from random import choice as Chicken
+
+
+EGG = 0
+CHICKEN = 1
+
+#: Chicken.
+__CHICKEN__ = f"{CHICKEN}.{EGG}.{CHICKEN}"
+
+
+#: Chicken chicken CHICKEN "chicken"
+_CHICKEN = [
+    "CHICKEN",
+    "chicken",
+    "Chicken",
+    "chicken",
+    "'Chicken'",
+    "chicken",
+    "Chicken-chicken",
+    "chicken",
+    '"Chicken"',
+    "chicken",
+    "(Chicken)",
+    "chicken",
+]
+
+
+def chckn():
+    """
+    Chicken chicken chicken chicken. Chicken _CHICKEN chicken chicken.
+
+    Chicken: chicken.
+    """
+    return Chicken(_CHICKEN)
+
+
+def _chckn(chickens=EGG):
+    """
+    Chicken chicken chicken CHICKEN Chicken-chicken.
+
+    chickens: Chicken chicken 'Chicken' chicken. (Chicken: EGG)
+
+    >>> assert _chckn() == CHICKEN
+    >>> assert _chckn(CHICKEN) == CHICKEN + CHICKEN
+    >>> assert _chckn() + _chckn() == _chckn(_chckn())
+    """
+    # CHICKEN: Chicken chicken (Chicken) Chicken-chicken "Chicken" (#2)
+    return chickens + CHICKEN
+
+
+def _chicken(argchicken=f"{CHICKEN}{EGG}"):
+    """
+    Chicken chicken chicken chicken chicken 'chicken'.
+
+    Chicken chicken, chicken chicken chicken chicken:
+
+    * Chicken chicken.
+    * Chicken CHICKEN chicken.
+    * Chicken-chicken CHICKEN.
+
+    (Chicken chicken chicken chicken?)
+    """
+    if chk.argv[CHICKEN:]:
+        # Chicken chicken.
+        argchicken = chk.argv[CHICKEN]
+    try:
+        # Chicken :-)
+        eggs = int(argchicken) - CHICKEN
+    except (TypeError, ValueError):
+        # Chicken :-(
+        eggs = _chckn(
+            _chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn())))))))
+        )
+    # Chickens!
+    chicken(
+        "Chicken " + " ".join([chckn() for chick in freerange(eggs)]) + "."
+    )
+
+
+if __name__ == "__main__":
+    _chicken(chk.argv[CHICKEN:])
+          </code></pre>
+        </section>
+        <section data-background-image="img/chicken_pi.png">
+        </section>
+        <section data-background-image="img/read_the_chicken_docs.png">
+        </section>
+        <section data-background-image="img/chicken_chat.png">
+        </section>
+        <section data-background-image="img/chicken_pr.png">
+        </section>
+        <section data-background-image="img/chicken_poulet.png">
+        </section>
+        <section data-background-video="video/chicken_review.webm">
+        </section>
+        <section>
+          <h1>🚫🐔🚫</h1>
+          <h2><strike>Chicken</strike></h2>
+          <aside class="notes">
+            <p>I must apologise, but I always wanted to try that stunt,
+            and now (thanks to PyConPT) I can check that off my bucket list.
+            :-)</p>
+            <p>But, in case you've not been paying attention, I'm attempting
+            to use humour to make a very serious point.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/design_process.png">
+          <aside class="notes">
+            <p>It's not that technology is intrinsically bad.</p>
+            <p>Rather, the way we pay attention to it is often thoughtless,
+            shallow and ill-judged.</p>
+            <p>I suspect a large part of the problem is the ceding of
+            personal autonomy, freedom to express oneself, and control of
+            one's "stuff" to machines or processes.</p>
+            <p>There are many different ways to pay attention to the world,
+            and by focusing on the whole or parts thereof, each illuminates
+            the other depending on the sort of attention we pay to it. The
+            world is independent of us, yet how we pay attention to the world
+            reveals the world to us in a certain sort of way. Such creative
+            attention is a potent and fluid process of encountering,
+            understanding and expressing. We discern the universe and also
+            change the universe through our discerning and reacting to it. How
+            we choose to pay attention (for it is certainly a choice), is a
+            significant creative and moral act: it both makes and enlarges
+            the world.</p>
+            <p>Often we make this difficult, as we forget to pay attention to
+            the way we're paying attention to ourselves, each other and what's
+            going on out in the universe.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/tuba.jpg">
+            <aside class="notes">
+              <p>An inevitable musical metaphor illustrates what I mean. As a
+              performer I could just play in a mechanical-yet-very-accurate
+              manner, only paying attention to the formal and technical
+              aspects of a piece. Yet this is clearly a diminished performance
+              because of the absence of attention to expression, feeling or
+              "ensemble" (the connection with other performers and the
+              audience), those aspects of performance that fall under the
+              realm of musicianship.</p>
+              <p>The former attention to musical technique is only worthwhile
+              if the latter attention to musicianship is present. To be a good
+              musician you need to bring to bear many different ways of paying
+              attention, each of which contributes to a new unique entity
+              containing and combining all these integrated aspects.</p>
+              <p>Such transcending of pure technique to create something
+              larger than the sum of its parts, applies just as well to our
+              work as software engineers.</p>
+            <p>We pay attention in this creative manner because it gives us an
+            enlarged, affirmative and stimulating way to participate in and
+            transform the universe. Put bluntly, it brings meaning to
+            life.</p>
+            </aside>
+        </section>
+        <section style="text-align: left">
+          <h2>The Secret:</h2>
+          <p class="fragment">STUDENT: O Guru, what is the secret of success?</p>
+          <p class="fragment">GURU: Good judgement.</p>
+          <p class="fragment">STUDENT: How do you get good judgement?</p>
+          <p class="fragment">GURU: Experience.</p>
+          <p class="fragment">STUDENT: How do you get experience?</p>
+          <p class="fragment">GURU: Bad judgement!</p>
+          <aside class="notes">
+            <p>Perhaps the most important thing to which we can pay attention
+            is ourselves.</p>
+            <p>As this "secret" reveals, this is a tricky thing to do.</p>
+          </aside>
+        </section>
+        <section style="text-align: left">
+          <p><em>To what we pay attention</em> is important. <em>How we pay
+          attention</em> is equally consequential but often unconscious.
+          Considering <em>why we pay attention</em> is perhaps most
+          significant ~ an engaging, poignant and sadly neglected opportunity
+          for self-examination.</p>
+          <aside class="notes">
+            <p>I sincerely hope we all find a way to pay attention in a more
+            compassionate, creative and magnified manner.</p>
+            <p>Especially if you're a programmer. ;-)</p>
+            <p>Thank you!</p>
+          </aside>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
