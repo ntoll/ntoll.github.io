@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2024-05-19T22:02:00Z</lastmod>
+  <lastmod>2025-01-25T17:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/2004/</loc>
@@ -94,12 +94,16 @@
   <lastmod>2024-01-07T12:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/2025/</loc>
+  <lastmod>2025-01-25T17:32:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/about/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2025-01-24T09:43:00Z</lastmod>
+  <lastmod>2025-01-25T17:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -140,10 +144,6 @@
  <url>
   <loc>https://ntoll.org/article/advice/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain/</loc>
-  <lastmod>2024-10-19T22:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -388,6 +388,14 @@
  <url>
   <loc>https://ntoll.org/article/music-theory-101/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/my-friend-michael%20/</loc>
+  <lastmod>2025-01-25T17:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/my-friend-michael/</loc>
+  <lastmod>2025-01-25T18:48:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/new-features-in-fluiddb/</loc>
@@ -743,7 +751,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-27.html</loc>
-  <lastmod>2025-01-24T09:43:00Z</lastmod>
+  <lastmod>2025-01-25T17:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -2232,9 +2240,5 @@
  <url>
   <loc>https://ntoll.org/static/presentations/troubleatleedsdatamill/test/test.html</loc>
   <lastmod>2020-11-12T15:20:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/static/pyscript/create_greeting/</loc>
-  <lastmod>2024-10-19T22:16:00Z</lastmod>
  </url>
 </urlset>
