@@ -12,6 +12,8 @@
 
 My dear friend Michael passed away this weekend.
 
+I want to begin by expressing my deepest sorrow and condolences to his family.
+
 Michael and I shared many adventures together, often with our families in tow,
 and I find consolation by writing these words of celebration and remembrance. 
 
