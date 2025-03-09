@@ -364,7 +364,7 @@ laughs.
 </figcaption>
 </figure>
 
-The displays were intriguing in am,"well, would you look at that" sort of a
+The displays were intriguing in a "well, would you look at that" sort of a
 way, but not something that engaged deeply.
 
 Our final meal was at a Turkish restaurant named after Ephesus. Once again
