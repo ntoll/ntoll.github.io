@@ -208,7 +208,7 @@ scarves from the cloakrooms. She was an old hand at this. I hope she gets to
 hear many more concerts, because she embodied a music lover totally present and
 invested in the performance. Virtuoso listening. Bravo!
 
-A post concert dinner and night-time stroll capped of a culturally rich and
+A post concert dinner and night-time stroll capped off a culturally rich and
 stimulating day.
 
 Saturday was more of the same, yet very different!
