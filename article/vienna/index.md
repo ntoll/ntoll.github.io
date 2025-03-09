@@ -333,7 +333,7 @@ no exception. It was full of all the emotions one would expect as we reflected
 on our bond: both the light and the shadows, the joy and distress, the
 easy and the difficult. It was the sort of conversation only long term lovers,
 who have grown together like two trees standing next to each other in a forest
-(roots entwined), can have. I'll leave it at that, because such conversations
+(roots entwined), can have. I'll leave it at that. Such conversations
 are special because of their private and unique-to-the-participants nature. Yet
 such conversations are also the most important conversations that lovers can
 have, and that Sunday was one of those occasions for Mary and I to connect in
@@ -380,6 +380,6 @@ certainly had an adventure in terms of exploring a place, exploring culture,
 exploring food and exploring our life together so far.
 
 We'd welcome suggestions for where to visit in a decade, when we celebrate 40
-years of beig together..!
+years of being together..!
 
 Long may it last.
