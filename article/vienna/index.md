@@ -268,7 +268,7 @@ Moving forward in time as we walked through the museum, we eventually found
 ourselves in the more traditional art gallery part of the museum: rooms hung
 with paintings. It was here that I found some wonderfully odd portraits. Often
 the subjects were in their glad-rags, sporting the latest hair-dos or facial
-topiary and clearly posing to project their status, wisdom or success. This
+topiary and posing to project their status, wisdom or success. This
 clearly brought home the folly of such vanity. These folk are long dead and
 gone, and their names are only remembered because they hired a really great
 artist to paint their portrait. I imagine future generations will similarly
