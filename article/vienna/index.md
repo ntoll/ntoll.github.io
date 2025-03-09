@@ -162,7 +162,7 @@ of musical recognition and cheeky yet surprising programming of the music.
 
 The interval proved music is a universal language.
 
-As I wondered the corridors to find the wash-room I did a spot of people
+As I wandered the corridors to find the wash-room I did a spot of people
 watching. I don't speak German, so I had no idea what folks were specifically
 talking about, but the snatches of musical jargon, composers' names, tone of
 voice and gesticulations from participants gave me the general character of
