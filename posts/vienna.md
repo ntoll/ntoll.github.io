@@ -115,10 +115,10 @@ The room containing portraits by
 impression - not only because of the quality of the art, but because of the
 connection it made with us both. The "Spring" picture (shown above)
 of a young man "springing", or full of the "joys of spring", or even in
-"springtime" (?) both reminded us of Mary's late uncle David. David was well
+"springtime" (?) reminded us both of Mary's late uncle David. David was well
 known for innocently disrobing at the earliest possible opportunity - although
 he didn't explicitly describe himself as a nudist - and the unselfconscious
-_joie de vivre_ of the painting reminded us both of David. It also led to jokes
+_joie de vivre_ of the painting reminded us of David. It also led to jokes
 about the amount of Viennese sausage on display, and it being "not the Wurst
 painting in the gallery".
 
