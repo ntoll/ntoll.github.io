@@ -20,10 +20,9 @@ escorting, mind you. It was just a ruse in which we both tacitly played along
 so the date wouldn't end.
 
 As we exited Ravenscourt Park station I realised I only had a few hundred
-metres until Mary's front door (and thus, the end of our wonderful date). I
-realised I had to tell her how I felt about her. Ahead was a corner turning
-onto the road on which she lived, and so I gave myself until the corner to
-speak up.
+metres until Mary's front door (and thus, the end of our wonderful date). I had
+to tell her how I felt about her. Ahead was a corner turning onto the road on
+which she lived, and so I gave myself until the corner to speak up.
 
 Of course, I blundered around trying to get the conversation to the right
 place (to no avail), and I think we both knew what sort of a shy, tentative and
@@ -44,8 +43,7 @@ the story of _that hilarious first encounter_ for another day.
 
 Two and a half years later, [we were married](/article/25-anniversary-plans/)
 and have been an "us" ever since. Our life together has been the most
-important, wonderful and fulfilling thing I have ever experienced. Long may it
-last!
+important, wonderful and fulfilling thing I have ever experienced.
 
 To celebrate 30 years since that first kiss (when we both feel we became "an
 item") we decided to visit Vienna ~ the city of musicians. Both of us had never
@@ -199,14 +197,14 @@ more aware of the others in our box. The couple at the back had clearly fallen
 out and were whispering angrily to each other. But then a wonderful elderly
 lady of slight build stopped them in their tracks with the most pointed yet
 well placed and subtle shush I've ever witnessed in my life. It would have got
-nods of approval from the most battle hardened school librarian. Once noticed
-I couldn't help but pay attention to the elderly lady, for she was lost in the
-music, slightly conducting with one hand and with a beautific look on her face.
-Yet as the applause started with the last note echoing away she was off like a
-rocket to avoid the mayhem of the crowds trying to retrieve their coats and
-scarves from the cloakrooms. She was an old hand at this. I hope she gets to
-hear many more concerts, because she embodied a music lover totally present and
-invested in the performance. Virtuoso listening. Bravo!
+nods of approval from even the most battle hardened of school librarians. Once
+noticed I couldn't help but pay closer attention to the elderly lady, for she
+was lost in the music, gently conducting with one hand and with a beautific
+look on her face. Yet as the applause started, with the last note echoing away,
+she was off like a rocket to avoid the mayhem of the crowds trying to retrieve
+their coats and scarves from the cloakrooms. She was an old hand at this. I
+hope she gets to hear many more concerts, because she embodied a music lover
+totally present and invested in the performance. Virtuoso listening. Bravo!
 
 A post concert dinner and night-time stroll capped off a culturally rich and
 stimulating day.
@@ -231,7 +229,7 @@ jewellery of exquisite craftsmanship that wouldn't look out of place in a
 contemporary New-Age or alternative ethnic clothing boutique. Recalling my
 childhood passion for archaeology, I couldn't help but feel these folks were so
 like us, yet so different. Who sculpted the hippo with such skill, and on what
-occasion was the jewellery to be worn (and by who)..? Yet these thoughts work
+occasion was the jewellery to be worn (and by whom)..? Yet these thoughts work
 in reverse: how might folks 4500 years hence view the artefacts surviving from
 our world? I've [written about this before](/article/thought-in-motion/) and it
 helps me retain a sense of perspective about the work I do today. The computers
@@ -239,9 +237,9 @@ and code I use to build things are really quite insignificant in the grand
 scheme of things. Furthermore, our perspectives and ways of paying attention to
 our computing work (arising from our current culture), are only fleeting,
 temporary and will appear strange to future generations in much the same way
-Egyptian art appears to us. We've not been coding for 100 years, I dare you to
-wonder what computing will be like in 5000 years. What will be the same? What
-will be different?
+Egyptian art appears to us. We've not been coding for 100 years, so I dare you
+to wonder what computing will be like in 5000 years. What will be the same?
+What will be different?
 
 Clearly the museum was working its magic and I was in a thoughtful mood.
 
@@ -265,18 +263,17 @@ especially taken by one in particular.
 </figure>
 
 Moving forward in time as we walked through the museum, we eventually found
-ourselves in the more traditional art gallery part of the museum: rooms hung
-with paintings. It was here that I found some wonderfully odd portraits. Often
-the subjects were in their glad-rags, sporting the latest hair-dos or facial
-topiary and posing to project their status, wisdom or success. This
-clearly brought home the folly of such vanity. These folk are long dead and
-gone, and their names are only remembered because they hired a really great
-artist to paint their portrait. I imagine future generations will similarly
-have a good laugh at our collective expense as they explore our pouting
-selfies, "oh so perfect performative lives" and projections of success via
-shallow social media posts. It turns out pretentiousness, posturing and
-narcissism is a recurring theme in history: it's at least as old as those
-Egyptian sarcophagi from 5000 years ago.
+ourselves in a more traditional art gallery: rooms hung with paintings. It was
+here that I found some wonderfully odd portraits. Often the subjects were in
+their glad rags, sporting the latest hair-dos or facial topiary and posing to
+project their status, wisdom or success. This clearly brought home the folly of
+such vanity. These folk are long dead and gone, and their names are only
+remembered because they hired a really great artist to paint their portrait. I
+imagine future generations will similarly have a good laugh at our collective
+expense as they explore our pouting selfies, oh so perfect performative lives
+and projections of success via shallow social media posts. It turns out
+pretentiousness, posturing and narcissism is a recurring theme in history: it's
+at least as old as those Egyptian sarcophagi from 5000 years ago.
 
 Some of the portraits were very striking.
 [Arcimboldo's](https://en.wikipedia.org/wiki/Giuseppe_Arcimboldo) portraits of
@@ -301,10 +298,10 @@ most of his stuff to London. If you're ever in
 London, go [see the famous couch](https://www.freud.org.uk/). Sadly, it means
 that his Vienna home, where we visited, is mostly empty of his possessions. You
 get to see his doctor's bag, some things in the patient's waiting room, and
-the mirror in his office (in which I sneakily took a selfie in the mirror - I
-was reflecting upon myself in Freud's study), but the rooms are mostly bare
-and contain cases displaying objects and commentary that tell the story of
-Freud's life and work.
+the mirror in his office (in which I sneakily took a selfie - I was reflecting
+upon myself in Freud's study), but the rooms are mostly bare and contain cases
+displaying inconsequent objects and commentary that tells the story of Freud's
+life and work.
 
 Sometimes a place feels significant, and Freud's treatment room where the
 practice of psychoanalysis was honed is a good example. I can't over-state the
@@ -334,7 +331,7 @@ on our bond: both the light and the shadows, the joy and distress, the
 easy and the difficult. It was the sort of conversation only long term lovers,
 who have grown together like two trees standing next to each other in a forest
 (roots entwined), can have. I'll leave it at that. Such conversations
-are special because of their private and unique-to-the-participants nature. Yet
+are special because of they are private and unique to the participants. Yet
 such conversations are also the most important conversations that lovers can
 have, and that Sunday was one of those occasions for Mary and I to connect in
 the deepest and broadest manner - surrounding each other in love.
@@ -352,7 +349,7 @@ museum.
 It was entertaining enough but, like the Freud museum, not a place that
 really spoke to me. I was interested to explore how they engaged folks in the
 science of sound and music, but the rest of the museum felt like it contained
-"holy relics" related to Vienna's rich musical history: Schubert's glasses,
+"holy relics" relating to Vienna's rich musical history: Schubert's glasses,
 copies of Beethoven's death mask, a Brahms sketch, Mahler's piano, some
 paintings by Schoenberg and so on.
 
@@ -372,7 +369,7 @@ Mary and I talked and talked and talked over excellent food and ended the
 evening toasting each other with glasses of Baileys Irish Cream (of all
 things!).
 
-Monday morning led us back to the airport and then our return to the hell that
+Monday morning led us back to the airport, and then our return to the hell that
 is Stansted airport, and finally our home in Towcester.
 
 Vienna was a wonderful, rich, deep and stimulating trip for us both. Mary and I
@@ -382,4 +379,4 @@ exploring food and exploring our life together so far.
 We'd welcome suggestions for where to visit in a decade, when we celebrate 40
 years of being together..!
 
-Long may it last.
+Long may such shared adventures last!
