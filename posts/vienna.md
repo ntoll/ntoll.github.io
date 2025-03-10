@@ -260,7 +260,7 @@ especially taken by one in particular.
 
 <figure>
 <img src="/images/nice_bum.jpg" alt="A nice bum."/>
-<figcaption>Me: "Nice bum?" Mary: "Yes, but not as nice as yours, my love."
+<figcaption>Me: "Nice bum?" Mary: "Yes, they must have modelled it on yours, my love."
 </figcaption>
 </figure>
 
