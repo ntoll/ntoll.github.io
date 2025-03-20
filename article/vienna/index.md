@@ -329,12 +329,12 @@ looking back on our life together. Mary and I have never found it hard to talk
 no exception. It was full of all the emotions one would expect as we reflected
 on our bond: both the light and the shadows, the joy and distress, the
 easy and the difficult. It was the sort of conversation only long term lovers,
-who have grown together like two trees standing next to each other in a forest
-(roots entwined), can have. I'll leave it at that. Such conversations
-are special because of they are private and unique to the participants. Yet
-such conversations are also the most important conversations that lovers can
-have, and that Sunday was one of those occasions for Mary and I to connect in
-the deepest and broadest manner - surrounding each other in love.
+who have grown together like two adjacent trees in a forest (roots entwined),
+can have. I'll leave it at that. Such conversations are special because they
+are private and unique to the participants. Yet such conversations are also the
+most important conversations that lovers can have, and that Sunday was one of
+those occasions for Mary and I to connect in the deepest and broadest manner -
+surrounding each other in love.
 
 Exhausted by our walking, we found a traditional Viennese coffee shop, the
 [Café Schwarzenberg](https://www.cafe-schwarzenberg.at/). I have to admit it
