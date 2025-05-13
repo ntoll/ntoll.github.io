@@ -130,7 +130,7 @@ archaeological sites, digs and ancient monuments here in the UK. Why? Simply
 because I was fascinated to learn who these people were, what they were up to,
 and why they might have been doing what they were doing. Engaging with and
 exploring the remains from such time-distant cultures helps us to understand
-ourselves. I have an abiding childhood memory of feeling that these people are
+ourselves. I have an abiding childhood memory of feeling that these people were
 so much like ourselves while also being completely different - a rather
 wonderful opportunity to see the familiar in an unfamiliar manner. The
 fragments from Ephesus didn't disappoint in this respect.
@@ -300,8 +300,8 @@ that his Vienna home, where we visited, is mostly empty of his possessions. You
 get to see his doctor's bag, some things in the patient's waiting room, and
 the mirror in his office (in which I sneakily took a selfie - I was reflecting
 upon myself in Freud's study), but the rooms are mostly bare and contain cases
-displaying inconsequent objects and commentary that tells the story of Freud's
-life and work.
+displaying inconsequential objects and commentary that tells the story of
+Freud's life and work.
 
 Sometimes a place feels significant, and Freud's treatment room where the
 practice of psychoanalysis was honed is a good example. I can't over-state the

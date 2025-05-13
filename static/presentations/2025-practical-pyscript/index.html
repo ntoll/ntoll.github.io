@@ -1,0 +1,902 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Practical PyScript - Tutorial</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <style>
+    py-terminal {
+      text-align: left;
+    }
+    mpy-editor {
+      background-color: white;
+      font-size: 0.7em;
+    }
+    .mpy-editor-output {
+      color: black;
+      text-align: left;
+      font-family: courier;
+    }
+    </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Practical PyScript</h1>
+          <img src="./img/pyscript.svg" style="height: 300px"/>
+          <p>Nicholas H.Tollervey</p>
+          <p><small>ntoll@ntoll.org / ntollervey@anaconda.com<br/>
+          <a href="https://ntoll.org/presentations/">ntoll.org/presentations</a></small></p>
+          <aside class="notes">
+            <p>Thank organisers. Let's get to know each other.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Introductions</h2>
+        </section>
+        <section data-background-image="./img/tuba.jpg">
+        </section>
+        <section data-background-image="./img/teacher_me.jpg">
+        </section>
+        <section data-background-image="./img/josh_12.png">
+        </section>
+        <section data-background-image="./img/josh_teaching.png">
+        </section>
+        <section data-background-image="./img/dan_headshot.jpg">
+        </section>
+        <section data-background-image="./img/dan_family.jpg">
+        </section>
+        <section>
+          <h2>...and you?</h2>
+          <ul>
+            <li>Who are you? 🫵</li>
+            <li>What brings you to PyCon? 🐍</li>
+            <li>Tell us a fun fact about yourself... 🥸</li>
+          </ul>
+          <aside class="notes">
+            <p>Each attendee has 10 seconds to explain the following. GO!</p>
+            <p>Please wear a name badge.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Today's Agenda:</h2>
+          <aside class="notes">
+            <p>They say a picture paints 1000 words</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/wrestlers.jpg">
+          <aside class="notes">
+            <p>Today will, at times, feel like this. But it'll also be
+            lots of fun.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>4 sections:</h2>
+          <ol>
+            <li class="fragment">PyScript Core Concepts and Tools 🐍⚙️</li>
+            <li class="fragment">In depth exploration &amp; pointers 🔬👉</li>
+            <li class="fragment">Playtime / hacking / breaking things 🧪💻</li>
+            <li class="fragment">Show &amp; tell / washup 👀💬</li>
+          </ol>
+          <p class="fragment"><strong>Outcome:</strong> you've had fun
+          collaborating (or not) to create, deploy and demo a PyScript app.
+          🎉🚀</p>
+          <aside class="notes">
+            <p>This will be the overall structure of the day, with the hoped
+            for outcome.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>ASK QUESTIONS! 🤔🤗</h2>
+          <p>Don't ask to ask, just ask!</p>
+          <p class="fragment">(<em>"I don't know, but let's find out!"</em>, is
+          a good answer)</p>
+          <aside class="notes">
+            <p>I like interactive, energetic and engaged classrooms. So, don't
+            just sit there...</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Section #1</h1>
+          <h2>PyScript Core Concepts and Tools 🐍⚙️</h2>
+          <p>Aim: a grounding in core concepts, terms and technology.</p>
+        </section>
+        <section>
+          <h2>What is PyScript?</h2>
+          <p>You tell me... 😉</p>
+          <aside class="notes">
+            <p>Let's find out how much you already know about PyScript.</p>
+          </aside>
+        </section>
+        <section>
+          <img src="./img/pyscript.svg" style="height: 200px;"/>
+          <p>PyScript is an <u>open source</u> platform for <em>Python in the
+          browser,</em> and sponsored by <strong style="color: #50d133; font-size: 1.2em;">Anaconda</strong> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" style="vertical-align: text-top;">
+<linearGradient id="I1Ls14S_9qH6lfzYnZ33la_F4uMFPZgS0gt_gr1" x1="20.837" x2="26.769" y1="4.234" y2="41.178" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#50d133"></stop><stop offset="1" stop-color="#3da126"></stop></linearGradient><path fill="url(#I1Ls14S_9qH6lfzYnZ33la_F4uMFPZgS0gt_gr1)" d="M11.575,8.758c1.128,0.177,2.553,0.46,4.074,0.892c-0.343,0.977-0.636,2.004-0.856,3.057 c-1.093-0.01-2.173,0.066-3.212,0.201C11.482,11.344,11.508,9.907,11.575,8.758z M10.082,13.144 c-0.086-1.246-0.092-2.411-0.06-3.435C9.969,9.761,9.91,9.805,9.857,9.858c-1.25,1.25-2.277,2.636-3.127,4.097 C7.717,13.663,8.842,13.373,10.082,13.144z M12.205,17.121c0.579-0.994,1.279-1.936,2.129-2.787 c0.045-0.045,0.094-0.082,0.139-0.126c-0.935,0.008-1.862,0.082-2.759,0.202C11.818,15.306,11.988,16.217,12.205,17.121z M10.929,18.242c-0.335-1.195-0.563-2.408-0.706-3.588c-1.763,0.336-3.316,0.797-4.461,1.189c-0.02,0.045-0.042,0.088-0.062,0.133 c0.502,1.124,1.236,2.597,2.204,4.132C8.84,19.432,9.852,18.793,10.929,18.242z M6.776,20.965c-0.716-1.122-1.297-2.2-1.77-3.162 c-0.593,1.827-0.915,3.719-0.969,5.621C4.795,22.666,5.717,21.813,6.776,20.965z M4.202,26.624 c0.252,1.922,0.784,3.808,1.593,5.604c0.371-1.03,0.848-2.205,1.45-3.425C6.083,28.069,5.056,27.31,4.202,26.624z M4.32,25.153 c0.907,0.765,2.102,1.686,3.489,2.571C8.361,26.718,9,25.715,9.732,24.763c-0.801-0.832-1.522-1.721-2.164-2.622 C6.243,23.212,5.127,24.298,4.32,25.153z M8.688,21.282c0.506,0.717,1.073,1.417,1.68,2.087c0.055-1.206,0.265-2.404,0.637-3.564 C10.193,20.258,9.413,20.754,8.688,21.282z M16.231,8.138c0.477-1.151,0.988-2.194,1.472-3.096 c-1.67,0.552-3.285,1.313-4.789,2.315C13.91,7.542,15.035,7.791,16.231,8.138z M17.774,8.625c0.919,0.321,1.849,0.705,2.762,1.151 c0.862-0.998,1.601-1.839,2.097-2.4c-0.72-0.597-1.862-1.515-3.063-2.385C19.007,5.977,18.364,7.222,17.774,8.625z M11.168,35.604 c-1.438-0.131-2.76-0.357-3.867-0.593c0.731,1.108,1.583,2.158,2.557,3.132c0.513,0.513,1.049,0.987,1.601,1.432 C11.307,38.432,11.184,37.07,11.168,35.604z M38.142,9.857C33.68,5.396,27.617,3.499,21.785,4.144 c1.581,1.206,2.84,2.294,2.932,2.375l0.767,0.667l-0.679,0.756c-0.016,0.018-0.896,1.001-2.17,2.466 c0.454-0.045,0.909-0.07,1.365-0.07c3.5,0,7.001,1.333,9.666,3.997c5.33,5.33,5.33,14.002,0,19.332 c-4.618,4.617-11.744,5.226-17.032,1.842c-1.014,0.147-2.034,0.214-3.031,0.214c-0.447,0-0.886-0.016-1.321-0.038 c0.027,1.87,0.233,3.567,0.436,4.817c3.389,2.319,7.333,3.492,11.283,3.492c5.122,0,10.243-1.95,14.142-5.848l0,0 C45.94,30.344,45.94,17.656,38.142,9.857z M15.296,34.535c-0.33-0.273-0.652-0.56-0.961-0.868c-0.671-0.671-1.257-1.396-1.759-2.16 c-0.169,1.027-0.26,2.057-0.286,3.06C13.268,34.62,14.282,34.611,15.296,34.535z M17.185,10.131 c-0.282,0.793-0.523,1.621-0.721,2.464c0.91-0.602,1.88-1.069,2.88-1.43c0.035-0.041,0.074-0.088,0.109-0.129 C18.703,10.69,17.941,10.391,17.185,10.131z M10.47,25.799c-0.606,0.824-1.151,1.685-1.624,2.554 c0.865,0.5,1.789,0.957,2.748,1.349C11.022,28.453,10.646,27.138,10.47,25.799z M11.541,30.983 c-1.146-0.437-2.237-0.972-3.252-1.553c-0.775,1.586-1.341,3.103-1.722,4.276c1.202,0.291,2.823,0.608,4.613,0.779 C11.214,33.341,11.324,32.161,11.541,30.983z"></path>
+</svg>.</p>
+          <p>If Python and the web had a baby, it'd be PyScript.</p>
+          <aside class="notes">
+            <p>Here's my summary of PyScript.</p>
+            <p>Draw attention to Anaconda!</p>
+          </aside>
+        </section>
+        <section>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+</svg>
+          <p>Python is currently the world's most popular programming language.</p>
+          <aside class="notes">
+            <p>Python is why we're here. I'm assuming you already have some
+            familiarity with it.</p>
+          </aside>
+        </section>
+        <section data-background-video="./video/python_website.webm" data-background-video-loop="true">
+        </section>
+        <section>
+          <svg fill="#FFFFFF" height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 491.52 491.52" xml:space="preserve" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="183.855,68.79 169.27,118.43 161.315,93.18 141.785,93.18 133.835,118.43 119.25,68.79 99.6,74.57 123.67,156.49 143.26,156.68 151.55,130.35 159.845,156.68 179.435,156.49 203.505,74.57 "></polygon> </g> </g> <g> <g> <polygon points="298.545,68.79 283.955,118.43 276.005,93.18 256.475,93.18 248.525,118.43 233.935,68.79 214.285,74.57 238.36,156.49 257.95,156.68 266.24,130.35 274.53,156.68 294.12,156.49 318.195,74.57 "></polygon> </g> </g> <g> <g> <polygon points="413.23,68.79 398.645,118.43 390.695,93.18 371.165,93.18 363.21,118.43 348.625,68.79 328.975,74.57 353.045,156.49 372.635,156.68 380.93,130.35 389.22,156.68 408.81,156.49 432.88,74.57 "></polygon> </g> </g> <g> <g> <path d="M491.52,30.72H40.96v89.086C14.217,156.578,0,200.018,0,245.76c0,56.73,21.895,110.2,61.63,150.52 c40.7,41.61,95.185,64.52,153.41,64.52c58.225,0,112.71-22.91,153.385-64.49c39.76-40.35,61.655-93.82,61.655-150.55 c0-17.359-2.146-34.511-6.23-51.2h67.67V30.72z M40.96,159.031v35.529h58.021c-1.786,13.389-2.844,27.089-3.2,40.96H20.886 C22.271,208.614,29.064,182.749,40.96,159.031z M20.974,256h74.879c0.812,32.407,5.357,62.733,13.022,89.597 c-14.02,8.014-27.129,17.739-39.237,28.945C40.257,341.563,23.266,300.167,20.974,256z M84.004,389.117 c9.739-8.951,20.211-16.791,31.323-23.478c9.644,26.264,22.482,48.142,37.522,64.379 C127.497,421.474,104.162,407.642,84.004,389.117z M204.8,439.205c-28.946-6.164-54.591-38.093-70.783-83.479 c22.054-10.145,45.947-16.019,70.783-17.301V439.205z M204.8,317.944c-26.957,1.259-52.95,7.349-76.997,18.056 c-6.658-24.26-10.674-51.436-11.475-80H204.8V317.944z M204.8,235.52h-88.539c0.376-13.903,1.522-27.603,3.412-40.96H204.8V235.52 z M225.28,439.205V338.424c24.836,1.282,48.729,7.156,70.783,17.301C279.871,401.112,254.226,433.041,225.28,439.205z M313.752,256c-0.801,28.564-4.817,55.74-11.475,80c-24.047-10.706-50.039-16.797-76.997-18.056V256H313.752z M225.28,235.52 v-40.96h85.129c1.89,13.356,3.036,27.054,3.411,40.96H225.28z M277.229,430.019c15.041-16.237,27.88-38.116,37.524-64.381 c11.114,6.688,21.586,14.53,31.326,23.481C325.927,407.642,302.589,421.474,277.229,430.019z M360.443,374.543 c-12.109-11.207-25.217-20.931-39.238-28.946c7.665-26.864,12.21-57.191,13.022-89.597h74.879 C406.814,300.156,389.828,341.545,360.443,374.543z M334.299,235.52c-0.355-13.874-1.413-27.573-3.199-40.96h71.536 c3.641,13.349,5.854,27.053,6.578,40.96H334.299z M471.04,174.08H61.44V51.2h409.6V174.08z"></path> </g> </g> </g></svg>
+          <p>The web is the planet's most ubiquitous computing platform (and based on open code and standards).</p>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#4caf50" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"></path><path fill="#ffc107" d="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z"></path><path fill="#4caf50" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"></path><path fill="#ffc107" d="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z"></path><path fill="#f44336" d="M41.84,15H24v13l-3-1L7.16,13.26H7.14C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z"></path><path fill="#dd2c00" d="M7.158,13.264l8.843,14.862L21,27L7.158,13.264z"></path><path fill="#558b2f" d="M23.157,44l8.934-16.059L28,25L23.157,44z"></path><path fill="#f9a825" d="M41.865,15H24l-1.579,4.58L41.865,15z"></path><path fill="#fff" d="M33,24c0,4.969-4.031,9-9,9s-9-4.031-9-9s4.031-9,9-9S33,19.031,33,24z"></path><path fill="#2196f3" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<polygon fill="#43a047" points="43,35.112 43,13.336 24,2.447 5,13.336 5,35.112 24,46"></polygon><path fill="#fff" d="M32.5,13c-1.381,0-2.5,1.119-2.5,2.5v11.276L18.984,14.453l-0.131-0.152 C17.609,12.938,16.187,13,15.5,13c-1.381,0-2.5,1.119-2.5,2.5v17c0,1.381,1.119,2.5,2.5,2.5s2.5-1.119,2.5-2.5V21.141 l11.278,12.627l0.11,0.142C30.62,35.133,32.295,35,32.5,35c1.381,0,2.5-1.119,2.5-2.5v-17C35,14.119,33.881,13,32.5,13z"></path>
+</svg>
+          </div>
+          <p><pre style="font-size: 1.2em;">&lt;HTML/&gt;   CSS{}   javascript;</pre></p>
+          <aside class="notes">
+            <p>While you may all be Pythonistas, you may not be familiar with
+            the building blocks of the web: Browser/Server
+          </aside>
+        </section>
+        <section data-background-video="./video/http.webm" data-background-video-loop="true">
+        </section>
+        <section data-background-video="./video/html_side_by_side.webm">
+        </section>
+        <section data-background-video="./video/css_side_by_side.webm">
+        </section>
+        <section data-background-video="./video/js_side_by_side.webm">
+        </section>
+        <section data-background-image="./img/potential.png">
+        </section>
+        <section data-background-video="./video/in_the_browser.webm">
+          <aside class="notes">
+            <p>Responsive</p>
+            <p>Accessible</p>
+            <p>Internationalizable</p>
+            <p>Everywhere!</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/competition.jpg">
+          <aside class="notes">
+            <p>FWIW - when PyScript was released the press made a big noise
+            about it being the JavaScript "killer".</p>
+            <p>I want to distance PyScript from this position. In fact...</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/friends.jpg">
+          <aside class="notes">
+            <p>...in fact, as we'll see. Python and JavaScript are very much
+            friends, thanks to PyScript.</p>
+            <p>The aim is to complement and amplify what you can do in the
+            browser through conscientious integration, rather than an exercise
+            in domination and control.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>How..? 🤔</h2>
+        </section>
+        <section data-background-image="./img/platform.png">
+          <aside class="notes">
+            <ul>
+              <li>Inside the browser.</li>
+              <li>WASM is the compilation target.</li>
+              <li>Python interpreters written in C compiled to WASM</li>
+              <li>PyScript orchestrates the interpreters and brings higher
+              level browser based features.</li>
+              <li>Your code does stuff</li>
+              <li>Frameworks provide scaffolding for certain ends</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>How..? 🤔🤔</h2>
+        </section>
+        <section data-background-video="./video/rube_goldberg.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <ul>
+              <li>A rather complicated dance occurs</li>
+              <li>It involves lots of "moving parts"</li>
+              <li>Such parts interact with each other in complex ways</li>
+              <li>Not all the parts work as expected</li>
+              <li>There are subtle reasons why things might fail</li>
+              <li>Often you can't do what you expect to be able to do, because
+              the browser is the world's most battle hardened computing
+              sandbox</li>
+            </ul>
+            <p>Let's tell the simple story... all you need to know to work with
+            PyScript, while acknowledging there's a LOT going on behind the
+            scenes.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>How..? 🤔🤔🤔</h2>
+        </section>
+        <section>
+          <p>The (simple) story of a PyScript app:</p>
+          <ol>
+            <li class="fragment">The browser sends an HTTP request for your app's web page and the server responds HTML.</li>
+            <li class="fragment">The HTML contains references to at least two
+            fundamental assets expressed as URLs:
+                <ul>
+                  <li>PyScript itself.</li>
+                  <li><em>Your</em> Python code.</li>
+                </ul>
+            </li>
+            <li class="fragment">The browser runs PyScript and your code in the sandbox that is
+            your browser's tab.</li>
+            <li class="fragment">Thanks to PyScript, your code can do anything a browser can do (rather a lot).</li>
+          </ol>
+          <aside class="notes">
+            <p>At a high level, this is the process involved in PyScript.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #1</h2>
+          <p>Getting PyScript into the browser.</p>
+          <pre><code data-trim data-noescape data-line-numbers="4-12" class="language-html">
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;My PyScript App&lt;/title&gt;
+                &lt;!-- PyScript CSS --&gt;
+                &lt;link
+                  rel="stylesheet"
+                  href="https://pyscript.net/releases/2025.3.1/core.css"&gt;
+                &lt;!-- This script tag bootstraps PyScript --&gt;
+                &lt;script
+                  type="module"
+                  src="https://pyscript.net/releases/2025.3.1/core.js"&gt;
+                &lt;/script&gt;
+              &lt;/head&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+            <p>Two links inside the HTML head tag. One for PyScript CSS, the
+            other to get PyScript itself. Each has a pinned VERSION of
+            PyScript.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #2</h2>
+          <p>Get your code running in PyScript.</p>
+          <pre><code data-trim data-noescape data-line-numbers="4">
+          &lt;html&gt;
+            &lt;head&gt;...&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script type="py" src="./main.py"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+            <p>Just reference your code (via a valid URL as the src
+            attribute) of a script tag whose type is either "py" or "mpy"</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/multi-interpreters.png">
+          <aside class="notes">
+            <p>A quick note on interpreters:</p>
+            <ul>
+              <li>We support CPython (via Pyodide)</li>
+              <li>We also support MicroPython</li>
+              <li>PolyScript also supports other scripting languages.</li>
+            </ul>
+            <p>How is this even possible?</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/emscripten.png">
+          <aside class="notes">
+            <p>Emscripten is to WASM as libc, win32 or POSIX are to "normal"
+            operating systems.</p>
+            <p>It supplies an abstration to fundamental capabilities such as
+            a file system and memory management.</p>
+          </aside>
+        </section>
+        <section>
+          <p><img src="./img/pyodide.png" style="margin:0;vertical-align:bottom;"/> Pyodide (CPython):</p>
+          <pre><code data-trim data-noescape data-line-numbers="4">
+          &lt;html&gt;
+            &lt;head&gt;...&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script type="py" src="./main.py"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+          <p><img src="./img/micropython.png" style="margin:0;vertical-align:bottom;"/> MicroPython:</p>
+          <pre><code data-trim data-noescape data-line-numbers="4">
+          &lt;html&gt;
+            &lt;head&gt;...&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script type="mpy" src="./main.py"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+            <ul>
+              <li>Pyodide = the kitchen sink.</li>
+              <li>MicroPython = small, efficient and fast Python (works well on mobile)</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <p>In "main.py":</p>
+          <pre style="font-size: 1.5em;"><code data-trim data-noescape class="language-python">
+          print("Hello, world!")
+          </code></pre>
+          <aside class="notes">
+            <p>Let's see what this app looks like!</p>
+          </aside>
+        </section>
+        <section>
+          <p><a href="https://ntoll.pyscriptapps.com/hello-world/" target="_blank">ntoll.pyscriptapps.com/hello-world/</a></p>
+          <img src="./img/qr_hello_world.png"/>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-video="./video/inspect.webm" data-background-wideo-loop="true">
+          <aside class="notes">
+            <p>Explain: stdout and stderr go to JavaScript console.</p>
+            <p>Talk through the importance of the JS console via "inspect".</p>
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="4">
+          &lt;html&gt;
+            &lt;head&gt;...&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script type="py" src="./main.py" terminal&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+            <p>But what if we want something to just like a Python terminal?</p>
+            <p>Easy, just add a terminal attribute.</p>
+          </aside>
+        </section>
+        <section data-background-video="./video/with_terminal.webm" data-background-wideo-loop="true">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <p>Revise "main.py":</p>
+          <pre><code data-trim data-noescape data-line-numbers="" class="language-python">
+          name = input("What is your name? ")
+          print(f"Hello, {name}")
+          </code></pre>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-video="./video/input_on_main.webm" data-background-wideo-loop="true">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="4">
+          &lt;html&gt;
+            &lt;head&gt;...&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script type="py" src="./main.py" terminal worker&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-video="./video/input_on_worker.webm" data-background-wideo-loop="true">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <h2>A quick aside...</h2>
+          <p>Anaconda provide <a href="https://pyscript.com/" target="_blank">PyScript.com</a>
+          as a free service for creating, curating and hosting your PyScript
+          applications.</p>
+        </section>
+        <section data-background-video="./video/psdc.webm">
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #3</h2>
+          <p>Workers are like subprocesses <em>inside</em> your web page.</p>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section data-background-color="white" data-background-video="./video/workers.webm" data-background-size="contain">
+          <aside class="notes">
+            <p>https://www.chat-animator.net/</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #4</h2>
+          <p class="fragment">The browser is asynchronous.</p>
+          <p class="fragment">Python is (usually) synchronous.</p>
+          <p class="fragment">Workers allow us to resolve this because they can
+          block (synchronously).</p>
+          <aside class="notes">
+          </aside>
+        </section>
+        <section>
+          <h1>Brain rest...<br/>🤯🧠🥱⁉️🤗</h1>
+          <aside class="notes">
+            <p>Pause for questions and reflections (and a cookie).</p>
+            <p>Participants ask of me.</p>
+            <p>We ask of them:</p>
+            <ul>
+              <li>WASM?</li>
+              <li>MicroPython / Pyodide?</li>
+              <li>How to get PyScript into the browser?</li>
+              <li>Workers?</li>
+              <li>Synchronous vs Async</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h1>Section #2</h1>
+          <h2>In depth exploration & pointers 🔬👉</h2>
+          <p>Aim: Steps to autonomy ~ what's possible, where to find things,
+          and getting help.</p>
+        </section>
+        <section>
+          <h2>Ultimately, you need just two things:</h2>
+        </section>
+        <section>
+          <h2>The Documentation</h2>
+          <img src="./img/qr-docs.png"/>
+          <p><a href="https://docs.pyscript.net">docs.pyscript.net</a></p>
+        </section>
+        <section>
+          <h2>The Community</h2>
+          <img src="./img/qr-discord.png"/>
+          <p><a href="https://discord.gg/HxvBtukrg2">https://discord.gg/HxvBtukrg2</a></p>
+        </section>
+        <section>
+          <h2>PyScript's Environment</h2>
+          <p>(Use the "config" attribute to point to the URL for either a TOML or JSON file.)</p>
+          <pre><code class="language-html">
+&lt;script type="py" src="./main.py" config="./conf.toml"&gt;&lt;/script&gt;
+          </code></pre>
+          <pre><code class="language-html">
+&lt;script type="py" src="./main.py" config="./conf.json"&gt;&lt;/script&gt;
+          </code></pre>
+          <aside class="notes">
+            <p>Not only do we need:</p>
+            <ul>
+              <li>Your code</li>
+              <li>Python</li>
+            </ul>
+            <p>We also need an environment in which to run it.</p>
+            <p>Your browser tab is your Python environment with an in-browser
+            virtual filesystem curated by Emscripten.</p>
+            <p>The main thread and workers are each SEPARATE environments.</p>
+          </aside>
+        </section>
+        <section>
+          <img src="./img/packaging.jpg"/>
+        </section>
+        <section data-background-image="./img/arrr.png">
+          <aside class="notes">
+            <p>The Arrr package is pure Python and will work with MicroPython
+            and Pyodide.</p>
+          </aside>
+        </section>
+        <section>
+          <p>TOML</p>
+          <pre><code class="language-toml">packages = ["arrr"]</code></pre>
+          <p>JSON</p>
+          <pre><code class="language-json">{
+    "packages": ["arrr"]
+}</code></pre>
+          <p>In Python</p>
+          <pre><code class="language-python">from arrr import translate
+
+
+print(translate("Hello, world!"))</pre></code>
+          <aside class="notes">
+            <ul>
+              <li>Packages from PyPI</li>
+              <li>Uses micropip in Pyodide</li>
+              <li>Less well supported in MicroPython</li>
+              <li>Packages are re-installed with each refresh</li>
+              <li>Yes, of course we cache</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="./img/diskettes.jpg">
+          <aside class="notes">
+            <p>Sometimes you just need to give PyScript FS access to raw data.</p>
+            <p>Sometimes there's no other way to get code into the environment.</p>
+            <p>We have a simple and elegent "files" DSL to help with this.</p>
+          </aside>
+        </section>
+        <section>
+          <p>Map from <u>source URL</u> to <u>filesystem destination</u>.</p>
+          <pre><code class="language-toml">[files]
+"https://example.com/data.csv" = "./data.csv"
+"./code.py" = "./subdir/code.py"</code></pre>
+          <pre><code class="language-json">{
+  "files": {
+    "https://example.com/data.csv": "./data.csv",
+    "./code.py": "./subdir/code.py"
+  }
+}</pre></code>
+        </section>
+        <section>
+          <p>Archives (.zip, .tgz, .whl) are automatically uncompressed if the
+          target is a "folder/*":</p>
+          <pre><code class="language-toml">[files]
+"./my_data.tgz" = "./data/*"</code></pre>
+        </section>
+        <section>
+          <p>A DSL to help. Placeholders defined between <code>{}</code></p>
+          <pre><code class="language-json">{
+  "files": {
+    "{DOMAIN}": "https://my-server.com",
+    "{PATH}": "a/path",
+    "{VERSION}": "1.2.3",
+    "{FROM}": "{DOMAIN}/{PATH}/{VERSION}",
+    "{TO}": "./my_module",
+    "{FROM}/__init__.py": "{TO}/__init__.py",
+    "{FROM}/foo.py": "{TO}/foo.py",
+    "{FROM}/bar.py": "{TO}/bar.py",
+    "{FROM}/baz.py": "{TO}/baz.py",
+  }
+}</code></pre>
+        </section>
+        <section data-background-image="./img/js_and_py.png">
+          <aside class="notes">
+            <p>Python and JavaScript play nicely in PyScript. This is a
+            feature that we want to cultivate.</p>
+            <p>To this end you can use JavaScript modules in your Python
+            code.</p>
+          </aside>
+        </section>
+        <section>
+          <p>In your configuration:</p>
+          <pre><code style="font-size: 0.75em;">[js_modules.main]
+"https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet-src.esm.js" = "leaflet"
+"https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" = "leaflet" # CSS
+          </code></pre>
+          <p>In your Python code:</p>
+          <pre><code class="language-python">from pyscript.js_modules import leaflet as L
+
+map = L.map("map")
+
+# etc....</code></pre>  
+          <p>Remember Python doesn't have a <code>new</code> keyword, so:</p>
+          <pre><code class="language-python"># Call the new() method instead
+x = AJSClass.new()</code></pre>
+        </section>
+        <section>
+          <p>Other environmental configurations:</p>
+          <ul>
+            <li class="fragment">The interpreter to use.</li>
+            <li class="fragment">Third party plugins.</li>
+            <li class="fragment">Flags for experimental features/compatibility.</li>
+            <li class="fragment">Custom arbitrary configuration values.</li>
+          </ul>
+          <p class="fragment">See <a href="https://docs.pyscript.net/latest/user-guide/configuration/">the docs</a> for more specific information.</p>
+        </section>
+        <section>
+          <h2>How..? 🤔🤔🤔</h2>
+          <aside class="notes">
+            <p>But how is all this interoperability with the browser and
+            JavaScript possible..?</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #5</h2>
+          <p>There is a foreign function interface (FFI) to broker between
+          Python's world and the browser's world.</p>
+          <p class="fragment">This is one of those subtle moving parts.</p>
+        </section>
+        <section data-background-video="./video/ffi.webm" data-background-video-loop="true">
+          <aside class="notes">
+            <ul>
+              <li>Python ints become what in JS (which doesn't have ints)?</li>
+              <li>JS objects become what in Python?</li>
+              <li>How do you call something in JS from Python?</li>
+              <li>Via a proxy object... a sort of ghostly shadow of something
+              from the other world.</li>
+              <li>This works both ways (Python proxy objects in JS, and JS
+              proxy objects in Python). Makes memory management fun.</li>
+              <li>There's also a lot of data serialisation going on between
+              the two worlds.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Key info #6</h2>
+          <p>The browser has a root object called <code>globalThis</code>.</p>
+          <p>It is off the object that ALL browser capabilities hang.</p>
+          <pre><code class="language-python">import js
+
+# the js object is a proxy in Python for globalThis
+js.alert("Hello, world!")</code></pre>
+        </section>
+        <section data-background-video="./video/web_apis.webm">
+          <aside class="notes">
+            <p>Thanks to the js object and the FFI, we have full access to
+            ALL the APIs and related capabilities provided by the browser.
+            AND THERE A LOT OF THEM!</p>
+            <p>They're based on open standards and well documented on places
+            like Mozilla Developer Network.</p>
+            <p>But they're not Pythonic. In fact, they're a sort of API
+            archaeology of idiomatic JS over the ages.</p>
+            <p>These APIs must never break.</p>
+          </aside>
+        </section>
+        <section>
+          <p>This is why we have the <code>pyscript</code> namespace.</p>
+        </section>
+        <section data-background-image="./img/oath.jpg">
+          <h2>Our promise...</h2> 
+          <aside class="notes">
+            <ul>
+              <li>Pythonic.</li>
+              <li>Works the same, no matter the Python interpreter.</li>
+              <li>Wraps the most commonly used capabilities.</li>
+              <li>Always available.</li>
+              <li>Fully documented.</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>Highlights include:</h2>
+          <ul>
+            <li class="fragment"><code>pyscript.fetch</code> and <code>pyscript.WebSocket</code></li>
+            <li class="fragment"><code>pyscript.web</code> for interacting with the DOM.</li>
+            <li class="fragment">The <code>@pyscript.when</code> decorator for handling events.</li>
+            <li class="fragment">The universal <code>pyscript.document</code> and <code>pyscript.window</code> objects.</li>
+            <li class="fragment">Emit media via the <code>pyscript.display</code> function.</li>
+            <li class="fragment">Lots of other good stuff.</li>
+          </ul>
+          <p class="fragment">See <a href="https://docs.pyscript.net/latest/api/">the docs</a> for more details.</p>
+        </section>
+        <section>
+          <h2>Important aside 😱</h2>
+          <p>CORS is the cause of so much network related pain.</p>
+          <p>Check your server's headers.</p>
+          <p>It's as much fun as root canal work with an inexperienced dentist. 😬🛠️🦷💥</p>
+        </section>
+        <section>
+          <h2>Python expressed in many ways...</h2>
+          <script type="mpy" terminal>import code; code.interact()</script>
+        </section>
+        <section>
+          <p>A built-in Python editor (a la Notebooks)</p>
+          <script type="mpy-editor">import sys
+print(sys.version)
+a = 42
+print(a)
+</script>
+        </section>
+        <section>
+          <p>The PyScript Donkey 🐴</p>
+          <p>Ready when you are!</p>
+          <pre><code>import { donkey } from '@pyscript/core/dist/core.js';
+
+const eeyore = await donkey({
+  type: 'py' || 'mpy',  // Python interpreter to run
+  persistent: false,    // `true` tracks globals and locals
+  terminal: '',         // target terminal container
+  config: {},           // worker config
+});
+
+result = await eeyore.evaluate(`"Hello"`)  // Python code.
+/* Also available: process (in the terminal), execute, clear,
+reset and kill. */
+</code></pre>
+          <aside class="notes">
+            <p>The PyScript donkey is a way to start Python in a side-loaded
+            webworker, sitting patiently for you to give it stuff to do (just
+            like a real donkey).</p>
+          </aside>
+        </section>
+        <section>
+          <img src="./img/pygame_ce_logo.svg" style="width: 600px"/>
+          <pre><code>
+&lt;script type="py-game" config="./pyscript.toml"
+  src="./main.py"&gt;&lt;/script&gt;
+&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+          </code></pre>
+          <p><a href="https://pyscript.com/@neon22/using-pygame-in-pyscript-copy">Live example</a></p>
+        </section>
+        <section data-background-video="./video/pygamece.webm">
+        </section>
+        <section data-background-image="./img/frameworks.png">
+          <aside class="notes">
+            <p>PyScript reveals the browsers capabilities through the lens of
+            Python.</p>
+            <p>Frameworks are opinionated in what to do, and how to organise
+            these browser capabilities.</p>
+          </aside>
+        </section>
+        <section>
+          <p>3 Frameworks</p>
+          <ol>
+            <li class="fragment"><a href="https://inventframework.org/">Invent</a> - for folks not familiar with the browser.
+            <ul>
+              <li><a href="https://pyscript.com/@ntoll/inventintro/">HONK!</a></li>
+              <li><a href="https://pyscript.com/@ntoll/ideas-generator/">Ideas generator</a></li>
+            </ul></li>
+            <li class="fragment"><a href="https://puepy.dev/">Puepy</a> - PyScript frontends with reactivity built in.
+            <ul>
+              <li><a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/10_full_app/index.html#/login?return_to=">Dapper App</a></li>
+              <li><a href="https://expenselemur.com/">Expense Lemur</a></li>
+            </ul></li>
+            <li class="fragment"><a href="https://github.com/pyscript/ltk">LTK</a> - jQuery based UI toolkit with reactive aspects.
+            <ul>
+              <li><a href="https://pysheets.app/">PySheets</a></li>
+              <li><a href="https://pyalgoviz.appspot.com/">PyAlgoViz</a></li>
+            </ul></li>
+          </ol>
+          <aside class="notes">
+            <p>These are three frameworks, each of which has a different
+            opinionated take on how you could build an app (depending on
+            "who" you are).</p>
+          </aside>
+        </section>
+        <section>
+          <p>An Invent application is made of this:</p>
+          <ul style="font-size: 0.8em;">
+            <li class="fragment"><em>Pages</em> contain <em>components</em>
+            used in the app 📱🎚️ ▶️</li>
+            <li class="fragment"><em>Media</em> are assets used
+            by the app. 🖼️🎶🎥</li>
+            <li class="fragment"><em>Functions</em> define custom
+            behaviour. ⚙️💪</li>
+            <li class="fragment"><em>Channels</em> carry messages to
+            coordinate behaviour. 💬📡</li>
+            <li class="fragment"><em>Datastore</em> keeps state, stores
+            key/value data. ✍️  📖</li>
+            <li class="fragment"><em>Tools</em> do background stuff
+            then store results in datastore. 🚚📦</li>
+          </ul>
+        </section>
+        <section>
+          <p>PuePy is inspired by Vue.js, but is built entirely from scratch in Python. Here's "Hello, World!":</p>
+          <pre><code class="language-python">from puepy import Application, Page, t
+
+app = Application()
+
+
+@app.page()
+class HelloWorldPage(Page):
+    def populate(self):
+        t.h1("Hello, World!")
+
+
+app.mount("#app")
+          </code></pre>
+        </section>
+        <section data-background-image="./img/chris_laffra.png">
+          <aside class="notes">
+            <p>This elegant chap is Chris. He was going to do this tutorial
+            with me, but then got a job in Dubai.</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/ltk-model.png">
+          <aside class="notes">
+            <p>As this fragment shows, LTK also includes a reactive data model
+            layer too.</p>
+          </aside>
+        </section>
+        <section>
+          <p>Chris explains best:</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5nseG-iU62g?si=GmsafVRJb5IRMKnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+          <h1>TESTING</h1>
+          <aside class="notes">
+            <p>Question: why do we write tests?</p>
+          </aside>
+        </section>
+        <section>
+          <p>uPyTest</p>
+          <pre><code class="language-python">import upytest
+
+
+def test_raises_exception():
+    with upytest.raises(ValueError, KeyError):
+        raise ValueError("BOOM!")
+
+@skip(
+  "Skip this if using MicroPython",
+  skip_when=upytest.is_micropython
+)
+def test_something():
+    assert 1 == 1  # Only asserted if using Pyodide.
+          </code></pre>
+          <p><a href="https://github.com/pyscript/upytest">github.com/pyscript/upytest</a></p>
+        </section>
+        <section data-background-color="white">
+          <p>uMock - for controlling test context</p>
+          <img src="./img/mock.png" style="width: 300px"/>
+          <p><span style="color: #087a91">Mocks in blue</span><br/><span style="color: #933722">Component under test in red</span></p>
+          <p><a href="https://github.com/pyscript/umock">github.com/pyscript/umock</a></p>
+        </section>
+        <section>
+          <pre><code class="language-python">from umock import AsyncMock
+
+
+m = AsyncMock(return_value=42)
+
+meaning_of_life = await m()
+
+assert meaning_of_life == 42, "Meaning of life not as H2G2."
+m.assert_awaited_once()
+        </code></pre>
+        </section>
+        <section data-background-video="./video/test_suite.webm">
+          <aside class="notes">
+            <p>It's actually how we run PyTest's test suite.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Brain rest...<br/>🤯🧠🥱⁉️🤗</h1>
+        </section>
+        <section>
+          <h1>Section #3</h1>
+          <h2>Playtime / hacking / breaking things 🧪💻</h2>
+          <p>Aim: practical autonomy ~ explore, experiment, have fun, and be
+          creative with PyScript.</p>
+        </section>
+        <section>
+          <h1>Section #4</h1>
+          <h2>Show & tell / washup 👀💬</h2>
+          <p>Aim: roundup, reflect, ask questions and share your insights
+          (your voice matters).</p>
+        </section>
+        <section>
+          <h2>PyScript@PyCon2025</h2>
+          <ul>
+            <li class="fragment">Web Assembly Summit (tomorrow, 9am room 402)</li>
+            <li class="fragment">Łukasz Langa's tutorial: Discover 3D graphics with WebGL and PyScript (tomorrow, 9am room 320)</li>
+            <li class="fragment">Nicholas and Paul Everitt: Let's PyScript: Flask frontends in Python!(FlaskCon on Friday at 4:30pm room 317)</li>
+            <li class="fragment">Łukasz Langa's talk: Looking At Audio (Saturday, 1:30pm Ballroom A)</li>
+            <li class="fragment">Anaconda Booth in exhibitors' hall (all conference)</li>
+            <li class="fragment">Sprinting on Monday</li>
+          </ul>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
