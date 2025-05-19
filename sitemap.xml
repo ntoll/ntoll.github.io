@@ -103,7 +103,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2025-05-13T21:52:00Z</lastmod>
+  <lastmod>2025-05-19T16:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -144,14 +144,6 @@
  <url>
   <loc>https://ntoll.org/article/advice/</loc>
   <lastmod>2023-04-14T16:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/aesthetic%20/</loc>
-  <lastmod>2025-03-23T18:06:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/aesthetic/</loc>
-  <lastmod>2025-04-13T09:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -759,7 +751,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-27.html</loc>
-  <lastmod>2025-05-13T21:52:00Z</lastmod>
+  <lastmod>2025-05-19T16:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
@@ -994,8 +986,12 @@
   <lastmod>2024-02-08T14:08:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ntoll.org/static/presentations/2025-blockly/</loc>
+  <lastmod>2025-05-19T16:01:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ntoll.org/static/presentations/2025-practical-pyscript/</loc>
-  <lastmod>2025-05-13T21:59:00Z</lastmod>
+  <lastmod>2025-05-13T22:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/presentations/agile/</loc>
