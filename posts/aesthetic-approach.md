@@ -158,8 +158,8 @@ have changed and thus see the world differently by paying attention with the
 benefit of a new perspective. It's that "aha" feeling when a cartoon lightbulb
 appears above your head.
 
-What follows is an aesthetic example of such a change of perspective, from the
-perspective of the Arts and Crafts movement.
+Here's an aesthetic example of such a change of attention, from the perspective
+of the Arts and Crafts movement.
 
 In a [famous passage](https://www.gutenberg.org/cache/epub/29906/pg29906-images.html#page028)
 from [Modern Painters](https://en.wikipedia.org/wiki/Modern_Painters), John
@@ -183,7 +183,7 @@ the demand for perfection is always a sign of a misunderstanding of the ends of
 art". From Ruskin's perspective, this is because nothing can be completely
 seen, since the painter always creates via their own limited experience of the
 scene: from their unique (and thus incomplete) point
-of view. In the works of Turner, Ruskin found an artist who expressed, through
+of view. In the works of Turner Ruskin found an artist who expressed, through
 their paintings, a more fundamental way to pay attention to a scene. For
 Ruskin, Turner's focus was not how "real" or "accurate" the painting looked
 (the "typical") but how he, the painter, sees the more meaningful ("vital")
@@ -261,7 +261,7 @@ someone else - is lost to a device that may look sleek and modern yet has all
 the lovability of a spare part for a
 [Dalek](https://en.wikipedia.org/wiki/Dalek).
 
-The qualities of such artifacts reflect the our way of paying attention to the
+The qualities of such artifacts reflect our way of paying attention to the
 world. As my examples demonstrate, at this moment in time our culture is often
 tragically obsessed with typical beauty and efficient convenience while
 ignoring or squashing latent vital beauty and the possibility for gentle and
@@ -273,7 +273,7 @@ often essential for hoped-for outcomes and important informative analysis. The
 problem is with our attention: the tragically ignorant or inappropriate way to
 engage with and pay attention to the world in a relentlessly quantitive manner
 (we've measured it, so it must be true!). For instance, focusing on the number
-of "likes" on social media post to indicate a meaningful social life, or
+of "likes" on a social media post to indicate a meaningful social life, or
 counting calories as a proxy for healthy living, or coffee bean status as an
 important aspect of enjoying a drink with your loved one at breakfast.
 
@@ -300,26 +300,7 @@ enlarge our encounters with the world and each other.
 
 Here's another brain twist: my complaints are perennial, for every age is full
 of arty-farty humanist aesthetes (like me) bemoaning the shallowness of their
-contemporary culture. Every age is also full of entrepreneurs, engineers and activists who
-engage in making our world easier to live in. In more contemporary terms,
-they're the sort of people who run companies that efficiently make useful stuff
-delivered quickly to customers whose needs they clearly understand.
-
-Hang on? Surely that's shallow consumer culture, automation, supply chains and
-surveillance capitalism based on quantitive evaluation of the world?
-
-Well (and here comes the brain twist), that depends how you're paying attention
-to the situation, right? Didn't I mention it's important to pay attention to
-"paying attention"!
-
-This isn't a new brain twist either. The ancient Greeks named these two ways to
-pay attention [Logos](https://en.wikipedia.org/wiki/Logos) (a rational and
-measured engagement) and [Eros](https://en.wikipedia.org/wiki/Eros_(concept))
-(a felt and intuitive engagement). You may also have encountered such concepts
-as
-[left/right brain](),
-[Apollonian/Dionysian](https://en.wikipedia.org/wiki/Apollonian_and_Dionysian),
-and [Yin/Yang](https://en.wikipedia.org/wiki/Yin_and_yang).
+contemporary culture.
 
 The folks working within the Arts and Crafts movement realised this and
 deliberately emphasised the vital aspects of their work, culture[s] and
@@ -384,7 +365,11 @@ Linear v Gestalt view of the world. The myth of progress. JIRA!
 > ~ William Morris
 
 
-Perhaps this is
-what another famous Victorian,
-[Benjamin Disraeli](https://en.wikipedia.org/wiki/Benjamin_Disraeli), meant
-when he quipped, "there's lies, damned lies, and statistics".
+Translate, Transform, and Transmit.
+
+    Translate: The first, and most essential task (literally) is to understand the meaning of what has been handed down to you from the past, whether that culture was secular or religious in nature; you must understand the why of the beliefs, doctrines, laws, holidays, festivals, customs, myths, works of art, etc. Whether you grew up watching Passion plays or playing video games, or both, your maturation into true individuality will not begin unless you undertake this inquiry as to why these works of many human imaginations has been presented to you and what they are trying to teach you, to what end they are trying to guide you.
+
+    Transform: The second part of this task is to update that meaning with the new information that you encounter in your life, information that was not a part of what was handed down to you. What we inherit from the past is the product of the dead, who lived in different circumstances than what we live in now, and was informed by their experiences; it must be brought back to life and sustained through new information, new insights into what it is to be human, and our living experiences. This is the first step of a creative process: what might it be possible for what we have been handed to become? This also requires participation in and engagement with the culture and the people in it, sharing your understanding, gaining from theirs, synthesizing, debating.
+
+    Transmit: Our final responsibility is to create: new artistic forms, new laws, new myths, new institutions, new traditions, new philosophies, new disciplines, new industries. Having successfully understood and adapted ourselves and our way of life to the flux and impermanence of Life, we must transmit this body of knowledge and wisdom (and errors and folly) to the next generation, so that they may do the same, that every generation might suffer less and live more fully than the one before it, might have a richer understanding of where they came from and what they might be able to achieve.
+
