@@ -1,7 +1,7 @@
 <!--
 .. title: An Aesthetic Approach
 .. slug: aesthetic
-.. date: 2025-03-19 19:30:00 UTC+01:00
+.. date: 2025-05-24 14:30:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -19,7 +19,7 @@
 
 This article may only make sense to those for whom such thoughts are already
 familiar. That things don't make sense from a certain point of view is
-actually a core aspect of this article (viz. "brain twists").
+a core aspect of this article (viz. "brain twists").
 
 <hr class="section_break"/>
 
@@ -143,7 +143,7 @@ Why?
 Because it's about paying attention.
 
 How we pay attention reveals the world in a certain sort of way. Such attention
-changes the world through our embodying subsequent understanding,
+changes the world through our actions embodying subsequent understanding,
 interpretation and reaction to things _from that certain perspective_.
 Reflecting upon how one pays attention is, therefore, of fundamental
 importance. For such introspection cultivates a more enlarged and multifarious
@@ -166,33 +166,33 @@ from [Modern Painters](https://en.wikipedia.org/wiki/Modern_Painters), John
 Ruskin gave a celebrated definition of two types of beauty. The first, which he
 called "typical" beauty, is easy to understand because it is conventional.
 Typical beauty is the external quality of an object - how it may
-appear to us through our senses, "whether it occurs in a stone, flower, beast
-or man". The second, "vital" beauty, is where I find the brain twist. For it
-encompasses the, "felicitous fulfilment of function in living things" and the,
-"joyful and right exertion of perfect life". In other words, vital beauty 
-relates to the quality of the expressive, moral and social effects of a work.
-As Ruskin put it, "the art of any country is the exponent of its social and
-political values".
+appear to us through our senses, _"whether it occurs in a stone, flower, beast
+or man"_. The second, "vital" beauty, is where I find the brain twist. For it
+encompasses the, _"felicitous fulfilment of function in living things"_ and
+the, _"joyful and right exertion of perfect life"_. In other words, vital
+beauty relates to the quality of the expressive, moral and social effects of a
+work. As Ruskin put it, _"the art of any country is the exponent of its social
+and political values"_.
 
 In _Modern Painters_ Ruskin defended the later paintings of
 [J.M.W. Turner](https://en.wikipedia.org/wiki/J._M._W._Turner) that were
 savaged by art critics of the time. Ruskin felt that to perfectly
 capture a scene with great accuracy (as one may naively suggest a photograph
-might do) is a fools' game because, "no good work whatever can be perfect, and
+might do) is a fools' game because, _"no good work whatever can be perfect, and
 the demand for perfection is always a sign of a misunderstanding of the ends of
-art". From Ruskin's perspective, this is because nothing can be completely
+art"_. From Ruskin's perspective, this is because nothing can be completely
 seen, since the painter always creates via their own limited experience of the
-scene: from their unique (and thus incomplete) point
-of view. In the works of Turner Ruskin found an artist who expressed, through
-their paintings, a more fundamental way to pay attention to a scene. For
-Ruskin, Turner's focus was not how "real" or "accurate" the painting looked
-(the "typical") but how he, the painter, sees the more meaningful ("vital")
-aspects the scene. Such vital aspects are expressed through the skillful use of
-colour, contrasting light and shade, or brush techniques that subtly suggest,
-rather than accurately capture, the presence of things in the scene. Turner's
-genius is to give a more honest and truthful rendition of a scene _as the
-artist sees it_, although this actually makes the painting appear more unreal
-from a "typical" and thus incomplete point of view.
+scene: from their unique (and thus incomplete) point of view. In the works of
+Turner Ruskin found an artist who expressed, through their paintings, a more
+fundamental way to pay attention to a scene. For Ruskin, Turner's focus was not
+how "real" or "accurate" the painting looked (the "typical") but how he, the
+painter, sees the more meaningful ("vital") aspects the scene. Such vital
+aspects are expressed through the skillful use of colour, contrasting light and
+shade, or brush techniques that subtly suggest, rather than accurately capture,
+the presence of things in the scene. Turner's genius is to give a more honest
+and truthful rendition of a scene _as the artist sees it_, although this
+actually makes the painting appear more unreal from a "typical" and thus
+incomplete point of view.
 
 <figure>
 <img src="/images/turner-slave-ship.jpg" alt="Turner's, The Slave Ship."/>
@@ -251,7 +251,7 @@ _could_ be eating as part of a healthy lifestyle. It's actually a very specific
 and not particularly nourishing way of paying attention to the world (in fact,
 it's a tragically shallow and joyless exercise in data collection). The
 typically hi-tech coffee maker in your kitchen constantly reminds you of its
-presence via an app or glowing display that indicates the levels of coffee
+presence via a glowing display that indicates the levels of coffee
 beans, water and limescale, and instantly gives you a cup of coffee at the
 touch of a button. How convenient? Alas, the vital and gentle ceremony of
 brewing coffee in a pot with the associated sensory and emotional stimulation
@@ -267,24 +267,27 @@ tragically obsessed with typical beauty and efficient convenience while
 ignoring or squashing latent vital beauty and the possibility for gentle and
 nourishing rituals or encounters with others. Furthermore, our culture has an
 unhealthy obsession with data and quantitive measurement as a means to
-"accurately" (typically) describe the world. To be clear, I'm not against data
-gathering nor quantitive measurement - these are demonstrably very useful and
-often essential for hoped-for outcomes and important informative analysis. The
-problem is with our attention: the tragically ignorant or inappropriate way to
-engage with and pay attention to the world in a relentlessly quantitive manner
-(we've measured it, so it must be true!). For instance, focusing on the number
-of "likes" on a social media post to indicate a meaningful social life, or
-counting calories as a proxy for healthy living, or coffee bean status as an
-important aspect of enjoying a drink with your loved one at breakfast.
+"accurately" (typically) describe and pay attention to the world. To be clear,
+I'm not against data gathering nor quantitive measurement - these are
+demonstrably very useful and often essential for hoped-for outcomes and
+important informative analysis. The problem is with our attention: the
+tragically ignorant or inappropriate way to engage with and pay attention to
+the world in a relentlessly quantitive manner (we've measured it, so it must be
+true!). For instance, focusing on the number of "likes" on a social media post
+to indicate a meaningful social life, or counting calories as a proxy for
+healthy living, or coffee bean status as an important aspect of enjoying a
+drink with your loved one at breakfast.
 
 Such misplacement of attention has an unfortunate side effect, a sort of self
 fulfilling aspect. By choosing to pay attention to things in a quantitive
-manner - a manner that gives an (apparently) clear "typical" answer - we get
-into a situation where anything that gives such an answer becomes priority. We
-become blind to the vital process or quality of expressing other aspects of the
-world in perhaps more creative, intuitive, subtle or nuanced ways. The world
-is not black and white, nor even shades of grey, but full of colour, texture
-and subtlety (like a Turner painting).
+manner - a manner that gives an apparently clear "typical" answer - we get
+into a situation where anything that gives such an apparently clear answer
+becomes a priority. Why? Because we're able to quantify our quantitive outlook
+(we now have 173% more data points than last time, so it must be more
+accurate!). But in doing so we become blind to the vital process or quality of
+expressing other aspects of the world in more creative, intuitive, subtle or
+nuanced ways. The world is not black and white, nor even shades of grey, but
+full of colour, texture and subtlety (like a Turner painting).
 
 Remember, it's not quantitive measurement that's at fault here (as I mentioned,
 that's often very useful!). Rather, it's our misplaced attention that's causing
@@ -299,77 +302,82 @@ expressing. Hence the importance of paying attention to "paying attention" to
 enlarge our encounters with the world and each other.
 
 Here's another brain twist: my complaints are perennial, for every age is full
-of arty-farty humanist aesthetes (like me) bemoaning the shallowness of their
-contemporary culture.
+of arty-farty humanist aesthetes (like me in this article) bemoaning the
+shallowness of their contemporary culture. Yet truth be told, if we only pay
+attention to the world in this more "vital" and aesthetic manner, we are just
+as incomplete and blind as those caught up in the "typical" or accurate view
+of the world.
 
-The folks working within the Arts and Crafts movement realised this and
-deliberately emphasised the vital aspects of their work, culture[s] and
-collaborations. For example, William Morris encouraged _useful work_ over
-_useless toil_ and emphasised meaning and respect when collaborating. Their
-approach often favoured synthesis of vernacular traditions over a reductionist
-analysis of "products", in the belief that the quality of the work thus created
-reflects the qualities of the culture in which it originated. For Morris, one
-should be fulfilled by such work, created within a recognisably vernacular (and
-thus authentic) shared cultural tradition, rather than crushed or alienated by
-artefacts made via automated production processes. Such work is expressed
-from the bottom up - from those crafting the work - rather than through a
-managed top down technocratic structure. For the Arts and Crafts practitioner,
-their technique is at the service of expression rather than merely a means of
-production.
+Once again, the key is to pay attention to "paying attention". Ask yourself, is
+the sort of attention you bring to a situation the one that most helpfully
+reveals what's going on? Or perhaps trying several ways of paying attention
+is most beneficial to engaging with things? Maybe even a blended approach, to
+synthesise different ways of paying attention into a more subtle, nuanced and
+enlarged view, is possible?
 
-Of course, if you only pay attention to the world in this more "aesthetic"
-manner, you are just as incomplete and blind as those caught up in just a
-"typical" accurate view of the world.
+The Arts and Crafts movement realised this and deliberately emphasised the
+integration of "vital" elements into typically "typical" aspects of their
+commercial endeavours. For example, William Morris encouraged _useful work_
+over _useless toil_ and emphasised meaning and respect when collaborating.
+Their approach often favoured synthesis of vernacular traditions over a
+reductionist analysis of "products", in the belief that the quality of the work
+thus created reflected the qualities of the dynamic living culture in which it
+originated. For Morris, one should be fulfilled by such work, created within a
+recognisable (and thus authentic) shared cultural tradition, rather than
+crushed or alienated by artefacts, designed by committee, based on "data" and
+manufactured via automated production processes. Such work was to emerge from
+the bottom up - from those crafting the work - rather than through a managed
+top down technocratic structure. For the Arts and Crafts practitioner, their
+(typical) technique enabled (vital) expression rather than merely being a means
+of production. Importantly, such work took place in the context of guilds and
+privately owned companies (such as Morris's own Morris &amp; Co.) which
+involved the "typical" bureaucracy of running a commercial enterprise or
+cooperative, all the while paying attention to the "vital" work of creation and
+collaboration.
 
-Once again, the key is to pay attention to "paying attention". Is the sort of
-attention you bring to a situation the one that best reveals what's going on,
-or perhaps
-
-
-this way of paying attention is completely inappropriate if your
-work 
-
-
-
-
-
-
-
-How do we pay attention to coding..?
-
-There is no wealth but life (Ruskin).
-
-Riches we have won, but wealth is absent.
-
-Clever but unintelligent views of the world.
-
-As artists mature their wisdom is
-shared through their works of art. Their presence embodies and makes available
-their acquired and unique perspective (to those who will engage). Most coders
-are beginners, so the path to wisdom is important.
-
-Our self-value, if expressed as something outside of ourselves, will always be
-unrequited. Cultivating those vital aspects of the world that grow self-worth
-from within is the work of a lifetime. Our current culture, of problems to be
-fixed, arbitrary achievements to unlock and worth expressed as a measurable
-external quantity (typically money, number of cars, size of home etc) is the
-antithesis of this most important work.
-
-Literalism is ignorance.
-
-Linear v Gestalt view of the world. The myth of progress. JIRA!
+This emphasis on the vernacular meant paying attention like
+[Janus](https://en.wikipedia.org/wiki/Janus), both backwards and forwards in
+time to the culture in which one was creating. Morris was inspired by the work
+of medieval artisans, their system of guilds and the way their work existed
+within traditions of practice, style and organisation. Morris also wrote
+utopian science fiction, such as his novel
+[News from Nowhere](https://en.wikipedia.org/wiki/News_from_Nowhere) that
+imagined a future agrarian society based on common ownership, democratic
+government and progressive cultural ideals fashionable at the time among his
+compatriots in the
+[Socialist League](https://en.wikipedia.org/wiki/Socialist_League_(UK,_1885)).
 
 > The past is not dead, it is living in us, and will be alive in the future
-> which we are now helping to make
+> which we are now helping to make.
 >
 > ~ William Morris
 
+Paying attention to paying attention enables us to mix, contrast and
+integrate different ways to encounter the flow and change of our world.
+Such diverse and multifarious encounters lead to a richer, enlarged and
+deeper understanding of the universe. Ultimately, we cultivate a bountiful
+repertoire of disparate and resonant material, skills and experiences upon
+which we draw as we react to our world by expressing ourselves with
+creative and collaborative endeavours.
 
-Translate, Transform, and Transmit.
+As artists and crafts-folk (meant in the broadest sense) mature and refine
+their technique their wisdom, gained by paying attention to the experience of
+living in a complex and ever changing world, is found in the fruits of
+creative work. Their presence, embodied through such works, makes available
+their acquired and unique perspective to those who will engage.
 
-    Translate: The first, and most essential task (literally) is to understand the meaning of what has been handed down to you from the past, whether that culture was secular or religious in nature; you must understand the why of the beliefs, doctrines, laws, holidays, festivals, customs, myths, works of art, etc. Whether you grew up watching Passion plays or playing video games, or both, your maturation into true individuality will not begin unless you undertake this inquiry as to why these works of many human imaginations has been presented to you and what they are trying to teach you, to what end they are trying to guide you.
+Cultivating those vital aspects of the external world that grow and nourish
+oneself from within is the work of a lifetime. Our current culture, of problems
+to be fixed, arbitrary achievements to unlock and self-worth expressed as a
+measurable external quantity (typically money, number of cars, size of home
+etc) is the antithesis of this most important work. For our self-esteem, if
+expressed in terms of possessions, will always be unrequited.
 
-    Transform: The second part of this task is to update that meaning with the new information that you encounter in your life, information that was not a part of what was handed down to you. What we inherit from the past is the product of the dead, who lived in different circumstances than what we live in now, and was informed by their experiences; it must be brought back to life and sustained through new information, new insights into what it is to be human, and our living experiences. This is the first step of a creative process: what might it be possible for what we have been handed to become? This also requires participation in and engagement with the culture and the people in it, sharing your understanding, gaining from theirs, synthesizing, debating.
-
-    Transmit: Our final responsibility is to create: new artistic forms, new laws, new myths, new institutions, new traditions, new philosophies, new disciplines, new industries. Having successfully understood and adapted ourselves and our way of life to the flux and impermanence of Life, we must transmit this body of knowledge and wisdom (and errors and folly) to the next generation, so that they may do the same, that every generation might suffer less and live more fully than the one before it, might have a richer understanding of where they came from and what they might be able to achieve.
-
+> There is no wealth but life. Life, including all its powers of love, of joy,
+> and of admiration. That country is the richest which nourishes the greatest
+> numbers of noble and happy human beings; that man is richest, who, having
+> perfected the functions of his own life to the utmost, has also the widest
+> helpful influence, both personal, and by means of his possessions, over the
+> lives of others.
+>
+> ~ John Ruskin
