@@ -1,7 +1,7 @@
 <!--
 .. title: An Aesthetic Approach
 .. slug: aesthetic
-.. date: 2025-05-24 14:30:00 UTC+01:00
+.. date: 2025-05-31 11:30:00 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -246,7 +246,7 @@ promoting a fulfilling and flourishing social life. Rather, it's a nefarious
 vehicle for shallow gossip and the delivery of (typically beautiful looking)
 adverts based upon invasive data collection. Your calorie counting app might
 help you measure your typical energy intake, but it isn't enlarging your
-awareness of the vitally delicious, healthy and skillfully prepared food you
+awareness of the vitally delicious, healthy and skilfully prepared food you
 _could_ be eating as part of a healthy lifestyle. It's actually a very specific
 and not particularly nourishing way of paying attention to the world (in fact,
 it's a tragically shallow and joyless exercise in data collection). The
@@ -261,35 +261,35 @@ someone else - is lost to a device that may look sleek and modern yet has all
 the lovability of a spare part for a
 [Dalek](https://en.wikipedia.org/wiki/Dalek).
 
-The qualities of such artifacts reflect our way of paying attention to the
+The qualities of such artefacts reflect our way of paying attention to the
 world. As my examples demonstrate, at this moment in time our culture is often
 tragically obsessed with typical beauty and efficient convenience while
 ignoring or squashing latent vital beauty and the possibility for gentle and
 nourishing rituals or encounters with others. Furthermore, our culture has an
-unhealthy obsession with data and quantitive measurement as a means to
+unhealthy obsession with data and quantitative measurement as a means to
 "accurately" (typically) describe and pay attention to the world. To be clear,
-I'm not against data gathering nor quantitive measurement - these are
+I'm not against data gathering nor quantitative measurement - these are
 demonstrably very useful and often essential for hoped-for outcomes and
 important informative analysis. The problem is with our attention: the
 tragically ignorant or inappropriate way to engage with and pay attention to
-the world in a relentlessly quantitive manner (we've measured it, so it must be
+the world in a relentlessly quantitative manner (we've measured it, so it must be
 true!). For instance, focusing on the number of "likes" on a social media post
 to indicate a meaningful social life, or counting calories as a proxy for
 healthy living, or coffee bean status as an important aspect of enjoying a
 drink with your loved one at breakfast.
 
 Such misplacement of attention has an unfortunate side effect, a sort of self
-fulfilling aspect. By choosing to pay attention to things in a quantitive
+fulfilling aspect. By choosing to pay attention to things in quantitative 
 manner - a manner that gives an apparently clear "typical" answer - we get
 into a situation where anything that gives such an apparently clear answer
-becomes a priority. Why? Because we're able to quantify our quantitive outlook
+becomes a priority. Why? Because we're able to quantify our quantitative outlook
 (we now have 173% more data points than last time, so it must be more
 accurate!). But in doing so we become blind to the vital process or quality of
 expressing other aspects of the world in more creative, intuitive, subtle or
 nuanced ways. The world is not black and white, nor even shades of grey, but
 full of colour, texture and subtlety (like a Turner painting).
 
-Remember, it's not quantitive measurement that's at fault here (as I mentioned,
+Remember, it's not quantitative measurement that's at fault here (as I mentioned,
 that's often very useful!). Rather, it's our misplaced attention that's causing
 the problem. Such misplaced emphasis of attention inevitably leads to a
 crushingly banal and limited view of the world.
