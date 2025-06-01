@@ -337,7 +337,7 @@ collaboration.
 
 This emphasis on the vernacular meant paying attention like
 [Janus](https://en.wikipedia.org/wiki/Janus), both backwards and forwards in
-time to the culture in which one was creating. Morris was inspired by the work
+time, to the culture in which one was creating. Morris was inspired by the work
 of medieval artisans, their system of guilds and the way their work existed
 within traditions of practice, style and organisation. Morris also wrote
 utopian science fiction, such as his novel
