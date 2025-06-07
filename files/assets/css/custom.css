@@ -165,3 +165,28 @@ figcaption {
     }
 }
 
+#menu label, #hamburger { display: none; }
+
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #menuitems li {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #menu label { 
+    display: inline-block; 
+    color: rgb(79, 81, 81);
+    font-size: 2em;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #menuitems { display: none; }
+  #menu input:checked ~ #menuitems { display: block; }
+}
