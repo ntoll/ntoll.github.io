@@ -30,7 +30,9 @@
 
 <%def name="html_navigation_links()">
     <nav id="menu">
-    <ul>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+    <ul id="menuitems">
     ${html_navigation_links_entries(navigation_links)}
     </ul>
     </nav>
