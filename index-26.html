@@ -100,7 +100,7 @@ wanted to play games on their computers. The book in question was
 <p>The first proper program I ever typed into the BBC can be found on page 5. It's
 a sort of text based rocket pilot game... you have to take off before the
 aliens get you:</p>
-<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
+<div class="code"><pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
 <span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"STARSHIP TAKE-OFF"</span>
 <span class="nl">30</span><span class="w"> </span><span class="kd">LET</span><span class="w"> </span><span class="vg">G</span><span class="o">=</span><span class="kr">INT</span><span class="p">(</span><span class="kr">RND</span><span class="p">(</span><span class="il">1</span><span class="p">)</span><span class="o">*</span><span class="il">20</span><span class="p">)</span>
 <span class="nl">40</span><span class="w"> </span><span class="kd">LET</span><span class="w"> </span><span class="vg">W</span><span class="o">=</span><span class="kr">INT</span><span class="p">(</span><span class="kr">RND</span><span class="p">(</span><span class="il">1</span><span class="p">)</span><span class="o">*</span><span class="il">40</span><span class="p">)</span>
@@ -119,7 +119,7 @@ aliens get you:</p>
 <span class="nl">170</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"THE ALIENS GOT YOU"</span>
 <span class="nl">180</span><span class="w"> </span><span class="kr">STOP</span>
 <span class="nl">190</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"GOOD TAKE OFF"</span>
-</pre>
+</pre></div>
 
 <p>I have a vivid memory of my aunt, uncle and cousins visiting at the
 time. My cousin Michael (five years older than me) shared a fascination with
@@ -128,8 +128,8 @@ understanding, and it was from him that I got lots of tips, tricks and
 encouragement to goof around.</p>
 <p>So I did.</p>
 <p>I changed line 160 to read:</p>
-<pre class="code literal-block"><span class="nl">160</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU ARE AN IDIOT"</span>
-</pre>
+<div class="code"><pre class="code literal-block"><span class="nl">160</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU ARE AN IDIOT"</span>
+</pre></div>
 
 <p>Then I persuaded my unsuspecting Uncle Colin to play.</p>
 <p>Since he's an engineer I think he got the
@@ -146,10 +146,10 @@ shopping by my parents. I'd wander off on my own to find the computer
 stands in retailers. Being a kid, I was mostly ignored as I typed code into
 the demonstration machines.</p>
 <p>Code like this:</p>
-<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
+<div class="code"><pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="kr">CLS</span>
 <span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">"YOU ARE AN IDIOT"</span>
 <span class="nl">30</span><span class="w"> </span><span class="kr">GOTO</span><span class="w"> </span><span class="nl">20</span>
-</pre>
+</pre></div>
 
 <p>I'd walk away (after typing <code>RUN</code>) and surreptitiously observe the next person
 to encounter the demonstration machines... all telling them they were an idiot
@@ -167,8 +167,8 @@ cousin pointed out that the answers to such problems could be found in the
 (afore linked) user guide. In fact rebinding <code>BREAK</code> was explained on page 143
 and disabling <code>ESCAPE</code> involved this magic incantation at the start of your
 source code:</p>
-<pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="o">*</span><span class="vg">FX</span><span class="w"> </span><span class="il">200</span><span class="p">,</span><span class="il">3</span>
-</pre>
+<div class="code"><pre class="code literal-block"><span class="nl">10</span><span class="w"> </span><span class="o">*</span><span class="vg">FX</span><span class="w"> </span><span class="il">200</span><span class="p">,</span><span class="il">3</span>
+</pre></div>
 
 <p>I was off!</p>
 <p>Most importantly, I realised the user guide wasn't a boring manual for adults
@@ -176,7 +176,7 @@ but, if approached in the right way, it was the source of all sorts of useful
 knowledge and information and I merely had to figure out how to find it. I was
 also helped by yet-more-computer-books from Usborne and my local library, a
 subscription to
-<a href="https://archive.org/search.php?query=acorn+user&amp;sin=&amp;and%5B%5D=mediatype%3A%22texts%22">Acorn User Magazine</a>
+<a href="https://archive.org/search.php?query=acorn+user&amp;sin=&amp;and[]=mediatype%3A%22texts%22">Acorn User Magazine</a>
 and various aspects of the BBC's magnificent
 <a href="https://clp.bbcrewind.co.uk/">Computer Literacy Project</a>,
 including TV programmes like this one:</p>
@@ -690,7 +690,7 @@ as has been the case so far.  </p>
 </div>
     
             <script src="assets/js/baguetteBox.min.js"></script><script>
-    baguetteBox.run('div#content', {
+    baguetteBox.run('main#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>

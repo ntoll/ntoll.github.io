@@ -172,14 +172,13 @@ for connecting propositions is with a
 table</a>.</p>
 
 <p>Here's the definition of "and" (conjunction):</p>
-<pre class="code literal-block"><span></span><code> A | B | A and B
+<div class="code"><pre class="code literal-block"> A | B | A and B
 ----------------
  F | F |    F
  F | T |    F
  T | F |    F
  T | T |    T
-</code></pre>
-
+</pre></div>
 
 <p>Can you see how it works?</p>
 <p>The first two columns represent propositions labelled "A" and "B". The third
@@ -194,14 +193,13 @@ you'd find the definitive answer in this truth table.</p>
 (expressed in the third column) <strong>must be false</strong>.</p>
 <p>Here's another truth table that defines the rule for the logical operation
 called "or" (disjunction):</p>
-<pre class="code literal-block"><span></span><code> A | B | A or B
+<div class="code"><pre class="code literal-block"> A | B | A or B
 ---------------
  F | F |   F
  F | T |   T
  T | F |   T
  T | T |   T
-</code></pre>
-
+</pre></div>
 
 <p>Let's pretend that "A" is false but "B" is true. How would you evaluate the
 truth value of "A or B"? Is it true or false?</p>
@@ -210,12 +208,11 @@ the "A" column is false, the "B" column is true so the result, expressed in the
 third column, is true.</p>
 <p>Here's one final truth table. It's a bit different to the other two since it
 only works on a single proposition:</p>
-<pre class="code literal-block"><span></span><code> A | not A
+<div class="code"><pre class="code literal-block"> A | not A
 ----------
  T |   F
  F |   T
-</code></pre>
-
+</pre></div>
 
 <p>It's easy to see what the "not" (negation) operation does to a proposition: it
 flips its truth value so false becomes true, and true becomes false.</p>
@@ -314,7 +311,7 @@ describing why computers work!</p>
 </div>
     
             <script src="../../assets/js/baguetteBox.min.js"></script><script>
-    baguetteBox.run('div#content', {
+    baguetteBox.run('main#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
     </script>
