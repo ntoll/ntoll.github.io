@@ -58,7 +58,7 @@ _acme_ (ancient Greek for "prime" - usually regarded as around the age of 40)
 was considered by
 [Apollodorus](https://en.wikipedia.org/wiki/Apollodorus_of_Athens) to have
 been the [69th Olympiad](https://en.wikipedia.org/wiki/Olympiad) (504–501 BC),
-and he probably died approximately thirty years later. He wrote a single
+and he probably died approximately twenty years later. He wrote a single
 philosophical work, well known in antiquity but now lost, that may have been
 titled "On Nature", a copy of which he placed as a 
 [votive deposit](https://en.wikipedia.org/wiki/Votive_offering) in the
@@ -91,7 +91,7 @@ Ephesus where he sought treatment from the town's doctors by posing them
 riddles. Unable to make sense of the riddles, the doctors failed to cure him.
 Heraclitus took matters into his own hands and decided to cover himself in
 bovine faeces in the hope the warmth of the fresh dung would dry out his
-dropsy. This failed and he died at the age of seventy, after which his
+dropsy. This failed and he died at the age of sixty, after which his
 "bullshit" encrusted body was devoured by a pack of dogs.
 
 Yet Diogenes also reports that
