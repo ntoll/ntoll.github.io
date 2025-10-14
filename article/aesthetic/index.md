@@ -143,7 +143,7 @@ Why?
 Because it's about paying attention.
 
 How we pay attention reveals the world in a certain sort of way. Such attention
-changes the world through our actions embodying subsequent understanding,
+changes the world through our actions embodying the subsequent understanding,
 interpretation and reaction to things _from that certain perspective_.
 Reflecting upon how one pays attention is, therefore, of fundamental
 importance. For such introspection cultivates a more enlarged and multifarious
@@ -279,7 +279,7 @@ healthy living, or coffee bean status as an important aspect of enjoying a
 drink with your loved one at breakfast.
 
 Such misplacement of attention has an unfortunate side effect, a sort of self
-fulfilling aspect. By choosing to pay attention to things in quantitative 
+fulfilling aspect. By choosing to pay attention to things in a quantitative 
 manner - a manner that gives an apparently clear "typical" answer - we get
 into a situation where anything that gives such an apparently clear answer
 becomes a priority. Why? Because we're able to quantify our quantitative outlook
@@ -309,7 +309,7 @@ as incomplete and blind as those caught up in the "typical" or accurate view
 of the world.
 
 Once again, the key is to pay attention to "paying attention". Ask yourself, is
-the sort of attention you bring to a situation the one that most helpfully
+the sort of attention you bring to a situation the one that most completely 
 reveals what's going on? Or perhaps trying several ways of paying attention
 is most beneficial to engaging with things? Maybe even a blended approach, to
 synthesise different ways of paying attention into a more subtle, nuanced and
@@ -320,27 +320,28 @@ integration of "vital" elements into typically "typical" aspects of their
 commercial endeavours. For example, William Morris encouraged _useful work_
 over _useless toil_ and emphasised meaning and respect when collaborating.
 Their approach often favoured synthesis of vernacular traditions over a
-reductionist analysis of "products", in the belief that the quality of the work
-thus created reflected the qualities of the dynamic living culture in which it
-originated. For Morris, one should be fulfilled by such work, created within a
-recognisable (and thus authentic) shared cultural tradition, rather than
-crushed or alienated by artefacts, designed by committee, based on "data" and
-manufactured via automated production processes. Such work was to emerge from
-the bottom up - from those crafting the work - rather than through a managed
-top down technocratic structure. For the Arts and Crafts practitioner, their
-(typical) technique enabled (vital) expression rather than merely being a means
-of production. Importantly, such work took place in the context of guilds and
-privately owned companies (such as Morris's own Morris &amp; Co.) which
+reductionist analysis of "products", in the belief that a work thus created
+would cherish and honestly reflect the qualities of the dynamic living culture
+in which it originated. For Morris, one should be fulfilled by such work,
+created within a recognisable (and thus authentic) shared cultural tradition,
+rather than crushed or alienated by artefacts, designed by committee, based on
+"data" and manufactured via automated production processes. Such work was to
+emerge from the bottom up - from those crafting the work - rather than through
+a managed top down technocratic structure. For the Arts and Crafts
+practitioner, their (typical) technique enabled (vital) expression rather than
+merely being a means of production. Importantly, such work took place in the
+context of guilds and privately owned companies (such as Morris's own
+[Morris &amp; Co.](https://www.wmorrisandco.com/)) which
 involved the "typical" bureaucracy of running a commercial enterprise or
 cooperative, all the while paying attention to the "vital" work of creation and
 collaboration.
 
-This emphasis on the vernacular meant paying attention like
-[Janus](https://en.wikipedia.org/wiki/Janus), both backwards and forwards in
-time, to the culture in which one was creating. Morris was inspired by the work
-of medieval artisans, their system of guilds and the way their work existed
-within traditions of practice, style and organisation. Morris also wrote
-utopian science fiction, such as his novel
+This emphasis on the vernacular and organic "folk" traditions meant paying
+attention like [Janus](https://en.wikipedia.org/wiki/Janus), both backwards and
+forwards in time, to the culture in which one was creating. Morris was inspired
+by the work of medieval artisans, their system of guilds and the way their work
+existed within traditions of practice, style and organisation. Morris also
+wrote utopian science fiction, such as his novel
 [News from Nowhere](https://en.wikipedia.org/wiki/News_from_Nowhere) that
 imagined a future agrarian society based on common ownership, democratic
 government and progressive cultural ideals fashionable at the time among his
@@ -364,7 +365,8 @@ As artists and crafts-folk (meant in the broadest sense) mature and refine
 their technique their wisdom, gained by paying attention to the experience of
 living in a complex and ever changing world, is found in the fruits of
 creative work. Their presence, embodied through such works, makes available
-their acquired and unique perspective to those who will engage.
+their acquired and unique perspective to those willing to engage, pay
+attention, and mature.
 
 Cultivating those vital aspects of the external world that grow and nourish
 oneself from within is the work of a lifetime. Our current culture, of problems

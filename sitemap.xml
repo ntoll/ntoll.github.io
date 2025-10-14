@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2025-06-07T11:22:00Z</lastmod>
+  <lastmod>2025-06-18T18:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/about/</loc>
@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://ntoll.org/archive.html</loc>
-  <lastmod>2025-06-09T10:52:00Z</lastmod>
+  <lastmod>2025-10-14T14:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/12-days-of-python/</loc>
@@ -60,6 +60,26 @@
  <url>
   <loc>https://ntoll.org/article/aesthetic/</loc>
   <lastmod>2025-06-07T11:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain/</loc>
+  <lastmod>2025-06-18T18:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain1/</loc>
+  <lastmod>2025-08-22T17:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain2/</loc>
+  <lastmod>2025-08-22T17:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain3/</loc>
+  <lastmod>2025-08-22T17:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/article/ai-curtain4/</loc>
+  <lastmod>2025-08-22T17:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -667,7 +687,11 @@
  </url>
  <url>
   <loc>https://ntoll.org/index-27.html</loc>
-  <lastmod>2025-06-09T10:52:00Z</lastmod>
+  <lastmod>2025-10-14T14:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ntoll.org/index-28.html</loc>
+  <lastmod>2025-09-28T10:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/index-3.html</loc>
