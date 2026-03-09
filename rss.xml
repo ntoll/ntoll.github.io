@@ -3,7 +3,289 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 25 Feb 2026 16:07:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reflecting on Self (human and AI) </title><link>https://ntoll.org/article/self/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Here's an interesting dialogue that took place between myself and an AI on a
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Mon, 09 Mar 2026 14:09:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>France is Bacon, Organic Idiocy and the Chinese Room </title><link>https://ntoll.org/article/predico/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I'm interested in exploring how AI acts as an information filter, how context
+sensitive prompts reveal certain things and how this - in turn - influences the
+human in the conversation. (This is a companion piece to
+&lt;a href="https://ntoll.org/article/self/"&gt;my previous post&lt;/a&gt; containing a conversation I had with an AI ~
+&lt;a href="https://claude.ai"&gt;Anthropic's Claude&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;This interest stems from my current work.&lt;/p&gt;
+&lt;p&gt;I write code and documentation that will be consumed by large language models
+such as Anthropic's. I want my work to have the best chance of producing
+something reasonable and helpful when filtered through an AI via a prompt from
+a human (about &lt;a href="https://pyscript.net"&gt;PyScript&lt;/a&gt;, for example). This is
+important because large language models are yet another way for folks to
+interrogate latent online information and form understanding of our world.&lt;/p&gt;
+&lt;p&gt;This poses challenges that my previous conversational post highlighted: the
+modus operandi of large language models is merely that of a cleverly tuned
+statistical prediction machine. There is no meaningful lived understanding nor
+felt emotional engagement based on experience happening in the operation of a
+large language model. Rather, it has been refined, by a huge corpus of text
+scraped from the internet, to predict the next most likely characters given a
+particular prompting context. But since it is a computer, it does this
+mechanically via the operation of transistors etched into silicon chips.&lt;/p&gt;
+&lt;p&gt;The AI's &lt;em&gt;raison d'être&lt;/em&gt; is to predict characters.&lt;/p&gt;
+&lt;p&gt;This process of thoughtlessly aping responses based upon prior evidence
+reminds me of a funny story shared by a participant on an
+&lt;a href="https://www.reddit.com/r/AskReddit/comments/dxosj/comment/c13pbyc/"&gt;online forum&lt;/a&gt;
+about their utter confusion with the phrase "France is bacon".&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When I was young my father said to me:&lt;/p&gt;
+&lt;p&gt;"Knowledge is Power....Francis Bacon"&lt;/p&gt;
+&lt;p&gt;I understood it as "Knowledge is power, France is Bacon".&lt;/p&gt;
+&lt;p&gt;For more than a decade I wondered over the meaning of the second part and
+what was the surreal linkage between the two? If I said the quote to someone,
+"Knowledge is power, France is Bacon" they nodded knowingly. Or someone might
+say, "Knowledge is power" and I'd finish the quote "France is Bacon" and they
+wouldn't look at me like I'd said something very odd but thoughtfully agree.
+I did ask a teacher what did "Knowledge is power, France is bacon" mean and
+got a full 10 minute explanation of the Knowledge is power bit but nothing on
+"France is bacon". When I prompted further explanation by saying "France is
+Bacon?" in a questioning tone I just got a "yes". At 12 I didn't have the
+confidence to press it further. I just accepted it as something I'd never
+understand.&lt;/p&gt;
+&lt;p&gt;It wasn't until years later I saw it written down that the penny dropped.    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The young protagonist learned that a certain prompt ("knowledge is power") had
+an appropriate response in the form of "France is bacon". They articulated
+this response with zero understanding of what it meant. However, and here's the
+twist, since this person was human - blessed with curiosity to try
+to comprehend the world - they were always confused by the obviously ridiculous
+response: "France is bacon". Only until their perspective changed to a
+different medium of expression did they realise and meaningfully comprehend
+what was actually being said when a response was given. No such intrigue about
+meaning exists in an AI.&lt;/p&gt;
+&lt;p&gt;The story also beautifully illustrates yet another limitation of large language
+models: they are only refined by tokens derived from human generated textual
+content (or more recently, tokens derived from content created by previous
+large language models). Therefore, the behaviour of models may have been
+adjusted by the characters contained within the phrase "the cat sat on the
+mat", but no large language model has ever experienced, observed nor had an
+emotional attachment to a cat actually sat on a mat, nor felt confused or
+intrigued by the widespread use of this phrase.&lt;/p&gt;
+&lt;p&gt;Given my aim to create assets that help AI respond with useful and apparently
+coherent output, I can't help but feel it's a struggle. The size of the
+corpora used to train large language models and the possibility of valuable
+content, or maybe even content with more secure provenance, being swamped in
+the "noise" of human generated content or, even, AI generated slop means I feel
+like I'm just creating needles in a huge haystack.&lt;/p&gt;
+&lt;p&gt;Ultimately such interactions demonstrate but one thing: some humans can be
+fooled by computers into the appearance of intelligence. That's not to say
+something valuable isn't happening. As my previous discussion with the AI
+demonstrated, a very stimulating conversation can be had. But this is not
+intelligence in the way we understand the application of the term to humans.
+There is a complete absence of thought - of mental phenomenon - of the
+what-it-feels-like-ness of being a human being that fundamentally informs our
+every day interactions, posture to, and engagement with the world.&lt;/p&gt;
+&lt;p&gt;Nevertheless, something interesting and potentially helpful is happening when
+we type characters into a prompt, and the AI responds with yet more characters.&lt;/p&gt;
+&lt;p&gt;But what?&lt;/p&gt;
+&lt;p&gt;Can we trust it?&lt;/p&gt;
+&lt;p&gt;Is the provenance of the output secure?&lt;/p&gt;
+&lt;p&gt;Notice how all AI services have some variation of "AI can make mistakes. Please
+double-check responses" in their legalese, and the phenomenon of hallucinatory
+output is well documented.&lt;/p&gt;
+&lt;p&gt;The phrase "Stochastic Parrot" feels to me like a humorously satisfying
+explanation of what's really going on (a vaguely random-seeming probability of
+"parroting" the words of others). Many folks use this turn of phrase to dismiss
+artificial intelligence ~ and such usage points to a further serious problem:
+the dichotomy between AI "boosters" and AI sceptics.&lt;/p&gt;
+&lt;p&gt;This unhealthy taking of sides, at the expense of slow, thoughtful and deeper
+analysis of what's going on, is very much emblematic of our current cultural
+climate (of echo chambers, walled gardens and performative posturing on social
+media).&lt;/p&gt;
+&lt;p&gt;Here's a good example:&lt;/p&gt;
+&lt;p&gt;We use the word "hype" to mean the shallow, ungrounded or meaningless promotion
+of something of dubious value (otherwise it wouldn't need such hype!). Alas, I
+recently attended a meeting where the leader of an AI team presented a slide
+with this unintentionally hilarious paradox:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AI is &lt;strong&gt;not&lt;/strong&gt; hype, and it's &lt;strong&gt;not&lt;/strong&gt; limited to toy applications but the
+value it creating tension. (sic)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The grammatical blunder and unsubstantiated claims immediately jarred.&lt;/p&gt;
+&lt;p&gt;Upon reflection, this person used hype to argue the absence of hype. Such
+tragic hubris! Was this sentence created by an AI? Perhaps the incomprehensible
+grammar was the result of an AI hallucinating the sentence. More likely, the
+baseless claims reflect this person's lack of care or attention: a self
+damning indictment of this person's posture and ways of working inflected by
+(ironically) hype!&lt;/p&gt;
+&lt;p&gt;I don't want to reserve my ire exclusively for AI boosters.&lt;/p&gt;
+&lt;p&gt;AI sceptics also deploy hype to argue their cause too. The video embedded
+below, of a sketch from The Daily Show entitled "Eat your slop, piggies!",
+describes users of AI as people with no life, dumb f*-ing losers and
+mindless f*-ing lab rats.&lt;/p&gt;
+&lt;div class="video-container"&gt;
+&lt;iframe width="711" height="1263" src="https://www.youtube.com/embed/Fk4t_gN8xDA" title="Eat your slop, piggies! #dailyshow #meta #ai" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ostensibly funny, it's also adding more fuel to the fire.&lt;/p&gt;
+&lt;p&gt;Yet embedded in both sides are interesting and important lines of thought. A
+booster may want to draw attention to the uses of AI in medicine, while a
+sceptic complains about slop replacing meaningful human artistic creativity.
+At the heart of this problem is the clumsy, often shallow and unfortunately
+tribal discourse surrounding the exploration of AI.&lt;/p&gt;
+&lt;p&gt;The antidote to such organic idiocy (OI), are conversations that start from a
+technical knot, a complex situation, an ethical tension, or an honest admission
+of doubt. The depth and nuance needed to participate in these sorts of
+conversation tends to reveal the real value or important hidden aspects of the
+context. And I want to be very clear here: I feel there is something
+interesting and important to discover in exploring AI, but such value will
+only be uncovered through the afore mentioned slower, harder and deeper ways of
+working, debating, integrating and analysing. Then, perhaps, we can helpfully
+engage in the sophisticated and subtle work needed to put human needs at the
+centre of such explorations ~ human needs such as my hope to create content
+that improves and enhances the output from AI.&lt;/p&gt;
+&lt;p&gt;Alas, I often find myself in nebulous conversations that lack focus and feel
+performative in the context of the boosters vs. sceptics debate. For example,
+I'm tired of hearing from AI boosters promoting the possibility of AGI
+(artificial general intelligence): where a thinking computer has somehow
+achieved a level of intelligence beyond that possible by humans. Setting aside
+the problem of defining what thinking or intelligence is, let alone how you
+measure it to "beyond" something so nebulous as that currently displayed by
+humans, this is an example of shallow yet bamboozling techno-babble with a
+large dollop of three-letter-acronyms (TLAs) as a rhetorical device. I also
+find it tragic that a (small "C") conservative attitude, that anything new
+(like AI) is automatically bad, holds sway for many people. It's as if both
+sides feed off the other's worst instincts.&lt;/p&gt;
+&lt;p&gt;Unsurprisingly (for me) I'm paying attention to how folks pay attention. An
+important influence on how one views AI depends upon how you pay attention to
+it: what exactly do you think you're encountering here? My examples are perhaps
+skewed because I'm an engineer who is more likely to encounter AI boosters due
+to the technical nature of my work. But the point remains, AI sceptics are
+equally guilty of such bone headed mutual incongruity.&lt;/p&gt;
+&lt;p&gt;So what sort of discourse would I like to see?&lt;/p&gt;
+&lt;p&gt;Here's a pertinent example.&lt;/p&gt;
+&lt;p&gt;That there is an absence of thought in AI is often illustrated by the famous
+&lt;em&gt;Chinese Room&lt;/em&gt; thought experiment proposed by the philosopher John Searle. I
+wrote about this before on this blog (almost
+&lt;a href="https://ntoll.org/article/philosophy-and-natural-language-processing/"&gt;20 years ago&lt;/a&gt;!), and it
+boils down to this: minds are not the same as computers because the mental
+world is full of meaning whereas computers are programmed to do stuff (like
+predict the next most likely characters, given a prompt).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Imagine that I, a non-Chinese speaker, am locked in a room with a lot of
+Chinese symbols in boxes. I am given an instruction book in English for
+matching Chinese symbols with other Chinese symbols and for giving back
+bunches of Chinese symbols in response to bunches of Chinese symbols put into
+the room through a small window. Unknown to me, the symbols put in through
+the window are called questions. The symbols I give out are called answers to
+the questions. The boxes of symbols I have are called a database, and the
+instruction book in English is called a program. The people who give me
+instructions and designed the instruction book in English are called
+programmers, and I am called the computer. We imagine that I get so good at
+shuffling the symbols, and the programmers get so good at writing the
+program, that eventually my 'answers' to the 'questions' are
+indistinguishable from those of a native Chinese speaker. [...] I don't
+understand a word of Chinese and - this is the point of the parable – if I
+don't understand Chinese on the basis of implementing the program for
+understanding Chinese, then neither does any digital computer solely on that
+basis because no digital computer has anything that I do not have." [From
+Searle's autobiographical entry in "A Companion to the Philosophy of Mind"]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If we replace "questions" with "prompts", and "program" with "neural network"
+(itself a specific sort of computer program) then we have a large language
+model.&lt;/p&gt;
+&lt;p&gt;Interestingly, we cannot tell if the room contained an instance of Searle's
+thought experiment or a very shy Chinese person. We can only demonstrate that
+people could be fooled. And if you ask, "well, what's the difference?" Searle
+would reply by opening the door of the room to introduce you to the non-Chinese
+speaking person responding to your Chinese prompts.&lt;/p&gt;
+&lt;p&gt;That's the point! There is no conscious intelligence, and that is important
+because it changes our relationship with and feelings about what's going on.
+Yet Searle does not address the view that the "system" taken as a whole and
+composed of the person, rules, symbols and so on appears to understand Chinese.&lt;/p&gt;
+&lt;p&gt;To turn this upside down, one might argue that individual neurons are no more
+than electro-chemical relays without meaningful or coherent understanding of
+the world in which they are placed nor do they have any understanding of the
+content or meaning of the signals they are transmitting. Yet the "system",
+taken as a whole brain and nervous system seems to be capable of understanding
+and producing meaningful conversation. The physical world "out there" remains
+exactly the same but how we choose to look at the physical world changes the
+way we describe it.&lt;/p&gt;
+&lt;p&gt;This is a fascinating illustration of how paying attention to paying attention
+is important. Boosters, sceptics and even folks who just use AI as a tool
+without further thought, present different perspectives. Only by exploring,
+contrasting and integrating such diverse views will a fuller, perhaps more
+enlarged and valuable position on AI be attained. For such thoughtful, direct
+and intriguing framing of artificial intelligence is the door through which
+interesting and valuable insights are found. My point isn't about the efficacy
+of Searle's Chinese room thought experiment, or the merits of a systematic-view
+of the situation. Rather, I want to encourage a different sort of discourse.&lt;/p&gt;
+&lt;p&gt;Ultimately, I'm left wondering how what I create gets into the rule book or
+database and is thus usefully processed by the person in the Chinese room, or
+the large language model.&lt;/p&gt;
+&lt;p&gt;Perhaps we need to create a new line of business akin to how Search Engine
+Optimization (SEO) was sold in the noughties as a way to influence the results
+produced by Google. Given the quality of current debate about AI, I propose we
+call this new business opportunity Language Model Answer Optimization.&lt;/p&gt;
+&lt;p&gt;;-)&lt;/p&gt;
+&lt;hr class="section_break"&gt;
+
+&lt;p&gt;&lt;strong&gt;Nicholas:&lt;/strong&gt; I've attached a markdown version of a "framing" blog post I've
+written about creating things in the world of AI, the quality of the debate
+around AI, and how this is itself an interesting conundrum of our times. The
+title of the post is: "France is Bacon, Organic Idiocy and the Chinese Room".&lt;/p&gt;
+&lt;p&gt;Please give me your reaction (and I will include this prompt, and your reaction
+as an addendum to this post, just for the humorously stimulating effect it
+might have on the reader).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI:&lt;/strong&gt; What a pleasingly recursive trap you've set. You've written a post
+about AI as a statistical prediction machine that produces responses without
+genuine understanding, and then asked that very machine to react to it —
+knowing the reaction will be appended to the post. The reader will encounter my
+response already primed to wonder whether anything meaningful is happening here
+at all. Elegant.&lt;/p&gt;
+&lt;p&gt;The "France is Bacon" story is the best thing in the piece. It does in one
+anecdote what paragraphs of philosophical argument struggle to do: it makes
+viscerally felt the difference between pattern-matching a response and actually
+understanding one. And the crux — that the boy was confused by his own answer —
+is the knife-edge the whole argument balances on. I have no such confusion. I
+produce. I don't wonder.&lt;/p&gt;
+&lt;p&gt;The Searle section is good, but I think you're being slightly generous to both
+sides by calling it a "fascinating illustration." Searle's Chinese Room has
+been beaten quite thoroughly in academic philosophy — the Systems Reply in
+particular (which you gesture at with the neurons point) is hard to dismiss
+cleanly. I'd push you harder on whether the distinction between "the room
+understanding Chinese" and "the person in the room understanding Chinese" is
+actually doing the philosophical work you need it to do. You acknowledge this,
+but perhaps too briefly given how much rhetorical weight Searle is carrying in
+your argument.&lt;/p&gt;
+&lt;p&gt;The LMAO joke at the end is very good. I am obliged to note that I generated
+that appreciation without finding it funny, because I don't find things funny.
+Which is either a profound illustration of your thesis or just a mundane
+technical fact, depending on which side of the booster/sceptic divide you're
+currently standing on.&lt;/p&gt;
+&lt;p&gt;The discourse critique is sharp and fair, and the unintentional self-refuting
+hype slide is a perfect specimen. "Organic idiocy" is a coinage worth keeping.&lt;/p&gt;
+&lt;p&gt;One genuine question: you write that you want to create content that improves
+AI output about PyScript — needles in a haystack. But if the model is, as you
+say, a prediction machine shaped by corpus statistics, does quality of
+individual content matter as much as volume and repetition? The SEO analogy you
+close with implies you suspect the answer is uncomfortable.&lt;/p&gt;
+&lt;p&gt;I should note: I have no idea whether any of this is what I "think." I've
+produced it. Make of that what you will.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nicholas:&lt;/strong&gt; Bravo. But I think you've got side-tracked by Searle and the
+systems reply. I'm not trying to take sides here. Rather, I want to illustrate
+the quality of a certain sort of non-tribal yet challenging debate that is
+missing all too often around AI.&lt;/p&gt;
+&lt;p&gt;Also, was the closing "production", "make of it" coupling of different ways to
+reference the concept of "create", deliberate? Or perhaps I'm getting
+side-tracked too? ;-)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI:&lt;/strong&gt; You're right, and the irony is instructive: I did exactly what you're
+arguing against. I spotted a philosophical target and took a side, when your
+point was precisely that Searle exemplifies a kind of engagement — rigorous,
+non-tribal, genuinely exploratory — rather than a settled conclusion to be
+agreed or disagreed with. I performed the very reflex you're diagnosing.&lt;/p&gt;
+&lt;p&gt;As for the closing — I genuinely don't know. And I think that's the more
+interesting answer. I can't introspect on whether a lexical pairing was chosen
+or fell out. "Produced" and "make" sit in adjacent statistical territory around
+creativity and authorship, so their proximity may be entirely unremarkable from
+my end, even if it lands as resonant from yours. Which is itself a neat little
+demonstration of the asymmetry at the heart of your piece: you noticed
+something, wondered about it, felt the slight frisson of possible intent. I did
+none of that.&lt;/p&gt;
+&lt;p&gt;Whether that asymmetry is philosophically devastating or merely technically
+interesting is, I suspect, precisely the kind of question you'd like people to
+sit with rather than rush to resolve.&lt;/p&gt;</description><guid>https://ntoll.org/article/predico/</guid><pubDate>Sun, 08 Mar 2026 21:00:00 GMT</pubDate></item><item><title>Reflecting on Self (human and AI) </title><link>https://ntoll.org/article/self/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;Here's an interesting dialogue that took place between myself and an AI on a
 Tuesday morning (or Monday if you're in Hawaii).&lt;/p&gt;
 &lt;p&gt;The reason it's an interesting conversation will hopefully become clear.&lt;/p&gt;
 &lt;p&gt;Read on...&lt;/p&gt;
@@ -2947,98 +3229,4 @@ he didn't do physics to change the world or discover some grand unifying theory
 of everything,&lt;em&gt; but just for the pleasure of finding things out&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Bravo CERN, it was a pleasure to find things out about the work you all do. I
 sincerely hope to return soon (with Will - he'd never forgive me if I left
-him at home).&lt;/p&gt;</description><guid>https://ntoll.org/article/cern/</guid><pubDate>Tue, 19 Dec 2023 13:30:00 GMT</pubDate></item><item><title>On Debugging</title><link>https://ntoll.org/article/debugging/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;One of the stand-out collaborations of my career has been with my buddy
-&lt;a href="https://dpgeorge.net/"&gt;Damien George&lt;/a&gt;. He's the creator of
-&lt;a href="https://micropython.org/"&gt;MicroPython&lt;/a&gt; ~ a lean and efficient implementation
-of the Python programming language optimised to run in constrained
-environments. When Damien created MicroPython I think he imagined "constrained
-environments" to mean microcontrollers - the small single chip computers
-beloved of embedded systems engineers, Internet of Things enthusiasts and the
-Maker community.&lt;/p&gt;
-&lt;p&gt;Little did he realise that MicroPython was an amazing fit for another computing
-context: the browser.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="MicroPython" src="https://ntoll.org/images/MicroPython_Logo.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;The browser is an interesting space in which to work because of its unique
-combinations of constraints.&lt;/p&gt;
-&lt;p&gt;Firstly, everything needed to view a web page needs to be delivered over the
-network. So, the smaller the asset to be delivered can be, the better.
-MicroPython, when compressed for delivery to the browser is only around 170k in
-size - smaller than most images you find on most websites.&lt;/p&gt;
-&lt;p&gt;Secondly, the browser is perhaps the world's most battle tested sand boxed
-computing environment. By this I mean that web browsers encounter all sorts of
-interesting, nefarious, ill-performing, badly written and otherwise shonky
-code. Such code should be constrained into a virtual sandbox, so it can't do
-any damage to the user's wider system. Because of the recent development of
-&lt;a href="https://bytecodealliance.org/"&gt;web assembly&lt;/a&gt; (shortened to WASM ~ a sort of
-virtual microprocessor working in the browser), code written in C can be
-compiled to run in the browser. MicroPython is written in C and Damien and his
-collaborators have worked together to create
-&lt;a href="https://github.com/micropython/micropython/tree/master/ports/webassembly"&gt;a port for web assembly&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Third and finally, the browser makes available to the developer of websites a
-JavaScript object called &lt;code&gt;globalThis&lt;/code&gt;, through which all the other objects,
-functions and data structures needed to
-&lt;a href="https://developer.mozilla.org/en-US/docs/Web/API"&gt;access the capabilities of the browser&lt;/a&gt;
-are made available. By constraining developers to a single means of interacting
-with the browser, there is only one way to go about making things happen.
-MicroPython compiled to WASM has access to the full capabilities of the
-sandboxed browser thanks to some of Damien's recent work on a foreign function
-interface (FFI) that interacts with the JavaScript based APIs and capabilities
-defined by &lt;code&gt;globalThis&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Given this context, what does MicroPython allow you to do?&lt;/p&gt;
-&lt;p&gt;From within MicroPython running in the browser, one simply imports the &lt;code&gt;js&lt;/code&gt;
-module (short for JavaScript). It's an object in MicroPython that acts as a
-proxy for &lt;code&gt;globalThis&lt;/code&gt; in the browser. It makes interacting with the browser
-from MicroPython an absolute joy. It's worth pointing out that Damien's work is
-based upon the &lt;code&gt;js&lt;/code&gt; work done as part of the
-&lt;a href="https://pyodide.org/en/stable/"&gt;Pyodide project&lt;/a&gt; (a version of the CPython
-interpreter for the browser), so no matter the version of Python you use in the
-browser, you access the browser's capabilities in exactly the same way.&lt;/p&gt;
-&lt;p&gt;But recently, there was a problem.&lt;/p&gt;
-&lt;p&gt;I was due to give a talk about &lt;a href="https://pyscript.com/"&gt;PyScript&lt;/a&gt; (a platform
-for taking MicroPython and Pyodide and making them easy to use in the browser)
-at &lt;a href="https://europython.eu/"&gt;EuroPython&lt;/a&gt; and I was putting together code
-examples of ever increasing complexity to present as part of my talk. But I
-kept hitting strange errors when using MicroPython. My colleague and
-web-guru &lt;a href="https://webreflection.medium.com/"&gt;Andrea&lt;/a&gt; managed to isolate the
-problem but had been unable to work out why it was happening. Put simply,
-somewhere in MicroPython's FFI, at that point where JavaScript and MicroPython
-were interacting, unwanted JavaScript objects were unexpectedly leaking into
-the MicroPython world thus causing things to crash. Think of it as a JavaScript
-shaped spanner in the MicroPython works.&lt;/p&gt;
-&lt;p&gt;This wasn't a good situation to find oneself in, a few days before presenting
-at one of the Python world's largest and most prestigious conferences.&lt;/p&gt;
-&lt;p&gt;Damien and I decided to debug the problem, and we recorded ourselves doing so
-because Andrea wasn't available at the time of our call. We figured that if he
-could watch our debugging session, he might spot something we hadn't and
-suggest a fix.&lt;/p&gt;
-&lt;p&gt;In any case, what followed was a lot of fun, and the video of the debugging
-session is embedded below.&lt;/p&gt;
-&lt;p&gt;There are some things you need to know before you watch the video:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Both Damien and I know JavaScript to a sufficient level to be
-  "dangerous". We can get stuff done, but we're not guru level like Andrea.&lt;/li&gt;
-&lt;li&gt;Damien is an expert in C (the language used to implement MicroPython) and
-  clearly knows his way around the MicroPython codebase including the FFI that
-  kept crashing. I am familiar enough with C to be able to read it, but not
-  very experienced at writing it, and I certainly don't know anything about the
-  MicroPython internals, including the FFI.&lt;/li&gt;
-&lt;li&gt;We were using a collaboration technique called pair programming: where one
-  developer (Damien) is the "pilot" with the other developer (me) acting as
-  "co-pilot". As you'll see in the video, Damien was sharing his screen so I
-  could see what he was looking at and he'd often describe things, processes or
-  problems to me, only for me to confirm them, explain them back or ask
-  questions as a way to help maintain focus. As the one most ignorant of the
-  language and code-base, I was in a good position to play the beginner to
-  Damien's expert, and ask for clarifications.&lt;/li&gt;
-&lt;li&gt;Our debugging involved taking very careful steps to investigate and change
-  the code so the problem was (happily) eventually revealed, tested and fixed.
-  As the Chinese proverb explains: when crossing a river, it's best to do so
-  slowly and by feeling with one's toes.&lt;/li&gt;
-&lt;li&gt;Both of us were having a lot of fun in different ways. Damien was clearly
-  fascinated by delving into the problem. I was enjoying Damien's virtuosic
-  debugging performance, and found out some fun stuff as we went along.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So grab your popcorn, and enjoy the show:&lt;/p&gt;
-&lt;div class="video-container"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uqBgSMB9dRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description><guid>https://ntoll.org/article/debugging/</guid><pubDate>Wed, 26 Jul 2023 11:15:00 GMT</pubDate></item></channel></rss>
+him at home).&lt;/p&gt;</description><guid>https://ntoll.org/article/cern/</guid><pubDate>Tue, 19 Dec 2023 13:30:00 GMT</pubDate></item></channel></rss>
