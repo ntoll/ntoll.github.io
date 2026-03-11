@@ -172,7 +172,7 @@ When being together, especially if things go wrong,<br/>
 we acknowledge and work through differences.<br/>
 In so doing, we transform and enlarge each other.<br/>
 <br/>
-To nurture our mutual growth,<br/>
+To nurture our mutual growth:<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;this is a place of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning, understanding, and sharing;<br/>
@@ -186,11 +186,11 @@ To nurture our mutual growth,<br/>
 All the aspects of yourself you choose to bring to this place<br/>
 are welcome here.<br/>
 <br/>
-Reciprocate! Welcome, embrace and learn from others<br/>
+Reciprocate. Welcome, embrace and learn from others<br/>
 (even in the face of apparent hostility or misunderstanding).<br/>
 <br/>
 Thoughtful, careful and courteous contributions are a gift,<br/>
-and never knowingly diminish, dehumanize or harm others.<br/>
+and never knowingly diminish, dehumanize, harass or harm others.<br/>
 <br/>
 To act against this spirit invites ostracism,<br/>
 a loss that diminishes us all.<br/>
