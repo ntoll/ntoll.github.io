@@ -3,7 +3,7 @@
 &lt;p&gt;&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Wed, 11 Mar 2026 21:51:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>France is Bacon, Organic Idiocy and the Chinese Room </title><link>https://ntoll.org/article/predico/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I'm interested in exploring how AI acts as an information filter, how context
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;/p&gt;</copyright><lastBuildDate>Fri, 13 Mar 2026 09:00:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>France is Bacon, Organic Idiocy and the Chinese Room </title><link>https://ntoll.org/article/predico/</link><dc:creator>Nicholas H.Tollervey</dc:creator><description>&lt;p&gt;I'm interested in exploring how AI acts as an information filter, how context
 sensitive prompts reveal certain things and how this - in turn - influences the
 human in the conversation. (This is a companion piece to
 &lt;a href="https://ntoll.org/article/self/"&gt;my previous post&lt;/a&gt; containing a conversation I had with an AI ~
@@ -23,7 +23,8 @@ large language model. Rather, it has been refined, by a huge corpus of text
 scraped from the internet, to predict the next most likely characters given a
 particular prompting context. But since it is a computer, it does this
 mechanically via the operation of transistors etched into silicon chips.&lt;/p&gt;
-&lt;p&gt;The AI's &lt;em&gt;raison d'être&lt;/em&gt; is to predict characters.&lt;/p&gt;
+&lt;p&gt;The AI's &lt;em&gt;raison d'être&lt;/em&gt; is to predict characters. "Predico ergo sum", as
+Descartes would not have said.&lt;/p&gt;
 &lt;p&gt;This process of thoughtlessly aping responses based upon prior evidence
 reminds me of a funny story shared by a participant on an
 &lt;a href="https://www.reddit.com/r/AskReddit/comments/dxosj/comment/c13pbyc/"&gt;online forum&lt;/a&gt;
