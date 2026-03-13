@@ -34,7 +34,8 @@ scraped from the internet, to predict the next most likely characters given a
 particular prompting context. But since it is a computer, it does this
 mechanically via the operation of transistors etched into silicon chips.
 
-The AI's _raison d'être_ is to predict characters.
+The AI's _raison d'être_ is to predict characters. "Predico ergo sum", as
+Descartes would not have said.
 
 This process of thoughtlessly aping responses based upon prior evidence
 reminds me of a funny story shared by a participant on an
