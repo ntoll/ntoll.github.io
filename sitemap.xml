@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ntoll.org/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
+  <lastmod>2026-04-02T16:06:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/about/</loc>
@@ -60,26 +60,6 @@
  <url>
   <loc>https://ntoll.org/article/aesthetic/</loc>
   <lastmod>2025-06-07T11:22:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain1/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain2/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain3/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/article/ai-curtain4/</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/article/aiml-evolved-aims-and-objectives/</loc>
@@ -702,10 +682,6 @@
   <lastmod>2026-04-02T16:06:00Z</lastmod>
  </url>
  <url>
-  <loc>https://ntoll.org/index-29.html</loc>
-  <lastmod>2026-03-29T15:54:00Z</lastmod>
- </url>
- <url>
   <loc>https://ntoll.org/index-3.html</loc>
   <lastmod>2026-01-01T12:07:00Z</lastmod>
  </url>
@@ -736,14 +712,6 @@
  <url>
   <loc>https://ntoll.org/presentations/</loc>
   <lastmod>2025-06-07T11:22:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/static/ai_char/</loc>
-  <lastmod>2026-03-29T15:57:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ntoll.org/static/ai_snake/</loc>
-  <lastmod>2026-03-29T16:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://ntoll.org/static/pirate/</loc>
