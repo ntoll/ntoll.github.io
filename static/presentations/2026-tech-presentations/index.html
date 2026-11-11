@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tech Presentations</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2>A technical talk about technical talks</h2>
+          <p>Nicholas H.Tollervey</p>
+          <aside class="notes">
+            <p><strong>TIME: 0mins</strong></p>
+            <p>This is a deliberately meta talk on giving talks.</p>
+            <p>By the end you will have a framework and some heuristics to
+            help you prepare a technical talk.</p>
+          </aside>
+        </section>
+        <section>
+          <p>How to give a talk (Agenda)</p>
+          <div style="float: left;">
+          <ul>
+            <li class="fragment">What is a talk?
+              <ul>
+                <li>A presenter</li>
+                <li>An audience</li>
+                <li>A context</li>
+                <li>A call to action</li>
+              </ul>
+            </li>
+            <li class="fragment">What happens?
+              <ul>
+                <li>Talking</li>
+                <li>Slides</li>
+                <li>Questions</li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+          <div style="float: right;">
+          <ul>
+            <li class="fragment">How to talk?
+              <ul>
+                <li>Breath</li>
+                <li>Smile</li>
+                <li>Eye contact</li>
+              </ul>
+            </li>
+            <li class="fragment">What to plan?
+              <ul>
+                <li>Decide agenda</li>
+                <li>Bullet points</li>
+                <li>Rehearse</li>
+              </ul>
+            <li class="fragment">Questions?</li>
+          </ul>
+          </div>
+          <aside class="notes">
+            <p>BORING AND SLOW</p>
+          </aside>
+        </section>
+        <section data-background-image="img/scream.jpg">
+          <h1>NO!</h1>
+          <p>(To bullet point karaoke)</p>
+          <aside class="notes">
+            <p>Have you been in a presentation that makes you feel like this?</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Let's think about:</h2>
+          <p>Audience, Intent, Story, Delivery.</p> 
+          <aside class="notes">
+            <p>Communication is an important aspect of programming. So we should pay attention to it. We're going to explore these core concepts with a fun demo presentation at the end.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/audience.png">
+         <h2>Audience</h2> 
+          <aside class="notes">
+            <p>We need to know who are audience are. It tells us where we start from.</p>
+            <ul>
+              <li>Background</li>
+              <li>Culture</li>
+              <li>Skill level</li>
+              <li>Reason for being here</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-background-image="img/intent.png">
+         <h2>Intent</h2> 
+          <aside class="notes">
+            <p>Why are you giving this talk to this audience?</p>
+            <p>Every talk has the same general intent: to affect a (hopefully valuable) change in the audience.</p>
+            <p>Your talk will also have a specific, subject related, intent.</p>
+            <p>You need to know what this is.</p>
+          </aside>
+        </section>
+        <section>
+          <div style="
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+          ">
+            <div style="
+              color: #8bd5ff;
+              font-size: clamp(20px, 3.5vw, 42px);
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.12em;
+              text-shadow: 0 0 12px rgba(70, 170, 255, 0.45);
+              padding: 30px;
+            ">
+              A long time ago
+              in a galaxy far,<br>
+              far away...<br/>
+              <span class="fragment">(it's all about the story!)</span>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>If all you're doing is a dump of information, email it.</p>
+            <p>If you must give a presentation - tell a story.</p>
+            <ul>
+              <li>It's interesting and engaging.</li>
+              <li>It gives you a structure for organising ideas.</li>
+              <li>It helps you think about movement of thought.</li>
+            </ul>
+            <p>A rough heuristic for story telling is... these are not
+            set-in-stone rules.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/beginning.jpeg">
+         <h2>Beginning</h2> 
+          <aside class="notes">
+            <p>All stories start somehow.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Beginning</h2>
+          <ul>
+            <li>Introduce yourself (make a connection)</li>
+            <li>Audience expectations (where are they now?)</li>
+            <li>Set the stage (context, key players, processes)</li>
+          </ul>
+          <aside class="notes">
+            <p>In a talk, use your beginning to make it intriguing.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/middle.jpeg">
+         <h2>Middle</h2> 
+          <aside class="notes">
+            <p>The middle is where the drama happens.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Middle</h2>
+          <ul>
+            <li>There's a tension (found in the current context)</li>
+            <li>Describe the problem (unmask the source)</li>
+            <li>Why this is important (the value to be unlocked)</li>
+          </ul>
+          <aside class="notes">
+            <p>Find the inflection point, aha moment or reveal the devilish detail that everyone will agree is a pain.</p>
+          </aside>
+        </section>
+        <section data-background-image="img/end.jpeg">
+         <h2>End</h2> 
+          <aside class="notes">
+            <p>The end resolves the tension and has a call to action (what happens next).</p>
+          </aside>
+        </section>
+        <section>
+          <h2>End</h2>
+          <ul>
+            <li>Explore (what could we do?)</li>
+            <li>Resolve (here's what I propose)</li>
+            <li>Reflect (next steps, and questions)</li>
+          </ul>
+          <aside class="notes">
+            <p>The climax to which we're heading, and it should leave the audience wanting more.</p>
+            <p>So, assuming you have a structure or framework to your talk, how exactly are you going to deliver it?</p>
+          </aside>
+        </section>
+        <section data-background-image="img/delivery.jpg">
+         <h2>Delivery</h2> 
+         <aside class="notes">
+          <p>Clearly you're going to have to speak, but you'll likely have slides to complement your words and share afterwards with the audience.</p>
+          <p>These are some *personal* tricks and tips to think about. Again, no hard-and-fast rules here.</p>
+         </aside>
+        </section>
+
+        <section>
+          <h2>The bullet point secret</h2>
+          <ul>
+            <li class="fragment">Don't use bullet points</li>
+            <li class="fragment">(Unless you're enumerating a list)</li>
+            <li class="fragment">If you find yourself writing bullets...</li>
+            <li class="fragment">...put them in your presenter notes...</li>
+            <li class="fragment">...then choose an image to illustrate...</li>
+            <li class="fragment">...or a handful of words to make your point.</li>
+            <li class="fragment"><u>Never</u> just read out bullet points. ;-)</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Alternatives to bullet points</h2>
+          <aside class="notes">
+            <p>Surely there's a better way?</p>
+            <p>I have some ideas for reading out bullet points.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>BOLD SUMMARY STATEMENTS</h2>
+          <p class="fragment">(With parenthetical clarification.)</p>
+          <aside class="notes">
+            <p>You want the focus to be on what you're saying. The words on the screen give the core concept to keep people focused.</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/mirror.jpg">
+          <h1>IMAGES</h1>
+          <aside class="notes">
+            <p>Again, forces the focus on the speaker, but gives people a break from words on slides. It helps the audience remain attentive and engaged.</p>
+          </aside>
+        </section>
+        <section data-background-video="./img/eleGPT.webm">
+          <aside class="notes">
+            <p>Video's are a wonderful demonstration of how things unfold. Especially useful if a live demo is risky.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Code</h2>
+          <pre><code data-trim data-noescape data-line-numbers="1-3|5|9|11-12|13" class="language-python">"""
+Python "hello" module.
+"""
+
+def hello(name="World!"):
+    """
+    Say hello to the given name.
+    """
+    return f"Hello, {name}"
+
+a_name = input("What is your name? ")
+greeting = hello(a_name)
+print(greeting)
+          </code></pre>
+          <aside class="notes">
+            <p>In general, don't get lost in the details.</p>
+            <p>But if you need to illustrate something technical, a code walk-through is helpful and concrete.</p>
+          </aside>
+        </section>
+        <section>
+          <h2 class="fragment">(No slide at all)</h2>
+          <aside class="notes">
+            <p>Sometimes you simply don't need a slide. Just talk.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Tools</h2>
+          <p>(My personal preferences. YMMV.)</p>
+          <ul>
+            <li class="fragment">Presentation: <a href="https://revealjs.com/">reveal.js</a>.</li>
+            <li class="fragment">Images: <a href="https://www.flickr.com/">Flickr</a>.</li>
+            <li class="fragment">Delivery: <a href="https://docs.github.com/en/pages">GitHub pages</a> (it's free)</li>
+          </ul>
+          <aside class="notes">
+            <p>These are my personal preferences. This presentation took about three hours to prepare yesterday afternoon.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>DEMO</h1>
+          <aside class="notes">
+            <p>Let's pull together all these strands with a short goofy technical talk.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Foo, bar, baz</h2>
+          <p>Nicholas H.Tollervey</p>
+          <aside class="notes">
+            <p>Today's talk is all about placeholders.</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/tuba.jpg">
+          <aside class="notes">
+            <p>I'm Nicholas - and I'm really a tuba player who codes.</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/teacher_me.jpg">
+          <aside class="notes">
+            <p>I also used to be a teacher - which is why I like explaining things (hence the need for placehholders in examples).</p>
+          </aside>
+        </section>
+        <section data-background-image="./img/code.jpg">
+          <aside class="notes">
+            <p>We're all technologists, and explaining stuff is a bread and butter part of our job.</p>
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape data-line-numbers="1-3|5|9" class="language-python">"""
+Placeholder example.
+"""
+
+def foo(bar="baz"):
+    """
+    Random function that does stuff.
+    """
+    ... 
+          </code></pre>
+          <p class="fragment">But what comes next?</p>
+          <aside class="notes">
+            <p>We traditionally use these placeholders for abstract coding examples.</p>
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape class="language-python" style="font-size: 3em; line-height: 2.3em;">
+??? = foo(bar="baz")
+          </code></pre>
+          <p>We have run out of placeholders!</p>
+          <aside class="notes">
+            <p>This is a serious limitation in our ability to explain code!</p>
+          </aside>
+        </section>
+        <section>
+          <h2>NO MORE ABSTRACT CODE EXAMPLES 😬</h2>
+          <p>(How will we survive?)</p>
+          <aside class="notes">
+            <p>It has real world consequences that affect coders all over the world.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Introducing... 🥁</h2>
+          <p class="fragment">qux</p>
+          <aside class="notes">
+            <p>After many years of difficult research we are proud to announce a new placeholder.</p>
+          </aside>
+        </section>
+        <section data-background-color="white">
+          <video
+            data-autoplay
+            src="./img/qux.webm"
+          ></video>
+          <aside class="notes">
+            <p>We have undertaken extensive testing, with no noticeable side effects.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Why qux?</h2>
+          <ul>
+            <li class="fragment">Three letters</li>
+            <li class="fragment">Meaningless</li>
+            <li class="fragment">Fun to say</li>
+            <li class="fragment">Confuses non-coders</li>
+          </ul>
+          <aside class="notes">
+            <p>We believe the results speak for themselves.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>The Future?</h2>
+          <p class="fragment">(There are 17,576 unique three letter combinations)</p>
+          <aside class="notes">
+            <p>And we're only just getting started. Join our community discord and clone our GitHub repository if you want to get involved.</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+        <!--section data-background-video="./video/pollo.webm">
+        </section-->
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
